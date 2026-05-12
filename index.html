@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cert Map — Security Certification Roadmap</title>
+  <meta name="description" content="A modern, open-source security certification roadmap." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://www.google.com data:; connect-src 'self'; font-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="color-scheme" content="dark light" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="Cert Map home">
+      <span class="logo" aria-hidden="true">
+        <span class="logo-dot"></span><span class="logo-dot"></span><span class="logo-dot"></span>
+        <span class="logo-dot"></span><span class="logo-dot logo-dot--accent"></span><span class="logo-dot"></span>
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">cert<span class="brand-accent">/</span>map</span>
+        <span class="brand-tag">security certification roadmap</span>
+      </span>
+    </a>
+
+    <div class="search-shell">
+      <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="search" type="search" placeholder="Search by acronym, vendor, tag…" autocomplete="off" spellcheck="false" />
+      <kbd class="kbd">/</kbd>
+    </div>
+
+    <div class="top-actions">
+      <div class="seg" role="group" aria-label="View">
+        <button class="seg-btn active" data-view="matrix">Matrix</button>
+        <button class="seg-btn" data-view="list">List</button>
+      </div>
+      <label class="sort-wrap" title="Sort">
+        <select id="sort">
+          <option value="name">Name</option>
+          <option value="price_asc">$ low→high</option>
+          <option value="price_desc">$ high→low</option>
+          <option value="vendor">Vendor</option>
+          <option value="level">Level</option>
+        </select>
+      </label>
+      <button id="mobile-filter" class="icon-btn mobile-only" aria-label="Filters" title="Filters">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
+      </button>
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button id="cart-toggle" class="cart-pill" aria-expanded="false">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11V7a3 3 0 1 1 6 0v4"/><path d="M5 9h14l-1.5 11h-11z"/></svg>
+        <span id="cart-count">0</span><span class="cart-sep">·</span><span id="cart-total">$0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar" id="sidebar">
+      <section class="filter">
+        <header class="filter-head"><h3>Level</h3><span class="filter-clear" data-clear="levels">clear</span></header>
+        <div id="filter-level" class="chips"></div>
+      </section>
+      <section class="filter">
+        <header class="filter-head"><h3>Domain</h3><span class="filter-clear" data-clear="domains">clear</span></header>
+        <div id="filter-domain" class="checks"></div>
+      </section>
+      <section class="filter">
+        <header class="filter-head"><h3>Vendor</h3><span class="filter-clear" data-clear="vendors">clear</span></header>
+        <div id="filter-vendor" class="checks scroll"></div>
+      </section>
+      <section class="filter">
+        <header class="filter-head"><h3>Price (USD)</h3></header>
+        <div class="range">
+          <input id="price-min" type="number" min="0" placeholder="min" />
+          <span class="range-sep">—</span>
+          <input id="price-max" type="number" min="0" placeholder="max" />
+        </div>
+        <label class="check-inline"><input type="checkbox" id="free-only" /><span>Free / unknown only</span></label>
+        <label class="check-inline"><input type="checkbox" id="dod-only" /><span>DoD 8140 only</span></label>
+        <label class="check-inline"><input type="checkbox" id="no-prereq" /><span>No prerequisites</span></label>
+      </section>
+      <button id="reset-filters" class="btn-ghost block">Reset all filters</button>
+      <p class="result-count" id="result-count"></p>
+    </aside>
+
+    <section class="content" id="content">
+      <div id="grid" class="grid-host"></div>
+      <p id="empty" class="empty hidden">No certifications match the current filters.</p>
+      <div id="flow" class="flow hidden"></div>
+    </section>
+    <div id="backdrop" class="backdrop hidden"></div>
+  </main>
+
+  <aside id="drawer" class="drawer hidden" aria-hidden="true">
+    <button class="drawer-close" id="drawer-close" aria-label="Close">×</button>
+    <div id="drawer-content"></div>
+  </aside>
+
+  <aside id="cart" class="cart hidden" aria-hidden="true">
+    <header><h3>Selected certifications</h3><button id="cart-close" class="icon-btn">×</button></header>
+    <div id="cart-list"></div>
+    <footer>
+      <div class="cart-sum">Total <strong id="cart-subtotal">$0</strong></div>
+      <div class="cart-actions">
+        <button id="cart-md" class="btn-ghost">Copy MD</button>
+        <button id="cart-csv" class="btn-ghost">Export CSV</button>
+        <button id="cart-clear" class="btn-ghost danger">Clear</button>
+      </div>
+    </footer>
+  </aside>
+
+  <footer class="pagefoot">
+    <span>Open-source security certification roadmap.</span>
+    <span><a href="CONTRIBUTING.md">Contribute</a></span>
+  </footer>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
