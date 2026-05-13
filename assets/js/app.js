@@ -204,6 +204,14 @@ async function init() {
   $("#dod-only").addEventListener("change", e => { state.filters.dodOnly = e.target.checked; rerender(); });
   $("#no-prereq").addEventListener("change", e => { state.filters.noPrereq = e.target.checked; rerender(); });
 
+  const vendorSearch = $("#filter-vendor-search");
+  vendorSearch.addEventListener("input", e => {
+    const q = e.target.value.trim().toLowerCase();
+    $("#filter-vendor").querySelectorAll("label").forEach(lbl => {
+      lbl.style.display = !q || lbl.dataset.vendor.includes(q) ? "" : "none";
+    });
+  });
+
   document.querySelectorAll(".filter-clear").forEach(el => {
     el.addEventListener("click", () => {
       state.filters[el.dataset.clear] = new Set();

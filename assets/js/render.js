@@ -355,6 +355,7 @@ export function buildFilters({ levelEl, domainEl, vendorEl }, meta, state, onCha
   vendorEl.replaceChildren();
   meta.vendors.forEach(v => {
     const lbl = document.createElement("label");
+    lbl.dataset.vendor = v.toLowerCase();
     const inp = document.createElement("input"); inp.type = "checkbox"; inp.checked = state.filters.vendors.has(v);
     const span = document.createElement("span"); span.textContent = v;
     lbl.append(inp, span);
