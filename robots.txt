@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://securitycerts.github.io/certmap/sitemap.xml
