@@ -186,6 +186,11 @@ input, select { font: inherit; }
   padding: 18px 20px 32px;
   height: 100%; overflow: auto; overscroll-behavior: contain;
 }
+.content-stack {
+  display: flex; flex-direction: column;
+  width: max-content; min-width: 100%;
+  gap: 0;
+}
 .mobile-only { display: none; }
 .backdrop { position: fixed; inset: var(--top-h) 0 0 0; background: rgba(0,0,0,.5); z-index: 25; }
 
