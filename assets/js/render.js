@@ -183,7 +183,7 @@ export function renderFlow(root, selected, byId) {
 
 function pill(c, state) {
   const el = document.createElement("div");
-  el.className = "pill" + (state.cart.has(c.id) ? " selected" : "");
+  el.className = "pill" + (state.cart.has(c.id) ? " selected" : "") + (c.restricted_to ? " restricted" : "");
   el.dataset.level = c.level;
   el.dataset.id = c.id;
   el.dataset.tipId = c.id;
@@ -235,7 +235,7 @@ export function renderList(root, certs, meta, state, { grouped = true, heading =
 
 function listCard(c, state) {
   const el = document.createElement("div");
-  el.className = "list-card" + (state.cart.has(c.id) ? " selected" : "");
+  el.className = "list-card" + (state.cart.has(c.id) ? " selected" : "") + (c.restricted_to ? " restricted" : "");
   el.dataset.level = c.level;
   el.dataset.id = c.id;
   el.dataset.tipId = c.id;
@@ -267,10 +267,14 @@ export function renderDrawer(root, c, byId) {
   const tagsHtml = c.tags.length
     ? `<div class="tags">${c.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>`
     : "";
+  const restrictedHtml = c.restricted_to
+    ? `<div class="restricted-badge" role="note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>${esc(c.restricted_to)}</span></div>`
+    : "";
   root.innerHTML = `
     <div class="drawer-head"></div>
     <h2>${esc(c.acronym)}</h2>
     <div class="sub">${esc(c.name)} · ${esc(c.vendor)}</div>
+    ${restrictedHtml}
     <p class="desc">${esc(c.description)}</p>
     <dl>
       <dt>Domain</dt><dd>${esc(c.domain)}</dd>

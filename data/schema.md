@@ -20,6 +20,7 @@ One row per certification. All columns are required (use an empty value when unk
 | `description` | string | yes | One or two sentences. Factual; no marketing copy. |
 | `tags` | list | no | Semicolon-separated free-form tags (`red-team;web;hands-on`). |
 | `weight` | integer | no | Intra-cell sort weight for the matrix view. Higher values appear at the top of their (domain, level) cell; default `0` (empty). Use sparingly to highlight a marquee or capstone cert above its siblings. Does not affect the list view or the user-selected sort options. |
+| `restricted_to` | string | no | Short free-form note describing an audience restriction enforced by the vendor (e.g. `Law enforcement only`, `Government employees only`). Rendered as a prominent badge in the detail drawer and as a red dot indicator on the matrix pill and list card. Leave empty for generally-available certifications. |
 
 ## Allowed `domain` values
 

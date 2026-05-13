@@ -359,6 +359,25 @@ input, select { font: inherit; }
 }
 .drawer .prereq-chip:hover { border-color: var(--accent); color: var(--accent); }
 .drawer .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.restricted-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin: 14px 0 18px;
+  padding: 8px 12px;
+  background: rgba(201, 122, 122, 0.08);
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  border-radius: var(--radius);
+  font-size: 12px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .04em;
+}
+.restricted-badge svg { flex-shrink: 0; }
+.pill.restricted::after, .list-card.restricted::after {
+  content: ""; width: 6px; height: 6px;
+  border-radius: 50%; background: var(--danger);
+  position: absolute; top: 4px; right: 4px;
+}
+.pill { position: relative; }
+.list-card { position: relative; }
 
 /* ---------- CART ---------- */
 .cart {
