@@ -316,15 +316,26 @@ input, select { font: inherit; }
 .drawer {
   position: fixed; top: 0; right: 0; height: 100vh; width: min(460px, 100%);
   background: var(--bg-elev); border-left: 1px solid var(--border);
-  padding: 28px 24px 24px; overflow-y: auto; z-index: 40;
+  z-index: 40;
   box-shadow: -8px 0 30px rgba(0,0,0,.4);
+  display: flex; flex-direction: column;
 }
 .drawer-close {
-  position: absolute; top: 12px; right: 14px;
+  align-self: flex-end; flex-shrink: 0;
+  margin: 8px 10px 0 0;
   background: transparent; border: 0; color: var(--muted);
-  font-size: 22px; line-height: 1; width: 30px; height: 30px; border-radius: var(--radius-sm);
+  font-size: 22px; line-height: 1;
+  width: 40px; height: 40px;
+  border-radius: var(--radius-sm); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; z-index: 1;
 }
 .drawer-close:hover { color: var(--text); background: var(--panel); }
+#drawer-content {
+  flex: 1; min-height: 0;
+  overflow-y: auto; overscroll-behavior: contain;
+  padding: 4px 24px 24px;
+}
 .drawer h2 { margin: 0 0 2px; font-size: 22px; font-family: var(--mono); }
 .drawer .sub { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
 .drawer .desc { color: var(--text); margin: 0 0 18px; line-height: 1.55; }
