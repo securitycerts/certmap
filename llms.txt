@@ -1,0 +1,107 @@
+# cert/map
+
+> Open-source static roadmap of 151 cybersecurity certifications mapped across 17 domains and four seniority tiers. Filter by vendor, level or price, inspect each certification's prerequisites, renewal cycle and DoD 8140 status, and plan a study path with running cost and time-to-completion totals.
+
+cert/map is a community-maintained reference for the cybersecurity certification landscape. The entire dataset lives in a single CSV file at `data/certs.csv`; the browser parses it at load time, so the data is also directly machine-readable for anyone integrating it. The project is hosted on GitHub Pages at https://securitycerts.github.io/certmap/.
+
+## Vendors covered
+
+ISC2, ISACA, CompTIA, OffSec (Offensive Security), GIAC (SANS), EC-Council, AWS, Microsoft, Google Cloud, Cisco, Red Hat, LPI, Hack The Box, TCM Security, INE, Zero-Point Security, Altered Security, Mossé Cyber Security Institute (MCSI), Cloud Security Alliance (CSA), McAfee Institute, TRM Labs, Splunk, Magnet Forensics, OpenText (EnCase), Cellebrite, ISA, Okta, SailPoint, IAPP, PeopleCert (ITIL), arcX, and others.
+
+## Domain taxonomy
+
+The roadmap groups certifications across seventeen domains:
+
+- Communication & Network Security
+- IAM
+- Security Architecture & Engineering
+- Asset Security
+- Security & Risk Management
+- Security Assessment & Testing
+- Software Security
+- Security Operations
+- Cyber Threat Intelligence
+- Cloud/SysOps
+- *nix
+- ICS/IoT
+- GRC (Governance, Risk, Compliance)
+- Forensics
+- Incident Handling
+- Penetration Testing
+- Exploitation
+
+## Seniority tiers
+
+Each certification is placed at one of four tiers:
+
+- **beginner** — foundational, no significant prerequisites
+- **intermediate** — assumes one to three years of relevant experience
+- **advanced** — specialised, three to five years
+- **expert** — capstone hands-on credentials or executive-level certifications
+
+## Dataset schema
+
+`data/certs.csv` columns:
+
+- `id` — slug, primary key (e.g. `oscp`, `cissp`)
+- `name` — full official name
+- `acronym` — short label
+- `vendor` — issuing organisation
+- `domain` — one of the seventeen domains listed above
+- `level` — `beginner` | `intermediate` | `advanced` | `expert`
+- `price_usd` — exam fee in USD (empty if unknown, `0` if free)
+- `currency_note` — clarification when relevant (member/non-member, bundle, etc.)
+- `duration_min` — exam length in minutes
+- `validity_years` — renewal cycle; `0` or empty means lifetime
+- `prerequisites` — semicolon-separated `id` values
+- `dod_8140` — boolean for US DoD 8140 framework approval
+- `url` — vendor's official certification page
+- `description` — one to two factual sentences
+- `tags` — semicolon-separated free-form tags
+- `weight` — optional integer for intra-cell ordering in the matrix
+- `restricted_to` — optional audience restriction (e.g. `Law enforcement only`)
+
+## Key URLs
+
+- [Live application](https://securitycerts.github.io/certmap/)
+- [Dataset (CSV)](https://securitycerts.github.io/certmap/data/certs.csv)
+- [Schema reference](https://github.com/securitycerts/certmap/blob/main/data/schema.md)
+- [Contributing guide](https://github.com/securitycerts/certmap/blob/main/CONTRIBUTING.md)
+- [Source repository](https://github.com/securitycerts/certmap)
+- [Sitemap](https://securitycerts.github.io/certmap/sitemap.xml)
+
+## Features of the live site
+
+- **Matrix view** — 17 columns by 4 rows. Capstone certifications surface to the top of each cell via an optional weight value.
+- **List view** — cards grouped by domain with vendor, level, tags and price visible.
+- **Filters** — domain, level, vendor (with substring quick-search), price range, free-only, DoD 8140 only, no-prerequisites only.
+- **Detail drawer** — opens on click, deep-linkable as `#/cert/<id>`, lists prerequisites as clickable chips back to other certifications.
+- **Path planner** — pick multiple certifications and the site sorts them by prerequisite and difficulty, then reports total cost, total study hours and approximate months at ten study-hours per week.
+- **Delayed hover tooltip** — appears after a 450 ms hover and previews the cert's price, exam length, renewal cycle and prerequisites.
+- **Light and dark themes** — dark by default.
+- **Mobile layout** — drawer-style filter panel, single-column list, the matrix view collapses to the list.
+- **Strict CSP** — `script-src 'self'` with a hashed JSON-LD island; no third-party scripts, no `unsafe-inline`.
+
+## How prices and accuracy work
+
+Most vendors do not publish their exam fees on public certification pages. The CSV records the last known list price in USD with a `currency_note` for member/non-member splits or training-bundle pricing. Pricing should always be confirmed with the vendor before purchase. Corrections are welcome via pull request against `data/certs.csv`.
+
+## How to contribute
+
+The whole dataset is a single CSV file. Editing it requires no JavaScript and no build step:
+
+1. Fork the repository.
+2. Edit `data/certs.csv`.
+3. Run `npm run validate` to check the row.
+4. Open a pull request. The CI workflow runs the same validator.
+
+The validator enforces the closed vocabulary for `domain` and `level`, integer `weight`, valid URLs, unique `id`s, and existing prerequisite references.
+
+## Licensing
+
+- Application code: MIT
+- Certification dataset: CC-BY-4.0 (please credit the project when redistributing)
+
+## Credit
+
+The matrix structure is inspired by Paul Jerimy's Security Certification Roadmap. cert/map is an independent project and not affiliated with that work or with any of the listed vendors. All trademarks are the property of their respective owners.
