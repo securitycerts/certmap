@@ -371,13 +371,6 @@ input, select { font: inherit; }
   text-transform: uppercase; letter-spacing: .04em;
 }
 .restricted-badge svg { flex-shrink: 0; }
-.pill.restricted::after, .list-card.restricted::after {
-  content: ""; width: 6px; height: 6px;
-  border-radius: 50%; background: var(--danger);
-  position: absolute; top: 4px; right: 4px;
-}
-.pill { position: relative; }
-.list-card { position: relative; }
 
 /* ---------- CART ---------- */
 .cart {
