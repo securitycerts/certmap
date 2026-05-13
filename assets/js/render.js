@@ -56,6 +56,11 @@ export function sortCerts(arr, key) {
   return [...arr].sort(SORTERS[key] || SORTERS.name);
 }
 
+function sortMatrixCell(arr, key) {
+  const inner = SORTERS[key] || SORTERS.name;
+  return [...arr].sort((a, b) => (b.weight ?? 0) - (a.weight ?? 0) || inner(a, b));
+}
+
 export function renderMatrix(root, certs, meta, state) {
   root.replaceChildren();
   const matrix = document.createElement("div");
@@ -90,7 +95,7 @@ export function renderMatrix(root, certs, meta, state) {
     for (const domain of meta.domains) {
       const cell = document.createElement("div");
       cell.className = "mx-cell";
-      const arr = sortCerts(idx.get(domain + "|" + level) || [], state.sort);
+      const arr = sortMatrixCell(idx.get(domain + "|" + level) || [], state.sort);
       for (const c of arr) cell.appendChild(pill(c, state));
       matrix.appendChild(cell);
     }

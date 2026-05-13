@@ -19,6 +19,7 @@ One row per certification. All columns are required (use an empty value when unk
 | `url` | URL | yes | Official certification page. Must start with `http(s)://`. |
 | `description` | string | yes | One or two sentences. Factual; no marketing copy. |
 | `tags` | list | no | Semicolon-separated free-form tags (`red-team;web;hands-on`). |
+| `weight` | integer | no | Intra-cell sort weight for the matrix view. Higher values appear at the top of their (domain, level) cell; default `0` (empty). Use sparingly to highlight a marquee or capstone cert above its siblings. Does not affect the list view or the user-selected sort options. |
 
 ## Allowed `domain` values
 

@@ -52,6 +52,7 @@ function rowsToCerts(rows) {
     url: r[idx.url]?.trim(),
     description: r[idx.description]?.trim() || "",
     tags: toList(r[idx.tags]),
+    weight: toNum(r[idx.weight]) ?? 0,
   }));
 }
 

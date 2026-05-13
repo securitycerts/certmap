@@ -81,6 +81,13 @@ function main() {
     if (dod !== "true" && dod !== "false") {
       errors.push(`L${line} [${id}]: dod_8140 must be "true" or "false", got "${dod}"`);
     }
+
+    if (idx.weight !== undefined) {
+      const w = r[idx.weight]?.trim();
+      if (w && !/^-?\d+$/.test(w)) {
+        errors.push(`L${line} [${id}]: weight must be an integer (or empty), got "${w}"`);
+      }
+    }
   });
 
   rows.forEach((r, n) => {
