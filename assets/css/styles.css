@@ -557,6 +557,8 @@ input, select { font: inherit; }
   .kbd, .seg, .sort-wrap { display: none; }
   .cart-pill { padding: 0 10px; font-size: 11px; gap: 5px; }
   .cart-pill svg { display: none; }
+  .content-stack { width: 100%; min-width: 0; }
+  .flow-scroller { -webkit-overflow-scrolling: touch; }
   .matrix { display: none; }
   .sidebar {
     position: fixed; top: var(--top-h); left: 0; bottom: 0;
