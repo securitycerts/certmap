@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-// Validates data/certs.csv. Single source of truth — no JSON is generated;
-// the browser parses the CSV directly at runtime.
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";

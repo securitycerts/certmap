@@ -16,7 +16,6 @@ function safeLoadCart() {
     if (!raw) return [];
     const v = JSON.parse(raw);
     if (!Array.isArray(v)) return [];
-    // only allow simple slug-like strings; cap to a sane size
     return v.filter(x => typeof x === "string" && /^[a-z0-9][a-z0-9-]{0,63}$/.test(x)).slice(0, 200);
   } catch { return []; }
 }

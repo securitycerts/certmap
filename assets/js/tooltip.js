@@ -1,5 +1,3 @@
-// Delayed hover tooltip for cert nodes. Singleton attached to <body>.
-// All cert content is escaped via esc() before being inserted as HTML.
 
 const DELAY = 450;
 const HIDE_DELAY = 80;

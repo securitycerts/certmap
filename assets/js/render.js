@@ -1,8 +1,7 @@
 const LEVEL_LABEL = { beginner: "Beginner", intermediate: "Intermediate", advanced: "Advanced", expert: "Expert" };
 const LEVELS = ["beginner", "intermediate", "advanced", "expert"];
-const LEVELS_DISPLAY = ["expert", "advanced", "intermediate", "beginner"]; // matrix rows: expert on top
+const LEVELS_DISPLAY = ["expert", "advanced", "intermediate", "beginner"];
 const LEVEL_ORDER = Object.fromEntries(LEVELS.map((l, i) => [l, i]));
-// rough study-hour estimates by level (used by the path planner)
 const LEVEL_HOURS = { beginner: 60, intermediate: 140, advanced: 260, expert: 420 };
 export { LEVEL_HOURS, LEVEL_LABEL, LEVEL_ORDER, LEVELS };
 
@@ -33,7 +32,7 @@ function makeLogo(c, cls, size) {
   const wrap = document.createElement("span");
   wrap.className = cls;
   const initial = (c.vendor || "?")[0].toUpperCase();
-  wrap.textContent = initial; // fallback shown until img loads or if it fails
+  wrap.textContent = initial;
   const url = vendorLogo(c, size);
   if (!url) return wrap;
   const img = new Image();
@@ -57,9 +56,6 @@ export function sortCerts(arr, key) {
   return [...arr].sort(SORTERS[key] || SORTERS.name);
 }
 
-/* ============================================================
-   MATRIX VIEW — fixed 16-col grid, compact pills
-   ============================================================ */
 export function renderMatrix(root, certs, meta, state) {
   root.replaceChildren();
   const matrix = document.createElement("div");
@@ -79,7 +75,6 @@ export function renderMatrix(root, certs, meta, state) {
     matrix.appendChild(h);
   }
 
-  // by-domain-and-level index for O(1) lookups
   const idx = new Map();
   for (const c of certs) {
     const k = c.domain + "|" + c.level;
@@ -103,9 +98,6 @@ export function renderMatrix(root, certs, meta, state) {
   root.appendChild(matrix);
 }
 
-/* ============================================================
-   PATH PLANNER — horizontal flow chart of selected certs
-   ============================================================ */
 export function renderFlow(root, selected, byId) {
   root.replaceChildren();
   if (selected.length < 2) {
@@ -114,7 +106,6 @@ export function renderFlow(root, selected, byId) {
   }
   root.classList.remove("hidden");
 
-  // topological order: prereqs first, then by level, then alpha
   const inSet = new Set(selected.map(c => c.id));
   const placed = new Set();
   const ordered = [];
@@ -126,12 +117,11 @@ export function renderFlow(root, selected, byId) {
     if (!ready.length) break;
     for (const c of ready) { ordered.push(c); placed.add(c.id); }
   }
-  // any leftover (cyclic dependency in user data) tack on at end
   for (const c of selected) if (!placed.has(c.id)) ordered.push(c);
 
   const totalHours = ordered.reduce((a, c) => a + LEVEL_HOURS[c.level], 0);
   const totalCost = ordered.reduce((a, c) => a + (c.price_usd || 0), 0);
-  const totalMonths = Math.round(totalHours / 10 / 4.3 * 10) / 10; // ~10h/week
+  const totalMonths = Math.round(totalHours / 10 / 4.3 * 10) / 10;
 
   const open = localStorage.getItem("certs-map.flow-open") !== "0";
   root.classList.toggle("collapsed", !open);
@@ -207,9 +197,6 @@ function pill(c, state) {
   return el;
 }
 
-/* ============================================================
-   LIST VIEW — card grid, grouped by domain or flat
-   ============================================================ */
 export function renderList(root, certs, meta, state, { grouped = true, heading = null } = {}) {
   root.replaceChildren();
   if (heading) {
@@ -268,9 +255,6 @@ function listCard(c, state) {
   return el;
 }
 
-/* ============================================================
-   DRAWER
-   ============================================================ */
 export function renderDrawer(root, c, byId) {
   const prereqHtml = c.prerequisites.length
     ? c.prerequisites.map(p => `<span class="prereq-chip" data-id="${esc(p)}">${esc(byId.get(p)?.acronym || p)}</span>`).join("")
@@ -303,14 +287,10 @@ export function renderDrawer(root, c, byId) {
     el.addEventListener("click", () => { location.hash = `#/cert/${el.dataset.id}`; });
   });
 }
-// helper bound externally
 let _stateRef = null;
 export function bindState(s) { _stateRef = s; }
 function state_has_in_cart(c) { return _stateRef?.cart.has(c.id) || false; }
 
-/* ============================================================
-   CART
-   ============================================================ */
 export function renderCart(listEl, totalEl, subEl, countEl, certs, state) {
   const items = certs.filter(c => state.cart.has(c.id));
   const sum = items.reduce((a, c) => a + (c.price_usd || 0), 0);
@@ -338,9 +318,6 @@ export function renderCart(listEl, totalEl, subEl, countEl, certs, state) {
   countEl.textContent = String(items.length);
 }
 
-/* ============================================================
-   FILTERS
-   ============================================================ */
 export function buildFilters({ levelEl, domainEl, vendorEl }, meta, state, onChange) {
   levelEl.replaceChildren();
   LEVELS.forEach(l => {

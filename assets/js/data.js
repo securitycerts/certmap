@@ -1,5 +1,3 @@
-// Single source of truth: data/certs.csv. Parsed in the browser at load time.
-// Meta (vendors, domains, levels, price ranges) is computed here, not committed.
 
 const DOMAINS = [
   "Communication & Network Security", "IAM", "Security Architecture & Engineering",
