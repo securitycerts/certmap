@@ -10,7 +10,7 @@ The site is a single-page application with no build step and no runtime dependen
 
 ## What it does
 
-- A 17-domain by 4-level matrix view of every certification in the dataset.
+- A 16-domain by 4-level matrix view of every certification in the dataset.
 - A list view with full names, vendors and tags, grouped by domain.
 - Filters for level, domain, vendor, price range, free-only, DoD 8140 and the absence of prerequisites.
 - A delayed hover tooltip showing price, exam length, renewal cycle, prerequisites and a brief description.

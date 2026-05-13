@@ -9,7 +9,7 @@ labels: data
 
 **Acronym:**
 
-**Proposed domain** (must be one of the seventeen domains listed in `data/schema.md`):
+**Proposed domain** (must be one of the sixteen domains listed in `data/schema.md`):
 
 **Proposed level** (`beginner` / `intermediate` / `advanced` / `expert`):
 

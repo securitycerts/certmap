@@ -30,7 +30,6 @@ IAM
 Security Architecture & Engineering
 Asset Security
 Security & Risk Management
-Security Assessment & Testing
 Software Security
 Security Operations
 Cyber Threat Intelligence

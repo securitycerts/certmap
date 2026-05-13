@@ -1,7 +1,7 @@
 
 const DOMAINS = [
   "Communication & Network Security", "IAM", "Security Architecture & Engineering",
-  "Asset Security", "Security & Risk Management", "Security Assessment & Testing",
+  "Asset Security", "Security & Risk Management",
   "Software Security", "Security Operations", "Cyber Threat Intelligence",
   "Cloud/SysOps", "*nix", "ICS/IoT", "GRC", "Forensics", "Incident Handling",
   "Penetration Testing", "Exploitation"
