@@ -54,6 +54,9 @@ function rowsToCerts(rows) {
     tags: toList(r[idx.tags]),
     weight: toNum(r[idx.weight]) ?? 0,
     restricted_to: r[idx.restricted_to]?.trim() || "",
+    exam_count: toNum(r[idx.exam_count]) ?? 1,
+    renewal_cost: toNum(r[idx.renewal_cost]),
+    hands_on: toBool(r[idx.hands_on]),
   }));
 }
 

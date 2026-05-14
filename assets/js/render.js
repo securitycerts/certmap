@@ -15,18 +15,60 @@ export function fmtPrice(n) {
 
 export function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
 
+const VENDOR_IMAGE = {
+  "comptia": "comptia.webp",
+  "isc2": "isc2.webp",
+  "isaca": "isaca.webp",
+  "offsec": "offsec.webp",
+  "giac": "giac.webp",
+  "sans": "sans.webp",
+  "ec-council": "eccouncil.webp",
+  "zero-point security": "zero_point.webp",
+  "tcm security": "tcm_security.webp",
+  "hack the box": "hackthebox.webp",
+  "ine": "ine.webp",
+  "aws": "aws.webp",
+  "microsoft": "microsoft.svg",
+  "google": "google.webp",
+  "cisco": "cisco.webp",
+  "isa": "isa.webp",
+  "opentext": "opentext.webp",
+  "cellebrite": "cellebrite.webp",
+  "magnet forensics": "magnetforensics.webp",
+  "okta": "okta.webp",
+  "sailpoint": "sailpoint.svg",
+  "iapp": "iapp.webp",
+  "lpi": "lpi.webp",
+  "red hat": "redhat.webp",
+  "splunk": "splunk.webp",
+  "trm labs": "trm_labs.webp",
+  "mcsi": "mosse.webp",
+  "csa": "cloudsecurityalliance.webp",
+  "mcafee institute": "mcafee.webp",
+  "arcx": "arcx.webp",
+  "crest": "crest.webp",
+  "vmware": "vmware.webp",
+  "fortinet": "fortinet.webp",
+  "check point": "checkpoint.webp",
+  "juniper": "juniper.webp",
+  "cncf": "kubernetes.svg",
+};
+
 const LOGO_CACHE = new Map();
 function vendorHost(c) {
   try { return new URL(c.url).hostname; } catch { return null; }
 }
 function vendorLogo(c, size = 64) {
+  const key = (c.vendor || "").trim().toLowerCase();
+  const localFile = VENDOR_IMAGE[key];
+  if (localFile) return `images/${localFile}`;
   const host = vendorHost(c);
   if (!host) return null;
-  const key = host + "@" + size;
-  if (!LOGO_CACHE.has(key)) {
-    LOGO_CACHE.set(key, `https://www.google.com/s2/favicons?sz=${size}&domain=${encodeURIComponent(host)}`);
+  const cacheKey = "favicon@" + host + "@" + size;
+  if (!LOGO_CACHE.has(cacheKey)) {
+    LOGO_CACHE.set(cacheKey, `https://www.google.com/s2/favicons?sz=${size}&domain=${encodeURIComponent(host)}`);
   }
-  return LOGO_CACHE.get(key);
+  return LOGO_CACHE.get(cacheKey);
 }
 function makeLogo(c, cls, size) {
   const wrap = document.createElement("span");
@@ -280,8 +322,10 @@ export function renderDrawer(root, c, byId) {
       <dt>Domain</dt><dd>${esc(c.domain)}</dd>
       <dt>Level</dt><dd>${LEVEL_LABEL[c.level]}</dd>
       <dt>Price (USD)</dt><dd>${fmtPrice(c.price_usd)}${c.currency_note ? ` <span class="muted">· ${esc(c.currency_note)}</span>` : ""}</dd>
+      ${c.exam_count > 1 ? `<dt>Exams required</dt><dd>${c.exam_count}</dd>` : ""}
       <dt>Exam length</dt><dd>${c.duration_min ? c.duration_min + " min" : "—"}</dd>
-      <dt>Renewal</dt><dd>${c.validity_years ? "Every " + c.validity_years + " years" : "Lifetime / none"}</dd>
+      <dt>Hands-on</dt><dd>${c.hands_on ? "Yes" : "No"}</dd>
+      <dt>Renewal</dt><dd>${c.validity_years ? "Every " + c.validity_years + " years" : "Lifetime / none"}${Number.isFinite(c.renewal_cost) ? ` <span class="muted">· $${c.renewal_cost.toLocaleString("en-US")}</span>` : ""}</dd>
       <dt>DoD 8140</dt><dd>${c.dod_8140 ? "Yes" : "No"}</dd>
       <dt>Prerequisites</dt><dd>${prereqHtml}</dd>
     </dl>

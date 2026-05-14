@@ -88,6 +88,27 @@ function main() {
         errors.push(`L${line} [${id}]: weight must be an integer (or empty), got "${w}"`);
       }
     }
+
+    if (idx.exam_count !== undefined) {
+      const v = r[idx.exam_count]?.trim();
+      if (v && !/^\d+$/.test(v)) {
+        errors.push(`L${line} [${id}]: exam_count must be a non-negative integer, got "${v}"`);
+      }
+    }
+
+    if (idx.renewal_cost !== undefined) {
+      const v = r[idx.renewal_cost]?.trim();
+      if (v && !/^-?\d+(\.\d+)?$/.test(v)) {
+        errors.push(`L${line} [${id}]: renewal_cost must be numeric, got "${v}"`);
+      }
+    }
+
+    if (idx.hands_on !== undefined) {
+      const v = r[idx.hands_on]?.trim().toLowerCase();
+      if (v && v !== "true" && v !== "false") {
+        errors.push(`L${line} [${id}]: hands_on must be "true" or "false", got "${v}"`);
+      }
+    }
   });
 
   rows.forEach((r, n) => {

@@ -20,7 +20,10 @@ One row per certification. All columns are required (use an empty value when unk
 | `description` | string | yes | One or two sentences. Factual; no marketing copy. |
 | `tags` | list | no | Semicolon-separated free-form tags (`red-team;web;hands-on`). |
 | `weight` | integer | no | Intra-cell sort weight for the matrix view. Higher values appear at the top of their (domain, level) cell; default `0` (empty). Use sparingly to highlight a marquee or capstone cert above its siblings. Does not affect the list view or the user-selected sort options. |
-| `restricted_to` | string | no | Short free-form note describing an audience restriction enforced by the vendor (e.g. `Law enforcement only`, `Government employees only`). Rendered as a prominent badge in the detail drawer and as a red dot indicator on the matrix pill and list card. Leave empty for generally-available certifications. |
+| `restricted_to` | string | no | Short free-form note describing an audience restriction enforced by the vendor (e.g. `Law enforcement only`, `Government employees only`). Rendered as a prominent badge in the detail drawer. Leave empty for generally-available certifications. |
+| `exam_count` | integer | no | Number of separate exams required to earn the credential. Defaults to `1`. Use `2` for CompTIA A+, LPIC-1 and LPIC-2 and similar split-paper certifications. |
+| `renewal_cost` | number | no | Cost of renewing the credential once earned, in USD. Empty means the renewal is CPE-based or free; `0` means there is an explicit zero-cost path. |
+| `hands_on` | bool | no | `true` if the exam is performance-based (practical lab) rather than multiple choice. Defaults to `false`. |
 
 ## Allowed `domain` values
 
