@@ -24,6 +24,7 @@ One row per certification. All columns are required (use an empty value when unk
 | `exam_count` | integer | no | Number of separate exams required to earn the credential. Defaults to `1`. Use `2` for CompTIA A+, LPIC-1 and LPIC-2 and similar split-paper certifications. |
 | `renewal_cost` | number | no | Cost of renewing the credential once earned, in USD. Empty means the renewal is CPE-based or free; `0` means there is an explicit zero-cost path. |
 | `hands_on` | bool | no | `true` if the exam is performance-based (practical lab) rather than multiple choice. Defaults to `false`. |
+| `price_verified_at` | date (`YYYY-MM-DD`) | no | Date the `price_usd` value was last confirmed against the vendor's official page. Surfaced in the detail drawer as "Verified N days ago" so readers can judge how stale a figure may be. Empty if never verified. |
 
 ## Allowed `domain` values
 

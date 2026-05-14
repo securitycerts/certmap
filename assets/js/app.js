@@ -28,6 +28,49 @@ function safeLS(key, allowed, fallback) {
   return allowed.has(v) ? v : fallback;
 }
 
+const ROLE_PATHS = {
+  "pentester": ["ejpt", "pjpt", "oscp", "pnpt", "osep"],
+  "soc-analyst": ["sec-plus", "cysa-plus", "gcih", "splunk-cda", "osda"],
+  "cloud-security": ["sec-plus", "ccsk", "aws-scs", "az-500", "ccsp"],
+  "grc-manager": ["cisa", "cgrc", "cism", "crisc", "cissp"],
+  "dfir-investigator": ["gcfe", "gcfa", "grem", "gnfa", "encase"],
+  "red-team-operator": ["oscp", "osep", "crto", "osed", "oswe"],
+  "appsec-engineer": ["sec-plus", "csslp", "oswa", "gwapt", "oswe"],
+  "threat-intel-analyst": ["sec-plus", "gosi", "gcti", "ctia", "gdat"],
+};
+
+function serializeFilters() {
+  const p = new URLSearchParams();
+  if (state.filters.levels.size) p.set("level", [...state.filters.levels].join(","));
+  if (state.filters.domains.size) p.set("domain", [...state.filters.domains].join(","));
+  if (state.filters.vendors.size) p.set("vendor", [...state.filters.vendors].join(","));
+  if (state.filters.priceMin != null) p.set("pmin", state.filters.priceMin);
+  if (state.filters.priceMax != null) p.set("pmax", state.filters.priceMax);
+  if (state.filters.freeOnly) p.set("free", "1");
+  if (state.filters.dodOnly) p.set("dod", "1");
+  if (state.filters.noPrereq) p.set("noprereq", "1");
+  if (state.search) p.set("q", state.search);
+  const qs = p.toString();
+  const next = location.pathname + (qs ? "?" + qs : "") + (location.hash || "");
+  if (next !== location.pathname + location.search + location.hash) {
+    history.replaceState(null, "", next);
+  }
+}
+
+function deserializeFilters(meta) {
+  const p = new URLSearchParams(location.search);
+  const inSet = (vals, allowed) => new Set(vals.filter(v => allowed.includes(v)));
+  if (p.has("level")) state.filters.levels = inSet(p.get("level").split(","), meta.levels);
+  if (p.has("domain")) state.filters.domains = inSet(p.get("domain").split(","), meta.domains);
+  if (p.has("vendor")) state.filters.vendors = inSet(p.get("vendor").split(","), meta.vendors);
+  if (p.has("pmin")) { const n = Number(p.get("pmin")); if (Number.isFinite(n) && n >= 0) state.filters.priceMin = n; }
+  if (p.has("pmax")) { const n = Number(p.get("pmax")); if (Number.isFinite(n) && n >= 0) state.filters.priceMax = n; }
+  state.filters.freeOnly = p.get("free") === "1";
+  state.filters.dodOnly = p.get("dod") === "1";
+  state.filters.noPrereq = p.get("noprereq") === "1";
+  if (p.has("q")) state.search = String(p.get("q")).slice(0, 200);
+}
+
 const state = {
   search: "",
   sort: safeLS(SORT_KEY, ALLOWED_SORTS, "name"),
@@ -95,6 +138,7 @@ function rerender() {
   const hash = location.hash || "#/";
 
   const dmatch = hash.match(/^#\/domain\/(.+)$/);
+  const vmatch = hash.match(/^#\/vendor\/(.+)$/);
   const cmatch = hash.match(/^#\/cert\/(.+)$/);
 
   if (dmatch) {
@@ -104,6 +148,15 @@ function rerender() {
       renderList(grid, certs, DATA.meta, state, {
         grouped: false,
         heading: `<span><a href="#/" class="muted">← All domains</a> · <strong>${escHTML(domain)}</strong> · ${certs.length} certifications</span>`
+      });
+    } else { renderMatrix(grid, filtered, DATA.meta, state); }
+  } else if (vmatch) {
+    const vendor = DATA.meta.vendors.find(v => slug(v) === vmatch[1]);
+    if (vendor) {
+      const certs = filtered.filter(c => c.vendor === vendor);
+      renderList(grid, certs, DATA.meta, state, {
+        grouped: false,
+        heading: `<span><a href="#/" class="muted">← All vendors</a> · <strong>${escHTML(vendor)}</strong> · ${certs.length} certifications</span>`
       });
     } else { renderMatrix(grid, filtered, DATA.meta, state); }
   } else if (state.search.trim()) {
@@ -137,6 +190,7 @@ function rerender() {
   renderFlow($("#flow"), selected, DATA.byId);
 
   document.querySelectorAll(".seg-btn").forEach(b => b.classList.toggle("active", b.dataset.view === state.view));
+  serializeFilters();
 }
 
 function exportMd() {
@@ -168,10 +222,29 @@ async function init() {
   for (const id of [...state.cart]) if (!DATA.byId.has(id)) state.cart.delete(id);
   initTooltip(DATA);
 
+  deserializeFilters(DATA.meta);
+
   buildFilters(
     { levelEl: $("#filter-level"), domainEl: $("#filter-domain"), vendorEl: $("#filter-vendor") },
     DATA.meta, state, rerender
   );
+
+  if (state.search) $("#search").value = state.search;
+  if (state.filters.priceMin != null) $("#price-min").value = state.filters.priceMin;
+  if (state.filters.priceMax != null) $("#price-max").value = state.filters.priceMax;
+  $("#free-only").checked = state.filters.freeOnly;
+  $("#dod-only").checked = state.filters.dodOnly;
+  $("#no-prereq").checked = state.filters.noPrereq;
+
+  const presetEl = $("#preset");
+  if (presetEl) presetEl.addEventListener("change", e => {
+    const ids = ROLE_PATHS[e.target.value];
+    if (!ids) return;
+    for (const cid of ids) if (DATA.byId.has(cid)) state.cart.add(cid);
+    localStorage.setItem(CART_KEY, JSON.stringify([...state.cart]));
+    e.target.value = "";
+    rerender();
+  });
 
   const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
   const onSearch = debounce(v => { state.search = v; rerender(); }, 80);

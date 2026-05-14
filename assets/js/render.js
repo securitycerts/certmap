@@ -13,6 +13,19 @@ export function fmtPrice(n) {
   return "$" + n.toLocaleString("en-US");
 }
 
+export function fmtAgo(isoDate) {
+  if (!isoDate || !/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) return "";
+  const then = Date.parse(isoDate + "T00:00:00Z");
+  if (!Number.isFinite(then)) return "";
+  const days = Math.floor((Date.now() - then) / 86400000);
+  if (days < 0) return "today";
+  if (days === 0) return "today";
+  if (days === 1) return "yesterday";
+  if (days < 30) return days + " days ago";
+  if (days < 365) return Math.round(days / 30) + " months ago";
+  return Math.round(days / 365) + " years ago";
+}
+
 export function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
 
 const VENDOR_IMAGE = {
@@ -52,6 +65,7 @@ const VENDOR_IMAGE = {
   "check point": "checkpoint.webp",
   "juniper": "juniper.webp",
   "cncf": "kubernetes.svg",
+  "wireshark": "wireshark.webp",
 };
 
 const LOGO_CACHE = new Map();
@@ -315,13 +329,13 @@ export function renderDrawer(root, c, byId) {
   root.innerHTML = `
     <div class="drawer-head"></div>
     <h2>${esc(c.acronym)}</h2>
-    <div class="sub">${esc(c.name)} · ${esc(c.vendor)}</div>
+    <div class="sub">${esc(c.name)} · <a href="#/vendor/${slug(c.vendor)}" class="sub-vendor">${esc(c.vendor)}</a></div>
     ${restrictedHtml}
     <p class="desc">${esc(c.description)}</p>
     <dl>
-      <dt>Domain</dt><dd>${esc(c.domain)}</dd>
+      <dt>Domain</dt><dd><a href="#/domain/${slug(c.domain)}" class="muted">${esc(c.domain)}</a></dd>
       <dt>Level</dt><dd>${LEVEL_LABEL[c.level]}</dd>
-      <dt>Price (USD)</dt><dd>${fmtPrice(c.price_usd)}${c.currency_note ? ` <span class="muted">· ${esc(c.currency_note)}</span>` : ""}</dd>
+      <dt>Price (USD)</dt><dd>${fmtPrice(c.price_usd)}${c.currency_note ? ` <span class="muted">· ${esc(c.currency_note)}</span>` : ""}${c.price_verified_at ? ` <span class="verified-badge" title="Last verified on ${esc(c.price_verified_at)}">verified ${fmtAgo(c.price_verified_at)}</span>` : ""}</dd>
       ${c.exam_count > 1 ? `<dt>Exams required</dt><dd>${c.exam_count}</dd>` : ""}
       <dt>Exam length</dt><dd>${c.duration_min ? c.duration_min + " min" : "—"}</dd>
       <dt>Hands-on</dt><dd>${c.hands_on ? "Yes" : "No"}</dd>

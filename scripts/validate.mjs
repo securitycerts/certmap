@@ -109,6 +109,13 @@ function main() {
         errors.push(`L${line} [${id}]: hands_on must be "true" or "false", got "${v}"`);
       }
     }
+
+    if (idx.price_verified_at !== undefined) {
+      const v = r[idx.price_verified_at]?.trim();
+      if (v && !/^\d{4}-\d{2}-\d{2}$/.test(v)) {
+        errors.push(`L${line} [${id}]: price_verified_at must be ISO date YYYY-MM-DD or empty, got "${v}"`);
+      }
+    }
   });
 
   rows.forEach((r, n) => {

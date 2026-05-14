@@ -57,6 +57,7 @@ function rowsToCerts(rows) {
     exam_count: toNum(r[idx.exam_count]) ?? 1,
     renewal_cost: toNum(r[idx.renewal_cost]),
     hands_on: toBool(r[idx.hands_on]),
+    price_verified_at: r[idx.price_verified_at]?.trim() || "",
   }));
 }
 

@@ -158,6 +158,22 @@ input, select { font: inherit; }
   border: 1px solid var(--border); border-radius: var(--radius-sm);
   padding: 5px 8px; font-size: 12px; outline: 0;
 }
+.preset-select {
+  width: 100%;
+  background: var(--panel); color: var(--text);
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 6px 8px; font-size: 12px; outline: 0; cursor: pointer;
+}
+.preset-select:hover { border-color: var(--border-strong); }
+.preset-select:focus { border-color: var(--accent); }
+.verified-badge {
+  display: inline-block; margin-left: 4px;
+  font-size: 10px; color: var(--muted);
+  padding: 1px 6px; border: 1px solid var(--border); border-radius: 999px;
+  white-space: nowrap;
+}
+.sub-vendor { color: var(--muted); }
+.sub-vendor:hover { color: var(--accent); }
 .filter-search:focus { border-color: var(--accent); }
 .filter-search::placeholder { color: var(--muted); }
 .filter-search::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
