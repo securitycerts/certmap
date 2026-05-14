@@ -78,11 +78,11 @@ function makeLogo(c, cls, size) {
   const url = vendorLogo(c, size);
   if (!url) return wrap;
   const img = new Image();
-  img.loading = "lazy"; img.decoding = "async"; img.alt = "";
+  img.decoding = "async"; img.alt = "";
   img.referrerPolicy = "no-referrer";
-  img.src = url;
   img.addEventListener("load", () => { wrap.textContent = ""; wrap.appendChild(img); });
-  img.addEventListener("error", () => { /* keep monogram */ });
+  img.addEventListener("error", () => { });
+  img.src = url;
   return wrap;
 }
 
