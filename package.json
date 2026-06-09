@@ -1,6 +1,6 @@
 {
   "name": "security-certification-roadmap",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A static, open-source roadmap of cybersecurity certifications.",
   "private": true,
   "type": "module",
@@ -10,6 +10,11 @@
   },
   "scripts": {
     "validate": "node scripts/validate.mjs",
+    "security": "python3 scripts/security_check.py",
+    "links": "node scripts/check-links.mjs",
     "dev": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0"
   }
 }

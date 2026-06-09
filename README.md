@@ -12,7 +12,9 @@ The site is a single-page application with no build step and no runtime dependen
 
 - A 16-domain by 4-level matrix view of every certification in the dataset.
 - A list view with full names, vendors and tags, grouped by domain.
-- Filters for level, domain, vendor, price range, free-only, DoD 8140 and the absence of prerequisites.
+- Filters for level, domain, vendor, price range, free-only, DoD 8140, verified-price-only and the absence of prerequisites, summarised as a row of removable chips above the results.
+- A data-freshness indicator and a per-cert "verified N ago" badge, driven by the date each price was last confirmed against the vendor.
+- A shareable link that encodes the current filters and selection, so a planned path can be sent or bookmarked.
 - A delayed hover tooltip showing price, exam length, renewal cycle, prerequisites and a brief description.
 - A detail drawer per certification, deep-linkable via `#/cert/<id>`.
 - A path planner that orders selected certifications by prerequisite and difficulty, with a running total of cost, study hours and approximate months at ten study-hours per week.
@@ -29,17 +31,23 @@ The site is a single-page application with no build step and no runtime dependen
 │   └── js/
 │       ├── app.js               State, routing, filter pipeline, event wiring.
 │       ├── render.js            Matrix, list, drawer, cart and flow renderers.
-│       ├── data.js              JSON loader.
+│       ├── format.js            Price/date formatters and the level vocabulary.
+│       ├── logo.js              Vendor logos with a per-session load cache.
+│       ├── dom.js               Small element builders (no innerHTML).
+│       ├── data.js              CSV loader.
 │       └── tooltip.js           Delayed hover tooltip.
 ├── data/
 │   ├── certs.csv                Source of truth. The only file you edit to add or change a cert.
 │   └── schema.md                Column-by-column schema documentation.
 ├── scripts/
-│   └── validate.mjs             Node script (no deps). Validates the CSV.
+│   ├── validate.mjs             Node script (no deps). Validates the CSV.
+│   ├── security_check.py        Dependency-free security checks for contributions.
+│   └── check-links.mjs          Dev-only Playwright link checker (run `npm i` first).
 ├── .github/
 │   ├── workflows/
 │   │   ├── pages.yml            Deploy to GitHub Pages on push to main.
-│   │   └── validate.yml         PR check for malformed dataset entries.
+│   │   ├── validate.yml         PR check for malformed dataset entries.
+│   │   └── security.yml         PR security checks (data, secrets, CSP) plus bandit.
 │   ├── ISSUE_TEMPLATE/          Cert-update and bug-report templates.
 │   └── PULL_REQUEST_TEMPLATE.md
 ├── index.html
@@ -65,9 +73,18 @@ If you change `data/certs.csv`, validate it:
 
 ```bash
 npm run validate   # node scripts/validate.mjs
+npm run security   # python3 scripts/security_check.py — data, secret and CSP checks
 ```
 
 The dataset has a single source of truth: `data/certs.csv`. The browser parses the CSV directly at load time; there is no generated JSON to keep in sync. Node 18 or newer is only needed for the validator; the browser side has no Node dependency.
+
+The link checker is a dev-only tool and not part of the published site. It drives Playwright over every official URL in the dataset to catch dead links and wrong redirects:
+
+```bash
+npm install        # one-time, pulls Playwright (a devDependency)
+npx playwright install chromium
+npm run links      # node scripts/check-links.mjs  (append an id substring to scope it)
+```
 
 ## Deploying to GitHub Pages
 
