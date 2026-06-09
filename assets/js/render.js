@@ -1,104 +1,16 @@
-const LEVEL_LABEL = { beginner: "Beginner", intermediate: "Intermediate", advanced: "Advanced", expert: "Expert" };
-const LEVELS = ["beginner", "intermediate", "advanced", "expert"];
-const LEVELS_DISPLAY = ["expert", "advanced", "intermediate", "beginner"];
-const LEVEL_ORDER = Object.fromEntries(LEVELS.map((l, i) => [l, i]));
-const LEVEL_HOURS = { beginner: 60, intermediate: 140, advanced: 260, expert: 420 };
-export { LEVEL_HOURS, LEVEL_LABEL, LEVEL_ORDER, LEVELS };
+import {
+  LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
+  fmtPrice, fmtAgo, slug,
+} from "./format.js";
+import { el, svg } from "./dom.js";
+import { makeLogo } from "./logo.js";
 
-const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+export { slug, fmtPrice };
 
-export function fmtPrice(n) {
-  if (n == null) return "—";
-  if (n === 0) return "Free";
-  return "$" + n.toLocaleString("en-US");
-}
-
-export function fmtAgo(isoDate) {
-  if (!isoDate || !/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) return "";
-  const then = Date.parse(isoDate + "T00:00:00Z");
-  if (!Number.isFinite(then)) return "";
-  const days = Math.floor((Date.now() - then) / 86400000);
-  if (days < 0) return "today";
-  if (days === 0) return "today";
-  if (days === 1) return "yesterday";
-  if (days < 30) return days + " days ago";
-  if (days < 365) return Math.round(days / 30) + " months ago";
-  return Math.round(days / 365) + " years ago";
-}
-
-export function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
-
-const VENDOR_IMAGE = {
-  "comptia": "comptia.webp",
-  "isc2": "isc2.webp",
-  "isaca": "isaca.webp",
-  "offsec": "offsec.webp",
-  "giac": "giac.webp",
-  "sans": "sans.webp",
-  "ec-council": "eccouncil.webp",
-  "zero-point security": "zero_point.webp",
-  "tcm security": "tcm_security.webp",
-  "hack the box": "hackthebox.webp",
-  "ine": "ine.webp",
-  "aws": "aws.webp",
-  "microsoft": "microsoft.svg",
-  "google": "google.webp",
-  "cisco": "cisco.webp",
-  "isa": "isa.webp",
-  "opentext": "opentext.webp",
-  "cellebrite": "cellebrite.webp",
-  "magnet forensics": "magnetforensics.webp",
-  "okta": "okta.webp",
-  "sailpoint": "sailpoint.svg",
-  "iapp": "iapp.webp",
-  "lpi": "lpi.webp",
-  "red hat": "redhat.webp",
-  "splunk": "splunk.webp",
-  "trm labs": "trm_labs.webp",
-  "mcsi": "mosse.webp",
-  "csa": "cloudsecurityalliance.webp",
-  "mcafee institute": "mcafee.webp",
-  "arcx": "arcx.webp",
-  "crest": "crest.webp",
-  "vmware": "vmware.webp",
-  "fortinet": "fortinet.webp",
-  "check point": "checkpoint.webp",
-  "juniper": "juniper.webp",
-  "cncf": "kubernetes.svg",
-  "wireshark": "wireshark.webp",
-};
-
-const LOGO_CACHE = new Map();
-function vendorHost(c) {
-  try { return new URL(c.url).hostname; } catch { return null; }
-}
-function vendorLogo(c, size = 64) {
-  const key = (c.vendor || "").trim().toLowerCase();
-  const localFile = VENDOR_IMAGE[key];
-  if (localFile) return `images/${localFile}`;
-  const host = vendorHost(c);
-  if (!host) return null;
-  const cacheKey = "favicon@" + host + "@" + size;
-  if (!LOGO_CACHE.has(cacheKey)) {
-    LOGO_CACHE.set(cacheKey, `https://www.google.com/s2/favicons?sz=${size}&domain=${encodeURIComponent(host)}`);
-  }
-  return LOGO_CACHE.get(cacheKey);
-}
-function makeLogo(c, cls, size) {
-  const wrap = document.createElement("span");
-  wrap.className = cls;
-  const initial = (c.vendor || "?")[0].toUpperCase();
-  wrap.textContent = initial;
-  const url = vendorLogo(c, size);
-  if (!url) return wrap;
-  const img = new Image();
-  img.decoding = "async"; img.alt = "";
-  img.referrerPolicy = "no-referrer";
-  img.addEventListener("load", () => { wrap.textContent = ""; wrap.appendChild(img); });
-  img.addEventListener("error", () => { });
-  img.src = url;
-  return wrap;
-}
+// Cards and pills stay "dumb": they carry their identity in data-* attributes and
+// have no listeners of their own. Clicks are handled by delegated listeners in
+// app.js, so we never attach (and later garbage-collect) a listener per cert on
+// every re-render.
 
 const SORTERS = {
   name: (a, b) => a.acronym.localeCompare(b.acronym),
@@ -118,22 +30,17 @@ function sortMatrixCell(arr, key) {
 }
 
 export function renderMatrix(root, certs, meta, state) {
-  root.replaceChildren();
-  const matrix = document.createElement("div");
-  matrix.className = "matrix";
+  const matrix = el("div", { class: "matrix" });
   matrix.style.setProperty("--ncols", String(meta.domains.length));
-
-  const corner = document.createElement("div");
-  corner.className = "mx-corner";
-  matrix.appendChild(corner);
+  matrix.appendChild(el("div", { class: "mx-corner" }));
 
   for (const domain of meta.domains) {
-    const h = document.createElement("div");
-    h.className = "mx-colhead";
-    h.textContent = domain;
-    h.title = `Open ${domain}`;
-    h.addEventListener("click", () => { location.hash = `#/domain/${slug(domain)}`; });
-    matrix.appendChild(h);
+    matrix.appendChild(el("div", {
+      class: "mx-colhead",
+      title: `Open ${domain}`,
+      "data-nav-domain": slug(domain),
+      text: domain,
+    }));
   }
 
   const idx = new Map();
@@ -144,29 +51,77 @@ export function renderMatrix(root, certs, meta, state) {
   }
 
   for (const level of LEVELS_DISPLAY) {
-    const rh = document.createElement("div");
-    rh.className = `mx-rowhead lvl-${level}`;
-    rh.textContent = LEVEL_LABEL[level];
-    matrix.appendChild(rh);
+    matrix.appendChild(el("div", { class: `mx-rowhead lvl-${level}`, text: LEVEL_LABEL[level] }));
     for (const domain of meta.domains) {
-      const cell = document.createElement("div");
-      cell.className = "mx-cell";
+      const cell = el("div", { class: "mx-cell" });
       const arr = sortMatrixCell(idx.get(domain + "|" + level) || [], state.sort);
       for (const c of arr) cell.appendChild(pill(c, state));
       matrix.appendChild(cell);
     }
   }
-  root.appendChild(matrix);
+  root.replaceChildren(matrix);
 }
 
 export function renderFlow(root, selected, byId) {
-  root.replaceChildren();
   if (selected.length < 2) {
+    root.replaceChildren();
     root.classList.add("hidden");
     return;
   }
   root.classList.remove("hidden");
 
+  const ordered = orderByPrerequisite(selected);
+  const totalHours = ordered.reduce((a, c) => a + LEVEL_HOURS[c.level], 0);
+  const totalCost = ordered.reduce((a, c) => a + (c.price_usd || 0), 0);
+  const totalMonths = Math.round(totalHours / 10 / 4.3 * 10) / 10;
+
+  const open = localStorage.getItem("certs-map.flow-open") !== "0";
+  root.classList.toggle("collapsed", !open);
+
+  const caret = svg(
+    { class: "flow-caret", width: "10", height: "10", viewBox: "0 0 10 10", fill: "none", stroke: "currentColor", "stroke-width": "1.6" },
+    { d: "M2 3.5 L5 6.5 L8 3.5" },
+  );
+  const head = el("button", { class: "flow-head", type: "button" },
+    el("div", { class: "flow-head-left" },
+      caret,
+      el("h3", { text: "Your path" }),
+      el("span", { class: "flow-sub", text: `${ordered.length} certs · ${totalHours}h ≈ ${totalMonths} mo · $${totalCost.toLocaleString("en-US")}` }),
+    ),
+  );
+  head.addEventListener("click", () => {
+    const nowOpen = root.classList.toggle("collapsed");
+    localStorage.setItem("certs-map.flow-open", nowOpen ? "0" : "1");
+  });
+
+  const chain = el("div", { class: "flow-chain" });
+  ordered.forEach((c, i) => {
+    const headRow = el("div", { class: "flow-head-row" }, el("div", { class: "flow-acro", text: c.acronym }));
+    headRow.prepend(makeLogo(c, "flow-logo", 64));
+    chain.appendChild(el("div", { class: `flow-node lvl-${c.level}`, "data-tip-id": c.id, "data-id": c.id },
+      el("div", { class: "flow-step", text: `Step ${i + 1}` }),
+      headRow,
+      el("div", { class: "flow-vendor", text: c.vendor }),
+      el("div", { class: "flow-stats" },
+        el("span", { title: "Estimated study time", text: `⏱ ${LEVEL_HOURS[c.level]}h` }),
+        el("span", { title: "Exam cost", text: fmtPrice(c.price_usd) }),
+      ),
+    ));
+    if (i < ordered.length - 1) {
+      chain.appendChild(el("div", { class: "flow-arrow" }, svg(
+        { viewBox: "0 0 24 12", width: "24", height: "12" },
+        { d: "M0 6 L20 6 M14 1 L20 6 L14 11", fill: "none", stroke: "currentColor", "stroke-width": "1.5", "stroke-linecap": "round", "stroke-linejoin": "round" },
+      )));
+    }
+  });
+
+  root.replaceChildren(head, el("div", { class: "flow-scroller" }, chain));
+}
+
+// Topologically order the selected certs so prerequisites come before the certs
+// that need them, falling back to level then acronym. Anything we can't place
+// (a cycle, or a prerequisite that isn't selected) is appended at the end.
+function orderByPrerequisite(selected) {
   const inSet = new Set(selected.map(c => c.id));
   const placed = new Set();
   const ordered = [];
@@ -179,179 +134,140 @@ export function renderFlow(root, selected, byId) {
     for (const c of ready) { ordered.push(c); placed.add(c.id); }
   }
   for (const c of selected) if (!placed.has(c.id)) ordered.push(c);
-
-  const totalHours = ordered.reduce((a, c) => a + LEVEL_HOURS[c.level], 0);
-  const totalCost = ordered.reduce((a, c) => a + (c.price_usd || 0), 0);
-  const totalMonths = Math.round(totalHours / 10 / 4.3 * 10) / 10;
-
-  const open = localStorage.getItem("certs-map.flow-open") !== "0";
-  root.classList.toggle("collapsed", !open);
-
-  const head = document.createElement("button");
-  head.className = "flow-head";
-  head.type = "button";
-  head.innerHTML = `
-    <div class="flow-head-left">
-      <svg class="flow-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 3.5 L5 6.5 L8 3.5"/></svg>
-      <h3>Your path</h3>
-      <span class="flow-sub">${ordered.length} certs · ${totalHours}h ≈ ${totalMonths} mo · $${totalCost.toLocaleString("en-US")}</span>
-    </div>
-  `;
-  head.addEventListener("click", () => {
-    const nowOpen = root.classList.toggle("collapsed");
-    localStorage.setItem("certs-map.flow-open", nowOpen ? "0" : "1");
-  });
-  root.appendChild(head);
-
-  const scroller = document.createElement("div");
-  scroller.className = "flow-scroller";
-  const chain = document.createElement("div");
-  chain.className = "flow-chain";
-
-  ordered.forEach((c, i) => {
-    const node = document.createElement("div");
-    node.className = `flow-node lvl-${c.level}`;
-    node.dataset.tipId = c.id;
-    node.innerHTML = `
-      <div class="flow-step">Step ${i + 1}</div>
-      <div class="flow-head-row">
-        <div class="flow-acro">${esc(c.acronym)}</div>
-      </div>
-      <div class="flow-vendor">${esc(c.vendor)}</div>
-      <div class="flow-stats">
-        <span title="Estimated study time">⏱ ${LEVEL_HOURS[c.level]}h</span>
-        <span title="Exam cost">${c.price_usd == null ? "—" : c.price_usd === 0 ? "Free" : "$" + c.price_usd.toLocaleString("en-US")}</span>
-      </div>
-    `;
-    node.querySelector(".flow-head-row").prepend(makeLogo(c, "flow-logo", 64));
-    node.addEventListener("click", () => { location.hash = `#/cert/${c.id}`; });
-    chain.appendChild(node);
-    if (i < ordered.length - 1) {
-      const arrow = document.createElement("div");
-      arrow.className = "flow-arrow";
-      arrow.innerHTML = `<svg viewBox="0 0 24 12" width="24" height="12"><path d="M0 6 L20 6 M14 1 L20 6 L14 11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-      chain.appendChild(arrow);
-    }
-  });
-  scroller.appendChild(chain);
-  root.appendChild(scroller);
+  return ordered;
 }
 
 function pill(c, state) {
-  const el = document.createElement("div");
-  el.className = "pill" + (state.cart.has(c.id) ? " selected" : "") + (c.restricted_to ? " restricted" : "");
-  el.dataset.level = c.level;
-  el.dataset.id = c.id;
-  el.dataset.tipId = c.id;
-  const acro = document.createElement("div");
-  acro.className = "pill-acro";
-  acro.textContent = c.acronym;
-  const pick = document.createElement("label");
-  pick.className = "pill-pick";
-  pick.addEventListener("click", e => e.stopPropagation());
-  const cb = document.createElement("input");
-  cb.type = "checkbox"; cb.checked = state.cart.has(c.id);
-  cb.addEventListener("change", () => state.toggleCart(c.id));
-  pick.appendChild(cb);
-  el.append(acro, pick);
-  el.addEventListener("click", () => { location.hash = `#/cert/${c.id}`; });
-  return el;
+  return el("div", {
+    class: "pill" + (state.cart.has(c.id) ? " selected" : "") + (c.restricted_to ? " restricted" : ""),
+    "data-level": c.level,
+    "data-id": c.id,
+    "data-tip-id": c.id,
+  },
+    el("div", { class: "pill-acro", text: c.acronym }),
+    el("label", { class: "pill-pick" }, el("input", { type: "checkbox", checked: state.cart.has(c.id) })),
+  );
 }
 
 export function renderList(root, certs, meta, state, { grouped = true, heading = null } = {}) {
-  root.replaceChildren();
-  if (heading) {
-    const banner = document.createElement("div");
-    banner.className = "search-banner";
-    banner.innerHTML = heading;
-    root.appendChild(banner);
-  }
+  const frag = document.createDocumentFragment();
+  if (heading) frag.appendChild(el("div", { class: "search-banner" }, heading));
   if (!grouped) {
-    const wrap = document.createElement("div");
-    wrap.className = "list";
+    const wrap = el("div", { class: "list" });
     sortCerts(certs, state.sort).forEach(c => wrap.appendChild(listCard(c, state)));
-    root.appendChild(wrap);
+    frag.appendChild(wrap);
+    root.replaceChildren(frag);
     return;
   }
   for (const domain of meta.domains) {
     const items = sortCerts(certs.filter(c => c.domain === domain), state.sort);
     if (!items.length) continue;
-    const head = document.createElement("div");
-    head.className = "section-head";
-    const h = document.createElement("h2"); h.textContent = domain;
-    const cnt = document.createElement("span"); cnt.className = "count"; cnt.textContent = items.length + " certs";
-    head.append(h, cnt);
-    root.appendChild(head);
-    const wrap = document.createElement("div");
-    wrap.className = "list";
+    frag.appendChild(el("div", { class: "section-head" },
+      el("h2", { text: domain }),
+      el("span", { class: "count", text: items.length + " certs" }),
+    ));
+    const wrap = el("div", { class: "list" });
     items.forEach(c => wrap.appendChild(listCard(c, state)));
-    root.appendChild(wrap);
+    frag.appendChild(wrap);
   }
+  root.replaceChildren(frag);
 }
 
 function listCard(c, state) {
-  const el = document.createElement("div");
-  el.className = "list-card" + (state.cart.has(c.id) ? " selected" : "") + (c.restricted_to ? " restricted" : "");
-  el.dataset.level = c.level;
-  el.dataset.id = c.id;
-  el.dataset.tipId = c.id;
-  const acroWrap = document.createElement("div");
-  acroWrap.className = "lc-acro-wrap";
-  const logo = makeLogo(c, "lc-logo", 64);
-  const acro = document.createElement("div"); acro.className = "lc-acro"; acro.textContent = c.acronym;
-  acroWrap.append(logo, acro);
-  const pick = document.createElement("label"); pick.className = "lc-pick";
-  pick.addEventListener("click", e => e.stopPropagation());
-  const cb = document.createElement("input"); cb.type = "checkbox"; cb.checked = state.cart.has(c.id);
-  cb.addEventListener("change", () => state.toggleCart(c.id));
-  pick.appendChild(cb);
-  const name = document.createElement("div"); name.className = "lc-name"; name.textContent = c.name;
-  const meta = document.createElement("div"); meta.className = "lc-meta";
-  const tagV = document.createElement("span"); tagV.className = "lc-tag"; tagV.textContent = c.vendor;
-  const tagL = document.createElement("span"); tagL.className = "lc-tag"; tagL.textContent = LEVEL_LABEL[c.level];
-  const tagP = document.createElement("span"); tagP.className = "lc-price"; tagP.textContent = fmtPrice(c.price_usd);
-  meta.append(tagV, tagL, tagP);
-  el.append(acroWrap, pick, name, meta);
-  el.addEventListener("click", () => { location.hash = `#/cert/${c.id}`; });
-  return el;
+  const acroWrap = el("div", { class: "lc-acro-wrap" },
+    makeLogo(c, "lc-logo", 64),
+    el("div", { class: "lc-acro", text: c.acronym }),
+  );
+  return el("div", {
+    class: "list-card" + (state.cart.has(c.id) ? " selected" : "") + (c.restricted_to ? " restricted" : ""),
+    "data-level": c.level,
+    "data-id": c.id,
+    "data-tip-id": c.id,
+  },
+    acroWrap,
+    el("label", { class: "lc-pick" }, el("input", { type: "checkbox", checked: state.cart.has(c.id) })),
+    el("div", { class: "lc-name", text: c.name }),
+    el("div", { class: "lc-meta" },
+      el("span", { class: "lc-tag", text: c.vendor }),
+      el("span", { class: "lc-tag", text: LEVEL_LABEL[c.level] }),
+      el("span", { class: "lc-price", text: fmtPrice(c.price_usd) }),
+    ),
+  );
 }
 
 export function renderDrawer(root, c, byId) {
-  const prereqHtml = c.prerequisites.length
-    ? c.prerequisites.map(p => `<span class="prereq-chip" data-id="${esc(p)}">${esc(byId.get(p)?.acronym || p)}</span>`).join("")
-    : `<span class="muted">None</span>`;
-  const tagsHtml = c.tags.length
-    ? `<div class="tags">${c.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>`
-    : "";
-  const restrictedHtml = c.restricted_to
-    ? `<div class="restricted-badge" role="note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>${esc(c.restricted_to)}</span></div>`
-    : "";
-  root.innerHTML = `
-    <div class="drawer-head"></div>
-    <h2>${esc(c.acronym)}</h2>
-    <div class="sub">${esc(c.name)} · <a href="#/vendor/${slug(c.vendor)}" class="sub-vendor">${esc(c.vendor)}</a></div>
-    ${restrictedHtml}
-    <p class="desc">${esc(c.description)}</p>
-    <dl>
-      <dt>Domain</dt><dd><a href="#/domain/${slug(c.domain)}" class="muted">${esc(c.domain)}</a></dd>
-      <dt>Level</dt><dd>${LEVEL_LABEL[c.level]}</dd>
-      <dt>Price (USD)</dt><dd>${fmtPrice(c.price_usd)}${c.currency_note ? ` <span class="muted">· ${esc(c.currency_note)}</span>` : ""}${c.price_verified_at ? ` <span class="verified-badge" title="Last verified on ${esc(c.price_verified_at)}">verified ${fmtAgo(c.price_verified_at)}</span>` : ""}</dd>
-      ${c.exam_count > 1 ? `<dt>Exams required</dt><dd>${c.exam_count}</dd>` : ""}
-      <dt>Exam length</dt><dd>${c.duration_min ? c.duration_min + " min" : "—"}</dd>
-      <dt>Hands-on</dt><dd>${c.hands_on ? "Yes" : "No"}</dd>
-      <dt>Renewal</dt><dd>${c.validity_years ? "Every " + c.validity_years + " years" : "Lifetime / none"}${Number.isFinite(c.renewal_cost) ? ` <span class="muted">· $${c.renewal_cost.toLocaleString("en-US")}</span>` : ""}</dd>
-      <dt>DoD 8140</dt><dd>${c.dod_8140 ? "Yes" : "No"}</dd>
-      <dt>Prerequisites</dt><dd>${prereqHtml}</dd>
-    </dl>
-    ${tagsHtml}
-    <div class="actions">
-      <a class="btn-ghost" href="${esc(c.url)}" target="_blank" rel="noopener">Official page ↗</a>
-      <button class="btn-ghost" data-toggle-cart>${state_has_in_cart(c) ? "Remove from selection" : "Add to selection"}</button>
-    </div>
-  `;
-  root.querySelector(".drawer-head").appendChild(makeLogo(c, "drawer-logo", 128));
-  root.querySelectorAll(".prereq-chip").forEach(el => {
-    el.addEventListener("click", () => { location.hash = `#/cert/${el.dataset.id}`; });
+  const priceDd = el("dd", {}, fmtPrice(c.price_usd));
+  if (c.currency_note) priceDd.append(" ", el("span", { class: "muted", text: "· " + c.currency_note }));
+  if (c.price_verified_at) {
+    priceDd.append(" ", el("span", {
+      class: "verified-badge",
+      title: "Last verified on " + c.price_verified_at,
+      text: "verified " + fmtAgo(c.price_verified_at),
+    }));
+  }
+
+  const renewalDd = el("dd", {}, c.validity_years ? "Every " + c.validity_years + " years" : "Lifetime / none");
+  if (Number.isFinite(c.renewal_cost)) {
+    renewalDd.append(" ", el("span", { class: "muted", text: "· $" + c.renewal_cost.toLocaleString("en-US") }));
+  }
+
+  const prereqDd = el("dd", {});
+  if (c.prerequisites.length) {
+    for (const p of c.prerequisites) {
+      prereqDd.appendChild(el("span", { class: "prereq-chip", "data-id": p, text: byId.get(p)?.acronym || p }));
+    }
+  } else {
+    prereqDd.appendChild(el("span", { class: "muted", text: "None" }));
+  }
+
+  const dl = el("dl", {},
+    el("dt", { text: "Domain" }),
+    el("dd", {}, el("a", { href: `#/domain/${slug(c.domain)}`, class: "muted", text: c.domain })),
+    el("dt", { text: "Level" }), el("dd", { text: LEVEL_LABEL[c.level] }),
+    el("dt", { text: "Price (USD)" }), priceDd,
+    c.exam_count > 1 ? [el("dt", { text: "Exams required" }), el("dd", { text: String(c.exam_count) })] : null,
+    el("dt", { text: "Exam length" }), el("dd", { text: c.duration_min ? c.duration_min + " min" : "–" }),
+    el("dt", { text: "Hands-on" }), el("dd", { text: c.hands_on ? "Yes" : "No" }),
+    el("dt", { text: "Renewal" }), renewalDd,
+    el("dt", { text: "DoD 8140" }), el("dd", { text: c.dod_8140 ? "Yes" : "No" }),
+    el("dt", { text: "Prerequisites" }), prereqDd,
+  );
+
+  const head = el("div", { class: "drawer-head" });
+  head.appendChild(makeLogo(c, "drawer-logo", 128));
+
+  const children = [
+    head,
+    el("h2", { text: c.acronym }),
+    el("div", { class: "sub" },
+      c.name + " · ",
+      el("a", { href: `#/vendor/${slug(c.vendor)}`, class: "sub-vendor", text: c.vendor }),
+    ),
+  ];
+
+  if (c.restricted_to) {
+    children.push(el("div", { class: "restricted-badge", role: "note" },
+      svg({ width: "14", height: "14", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "aria-hidden": "true" },
+        { tag: "rect", x: "3", y: "11", width: "18", height: "11", rx: "2" },
+        { d: "M7 11V7a5 5 0 0 1 10 0v4" }),
+      el("span", { text: c.restricted_to }),
+    ));
+  }
+
+  children.push(el("p", { class: "desc", text: c.description }), dl);
+
+  if (c.tags.length) {
+    children.push(el("div", { class: "tags" }, c.tags.map(t => el("span", { class: "tag", text: t }))));
+  }
+
+  children.push(el("div", { class: "actions" },
+    el("a", { class: "btn-ghost", href: c.url, target: "_blank", rel: "noopener", text: "Official page ↗" }),
+    el("button", { class: "btn-ghost", "data-toggle-cart": true, text: state_has_in_cart(c) ? "Remove from selection" : "Add to selection" }),
+  ));
+
+  root.replaceChildren(...children);
+  root.querySelectorAll(".prereq-chip").forEach(chip => {
+    chip.addEventListener("click", () => { location.hash = `#/cert/${chip.dataset.id}`; });
   });
 }
 let _stateRef = null;
@@ -361,23 +277,19 @@ function state_has_in_cart(c) { return _stateRef?.cart.has(c.id) || false; }
 export function renderCart(listEl, totalEl, subEl, countEl, certs, state) {
   const items = certs.filter(c => state.cart.has(c.id));
   const sum = items.reduce((a, c) => a + (c.price_usd || 0), 0);
-  listEl.replaceChildren();
   if (!items.length) {
-    const p = document.createElement("p");
-    p.className = "cart-empty";
-    p.textContent = "No certifications selected yet.";
-    listEl.appendChild(p);
+    listEl.replaceChildren(el("p", { class: "cart-empty", text: "No certifications selected yet." }));
   } else {
-    for (const c of items) {
-      const row = document.createElement("div");
-      row.className = "cart-row";
-      const a = document.createElement("span"); a.className = "acro"; a.textContent = c.acronym;
-      const p = document.createElement("span"); p.className = "price"; p.textContent = fmtPrice(c.price_usd);
-      const b = document.createElement("button"); b.className = "rm"; b.textContent = "×"; b.title = "Remove";
-      b.addEventListener("click", () => state.toggleCart(c.id));
-      row.append(a, p, b);
-      listEl.appendChild(row);
-    }
+    const rows = items.map(c => {
+      const rm = el("button", { class: "rm", title: "Remove", text: "×" });
+      rm.addEventListener("click", () => state.toggleCart(c.id));
+      return el("div", { class: "cart-row" },
+        el("span", { class: "acro", text: c.acronym }),
+        el("span", { class: "price", text: fmtPrice(c.price_usd) }),
+        rm,
+      );
+    });
+    listEl.replaceChildren(...rows);
   }
   const fmt = "$" + sum.toLocaleString("en-US");
   totalEl.textContent = fmt;
@@ -386,41 +298,34 @@ export function renderCart(listEl, totalEl, subEl, countEl, certs, state) {
 }
 
 export function buildFilters({ levelEl, domainEl, vendorEl }, meta, state, onChange) {
-  levelEl.replaceChildren();
-  LEVELS.forEach(l => {
-    const c = document.createElement("button");
-    c.className = "chip" + (state.filters.levels.has(l) ? " active" : "");
-    c.textContent = LEVEL_LABEL[l];
-    c.addEventListener("click", () => {
+  levelEl.replaceChildren(...LEVELS.map(l => {
+    const chip = el("button", {
+      class: "chip" + (state.filters.levels.has(l) ? " active" : ""),
+      text: LEVEL_LABEL[l],
+    });
+    chip.addEventListener("click", () => {
       state.filters.levels.has(l) ? state.filters.levels.delete(l) : state.filters.levels.add(l);
-      c.classList.toggle("active");
+      chip.classList.toggle("active");
       onChange();
     });
-    levelEl.appendChild(c);
-  });
-  domainEl.replaceChildren();
-  meta.domains.forEach(d => {
-    const lbl = document.createElement("label");
-    const inp = document.createElement("input"); inp.type = "checkbox"; inp.checked = state.filters.domains.has(d);
-    const span = document.createElement("span"); span.textContent = d;
-    lbl.append(inp, span);
+    return chip;
+  }));
+
+  domainEl.replaceChildren(...meta.domains.map(d => {
+    const inp = el("input", { type: "checkbox", checked: state.filters.domains.has(d) });
     inp.addEventListener("change", e => {
       e.target.checked ? state.filters.domains.add(d) : state.filters.domains.delete(d);
       onChange();
     });
-    domainEl.appendChild(lbl);
-  });
-  vendorEl.replaceChildren();
-  meta.vendors.forEach(v => {
-    const lbl = document.createElement("label");
-    lbl.dataset.vendor = v.toLowerCase();
-    const inp = document.createElement("input"); inp.type = "checkbox"; inp.checked = state.filters.vendors.has(v);
-    const span = document.createElement("span"); span.textContent = v;
-    lbl.append(inp, span);
+    return el("label", {}, inp, el("span", { text: d }));
+  }));
+
+  vendorEl.replaceChildren(...meta.vendors.map(v => {
+    const inp = el("input", { type: "checkbox", checked: state.filters.vendors.has(v) });
     inp.addEventListener("change", e => {
       e.target.checked ? state.filters.vendors.add(v) : state.filters.vendors.delete(v);
       onChange();
     });
-    vendorEl.appendChild(lbl);
-  });
+    return el("label", { "data-vendor": v.toLowerCase() }, inp, el("span", { text: v }));
+  }));
 }

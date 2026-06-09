@@ -1,3 +1,4 @@
+import { fmtPrice } from "./format.js";
 
 const DELAY = 450;
 const HIDE_DELAY = 80;
@@ -9,8 +10,6 @@ let hideTimer = null;
 let currentTarget = null;
 let DATA = null;
 
-const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-
 function ensureEl() {
   if (tipEl) return tipEl;
   tipEl = document.createElement("div");
@@ -18,12 +17,6 @@ function ensureEl() {
   tipEl.setAttribute("role", "tooltip");
   document.body.appendChild(tipEl);
   return tipEl;
-}
-
-function fmtPrice(n) {
-  if (n == null) return "—";
-  if (n === 0) return "Free";
-  return "$" + n.toLocaleString("en-GB");
 }
 
 function render(c) {

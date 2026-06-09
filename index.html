@@ -25,7 +25,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-zoqfGnaeMHzYE7t8gFvpCrcazBzsoRm8VbmpqzAIlcQ='; style-src 'self'; img-src 'self' https://www.google.com data:; connect-src 'self'; font-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; upgrade-insecure-requests" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta name="referrer" content="no-referrer" />
-  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"cert/map","alternateName":"Security Certification Roadmap","url":"https://securitycerts.github.io/certmap/","inLanguage":"en","license":"https://opensource.org/licenses/MIT"},{"@context":"https://schema.org","@type":"SoftwareApplication","name":"cert/map","applicationCategory":"EducationalApplication","operatingSystem":"Web","url":"https://securitycerts.github.io/certmap/","softwareVersion":"0.2.0","datePublished":"2026-05-12","dateModified":"2026-05-13","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://opensource.org/licenses/MIT","author":{"@type":"Organization","name":"securitycerts","url":"https://github.com/securitycerts","sameAs":["https://github.com/securitycerts/certmap"]},"creator":{"@type":"Organization","name":"securitycerts","url":"https://github.com/securitycerts"},"sameAs":["https://github.com/securitycerts/certmap"]}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"cert/map","alternateName":"Security Certification Roadmap","url":"https://securitycerts.github.io/certmap/","inLanguage":"en","license":"https://opensource.org/licenses/MIT"},{"@context":"https://schema.org","@type":"SoftwareApplication","name":"cert/map","applicationCategory":"EducationalApplication","operatingSystem":"Web","url":"https://securitycerts.github.io/certmap/","softwareVersion":"0.3.0","datePublished":"2026-05-12","dateModified":"2026-06-08","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://opensource.org/licenses/MIT","author":{"@type":"Organization","name":"securitycerts","url":"https://github.com/securitycerts","sameAs":["https://github.com/securitycerts/certmap"]},"creator":{"@type":"Organization","name":"securitycerts","url":"https://github.com/securitycerts"},"sameAs":["https://github.com/securitycerts/certmap"]}]</script>
   <meta name="color-scheme" content="dark light" />
   <meta name="theme-color" content="#0b0d12" />
   <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
@@ -117,18 +117,21 @@
         <header class="filter-head"><h3>Price (USD)</h3></header>
         <div class="range">
           <input id="price-min" type="number" min="0" placeholder="min" />
-          <span class="range-sep">—</span>
+          <span class="range-sep">–</span>
           <input id="price-max" type="number" min="0" placeholder="max" />
         </div>
         <label class="check-inline"><input type="checkbox" id="free-only" /><span>Free / unknown only</span></label>
         <label class="check-inline"><input type="checkbox" id="dod-only" /><span>DoD 8140 only</span></label>
         <label class="check-inline"><input type="checkbox" id="no-prereq" /><span>No prerequisites</span></label>
+        <label class="check-inline"><input type="checkbox" id="verified-only" /><span>Verified prices only</span></label>
+        <p class="freshness" id="freshness"></p>
       </section>
       <button id="reset-filters" class="btn-ghost block">Reset all filters</button>
       <p class="result-count" id="result-count"></p>
     </aside>
 
     <section class="content" id="content">
+      <div id="active-filters" class="active-filters hidden"></div>
       <div class="content-stack">
         <div id="grid" class="grid-host"></div>
         <p id="empty" class="empty hidden">No certifications match the current filters.</p>
@@ -150,6 +153,7 @@
       <div class="cart-sum">Total <strong id="cart-subtotal">$0</strong></div>
       <div class="cart-actions">
         <button id="cart-md" class="btn-ghost">Copy MD</button>
+        <button id="cart-share" class="btn-ghost">Copy link</button>
         <button id="cart-csv" class="btn-ghost">Export CSV</button>
         <button id="cart-clear" class="btn-ghost danger">Clear</button>
       </div>
