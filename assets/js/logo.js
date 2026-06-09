@@ -85,9 +85,11 @@ export function makeLogo(c, cls, size = 64) {
   const url = vendorLogoUrl(c, size);
   if (!url) return wrap;
 
+  // A freshly built Image() loads as soon as src is set; we deliberately do not
+  // mark it loading="lazy" because the element is detached until the load fires,
+  // and a lazy detached image never enters the viewport so it would never load.
   const img = new Image();
   img.decoding = "async";
-  img.loading = "lazy";
   img.alt = "";
   img.referrerPolicy = "no-referrer";
   img.addEventListener("load", () => {
