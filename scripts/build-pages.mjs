@@ -7,11 +7,14 @@
 //
 //   certs/index.html     every certification, grouped by domain
 //   certs/<id>.html      one page per certification
+//   certs/vendor-*.html  one page per vendor
+//   certs/domain-*.html  one page per domain
 //   sitemap.xml          the home page plus all of the above
 //
 // It also refreshes the certification count wherever index.html and llms.txt
-// quote it. No dependencies; run with `npm run build`. The deploy workflow runs
-// it before publishing, so certs/ is not committed.
+// quote it. No dependencies; run with `npm run build` after changing the CSV and
+// commit the result: the site is published straight from the branch, and CI
+// fails if the generated files are stale.
 
 import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -89,6 +92,82 @@ ${body}
 }
 
 const certLink = c => `<a href="${c.id}.html">${esc(c.acronym)}</a>`;
+const vendorFile = v => `vendor-${slug(v)}.html`;
+const domainFile = d => `domain-${slug(d)}.html`;
+const year = iso => (iso || latest).slice(0, 4);
+const count = (list, key) => list.reduce((m, c) => m.set(c[key], (m.get(c[key]) || 0) + 1), new Map());
+const byLevelThenName = (a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level) || byName(a, b);
+
+if (certs.some(c => /^(vendor|domain)-/.test(c.id))) throw new Error("a cert id collides with the vendor-/domain- page names");
+
+function certTable(items, { showVendor = true, showDomain = false } = {}) {
+  return `<table>
+    <thead><tr><th>Certification</th>${showVendor ? "<th>Vendor</th>" : ""}${showDomain ? "<th>Domain</th>" : ""}<th>Level</th><th>Exam price</th></tr></thead>
+    <tbody>
+${items.map(c => `      <tr><td>${certLink(c)} <span>${esc(c.name)}</span></td>${showVendor ? `<td><a href="${vendorFile(c.vendor)}">${esc(c.vendor)}</a></td>` : ""}${showDomain ? `<td><a href="${domainFile(c.domain)}">${esc(c.domain)}</a></td>` : ""}<td>${LEVEL_LABEL[c.level]}</td><td>${esc(money(c.price_usd))}</td></tr>`).join("\n")}
+    </tbody>
+  </table>`;
+}
+
+function priceRange(items) {
+  const prices = items.map(c => c.price_usd).filter(n => Number.isFinite(n) && n > 0);
+  if (!prices.length) return "";
+  const lo = Math.min(...prices), hi = Math.max(...prices);
+  return lo === hi ? ` Exam price ${money(lo)}.` : ` Exam prices run from ${money(lo)} to ${money(hi)}.`;
+}
+
+function itemListLd(name, path, items) {
+  return [{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    url: SITE + path,
+    isPartOf: { "@type": "WebSite", name: "cert/map", url: SITE },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: items.length,
+      itemListElement: items.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: `${c.acronym}: ${c.name}`, url: SITE + `certs/${c.id}.html` })),
+    },
+  }];
+}
+
+function vendorPage(vendor) {
+  const items = certs.filter(c => c.vendor === vendor).sort(byLevelThenName);
+  const domains = [...count(items, "domain").keys()];
+  const path = `certs/${vendorFile(vendor)}`;
+  const title = `${vendor} certifications: full list, prices and levels (${year()})`;
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / <a href="./">Certifications</a> / ${esc(vendor)}</nav>
+<h1>${esc(vendor)} certifications</h1>
+<p class="lead">${items.length === 1 ? "The one" : `All ${items.length}`} ${esc(vendor)} ${items.length === 1 ? "certification" : "certifications"} on the cert/map security certification roadmap, ordered from beginner to expert, with the domain each one belongs to and its current exam price.${esc(priceRange(items))}</p>
+<p class="cta"><a class="btn primary" href="../?vendor=${encodeURIComponent(vendor)}">Open ${esc(vendor)} in the interactive roadmap</a></p>
+${certTable(items, { showVendor: false, showDomain: true })}
+<h2>Domains covered</h2>
+<nav class="toc">${domains.map(d => `<a href="${domainFile(d)}">${esc(d)}</a>`).join(" ")}</nav>`;
+  return page({
+    path, title: `${title} | cert/map`,
+    description: `${items.length} ${vendor} ${items.length === 1 ? "certification" : "certifications"} compared: ${items.slice(0, 6).map(c => c.acronym).join(", ")}${items.length > 6 ? " and more" : ""}.${priceRange(items)} Levels, domains and prerequisites.`.slice(0, 300),
+    body, ld: itemListLd(`${vendor} certifications`, path, items), modified: latest,
+  });
+}
+
+function domainPage(domain) {
+  const items = certs.filter(c => c.domain === domain).sort(byLevelThenName);
+  const path = `certs/${domainFile(domain)}`;
+  const levels = LEVELS.filter(l => items.some(c => c.level === l));
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / <a href="./">Certifications</a> / ${esc(domain)}</nav>
+<h1>${esc(domain)} certifications</h1>
+<p class="lead">${items.length} ${esc(domain)} certifications from ${count(items, "vendor").size} vendors, laid out as a path from beginner to expert with the current exam price of each.${esc(priceRange(items))}</p>
+<p class="cta"><a class="btn primary" href="../#/domain/${slug(domain)}">Open ${esc(domain)} in the interactive roadmap</a></p>
+${levels.map(l => `<h2>${LEVEL_LABEL[l]} ${esc(domain)} certifications</h2>
+${certTable(items.filter(c => c.level === l).sort(byName))}`).join("\n")}
+<h2>Other domains</h2>
+<nav class="toc">${DOMAINS.filter(d => d !== domain).map(d => `<a href="${domainFile(d)}">${esc(d)}</a>`).join(" ")}</nav>`;
+  return page({
+    path, title: `${domain} certifications roadmap: ${items.length} certs with prices (${year()}) | cert/map`,
+    description: `${domain} certification path from beginner to expert: ${items.slice(0, 6).map(c => c.acronym).join(", ")} and more.${priceRange(items)} ${items.length} certifications from ${count(items, "vendor").size} vendors.`.slice(0, 300),
+    body, ld: itemListLd(`${domain} certifications`, path, items), modified: latest,
+  });
+}
 
 function certPage(c) {
   const unlocks = certs.filter(o => o.prerequisites.includes(c.id)).sort(byName);
@@ -102,8 +181,8 @@ function certPage(c) {
   const renewal = c.validity_years ? `Every ${c.validity_years} ${c.validity_years === 1 ? "year" : "years"}` : "Does not expire";
 
   const facts = [
-    ["Vendor", esc(c.vendor)],
-    ["Domain", `<a href="./#${slug(c.domain)}">${esc(c.domain)}</a>`],
+    ["Vendor", `<a href="${vendorFile(c.vendor)}">${esc(c.vendor)} certifications</a>`],
+    ["Domain", `<a href="${domainFile(c.domain)}">${esc(c.domain)}</a>`],
     ["Level", LEVEL_LABEL[c.level]],
     ["Exam price", esc(price) + (c.currency_note ? ` <small>${esc(c.currency_note)}</small>` : "")],
     c.price_verified_at ? ["Price checked", `<time datetime="${c.price_verified_at}">${c.price_verified_at}</time>`] : null,
@@ -124,7 +203,7 @@ function certPage(c) {
     c.validity_years ? `It renews every ${c.validity_years} ${c.validity_years === 1 ? "year" : "years"}.` : "It does not expire.",
   ].filter(Boolean).join(" ");
 
-  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / <a href="./">Certifications</a> / <a href="./#${slug(c.domain)}">${esc(c.domain)}</a></nav>
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / <a href="./">Certifications</a> / <a href="${domainFile(c.domain)}">${esc(c.domain)}</a></nav>
 <article>
   <h1>${esc(c.name)} <span class="acro">${esc(c.acronym)}</span></h1>
   <p class="lead">${esc(c.description)}</p>
@@ -169,7 +248,7 @@ ${related.map(o => `    <li>${certLink(o)} <span>${esc(o.vendor)}, ${LEVEL_LABEL
   const priceBit = c.price_usd == null ? "" : c.price_usd === 0 ? " Free." : ` Exam price ${price}.`;
   return page({
     path: `certs/${c.id}.html`,
-    title: `${c.acronym} certification: cost, prerequisites and renewal (${c.vendor}) | cert/map`,
+    title: `${c.acronym} certification cost (${year(c.price_verified_at)}), prerequisites and renewal | cert/map`,
     description: `${c.name} (${c.acronym}) by ${c.vendor}: ${c.level}-level ${c.domain} certification.${priceBit} Exam format, renewal cycle, prerequisites and where it sits on the roadmap.`.slice(0, 300),
     body,
     ld,
@@ -183,7 +262,7 @@ function hubPage() {
       .sort((a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level) || byName(a, b));
     if (!items.length) return "";
     return `<section id="${slug(domain)}">
-  <h2>${esc(domain)} certifications <small>${items.length}</small></h2>
+  <h2><a href="${domainFile(domain)}">${esc(domain)} certifications</a> <small>${items.length}</small></h2>
   <table>
     <thead><tr><th>Certification</th><th>Vendor</th><th>Level</th><th>Exam price</th></tr></thead>
     <tbody>
@@ -198,7 +277,9 @@ ${items.map(c => `      <tr><td>${certLink(c)} <span>${esc(c.name)}</span></td><
 <p class="lead">Every certification on the cert/map security certification roadmap, grouped by domain and ordered from beginner to expert, with the vendor and the current exam price in USD. ${vendors.size} vendors are covered, from CompTIA, ISC2, ISACA, GIAC and OffSec to cloud, forensics and hands-on lab providers.</p>
 <p class="cta"><a class="btn primary" href="../">Open the interactive roadmap</a> <a class="btn" href="../data/certs.csv">Download the dataset (CSV)</a></p>
 <nav class="toc" aria-label="Domains">${DOMAINS.map(d => `<a href="#${slug(d)}">${esc(d)}</a>`).join(" ")}</nav>
-${sections}`;
+${sections}
+<h2>Certifications by vendor</h2>
+<nav class="toc" aria-label="Vendors">${[...vendors].sort((a, b) => a.localeCompare(b)).map(v => `<a href="${vendorFile(v)}">${esc(v)}</a>`).join(" ")}</nav>`;
 
   const ld = [
     {
@@ -233,10 +314,29 @@ function sitemap() {
 ${[
     url(SITE, latest, "1.0"),
     url(SITE + "certs/", latest, "0.9"),
+    ...DOMAINS.map(d => url(SITE + `certs/${domainFile(d)}`, latest, "0.8")),
+    ...[...vendors].map(v => url(SITE + `certs/${vendorFile(v)}`, latest, "0.8")),
     ...certs.map(c => url(SITE + `certs/${c.id}.html`, c.price_verified_at || latest, "0.7")),
   ].join("\n")}
 </urlset>
 `;
+}
+
+// Plain-text section at the bottom of the app page. It gives a crawler that
+// does not run the app something to read and a link to every domain and vendor
+// page; for a person it doubles as a site index.
+function aboutSection() {
+  const perDomain = count(certs, "domain"), perVendor = count(certs, "vendor");
+  const links = (names, file, n) => names.map(x => `<li><a href="certs/${file(x)}">${esc(x)}</a> <span>${n.get(x) || 0}</span></li>`).join("");
+  return `        <section class="about" id="about" aria-labelledby="about-title">
+          <h2 id="about-title">About this cybersecurity certification roadmap</h2>
+          <p>cert/map charts ${certs.length} cybersecurity certifications from ${vendors.size} vendors across ${DOMAINS.length} domains and four seniority levels, from entry-level credentials such as CompTIA Security+ to expert ones such as OSCE3 and CISSP. Each entry lists the current exam price in USD, exam length and format, renewal cycle and prerequisites, checked against the vendor's own page. Pick the certifications you are aiming for to get a path ordered by prerequisite with its total cost and study time, then share it with a link.</p>
+          <p><a href="certs/">See every certification as a plain list with prices</a> or <a href="data/certs.csv">download the dataset</a>.</p>
+          <h3>Certifications by domain</h3>
+          <ul class="about-links">${links(DOMAINS, domainFile, perDomain)}</ul>
+          <h3>Certifications by vendor</h3>
+          <ul class="about-links">${links([...vendors].sort((a, b) => a.localeCompare(b)), vendorFile, perVendor)}</ul>
+        </section>`;
 }
 
 // Keep the quoted totals honest wherever a hand-written file mentions them.
@@ -247,6 +347,7 @@ function refreshCounts(file) {
     .replace(/\b\d+ cybersecurity certifications\b/g, `${certs.length} cybersecurity certifications`)
     .replace(/\b\d+ vendors\b/g, `${vendors.size} vendors`)
     .replace(/\bcompare \d+ certs\b/g, `compare ${certs.length} certs`)
+    .replace(/(<!-- build:about -->)[\s\S]*?(<!-- \/build:about -->)/, `$1\n${aboutSection()}\n        $2`)
     .replace(/("dateModified":")\d{4}-\d{2}-\d{2}"/, `$1${latest}"`)
     // The page's CSP pins the inline JSON-LD block by hash, so the hash has to
     // follow any change to the block.
@@ -260,8 +361,10 @@ function refreshCounts(file) {
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(OUT, { recursive: true });
 for (const c of certs) writeFileSync(join(OUT, `${c.id}.html`), certPage(c));
+for (const v of vendors) writeFileSync(join(OUT, vendorFile(v)), vendorPage(v));
+for (const d of DOMAINS) writeFileSync(join(OUT, domainFile(d)), domainPage(d));
 writeFileSync(join(OUT, "index.html"), hubPage());
 writeFileSync(join(ROOT, "sitemap.xml"), sitemap());
 refreshCounts("index.html");
 refreshCounts("llms.txt");
-console.log(`OK: ${certs.length} certification pages, 1 index and sitemap.xml (${certs.length + 2} URLs).`);
+console.log(`OK: ${certs.length} certification pages, ${vendors.size} vendor pages, ${DOMAINS.length} domain pages, 1 index and sitemap.xml.`);

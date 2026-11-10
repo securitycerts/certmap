@@ -16,7 +16,7 @@ Most contributions to this project are dataset changes: adding a missing certifi
    npm run dev
    ```
    Open `http://localhost:8000` and verify your entry appears where you expect.
-5. Commit `data/certs.csv`. Open a pull request.
+5. Run `npm run build` to regenerate the static pages, then commit `data/certs.csv` together with `certs/`, `sitemap.xml`, `index.html` and `llms.txt` if they changed. Open a pull request.
 
 The dataset has a single source of truth: `data/certs.csv`. The browser parses the CSV directly at load time, so there is nothing else to regenerate. The PR check in `.github/workflows/validate.yml` runs the same validator on your branch.
 

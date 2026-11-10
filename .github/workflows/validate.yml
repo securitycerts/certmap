@@ -17,5 +17,8 @@ jobs:
           node-version: "20"
       - name: Validate certs.csv
         run: node scripts/validate.mjs
-      - name: Static pages build
-        run: node scripts/build-pages.mjs
+      - name: Generated pages are up to date
+        run: |
+          node scripts/build-pages.mjs
+          git add -N certs
+          git diff --exit-code -- certs sitemap.xml index.html llms.txt || { echo "Run 'npm run build' and commit the result."; exit 1; }
