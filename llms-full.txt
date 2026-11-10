@@ -1,6 +1,6 @@
 # cert/map: full certification list
 
-> 278 cybersecurity certifications from 62 vendors, grouped by domain and ordered from beginner to expert. Prices are exam list prices in USD. Generated from data/certs.csv; last price check 2026-11-10.
+> 307 cybersecurity certifications from 64 vendors, grouped by domain and ordered from beginner to expert. Prices are exam list prices in USD. Generated from data/certs.csv; last price check 2026-11-10.
 
 Source: https://certmap.dev/
 Dataset: https://certmap.dev/data/certs.csv and https://certmap.dev/data/certs.json
@@ -121,6 +121,18 @@ Network defence and security operations certification.
 - Official page: https://www.eccouncil.org/programs/certified-network-defender-cnd/
 - cert/map page: https://certmap.dev/certs/cnd.html
 
+### CU NetSec: University of Colorado Fundamentals of Computer Network Security Specialization
+
+Four-course University of Colorado System specialization covering secure system design, applied cryptography and PKI, penetration testing basics, and firewalls and intrusion detection. Course-based certificate assessed through projects on cloud instances, with no proctored exam.
+
+- Vendor: Coursera
+- Level: intermediate
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week (the page FAQ says about 16 weeks).)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.coursera.org/specializations/computer-network-security
+- cert/map page: https://certmap.dev/certs/coursera-colorado-network-security.html
+
 ### CWSP: Certified Wireless Security Professional
 
 Vendor-neutral certification on securing enterprise Wi-Fi networks, with a 60-question exam. Candidates must hold a current CWNA credential.
@@ -135,6 +147,18 @@ Vendor-neutral certification on securing enterprise Wi-Fi networks, with a 60-qu
 - Prerequisites: CWNA
 - Official page: https://www.cwnp.com/certifications/cwsp
 - cert/map page: https://certmap.dev/certs/cwsp.html
+
+### Fortinet NetSec: Fortinet Network Security Specialization
+
+Five-course Fortinet specialization covering the core Fortinet network security products and how to design, deploy, administer and support an enterprise security infrastructure with them. Course-based certificate with no proctored exam.
+
+- Vendor: Coursera
+- Level: intermediate
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.coursera.org/specializations/fortinet-network-security
+- cert/map page: https://certmap.dev/certs/coursera-fortinet-network-security.html
 
 ### JNCIS-SEC: Juniper Networks Certified Specialist Security
 
@@ -344,6 +368,19 @@ Retired in July 2025 and succeeded by Palo Alto Networks role-based credentials 
 - Official page: https://www.paloaltonetworks.com/services/education/certification
 - cert/map page: https://certmap.dev/certs/pcnse.html
 
+### RITx MicroMasters: RITx Cybersecurity MicroMasters Program
+
+Four graduate-level courses from Rochester Institute of Technology: Cybersecurity Fundamentals, Computer Forensics, Cybersecurity Risk Management and Network Security. Course-based MicroMasters credential with no single proctored exam.
+
+- Vendor: edX
+- Level: advanced
+- Exam price: $1,436 (Program bundle price $1,436.40 shown on the edX page (list $1,596 for the courses bought separately); one-off payment, not a subscription.)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.edx.org/masters/micromasters/ritx-cybersecurity
+- cert/map page: https://certmap.dev/certs/edx-ritx-cybersecurity-micromasters.html
+
 ### CCIE Security: Cisco Certified Internetwork Expert Security
 
 Expert-level 8-hour hands-on lab certification.
@@ -516,6 +553,19 @@ Certification on securing AI systems and using AI in security operations, govern
 - Official page: https://www.comptia.org/en-us/certifications/secai/
 - cert/map page: https://certmap.dev/certs/secai-plus.html
 
+### TAUx InfoSec: Tel Aviv University Unlocking Information Security Professional Certificate
+
+Two Tel Aviv University courses covering vulnerabilities and exploits, cryptography, buffer overflows, and network and web offense and defense. Course-based certificate with no proctored exam.
+
+- Vendor: edX
+- Level: intermediate
+- Exam price: $268 (Program bundle price $268.19 shown on the edX page (list $297.99 for the courses bought separately); one-off payment, not a subscription.)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.edx.org/certificates/professional-certificate/taux-unlocking-information-security
+- cert/map page: https://certmap.dev/certs/edx-taux-unlocking-information-security.html
+
 ### CASP+: CompTIA SecurityX
 
 Advanced security practitioner certification covering enterprise security architecture.
@@ -531,6 +581,18 @@ Advanced security practitioner certification covering enterprise security archit
 - DoD 8140: approved
 - Official page: https://www.comptia.org/certifications/securityx
 - cert/map page: https://certmap.dev/certs/casp-plus.html
+
+### MS SC-100 Arch: Microsoft Cybersecurity Architecture SC-100 Professional Certificate
+
+Five-course advanced program on security architecture: Zero Trust identity models, network segmentation, DevSecOps pipelines and cyber risk reporting, aligned to the SC-100 exam. Course-based certificate assessed through five portfolio projects, with no proctored exam.
+
+- Vendor: Coursera
+- Level: advanced
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.coursera.org/professional-certificates/microsoft-cybersecurity-architecture
+- cert/map page: https://certmap.dev/certs/coursera-microsoft-sc-100-architecture.html
 
 ### GSE: GIAC Security Expert
 
@@ -706,6 +768,32 @@ Entry-level practical exam combining a gray-box penetration test with validation
 - Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-junior-cybersecurity-associate
 - cert/map page: https://certmap.dev/certs/cjca.html
 
+### CS50 Cyber: HarvardX CS50's Introduction to Cybersecurity
+
+Single introductory Harvard course for technical and non-technical audiences covering passwords and authentication, phishing, malware, network attacks, encryption and privacy. Course-based verified certificate assessed through assignments, with no proctored exam.
+
+- Vendor: edX
+- Level: beginner
+- Exam price: $449 (Verified certificate price $449 shown on the edX page; the course can be audited for free without a certificate.)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.edx.org/learn/cybersecurity/harvard-university-cs50-s-introduction-to-cybersecurity
+- cert/map page: https://certmap.dev/certs/edx-harvardx-cs50-cybersecurity.html
+
+### CS50 Cyber Cert: HarvardX Computer Science for Cybersecurity Professional Certificate
+
+Two-course Harvard program combining CS50's Introduction to Computer Science with CS50's Introduction to Cybersecurity. Course-based certificate assessed through course assignments, with no proctored exam.
+
+- Vendor: edX
+- Level: beginner
+- Exam price: $601 (Program bundle price $601.20 shown on the edX page (list $668 for the courses bought separately); one-off payment, not a subscription.)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.edx.org/certificates/professional-certificate/harvardx-computer-science-for-cybersecurity
+- cert/map page: https://certmap.dev/certs/edx-harvardx-cs-for-cybersecurity.html
+
 ### GFACT: GIAC Foundational Cybersecurity Technologies
 
 Foundational cybersecurity technologies certification.
@@ -720,6 +808,43 @@ Foundational cybersecurity technologies certification.
 - Official page: https://www.giac.org/certifications/foundational-cybersecurity-technologies-gfact/
 - cert/map page: https://certmap.dev/certs/gfact.html
 
+### IBM Cyber Fund: IBM Cybersecurity Fundamentals Professional Certificate
+
+Four-course IBM program covering cybersecurity tools and attacks, operating system security, compliance frameworks and database security. Course-based certificate assessed through labs and a final project, with no proctored exam.
+
+- Vendor: edX
+- Level: beginner
+- Exam price: $536 (Program bundle price $536.40 shown on the edX page (list $596 for the courses bought separately); one-off payment, not a subscription.)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.edx.org/certificates/professional-certificate/ibm-cybersecurity-fundamentals
+- cert/map page: https://certmap.dev/certs/edx-ibm-cybersecurity-fundamentals.html
+
+### IBM-ISC2 Spec: IBM and ISC2 Cybersecurity Specialist Professional Certificate
+
+Twelve-course entry-level program from IBM and ISC2 covering security principles, access controls, network security, security operations and incident response, with preparation for the ISC2 Certified in Cybersecurity exam. Course-based certificate assessed through labs and projects, with no proctored exam.
+
+- Vendor: Coursera
+- Level: beginner
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 3 months at 10 hours a week.)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.coursera.org/professional-certificates/ibm-isc2-cybersecurity-specialist
+- cert/map page: https://certmap.dev/certs/coursera-ibm-isc2-cybersecurity-specialist.html
+
+### ISC2 CC Spec: ISC2 Certified in Cybersecurity Specialization
+
+Five-course ISC2 specialization covering security principles, incident response and business continuity, access control, network security and security operations, aligned to the Certified in Cybersecurity exam domains. Course-based certificate assessed through quizzes and case studies; the proctored CC exam is separate.
+
+- Vendor: Coursera
+- Level: beginner
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.coursera.org/specializations/certified-in-cybersecurity
+- cert/map page: https://certmap.dev/certs/coursera-isc2-certified-in-cybersecurity.html
+
 ### LPI SE: LPI Security Essentials
 
 Entry-level certificate on basic IT security concepts. Exam 020-100 has 40 questions and the certificate does not expire.
@@ -733,6 +858,18 @@ Entry-level certificate on basic IT security concepts. Exam 020-100 has 40 quest
 - Renewal: does not expire
 - Official page: https://www.lpi.org/our-certifications/security-essentials-overview/
 - cert/map page: https://certmap.dev/certs/lpi-security-essentials.html
+
+### NYU Intro Cyber: NYU Introduction to Cyber Security Specialization
+
+Four-course New York University specialization covering cyber attacks and risk analysis, authentication and cryptography, network security and firewalls, and enterprise security and compliance frameworks. Course-based certificate assessed through quizzes and projects, with no proctored exam.
+
+- Vendor: Coursera
+- Level: beginner
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 2 months at 10 hours a week.)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.coursera.org/specializations/intro-cyber-security
+- cert/map page: https://certmap.dev/certs/coursera-nyu-intro-cyber-security.html
 
 ### Open FAIR: Open FAIR 2 Foundation
 
@@ -833,6 +970,19 @@ AI safety and security certificate developed by CSA with Northeastern University
 - Official page: https://cloudsecurityalliance.org/education/taise
 - cert/map page: https://certmap.dev/certs/taise.html
 
+### UMBC MicroMasters: UMBC Principles of Cybersecurity MicroMasters Program
+
+Three courses from the University of Maryland Baltimore County (USMx) covering identity and access management, cryptography, network attacks, mobile, IoT and cloud security, digital forensics and governance. Course-based MicroMasters credential with no single proctored exam.
+
+- Vendor: edX
+- Level: intermediate
+- Exam price: $672 (Program bundle price $672.30 shown on the edX page (list $747 for the courses bought separately); one-off payment, not a subscription.)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.edx.org/masters/micromasters/usmx-principles-of-cybersecurity
+- cert/map page: https://certmap.dev/certs/edx-umbc-cybersecurity-micromasters.html
+
 ### AAISM: Advanced in AI Security Management
 
 Credential on managing security for AI systems across AI governance, AI risk management and AI technologies and controls. Candidates must hold an active CISM or CISSP; the exam has 90 questions.
@@ -845,6 +995,18 @@ Credential on managing security for AI systems across AI governance, AI risk man
 - Renewal: every 3 years
 - Official page: https://www.isaca.org/credentialing/aaism
 - cert/map page: https://certmap.dev/certs/aaism.html
+
+### Infosec CISSP: Infosec Certified Information Systems Security Professional (CISSP) Specialization
+
+Eight-course Infosec specialization reviewing the CISSP domains, with end-of-course assessments and a final practice exam. Course-based exam-preparation certificate; the proctored ISC2 CISSP exam is separate.
+
+- Vendor: Coursera
+- Level: advanced
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.coursera.org/specializations/cissp
+- cert/map page: https://certmap.dev/certs/coursera-infosec-cissp.html
 
 ### CCISO: Certified Chief Information Security Officer
 
@@ -1284,6 +1446,43 @@ Entry-level cybersecurity technician certification (exam 212-82). The exam has 6
 - Official page: https://www.eccouncil.org/train-certify/certified-cybersecurity-technician-certification/
 - cert/map page: https://certmap.dev/certs/cct.html
 
+### Cisco CyberOps: Cisco Cybersecurity Operations Fundamentals Specialization
+
+Seven-course Cisco specialization covering security operations center basics, network and endpoint monitoring, attack analysis and incident handling for entry-level analysts. Course-based certificate assessed through quizzes, with no projects and no proctored exam.
+
+- Vendor: Coursera
+- Level: beginner
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 12 weeks at 2 hours a week.)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.coursera.org/specializations/cbrops
+- cert/map page: https://certmap.dev/certs/coursera-cisco-cyberops-fundamentals.html
+
+### EC-C Essentials: EC-Council Cybersecurity Essentials Professional Certificate
+
+Three EC-Council courses: Network Defense Essentials (NDE), Ethical Hacking Essentials (EHE) and Digital Forensics Essentials (DFE), with add-on labs in the verified track. Course-based certificate; the edX page labels the courses intermediate.
+
+- Vendor: edX
+- Level: beginner
+- Exam price: $348 (Program bundle price $348.30 shown on the edX page (list $387 for the courses bought separately); one-off payment, not a subscription.)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.edx.org/certificates/professional-certificate/ec-council-cybersecurity-essentials
+- cert/map page: https://certmap.dev/certs/edx-ec-council-cybersecurity-essentials.html
+
+### EC-C ISA: EC-Council Information Security Analyst Professional Certificate
+
+Five-course entry-level program covering information security fundamentals, risk assessment, security operations, incident response and threat hunting. Course-based certificate assessed through hands-on labs and projects, with no proctored exam.
+
+- Vendor: Coursera
+- Level: beginner
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 months at 10 hours a week.)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.coursera.org/professional-certificates/ec-council-information-security-analyst
+- cert/map page: https://certmap.dev/certs/coursera-ec-council-infosec-analyst.html
+
 ### eSOC: INE Security Operations Certified Level 1
 
 Entry-level defensive certification on security monitoring, alert triage, threat detection and incident response. The credential is valid for three years.
@@ -1296,6 +1495,81 @@ Entry-level defensive certification on security monitoring, alert triage, threat
 - Renewal: every 3 years
 - Official page: https://ine.com/security/certifications/esoc-certification
 - cert/map page: https://certmap.dev/certs/esoc.html
+
+### Google Cyber: Google Cybersecurity Professional Certificate
+
+Nine-course entry-level program covering security frameworks, network security, Linux, SQL, SIEM and IDS tools, incident detection and response, and Python automation. Course-based certificate assessed through quizzes, hands-on labs and portfolio activities, with no proctored exam.
+
+- Vendor: Coursera
+- Level: beginner
+- Exam price: $294 (Subscription: $49 a month for an estimated 6 months (at 7 hours a week), after a 7-day free trial; US and Canada price.)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.coursera.org/professional-certificates/google-cybersecurity
+- cert/map page: https://certmap.dev/certs/coursera-google-cybersecurity.html
+
+### IBM Analyst: IBM Cybersecurity Analyst Professional Certificate
+
+Fourteen-course entry-level program covering security tools, operating systems, networking, databases, compliance frameworks, penetration testing, incident response and forensics, with a capstone. Course-based certificate assessed through labs and projects, with no proctored exam.
+
+- Vendor: Coursera
+- Level: beginner
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 months at 10 hours a week.)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.coursera.org/professional-certificates/ibm-cybersecurity-analyst
+- cert/map page: https://certmap.dev/certs/coursera-ibm-cybersecurity-analyst.html
+
+### IBM Analyst edX: IBM Cybersecurity Analyst Professional Certificate
+
+Fourteen-course IBM program covering security tools, operating systems, networking, databases, compliance frameworks, penetration testing, incident response, and Security+ and CySA+ practice, with a capstone. Course-based certificate assessed through labs and projects, with no proctored exam.
+
+- Vendor: edX
+- Level: beginner
+- Exam price: $1,697 (Program bundle price $1,697.40 shown on the edX page (list $1,886 for the courses bought separately); one-off payment, not a subscription.)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.edx.org/certificates/professional-certificate/ibm-cybersecurity-analyst
+- cert/map page: https://certmap.dev/certs/edx-ibm-cybersecurity-analyst.html
+
+### IBM GenAI Cyber: IBM Generative AI for Cybersecurity Professional Certificate
+
+Three-course IBM program covering generative AI basics, prompt engineering and the use of generative AI in threat intelligence, behaviour analytics and incident reporting. Course-based certificate with hands-on exercises and no proctored exam.
+
+- Vendor: edX
+- Level: beginner
+- Exam price: $132 (Program bundle price $132.30 shown on the edX page (list $147 for the courses bought separately); one-off payment, not a subscription.)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.edx.org/certificates/professional-certificate/ibm-generative-ai-for-cybersecurity
+- cert/map page: https://certmap.dev/certs/edx-ibm-genai-cybersecurity.html
+
+### ISC2 SSCP Prep: ISC2 Systems Security Certified Practitioner (SSCP) Professional Certificate
+
+Seven-course ISC2 training program covering the SSCP domains, including access controls, security operations, risk identification, incident response, cryptography, and network and systems security. Course-based certificate assessed through knowledge checks and final assessments; the proctored SSCP exam is separate.
+
+- Vendor: Coursera
+- Level: beginner
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.coursera.org/professional-certificates/sscp-training
+- cert/map page: https://certmap.dev/certs/coursera-isc2-sscp.html
+
+### MS Cyber Analyst: Microsoft Cybersecurity Analyst Professional Certificate
+
+Nine-course entry-level program covering networking and cloud basics, threat vectors, identity and access in Microsoft Entra, Microsoft Defender, SIEM and compliance, plus SC-900 exam preparation. Course-based certificate assessed through capstone projects, with no proctored exam.
+
+- Vendor: Coursera
+- Level: beginner
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 6 months at 10 hours a week.)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.coursera.org/professional-certificates/microsoft-cybersecurity-analyst
+- cert/map page: https://certmap.dev/certs/coursera-microsoft-cybersecurity-analyst.html
 
 ### PSAA: Practical SOC Analyst Associate
 
@@ -1439,6 +1713,19 @@ Continuous security monitoring certification.
 - Official page: https://www.giac.org/certifications/continuous-monitoring-certification-gmon
 - cert/map page: https://certmap.dev/certs/gmon.html
 
+### Google SecOps: Google Cloud Google Security Operations Professional Certificate
+
+Three Google Cloud courses on the Google Security Operations (Chronicle) platform covering investigation, search, data ingestion, detections and modern security operations principles. Course-based certificate with no proctored exam.
+
+- Vendor: edX
+- Level: intermediate
+- Exam price: $122 (Program bundle price $121.50 shown on the edX page (list $135 for the courses bought separately); one-off payment, not a subscription.)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.edx.org/certificates/professional-certificate/googlecloud-google-security-operations
+- cert/map page: https://certmap.dev/certs/edx-googlecloud-security-operations.html
+
 ### GSOC: GIAC Security Operations Certified
 
 Covers SOC monitoring, detection, log analysis and incident triage with blue-team tools. Exam has 75 questions in two hours.
@@ -1452,6 +1739,31 @@ Covers SOC monitoring, detection, log analysis and incident triage with blue-tea
 - Renewal: every 4 years
 - Official page: https://www.giac.org/certifications/security-operations-certified-gsoc
 - cert/map page: https://certmap.dev/certs/gsoc.html
+
+### Infosec Python: Infosec Python for Cybersecurity Specialization
+
+Five-course Infosec specialization on writing Python scripts to automate offensive and defensive security tasks, organised around MITRE ATT&CK and Shield use cases. Course-based certificate assessed through coding projects, with no proctored exam.
+
+- Vendor: Coursera
+- Level: intermediate
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.coursera.org/specializations/pythonforcybersecurity
+- cert/map page: https://certmap.dev/certs/coursera-infosec-python-cybersecurity.html
+
+### MS SC-200 edX: Microsoft SC-200 Security Operations Analyst Professional Certificate
+
+Three Microsoft courses aligned to SC-200 covering threat mitigation with Microsoft Defender, SIEM and SOAR with Microsoft Sentinel, and data protection with Microsoft Purview. Course-based certificate; the proctored SC-200 exam is separate.
+
+- Vendor: edX
+- Level: intermediate
+- Exam price: $216 (Program bundle price $216 shown on the edX page (list $240 for the courses bought separately); one-off payment, not a subscription.)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.edx.org/certificates/professional-certificate/microsoft-sc-200-security-operations-analyst
+- cert/map page: https://certmap.dev/certs/edx-microsoft-sc-200.html
 
 ### OSDA: OffSec Defense Analyst
 
@@ -1857,6 +2169,18 @@ Foundational AWS cloud certification.
 - Official page: https://aws.amazon.com/certification/certified-cloud-practitioner/
 - cert/map page: https://certmap.dev/certs/aws-clf.html
 
+### GCP Cyber: Google Cloud Cybersecurity Professional Certificate
+
+Five-course entry-level program on cloud security with Google Cloud: risk management, identity and access, threat detection, and incident response using tools such as Security Command Center. Course-based certificate assessed through hands-on labs, with no proctored exam.
+
+- Vendor: Coursera
+- Level: beginner
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 2 months at 10 hours a week.)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.coursera.org/professional-certificates/google-cloud-cybersecurity-certificate
+- cert/map page: https://certmap.dev/certs/coursera-google-cloud-cybersecurity.html
+
 ### KCSA: Kubernetes and Cloud Native Security Associate
 
 Entry-level multiple choice exam on Kubernetes and cloud native security fundamentals. Online and proctored, with no prerequisites.
@@ -2008,6 +2332,19 @@ Multi-cloud security certification covering AWS, Azure and GCP.
 - Renewal: every 4 years
 - Official page: https://www.giac.org/certifications/public-cloud-security-gpcs/
 - cert/map page: https://certmap.dev/certs/gpcs.html
+
+### MS AZ-500 edX: Microsoft Security Engineer Professional Certificate
+
+Three Microsoft courses aligned to AZ-500 covering identity and access management, securing Azure networking, compute and storage, and managing security operations. Course-based certificate; the proctored AZ-500 exam is separate.
+
+- Vendor: edX
+- Level: intermediate
+- Exam price: $149 (Program bundle price $148.50 shown on the edX page (list $165 for the courses bought separately); one-off payment, not a subscription.)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.edx.org/certificates/professional-certificate/microsoft-security-engineer
+- cert/map page: https://certmap.dev/certs/edx-microsoft-security-engineer.html
 
 ### SAA-C03: AWS Solutions Architect Associate
 
@@ -2506,6 +2843,19 @@ Project management certification.
 - Renewal: does not expire
 - Official page: https://www.comptia.org/certifications/project
 - cert/map page: https://certmap.dev/certs/project-plus.html
+
+### UW Small Org Sec: University of Wisconsin-Madison Cybersecurity Fundamentals for Small Organizations Professional Certificate
+
+Three University of Wisconsin-Madison courses covering cybersecurity principles, data and information privacy, and cybersecurity planning and policy. Course-based certificate with no proctored exam.
+
+- Vendor: edX
+- Level: beginner
+- Exam price: $591 (Program bundle price $591.30 shown on the edX page (list $657 for the courses bought separately); one-off payment, not a subscription.)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.edx.org/certificates/professional-certificate/wisconsinx-cybersecurity-fundamentals-for-small-organizations
+- cert/map page: https://certmap.dev/certs/edx-wisconsinx-cybersecurity-small-orgs.html
 
 ### AIGP: Artificial Intelligence Governance Professional
 
@@ -3571,6 +3921,18 @@ Hands-on mobile application penetration testing certification covering Android a
 - Renewal: every 3 years
 - Official page: https://ine.com/security/certifications/emapt-certification
 - cert/map page: https://certmap.dev/certs/emapt.html
+
+### IBM Eth Hacking: IBM Ethical Hacking with Open Source Tools Professional Certificate
+
+Six-course program on ethical hacking with Kali Linux, Metasploit, Wireshark and OpenVAS, covering reconnaissance, vulnerability scanning, exploitation, reporting and incident response. Course-based certificate assessed through labs and projects, with no proctored exam.
+
+- Vendor: Coursera
+- Level: intermediate
+- Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 2 months at 10 hours a week.)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.coursera.org/professional-certificates/ibm-ethical-hacking-with-open-source-tools
+- cert/map page: https://certmap.dev/certs/coursera-ibm-ethical-hacking.html
 
 ### PenTest+: CompTIA PenTest+
 
