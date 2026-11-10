@@ -1,4 +1,148 @@
 cert_id,type,title,provider,url,free,official,sponsored
+sec-plus,guide,Security+ Certification,CompTIA,https://www.comptia.org/en-us/certifications/security/,true,true,false
+sec-plus,practice,Security+ (V7) Practice Questions,CompTIA,https://www.comptia.org/en-us/certifications/security/v7/practice-questions/,true,true,false
+sec-plus,course,CompTIA Security+ SY0-701 Training Course,Professor Messer,https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/,true,false,false
+sec-plus,book,"CompTIA Security+ Study Guide: Exam SY0-701, 9th Edition",Sybex (Wiley),https://www.wiley.com/en-us/-p-9781394211418,false,false,false
+net-plus,guide,Network+ Certification,CompTIA,https://www.comptia.org/en-us/certifications/network/,true,true,false
+net-plus,practice,Network+ (V9) Practice Questions,CompTIA,https://www.comptia.org/en-us/certifications/network/practice-questions/,true,true,false
+net-plus,course,CompTIA Network+ N10-009 Training Course,Professor Messer,https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/,true,false,false
+net-plus,book,"CompTIA Network+ Study Guide: Exam N10-009, 6th Edition",Sybex (Wiley),https://www.wiley.com/en-us/-p-9781394235605,false,false,false
+a-plus,guide,A+ Core 1 and 2 Certification V15,CompTIA,https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/,true,true,false
+a-plus,practice,A+ Core 1 (V15) Practice Questions,CompTIA,https://www.comptia.org/en-us/certifications/a/core-1-v15/practice-questions/,true,true,false
+a-plus,practice,A+ Core 2 (V15) Practice Questions,CompTIA,https://www.comptia.org/en-us/certifications/a/core-2-v15/practice-questions/,true,true,false
+a-plus,course,CompTIA A+ 220-1201 Training Course,Professor Messer,https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/,true,false,false
+a-plus,course,CompTIA A+ 220-1202 Training Course,Professor Messer,https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/,true,false,false
+cysa-plus,guide,CySA+ Certification V4,CompTIA,https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/,true,true,false
+cysa-plus,practice,CySA+ (V4) Practice Questions,CompTIA,https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/practice-questions/,true,true,false
+cysa-plus,book,"CompTIA CySA+ Study Guide: Exam CS0-004, 4th Edition",Sybex (Wiley),https://www.wiley.com/en-us/-p-9781394414871,false,false,false
+pentest-plus,guide,PenTest+ Certification V3,CompTIA,https://www.comptia.org/en-us/certifications/pentest/,true,true,false
+pentest-plus,practice,PenTest+ (V3) Practice Questions,CompTIA,https://www.comptia.org/en-us/certifications/pentest/practice-questions/,true,true,false
+pentest-plus,book,"CompTIA PenTest+ Study Guide: Exam PT0-003, 3rd Edition",Sybex (Wiley),https://www.wiley.com/en-us/-p-9781394285006,false,false,false
+casp-plus,guide,SecurityX Certification,CompTIA,https://www.comptia.org/en-us/certifications/securityx/,true,true,false
+casp-plus,practice,SecurityX (V5) Practice Questions,CompTIA,https://www.comptia.org/en-us/certifications/securityx/practice-questions/,true,true,false
+casp-plus,book,CompTIA SecurityX CAS-005 Study Guide,Dion Training,https://www.diontraining.com/products/comptia-securityx-study-guide-ebook,false,false,false
+linux-plus,guide,Linux+ Certification V8,CompTIA,https://www.comptia.org/en-us/certifications/linux/,true,true,false
+linux-plus,practice,Linux+ (V8) Practice Questions,CompTIA,https://www.comptia.org/en-us/certifications/linux/practice-questions/,true,true,false
+linux-plus,book,"CompTIA Linux+ Study Guide: Exam XK0-006, 6th Edition",Sybex (Wiley),https://www.wiley.com/en-us/-p-9781394316328,false,false,false
+cc,guide,CC Certification Exam Outline,ISC2,https://www.isc2.org/certifications/cc/cc-certification-exam-outline,true,true,false
+sscp,guide,SSCP Certification Exam Outline,ISC2,https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline,true,true,false
+cissp,guide,CISSP Certification Exam Outline,ISC2,https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline,true,true,false
+ccsp,guide,CCSP Certification Exam Outline,ISC2,https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline,true,true,false
+cc,course,CC Online Self-Paced Certification Training,ISC2,https://www.isc2.org/training/online-self-paced/cc-online-self-paced,,true,false
+cc,practice,Certified in Cybersecurity Flash Cards,ISC2,https://cloud.connect.isc2.org/cc-flashcards,true,true,false
+cc,guide,Self-Study Tools and Resources for the ISC2 CC Exam,ISC2,https://www.isc2.org/certifications/cc/cc-self-study-resources,true,true,false
+cc,book,CC Certified in Cybersecurity Study Guide,Sybex (Wiley),https://www.wiley.com/en-us/-p-9781394213832,false,false,false
+sscp,course,SSCP Training,ISC2,https://www.isc2.org/training/3-ways-to-train/sscp,false,true,false
+sscp,practice,SSCP Flash Cards,ISC2,https://cloud.connect.isc2.org/sscp-flashcards,true,true,false
+sscp,guide,SSCP Study Tools and Resources,ISC2,https://www.isc2.org/certifications/sscp/sscp-self-study-resources,true,true,false
+cissp,course,CISSP Online Self-Paced Certification Training,ISC2,https://www.isc2.org/training/online-self-paced/cissp-online-self-paced,false,true,false
+cissp,practice,CISSP Flash Cards,ISC2,https://cloud.connect.isc2.org/cissp-flashcards,true,true,false
+cissp,book,"ISC2 CISSP Official Study Guide, 10th Edition",Sybex (Wiley),https://www.wiley.com/en-us/-p-9781394254699,false,false,false
+cissp,guide,CISSP MindMaps,Destination Certification,https://destcert.com/cissp-mindmaps/,true,false,false
+ccsp,course,CCSP Online Self-Paced Certification Training,ISC2,https://www.isc2.org/training/online-self-paced/ccsp-online-self-paced,false,true,false
+ccsp,practice,CCSP Flash Cards,ISC2,https://cloud.connect.isc2.org/ccsp-flashcards,true,true,false
+ccsp,guide,Self-Study Tools and Resources for the ISC2 CCSP Exam,ISC2,https://www.isc2.org/certifications/ccsp/ccsp-self-study-resources,true,true,false
+cism,guide,CISM Exam Content Outline,ISACA,https://www.isaca.org/credentialing/cism/cism-exam-content-outline,true,true,false
+cism,course,CISM Online Review Course,ISACA,https://www.isaca.org/store2/product/CISM-ORC-C,false,true,false
+cism,practice,"CISM Questions, Answers & Explanations Database",ISACA,https://www.isaca.org/store2/product/CISM-QAE-C,false,true,false
+cism,book,CISM Review Manual,ISACA,https://www.isaca.org/store2/product/CISM-RM-C,false,true,false
+cisa,guide,CISA Exam Content Outline,ISACA,https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline,true,true,false
+cisa,course,CISA Online Review Course,ISACA,https://www.isaca.org/store2/product/CISA-ORC-C,false,true,false
+cisa,practice,"CISA Questions, Answers & Explanations",ISACA,https://www.isaca.org/store2/product/CISA-QAE-C,false,true,false
+cisa,book,CISA Official Review Manual,ISACA,https://www.isaca.org/store2/product/CISA-RM-C,false,true,false
+crisc,guide,CRISC Exam Content Outline,ISACA,https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline,true,true,false
+crisc,course,CRISC Online Review Course,ISACA,https://www.isaca.org/store2/product/CRISC-ORC-C,false,true,false
+crisc,practice,"CRISC Questions, Answers & Explanations",ISACA,https://www.isaca.org/store2/product/CRISC-QAE-C,false,true,false
+crisc,book,CRISC Review Manual,ISACA,https://www.isaca.org/store2/product/CRISC-RM-C,false,true,false
+ceh,guide,CEH Exam Blueprint v5,EC-Council,https://cert.eccouncil.org/wp-content/uploads/2024/04/CEH-Exam-Blueprint-v5.pdf,true,true,false
+ceh,guide,Certified Ethical Hacker certification page,EC-Council,https://cert.eccouncil.org/certified-ethical-hacker.html,true,true,false
+ceh,course,Certified Ethical Hacker (CEH) course,EC-Council,https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/,false,true,false
+ceh,book,CEH Certified Ethical Hacker v13 Study Guide,Sybex (Wiley),https://www.wiley.com/en-us/-p-9781394394289,false,false,false
+cpent,guide,CPENT v2 Exam Blueprint,EC-Council,https://cert.eccouncil.org/images/doc/CPENTv2-Exam-Blueprint.pdf,true,true,false
+cpent,guide,Certified Penetration Testing Professional certification page,EC-Council,https://cert.eccouncil.org/certified-penetration-testing-professional-cpent.html,true,true,false
+cpent,course,CPENT AI course,EC-Council,https://www.eccouncil.org/train-certify/certified-penetration-testing-professional-cpent/,false,true,false
+gsec,guide,GIAC Security Essentials (GSEC) exam objectives,GIAC,https://www.giac.org/certifications/security-essentials-gsec,true,true,false
+gsec,course,SEC401: Security Essentials,SANS Institute,https://www.sans.org/cyber-security-courses/security-essentials,false,true,false
+gsec,book,"GSEC GIAC Security Essentials Certification All-in-One Exam Guide, Second Edition",McGraw Hill,https://www.mheducation.com/highered/mhp/product/gsec-giac-security-essentials-certification-all-one-exam-guide-second-edition.html,false,false,false
+gcih,guide,GIAC Certified Incident Handler (GCIH) exam objectives,GIAC,https://www.giac.org/certifications/certified-incident-handler-gcih,true,true,false
+gcih,course,"SEC504: Hacker Tools, Techniques, and Incident Handling",SANS Institute,https://www.sans.org/cyber-security-courses/hacker-techniques-incident-handling,false,true,false
+gcih,guide,Incident Handler's Handbook,SANS Institute,https://www.sans.org/white-papers/33901,true,true,false
+gcih,book,GCIH GIAC Certified Incident Handler All-in-One Exam Guide,McGraw Hill,https://www.mheducation.com/highered/mhp/product/gcih-giac-certified-incident-handler-all-one-exam-guide.html,false,false,false
+gpen,guide,GIAC Penetration Tester (GPEN) exam objectives,GIAC,https://www.giac.org/certifications/penetration-tester-gpen,true,true,false
+gpen,course,SEC560: Enterprise Penetration Testing,SANS Institute,https://www.sans.org/cyber-security-courses/enterprise-penetration-testing,false,true,false
+gpen,book,GPEN GIAC Certified Penetration Tester All-in-One Exam Guide,McGraw Hill,https://www.mheducation.com/highered/mhp/product/gpen-giac-certified-penetration-tester-all-one-exam-guide.html,false,false,false
+gcfa,guide,GIAC Certified Forensic Analyst (GCFA) exam objectives,GIAC,https://www.giac.org/certifications/certified-forensic-analyst-gcfa,true,true,false
+gcfa,course,"FOR508: Advanced Incident Response, Threat Hunting, and Digital Forensics",SANS Institute,https://www.sans.org/cyber-security-courses/advanced-incident-response-threat-hunting-training,false,true,false
+gcfa,lab,SIFT Workstation,SANS Institute,https://www.sans.org/tools/sift-workstation,true,true,false
+gcfa,guide,Hunt Evil poster,SANS Institute,https://www.sans.org/posters/hunt-evil,true,true,false
+gcti,guide,GIAC Cyber Threat Intelligence (GCTI) exam objectives,GIAC,https://www.giac.org/certifications/cyber-threat-intelligence-gcti,true,true,false
+gcti,course,FOR578: Cyber Threat Intelligence,SANS Institute,https://www.sans.org/cyber-security-courses/cyber-threat-intelligence,false,true,false
+gcti,guide,Cyber Threat Intelligence Consumption poster,SANS Institute,https://www.sans.org/posters/cyber-threat-intelligence-consumption,true,true,false
+gosi,guide,GIAC Open Source Intelligence (GOSI) exam objectives,GIAC,https://www.giac.org/certifications/open-source-intelligence-gosi,true,true,false
+gosi,course,SEC497: Practical Open-Source Intelligence (OSINT),SANS Institute,https://www.sans.org/cyber-security-courses/practical-open-source-intelligence,false,true,false
+gosi,guide,OSINT Poster,SANS Institute,https://www.sans.org/posters/osint-poster,true,true,false
+aws-clf,guide,AWS Certified Cloud Practitioner (CLF-C02) Exam Guide,AWS,https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html,true,true,false
+aws-clf,course,Exam Prep: AWS Certified Cloud Practitioner (CLF-C02),AWS Skill Builder,https://skillbuilder.aws/category/exam-prep/cloud-practitioner-foundational-CLF-C02,,true,false
+aws-clf,practice,AWS Certified Cloud Practitioner CLF-C02 Sample Exam Questions,Tutorials Dojo,https://tutorialsdojo.com/aws-certified-cloud-practitioner-clf-c02-sample-exam-questions/,true,false,false
+aws-clf,book,"AWS Certified Cloud Practitioner Study Guide: Foundational (CLF-C02) Exam, 2nd Edition",Sybex (Wiley),https://www.wiley.com/en-us/-p-9781394235636,false,false,false
+aws-saa,guide,AWS Certified Solutions Architect - Associate (SAA-C03) Exam Guide,AWS,https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html,true,true,false
+aws-saa,course,Exam Prep: AWS Certified Solutions Architect - Associate (SAA-C03),AWS Skill Builder,https://skillbuilder.aws/category/exam-prep/solutions-architect-associate-SAA-C03,,true,false
+aws-saa,guide,AWS Certified Solutions Architect Associate SAA-C03 Study Path,Tutorials Dojo,https://tutorialsdojo.com/aws-certified-solutions-architect-associate-exam-saa-c03-study-path/,true,false,false
+aws-saa,book,"AWS Certified Solutions Architect Study Guide: Associate (SAA-C03) Exam, 4th Edition",Sybex (Wiley),https://www.wiley.com/en-us/-p-9781119982623,false,false,false
+aws-scs,guide,AWS Certified Security - Specialty (SCS-C03) Exam Guide,AWS,https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html,true,true,false
+aws-scs,course,Exam Prep: AWS Certified Security - Specialty (SCS-C03),AWS Skill Builder,https://skillbuilder.aws/category/exam-prep/security-specialty-SCS-C03,,true,false
+aws-scs,guide,AWS Certified Security - Specialty (SCS-C03) study roadmap,Tutorials Dojo,https://tutorialsdojo.com/cert_roadmap/aws-certified-security-specialty-scs-c03/,true,false,false
+az-900,guide,Study guide for Exam AZ-900: Microsoft Azure Fundamentals,Microsoft,https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900,true,true,false
+az-900,course,Course AZ-900T00-A: Introduction to Cloud Infrastructure,Microsoft,https://learn.microsoft.com/en-us/training/courses/az-900t00,,true,false
+az-900,practice,AZ-900 Practice Assessment,Microsoft,https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23,true,true,false
+az-900,lab,AZ-900 Microsoft Azure Fundamentals lab exercises,Microsoft,https://microsoftlearning.github.io/AZ-900-Microsoft-Azure-Fundamentals/,true,true,false
+az-900,course,Azure Fundamentals Certification (AZ-900) free course,freeCodeCamp,https://www.freecodecamp.org/news/azure-fundamentals-certification-az-900-exam-course/,true,false,false
+sc-900,guide,"Study guide for Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals",Microsoft,https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900,true,true,false
+sc-900,course,"Course SC-900T00-A: Introduction to Microsoft Security, Compliance, and Identity",Microsoft,https://learn.microsoft.com/en-us/training/courses/sc-900t00,,true,false
+sc-900,lab,SC-900 lab exercises,Microsoft,https://microsoftlearning.github.io/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/,true,true,false
+sc-900,course,"Microsoft Security, Compliance, and Identity Fundamentals (SC-900) free course",freeCodeCamp,https://www.freecodecamp.org/news/microsoft-security-compliance-certification-sc-900/,true,false,false
+sc-200,guide,Study guide for Exam SC-200: Microsoft Security Operations Analyst,Microsoft,https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200,true,true,false
+sc-200,course,Course SC-200T00-A: Defend against cyberthreats with Microsoft's security operations platform,Microsoft,https://learn.microsoft.com/en-us/training/courses/sc-200t00,,true,false
+sc-200,lab,SC-200 Microsoft Security Operations Analyst lab exercises,Microsoft,https://microsoftlearning.github.io/SC-200T00A-Microsoft-Security-Operations-Analyst/,true,true,false
+sc-200,course,Mitigate threats using Microsoft Defender XDR (learning path),Microsoft,https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/,true,true,false
+sc-500,guide,Study guide for Exam SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads,Microsoft,https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500,true,true,false
+sc-500,course,Course SC-500T00-A: Implement end-to-end security controls for cloud and AI workloads,Microsoft,https://learn.microsoft.com/en-us/training/courses/sc-500t00,,true,false
+sc-500,course,Implement security for AI (learning path),Microsoft,https://learn.microsoft.com/en-us/training/paths/implement-ai-security/,true,true,false
+sc-500,course,Secure access to resources by using Microsoft Entra (learning path),Microsoft,https://learn.microsoft.com/en-us/training/paths/secure-access-resources-entra/,true,true,false
+ccna,guide,CCNA Exam Topics,Cisco,https://learningnetwork.cisco.com/s/ccna-exam-topics,true,true,false
+ccna,course,CCNA: Introduction to Networks,Cisco Networking Academy,https://www.netacad.com/courses/ccna-introduction-networks,,true,false
+ccna,lab,Cisco Packet Tracer,Cisco Networking Academy,https://www.netacad.com/cisco-packet-tracer,true,true,false
+ccna,book,"CCNA 200-301 Official Cert Guide Library, 2nd Edition",Cisco Press,https://www.ciscopress.com/store/ccna-200-301-official-cert-guide-library-9780138221393,false,false,false
+ccna,course,Free CCNA v1.1 200-301 Complete Course,Jeremy's IT Lab,https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ,true,false,false
+cyberops-asc,guide,CCNA Cybersecurity (200-201 CCNACBR) Exam Topics,Cisco,https://learningnetwork.cisco.com/s/ccnacbr-exam-topics,true,true,false
+cyberops-asc,course,CyberOps Associate,Cisco Networking Academy,https://www.netacad.com/courses/cyberops-associate,,true,false
+cyberops-asc,book,CCNA Cybersecurity CCNACBR 200-201 Official Cert Guide,Cisco Press,https://www.ciscopress.com/store/cisco-cyberops-associate-cbrops-200-201-official-cert-9780136807834,false,false,false
+ccsk,guide,Certificate of Cloud Security Knowledge (CCSK),Cloud Security Alliance,https://cloudsecurityalliance.org/education/ccsk,true,true,false
+ccsk,guide,CCSK v5 Prep Kit,Cloud Security Alliance,https://cloudsecurityalliance.org/artifacts/ccsk-v5-prep-kit,true,true,false
+ccsk,guide,Security Guidance for Cloud Computing v5,Cloud Security Alliance,https://cloudsecurityalliance.org/artifacts/security-guidance-v5,true,true,false
+ccsk,course,CCSK Plus Training (Lecture + Labs),Cloud Security Alliance,https://cloudsecurityalliance.org/education/ccsk-plus,false,true,false
+cka,guide,CNCF Certification Curriculum (CKA),CNCF,https://github.com/cncf/curriculum,true,true,false
+cka,course,Kubernetes Fundamentals (LFS258),The Linux Foundation,https://training.linuxfoundation.org/training/kubernetes-fundamentals/,false,true,false
+cka,practice,CKA Simulator,Killer Shell,https://killer.sh/cka,false,false,false
+cka,lab,CKA Playground,Killercoda,https://killercoda.com/playgrounds/scenario/cka,true,false,false
+cka,course,Certified Kubernetes Administrator (CKA) free course,freeCodeCamp,https://www.freecodecamp.org/news/prepare-for-the-kubernetes-administrator-certification-and-pass/,true,false,false
+cks,guide,CNCF Certification Curriculum (CKS),CNCF,https://github.com/cncf/curriculum,true,true,false
+cks,course,Kubernetes Security Essentials (LFS260),The Linux Foundation,https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/,false,true,false
+cks,practice,CKS Simulator,Killer Shell,https://killer.sh/cks,false,false,false
+cks,lab,Killer Shell CKS scenarios,Killercoda,https://killercoda.com/killer-shell-cks,true,false,false
+cks,guide,Certified Kubernetes Security Specialist curated resources,Walid Shaari,https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist,true,false,false
+kcsa,guide,KCSA Curriculum,CNCF,https://github.com/cncf/curriculum/blob/main/KCSA%20Curriculum.pdf,true,true,false
+kcsa,guide,Kubernetes Documentation: Security,Kubernetes,https://kubernetes.io/docs/concepts/security/,true,false,false
+kcsa,course,Kubernetes and Cloud Native Security Associate (KCSA) Course,KodeKloud,https://kodekloud.com/courses/kubernetes-and-cloud-native-security-associate-kcsa,false,false,false
+cipp,guide,CIPP certification,IAPP,https://iapp.org/certify/cipp,true,true,false
+cipp,course,Certified Information Privacy Professional training,IAPP,https://iapp.org/train/cipp-training,false,true,false
+cipp,guide,Free study guides,IAPP,https://iapp.org/certify/free-study-guides,true,true,false
+cipp,guide,How to prepare,IAPP,https://iapp.org/certify/how-to-prepare,true,true,false
+itil-f,guide,ITIL 4 Foundation,PeopleCert,https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565,true,true,false
+itil-f,practice,ITIL 4 Foundation Mock exam,PeopleCert,https://www.peoplecert.org/browse-mock-exams/it-governance-and-service-management/ITIL-1/itil-4-foundation-mock-exam,false,true,false
+coursera-google-cybersecurity,course,Google Cybersecurity Professional Certificate,Google (Coursera),https://www.coursera.org/professional-certificates/google-cybersecurity,false,true,false
+coursera-google-cybersecurity,guide,Google Cybersecurity Certificate,Grow with Google,https://grow.google/certificates/cybersecurity/,true,true,false
+coursera-google-cybersecurity,course,Foundations of Cybersecurity,Google (Coursera),https://www.coursera.org/learn/foundations-of-cybersecurity,,true,false
 oscp,guide,OSCP+ Exam Guide,OffSec,https://help.offsec.com/hc/en-us/articles/360040165632-OSCP-Exam-Guide,true,true,false
 oscp,guide,PEN-200 (PWK) Syllabus,OffSec,https://www.offsec.com/documentation/penetration-testing-with-kali.pdf,true,true,false
 oscp,course,PEN-200: Penetration Testing with Kali Linux,OffSec,https://www.offsec.com/courses/pen-200/,false,true,false
