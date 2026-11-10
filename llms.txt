@@ -16,6 +16,9 @@ cert/map is a community-maintained reference for the cybersecurity certification
 - [All certifications](https://certmap.dev/certs/): every certification with vendor, level and price
 - [Full text digest](https://certmap.dev/llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](https://certmap.dev/data/certs.json) and [as CSV](https://certmap.dev/data/certs.csv)
+- [Preparation resources (CSV)](https://certmap.dev/data/resources.csv): exam guides, courses, labs and books per certification, 277 links for 77 certifications
+- [Comparison pairs (CSV)](https://certmap.dev/data/comparisons.csv): the 60 pairs that have a side-by-side page
+- Comparison pages exist in eight languages. English is under `certs/`; the others use the same file name under `es/`, `fr/`, `de/`, `it/`, `ar/`, `ko/` and `he/`, for example https://certmap.dev/es/compare-net-plus-vs-ccna.html
 - [Beginner cybersecurity certifications](https://certmap.dev/certs/list-beginner.html): 68 certifications
 - [Intermediate cybersecurity certifications](https://certmap.dev/certs/list-intermediate.html): 137 certifications
 - [Advanced cybersecurity certifications](https://certmap.dev/certs/list-advanced.html): 74 certifications
@@ -110,7 +113,80 @@ cert/map is a community-maintained reference for the cybersecurity certification
 - [Penetration Testing certifications](https://certmap.dev/certs/domain-penetration-testing.html)
 - [Exploitation certifications](https://certmap.dev/certs/domain-exploitation.html)
 
-Each certification has its own page at `https://certmap.dev/certs/<id>.html` and each vendor at `https://certmap.dev/certs/vendor-<name>.html`.
+Each certification has its own page at `https://certmap.dev/certs/<id>.html`.
+
+## Vendor pages
+
+- [8kSec certifications](https://certmap.dev/certs/vendor-8ksec.html): 1
+- [Altered Security certifications](https://certmap.dev/certs/vendor-altered-security.html): 5
+- [APIsec University certifications](https://certmap.dev/certs/vendor-apisec-university.html): 2
+- [arcX certifications](https://certmap.dev/certs/vendor-arcx.html): 1
+- [AWS certifications](https://certmap.dev/certs/vendor-aws.html): 7
+- [Basel Institute certifications](https://certmap.dev/certs/vendor-basel-institute.html): 1
+- [Cellebrite certifications](https://certmap.dev/certs/vendor-cellebrite.html): 4
+- [Centri certifications](https://certmap.dev/certs/vendor-centri.html): 2
+- [Chainalysis certifications](https://certmap.dev/certs/vendor-chainalysis.html): 7
+- [Check Point certifications](https://certmap.dev/certs/vendor-check-point.html): 2
+- [Cisco certifications](https://certmap.dev/certs/vendor-cisco.html): 7
+- [CNCF certifications](https://certmap.dev/certs/vendor-cncf.html): 3
+- [CompTIA certifications](https://certmap.dev/certs/vendor-comptia.html): 15
+- [Coursera certifications](https://certmap.dev/certs/vendor-coursera.html): 16
+- [CREST certifications](https://certmap.dev/certs/vendor-crest.html): 4
+- [CrowdStrike certifications](https://certmap.dev/certs/vendor-crowdstrike.html): 3
+- [CSA certifications](https://certmap.dev/certs/vendor-csa.html): 4
+- [CWNP certifications](https://certmap.dev/certs/vendor-cwnp.html): 2
+- [CyberDefenders certifications](https://certmap.dev/certs/vendor-cyberdefenders.html): 2
+- [CyberWarFare Labs certifications](https://certmap.dev/certs/vendor-cyberwarfare-labs.html): 2
+- [DRI International certifications](https://certmap.dev/certs/vendor-dri-international.html): 1
+- [EC-Council certifications](https://certmap.dev/certs/vendor-ec-council.html): 20
+- [edX certifications](https://certmap.dev/certs/vendor-edx.html): 13
+- [Elastic certifications](https://certmap.dev/certs/vendor-elastic.html): 1
+- [Fortinet certifications](https://certmap.dev/certs/vendor-fortinet.html): 2
+- [GIAC certifications](https://certmap.dev/certs/vendor-giac.html): 28
+- [GitHub certifications](https://certmap.dev/certs/vendor-github.html): 1
+- [Google certifications](https://certmap.dev/certs/vendor-google.html): 6
+- [Hack The Box certifications](https://certmap.dev/certs/vendor-hack-the-box.html): 9
+- [HashiCorp certifications](https://certmap.dev/certs/vendor-hashicorp.html): 1
+- [IACIS certifications](https://certmap.dev/certs/vendor-iacis.html): 1
+- [IAPP certifications](https://certmap.dev/certs/vendor-iapp.html): 4
+- [INE certifications](https://certmap.dev/certs/vendor-ine.html): 9
+- [IntelTechniques certifications](https://certmap.dev/certs/vendor-inteltechniques.html): 1
+- [ISA certifications](https://certmap.dev/certs/vendor-isa.html): 1
+- [ISACA certifications](https://certmap.dev/certs/vendor-isaca.html): 9
+- [ISC2 certifications](https://certmap.dev/certs/vendor-isc2.html): 9
+- [ISFCE certifications](https://certmap.dev/certs/vendor-isfce.html): 1
+- [Juniper certifications](https://certmap.dev/certs/vendor-juniper.html): 2
+- [Linux Foundation certifications](https://certmap.dev/certs/vendor-linux-foundation.html): 1
+- [LPI certifications](https://certmap.dev/certs/vendor-lpi.html): 4
+- [Magnet Forensics certifications](https://certmap.dev/certs/vendor-magnet-forensics.html): 2
+- [McAfee Institute certifications](https://certmap.dev/certs/vendor-mcafee-institute.html): 6
+- [MCSI certifications](https://certmap.dev/certs/vendor-mcsi.html): 11
+- [Microsoft certifications](https://certmap.dev/certs/vendor-microsoft.html): 10
+- [OffSec certifications](https://certmap.dev/certs/vendor-offsec.html): 16
+- [Okta certifications](https://certmap.dev/certs/vendor-okta.html): 2
+- [OpenText certifications](https://certmap.dev/certs/vendor-opentext.html): 1
+- [OSINT Industries certifications](https://certmap.dev/certs/vendor-osint-industries.html): 1
+- [OSMOSIS certifications](https://certmap.dev/certs/vendor-osmosis.html): 1
+- [Palo Alto Networks certifications](https://certmap.dev/certs/vendor-palo-alto-networks.html): 9
+- [PCI SSC certifications](https://certmap.dev/certs/vendor-pci-ssc.html): 1
+- [PECB certifications](https://certmap.dev/certs/vendor-pecb.html): 2
+- [PeopleCert certifications](https://certmap.dev/certs/vendor-peoplecert.html): 2
+- [PortSwigger certifications](https://certmap.dev/certs/vendor-portswigger.html): 1
+- [Practical DevSecOps certifications](https://certmap.dev/certs/vendor-practical-devsecops.html): 3
+- [Red Hat certifications](https://certmap.dev/certs/vendor-red-hat.html): 2
+- [SABSA certifications](https://certmap.dev/certs/vendor-sabsa.html): 1
+- [SailPoint certifications](https://certmap.dev/certs/vendor-sailpoint.html): 2
+- [Social Links certifications](https://certmap.dev/certs/vendor-social-links.html): 1
+- [Splunk certifications](https://certmap.dev/certs/vendor-splunk.html): 5
+- [TCM Security certifications](https://certmap.dev/certs/vendor-tcm-security.html): 9
+- [The Open Group certifications](https://certmap.dev/certs/vendor-the-open-group.html): 1
+- [The SecOps Group certifications](https://certmap.dev/certs/vendor-the-secops-group.html): 3
+- [TRM Labs certifications](https://certmap.dev/certs/vendor-trm-labs.html): 7
+- [VMware certifications](https://certmap.dev/certs/vendor-vmware.html): 1
+- [Wireshark certifications](https://certmap.dev/certs/vendor-wireshark.html): 2
+- [Zero-Point Security certifications](https://certmap.dev/certs/vendor-zero-point-security.html): 2
+- [Zscaler certifications](https://certmap.dev/certs/vendor-zscaler.html): 1
+- [zSecurity certifications](https://certmap.dev/certs/vendor-zsecurity.html): 1
 
 ## Domain taxonomy
 

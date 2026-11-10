@@ -777,7 +777,11 @@ function llmsFull() {
         + line("Renewal", c.validity_years ? `every ${c.validity_years} years` : "does not expire")
         + line("Prerequisites", c.prerequisites.map(id => byId.get(id)?.acronym || id).join(", "))
         + line("DoD 8140", c.dod_8140 ? "approved" : "") + line("Restricted to", c.restricted_to)
-        + line("Official page", c.url) + line("cert/map page", SITE + `certs/${c.id}.html`);
+        + line("Official page", c.url) + line("cert/map page", SITE + `certs/${c.id}.html`)
+        + line("Compared with", (VERSUS.get(c.id) || []).map(v => `${byId.get(v.id).acronym} (${SITE}certs/${v.file})`).join(", "))
+        + ((RESOURCES.get(c.id) || []).length
+          ? "- Preparation:\n" + RESOURCES.get(c.id).map(r => `  - ${r.title} (${r.provider}${r.official ? ", official" : ""}${r.free ? ", free" : ""}${r.sponsored ? ", sponsored" : ""}): ${r.url}\n`).join("")
+          : "");
     }
   }
   return out;
@@ -798,12 +802,19 @@ ${[...vendors].sort((a, b) => a.localeCompare(b)).join(", ")}.
 - [All certifications](${SITE}certs/): every certification with vendor, level and price
 - [Full text digest](${SITE}llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](${SITE}data/certs.json) and [as CSV](${SITE}data/certs.csv)
+- [Preparation resources (CSV)](${SITE}data/resources.csv): exam guides, courses, labs and books per certification, ${[...RESOURCES.values()].reduce((k, l) => k + l.length, 0)} links for ${RESOURCES.size} certifications
+- [Comparison pairs (CSV)](${SITE}data/comparisons.csv): the ${PAIRS.length} pairs that have a side-by-side page
+- Comparison pages exist in eight languages. English is under \`certs/\`; the others use the same file name under \`es/\`, \`fr/\`, \`de/\`, \`it/\`, \`ar/\`, \`ko/\` and \`he/\`, for example ${SITE}es/${PAIRS.length ? compareFile(PAIRS[0].a, PAIRS[0].b) : "compare-a-vs-b.html"}
 ${LISTS.map(l => `- [${l.name}](${SITE}certs/${listFile(l)}): ${listItems(l).length} certifications`).join("\n")}
 ${ROLE_PATHS.map(p => `- [${p.name} certification path](${SITE}certs/${pathFile(p)}): ${pathCerts(p).map(c => c.acronym).join(", ")}`).join("\n")}
 ${PAIRS.map(r => `- [${byId.get(r.a).acronym} vs ${byId.get(r.b).acronym}](${SITE}certs/${compareFile(r.a, r.b)})`).join("\n")}
 ${DOMAINS.map(d => `- [${d} certifications](${SITE}certs/${domainFile(d)})`).join("\n")}
 
-Each certification has its own page at \`${SITE}certs/<id>.html\` and each vendor at \`${SITE}certs/vendor-<name>.html\`.
+Each certification has its own page at \`${SITE}certs/<id>.html\`.
+
+## Vendor pages
+
+${[...vendors].sort((x, y) => x.localeCompare(y)).map(v => `- [${v} certifications](${SITE}certs/${vendorFile(v)}): ${certs.filter(c => c.vendor === v).length}`).join("\n")}
 
 `;
   const after = before.replace(/## Vendors covered[\s\S]*?(?=## Domain taxonomy)/, block);
@@ -867,22 +878,83 @@ function itemListLd(name, path, items) {
   }];
 }
 
+// The vendor's own site: the origin most of its certification pages share.
+// Course platforms host other issuers' certificates, so they keep theirs too.
+function vendorSite(items) {
+  const hosts = count(items.map(c => { try { return { h: new URL(c.url).origin }; } catch { return { h: "" }; } }), "h");
+  return [...hosts.entries()].filter(([h]) => h).sort((x, y) => y[1] - x[1])[0]?.[0] || "";
+}
+
+// One page per vendor, written for someone searching the brand together with
+// "certifications", "cost" or "which first": the full list, the price range,
+// where to start, what expires, how its exams are assessed and how its
+// certifications compare with others.
 function vendorPage(vendor) {
   const items = certs.filter(c => c.vendor === vendor).sort(byLevelThenName);
   const domains = [...count(items, "domain").keys()];
   const path = `certs/${vendorFile(vendor)}`;
-  const title = `${vendor} certifications: full list, prices and levels (${year()})`;
+  const site = vendorSite(items);
+  const n = items.length;
+  const plural = n === 1 ? "certification" : "certifications";
+  const priced = items.filter(c => c.price_usd > 0).sort((x, y) => x.price_usd - y.price_usd);
+  const first = [...items].sort((x, y) => LEVELS.indexOf(x.level) - LEVELS.indexOf(y.level) || y.weight - x.weight || byName(x, y))[0];
+  const expiring = items.filter(c => c.validity_years);
+  const handsOn = items.filter(c => c.hands_on).length;
+  const pairs = [...new Map(items.flatMap(c => (VERSUS.get(c.id) || []).map(v => [v.file, v]))).values()];
+  const pairLabel = v => { const [x, y] = v.file.replace(/^compare-|\.html$/g, "").split("-vs-"); return `${byId.get(x).acronym} vs ${byId.get(y).acronym}`; };
+  const levelsLine = LEVELS.map(l => [l, items.filter(c => c.level === l).length]).filter(([, k]) => k).map(([l, k]) => `${k} ${l}`).join(", ");
+
+  const qa = [
+    [`How many ${vendor} certifications are there?`,
+      `cert/map lists ${n} ${vendor} ${plural}: ${levelsLine}.`],
+    [`How much do ${vendor} certifications cost?`,
+      priced.length
+        ? (priced.length === 1 || priced[0].price_usd === priced.at(-1).price_usd
+          ? `The published exam price is ${money(priced[0].price_usd)} (${priced[0].acronym}).`
+          : `Published exam prices run from ${money(priced[0].price_usd)} (${priced[0].acronym}) to ${money(priced.at(-1).price_usd)} (${priced.at(-1).acronym}).`)
+          + (priced.length < n ? ` ${n - priced.length} of the ${n} have no published standalone price or are free.` : "")
+        : `${vendor} does not publish standalone exam prices for the certifications listed here.`],
+    [`Which ${vendor} certification should I start with?`,
+      n === 1
+        ? `${first.acronym} is the only ${vendor} certification on the roadmap. It sits at ${first.level} level.`
+        : `The lowest tier on the roadmap is ${first.level}, and ${first.acronym} (${first.name}) is the usual entry point there.`],
+    [`Do ${vendor} certifications expire?`,
+      expiring.length === 0 ? `None of the ${vendor} certifications listed here expires.`
+        : expiring.length === n ? `Yes. All of them have a renewal cycle, for example ${expiring[0].acronym} every ${expiring[0].validity_years} ${expiring[0].validity_years === 1 ? "year" : "years"}.`
+        : `${expiring.length} of the ${n} have a renewal cycle (for example ${expiring[0].acronym}, every ${expiring[0].validity_years} ${expiring[0].validity_years === 1 ? "year" : "years"}); the rest do not expire.`],
+    [`Are ${vendor} exams hands-on?`,
+      handsOn === 0 ? `The ${vendor} exams listed here are written or multiple choice.`
+        : handsOn === n ? `Yes. Every ${vendor} exam listed here is practical and performance-based.`
+        : `${handsOn} of the ${n} are assessed with a practical, performance-based exam; the others are written or multiple choice.`],
+  ];
+
   const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / <a href="./">Certifications</a> / ${esc(vendor)}</nav>
 <h1>${esc(vendor)} certifications</h1>
-<p class="lead">${items.length === 1 ? "The one" : `All ${items.length}`} ${esc(vendor)} ${items.length === 1 ? "certification" : "certifications"} on the cert/map security certification roadmap, ordered from beginner to expert, with the domain each one belongs to and its current exam price.${esc(priceRange(items))}</p>
-<p class="cta"><a class="btn primary" href="../map/?vendor=${encodeURIComponent(vendor)}">Open ${esc(vendor)} in the interactive roadmap</a></p>
+<p class="lead">${n === 1 ? "The one" : `All ${n}`} ${esc(vendor)} ${plural} on the cert/map security certification roadmap, ordered from beginner to expert, with the domain each one belongs to and its current exam price.${esc(priceRange(items))}</p>
+<p class="cta"><a class="btn primary" href="../map/?vendor=${encodeURIComponent(vendor)}">Open ${esc(vendor)} in the interactive roadmap</a>${site ? ` <a class="btn" href="${esc(site)}/" rel="noopener noreferrer">Official ${esc(vendor)} site</a>` : ""}</p>
 ${certTable(items, { showVendor: false, showDomain: true })}
-<h2>Domains covered</h2>
-<nav class="toc">${domains.map(d => `<a href="${domainFile(d)}">${esc(d)}</a>`).join(" ")}</nav>`;
+<h2>${esc(vendor)} certifications at a glance</h2>
+<div class="faq">
+${qa.map(([q, ans], i) => `  <details${i === 0 ? " open" : ""}><summary>${esc(q)}</summary><p>${esc(ans)}</p></details>`).join("\n")}
+</div>
+${pairs.length ? `<h2>${esc(vendor)} certifications compared</h2>\n<nav class="toc">${pairs.map(v => `<a href="${v.file}">${esc(pairLabel(v))}</a>`).join(" ")}</nav>\n` : ""}<h2>Domains covered</h2>
+<nav class="toc">${domains.map(d => `<a href="${domainFile(d)}">${esc(d)}</a>`).join(" ")}</nav>
+<p class="fine">cert/map is independent and is not affiliated with ${esc(vendor)}. Names and marks belong to their owners.</p>`;
+  const ld = [
+    ...itemListLd(`${vendor} certifications`, path, items).map(x => ({
+      ...x, about: { "@type": "Organization", name: vendor, ...(site ? { url: site + "/" } : {}) },
+    })),
+    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: qa.map(([q, ans]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: ans } })) },
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "cert/map", item: SITE },
+      { "@type": "ListItem", position: 2, name: "Certifications", item: SITE + "certs/" },
+      { "@type": "ListItem", position: 3, name: vendor, item: SITE + path },
+    ] },
+  ];
   return page({
-    path, title: `${title} | cert/map`,
-    description: `${items.length} ${vendor} ${items.length === 1 ? "certification" : "certifications"} compared: ${items.slice(0, 6).map(c => c.acronym).join(", ")}${items.length > 6 ? " and more" : ""}.${priceRange(items)} Levels, domains and prerequisites.`.slice(0, 300),
-    body, ld: itemListLd(`${vendor} certifications`, path, items), modified: latest,
+    path, title: `${vendor} certifications: full list, cost and levels (${year()}) | cert/map`,
+    description: `${n} ${vendor} ${plural} compared: ${items.slice(0, 6).map(c => c.acronym).join(", ")}${n > 6 ? " and more" : ""}.${priceRange(items)} Levels, renewal, exam format and where to start.`.slice(0, 300),
+    body, ld, modified: latest,
   });
 }
 
