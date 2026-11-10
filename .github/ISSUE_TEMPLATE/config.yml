@@ -3,3 +3,6 @@ contact_links:
   - name: Question or discussion
     url: https://github.com/discussions
     about: Open a discussion rather than an issue for questions, ideas and feedback.
+  - name: Report a security vulnerability
+    url: https://github.com/securitycerts/certmap/security/advisories/new
+    about: Please report security problems privately, not in a public issue.
