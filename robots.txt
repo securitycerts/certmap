@@ -3,6 +3,8 @@
 
 User-agent: *
 Allow: /
+# The JSON API is for applications, not for a search index. See /api/ for its terms.
+Disallow: /api/v1/
 
 User-agent: Googlebot
 Allow: /

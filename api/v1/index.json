@@ -4,6 +4,24 @@
  "license": "CC BY 4.0",
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": {
+  "url": "https://certmap.dev/api/#terms",
+  "contact": "contact@certmap.dev",
+  "limits": {
+   "requests_per_minute": 60,
+   "cache_seconds": 600
+  },
+  "rules": [
+   "Cache what you fetch for at least 10 minutes. Do not call the API on every page view of your site.",
+   "Stay under 60 requests a minute from one client or address.",
+   "If you need the whole dataset, download certs.json or data/certs.json once. Do not walk the per-certification files.",
+   "Automated clients identify themselves with a User-Agent that names the project and gives a contact URL or address.",
+   "Credit cert/map with a visible link to https://certmap.dev/ wherever the data is shown (CC BY 4.0).",
+   "Show price_verified_at next to a price, or tell readers to confirm with the vendor. Do not present the prices as live or authoritative.",
+   "Do not suggest that cert/map or any listed vendor endorses your product.",
+   "The API comes as it is, with no uptime or accuracy guarantee. Clients that ignore these terms can be limited or blocked."
+  ]
+ },
  "updated": "2026-11-10",
  "docs": "https://certmap.dev/api/",
  "openapi": "https://certmap.dev/api/openapi.json",

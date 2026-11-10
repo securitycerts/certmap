@@ -2,6 +2,7 @@
  "license": "CC BY 4.0",
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
  "updated": "2026-11-10",
  "certification": {
   "id": "wcna",

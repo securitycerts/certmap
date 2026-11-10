@@ -23,7 +23,7 @@
 <meta name="theme-color" content="#0b0d12">
 <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg">
 <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
-<link rel="stylesheet" href="../assets/css/static.css?v=2e7a8178">
+<link rel="stylesheet" href="../assets/css/static.css?v=2641ae5e">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebAPI","name":"cert/map API","url":"https://certmap.dev/api/","documentation":"https://certmap.dev/api/","description":"Read-only JSON about cybersecurity certifications.","license":"https://creativecommons.org/licenses/by/4.0/","provider":{"@type":"Organization","name":"cert/map","url":"https://certmap.dev/"}}]</script>
 </head>
 <body>
@@ -59,10 +59,23 @@ console.log(certification.acronym, certification.price_usd);   // OSCP+ 1749</co
   <ul class="diff">
     <li>It is static. The files are regenerated whenever the dataset changes, so there is nothing to query: fetch a file and filter it on your side.</li>
     <li>Cross-origin requests are allowed, so it works from client-side code on any site.</li>
-    <li>Responses are cached for about ten minutes. Please cache on your side too instead of fetching on every page view.</li>
+    <li>Responses are cached for about ten minutes. Cache on your side too; see <a href="#terms">fair use</a> below.</li>
     <li>URLs under <code>/api/v1/</code> keep their shape. A breaking change would be published as <code>v2</code>.</li>
     <li><code>price_usd</code> is the exam list price in US dollars: <code>null</code> when the vendor does not publish one, <code>0</code> when it is free. <code>price_verified_at</code> is the date it was last seen on the vendor's page.</li>
   </ul>
+  <h2 id="terms">Fair use</h2>
+  <p>The API is free and needs no key, which only works if it is used with some care. By using it you agree to the following.</p>
+  <ol class="terms">
+    <li>Cache what you fetch for at least 10 minutes. Do not call the API on every page view of your site.</li>
+    <li>Stay under 60 requests a minute from one client or address.</li>
+    <li>If you need the whole dataset, download certs.json or data/certs.json once. Do not walk the per-certification files.</li>
+    <li>Automated clients identify themselves with a User-Agent that names the project and gives a contact URL or address.</li>
+    <li>Credit cert/map with a visible link to https://certmap.dev/ wherever the data is shown (CC BY 4.0).</li>
+    <li>Show price_verified_at next to a price, or tell readers to confirm with the vendor. Do not present the prices as live or authoritative.</li>
+    <li>Do not suggest that cert/map or any listed vendor endorses your product.</li>
+    <li>The API comes as it is, with no uptime or accuracy guarantee. Clients that ignore these terms can be limited or blocked.</li>
+  </ol>
+  <p>Need more than this allows, or want to tell us what you are building? Write to <a href="mailto:contact@certmap.dev">contact@certmap.dev</a>.</p>
   <h2>Licence and attribution</h2>
   <p>The data is published under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. You can use it in any project, commercial or not, as long as you credit cert/map with a link to <a href="../">certmap.dev</a>. Prices change without notice, so tell your readers to confirm with the vendor.</p>
   <p>The whole dataset is also available as single files: <a href="../data/certs.json">certs.json</a>, <a href="../data/certs.csv">certs.csv</a>, <a href="../data/resources.csv">resources.csv</a> and <a href="../data/comparisons.csv">comparisons.csv</a>.</p>

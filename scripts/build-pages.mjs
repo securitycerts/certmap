@@ -616,6 +616,21 @@ ${qa.map(([q, a], i) => `    <details${i === 0 ? " open" : ""}><summary>${esc(q)
 // on every file, so another site can fetch them from the browser. Everything is
 // under api/v1/ so a breaking change can ship as v2 without moving these.
 const API = "api/v1/";
+// The limits a client is asked to keep. They are published in three places (the
+// documentation, index.json and the OpenAPI file) so a developer meets them
+// wherever they start. A static host cannot enforce them; the README explains
+// how to enforce the request limit at the CDN.
+const API_LIMITS = { requests_per_minute: 60, cache_seconds: 600 };
+const API_TERMS = [
+  `Cache what you fetch for at least ${API_LIMITS.cache_seconds / 60} minutes. Do not call the API on every page view of your site.`,
+  `Stay under ${API_LIMITS.requests_per_minute} requests a minute from one client or address.`,
+  "If you need the whole dataset, download certs.json or data/certs.json once. Do not walk the per-certification files.",
+  "Automated clients identify themselves with a User-Agent that names the project and gives a contact URL or address.",
+  "Credit cert/map with a visible link to https://certmap.dev/ wherever the data is shown (CC BY 4.0).",
+  "Show price_verified_at next to a price, or tell readers to confirm with the vendor. Do not present the prices as live or authoritative.",
+  "Do not suggest that cert/map or any listed vendor endorses your product.",
+  "The API comes as it is, with no uptime or accuracy guarantee. Clients that ignore these terms can be limited or blocked.",
+];
 const apiUrl = rel => SITE + API + rel;
 
 function apiCertSummary(c) {
@@ -657,12 +672,13 @@ function buildApi() {
   const write = (rel, data) => writeFileSync(join(dir, rel), JSON.stringify(data, null, 1) + "\n");
   const meta = {
     license: "CC BY 4.0", license_url: "https://creativecommons.org/licenses/by/4.0/",
-    attribution: "Data from cert/map (https://certmap.dev/)", updated: latest,
+    attribution: "Data from cert/map (https://certmap.dev/)", terms: SITE + "api/#terms", updated: latest,
   };
 
   write("index.json", {
     name: "cert/map API", version: "v1", ...meta,
     docs: SITE + "api/", openapi: SITE + "api/openapi.json",
+    terms: { url: SITE + "api/#terms", contact: EMAIL, limits: API_LIMITS, rules: API_TERMS },
     counts: { certifications: certs.length, vendors: vendors.size, domains: DOMAINS.length, comparisons: PAIRS.length, study_plans: RESOURCES.size },
     endpoints: {
       certifications: apiUrl("certs.json"), certification: apiUrl("certs/{id}.json"),
@@ -690,7 +706,7 @@ function buildApi() {
   const ok = (summary, schema) => ({ get: { summary, responses: { 200: { description: "OK", content: { "application/json": { schema } } } } } });
   writeFileSync(join(ROOT, "api", "openapi.json"), JSON.stringify({
     openapi: "3.1.0",
-    info: { title: "cert/map API", version: "1.0.0", description: "Read-only, static JSON about cybersecurity certifications: prices, prerequisites, study plans and comparisons. No key, no rate limit; please cache.", license: { name: "CC BY 4.0", url: meta.license_url } },
+    info: { title: "cert/map API", version: "1.0.0", description: `Read-only, static JSON about cybersecurity certifications: prices, prerequisites, study plans and comparisons. No key. Fair use applies: at most ${API_LIMITS.requests_per_minute} requests a minute and a cache of at least ${API_LIMITS.cache_seconds / 60} minutes. Full terms at ${SITE}api/#terms.`, termsOfService: SITE + "api/#terms", contact: { name: "cert/map", email: EMAIL }, license: { name: "CC BY 4.0", url: meta.license_url } },
     servers: [{ url: SITE + "api/v1" }],
     paths: {
       "/index.json": ok("Entry point: counts and endpoint URLs", { type: "object" }),
@@ -750,10 +766,16 @@ console.log(certification.acronym, certification.price_usd);   // ${sample.acron
   <ul class="diff">
     <li>It is static. The files are regenerated whenever the dataset changes, so there is nothing to query: fetch a file and filter it on your side.</li>
     <li>Cross-origin requests are allowed, so it works from client-side code on any site.</li>
-    <li>Responses are cached for about ten minutes. Please cache on your side too instead of fetching on every page view.</li>
+    <li>Responses are cached for about ten minutes. Cache on your side too; see <a href="#terms">fair use</a> below.</li>
     <li>URLs under <code>/api/v1/</code> keep their shape. A breaking change would be published as <code>v2</code>.</li>
     <li><code>price_usd</code> is the exam list price in US dollars: <code>null</code> when the vendor does not publish one, <code>0</code> when it is free. <code>price_verified_at</code> is the date it was last seen on the vendor's page.</li>
   </ul>
+  <h2 id="terms">Fair use</h2>
+  <p>The API is free and needs no key, which only works if it is used with some care. By using it you agree to the following.</p>
+  <ol class="terms">
+${API_TERMS.map(t => `    <li>${esc(t)}</li>`).join("\n")}
+  </ol>
+  <p>Need more than this allows, or want to tell us what you are building? Write to <a href="mailto:${EMAIL}">${EMAIL}</a>.</p>
   <h2>Licence and attribution</h2>
   <p>The data is published under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. You can use it in any project, commercial or not, as long as you credit cert/map with a link to <a href="../">certmap.dev</a>. Prices change without notice, so tell your readers to confirm with the vendor.</p>
   <p>The whole dataset is also available as single files: <a href="../data/certs.json">certs.json</a>, <a href="../data/certs.csv">certs.csv</a>, <a href="../data/resources.csv">resources.csv</a> and <a href="../data/comparisons.csv">comparisons.csv</a>.</p>

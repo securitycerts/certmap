@@ -3,7 +3,12 @@
  "info": {
   "title": "cert/map API",
   "version": "1.0.0",
-  "description": "Read-only, static JSON about cybersecurity certifications: prices, prerequisites, study plans and comparisons. No key, no rate limit; please cache.",
+  "description": "Read-only, static JSON about cybersecurity certifications: prices, prerequisites, study plans and comparisons. No key. Fair use applies: at most 60 requests a minute and a cache of at least 10 minutes. Full terms at https://certmap.dev/api/#terms.",
+  "termsOfService": "https://certmap.dev/api/#terms",
+  "contact": {
+   "name": "cert/map",
+   "email": "contact@certmap.dev"
+  },
   "license": {
    "name": "CC BY 4.0",
    "url": "https://creativecommons.org/licenses/by/4.0/"

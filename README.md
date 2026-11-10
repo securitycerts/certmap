@@ -142,6 +142,18 @@ If you find an out-of-date price, a wrong URL or a missing certification, please
 
 The build also writes the data as a static JSON API under `api/v1/`: an entry point (`index.json`), every certification summarised (`certs.json`), one file per certification with its study plan and comparisons (`certs/<id>.json`), plus vendors, domains, comparisons and role paths. It is documented at [certmap.dev/api](https://certmap.dev/api/) and in `api/openapi.json`. It needs no key and can be fetched from a browser on any site. The data is CC BY 4.0: credit cert/map with a link.
 
+### Limits
+
+The fair-use terms are published at [certmap.dev/api/#terms](https://certmap.dev/api/#terms), in `api/v1/index.json` and in the OpenAPI file: at most 60 requests a minute, a cache of at least ten minutes, attribution, and no walking of the per-certification files when the whole dataset is wanted.
+
+GitHub Pages serves static files and cannot limit or block a client, so on its own these terms are a policy, not an enforcement. To enforce them, put the domain behind Cloudflare, which is free for this:
+
+1. In the Cloudflare DNS settings of the domain, switch the records that point at GitHub from "DNS only" to "Proxied", and set SSL/TLS to "Full".
+2. Under Security, WAF, Rate limiting rules, add one rule: when the URI path starts with `/api/`, block an address that makes more than 60 requests in 1 minute, for 10 minutes.
+3. Optionally turn on Bot Fight Mode, and add a WAF rule that blocks requests to `/api/` with an empty User-Agent.
+
+The limits live in one place, `API_LIMITS` in `scripts/build-pages.mjs`; change them there and in the Cloudflare rule together.
+
 ## Sponsors
 
 cert/map is free, open source and has no ads or tracking. Sponsors are shown on the home page in three tiers (gold, silver, bronze). What sponsoring involves is explained at [certmap.dev/sponsors](https://certmap.dev/sponsors/); to become one, write to contact@certmap.dev. Sponsorship never changes which certifications are listed or what is said about them.
