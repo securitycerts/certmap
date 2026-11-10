@@ -6,6 +6,8 @@ on:
       - "data/**"
       - "scripts/validate.mjs"
       - "scripts/build-pages.mjs"
+      - "assets/**"
+      - "index.html"
 
 jobs:
   validate:
@@ -20,5 +22,5 @@ jobs:
       - name: Generated pages are up to date
         run: |
           node scripts/build-pages.mjs
-          git add -N certs
-          git diff --exit-code -- certs sitemap.xml index.html llms.txt || { echo "Run 'npm run build' and commit the result."; exit 1; }
+          git add -N .
+          git diff --exit-code || { echo "Run 'npm run build' and commit the result."; exit 1; }

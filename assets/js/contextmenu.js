@@ -7,8 +7,8 @@
 //   { separator: true }
 //   { heading: "text" }
 
-import { el } from "./dom.js";
-import { menuIn } from "./motion.js";
+import { el } from "./dom.js?v=22fef1b3";
+import { menuIn } from "./motion.js?v=22fef1b3";
 
 const MARGIN = 8;
 let menu = null;

@@ -1,9 +1,9 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
   fmtPrice, fmtAgo, isStale, slug,
-} from "./format.js";
-import { el, svg } from "./dom.js";
-import { makeLogo } from "./logo.js";
+} from "./format.js?v=22fef1b3";
+import { el, svg } from "./dom.js?v=22fef1b3";
+import { makeLogo } from "./logo.js?v=22fef1b3";
 
 export { slug, fmtPrice };
 

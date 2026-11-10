@@ -1,0 +1,3829 @@
+# cert/map: full certification list
+
+> 272 cybersecurity certifications from 62 vendors, grouped by domain and ordered from beginner to expert. Prices are exam list prices in USD. Generated from data/certs.csv; last price check 2026-11-10.
+
+Source: https://certmap.dev/
+Dataset: https://certmap.dev/data/certs.csv and https://certmap.dev/data/certs.json
+Licence: CC BY 4.0 (dataset), MIT (code)
+
+## Communication & Network Security
+
+### CWNA: Certified Wireless Network Administrator
+
+Vendor-neutral enterprise Wi-Fi administration certification with a 60-question exam. It is the required base credential for the CWNP professional-level certifications.
+
+- Vendor: CWNP
+- Level: beginner
+- Exam price: $275 (List price $274.99 (exam CWNA-110))
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.cwnp.com/certifications/cwna
+- cert/map page: https://certmap.dev/certs/cwna.html
+
+### JNCIA-Junos: Juniper Networks Certified Associate Junos
+
+Foundational Junos networking certification covering CLI, interfaces and basic routing.
+
+- Vendor: Juniper
+- Level: beginner
+- Exam price: $200
+- Price checked: 2026-06-08
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://learningportal.juniper.net/juniper/user_activity_info.aspx?id=14354
+- cert/map page: https://certmap.dev/certs/jncia-junos.html
+
+### MNSA: MCSI Network Security Analyst
+
+Practical network security analysis certification.
+
+- Vendor: MCSI
+- Level: beginner
+- Exam price: Not published (Not in the vendor's current catalogue (checked 2026-11-10); kept for existing holders)
+- Exam length: 3 days
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.mosse-institute.com/certifications.html
+- cert/map page: https://certmap.dev/certs/mnsa.html
+
+### Network+: CompTIA Network+
+
+Foundational networking certification covering protocols, topologies and basic security.
+
+- Vendor: CompTIA
+- Level: beginner
+- Exam price: $399
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.comptia.org/certifications/network
+- cert/map page: https://certmap.dev/certs/net-plus.html
+
+### AZ-700: Microsoft Azure Network Engineer Associate
+
+Azure networking certification covering virtual networks, hybrid connectivity and load balancing.
+
+- Vendor: Microsoft
+- Level: intermediate
+- Exam price: $165
+- Price checked: 2026-11-10
+- Exam length: 100 minutes
+- Exam format: written or multiple choice
+- Renewal: every 1 years
+- Prerequisites: AZ-104
+- Official page: https://learn.microsoft.com/credentials/certifications/azure-network-engineer-associate/
+- cert/map page: https://certmap.dev/certs/az-700.html
+
+### CCNA: Cisco Certified Network Associate
+
+Foundational Cisco networking certification.
+
+- Vendor: Cisco
+- Level: intermediate
+- Exam price: $300
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html
+- cert/map page: https://certmap.dev/certs/ccna.html
+
+### CCSA: Check Point Certified Security Administrator
+
+Check Point gateway administration certification covering policy, NAT and identity awareness.
+
+- Vendor: Check Point
+- Level: intermediate
+- Exam price: $250
+- Price checked: 2026-06-08
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.checkpoint.com/services/training/certification-program/
+- cert/map page: https://certmap.dev/certs/ccsa.html
+
+### CND: EC-Council Certified Network Defender
+
+Network defence and security operations certification.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $550 (Remote-proctored exam voucher)
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/programs/certified-network-defender-cnd/
+- cert/map page: https://certmap.dev/certs/cnd.html
+
+### CWSP: Certified Wireless Security Professional
+
+Vendor-neutral certification on securing enterprise Wi-Fi networks, with a 60-question exam. Candidates must hold a current CWNA credential.
+
+- Vendor: CWNP
+- Level: intermediate
+- Exam price: $350 (List price $349.99 (exam CWSP-208); requires a current CWNA)
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Prerequisites: CWNA
+- Official page: https://www.cwnp.com/certifications/cwsp
+- cert/map page: https://certmap.dev/certs/cwsp.html
+
+### JNCIS-SEC: Juniper Networks Certified Specialist Security
+
+Specialist Junos certification covering SRX firewall, IPsec and screen protection.
+
+- Vendor: Juniper
+- Level: intermediate
+- Exam price: $300
+- Price checked: 2026-06-08
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://learningportal.juniper.net/juniper/user_activity_info.aspx?id=14363
+- cert/map page: https://certmap.dev/certs/jncis-sec.html
+
+### NetSec Pro: Palo Alto Networks Network Security Professional
+
+Professional-level role-based certification covering the Palo Alto Networks network security portfolio. It sits below the specialist certifications in the Network Security track.
+
+- Vendor: Palo Alto Networks
+- Level: intermediate
+- Exam price: $200 (Professional-level exam)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-professional
+- cert/map page: https://certmap.dev/certs/pan-netsec-pro.html
+
+### NSE 4: Fortinet NSE 4 FortiOS Administrator
+
+FortiGate operator certification covering firewall policy, routing, VPN and SD-WAN basics.
+
+- Vendor: Fortinet
+- Level: intermediate
+- Exam price: $200
+- Price checked: 2026-06-08
+- Exam length: 105 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.fortinet.com/training-certification
+- cert/map page: https://certmap.dev/certs/fcp-nse4.html
+
+### OSWP: OffSec Wireless Professional
+
+Wireless attacks and Wi-Fi penetration testing certification.
+
+- Vendor: OffSec
+- Level: intermediate
+- Exam price: Not published (No standalone bundle; PEN-210 is included with a Learn subscription (Learn Fundamentals $799/year, Learn One $2,749/year); exam attempt terms not published)
+- Exam length: 240 minutes
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.offsec.com/courses/pen-210/
+- cert/map page: https://certmap.dev/certs/oswp.html
+
+### WCA-101: Wireshark Certified Analyst
+
+Official packet analysis certification from the Wireshark Foundation. The WCA-101 exam has 50 to 60 questions and is delivered through Kryterion.
+
+- Vendor: Wireshark
+- Level: intermediate
+- Exam price: $349 (Per exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.wireshark.org/certifications
+- cert/map page: https://certmap.dev/certs/wca.html
+
+### WCNA: Wireshark Certified Network Analyst
+
+Wireshark protocol analysis certification covering packet capture, decoding and troubleshooting.
+
+- Vendor: Wireshark
+- Level: intermediate
+- Exam price: $299
+- Price checked: 2026-06-08
+- Exam length: 90 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.wcnacertification.com/
+- cert/map page: https://certmap.dev/certs/wcna.html
+
+### ZDTA: Zscaler Digital Transformation Administrator
+
+Certification exam for administrators of the Zscaler Zero Trust Exchange, taken at the end of the Zscaler for Users Administrator learning path.
+
+- Vendor: Zscaler
+- Level: intermediate
+- Exam price: $300 (Per attempt (or 1 Zscaler training credit))
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.zscaler.com/zscaler-cyber-academy/digital-transformation-administrator
+- cert/map page: https://certmap.dev/certs/zdta.html
+
+### ANS-C01: AWS Advanced Networking Specialty
+
+AWS networking specialty certification.
+
+- Vendor: AWS
+- Level: advanced
+- Exam price: $300 (Exam retires; last day to take it is December 31, 2026)
+- Price checked: 2026-11-10
+- Exam length: 170 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://aws.amazon.com/certification/certified-advanced-networking-specialty/
+- cert/map page: https://certmap.dev/certs/aws-ans.html
+
+### CCNP Security: Cisco Certified Network Professional Security
+
+Advanced Cisco security professional certification.
+
+- Vendor: Cisco
+- Level: advanced
+- Exam price: $400 (Core exam; plus $300 concentration exam)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/security/ccnp-security/index.html
+- cert/map page: https://certmap.dev/certs/ccnp-sec.html
+
+### CCSE: Check Point Certified Security Expert
+
+Advanced Check Point administration covering clustering, advanced VPN and performance tuning.
+
+- Vendor: Check Point
+- Level: advanced
+- Exam price: $250
+- Price checked: 2026-06-08
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Prerequisites: CCSA
+- Official page: https://www.checkpoint.com/services/training/certification-program/
+- cert/map page: https://certmap.dev/certs/cp-ccse.html
+
+### CloudNetX: CompTIA CloudNetX
+
+Advanced certification on designing and securing hybrid and cloud network architectures. Single 165-minute exam (CNX-001) with up to 90 questions.
+
+- Vendor: CompTIA
+- Level: advanced
+- Exam price: $544 (Exam CNX-001)
+- Price checked: 2026-11-10
+- Exam length: 165 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.comptia.org/en-us/certifications/cloudnetx/
+- cert/map page: https://certmap.dev/certs/cloudnetx.html
+
+### NGFW Engineer: Palo Alto Networks Next-Generation Firewall Engineer
+
+Specialist-level role-based certification for engineers who deploy and operate Palo Alto Networks next-generation firewalls. One of the successors to the retired PCNSE.
+
+- Vendor: Palo Alto Networks
+- Level: advanced
+- Exam price: $250 (Specialist-level exam)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer
+- cert/map page: https://certmap.dev/certs/pan-ngfw-engineer.html
+
+### NSE 5: Fortinet NSE 5 Network Security Analyst
+
+Analyst-level Fortinet certification covering centralized management and log analysis with FortiManager and FortiAnalyzer.
+
+- Vendor: Fortinet
+- Level: advanced
+- Exam price: $200
+- Price checked: 2026-06-08
+- Exam length: 75 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Prerequisites: NSE 4
+- Official page: https://www.fortinet.com/training-certification
+- cert/map page: https://certmap.dev/certs/fcp-nse5.html
+
+### PCNE: Google Cloud Professional Cloud Network Engineer
+
+Google Cloud networking certification covering VPC design, hybrid connectivity and network services.
+
+- Vendor: Google
+- Level: advanced
+- Exam price: $200
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://cloud.google.com/learn/certification/cloud-network-engineer
+- cert/map page: https://certmap.dev/certs/gcp-pcne.html
+
+### PCNSE: Palo Alto Networks Certified Network Security Engineer
+
+Retired in July 2025 and succeeded by Palo Alto Networks role-based credentials (Next-Generation Firewall Engineer, Network Security Professional). Covered PAN-OS configuration, deployment and troubleshooting.
+
+- Vendor: Palo Alto Networks
+- Level: advanced
+- Exam price: Not published (Retired July 2025; successor exams priced $200 to $250)
+- Exam length: 80 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.paloaltonetworks.com/services/education/certification
+- cert/map page: https://certmap.dev/certs/pcnse.html
+
+### CCIE Security: Cisco Certified Internetwork Expert Security
+
+Expert-level 8-hour hands-on lab certification.
+
+- Vendor: Cisco
+- Level: expert
+- Exam price: $1,600 (Lab exam; plus $400 core exam (350-701 SCOR))
+- Price checked: 2026-11-10
+- Exam length: 480 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/security/ccie-security/index.html
+- cert/map page: https://certmap.dev/certs/ccie-sec.html
+
+### CWPE: HTB Certified Wi-Fi Pentesting Expert
+
+Practical exam on attacking WEP, WPS, WPA2, WPA3 and WPA-Enterprise networks, rogue access points and pivoting into internal networks, with a written report. Requires completing the Wi-Fi Penetration Tester job-role path.
+
+- Vendor: Hack The Box
+- Level: expert
+- Exam price: $350 (Exam voucher only, two attempts; job-role path access sold separately)
+- Price checked: 2026-11-10
+- Exam length: 7 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-wi-fi-pentesting-expert
+- cert/map page: https://certmap.dev/certs/cwpe.html
+
+## IAM
+
+### Okta Pro: Okta Certified Professional
+
+Okta identity platform professional certification.
+
+- Vendor: Okta
+- Level: beginner
+- Exam price: $250
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.okta.com/services/certification/
+- cert/map page: https://certmap.dev/certs/okta-pro.html
+
+### Vault Associate: HashiCorp Certified: Vault Associate
+
+One-hour online proctored multiple-choice exam on HashiCorp Vault fundamentals, including secrets management, authentication methods and policies.
+
+- Vendor: HashiCorp
+- Level: beginner
+- Exam price: $71 (List price $70.50 plus local taxes; no free retake)
+- Price checked: 2026-11-10
+- Exam length: 60 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://developer.hashicorp.com/certifications/vault-associate
+- cert/map page: https://certmap.dev/certs/vault-associate.html
+
+### Okta Admin: Okta Certified Administrator
+
+Second-level Okta certification for administrators, taken after Okta Certified Professional. Valid for two years.
+
+- Vendor: Okta
+- Level: intermediate
+- Exam price: $250 (Retake $100)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Prerequisites: Okta Pro
+- Official page: https://www.okta.com/services/certification/
+- cert/map page: https://certmap.dev/certs/okta-admin.html
+
+### SC-300: Microsoft Identity and Access Administrator
+
+Entra ID identity management certification.
+
+- Vendor: Microsoft
+- Level: intermediate
+- Exam price: $165
+- Price checked: 2026-11-10
+- Exam length: 100 minutes
+- Exam format: written or multiple choice
+- Renewal: every 1 years
+- Official page: https://learn.microsoft.com/credentials/certifications/identity-and-access-administrator/
+- cert/map page: https://certmap.dev/certs/sc-300.html
+
+### SP-IIQ: SailPoint Certified IdentityIQ Engineer
+
+SailPoint IdentityIQ engineering certification.
+
+- Vendor: SailPoint
+- Level: intermediate
+- Exam price: $400
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.sailpoint.com/services/training/certification/
+- cert/map page: https://certmap.dev/certs/sailpoint-eng.html
+
+### SP-ISE: SailPoint Certified Identity Security Engineer
+
+SailPoint professional certification launched in February 2025. Up to 73 questions with up to 120 minutes of seat time, valid for two years.
+
+- Vendor: SailPoint
+- Level: intermediate
+- Exam price: $400 (Or 4 training units)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://community.sailpoint.com/t5/Identity-University-Blog/What-s-new-in-SailPoint-s-Certification-and-Credentialing/ba-p/263974
+- cert/map page: https://certmap.dev/certs/sailpoint-ise.html
+
+## Security Architecture & Engineering
+
+### CCZT: Certificate of Competence in Zero Trust
+
+Zero trust architecture and implementation certificate.
+
+- Vendor: CSA
+- Level: intermediate
+- Exam price: $175 (Exam token includes two attempts, two-year window)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://cloudsecurityalliance.org/education/cczt
+- cert/map page: https://certmap.dev/certs/cczt.html
+
+### ECES: EC-Council Certified Encryption Specialist
+
+Cryptography certification covering symmetric and asymmetric algorithms and their applications. Exam 212-81 has 50 multiple-choice questions in 2 hours.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $249 (Remote-proctored exam voucher (ECES v3))
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/train-certify/ec-council-certified-encryption-specialist-eces/
+- cert/map page: https://certmap.dev/certs/eces.html
+
+### SCF: SABSA Chartered Security Architect, Foundation Certificate
+
+Foundation level of the SABSA enterprise security architecture framework. Two modules (F1 and F2) of 48 multiple-choice questions and 60 minutes each, with a 75% pass mark per module.
+
+- Vendor: SABSA
+- Level: intermediate
+- Exam price: Not published (Fee set by accredited education partners; candidates must attend an official SABSA Foundation course)
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.sabsa.org/certification/
+- cert/map page: https://certmap.dev/certs/sabsa-scf.html
+
+### SecAI+: CompTIA SecAI+
+
+Certification on securing AI systems and using AI in security operations, governance and compliance. Single 60-minute exam (CY0-001) with up to 60 questions.
+
+- Vendor: CompTIA
+- Level: intermediate
+- Exam price: $298 (Exam CY0-001)
+- Price checked: 2026-11-10
+- Exam length: 60 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Prerequisites: Security+
+- Official page: https://www.comptia.org/en-us/certifications/secai/
+- cert/map page: https://certmap.dev/certs/secai-plus.html
+
+### CASP+: CompTIA SecurityX
+
+Advanced security practitioner certification covering enterprise security architecture.
+
+- Vendor: CompTIA
+- Level: advanced
+- Exam price: $544 (Formerly CASP+)
+- Price checked: 2026-11-10
+- Exam length: 165 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Prerequisites: Security+
+- DoD 8140: approved
+- Official page: https://www.comptia.org/certifications/securityx
+- cert/map page: https://certmap.dev/certs/casp-plus.html
+
+### GSE: GIAC Security Expert
+
+Portfolio credential awarded for holding six active GIAC Practitioner certifications and four GIAC Applied Knowledge certifications. It replaced the former multi-day GSE lab exam.
+
+- Vendor: GIAC
+- Level: expert
+- Exam price: Not published (No separate GSE fee; portfolio of 6 Practitioner and 4 Applied Knowledge (GX) certifications, each paid separately)
+- Exam format: hands-on, performance-based
+- Renewal: every 4 years
+- Prerequisites: GSEC, GCIH
+- Official page: https://www.giac.org/get-certified/giac-portfolio-certifications/
+- cert/map page: https://certmap.dev/certs/gse.html
+
+### ISSAP: ISC2 Information Systems Security Architecture Professional
+
+Architecture-focused concentration for CISSP holders, covering enterprise security architecture and design.
+
+- Vendor: ISC2
+- Level: expert
+- Exam price: $599 (CISSP concentration)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Prerequisites: CISSP
+- DoD 8140: approved
+- Official page: https://www.isc2.org/certifications/issap
+- cert/map page: https://certmap.dev/certs/issap.html
+
+### ISSEP: ISC2 Information Systems Security Engineering Professional
+
+Engineering-focused concentration for CISSP holders, covering systems security engineering across the lifecycle.
+
+- Vendor: ISC2
+- Level: expert
+- Exam price: $599 (CISSP concentration)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Prerequisites: CISSP
+- DoD 8140: approved
+- Official page: https://www.isc2.org/certifications/issep
+- cert/map page: https://certmap.dev/certs/issep.html
+
+### NetSec Architect: Palo Alto Networks Network Security Architect
+
+Architect-level certification at the top of the Palo Alto Networks Network Security track, focused on designing network security architectures.
+
+- Vendor: Palo Alto Networks
+- Level: expert
+- Exam price: $300 (Architect-level exam)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-architect
+- cert/map page: https://certmap.dev/certs/pan-netsec-architect.html
+
+### SC-100: Microsoft Cybersecurity Architect
+
+Microsoft cybersecurity architect expert certification (exam SC-100); requires one associate prerequisite such as AZ-500, SC-200 or SC-300.
+
+- Vendor: Microsoft
+- Level: expert
+- Exam price: $165
+- Price checked: 2026-11-10
+- Exam length: 150 minutes
+- Exam format: written or multiple choice
+- Renewal: every 1 years
+- Prerequisites: SC-200
+- Official page: https://learn.microsoft.com/credentials/certifications/cybersecurity-architect-expert/
+- cert/map page: https://certmap.dev/certs/sc-100.html
+
+## Asset Security
+
+### A+: CompTIA A+
+
+Entry-level IT support certification covering hardware and operating systems.
+
+- Vendor: CompTIA
+- Level: beginner
+- Exam price: $274 (Per exam (2 required))
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.comptia.org/certifications/a
+- cert/map page: https://certmap.dev/certs/a-plus.html
+
+### Tech+: CompTIA Tech+
+
+Entry-level IT fundamentals certification (CompTIA Tech+, FC0-U71); successor to the retired IT Fundamentals+ (ITF+).
+
+- Vendor: CompTIA
+- Level: beginner
+- Exam price: $129
+- Price checked: 2026-11-10
+- Exam length: 60 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.comptia.org/en-us/certifications/tech/
+- cert/map page: https://certmap.dev/certs/itf-plus.html
+
+### Server+: CompTIA Server+
+
+Server administration certification.
+
+- Vendor: CompTIA
+- Level: intermediate
+- Exam price: $399
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.comptia.org/certifications/server
+- cert/map page: https://certmap.dev/certs/server-plus.html
+
+### VCP-DCV: VMware Certified Professional - Data Center Virtualization
+
+vSphere administration certification covering compute, storage and networking virtualisation.
+
+- Vendor: VMware
+- Level: intermediate
+- Exam price: $250
+- Exam length: 135 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.broadcom.com/support/education/vmware/certification
+- cert/map page: https://certmap.dev/certs/vcp-dcv.html
+
+## Security & Risk Management
+
+### CC: Certified in Cybersecurity
+
+Entry-level cybersecurity certification covering foundational security principles; no work experience required.
+
+- Vendor: ISC2
+- Level: beginner
+- Exam price: $199 (Standard exam fee; the free 1MCC program closed to new enrolments in May 2026)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.isc2.org/certifications/cc
+- cert/map page: https://certmap.dev/certs/cc.html
+
+### CCST CS: Cisco Certified Support Technician Cybersecurity
+
+Entry-level Cisco cybersecurity certification.
+
+- Vendor: Cisco
+- Level: beginner
+- Exam price: $125
+- Price checked: 2026-11-10
+- Exam length: 50 minutes
+- Exam format: written or multiple choice
+- Renewal: every 5 years
+- Official page: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/index.html
+- cert/map page: https://certmap.dev/certs/ccst-cyber.html
+
+### CJCA: HTB Certified Junior Cybersecurity Associate
+
+Entry-level practical exam combining a gray-box penetration test with validation of SIEM alerts, followed by a written report. Requires completing the Junior Cybersecurity Analyst job-role path.
+
+- Vendor: Hack The Box
+- Level: beginner
+- Exam price: $105 (Exam voucher only, two attempts; job-role path access sold separately)
+- Price checked: 2026-11-10
+- Exam length: 5 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-junior-cybersecurity-associate
+- cert/map page: https://certmap.dev/certs/cjca.html
+
+### GFACT: GIAC Foundational Cybersecurity Technologies
+
+Foundational cybersecurity technologies certification.
+
+- Vendor: GIAC
+- Level: beginner
+- Exam price: $399 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/foundational-cybersecurity-technologies-gfact/
+- cert/map page: https://certmap.dev/certs/gfact.html
+
+### LPI SE: LPI Security Essentials
+
+Entry-level certificate on basic IT security concepts. Exam 020-100 has 40 questions and the certificate does not expire.
+
+- Vendor: LPI
+- Level: beginner
+- Exam price: $120 (US price; lower in other pricing tiers)
+- Price checked: 2026-11-10
+- Exam length: 60 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.lpi.org/our-certifications/security-essentials-overview/
+- cert/map page: https://certmap.dev/certs/lpi-security-essentials.html
+
+### Open FAIR: Open FAIR 2 Foundation
+
+Knowledge-based certification on the Open FAIR body of knowledge for quantitative information risk analysis.
+
+- Vendor: The Open Group
+- Level: beginner
+- Exam price: $405 (Pearson VUE exam booking fee (exam OGOF-101); retail voucher $435)
+- Price checked: 2026-11-10
+- Exam length: 60 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.opengroup.org/certifications/openfair
+- cert/map page: https://certmap.dev/certs/open-fair-2.html
+
+### OSCC-SEC: OffSec CyberCore Certified: Security Essentials
+
+Foundational cybersecurity certification covering core concepts and tradecraft basics.
+
+- Vendor: OffSec
+- Level: beginner
+- Exam price: $899 (CyberCore bundle: one year of course access, labs and two exam attempts)
+- Price checked: 2026-11-10
+- Exam length: 360 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.offsec.com/courses/sec-100/
+- cert/map page: https://certmap.dev/certs/oscc-sec.html
+
+### SC-900: Microsoft Security Compliance and Identity Fundamentals
+
+Microsoft fundamentals certification covering security identity and compliance basics.
+
+- Vendor: Microsoft
+- Level: beginner
+- Exam price: $99
+- Price checked: 2026-11-10
+- Exam length: 45 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://learn.microsoft.com/credentials/certifications/security-compliance-and-identity-fundamentals/
+- cert/map page: https://certmap.dev/certs/sc-900.html
+
+### Security+: CompTIA Security+
+
+Foundational vendor-neutral cybersecurity certification covering core concepts and hands-on skills.
+
+- Vendor: CompTIA
+- Level: beginner
+- Exam price: $439
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.comptia.org/certifications/security
+- cert/map page: https://certmap.dev/certs/sec-plus.html
+
+### CBCP: Certified Business Continuity Professional
+
+Business continuity credential requiring more than two years of experience, five subject-area essays with references and a pass of at least 75% on the DRI Qualifying Examination.
+
+- Vendor: DRI International
+- Level: intermediate
+- Exam price: Not published (Application fee $400 and annual renewal fee $225; the Qualifying Examination fee is usually included in DRI course pricing)
+- Exam length: 150 minutes
+- Exam format: written or multiple choice
+- Renewal: every 1 years
+- Official page: https://drii.org/certification/cbcp
+- cert/map page: https://certmap.dev/certs/cbcp.html
+
+### GSEC: GIAC Security Essentials
+
+Hands-on foundational security certification from GIAC.
+
+- Vendor: GIAC
+- Level: intermediate
+- Exam price: $999 (Exam only; SANS SEC401 is the recommended preparatory course (optional))
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 4 years
+- DoD 8140: approved
+- Official page: https://www.giac.org/certifications/security-essentials-gsec/
+- cert/map page: https://certmap.dev/certs/gsec.html
+
+### TAISE: Trusted AI Safety Expert
+
+AI safety and security certificate developed by CSA with Northeastern University. Exam has 60 multiple-choice questions in 120 minutes.
+
+- Vendor: CSA
+- Level: intermediate
+- Exam price: $795 (Training + exam bundle, two attempts, two-year window; no exam-only option)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://cloudsecurityalliance.org/education/taise
+- cert/map page: https://certmap.dev/certs/taise.html
+
+### AAISM: Advanced in AI Security Management
+
+Credential on managing security for AI systems across AI governance, AI risk management and AI technologies and controls. Candidates must hold an active CISM or CISSP; the exam has 90 questions.
+
+- Vendor: ISACA
+- Level: advanced
+- Exam price: $459 (Member rate; $599 non-member; requires active CISM or CISSP)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.isaca.org/credentialing/aaism
+- cert/map page: https://certmap.dev/certs/aaism.html
+
+### CCISO: Certified Chief Information Security Officer
+
+Executive-level CISO certification covering five governance domains.
+
+- Vendor: EC-Council
+- Level: expert
+- Exam price: $999
+- Price checked: 2026-11-10
+- Exam length: 150 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/programs/certified-chief-information-security-officer-cciso/
+- cert/map page: https://certmap.dev/certs/cciso.html
+
+### CISSP: Certified Information Systems Security Professional
+
+Gold-standard cybersecurity certification covering 8 domains; requires 5 years experience.
+
+- Vendor: ISC2
+- Level: expert
+- Exam price: $749
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.isc2.org/Certifications/CISSP
+- cert/map page: https://certmap.dev/certs/cissp.html
+
+### ISSMP: ISC2 Information Systems Security Management Professional
+
+Management-focused concentration for CISSP holders, covering security programme leadership and governance.
+
+- Vendor: ISC2
+- Level: expert
+- Exam price: $599 (CISSP concentration)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Prerequisites: CISSP
+- DoD 8140: approved
+- Official page: https://www.isc2.org/certifications/issmp
+- cert/map page: https://certmap.dev/certs/issmp.html
+
+## Software Security
+
+### CAP: Certified AppSec Practitioner
+
+Entry-level multiple-choice exam on application security fundamentals, with factual and scenario-based questions. The certificate does not expire.
+
+- Vendor: The SecOps Group
+- Level: beginner
+- Exam price: $134 (Vendor lists GBP only (GBP 100); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts)
+- Price checked: 2026-11-10
+- Exam length: 60 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://pentestingexams.com/certifications/essentials/certified-application-security-practitioner/
+- cert/map page: https://certmap.dev/certs/secops-cap.html
+
+### CASA: Certified API Security Analyst
+
+Exam of 100 multiple-choice questions in two hours on API security and the OWASP API Security Top 10, with an 80% pass mark.
+
+- Vendor: APIsec University
+- Level: beginner
+- Exam price: $125 (Retakes $75)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://au.apisec.ai/certifications
+- cert/map page: https://certmap.dev/certs/apisec-casa.html
+
+### OSCC-SJD: OffSec CyberCore Certified: Secure Java Essentials
+
+Foundational defensive cybersecurity certification for junior SOC and IT roles.
+
+- Vendor: OffSec
+- Level: beginner
+- Exam price: $899 (CyberCore bundle: one year of course access, labs and two exam attempts)
+- Price checked: 2026-11-10
+- Exam length: 360 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.offsec.com/courses/sjd-100/
+- cert/map page: https://certmap.dev/certs/oscc-sjd.html
+
+### CAISP: Certified AI Security Professional
+
+Practical exam of five challenges in six hours, followed by 24 hours to submit a report, covering attacks on and defences for AI and LLM systems. Lifetime credential.
+
+- Vendor: Practical DevSecOps
+- Level: intermediate
+- Exam price: $1,099 (List price; includes course, labs and one exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 360 minutes
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.practical-devsecops.com/certified-ai-security-professional/
+- cert/map page: https://certmap.dev/certs/caisp.html
+
+### CASE .NET: EC-Council Certified Application Security Engineer (.NET)
+
+Secure .NET application development certification.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $450 (Remote-proctored exam voucher)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/programs/certified-application-security-engineer-case-net/
+- cert/map page: https://certmap.dev/certs/case-net.html
+
+### CASE Java: EC-Council Certified Application Security Engineer (Java)
+
+Secure Java application development certification.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $450 (Remote-proctored exam voucher)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/programs/certified-application-security-engineer-case-java/
+- cert/map page: https://certmap.dev/certs/case-java.html
+
+### CDP: Certified DevSecOps Professional
+
+Practical exam of five challenges to be solved in six hours, followed by 24 hours to submit a report, covering security automation in CI/CD pipelines. Lifetime credential.
+
+- Vendor: Practical DevSecOps
+- Level: intermediate
+- Exam price: $899 (List price; includes course, labs and one exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 360 minutes
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.practical-devsecops.com/certified-devsecops-professional/
+- cert/map page: https://certmap.dev/certs/cdp-devsecops.html
+
+### CIPT: Certified Information Privacy Technologist
+
+Privacy by design technology certification.
+
+- Vendor: IAPP
+- Level: intermediate
+- Exam price: $550
+- Price checked: 2026-11-10
+- Exam length: 150 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://iapp.org/certify/cipt/
+- cert/map page: https://certmap.dev/certs/cipt.html
+
+### CWES: HTB Certified Web Exploitation Specialist
+
+HTB Certified Web Exploitation Specialist (CWES), formerly Certified Bug Bounty Hunter. Hands-on web application and API exploitation certification with a practical exam.
+
+- Vendor: Hack The Box
+- Level: intermediate
+- Exam price: $210 (Exam voucher only, two attempts; job-role path access sold separately)
+- Price checked: 2026-11-10
+- Exam length: 7 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-specialist
+- cert/map page: https://certmap.dev/certs/cbbh.html
+
+### ECDE: EC-Council Certified DevSecOps Engineer
+
+DevSecOps certification covering security integration across the software delivery pipeline. Exam 312-97 has 100 multiple-choice questions in 4 hours.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $550 (Remote-proctored exam voucher (ECDE v2))
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/train-certify/certified-devsecops-engineer-ecde/
+- cert/map page: https://certmap.dev/certs/ecde.html
+
+### eWPT: eLearnSecurity Web Application Penetration Tester
+
+Hands-on web application penetration testing certification.
+
+- Vendor: INE
+- Level: intermediate
+- Exam price: $450 (Exam voucher only; bundle with 3 months of training $599)
+- Price checked: 2026-11-10
+- Exam length: 3 days
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://ine.com/security/certifications/ewpt-certification
+- cert/map page: https://certmap.dev/certs/ewpt.html
+
+### GH-500: GitHub Advanced Security
+
+Exam GH-500 on using GitHub Advanced Security to secure code, secrets and dependencies, covering secret protection, supply chain security and code scanning with CodeQL.
+
+- Vendor: GitHub
+- Level: intermediate
+- Exam price: Not published (Price varies by the country or region where the exam is proctored)
+- Exam length: 100 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/
+- cert/map page: https://certmap.dev/certs/gh-advanced-security.html
+
+### MWASP: MCSI Web Application Security Practitioner
+
+Practical web application security and assessment certification.
+
+- Vendor: MCSI
+- Level: intermediate
+- Exam price: Not published (Not in the vendor's current catalogue (checked 2026-11-10); kept for existing holders)
+- Exam length: 3 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.mosse-institute.com/certifications.html
+- cert/map page: https://certmap.dev/certs/mwasp.html
+
+### OSWA: OffSec Web Assessor
+
+Hands-on web application security assessment certification.
+
+- Vendor: OffSec
+- Level: intermediate
+- Exam price: $1,749 (Course and cert bundle: 90-day lab and one exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 24 hours
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.offsec.com/courses/web-200/
+- cert/map page: https://certmap.dev/certs/oswa.html
+
+### PAPA: Practical AI Pentest Associate
+
+Associate-level practical exam on exploiting an agentic AI application, with a written report. Does not expire.
+
+- Vendor: TCM Security
+- Level: intermediate
+- Exam price: $249 (Exam voucher with 12 months of training and one free retake)
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://certifications.tcm-sec.com/papa/
+- cert/map page: https://certmap.dev/certs/papa.html
+
+### PWPA: Practical Web Pentest Associate
+
+Practical web application penetration testing certification.
+
+- Vendor: TCM Security
+- Level: intermediate
+- Exam price: $249
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://certifications.tcm-sec.com/pwpa/
+- cert/map page: https://certmap.dev/certs/pwpa.html
+
+### COAE: HTB Certified Offensive AI Expert
+
+Practical exam on finding and exploiting vulnerabilities in AI and ML systems, including adversarial ML, prompt injection and LLM application attacks, with a written report. Requires completing the AI Red Teamer job-role path.
+
+- Vendor: Hack The Box
+- Level: advanced
+- Exam price: $210 (Exam voucher only, two attempts; job-role path access sold separately)
+- Price checked: 2026-11-10
+- Exam length: 7 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai-expert
+- cert/map page: https://certmap.dev/certs/coae.html
+
+### eWPTX: eLearnSecurity Web Application Penetration Tester eXtreme
+
+Advanced web application penetration testing certification.
+
+- Vendor: INE
+- Level: advanced
+- Exam price: $450 (Exam voucher only; bundle with 3 months of training $599)
+- Price checked: 2026-11-10
+- Exam length: 6 days
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://ine.com/security/certifications/ewptx-certification
+- cert/map page: https://certmap.dev/certs/ewptx.html
+
+### GWAPT: GIAC Web Application Penetration Tester
+
+Web application penetration testing certification.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/web-application-penetration-tester-gwapt/
+- cert/map page: https://certmap.dev/certs/gwapt.html
+
+### MASE: MCSI Application Security Engineer
+
+Hands-on application security engineering and secure code review certification.
+
+- Vendor: MCSI
+- Level: advanced
+- Exam price: Not published (Not in the vendor's current catalogue (checked 2026-11-10); kept for existing holders)
+- Exam length: 3 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.mosse-institute.com/certifications.html
+- cert/map page: https://certmap.dev/certs/mase.html
+
+### OSAI+: OffSec AI Red Teamer
+
+AI red teaming certification covering attacks on machine learning systems and LLM applications.
+
+- Vendor: OffSec
+- Level: advanced
+- Exam price: $1,749 (Course and cert bundle: 90-day lab and one exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 24 hours
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.offsec.com/courses/ai-300/
+- cert/map page: https://certmap.dev/certs/osai.html
+
+### PWPP: Practical Web Pentest Professional
+
+Professional-level practical web application penetration test covering issues such as NoSQL injection, race conditions, SSRF and template injection, with a written report. Does not expire.
+
+- Vendor: TCM Security
+- Level: advanced
+- Exam price: $499 (Exam voucher with 12 months of training and one free retake)
+- Price checked: 2026-11-10
+- Exam length: 3 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://certifications.tcm-sec.com/pwpp/
+- cert/map page: https://certmap.dev/certs/pwpp.html
+
+### CSSLP: Certified Secure Software Lifecycle Professional
+
+Secure software development lifecycle certification for developers and architects.
+
+- Vendor: ISC2
+- Level: expert
+- Exam price: $599
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.isc2.org/Certifications/CSSLP
+- cert/map page: https://certmap.dev/certs/csslp.html
+
+### CWEE: HTB Certified Web Exploitation Expert
+
+Hands-on advanced web exploitation certification.
+
+- Vendor: Hack The Box
+- Level: expert
+- Exam price: $350 (Exam voucher only, two attempts; job-role path access sold separately)
+- Price checked: 2026-11-10
+- Exam length: 10 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-expert
+- cert/map page: https://certmap.dev/certs/cwee.html
+
+### OSWE: OffSec Web Expert
+
+Advanced web application exploitation and white-box code review certification.
+
+- Vendor: OffSec
+- Level: expert
+- Exam price: $1,749 (Course and cert bundle: 90-day lab and one exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.offsec.com/courses/web-300/
+- cert/map page: https://certmap.dev/certs/oswe.html
+
+## Security Operations
+
+### BTL1: Blue Team Level 1
+
+Junior defensive security certification assessed through a 24-hour practical incident response exam. Issued by Centri, the provider formerly named Security Blue Team.
+
+- Vendor: Centri
+- Level: beginner
+- Exam price: $536 (Vendor lists GBP only (GBP 399); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); price covers training and exam)
+- Price checked: 2026-11-10
+- Exam length: 24 hours
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.centri.org/certifications/blue-team-level-1
+- cert/map page: https://certmap.dev/certs/btl1.html
+
+### CCDL1: Certified CyberDefender Level 1
+
+Entry-level SOC analyst certification with a practical exam covering alert triage, investigation and documented handover.
+
+- Vendor: CyberDefenders
+- Level: beginner
+- Exam price: $350 (Exam only, two attempts included; exam plus prep bundle $600)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://cyberdefenders.org/certifications/certified-cyberdefender-level1/
+- cert/map page: https://certmap.dev/certs/ccdl1.html
+
+### CCT: Certified Cybersecurity Technician
+
+Entry-level cybersecurity technician certification (exam 212-82). The exam has 60 questions, 50 multiple choice and 10 practical, in 3 hours.
+
+- Vendor: EC-Council
+- Level: beginner
+- Exam price: $499 (Remote-proctored exam voucher)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/train-certify/certified-cybersecurity-technician-certification/
+- cert/map page: https://certmap.dev/certs/cct.html
+
+### eSOC: INE Security Operations Certified Level 1
+
+Entry-level defensive certification on security monitoring, alert triage, threat detection and incident response. The credential is valid for three years.
+
+- Vendor: INE
+- Level: beginner
+- Exam price: $450 (Exam voucher only; bundle with 3 months of training $599)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://ine.com/security/certifications/esoc-certification
+- cert/map page: https://certmap.dev/certs/esoc.html
+
+### PSAA: Practical SOC Analyst Associate
+
+Associate-level practical exam on security operations and incident investigation at Tier 1 and Tier 2 level, with a written report. Formerly the Practical Junior Security Analyst (PJSA); does not expire.
+
+- Vendor: TCM Security
+- Level: beginner
+- Exam price: $249 (Exam voucher with 12 months of training and one free retake)
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://certifications.tcm-sec.com/psaa/
+- cert/map page: https://certmap.dev/certs/psaa.html
+
+### SCCU: Splunk Core Certified User
+
+Foundational Splunk search and reporting certification.
+
+- Vendor: Splunk
+- Level: beginner
+- Exam price: $130
+- Price checked: 2026-11-10
+- Exam length: 60 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html
+- cert/map page: https://certmap.dev/certs/splunk-core.html
+
+### CCFA: CrowdStrike Certified Falcon Administrator
+
+90-minute, 60-question exam on administering the CrowdStrike Falcon platform. Valid for three years.
+
+- Vendor: CrowdStrike
+- Level: intermediate
+- Exam price: Not published (Voucher bought through Pearson VUE or a CrowdStrike account executive; price not shown in the official exam guide)
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.pearsonvue.com/us/en/crowdstrike.html
+- cert/map page: https://certmap.dev/certs/ccfa.html
+
+### CCNA Cybersecurity: CCNA Cybersecurity (formerly Cisco Certified CyberOps Associate)
+
+Cisco SOC analyst associate certification.
+
+- Vendor: Cisco
+- Level: intermediate
+- Exam price: $300
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/cybersecurity/ccna-cybersecurity/index.html
+- cert/map page: https://certmap.dev/certs/cyberops-asc.html
+
+### CCOA: Certified Cybersecurity Operations Analyst
+
+Cybersecurity operations analyst certification covering threat detection, incident response and vulnerability analysis. Four-hour exam mixing multiple-choice and performance-based questions.
+
+- Vendor: ISACA
+- Level: intermediate
+- Exam price: $399 (Member rate; $499 non-member)
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.isaca.org/credentialing/ccoa
+- cert/map page: https://certmap.dev/certs/ccoa.html
+
+### CDSA: HTB Certified Defensive Security Analyst
+
+Hands-on defensive SOC analyst certification.
+
+- Vendor: Hack The Box
+- Level: intermediate
+- Exam price: $210 (Exam voucher only, two attempts; job-role path access sold separately)
+- Price checked: 2026-11-10
+- Exam length: 7 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst
+- cert/map page: https://certmap.dev/certs/cdsa.html
+
+### CSA: EC-Council Certified SOC Analyst
+
+SOC analyst certification covering monitoring, detection and triage.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $450 (Remote-proctored exam voucher (CSA v2))
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/programs/certified-soc-analyst-csa/
+- cert/map page: https://certmap.dev/certs/ec-csa.html
+
+### CySA+: CompTIA CySA+
+
+Intermediate security operations certification covering threat detection, vulnerability management and incident response for SOC analysts.
+
+- Vendor: CompTIA
+- Level: intermediate
+- Exam price: $439
+- Price checked: 2026-11-10
+- Exam length: 165 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Prerequisites: Security+
+- DoD 8140: approved
+- Official page: https://www.comptia.org/certifications/cybersecurity-analyst
+- cert/map page: https://certmap.dev/certs/cysa-plus.html
+
+### Elastic SIEM Analyst: Elastic Certified SIEM Analyst
+
+Exam for security analysts using Elastic Security, covering ECS, Discover, visualisations, detection rules, alerts, Timeline and Cases, completed with only the Elastic documentation as a reference.
+
+- Vendor: Elastic
+- Level: intermediate
+- Exam price: $400
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.elastic.co/training/elastic-certified-siem-analyst-exam
+- cert/map page: https://certmap.dev/certs/elastic-siem-analyst.html
+
+### GMON: GIAC Continuous Monitoring Certification
+
+Continuous security monitoring certification.
+
+- Vendor: GIAC
+- Level: intermediate
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- DoD 8140: approved
+- Official page: https://www.giac.org/certifications/continuous-monitoring-certification-gmon
+- cert/map page: https://certmap.dev/certs/gmon.html
+
+### GSOC: GIAC Security Operations Certified
+
+Covers SOC monitoring, detection, log analysis and incident triage with blue-team tools. Exam has 75 questions in two hours.
+
+- Vendor: GIAC
+- Level: intermediate
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/security-operations-certified-gsoc
+- cert/map page: https://certmap.dev/certs/gsoc.html
+
+### OSDA: OffSec Defense Analyst
+
+Blue team detection and SOC analyst certification from OffSec.
+
+- Vendor: OffSec
+- Level: intermediate
+- Exam price: $1,749 (Course and cert bundle: 90-day lab and one exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 24 hours
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.offsec.com/courses/soc-200/
+- cert/map page: https://certmap.dev/certs/osda.html
+
+### SC-200: Microsoft Security Operations Analyst
+
+Microsoft Sentinel and Defender SOC analyst certification.
+
+- Vendor: Microsoft
+- Level: intermediate
+- Exam price: $165
+- Price checked: 2026-11-10
+- Exam length: 100 minutes
+- Exam format: written or multiple choice
+- Renewal: every 1 years
+- Official page: https://learn.microsoft.com/credentials/certifications/security-operations-analyst/
+- cert/map page: https://certmap.dev/certs/sc-200.html
+
+### SCCPU: Splunk Core Certified Power User
+
+Splunk advanced search and dashboarding certification.
+
+- Vendor: Splunk
+- Level: intermediate
+- Exam price: $130
+- Price checked: 2026-11-10
+- Exam length: 60 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html
+- cert/map page: https://certmap.dev/certs/splunk-power.html
+
+### SCDA: Splunk Certified Cybersecurity Defense Analyst
+
+SOC analyst certification covering Splunk searches, dashboards and detection use cases.
+
+- Vendor: Splunk
+- Level: intermediate
+- Exam price: $130
+- Price checked: 2026-11-10
+- Exam length: 75 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-analyst.html
+- cert/map page: https://certmap.dev/certs/splunk-cda.html
+
+### SecOps Pro: Palo Alto Networks Security Operations Professional
+
+Professional-level role-based certification in the Palo Alto Networks Security Operations track, the step before the XDR, XSIAM and XSOAR specialist certifications.
+
+- Vendor: Palo Alto Networks
+- Level: intermediate
+- Exam price: $200 (Professional-level exam)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-professional
+- cert/map page: https://certmap.dev/certs/pan-secops-pro.html
+
+### SSCP: Systems Security Certified Practitioner
+
+Hands-on security operations certification for IT administrators.
+
+- Vendor: ISC2
+- Level: intermediate
+- Exam price: $249
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.isc2.org/Certifications/SSCP
+- cert/map page: https://certmap.dev/certs/sscp.html
+
+### CCFH: CrowdStrike Certified Falcon Hunter
+
+90-minute, 60-question exam on threat hunting with CrowdStrike Falcon telemetry and queries. Valid for three years.
+
+- Vendor: CrowdStrike
+- Level: advanced
+- Exam price: Not published (Voucher bought through Pearson VUE or a CrowdStrike account executive; price not shown in the official exam guide)
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.pearsonvue.com/us/en/crowdstrike.html
+- cert/map page: https://certmap.dev/certs/ccfh.html
+
+### CCNP Cybersecurity: CCNP Cybersecurity
+
+Professional-level security operations certification requiring the 350-201 CBRCOR core exam and one concentration exam (300-215 CBRFIR forensics and incident response, or 300-220 CBRTHD threat hunting).
+
+- Vendor: Cisco
+- Level: advanced
+- Exam price: $400 (Core exam; plus $300 concentration exam)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/cybersecurity/ccnp-cybersecurity/index.html
+- cert/map page: https://certmap.dev/certs/ccnp-cyber.html
+
+### MTH: MCSI Certified Threat Hunter
+
+Practical threat hunting certification covering attacker tradecraft and detection.
+
+- Vendor: MCSI
+- Level: advanced
+- Exam price: $699 (Self-paced; list price, discounted to $595 at time of check)
+- Price checked: 2026-11-10
+- Exam length: 3 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.mosse-institute.com/certifications/mth-certified-threat-hunter.html
+- cert/map page: https://certmap.dev/certs/mthe.html
+
+### PSOE: Google Cloud Professional Security Operations Engineer
+
+Covers detection engineering, threat hunting, incident response, data management and platform operations with Google Cloud security tooling. Multiple choice exam of 50 to 60 questions.
+
+- Vendor: Google
+- Level: advanced
+- Exam price: $200
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://cloud.google.com/learn/certification/security-operations-engineer
+- cert/map page: https://certmap.dev/certs/gcp-psoe.html
+
+### SCDE: Splunk Certified Cybersecurity Defense Engineer
+
+Professional-level Splunk security certification above the Cybersecurity Defense Analyst. The exam has 60 multiple choice questions.
+
+- Vendor: Splunk
+- Level: advanced
+- Exam price: $130 (Per exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 75 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html
+- cert/map page: https://certmap.dev/certs/splunk-cde.html
+
+### SES: Splunk Enterprise Security Certified Admin
+
+Splunk Enterprise Security administration certification covering correlation searches, notable events and risk-based alerting.
+
+- Vendor: Splunk
+- Level: advanced
+- Exam price: $130 (Listed by Splunk as a Legacy certification)
+- Price checked: 2026-11-10
+- Exam length: 60 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.splunk.com/en_us/training/certification-track/splunk-es-certified-admin.html
+- cert/map page: https://certmap.dev/certs/splunk-esa.html
+
+### XSIAM Engineer: Palo Alto Networks XSIAM Engineer
+
+Specialist-level role-based certification for engineers working with Cortex XSIAM in the Palo Alto Networks Security Operations track.
+
+- Vendor: Palo Alto Networks
+- Level: advanced
+- Exam price: $250 (Specialist-level exam)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-engineer
+- cert/map page: https://certmap.dev/certs/pan-xsiam-engineer.html
+
+### CDEP: HTB Certified Detection Engineering Principal
+
+Practical exam on turning observed adversary behaviour into detection logic across Windows and Linux telemetry, with a report mapped to MITRE ATT&CK. Requires completing the Detection Engineer job-role path.
+
+- Vendor: Hack The Box
+- Level: expert
+- Exam price: $450 (Exam voucher only, two attempts; job-role path access sold separately)
+- Price checked: 2026-11-10
+- Exam length: 10 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-detection-engineering-principal
+- cert/map page: https://certmap.dev/certs/cdep.html
+
+### GDAT: GIAC Defending Advanced Threats
+
+Advanced purple team and defense certification.
+
+- Vendor: GIAC
+- Level: expert
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/defending-advanced-threats-gdat/
+- cert/map page: https://certmap.dev/certs/gdat.html
+
+## Cyber Threat Intelligence
+
+### CTI 101: arcX Cyber Threat Intelligence 101
+
+Free introductory cyber threat intelligence course (about 2.5 hours across 11 videos) with a final exam; passing awards the arcX Foundation Threat Intelligence Analyst (FTIA) certificate. Lifetime access.
+
+- Vendor: arcX
+- Level: beginner
+- Exam price: Free (Free intro course; lifetime access)
+- Price checked: 2026-06-08
+- Exam length: 150 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://arcx.io/courses/cyber-threat-intelligence-101
+- cert/map page: https://certmap.dev/certs/arcx-cti.html
+
+### CCII: Certified Cyber Intelligence Investigator
+
+Practical cyber intelligence investigator certification.
+
+- Vendor: McAfee Institute
+- Level: intermediate
+- Exam price: $1,397 (List price for the program (training, exam license and certification); needs-based scholarship rate $699 for self-paying students)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.mcafeeinstitute.edu/products/certified-cyber-intelligence-investigator-ccii
+- cert/map page: https://certmap.dev/certs/ccii.html
+
+### CCTA: Certified Counterintelligence Threat Analyst
+
+Counterintelligence threat analysis certification.
+
+- Vendor: McAfee Institute
+- Level: intermediate
+- Exam price: $1,397 (List price for the program (training, exam license and certification); needs-based scholarship rate $699 for self-paying students)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.mcafeeinstitute.edu/products/certified-counterintelligence-threat-analyst-ccta
+- cert/map page: https://certmap.dev/certs/cctia.html
+
+### CSMIE: Certified Social Media Intelligence Expert
+
+Social media intelligence and investigation certification.
+
+- Vendor: McAfee Institute
+- Level: intermediate
+- Exam price: $1,997 (List price for the program (training, exam license and certification); needs-based scholarship rate $999 for self-paying students)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.mcafeeinstitute.edu/products/certified-social-media-intelligence-expert-csmie
+- cert/map page: https://certmap.dev/certs/csmie.html
+
+### CTIA: EC-Council Certified Threat Intelligence Analyst
+
+Threat intelligence analyst certification covering CTI lifecycle, collection and analysis.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $450 (Remote-proctored exam voucher (CTIA v2))
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/train-certify/certified-threat-intelligence-analyst-ctia/
+- cert/map page: https://certmap.dev/certs/ctia.html
+
+### GOSI: GIAC Open Source Intelligence
+
+Open source intelligence collection and analysis certification.
+
+- Vendor: GIAC
+- Level: intermediate
+- Exam price: $999 (Exam only; SANS SEC487 is the recommended preparatory course (optional))
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/open-source-intelligence-gosi/
+- cert/map page: https://certmap.dev/certs/gosi.html
+
+### MTIA: MCSI Certified Threat Intelligence Analyst
+
+Practical hands-on threat intelligence analyst certification.
+
+- Vendor: MCSI
+- Level: intermediate
+- Exam price: $699 (Self-paced; list price, discounted to $595 at time of check)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.mosse-institute.com/certifications/mtia-certified-threat-intelligence-analyst.html
+- cert/map page: https://certmap.dev/certs/mcsi-cti.html
+
+### OSTH: OffSec Threat Hunter
+
+Threat hunting certification covering adversary tradecraft detection.
+
+- Vendor: OffSec
+- Level: intermediate
+- Exam price: $1,749 (Course and cert bundle: 90-day lab and one exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 480 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.offsec.com/courses/th-200/
+- cert/map page: https://certmap.dev/certs/osth.html
+
+### CRTIA: CREST Registered Threat Intelligence Analyst
+
+CREST-accredited threat intelligence analyst certification.
+
+- Vendor: CREST
+- Level: advanced
+- Exam price: $805 (GBP 600 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.crest-approved.org/certifications/crest-registered-threat-intelligence-analyst/
+- cert/map page: https://certmap.dev/certs/crtia.html
+
+### eCTHP: eLearnSecurity Certified Threat Hunting Professional
+
+Hands-on threat hunting certification covering adversary tradecraft and detection engineering.
+
+- Vendor: INE
+- Level: advanced
+- Exam price: $450 (Exam voucher only; bundle with 3 months of training $599)
+- Price checked: 2026-11-10
+- Exam length: 3 days
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://ine.com/security/certifications/ecthp-certification
+- cert/map page: https://certmap.dev/certs/ecthp.html
+
+### GCTI: GIAC Cyber Threat Intelligence
+
+Cyber threat intelligence analysis certification.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- DoD 8140: approved
+- Official page: https://www.giac.org/certifications/cyber-threat-intelligence-gcti/
+- cert/map page: https://certmap.dev/certs/gcti.html
+
+## Cloud/SysOps
+
+### ACE: Google Cloud Associate Cloud Engineer
+
+Foundational Google Cloud engineering certification.
+
+- Vendor: Google
+- Level: beginner
+- Exam price: $125
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://cloud.google.com/learn/certification/cloud-engineer
+- cert/map page: https://certmap.dev/certs/gcp-ace.html
+
+### AZ-900: Microsoft Azure Fundamentals
+
+Azure cloud fundamentals certification.
+
+- Vendor: Microsoft
+- Level: beginner
+- Exam price: $99
+- Price checked: 2026-11-10
+- Exam length: 45 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://learn.microsoft.com/credentials/certifications/azure-fundamentals/
+- cert/map page: https://certmap.dev/certs/az-900.html
+
+### CLF-C02: AWS Certified Cloud Practitioner
+
+Foundational AWS cloud certification.
+
+- Vendor: AWS
+- Level: beginner
+- Exam price: $100
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://aws.amazon.com/certification/certified-cloud-practitioner/
+- cert/map page: https://certmap.dev/certs/aws-clf.html
+
+### KCSA: Kubernetes and Cloud Native Security Associate
+
+Entry-level multiple choice exam on Kubernetes and cloud native security fundamentals. Online and proctored, with no prerequisites.
+
+- Vendor: CNCF
+- Level: beginner
+- Exam price: $250 (Includes one retake)
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://training.linuxfoundation.org/certification/kubernetes-and-cloud-native-security-associate-kcsa/
+- cert/map page: https://certmap.dev/certs/kcsa.html
+
+### AZ-104: Microsoft Azure Administrator
+
+Azure infrastructure administration certification.
+
+- Vendor: Microsoft
+- Level: intermediate
+- Exam price: $165
+- Price checked: 2026-11-10
+- Exam length: 100 minutes
+- Exam format: written or multiple choice
+- Renewal: every 1 years
+- Official page: https://learn.microsoft.com/credentials/certifications/azure-administrator/
+- cert/map page: https://certmap.dev/certs/az-104.html
+
+### AZ-500: Microsoft Azure Security Engineer
+
+Retired on August 31, 2026 and succeeded by the Cloud and AI Security Engineer Associate (SC-500). Covered security controls, identity, network and data protection in Azure.
+
+- Vendor: Microsoft
+- Level: intermediate
+- Exam price: Not published (Retired August 31, 2026; replaced by SC-500 (165 USD))
+- Exam length: 150 minutes
+- Exam format: written or multiple choice
+- Renewal: every 1 years
+- Official page: https://learn.microsoft.com/credentials/certifications/azure-security-engineer/
+- cert/map page: https://certmap.dev/certs/az-500.html
+
+### CARTP: Certified by Altered Security Red Team Professional for Azure
+
+Hands-on 24-hour exam on assessing Azure and Entra ID environments, including multi-tenant and hybrid identity attacks. Expires after three years with a free renewal exam.
+
+- Vendor: Altered Security
+- Level: intermediate
+- Exam price: $449 (30-day lab access with one exam attempt; extra attempts $99)
+- Price checked: 2026-11-10
+- Exam length: 24 hours
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.alteredsecurity.com/azureadlab
+- cert/map page: https://certmap.dev/certs/cartp.html
+
+### CCSE: EC-Council Certified Cloud Security Engineer
+
+Vendor-neutral cloud security engineering certification.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $550 (Remote-proctored exam voucher (CCSE v2))
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/train-certify/certified-cloud-security-engineer-ccse/
+- cert/map page: https://certmap.dev/certs/ccse.html
+
+### CCSK: Certificate of Cloud Security Knowledge
+
+Vendor-neutral foundational cloud security certificate from CSA.
+
+- Vendor: CSA
+- Level: intermediate
+- Exam price: $445 (Exam + chatbot bundle, two attempts, two-year window)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://cloudsecurityalliance.org/education/ccsk
+- cert/map page: https://certmap.dev/certs/ccsk.html
+
+### CKA: Certified Kubernetes Administrator
+
+Hands-on Kubernetes operator certification with a live shell exam.
+
+- Vendor: CNCF
+- Level: intermediate
+- Exam price: $445 (Performance-based exam, two attempts)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 2 years
+- Official page: https://www.cncf.io/training/certification/cka/
+- cert/map page: https://certmap.dev/certs/cka.html
+
+### Cloud+: CompTIA Cloud+
+
+Vendor-neutral cloud infrastructure and operations certification.
+
+- Vendor: CompTIA
+- Level: intermediate
+- Exam price: $399
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.comptia.org/certifications/cloud
+- cert/map page: https://certmap.dev/certs/cloud-plus.html
+
+### CloudSec Pro: Palo Alto Networks Cloud Security Professional
+
+Professional-level role-based certification in the Palo Alto Networks Cloud Security track, positioned below the Cloud Security Engineer specialist certification.
+
+- Vendor: Palo Alto Networks
+- Level: intermediate
+- Exam price: $200 (Professional-level exam)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-professional
+- cert/map page: https://certmap.dev/certs/pan-cloudsec-pro.html
+
+### GCLD: GIAC Cloud Security Essentials
+
+Vendor-neutral cloud security essentials certification.
+
+- Vendor: GIAC
+- Level: intermediate
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/cloud-security-essentials-gcld/
+- cert/map page: https://certmap.dev/certs/gcld.html
+
+### GPCS: GIAC Public Cloud Security
+
+Multi-cloud security certification covering AWS, Azure and GCP.
+
+- Vendor: GIAC
+- Level: intermediate
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/public-cloud-security-gpcs/
+- cert/map page: https://certmap.dev/certs/gpcs.html
+
+### SAA-C03: AWS Solutions Architect Associate
+
+AWS architecture certification covering core services and design.
+
+- Vendor: AWS
+- Level: intermediate
+- Exam price: $150
+- Price checked: 2026-11-10
+- Exam length: 130 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://aws.amazon.com/certification/certified-solutions-architect-associate/
+- cert/map page: https://certmap.dev/certs/aws-saa.html
+
+### SC-500: Microsoft Cloud and AI Security Engineer
+
+Associate certification covering identity, access and governance, security for storage, databases, networking and compute, AI workloads and security posture management in Azure and hybrid environments. Replaced AZ-500 in 2026.
+
+- Vendor: Microsoft
+- Level: intermediate
+- Exam price: $165 (Replaces AZ-500)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 1 years
+- Official page: https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/
+- cert/map page: https://certmap.dev/certs/sc-500.html
+
+### SOA-C03: AWS Certified CloudOps Engineer Associate
+
+Associate certification on deploying, operating and monitoring workloads on AWS. Renamed from SysOps Administrator Associate with exam version SOA-C03 in September 2025.
+
+- Vendor: AWS
+- Level: intermediate
+- Exam price: $150 (Formerly SysOps Administrator Associate)
+- Price checked: 2026-11-10
+- Exam length: 130 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://aws.amazon.com/certification/certified-cloudops-engineer-associate/
+- cert/map page: https://certmap.dev/certs/aws-soa.html
+
+### CCNSE: Certified Cloud Native Security Expert
+
+Practical exam of five challenges in a six-hour window, followed by 24 hours to submit a report, covering container and Kubernetes security. Lifetime credential.
+
+- Vendor: Practical DevSecOps
+- Level: advanced
+- Exam price: $999 (List price; includes course, labs and one exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 360 minutes
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.practical-devsecops.com/certified-cloud-native-security-expert/
+- cert/map page: https://certmap.dev/certs/ccnse.html
+
+### CKS: Certified Kubernetes Security Specialist
+
+Hands-on Kubernetes security certification covering runtime, supply chain and cluster hardening.
+
+- Vendor: CNCF
+- Level: advanced
+- Exam price: $445 (Performance-based exam, two attempts)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 2 years
+- Prerequisites: CKA
+- Official page: https://www.cncf.io/training/certification/cks/
+- cert/map page: https://certmap.dev/certs/cks.html
+
+### CloudSec Engineer: Palo Alto Networks Cloud Security Engineer
+
+Specialist-level role-based certification in the Palo Alto Networks Cloud Security track. Successor to the retired Prisma Certified Cloud Security Engineer (PCCSE).
+
+- Vendor: Palo Alto Networks
+- Level: advanced
+- Exam price: $250 (Specialist-level exam)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-engineer
+- cert/map page: https://certmap.dev/certs/pan-cloudsec-engineer.html
+
+### GCPN: GIAC Cloud Penetration Tester
+
+Covers cloud penetration testing fundamentals, AWS and Azure attacks, and cloud-native applications with containers and CI/CD pipelines. Exam has 75 questions in two hours.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/cloud-penetration-tester-gcpn
+- cert/map page: https://certmap.dev/certs/gcpn.html
+
+### GCSA: GIAC Cloud Security Automation
+
+Covers the cloud-native toolchain, DevSecOps practice and security controls in CI/CD pipelines. Exam has 75 questions in two hours.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/cloud-security-automation-gcsa
+- cert/map page: https://certmap.dev/certs/gcsa.html
+
+### PCA: Google Cloud Professional Cloud Architect
+
+Google Cloud architecture certification.
+
+- Vendor: Google
+- Level: advanced
+- Exam price: $200
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://cloud.google.com/learn/certification/cloud-architect
+- cert/map page: https://certmap.dev/certs/gcp-pca.html
+
+### PCCSE: Prisma Certified Cloud Security Engineer
+
+Retired in July 2025 and succeeded by the Palo Alto Networks Cloud Security Professional credential for the Prisma Cloud platform.
+
+- Vendor: Palo Alto Networks
+- Level: advanced
+- Exam price: Not published (Retired July 2025; successor exams priced $200 to $250)
+- Exam length: 80 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.paloaltonetworks.com/services/education/certification
+- cert/map page: https://certmap.dev/certs/pccse.html
+
+### PCDE: Google Cloud Professional Cloud DevOps Engineer
+
+Google Cloud DevOps certification covering SRE practices, CI/CD pipelines and service reliability.
+
+- Vendor: Google
+- Level: advanced
+- Exam price: $200
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://cloud.google.com/learn/certification/cloud-devops-engineer
+- cert/map page: https://certmap.dev/certs/gcp-pcde.html
+
+### PSE: Google Cloud Professional Cloud Security Engineer
+
+Google Cloud security engineering certification.
+
+- Vendor: Google
+- Level: advanced
+- Exam price: $200
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://cloud.google.com/learn/certification/cloud-security-engineer
+- cert/map page: https://certmap.dev/certs/gcp-pse.html
+
+### SCS-C03: AWS Certified Security Specialty
+
+AWS security specialty certification (exam SCS-C03) covering threat detection, IAM, data protection and incident response.
+
+- Vendor: AWS
+- Level: advanced
+- Exam price: $300
+- Price checked: 2026-11-10
+- Exam length: 170 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://aws.amazon.com/certification/certified-security-specialty/
+- cert/map page: https://certmap.dev/certs/aws-scs.html
+
+### CCSP: Certified Cloud Security Professional
+
+Cloud security architecture and operations certification; requires 5 years experience.
+
+- Vendor: ISC2
+- Level: expert
+- Exam price: $599
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.isc2.org/Certifications/CCSP
+- cert/map page: https://certmap.dev/certs/ccsp.html
+
+### DOP-C02: AWS Certified DevOps Engineer Professional
+
+Professional-level AWS certification covering CI/CD, infrastructure automation, monitoring and operations at scale.
+
+- Vendor: AWS
+- Level: expert
+- Exam price: $300
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Prerequisites: SAA-C03
+- Official page: https://aws.amazon.com/certification/certified-devops-engineer-professional/
+- cert/map page: https://certmap.dev/certs/aws-doe.html
+
+### SAP-C03: AWS Solutions Architect Professional
+
+Advanced AWS architecture and design certification.
+
+- Vendor: AWS
+- Level: expert
+- Exam price: $300
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Prerequisites: SAA-C03
+- Official page: https://aws.amazon.com/certification/certified-solutions-architect-professional/
+- cert/map page: https://certmap.dev/certs/aws-sap.html
+
+## *nix
+
+### KLCP: Kali Linux Certified Professional
+
+Kali Linux operating system fundamentals and tooling certification.
+
+- Vendor: OffSec
+- Level: beginner
+- Exam price: Not published (PEN-103 free with an OffSec account; KLCP exam is a separate purchase, price not published)
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.offsec.com/courses/pen-103/
+- cert/map page: https://certmap.dev/certs/klcp.html
+
+### Linux+: CompTIA Linux+
+
+Vendor-neutral Linux system administration certification.
+
+- Vendor: CompTIA
+- Level: beginner
+- Exam price: $399
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.comptia.org/certifications/linux
+- cert/map page: https://certmap.dev/certs/linux-plus.html
+
+### LPIC-1: LPIC-1 Linux Administrator
+
+Foundational vendor-neutral Linux certification.
+
+- Vendor: LPI
+- Level: beginner
+- Exam price: $200 (Per exam (2 required))
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 5 years
+- Official page: https://www.lpi.org/our-certifications/lpic-1-overview/
+- cert/map page: https://certmap.dev/certs/lpic-1.html
+
+### LFCS: Linux Foundation Certified System Administrator
+
+Online proctored performance-based exam in which candidates solve Linux system administration tasks from the command line.
+
+- Vendor: Linux Foundation
+- Level: intermediate
+- Exam price: $445 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 2 years
+- Official page: https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/
+- cert/map page: https://certmap.dev/certs/lfcs.html
+
+### LPIC-2: LPIC-2 Linux Engineer
+
+Mid-level Linux engineering certification.
+
+- Vendor: LPI
+- Level: intermediate
+- Exam price: $200 (Per exam (2 required))
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 5 years
+- Prerequisites: LPIC-1
+- Official page: https://www.lpi.org/our-certifications/lpic-2-overview/
+- cert/map page: https://certmap.dev/certs/lpic-2.html
+
+### RHCSA: Red Hat Certified System Administrator
+
+Hands-on Red Hat Enterprise Linux administration certification.
+
+- Vendor: Red Hat
+- Level: intermediate
+- Exam price: $500
+- Price checked: 2026-06-08
+- Exam length: 180 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.redhat.com/en/services/certification/rhcsa
+- cert/map page: https://certmap.dev/certs/rhcsa.html
+
+### LPIC-3 303: LPIC-3 Security
+
+Enterprise-level Linux security certification. Exam 303-300 has 60 questions and requires an active LPIC-2.
+
+- Vendor: LPI
+- Level: advanced
+- Exam price: $200 (US price; lower in other pricing tiers)
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 5 years
+- Prerequisites: LPIC-2
+- Official page: https://www.lpi.org/our-certifications/lpic-3-303-overview/
+- cert/map page: https://certmap.dev/certs/lpic-3-security.html
+
+### RHCE: Red Hat Certified Engineer
+
+Advanced RHEL automation with Ansible certification.
+
+- Vendor: Red Hat
+- Level: advanced
+- Exam price: $500
+- Price checked: 2026-06-08
+- Exam length: 240 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Prerequisites: RHCSA
+- Official page: https://www.redhat.com/en/services/certification/rhce
+- cert/map page: https://certmap.dev/certs/rhce.html
+
+## ICS/IoT
+
+### IEC 62443: ISA/IEC 62443 Fundamentals Specialist
+
+Industrial cybersecurity fundamentals certificate.
+
+- Vendor: ISA
+- Level: beginner
+- Exam price: $795 (Course + exam)
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.isa.org/certification/certificate-programs/isa-iec-62443-cybersecurity-certificate-program
+- cert/map page: https://certmap.dev/certs/iec-62443.html
+
+### ICS/SCADA: ICS/SCADA Cybersecurity
+
+Certification on defending industrial control systems and SCADA networks. Exam has 75 multiple-choice questions in 2 hours.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $699 (Remote-proctored exam voucher)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/train-certify/ics-scada-cybersecurity/
+- cert/map page: https://certmap.dev/certs/ec-ics-scada.html
+
+### PIPA: Practical IoT Pentest Associate
+
+Associate-level practical review of an embedded Linux IoT device's firmware and hardware captures, with a written report. Formerly the Practical Junior IoT Tester (PJIT); does not expire.
+
+- Vendor: TCM Security
+- Level: intermediate
+- Exam price: $249 (Exam voucher with 12 months of training and one free retake)
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://certifications.tcm-sec.com/pipa/
+- cert/map page: https://certmap.dev/certs/pipa.html
+
+### SecOT+: CompTIA SecOT+
+
+Operational technology security certification covering the protection of industrial and OT environments. Exam SOT-001 is on pre-order with launch expected in December 2026.
+
+- Vendor: CompTIA
+- Level: intermediate
+- Exam price: $439 (Pre-order; exam SOT-001 expected to launch on or around 2026-12-08)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.comptia.org/en-us/certifications/secot/
+- cert/map page: https://certmap.dev/certs/secot-plus.html
+
+### GICSP: GIAC Global Industrial Cyber Security Professional
+
+Industrial control systems security certification.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- DoD 8140: approved
+- Official page: https://www.giac.org/certifications/global-industrial-cyber-security-professional-gicsp/
+- cert/map page: https://certmap.dev/certs/gicsp.html
+
+### GRID: GIAC Response and Industrial Defense
+
+ICS active defense and incident response certification.
+
+- Vendor: GIAC
+- Level: expert
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/response-industrial-defense-grid/
+- cert/map page: https://certmap.dev/certs/gridv.html
+
+## GRC
+
+### ITIL-F: ITIL 4 Foundation
+
+IT service management foundational certification.
+
+- Vendor: PeopleCert
+- Level: beginner
+- Exam price: $536 (Cheapest bundle including exam voucher; not sold standalone)
+- Price checked: 2026-11-10
+- Exam length: 60 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565
+- cert/map page: https://certmap.dev/certs/itil-f.html
+
+### ITIL5-F: ITIL Foundation (Version 5)
+
+Foundation certification for ITIL (Version 5), the successor framework to ITIL 4 for IT service management. Sold alongside ITIL 4 Foundation.
+
+- Vendor: PeopleCert
+- Level: beginner
+- Exam price: $536 (Exam bundle price on peoplecert.org)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-5-foundation-version-50-4154
+- cert/map page: https://certmap.dev/certs/itil5-f.html
+
+### MOIS: MCSI Certified OSINT Expert
+
+Hands-on OSINT investigation certification.
+
+- Vendor: MCSI
+- Level: beginner
+- Exam price: $699 (Self-paced)
+- Price checked: 2026-11-10
+- Exam length: 3 days
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.mosse-institute.com/certifications/mois-certified-osint-expert.html
+- cert/map page: https://certmap.dev/certs/mosint.html
+
+### PORP: Practical OSINT Research Professional
+
+Practical OSINT Research Professional (PORP), formerly Practical Junior OSINT Researcher. Hands-on OSINT investigation certification with a practical exam and report.
+
+- Vendor: TCM Security
+- Level: beginner
+- Exam price: $399
+- Price checked: 2026-11-10
+- Exam length: 3 days
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://certifications.tcm-sec.com/pjor/
+- cert/map page: https://certmap.dev/certs/pjor.html
+
+### Project+: CompTIA Project+
+
+Project management certification.
+
+- Vendor: CompTIA
+- Level: beginner
+- Exam price: $399
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.comptia.org/certifications/project
+- cert/map page: https://certmap.dev/certs/project-plus.html
+
+### AIGP: Artificial Intelligence Governance Professional
+
+AI governance certification covering AI foundations, applicable laws and frameworks, and governance of AI development and deployment. Exam has 100 questions in 2 hours 45 minutes.
+
+- Vendor: IAPP
+- Level: intermediate
+- Exam price: $799 (Non-member; $649 IAPP member)
+- Price checked: 2026-11-10
+- Exam length: 165 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://iapp.org/certify/aigp/
+- cert/map page: https://certmap.dev/certs/aigp.html
+
+### CDPO: Certified Data Protection Officer
+
+Data protection and GDPR compliance certification.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: Not published (Not in the vendor's current catalogue (checked 2026-11-10); kept for existing holders)
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/programs/certified-data-protection-officer-cdpo/
+- cert/map page: https://certmap.dev/certs/cdpo.html
+
+### CIPP: Certified Information Privacy Professional
+
+Privacy law and regulation certification.
+
+- Vendor: IAPP
+- Level: intermediate
+- Exam price: $550 (Per concentration)
+- Price checked: 2026-11-10
+- Exam length: 150 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://iapp.org/certify/cipp/
+- cert/map page: https://certmap.dev/certs/cipp.html
+
+### CRAGE: Certified Responsible AI Governance & Ethics
+
+AI governance certification covering responsible AI, risk analysis and ethics. Exam duration and format are not published on the program page.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $450 (Remote-proctored exam voucher)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/ai-courses/certified-responsible-ai-governance-ethics-crage/
+- cert/map page: https://certmap.dev/certs/crage.html
+
+### Data+: CompTIA Data+
+
+Data analytics certification.
+
+- Vendor: CompTIA
+- Level: intermediate
+- Exam price: $264
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.comptia.org/en-us/certifications/data/
+- cert/map page: https://certmap.dev/certs/data-plus.html
+
+### ISO 27001 LA: PECB Certified ISO/IEC 27001 Lead Auditor
+
+Certification for professionals who plan and perform audits of information security management systems against ISO/IEC 27001. Valid for three years with maintenance fees.
+
+- Vendor: PECB
+- Level: intermediate
+- Exam price: Not published (Exam and certification fees are included in the price of the PECB training course; no standalone list price published)
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001/iso-iec-27001-lead-auditor
+- cert/map page: https://certmap.dev/certs/pecb-27001-la.html
+
+### ISO 27001 LI: PECB Certified ISO/IEC 27001 Lead Implementer
+
+Certification for professionals who establish, implement and maintain an information security management system based on ISO/IEC 27001. Valid for three years with maintenance fees.
+
+- Vendor: PECB
+- Level: intermediate
+- Exam price: Not published (Exam and certification fees are included in the price of the PECB training course; no standalone list price published)
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001/iso-iec-27001-lead-implementer
+- cert/map page: https://certmap.dev/certs/pecb-27001-li.html
+
+### PCIP: PCI Professional
+
+Individual qualification from the PCI Security Standards Council on the PCI DSS. Closed-book exam of 75 multiple-choice questions, with requalification every three years.
+
+- Vendor: PCI SSC
+- Level: intermediate
+- Exam price: $1,700 (Exam only, non-participating organisations; $1,000 for participating organisations; rises to $1,900 on 2027-01-01)
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.pcisecuritystandards.org/program_training_and_qualification/pci_professional_qualification/
+- cert/map page: https://certmap.dev/certs/pcip.html
+
+### SC-401: Microsoft Information Security Administrator
+
+Microsoft information security administrator certification (exam SC-401, replacing the retired SC-400); covers information protection, DLP, retention and insider risk with Microsoft Purview.
+
+- Vendor: Microsoft
+- Level: intermediate
+- Exam price: $165
+- Price checked: 2026-11-10
+- Exam length: 100 minutes
+- Exam format: written or multiple choice
+- Renewal: every 1 years
+- Official page: https://learn.microsoft.com/credentials/certifications/information-security-administrator/
+- cert/map page: https://certmap.dev/certs/sc-401.html
+
+### TRM-CCS: TRM Certified Crypto Compliance Specialist
+
+Cryptocurrency compliance certification covering AML, KYC and sanctions screening for digital assets.
+
+- Vendor: TRM Labs
+- Level: intermediate
+- Exam price: $1,100
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.trmlabs.com/training-and-certifications/crypto-compliance-specialist
+- cert/map page: https://certmap.dev/certs/trm-ccs.html
+
+### TRM-CTS: TRM Crypto Tax Specialist
+
+Cryptocurrency taxation certification covering reporting, basis tracking and audit support.
+
+- Vendor: TRM Labs
+- Level: intermediate
+- Exam price: $1,100
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.trmlabs.com/training-and-certifications/crypto-tax-specialist-certification
+- cert/map page: https://certmap.dev/certs/trm-cts.html
+
+### AAIA: Advanced in AI Audit
+
+Credential on auditing AI systems, covering AI governance and risk, AI operations and AI auditing tools. Requires an active CISA or another qualifying audit designation (for example CIA or CPA).
+
+- Vendor: ISACA
+- Level: advanced
+- Exam price: $459 (Member rate; $599 non-member; $50 application fee)
+- Price checked: 2026-11-10
+- Exam length: 150 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Prerequisites: CISA
+- Official page: https://www.isaca.org/credentialing/aaia
+- cert/map page: https://certmap.dev/certs/aaia.html
+
+### AAIR: Advanced in AI Risk
+
+Credential on identifying, assessing and managing risk in AI systems. Candidates must hold a qualifying designation such as CRISC, CISA or CISSP.
+
+- Vendor: ISACA
+- Level: advanced
+- Exam price: $459 (Member rate; $599 non-member; $50 application fee; requires a qualifying designation such as CRISC, CISA or CISSP)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.isaca.org/credentialing/aair
+- cert/map page: https://certmap.dev/certs/aair.html
+
+### CCAK: Certificate of Cloud Auditing Knowledge
+
+Cloud auditing certificate jointly issued by CSA and ISACA. Discontinued for new purchases as of October 2025 when the CSA/ISACA partnership ended; existing holders keep their credential.
+
+- Vendor: CSA
+- Level: advanced
+- Exam price: Not published (Discontinued for new purchases (October 2025))
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Prerequisites: CCSK
+- Official page: https://labs.cloudsecurityalliance.org/ccak/
+- cert/map page: https://certmap.dev/certs/ccak.html
+
+### CDPSE: ISACA Certified Data Privacy Solutions Engineer
+
+ISACA privacy engineering certification covering governance, architecture and lifecycle of personal data.
+
+- Vendor: ISACA
+- Level: advanced
+- Exam price: $575 (Member rate; $760 non-member)
+- Price checked: 2026-11-10
+- Exam length: 210 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.isaca.org/credentialing/certified-data-privacy-solutions-engineer
+- cert/map page: https://certmap.dev/certs/cdpse.html
+
+### CGRC: Certified in Governance Risk and Compliance
+
+Risk management framework certification for GRC professionals.
+
+- Vendor: ISC2
+- Level: advanced
+- Exam price: $599 (Formerly CAP)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.isc2.org/Certifications/CGRC
+- cert/map page: https://certmap.dev/certs/cgrc.html
+
+### CIPM: Certified Information Privacy Manager
+
+Privacy program management certification.
+
+- Vendor: IAPP
+- Level: advanced
+- Exam price: $550
+- Price checked: 2026-11-10
+- Exam length: 150 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://iapp.org/certify/cipm/
+- cert/map page: https://certmap.dev/certs/cipm.html
+
+### GSNA: GIAC Systems and Network Auditor
+
+Technical IT audit certification. Now in abeyance: no longer offered to new candidates; existing holders maintain it through CPE renewal.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: Not published (In abeyance, not available for purchase; existing holders renew via CPE ($199 renewal fee))
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/systems-network-auditor-gsna/
+- cert/map page: https://certmap.dev/certs/gsna.html
+
+### CGEIT: Certified in the Governance of Enterprise IT
+
+Executive-level IT governance certification.
+
+- Vendor: ISACA
+- Level: expert
+- Exam price: $575 (Member rate; $760 non-member)
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.isaca.org/credentialing/cgeit
+- cert/map page: https://certmap.dev/certs/cgeit.html
+
+### CISA: Certified Information Systems Auditor
+
+Information systems audit certification; the standard for IT auditors.
+
+- Vendor: ISACA
+- Level: expert
+- Exam price: $575 (Member rate; $760 non-member)
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.isaca.org/credentialing/cisa
+- cert/map page: https://certmap.dev/certs/cisa.html
+
+### CISM: Certified Information Security Manager
+
+Information security management certification focused on governance and program management.
+
+- Vendor: ISACA
+- Level: expert
+- Exam price: $575 (Member rate; $760 non-member)
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.isaca.org/credentialing/cism
+- cert/map page: https://certmap.dev/certs/cism.html
+
+### CRISC: Certified in Risk and Information Systems Control
+
+Enterprise risk management certification for risk and control professionals.
+
+- Vendor: ISACA
+- Level: expert
+- Exam price: $575 (Member rate; $760 non-member)
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.isaca.org/credentialing/crisc
+- cert/map page: https://certmap.dev/certs/crisc.html
+
+## Forensics
+
+### CCO: Cellebrite Certified Operator
+
+Mobile forensics operator certification using Cellebrite UFED.
+
+- Vendor: Cellebrite
+- Level: beginner
+- Exam price: $500
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://cellebrite.com/en/training/
+- cert/map page: https://certmap.dev/certs/ccfp.html
+
+### TRM-CFC: TRM Cryptocurrency Fundamentals
+
+Foundational TRM Labs course covering blockchain analysis and cryptocurrency tracing basics.
+
+- Vendor: TRM Labs
+- Level: beginner
+- Exam price: $1,000
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.trmlabs.com/training-and-certifications/crypto-fundamentals
+- cert/map page: https://certmap.dev/certs/trm-cfc.html
+
+### CCE: Certified Computer Examiner
+
+Digital forensics certification offered by ISFCE since 2003. Applicants need approved training and 18 months of verifiable professional experience for the full designation.
+
+- Vendor: ISFCE
+- Level: intermediate
+- Exam price: $495 (CCE Examination Test fee; recertification every two years costs $250)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://isfce.com/cce-certification.html
+- cert/map page: https://certmap.dev/certs/isfce-cce.html
+
+### CCI: Chainalysis Certified Investigator
+
+Investigator-track credential from Chainalysis Academy on tracing cryptocurrency transactions with Chainalysis tools. Chainalysis Digital Asset Fundamentals is a required prerequisite.
+
+- Vendor: Chainalysis
+- Level: intermediate
+- Exam price: Not published (No per-seat fee; certifications are included with a Chainalysis licence)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Restricted to: Chainalysis licence holders
+- Official page: https://www.chainalysis.com/chainalysis-certification-programs/
+- cert/map page: https://certmap.dev/certs/chainalysis-cci.html
+
+### CEI: Certified Expert Investigator
+
+Investigator and digital evidence handling certification.
+
+- Vendor: McAfee Institute
+- Level: intermediate
+- Exam price: Not published (Not in the vendor's current catalogue (checked 2026-11-10); kept for existing holders)
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.mcafeeinstitute.com/products/certified-expert-investigator-cei
+- cert/map page: https://certmap.dev/certs/cei-mcafee.html
+
+### CHFI: Computer Hacking Forensic Investigator
+
+Digital forensics investigation certification.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $650
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.eccouncil.org/programs/computer-hacking-forensic-investigator-chfi/
+- cert/map page: https://certmap.dev/certs/chfi.html
+
+### EnCE: EnCase Certified Examiner
+
+EnCase forensic examiner certification.
+
+- Vendor: OpenText
+- Level: intermediate
+- Exam price: $500 (Plus training)
+- Price checked: 2026-06-08
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.opentext.com/products/encase-training/encase-certified-examiner-ence-certification-program
+- cert/map page: https://certmap.dev/certs/encase.html
+
+### GCFE: GIAC Certified Forensic Examiner
+
+Windows forensic examiner certification.
+
+- Vendor: GIAC
+- Level: intermediate
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- DoD 8140: approved
+- Official page: https://www.giac.org/certifications/certified-forensic-examiner-gcfe/
+- cert/map page: https://certmap.dev/certs/gcfe.html
+
+### MCFE: Magnet Certified Forensics Examiner
+
+Magnet AXIOM forensic examiner certification.
+
+- Vendor: Magnet Forensics
+- Level: intermediate
+- Exam price: $200
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.magnetforensics.com/training/
+- cert/map page: https://certmap.dev/certs/mcfe.html
+
+### MDFIR: MCSI Certified DFIR Specialist
+
+Hands-on digital forensics and incident response certification.
+
+- Vendor: MCSI
+- Level: intermediate
+- Exam price: $699 (Self-paced)
+- Price checked: 2026-11-10
+- Exam length: 3 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.mosse-institute.com/certifications/mdfir-certified-dfir-specialist.html
+- cert/map page: https://certmap.dev/certs/mdfir.html
+
+### PMRP: Practical Malware Research Professional
+
+Practical exam on malware analysis and triage that requires an analysis report and detection rules for the samples. Formerly the Practical Junior Malware Researcher (PJMR); does not expire.
+
+- Vendor: TCM Security
+- Level: intermediate
+- Exam price: $499 (Exam voucher with 12 months of training and one free retake)
+- Price checked: 2026-11-10
+- Exam length: 5 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://certifications.tcm-sec.com/pmrp/
+- cert/map page: https://certmap.dev/certs/pmrp.html
+
+### TRM-CI: TRM Certified Investigator
+
+Cryptocurrency investigation certification covering on-chain analysis workflows.
+
+- Vendor: TRM Labs
+- Level: intermediate
+- Exam price: $1,100
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.trmlabs.com/training-and-certifications/certified-investigator
+- cert/map page: https://certmap.dev/certs/trm-ci.html
+
+### TRM-DFC: TRM Digital Forensics and Cryptocurrencies
+
+Digital forensics certification focused on cryptocurrency artefacts and on-chain evidence handling.
+
+- Vendor: TRM Labs
+- Level: intermediate
+- Exam price: $1,100
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.trmlabs.com/training-and-certifications/digital-forensics-and-cryptocurrencies
+- cert/map page: https://certmap.dev/certs/trm-dfc.html
+
+### CFCE: Certified Forensic Computer Examiner
+
+Two-phase digital forensics certification: a peer review of four practical problems, then a hard drive practical and a 100-question knowledge test. External candidates must show 72 hours of relevant training.
+
+- Vendor: IACIS
+- Level: advanced
+- Exam price: $800 (External certification fee; candidates who attend the IACIS BCFE course are entered automatically)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.iacis.com/certification/cfce/
+- cert/map page: https://certmap.dev/certs/cfce.html
+
+### eCDFP: INE Certified Digital Forensics Professional
+
+Scenario-based digital forensics exam covering evidence acquisition and analysis of disk, network and log artefacts. The credential is valid for three years.
+
+- Vendor: INE
+- Level: advanced
+- Exam price: $450 (Exam voucher only; bundle with 3 months of training $599)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://ine.com/security/certifications/ecdfp-certification
+- cert/map page: https://certmap.dev/certs/ecdfp.html
+
+### GCFA: GIAC Certified Forensic Analyst
+
+Advanced digital forensics and incident response certification.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- DoD 8140: approved
+- Official page: https://www.giac.org/certifications/certified-forensic-analyst-gcfa/
+- cert/map page: https://certmap.dev/certs/gcfa.html
+
+### GCFR: GIAC Cloud Forensics Responder
+
+Covers incident investigation across AWS, Azure, Google Cloud, Microsoft 365, Google Workspace and Kubernetes. Exam has 82 questions in three hours.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/cloud-forensics-responder-gcfr
+- cert/map page: https://certmap.dev/certs/gcfr.html
+
+### GMOB: GIAC Mobile Device Security Analyst
+
+Mobile device security analyst certification covering iOS and Android forensics and penetration testing.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/mobile-device-security-analyst-gmob/
+- cert/map page: https://certmap.dev/certs/gmob.html
+
+### GNFA: GIAC Network Forensic Analyst
+
+Network forensics certification.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/network-forensic-analyst-gnfa/
+- cert/map page: https://certmap.dev/certs/gnfa.html
+
+### MCFA: Magnet Certified Forensic Analyst
+
+Advanced Magnet AXIOM forensic analyst certification.
+
+- Vendor: Magnet Forensics
+- Level: advanced
+- Exam price: $200
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Prerequisites: MCFE
+- Official page: https://www.magnetforensics.com/training/
+- cert/map page: https://certmap.dev/certs/mcfa.html
+
+### MRE: MCSI Certified Reverse Engineer
+
+Practical reverse engineering and malware analysis certification.
+
+- Vendor: MCSI
+- Level: advanced
+- Exam price: $699 (Self-paced)
+- Price checked: 2026-11-10
+- Exam length: 3 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.mosse-institute.com/certifications/mre-certified-reverse-engineer.html
+- cert/map page: https://certmap.dev/certs/mrte.html
+
+### TRM-ACI: TRM Advanced Crypto Investigator
+
+Advanced cryptocurrency investigation certification covering complex tracing and attribution.
+
+- Vendor: TRM Labs
+- Level: advanced
+- Exam price: $1,400
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.trmlabs.com/training-and-certifications/advanced-crypto-investigator
+- cert/map page: https://certmap.dev/certs/trm-aci.html
+
+### TRM-CSS: TRM Crypto Seizure Specialist
+
+Cryptocurrency seizure and custody certification covering law-enforcement workflows.
+
+- Vendor: TRM Labs
+- Level: advanced
+- Exam price: $1,100
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Restricted to: Law enforcement only
+- Official page: https://www.trmlabs.com/training-and-certifications/crypto-seizure-specialist-certification
+- cert/map page: https://certmap.dev/certs/trm-css.html
+
+### GREM: GIAC Reverse Engineering Malware
+
+Malware reverse engineering certification.
+
+- Vendor: GIAC
+- Level: expert
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/reverse-engineering-malware-grem/
+- cert/map page: https://certmap.dev/certs/grem.html
+
+## Incident Handling
+
+### CCDL2: Certified CyberDefender Level 2
+
+Threat hunting and DFIR certification, formerly named CCD, assessed through a 48-hour practical exam covering disk and memory forensics, network analysis and SIEM hunting.
+
+- Vendor: CyberDefenders
+- Level: intermediate
+- Exam price: $850 (Exam only, two attempts included; exam plus prep bundle $1,700. Formerly CCD)
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://cyberdefenders.org/certifications/certified-cyberdefender-level2/
+- cert/map page: https://certmap.dev/certs/ccdl2.html
+
+### CCFR: CrowdStrike Certified Falcon Responder
+
+90-minute, 60-question exam on triaging and responding to detections in the CrowdStrike Falcon platform. Valid for three years.
+
+- Vendor: CrowdStrike
+- Level: intermediate
+- Exam price: Not published (Voucher bought through Pearson VUE or a CrowdStrike account executive; price not shown in the official exam guide)
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.pearsonvue.com/us/en/crowdstrike.html
+- cert/map page: https://certmap.dev/certs/ccfr.html
+
+### ECIH: EC-Council Certified Incident Handler
+
+Incident handling and response certification.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $450 (Remote-proctored exam voucher)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.eccouncil.org/programs/ec-council-certified-incident-handler-ecih/
+- cert/map page: https://certmap.dev/certs/ecih.html
+
+### eCIR: INE Certified Incident Responder
+
+Practical, lab-based exam on incident detection, analysis and response scenarios. The credential is valid for three years.
+
+- Vendor: INE
+- Level: intermediate
+- Exam price: $450 (Exam voucher only; bundle with 3 months of training $599)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://ine.com/security/certifications/ecir-certification
+- cert/map page: https://certmap.dev/certs/ecir.html
+
+### EDRP: EC-Council Disaster Recovery Professional
+
+Disaster recovery and business continuity certification.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $450 (Remote-proctored exam voucher (EDRP v4))
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/programs/disaster-recovery-professional-edrp/
+- cert/map page: https://certmap.dev/certs/edrp.html
+
+### GCIH: GIAC Certified Incident Handler
+
+Incident response and handler certification covering attacker techniques and IR process.
+
+- Vendor: GIAC
+- Level: intermediate
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- DoD 8140: approved
+- Official page: https://www.giac.org/certifications/certified-incident-handler-gcih/
+- cert/map page: https://certmap.dev/certs/gcih.html
+
+### MIRE: MCSI Incident Response Engineer
+
+Hands-on incident response engineering certification.
+
+- Vendor: MCSI
+- Level: intermediate
+- Exam price: Not published (Not in the vendor's current catalogue (checked 2026-11-10); kept for existing holders)
+- Exam length: 3 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.mosse-institute.com/certifications.html
+- cert/map page: https://certmap.dev/certs/mire.html
+
+### OSIR: OffSec Incident Responder
+
+Incident response certification covering containment, eradication and recovery.
+
+- Vendor: OffSec
+- Level: intermediate
+- Exam price: $1,749 (Course and cert bundle: 90-day lab and one exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 480 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.offsec.com/courses/ir-200/
+- cert/map page: https://certmap.dev/certs/osir.html
+
+### BTL2: Blue Team Level 2
+
+Advanced defensive certification with a practical assessment of up to 72 hours and a written report that is marked by hand. Issued by Centri, the provider formerly named Security Blue Team.
+
+- Vendor: Centri
+- Level: advanced
+- Exam price: $2,683 (Vendor lists GBP only (GBP 1,999); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); price covers training and exam)
+- Price checked: 2026-11-10
+- Exam length: 3 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.centri.org/certifications/blue-team-level-2
+- cert/map page: https://certmap.dev/certs/btl2.html
+
+## Penetration Testing
+
+### Cisco EH: Cisco Certificate in Ethical Hacking
+
+Certificate earned by completing the Cisco Networking Academy Ethical Hacker course and one capture the flag challenge in Cisco U. It has no traditional exam and is valid for life.
+
+- Vendor: Cisco
+- Level: beginner
+- Exam price: Not published (No exam fee listed; earned through the Networking Academy Ethical Hacker course plus a Cisco U. capture the flag challenge)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/ethical-hacker/index.html
+- cert/map page: https://certmap.dev/certs/cisco-eh.html
+
+### CPSA: CREST Practitioner Security Analyst
+
+Entry-level closed-book multiple-choice exam of 120 questions in two hours on assessing operating systems, network services and web applications. A valid CPSA is required before sitting the CRT.
+
+- Vendor: CREST
+- Level: beginner
+- Exam price: $369 (GBP 275 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10)
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.crest-approved.org/certification-careers/crest-certifications/crest-practitioner-security-analyst/
+- cert/map page: https://certmap.dev/certs/cpsa.html
+
+### CRTA: Certified Red Team Analyst
+
+Entry-level red team certification with a six-hour practical exam covering external and internal operations against an Active Directory environment.
+
+- Vendor: CyberWarFare Labs
+- Level: beginner
+- Exam price: $69 (Includes course material, 30 days of lab access and two exam attempts)
+- Price checked: 2026-11-10
+- Exam length: 360 minutes
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://cyberwarfare.live/certifications/red-team-analyst-crta
+- cert/map page: https://certmap.dev/certs/crta.html
+
+### eJPT: eLearnSecurity Junior Penetration Tester
+
+Entry-level practical penetration testing certification.
+
+- Vendor: INE
+- Level: beginner
+- Exam price: $250 (Exam voucher only; bundle with 3 months of training $299)
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://ine.com/security/certifications/ejpt-certification
+- cert/map page: https://certmap.dev/certs/ejpt.html
+
+### MCRTA: MCSI Certified Red Team Analyst
+
+Hands-on entry-level red team analyst certification with practical exercises.
+
+- Vendor: MCSI
+- Level: beginner
+- Exam price: Not published (Not in the vendor's current catalogue (checked 2026-11-10); kept for existing holders)
+- Exam length: 3 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.mosse-institute.com/certifications.html
+- cert/map page: https://certmap.dev/certs/mcrta.html
+
+### PJPT: Practical Junior Penetration Tester
+
+Entry-level practical internal network penetration testing certification.
+
+- Vendor: TCM Security
+- Level: beginner
+- Exam price: $249
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://certifications.tcm-sec.com/pjpt/
+- cert/map page: https://certmap.dev/certs/pjpt.html
+
+### ASCP: API Security Certified Professional
+
+12-hour practical exam in which the candidate performs a live penetration test of two API-driven applications.
+
+- Vendor: APIsec University
+- Level: intermediate
+- Exam price: $450 (One free retake included)
+- Price checked: 2026-11-10
+- Exam length: 12 hours
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://au.apisec.ai/certifications
+- cert/map page: https://certmap.dev/certs/apisec-ascp.html
+
+### BSCP: Burp Suite Certified Practitioner
+
+Practical web application security exam in which the candidate has four hours to compromise two deliberately vulnerable applications using Burp Suite Professional.
+
+- Vendor: PortSwigger
+- Level: intermediate
+- Exam price: $99 (Requires an active Burp Suite Professional subscription, sold separately)
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 5 years
+- Official page: https://portswigger.net/web-security/certification
+- cert/map page: https://certmap.dev/certs/bscp.html
+
+### CAPen: Certified AppSec Pentester
+
+Four-hour practical exam on web application penetration testing, taken online and on demand. The certificate does not expire.
+
+- Vendor: The SecOps Group
+- Level: intermediate
+- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts)
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://pentestingexams.com/certifications/professional/certified-appsec-pentester/
+- cert/map page: https://certmap.dev/certs/capen.html
+
+### CEH: Certified Ethical Hacker
+
+Broad ethical hacking certification covering attack methodology.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $1,199 (Pearson VUE exam voucher)
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/
+- cert/map page: https://certmap.dev/certs/ceh.html
+
+### CNPen: Certified Network Pentester
+
+Four-hour practical exam on network penetration testing, taken online and on demand. The certificate does not expire.
+
+- Vendor: The SecOps Group
+- Level: intermediate
+- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts)
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://pentestingexams.com/certifications/professional/certified-network-pentester
+- cert/map page: https://certmap.dev/certs/cnpen.html
+
+### COASP: Certified Offensive AI Security Professional
+
+Offensive AI security certification covering reconnaissance, attack and red teaming of AI systems. Exam duration and format are not published on the program page.
+
+- Vendor: EC-Council
+- Level: intermediate
+- Exam price: $650 (Remote-proctored exam voucher)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/ai-courses/certified-offensive-ai-security-professional-coasp/
+- cert/map page: https://certmap.dev/certs/coasp.html
+
+### CRT: CREST Registered Penetration Tester
+
+Intermediate practical exam of 2.5 hours in a provided Kali Linux environment, covering infrastructure and web application testing. Accepted by the UK NCSC CHECK scheme.
+
+- Vendor: CREST
+- Level: intermediate
+- Exam price: $805 (GBP 600 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10)
+- Price checked: 2026-11-10
+- Exam length: 150 minutes
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Prerequisites: CPSA
+- Official page: https://www.crest-approved.org/skills-certifications-careers/crest-registered-penetration-tester/
+- cert/map page: https://certmap.dev/certs/crt.html
+
+### CRTP: Certified Red Team Professional
+
+Hands-on entry-level Active Directory red team certification.
+
+- Vendor: Altered Security
+- Level: intermediate
+- Exam price: $249 (30-day lab access with one exam attempt; extra attempts $99)
+- Price checked: 2026-11-10
+- Exam length: 24 hours
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.alteredsecurity.com/adlab
+- cert/map page: https://certmap.dev/certs/crtp.html
+
+### eCPPT: INE Certified Professional Penetration Tester
+
+Practical penetration testing exam for working penetration testers. The credential is valid for three years.
+
+- Vendor: INE
+- Level: intermediate
+- Exam price: $450 (Exam voucher only; bundle with 3 months of training $599)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://ine.com/security/certifications/ecppt-certification
+- cert/map page: https://certmap.dev/certs/ecppt.html
+
+### eMAPT: eLearnSecurity Mobile Application Penetration Tester
+
+Hands-on mobile application penetration testing certification covering Android and iOS.
+
+- Vendor: INE
+- Level: intermediate
+- Exam price: $450 (Exam voucher only; bundle with 3 months of training $599)
+- Price checked: 2026-11-10
+- Exam length: 6 days
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://ine.com/security/certifications/emapt-certification
+- cert/map page: https://certmap.dev/certs/emapt.html
+
+### PenTest+: CompTIA PenTest+
+
+Vendor-neutral penetration testing certification with hands-on simulations.
+
+- Vendor: CompTIA
+- Level: intermediate
+- Exam price: $439
+- Price checked: 2026-11-10
+- Exam length: 165 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Prerequisites: Security+
+- DoD 8140: approved
+- Official page: https://www.comptia.org/certifications/pentest
+- cert/map page: https://certmap.dev/certs/pentest-plus.html
+
+### PNPT: Practical Network Penetration Tester
+
+Practical 5-day penetration test with report deliverable.
+
+- Vendor: TCM Security
+- Level: intermediate
+- Exam price: $499 (Exam voucher with 12 months of training and one free retake)
+- Price checked: 2026-11-10
+- Exam length: 5 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://certifications.tcm-sec.com/pnpt/
+- cert/map page: https://certmap.dev/certs/pnpt.html
+
+### CETP: Certified Evasion Techniques Professional
+
+Hands-on 48-hour exam on Windows internals and bypassing EDR products. Expires after three years with a free renewal exam.
+
+- Vendor: Altered Security
+- Level: advanced
+- Exam price: $449 (30-day lab access with one exam attempt; extra attempts $99)
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.alteredsecurity.com/evasionlab
+- cert/map page: https://certmap.dev/certs/cetp.html
+
+### CPENT: Certified Penetration Testing Professional
+
+Fully practical penetration testing exam (CPENT AI) taken as one 24-hour session or two 12-hour sessions, followed by a written report. A score of 90 percent or higher also grants the LPT (Master) credential.
+
+- Vendor: EC-Council
+- Level: advanced
+- Exam price: $999 (CPENT Exam + Range (store price); scoring 90% or higher also awards LPT (Master))
+- Price checked: 2026-11-10
+- Exam length: 24 hours
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.eccouncil.org/train-certify/certified-penetration-testing-professional-cpent/
+- cert/map page: https://certmap.dev/certs/cpent.html
+
+### CPTS: HTB Certified Penetration Testing Specialist
+
+Hands-on penetration testing certification with 7-day exam and report.
+
+- Vendor: Hack The Box
+- Level: advanced
+- Exam price: $210 (Exam voucher only, two attempts; job-role path access sold separately)
+- Price checked: 2026-11-10
+- Exam length: 10 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist
+- cert/map page: https://certmap.dev/certs/cpts.html
+
+### CRTO: Certified Red Team Operator
+
+Hands-on red team operations certification covering Cobalt Strike tradecraft.
+
+- Vendor: Zero-Point Security
+- Level: advanced
+- Exam price: $536 (GBP 399 for the Red Team Ops course, exam attempts included; USD converted at 1.3423 on 2026-11-10)
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.zeropointsecurity.co.uk/course/red-team-ops
+- cert/map page: https://certmap.dev/certs/crto.html
+
+### GPEN: GIAC Penetration Tester
+
+Penetration testing methodology and exploitation certification.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- DoD 8140: approved
+- Official page: https://www.giac.org/certifications/penetration-tester-gpen/
+- cert/map page: https://certmap.dev/certs/gpen.html
+
+### GRTP: GIAC Red Team Professional
+
+Validates the ability to plan and run end-to-end red team engagements, including attack infrastructure and adversary emulation. Exam has 82 questions in three hours and includes CyberLive tasks.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/red-team-professional-grtp
+- cert/map page: https://certmap.dev/certs/grtp.html
+
+### MPT: MCSI Certified Penetration Tester
+
+Practical full-spectrum penetration testing certification.
+
+- Vendor: MCSI
+- Level: advanced
+- Exam price: $699 (Self-paced; list price, discounted to $595 at time of check)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.mosse-institute.com/certifications/mpt-certified-penetration-tester.html
+- cert/map page: https://certmap.dev/certs/mpt.html
+
+### OSCP+: OffSec Certified Professional (OSCP+)
+
+Hands-on 24-hour penetration testing exam; industry-respected red team credential.
+
+- Vendor: OffSec
+- Level: advanced
+- Exam price: $1,749 (Course and cert bundle: 90-day lab and one exam attempt; retake $249)
+- Price checked: 2026-11-10
+- Exam length: 24 hours
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- DoD 8140: approved
+- Official page: https://www.offsec.com/courses/pen-200/
+- cert/map page: https://certmap.dev/certs/oscp.html
+
+### CAPE: HTB Certified Active Directory Pentesting Expert
+
+Hands-on Active Directory penetration testing certification.
+
+- Vendor: Hack The Box
+- Level: expert
+- Exam price: $350 (Exam voucher only, two attempts; job-role path access sold separately)
+- Price checked: 2026-11-10
+- Exam length: 10 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-active-directory-pentesting-expert
+- cert/map page: https://certmap.dev/certs/cape.html
+
+### CCT INF: CREST Certified Tester - Infrastructure
+
+Advanced certification with a three-hour written exam and a three-hour practical exam on network and operating system level testing. Accepted by the UK NCSC CHECK scheme.
+
+- Vendor: CREST
+- Level: expert
+- Exam price: Not published (Certified-level exams are listed at GBP 1,600 in two separately booked parts (written and practical); the page does not say whether the price covers both parts)
+- Exam length: 360 minutes
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.crest-approved.org/certification-careers/crest-certifications/crest-certified-infrastructure-tester/
+- cert/map page: https://certmap.dev/certs/cct-inf.html
+
+### CRTE: Certified Red Team Expert
+
+Hands-on Active Directory red team certification.
+
+- Vendor: Altered Security
+- Level: expert
+- Exam price: $299 (30-day lab access with one exam attempt; extra attempts $99)
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.alteredsecurity.com/redteamlab
+- cert/map page: https://certmap.dev/certs/crte.html
+
+### CRTL: Certified Red Team Lead
+
+Awarded for passing the Red Team Lead exam of the Red Team Ops II course, which covers operating against modern defences such as EDR, application control and Credential Guard. The certification does not expire.
+
+- Vendor: Zero-Point Security
+- Level: expert
+- Exam price: $603 (GBP 449 for the Red Team Ops II course, exam attempts included; USD converted at 1.3423 on 2026-11-10)
+- Price checked: 2026-11-10
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.zeropointsecurity.co.uk/course/red-team-ops-ii
+- cert/map page: https://certmap.dev/certs/crtl.html
+
+### CRTM: Certified Red Team Master
+
+Hands-on 48-hour exam on attacking and securing a multi-forest Active Directory environment (Global Central Bank lab). Formerly known as PACES; expires after three years with a free renewal exam.
+
+- Vendor: Altered Security
+- Level: expert
+- Exam price: $399 (30-day lab access with one exam attempt; extra attempts $99)
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Official page: https://www.alteredsecurity.com/gcb
+- cert/map page: https://certmap.dev/certs/crtm.html
+
+### GX-PT: GIAC Experienced Penetration Tester
+
+Applied Knowledge exam of 25 CyberLive performance-based challenges in four hours covering network mapping, vulnerability identification and exploitation. Counts toward the GSE portfolio.
+
+- Vendor: GIAC
+- Level: expert
+- Exam price: $1,299 (Applied Knowledge exam; $499 for holders of an active GPEN)
+- Price checked: 2026-11-10
+- Exam length: 240 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/experienced-penetration-tester-gxpt
+- cert/map page: https://certmap.dev/certs/gx-pt.html
+
+### LPT: Licensed Penetration Tester Master
+
+Elite penetration testing credential awarded for scoring 90 percent or higher on EC-Council's 24-hour online proctored CPENT live-range exam.
+
+- Vendor: EC-Council
+- Level: expert
+- Exam price: $999 (CPENT Exam + Range (store price); LPT (Master) is awarded for scoring 90% or higher on the CPENT exam, there is no separate LPT exam)
+- Price checked: 2026-11-10
+- Exam length: 24 hours
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Prerequisites: CEH
+- Official page: https://www.eccouncil.org/train-certify/licensed-penetration-tester-lpt-master/
+- cert/map page: https://certmap.dev/certs/lpt.html
+
+### OSEP: OffSec Experienced Penetration Tester
+
+Advanced evasion and bypass techniques for mature defensive environments.
+
+- Vendor: OffSec
+- Level: expert
+- Exam price: $1,749 (Course and cert bundle: 90-day lab and one exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Prerequisites: OSCP+
+- Official page: https://www.offsec.com/courses/pen-300/
+- cert/map page: https://certmap.dev/certs/osep.html
+
+## Exploitation
+
+### GXPN: GIAC Exploit Researcher and Advanced Penetration Tester
+
+Advanced exploitation and exploit development certification.
+
+- Vendor: GIAC
+- Level: expert
+- Exam price: $999 (Exam only)
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/exploit-researcher-advanced-penetration-tester-gxpn/
+- cert/map page: https://certmap.dev/certs/gxpn.html
+
+### OMSE: Offensive Mobile Security Expert
+
+48-hour practical exam with a final report covering advanced iOS and Android internals, ARM64 reverse engineering and mobile exploitation.
+
+- Vendor: 8kSec
+- Level: expert
+- Exam price: Not published (Offered on completion of the accompanying 8kSec training class; no standalone exam price published)
+- Exam length: 2 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://8ksec.io/omse/
+- cert/map page: https://certmap.dev/certs/omse.html
+
+### OSCE3: Offensive Security Certified Expert 3
+
+Aggregate credential awarded for completing OSEP, OSED and OSWE.
+
+- Vendor: OffSec
+- Level: expert
+- Exam price: Free (Awarded for holding OSEP+OSED+OSWE)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Prerequisites: OSEP, OSED, OSWE
+- Official page: https://www.offsec.com/certificates/osce3/
+- cert/map page: https://certmap.dev/certs/osce3.html
+
+### OSED: OffSec Exploit Developer
+
+Windows exploit development certification covering buffer overflows and shellcode.
+
+- Vendor: OffSec
+- Level: expert
+- Exam price: $1,749 (Course and cert bundle: 90-day lab and one exam attempt)
+- Price checked: 2026-11-10
+- Exam length: 2 days
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.offsec.com/courses/exp-301/
+- cert/map page: https://certmap.dev/certs/osed.html
+
+### OSEE: OffSec Exploitation Expert
+
+Advanced Windows exploit development covering bypassing modern mitigations.
+
+- Vendor: OffSec
+- Level: expert
+- Exam price: Not published (No standalone price; EXP-401 (AWE) is in-person live training via Learn Enterprise)
+- Exam length: 3 days
+- Exam format: hands-on, performance-based
+- Renewal: every 3 years
+- Prerequisites: OSED
+- Official page: https://www.offsec.com/courses/exp-401/
+- cert/map page: https://certmap.dev/certs/osee.html
+
+### OSMR: Offensive Security macOS Researcher
+
+macOS exploit development and control-bypass certification (EXP-312). New OSMR exams were placed on hiatus in November 2025; existing credentials remain valid.
+
+- Vendor: OffSec
+- Level: expert
+- Exam price: Not published (On hiatus since November 2025; EXP-312 withdrawn, no new exams)
+- Exam length: 2 days
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://www.offsec.com/courses/exp-312/
+- cert/map page: https://certmap.dev/certs/osmr.html

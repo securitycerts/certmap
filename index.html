@@ -34,18 +34,21 @@
   <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
   <link rel="manifest" href="favicon/site.webmanifest" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="modulepreload" href="assets/js/app.js" />
-  <link rel="modulepreload" href="assets/js/data.js" />
-  <link rel="modulepreload" href="assets/js/render.js" />
-  <link rel="modulepreload" href="assets/js/format.js" />
-  <link rel="modulepreload" href="assets/js/dom.js" />
-  <link rel="modulepreload" href="assets/js/logo.js" />
-  <link rel="modulepreload" href="assets/js/tooltip.js" />
-  <link rel="modulepreload" href="assets/js/contextmenu.js" />
-  <link rel="modulepreload" href="assets/js/toast.js" />
-  <link rel="modulepreload" href="assets/js/motion.js" />
-  <link rel="modulepreload" href="assets/vendor/anime.esm.min.js" />
+  <link rel="alternate" type="application/json" href="data/certs.json" title="cert/map dataset (JSON)" />
+  <link rel="alternate" type="text/csv" href="data/certs.csv" title="cert/map dataset (CSV)" />
+  <link rel="alternate" type="text/plain" href="llms.txt" title="cert/map digest for language models" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=22fef1b3" />
+  <link rel="modulepreload" href="assets/js/app.js?v=22fef1b3" />
+  <link rel="modulepreload" href="assets/js/data.js?v=22fef1b3" />
+  <link rel="modulepreload" href="assets/js/render.js?v=22fef1b3" />
+  <link rel="modulepreload" href="assets/js/format.js?v=22fef1b3" />
+  <link rel="modulepreload" href="assets/js/dom.js?v=22fef1b3" />
+  <link rel="modulepreload" href="assets/js/logo.js?v=22fef1b3" />
+  <link rel="modulepreload" href="assets/js/tooltip.js?v=22fef1b3" />
+  <link rel="modulepreload" href="assets/js/contextmenu.js?v=22fef1b3" />
+  <link rel="modulepreload" href="assets/js/toast.js?v=22fef1b3" />
+  <link rel="modulepreload" href="assets/js/motion.js?v=22fef1b3" />
+  <link rel="modulepreload" href="assets/vendor/anime.esm.min.js?v=22fef1b3" />
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to certifications</a>
@@ -53,7 +56,7 @@
     <button id="sidebar-toggle" type="button" class="icon-btn" aria-label="Toggle filters" aria-controls="sidebar" aria-expanded="true" title="Filters (F)">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/></svg>
     </button>
-    <a class="brand" href="#/" aria-label="Cert Map home">
+    <a class="brand" href="about/" aria-label="About cert/map" title="About cert/map">
       <svg class="logo" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
         <rect class="logo-bg" x="1" y="1" width="30" height="30" rx="8"/>
         <g class="logo-grid">
@@ -169,17 +172,6 @@
         </div>
         <div id="flow" class="flow hidden"></div>
       </div>
-      <!-- build:about -->
-        <details class="about" id="about">
-          <summary><h2>About this cybersecurity certification roadmap</h2><span>Browse by domain or vendor</span></summary>
-          <p>cert/map charts 272 cybersecurity certifications from 62 vendors across 16 domains and four seniority levels, from entry-level credentials such as CompTIA Security+ to expert ones such as OSCE3 and CISSP. Each entry lists the current exam price in USD, exam length and format, renewal cycle and prerequisites, checked against the vendor's own page. Pick the certifications you are aiming for to get a path ordered by prerequisite with its total cost and study time, then share it with a link.</p>
-          <p><a href="certs/">See every certification as a plain list with prices</a> or <a href="data/certs.csv">download the dataset</a>.</p>
-          <h3>Certifications by domain</h3>
-          <ul class="about-links"><li><a href="certs/domain-communication-network-security.html">Communication &amp; Network Security</a> <span>26</span></li><li><a href="certs/domain-iam.html">IAM</a> <span>6</span></li><li><a href="certs/domain-security-architecture-engineering.html">Security Architecture &amp; Engineering</a> <span>10</span></li><li><a href="certs/domain-asset-security.html">Asset Security</a> <span>4</span></li><li><a href="certs/domain-security-risk-management.html">Security &amp; Risk Management</a> <span>16</span></li><li><a href="certs/domain-software-security.html">Software Security</a> <span>25</span></li><li><a href="certs/domain-security-operations.html">Security Operations</a> <span>30</span></li><li><a href="certs/domain-cyber-threat-intelligence.html">Cyber Threat Intelligence</a> <span>11</span></li><li><a href="certs/domain-cloud-sysops.html">Cloud/SysOps</a> <span>30</span></li><li><a href="certs/domain-nix.html">*nix</a> <span>8</span></li><li><a href="certs/domain-ics-iot.html">ICS/IoT</a> <span>6</span></li><li><a href="certs/domain-grc.html">GRC</a> <span>27</span></li><li><a href="certs/domain-forensics.html">Forensics</a> <span>24</span></li><li><a href="certs/domain-incident-handling.html">Incident Handling</a> <span>9</span></li><li><a href="certs/domain-penetration-testing.html">Penetration Testing</a> <span>34</span></li><li><a href="certs/domain-exploitation.html">Exploitation</a> <span>6</span></li></ul>
-          <h3>Certifications by vendor</h3>
-          <ul class="about-links"><li><a href="certs/vendor-8ksec.html">8kSec</a> <span>1</span></li><li><a href="certs/vendor-altered-security.html">Altered Security</a> <span>5</span></li><li><a href="certs/vendor-apisec-university.html">APIsec University</a> <span>2</span></li><li><a href="certs/vendor-arcx.html">arcX</a> <span>1</span></li><li><a href="certs/vendor-aws.html">AWS</a> <span>7</span></li><li><a href="certs/vendor-cellebrite.html">Cellebrite</a> <span>1</span></li><li><a href="certs/vendor-centri.html">Centri</a> <span>2</span></li><li><a href="certs/vendor-chainalysis.html">Chainalysis</a> <span>1</span></li><li><a href="certs/vendor-check-point.html">Check Point</a> <span>2</span></li><li><a href="certs/vendor-cisco.html">Cisco</a> <span>7</span></li><li><a href="certs/vendor-cncf.html">CNCF</a> <span>3</span></li><li><a href="certs/vendor-comptia.html">CompTIA</a> <span>15</span></li><li><a href="certs/vendor-crest.html">CREST</a> <span>4</span></li><li><a href="certs/vendor-crowdstrike.html">CrowdStrike</a> <span>3</span></li><li><a href="certs/vendor-csa.html">CSA</a> <span>4</span></li><li><a href="certs/vendor-cwnp.html">CWNP</a> <span>2</span></li><li><a href="certs/vendor-cyberdefenders.html">CyberDefenders</a> <span>2</span></li><li><a href="certs/vendor-cyberwarfare-labs.html">CyberWarFare Labs</a> <span>1</span></li><li><a href="certs/vendor-dri-international.html">DRI International</a> <span>1</span></li><li><a href="certs/vendor-ec-council.html">EC-Council</a> <span>20</span></li><li><a href="certs/vendor-elastic.html">Elastic</a> <span>1</span></li><li><a href="certs/vendor-fortinet.html">Fortinet</a> <span>2</span></li><li><a href="certs/vendor-giac.html">GIAC</a> <span>27</span></li><li><a href="certs/vendor-github.html">GitHub</a> <span>1</span></li><li><a href="certs/vendor-google.html">Google</a> <span>6</span></li><li><a href="certs/vendor-hack-the-box.html">Hack The Box</a> <span>9</span></li><li><a href="certs/vendor-hashicorp.html">HashiCorp</a> <span>1</span></li><li><a href="certs/vendor-iacis.html">IACIS</a> <span>1</span></li><li><a href="certs/vendor-iapp.html">IAPP</a> <span>4</span></li><li><a href="certs/vendor-ine.html">INE</a> <span>9</span></li><li><a href="certs/vendor-isa.html">ISA</a> <span>1</span></li><li><a href="certs/vendor-isaca.html">ISACA</a> <span>9</span></li><li><a href="certs/vendor-isc2.html">ISC2</a> <span>9</span></li><li><a href="certs/vendor-isfce.html">ISFCE</a> <span>1</span></li><li><a href="certs/vendor-juniper.html">Juniper</a> <span>2</span></li><li><a href="certs/vendor-linux-foundation.html">Linux Foundation</a> <span>1</span></li><li><a href="certs/vendor-lpi.html">LPI</a> <span>4</span></li><li><a href="certs/vendor-magnet-forensics.html">Magnet Forensics</a> <span>2</span></li><li><a href="certs/vendor-mcafee-institute.html">McAfee Institute</a> <span>4</span></li><li><a href="certs/vendor-mcsi.html">MCSI</a> <span>11</span></li><li><a href="certs/vendor-microsoft.html">Microsoft</a> <span>10</span></li><li><a href="certs/vendor-offsec.html">OffSec</a> <span>16</span></li><li><a href="certs/vendor-okta.html">Okta</a> <span>2</span></li><li><a href="certs/vendor-opentext.html">OpenText</a> <span>1</span></li><li><a href="certs/vendor-palo-alto-networks.html">Palo Alto Networks</a> <span>9</span></li><li><a href="certs/vendor-pci-ssc.html">PCI SSC</a> <span>1</span></li><li><a href="certs/vendor-pecb.html">PECB</a> <span>2</span></li><li><a href="certs/vendor-peoplecert.html">PeopleCert</a> <span>2</span></li><li><a href="certs/vendor-portswigger.html">PortSwigger</a> <span>1</span></li><li><a href="certs/vendor-practical-devsecops.html">Practical DevSecOps</a> <span>3</span></li><li><a href="certs/vendor-red-hat.html">Red Hat</a> <span>2</span></li><li><a href="certs/vendor-sabsa.html">SABSA</a> <span>1</span></li><li><a href="certs/vendor-sailpoint.html">SailPoint</a> <span>2</span></li><li><a href="certs/vendor-splunk.html">Splunk</a> <span>5</span></li><li><a href="certs/vendor-tcm-security.html">TCM Security</a> <span>9</span></li><li><a href="certs/vendor-the-open-group.html">The Open Group</a> <span>1</span></li><li><a href="certs/vendor-the-secops-group.html">The SecOps Group</a> <span>3</span></li><li><a href="certs/vendor-trm-labs.html">TRM Labs</a> <span>7</span></li><li><a href="certs/vendor-vmware.html">VMware</a> <span>1</span></li><li><a href="certs/vendor-wireshark.html">Wireshark</a> <span>2</span></li><li><a href="certs/vendor-zero-point-security.html">Zero-Point Security</a> <span>2</span></li><li><a href="certs/vendor-zscaler.html">Zscaler</a> <span>1</span></li></ul>
-        </details>
-        <!-- /build:about -->
     </section>
     <div id="backdrop" class="backdrop hidden"></div>
   </main>
@@ -215,7 +207,7 @@
 
   <footer class="pagefoot">
     <span>Open-source cybersecurity certification roadmap. Right-click a certification for more actions.</span>
-    <span><a href="certs/">All certifications as a list</a> · <a href="data/certs.csv">Dataset (CSV)</a> · <a href="https://github.com/securitycerts/certmap/blob/main/CONTRIBUTING.md" rel="noopener">Contribute</a></span>
+    <span><a href="about/">About and FAQ</a> · <a href="certs/">All certifications as a list</a> · <a href="data/certs.csv">Dataset (CSV)</a> · <a href="https://github.com/securitycerts/certmap/blob/main/CONTRIBUTING.md" rel="noopener">Contribute</a></span>
   </footer>
 
   <dialog id="help" class="help" aria-labelledby="help-title">
@@ -243,6 +235,6 @@
     <p class="noscript">The interactive roadmap needs JavaScript. The same data is available as plain pages: <a href="certs/">browse all cybersecurity certifications with prices</a>.</p>
   </noscript>
 
-  <script type="module" src="assets/js/app.js"></script>
+  <script type="module" src="assets/js/app.js?v=22fef1b3"></script>
 </body>
 </html>

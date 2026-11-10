@@ -6,7 +6,41 @@ cert/map is a community-maintained reference for the cybersecurity certification
 
 ## Vendors covered
 
-ISC2, ISACA, CompTIA, OffSec (Offensive Security), GIAC (SANS), EC-Council, AWS, Microsoft, Google Cloud, Cisco, Red Hat, LPI, Hack The Box, TCM Security, INE, Zero-Point Security, Altered Security, Mossé Cyber Security Institute (MCSI), Cloud Security Alliance (CSA), McAfee Institute, TRM Labs, Splunk, Magnet Forensics, OpenText (EnCase), Cellebrite, ISA, Okta, SailPoint, IAPP, PeopleCert (ITIL), arcX, and others.
+8kSec, Altered Security, APIsec University, arcX, AWS, Cellebrite, Centri, Chainalysis, Check Point, Cisco, CNCF, CompTIA, CREST, CrowdStrike, CSA, CWNP, CyberDefenders, CyberWarFare Labs, DRI International, EC-Council, Elastic, Fortinet, GIAC, GitHub, Google, Hack The Box, HashiCorp, IACIS, IAPP, INE, ISA, ISACA, ISC2, ISFCE, Juniper, Linux Foundation, LPI, Magnet Forensics, McAfee Institute, MCSI, Microsoft, OffSec, Okta, OpenText, Palo Alto Networks, PCI SSC, PECB, PeopleCert, PortSwigger, Practical DevSecOps, Red Hat, SABSA, SailPoint, Splunk, TCM Security, The Open Group, The SecOps Group, TRM Labs, VMware, Wireshark, Zero-Point Security, Zscaler.
+
+## Pages
+
+- [Interactive roadmap](https://certmap.dev/): the matrix of every certification by domain and level
+- [About and FAQ](https://certmap.dev/about/): what the roadmap is, with answers on cost, beginner options and exam formats
+- [All certifications](https://certmap.dev/certs/): every certification with vendor, level and price
+- [Full text digest](https://certmap.dev/llms-full.txt): every certification with all of its fields, in Markdown
+- [Dataset as JSON](https://certmap.dev/data/certs.json) and [as CSV](https://certmap.dev/data/certs.csv)
+- [Beginner cybersecurity certifications](https://certmap.dev/certs/list-beginner.html): 48 certifications
+- [Intermediate cybersecurity certifications](https://certmap.dev/certs/list-intermediate.html): 121 certifications
+- [Advanced cybersecurity certifications](https://certmap.dev/certs/list-advanced.html): 65 certifications
+- [Expert cybersecurity certifications](https://certmap.dev/certs/list-expert.html): 38 certifications
+- [Free cybersecurity certifications](https://certmap.dev/certs/list-free.html): 2 certifications
+- [Cybersecurity certifications under $300](https://certmap.dev/certs/list-under-300.html): 73 certifications
+- [Hands-on cybersecurity certifications with practical exams](https://certmap.dev/certs/list-hands-on.html): 80 certifications
+- [DoD 8140 approved cybersecurity certifications](https://certmap.dev/certs/list-dod-8140.html): 31 certifications
+- [Communication & Network Security certifications](https://certmap.dev/certs/domain-communication-network-security.html)
+- [IAM certifications](https://certmap.dev/certs/domain-iam.html)
+- [Security Architecture & Engineering certifications](https://certmap.dev/certs/domain-security-architecture-engineering.html)
+- [Asset Security certifications](https://certmap.dev/certs/domain-asset-security.html)
+- [Security & Risk Management certifications](https://certmap.dev/certs/domain-security-risk-management.html)
+- [Software Security certifications](https://certmap.dev/certs/domain-software-security.html)
+- [Security Operations certifications](https://certmap.dev/certs/domain-security-operations.html)
+- [Cyber Threat Intelligence certifications](https://certmap.dev/certs/domain-cyber-threat-intelligence.html)
+- [Cloud/SysOps certifications](https://certmap.dev/certs/domain-cloud-sysops.html)
+- [*nix certifications](https://certmap.dev/certs/domain-nix.html)
+- [ICS/IoT certifications](https://certmap.dev/certs/domain-ics-iot.html)
+- [GRC certifications](https://certmap.dev/certs/domain-grc.html)
+- [Forensics certifications](https://certmap.dev/certs/domain-forensics.html)
+- [Incident Handling certifications](https://certmap.dev/certs/domain-incident-handling.html)
+- [Penetration Testing certifications](https://certmap.dev/certs/domain-penetration-testing.html)
+- [Exploitation certifications](https://certmap.dev/certs/domain-exploitation.html)
+
+Each certification has its own page at `https://certmap.dev/certs/<id>.html` and each vendor at `https://certmap.dev/certs/vendor-<name>.html`.
 
 ## Domain taxonomy
 

@@ -23,6 +23,7 @@ The site is a single-page application that runs straight from the repository wit
 - Keyboard control throughout: cards are focusable, `Enter` opens, `Space` selects, `J`/`K` step through certifications in the drawer, and `?` lists every shortcut.
 - A collapsible filter sidebar (`F`), a hands-on-exam filter and per-domain and per-vendor counts.
 - Static, crawlable pages for every certification, vendor and domain under `certs/`, generated from the same CSV, plus a sitemap.
+- An About page with an FAQ (`about/`, opened from the logo), curated lists such as beginner, free, hands-on and DoD 8140 certifications, and machine-readable outputs: `llms.txt`, `llms-full.txt` and `data/certs.json`.
 - A delayed hover tooltip showing price, exam length, renewal cycle, prerequisites and a brief description.
 - A detail drawer per certification, deep-linkable via `#/cert/<id>`.
 - A path planner that orders selected certifications by prerequisite and difficulty, with a running total of cost, study hours and approximate months at ten study-hours per week.
@@ -93,7 +94,7 @@ npm run security   # python3 scripts/security_check.py (data, secret and CSP che
 npm run build      # node scripts/build-pages.mjs (static pages under certs/ and sitemap.xml)
 ```
 
-`npm run build` is what search engines see: one plain HTML page per certification, vendor and domain, an index of all of them and the sitemap. Run it after changing the CSV and commit the result; the pull-request check fails if `certs/` is stale. It also refreshes the certification count and the plain-text site index at the bottom of `index.html`.
+`npm run build` is what search engines see: one plain HTML page per certification, vendor and domain, an index of all of them and the sitemap. Run it after changing the CSV and commit the result; the pull-request check fails if `certs/` is stale. It also refreshes the certification count in `index.html`, regenerates `about/`, `llms-full.txt` and `data/certs.json`, and stamps a content hash on every stylesheet and module URL so a deploy never pairs new HTML with cached old assets.
 
 The dataset has a single source of truth: `data/certs.csv`. The browser parses the CSV directly at load time; there is no generated JSON to keep in sync. Node 18 or newer is only needed for the validator; the browser side has no Node dependency.
 

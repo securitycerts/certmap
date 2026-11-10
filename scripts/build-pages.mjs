@@ -9,14 +9,20 @@
 //   certs/<id>.html      one page per certification
 //   certs/vendor-*.html  one page per vendor
 //   certs/domain-*.html  one page per domain
+//   certs/list-*.html    curated lists (beginner, free, hands-on, DoD 8140, ...)
+//   about/index.html     what the site is, a site index and an FAQ
+//   llms-full.txt        every certification as Markdown, for language models
+//   data/certs.json      the dataset as JSON
 //   sitemap.xml          the home page plus all of the above
+//
+// It also stamps a content hash on every stylesheet and module URL.
 //
 // It also refreshes the certification count wherever index.html and llms.txt
 // quote it. No dependencies; run with `npm run build` after changing the CSV and
 // commit the result: the site is published straight from the branch, and CI
 // fails if the generated files are stale.
 
-import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { createHash } from "node:crypto";
@@ -77,7 +83,7 @@ function page({ path, title, description, body, ld, modified }) {
 <body>
 <header class="top">
   <a class="brand" href="../">cert<span>/</span>map</a>
-  <nav><a href="./">All certifications</a><a href="../">Interactive roadmap</a></nav>
+  <nav><a href="../certs/">All certifications</a><a href="../about/">About</a><a href="../">Interactive roadmap</a></nav>
 </header>
 <main>
 ${body}
@@ -98,7 +104,203 @@ const year = iso => (iso || latest).slice(0, 4);
 const count = (list, key) => list.reduce((m, c) => m.set(c[key], (m.get(c[key]) || 0) + 1), new Map());
 const byLevelThenName = (a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level) || byName(a, b);
 
-if (certs.some(c => /^(vendor|domain)-/.test(c.id))) throw new Error("a cert id collides with the vendor-/domain- page names");
+if (certs.some(c => /^(vendor|domain|list)-/.test(c.id))) throw new Error("a cert id collides with the vendor-/domain-/list- page names");
+
+// Curated cuts of the dataset that match what people actually search for.
+// `app` is the query string that opens the same filter in the interactive app.
+const byWeight = (a, b) => b.weight - a.weight || byName(a, b);
+const byPrice = (a, b) => (a.price_usd ?? Infinity) - (b.price_usd ?? Infinity) || byName(a, b);
+const levelList = (level, blurb) => ({
+  slug: level,
+  name: `${LEVEL_LABEL[level]} cybersecurity certifications`,
+  lead: blurb,
+  app: `?level=${level}`,
+  test: c => c.level === level,
+  sort: byWeight,
+});
+const LISTS = [
+  levelList("beginner", "Entry-level certifications for people starting out in security: no earlier credential is assumed, and most can be prepared in a few weeks of study."),
+  levelList("intermediate", "Certifications for practitioners with one to three years of experience who are moving into a specialism such as penetration testing, cloud security or incident response."),
+  levelList("advanced", "Specialist certifications that assume several years in the field and test depth in a single discipline."),
+  levelList("expert", "Capstone credentials: multi-day practical exams and senior management certifications that sit at the top of each path."),
+  {
+    slug: "free", name: "Free cybersecurity certifications",
+    lead: "Certifications whose exam costs nothing. Useful as a first credential or as a way to test a new area before paying for a larger exam.",
+    app: "?free=1", test: c => c.price_usd === 0, sort: byLevelThenName,
+  },
+  {
+    slug: "under-300", name: "Cybersecurity certifications under $300",
+    lead: "Every certification with a published exam price below 300 US dollars, cheapest first.",
+    app: "?pmax=299", test: c => c.price_usd != null && c.price_usd > 0 && c.price_usd < 300, sort: byPrice,
+  },
+  {
+    slug: "hands-on", name: "Hands-on cybersecurity certifications with practical exams",
+    lead: "Certifications assessed in a lab or on live systems rather than by multiple choice: you compromise, defend, investigate or build something and are graded on the result.",
+    app: "?handson=1", test: c => c.hands_on, sort: byLevelThenName,
+  },
+  {
+    slug: "dod-8140", name: "DoD 8140 approved cybersecurity certifications",
+    lead: "Certifications recognised under the US Department of Defense 8140 cyber workforce framework, the successor to DoD 8570.",
+    app: "?dod=1", test: c => c.dod_8140, sort: byLevelThenName,
+  },
+];
+const listFile = l => `list-${l.slug}.html`;
+const listItems = l => certs.filter(l.test).sort(l.sort);
+
+function listPage(l) {
+  const items = listItems(l);
+  const path = `certs/${listFile(l)}`;
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / <a href="./">Certifications</a> / ${esc(l.name)}</nav>
+<h1>${esc(l.name)}</h1>
+<p class="lead">${esc(l.lead)}</p>
+<p>${items.length} certifications from ${count(items, "vendor").size} vendors match.${esc(priceRange(items))}</p>
+<p class="cta"><a class="btn primary" href="../${l.app}">Open this list in the interactive roadmap</a></p>
+${certTable(items, { showDomain: true })}
+<h2>More lists</h2>
+<nav class="toc">${LISTS.filter(o => o !== l).map(o => `<a href="${listFile(o)}">${esc(o.name)}</a>`).join(" ")}</nav>`;
+  return page({
+    path, title: `${l.name}: ${items.length} compared with prices (${year()}) | cert/map`,
+    description: `${l.lead} ${items.length} certifications including ${items.slice(0, 5).map(c => c.acronym).join(", ")}.${priceRange(items)}`.slice(0, 300),
+    body, ld: itemListLd(l.name, path, items), modified: latest,
+  });
+}
+
+// Questions and answers for the About page, computed from the data so they
+// cannot drift from it.
+function faq() {
+  const names = list => list.map(c => `${c.acronym} (${money(c.price_usd)})`).join(", ");
+  const priced = certs.filter(c => c.price_usd > 0);
+  const starters = listItems(LISTS[0]).slice(0, 5);
+  const free = certs.filter(c => c.price_usd === 0).sort(byLevelThenName);
+  const dearest = [...priced].sort((a, b) => b.price_usd - a.price_usd).slice(0, 3);
+  const cheapest = [...priced].sort(byPrice).slice(0, 3);
+  const verified = certs.filter(c => c.price_verified_at).length;
+  return [
+    ["What is a cybersecurity certification roadmap?",
+      `A roadmap lays certifications out by subject and by seniority so you can see which ones lead to which. cert/map places ${certs.length} certifications from ${vendors.size} vendors on a grid of ${DOMAINS.length} domains and four levels, from beginner to expert, and shows the price, exam format and prerequisites of each.`],
+    ["Which cybersecurity certification should a beginner start with?",
+      `The most widely recognised entry-level certifications on the roadmap are ${names(starters)}. Which one fits depends on the direction you want to take: general security, networking, cloud or hands-on testing.`],
+    ["How much do cybersecurity certifications cost?",
+      `Exam prices on the roadmap run from free to ${money(dearest[0].price_usd)}. The cheapest paid exams are ${names(cheapest)}, and the most expensive are ${names(dearest)}. Prices are list prices in US dollars for the exam, without training unless the vendor only sells them together.`],
+    ["Are there free cybersecurity certifications?",
+      free.length ? `Yes. ${free.map(c => c.acronym).join(", ")} ${free.length === 1 ? "has" : "have"} no exam fee.` : "None of the certifications currently on the roadmap is free."],
+    ["Which certifications have a hands-on exam?",
+      `${certs.filter(c => c.hands_on).length} of the ${certs.length} certifications are assessed with a practical exam in a lab rather than multiple choice, among them ${listItems(LISTS[6]).filter(c => c.weight > 0).slice(0, 6).map(c => c.acronym).join(", ")}.`],
+    ["Which certifications count for DoD 8140?",
+      `${certs.filter(c => c.dod_8140).length} certifications on the roadmap are recognised under the US Department of Defense 8140 framework, including ${listItems(LISTS[7]).slice(0, 6).map(c => c.acronym).join(", ")}.`],
+    ["How current are the prices?",
+      `${verified} of ${certs.length} prices carry the date they were last checked against the vendor's own page; the most recent check was on ${latest}. Each certification page shows its own date. Vendors change prices without notice, so confirm before paying.`],
+    ["Can I build and share my own certification path?",
+      "Yes. Select certifications in the interactive roadmap and it orders them by prerequisite and adds up exam cost and study time. Give the path a name and copy its link: anyone who opens it sees the same roadmap."],
+  ];
+}
+
+function aboutPage() {
+  const perDomain = count(certs, "domain"), perVendor = count(certs, "vendor");
+  const chips = (names, file, n) => names.map(x => `<a href="../certs/${file(x)}">${esc(x)} <small>${n.get(x) || 0}</small></a>`).join(" ");
+  const qa = faq();
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / About</nav>
+<h1>About cert/map, the cybersecurity certification roadmap</h1>
+<p class="lead">cert/map charts ${certs.length} cybersecurity certifications from ${vendors.size} vendors across ${DOMAINS.length} domains and four seniority levels, from entry-level credentials such as CompTIA Security+ to expert ones such as OSCE3 and CISSP.</p>
+<p>Each entry lists the current exam price in USD, exam length and format, renewal cycle and prerequisites, checked against the vendor's own page. Pick the certifications you are aiming for to get a path ordered by prerequisite with its total cost and study time, then share it with a link. The project is open source and the dataset is free to reuse.</p>
+<p class="cta"><a class="btn primary" href="../">Open the interactive roadmap</a> <a class="btn" href="../certs/">All certifications as a list</a> <a class="btn" href="../data/certs.csv">Download the dataset</a></p>
+<h2>Popular lists</h2>
+<nav class="toc">${LISTS.map(l => `<a href="../certs/${listFile(l)}">${esc(l.name)} <small>${listItems(l).length}</small></a>`).join(" ")}</nav>
+<h2>Certifications by domain</h2>
+<nav class="toc">${chips(DOMAINS, domainFile, perDomain)}</nav>
+<h2>Certifications by vendor</h2>
+<nav class="toc">${chips([...vendors].sort((a, b) => a.localeCompare(b)), vendorFile, perVendor)}</nav>
+<h2>Questions and answers</h2>
+<div class="faq">
+${qa.map(([q, a]) => `  <h3>${esc(q)}</h3>\n  <p>${esc(a)}</p>`).join("\n")}
+</div>
+<h2>Data and licence</h2>
+<p>The whole dataset is one CSV file, also published as <a href="../data/certs.json">JSON</a>, with a plain-text digest for language models at <a href="../llms.txt">llms.txt</a> and <a href="../llms-full.txt">llms-full.txt</a>. The code is MIT licensed and the dataset is CC BY 4.0. Corrections are welcome on <a href="https://github.com/securitycerts/certmap">GitHub</a>.</p>
+<p>The matrix layout is inspired by Paul Jerimy's Security Certification Roadmap. cert/map is independent and not affiliated with any of the listed vendors.</p>`;
+  const ld = [
+    { "@context": "https://schema.org", "@type": "AboutPage", name: "About cert/map", url: SITE + "about/", isPartOf: { "@type": "WebSite", name: "cert/map", url: SITE } },
+    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: qa.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
+  ];
+  return page({
+    path: "about/",
+    title: `About cert/map: cybersecurity certification roadmap, ${certs.length} certs explained`,
+    description: `What cert/map is and how to use it: ${certs.length} cybersecurity certifications from ${vendors.size} vendors by domain and level, with answers on cost, beginner options, free and hands-on certifications and DoD 8140.`,
+    body, ld, modified: latest,
+  });
+}
+
+// ---------- machine-readable outputs ----------
+function llmsFull() {
+  const line = (k, v) => (v ? `- ${k}: ${v}\n` : "");
+  let out = `# cert/map: full certification list\n\n> ${certs.length} cybersecurity certifications from ${vendors.size} vendors, grouped by domain and ordered from beginner to expert. Prices are exam list prices in USD. Generated from data/certs.csv; last price check ${latest}.\n\nSource: ${SITE}\nDataset: ${SITE}data/certs.csv and ${SITE}data/certs.json\nLicence: CC BY 4.0 (dataset), MIT (code)\n`;
+  for (const domain of DOMAINS) {
+    const items = certs.filter(c => c.domain === domain).sort(byLevelThenName);
+    if (!items.length) continue;
+    out += `\n## ${domain}\n`;
+    for (const c of items) {
+      out += `\n### ${c.acronym}: ${c.name}\n\n${c.description}\n\n`
+        + line("Vendor", c.vendor) + line("Level", c.level)
+        + line("Exam price", money(c.price_usd) + (c.currency_note ? ` (${c.currency_note})` : ""))
+        + line("Price checked", c.price_verified_at) + line("Exam length", duration(c.duration_min))
+        + line("Exam format", c.hands_on ? "hands-on, performance-based" : "written or multiple choice")
+        + line("Renewal", c.validity_years ? `every ${c.validity_years} years` : "does not expire")
+        + line("Prerequisites", c.prerequisites.map(id => byId.get(id)?.acronym || id).join(", "))
+        + line("DoD 8140", c.dod_8140 ? "approved" : "") + line("Restricted to", c.restricted_to)
+        + line("Official page", c.url) + line("cert/map page", SITE + `certs/${c.id}.html`);
+    }
+  }
+  return out;
+}
+
+function refreshLlms() {
+  const path = join(ROOT, "llms.txt");
+  const before = readFileSync(path, "utf8");
+  const block = `## Vendors covered
+
+${[...vendors].sort((a, b) => a.localeCompare(b)).join(", ")}.
+
+## Pages
+
+- [Interactive roadmap](${SITE}): the matrix of every certification by domain and level
+- [About and FAQ](${SITE}about/): what the roadmap is, with answers on cost, beginner options and exam formats
+- [All certifications](${SITE}certs/): every certification with vendor, level and price
+- [Full text digest](${SITE}llms-full.txt): every certification with all of its fields, in Markdown
+- [Dataset as JSON](${SITE}data/certs.json) and [as CSV](${SITE}data/certs.csv)
+${LISTS.map(l => `- [${l.name}](${SITE}certs/${listFile(l)}): ${listItems(l).length} certifications`).join("\n")}
+${DOMAINS.map(d => `- [${d} certifications](${SITE}certs/${domainFile(d)})`).join("\n")}
+
+Each certification has its own page at \`${SITE}certs/<id>.html\` and each vendor at \`${SITE}certs/vendor-<name>.html\`.
+
+`;
+  const after = before.replace(/## Vendors covered[\s\S]*?(?=## Domain taxonomy)/, block);
+  if (after !== before) writeFileSync(path, after);
+}
+
+// ---------- asset versioning ----------
+// Pages caches every file for ten minutes, so right after a deploy a browser can
+// pair the new HTML with an old stylesheet or module and render a broken page.
+// Every reference to a stylesheet or module carries ?v=<hash of all of them>, so
+// a change to any of them changes every URL at once.
+function stampAssets() {
+  const strip = t => t.replace(/(\.(?:js|css))\?v=[0-9a-f]{8}/g, "$1");
+  const jsDir = join(ROOT, "assets", "js");
+  const modules = readdirSync(jsDir).filter(f => f.endsWith(".js")).sort().map(f => join(jsDir, f));
+  const hash = createHash("sha256");
+  for (const f of [...modules, join(ROOT, "assets", "css", "styles.css"), join(ROOT, "assets", "vendor", "anime.esm.min.js")]) {
+    hash.update(strip(readFileSync(f, "utf8")));
+  }
+  const v = hash.digest("hex").slice(0, 8);
+  for (const f of modules) {
+    const before = readFileSync(f, "utf8");
+    const after = strip(before).replace(/(from\s+"\.{1,2}\/[^"]+\.js)"/g, `$1?v=${v}"`);
+    if (after !== before) writeFileSync(f, after);
+  }
+  const index = join(ROOT, "index.html");
+  const before = readFileSync(index, "utf8");
+  const after = strip(before).replace(/("assets\/(?:js|css|vendor)\/[^"?]+\.(?:js|css))"/g, `$1?v=${v}"`);
+  if (after !== before) writeFileSync(index, after);
+  return v;
+}
 
 function certTable(items, { showVendor = true, showDomain = false } = {}) {
   return `<table>
@@ -183,7 +385,7 @@ function certPage(c) {
   const facts = [
     ["Vendor", `<a href="${vendorFile(c.vendor)}">${esc(c.vendor)} certifications</a>`],
     ["Domain", `<a href="${domainFile(c.domain)}">${esc(c.domain)}</a>`],
-    ["Level", LEVEL_LABEL[c.level]],
+    ["Level", `<a href="list-${c.level}.html">${LEVEL_LABEL[c.level]}</a>`],
     ["Exam price", esc(price) + (c.currency_note ? ` <small>${esc(c.currency_note)}</small>` : "")],
     c.price_verified_at ? ["Price checked", `<time datetime="${c.price_verified_at}">${c.price_verified_at}</time>`] : null,
     c.exam_count > 1 ? ["Exams required", String(c.exam_count)] : null,
@@ -276,6 +478,9 @@ ${items.map(c => `      <tr><td>${certLink(c)} <span>${esc(c.name)}</span></td><
 <h1>Cybersecurity certifications list: ${certs.length} certs with prices</h1>
 <p class="lead">Every certification on the cert/map security certification roadmap, grouped by domain and ordered from beginner to expert, with the vendor and the current exam price in USD. ${vendors.size} vendors are covered, from CompTIA, ISC2, ISACA, GIAC and OffSec to cloud, forensics and hands-on lab providers.</p>
 <p class="cta"><a class="btn primary" href="../">Open the interactive roadmap</a> <a class="btn" href="../data/certs.csv">Download the dataset (CSV)</a></p>
+<h2>Popular lists</h2>
+<nav class="toc" aria-label="Lists">${LISTS.map(l => `<a href="${listFile(l)}">${esc(l.name)}</a>`).join(" ")}</nav>
+<h2>By domain</h2>
 <nav class="toc" aria-label="Domains">${DOMAINS.map(d => `<a href="#${slug(d)}">${esc(d)}</a>`).join(" ")}</nav>
 ${sections}
 <h2>Certifications by vendor</h2>
@@ -314,29 +519,14 @@ function sitemap() {
 ${[
     url(SITE, latest, "1.0"),
     url(SITE + "certs/", latest, "0.9"),
+    url(SITE + "about/", latest, "0.8"),
+    ...LISTS.map(l => url(SITE + `certs/${listFile(l)}`, latest, "0.8")),
     ...DOMAINS.map(d => url(SITE + `certs/${domainFile(d)}`, latest, "0.8")),
     ...[...vendors].map(v => url(SITE + `certs/${vendorFile(v)}`, latest, "0.8")),
     ...certs.map(c => url(SITE + `certs/${c.id}.html`, c.price_verified_at || latest, "0.7")),
   ].join("\n")}
 </urlset>
 `;
-}
-
-// Collapsed section at the bottom of the app page. It gives a crawler that
-// does not run the app something to read and a link to every domain and vendor
-// page; for a person it doubles as a site index.
-function aboutSection() {
-  const perDomain = count(certs, "domain"), perVendor = count(certs, "vendor");
-  const links = (names, file, n) => names.map(x => `<li><a href="certs/${file(x)}">${esc(x)}</a> <span>${n.get(x) || 0}</span></li>`).join("");
-  return `        <details class="about" id="about">
-          <summary><h2>About this cybersecurity certification roadmap</h2><span>Browse by domain or vendor</span></summary>
-          <p>cert/map charts ${certs.length} cybersecurity certifications from ${vendors.size} vendors across ${DOMAINS.length} domains and four seniority levels, from entry-level credentials such as CompTIA Security+ to expert ones such as OSCE3 and CISSP. Each entry lists the current exam price in USD, exam length and format, renewal cycle and prerequisites, checked against the vendor's own page. Pick the certifications you are aiming for to get a path ordered by prerequisite with its total cost and study time, then share it with a link.</p>
-          <p><a href="certs/">See every certification as a plain list with prices</a> or <a href="data/certs.csv">download the dataset</a>.</p>
-          <h3>Certifications by domain</h3>
-          <ul class="about-links">${links(DOMAINS, domainFile, perDomain)}</ul>
-          <h3>Certifications by vendor</h3>
-          <ul class="about-links">${links([...vendors].sort((a, b) => a.localeCompare(b)), vendorFile, perVendor)}</ul>
-        </details>`;
 }
 
 // Keep the quoted totals honest wherever a hand-written file mentions them.
@@ -347,7 +537,6 @@ function refreshCounts(file) {
     .replace(/\b\d+ cybersecurity certifications\b/g, `${certs.length} cybersecurity certifications`)
     .replace(/\b\d+ vendors\b/g, `${vendors.size} vendors`)
     .replace(/\bcompare \d+ certs\b/g, `compare ${certs.length} certs`)
-    .replace(/(<!-- build:about -->)[\s\S]*?(<!-- \/build:about -->)/, `$1\n${aboutSection()}\n        $2`)
     .replace(/("dateModified":")\d{4}-\d{2}-\d{2}"/, `$1${latest}"`)
     // The page's CSP pins the inline JSON-LD block by hash, so the hash has to
     // follow any change to the block.
@@ -363,8 +552,15 @@ mkdirSync(OUT, { recursive: true });
 for (const c of certs) writeFileSync(join(OUT, `${c.id}.html`), certPage(c));
 for (const v of vendors) writeFileSync(join(OUT, vendorFile(v)), vendorPage(v));
 for (const d of DOMAINS) writeFileSync(join(OUT, domainFile(d)), domainPage(d));
+for (const l of LISTS) writeFileSync(join(OUT, listFile(l)), listPage(l));
 writeFileSync(join(OUT, "index.html"), hubPage());
+mkdirSync(join(ROOT, "about"), { recursive: true });
+writeFileSync(join(ROOT, "about", "index.html"), aboutPage());
+writeFileSync(join(ROOT, "llms-full.txt"), llmsFull());
+writeFileSync(join(ROOT, "data", "certs.json"), "[\n" + certs.map(c => JSON.stringify(c)).join(",\n") + "\n]\n");
+refreshLlms();
+const version = stampAssets();
 writeFileSync(join(ROOT, "sitemap.xml"), sitemap());
 refreshCounts("index.html");
 refreshCounts("llms.txt");
-console.log(`OK: ${certs.length} certification pages, ${vendors.size} vendor pages, ${DOMAINS.length} domain pages, 1 index and sitemap.xml.`);
+console.log(`OK: ${certs.length} certification, ${vendors.size} vendor, ${DOMAINS.length} domain and ${LISTS.length} list pages, about/, llms-full.txt, certs.json, sitemap.xml. Assets v=${version}.`);

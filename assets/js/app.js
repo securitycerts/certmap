@@ -1,11 +1,11 @@
-import { loadData } from "./data.js";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js";
-import { el } from "./dom.js";
-import { initTooltip, hideTooltip } from "./tooltip.js";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js";
-import { toast, copyText } from "./toast.js";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro } from "./motion.js";
+import { loadData } from "./data.js?v=22fef1b3";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js?v=22fef1b3";
+import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=22fef1b3";
+import { el } from "./dom.js?v=22fef1b3";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=22fef1b3";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=22fef1b3";
+import { toast, copyText } from "./toast.js?v=22fef1b3";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro } from "./motion.js?v=22fef1b3";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
