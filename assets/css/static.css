@@ -231,3 +231,5 @@ ul.prep span { font-size: 12.5px; color: var(--muted); }
 [dir="rtl"] .fine, [dir="rtl"] .cta { text-align: right; }
 [dir="rtl"] body { font-family: "Segoe UI", Tahoma, "Noto Sans Arabic", "Noto Sans Hebrew", -apple-system, sans-serif; }
 [dir="rtl"] .faq summary { text-align: right; }
+
+.orline { margin: -6px 0 10px; max-width: none; font-size: 18px; font-weight: 600; color: var(--accent); text-align: start; }

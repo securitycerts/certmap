@@ -321,6 +321,7 @@ function comparePage(a, b, T) {
 ${switcher}
 <article>
   <h1><bdi>${esc(a.acronym)}</bdi> vs <bdi>${esc(b.acronym)}</bdi></h1>
+  <p class="orline">${esc(T.orLine(A, B))}</p>
   <p class="lead">${esc(T.lead(T.iso(a.name), T.iso(b.name)))}</p>
   <p class="cta"><a class="btn primary" href="../map/#/roadmap/${a.id},${b.id}?name=${encodeURIComponent(`${a.acronym} vs ${b.acronym}`)}">${T.cta}</a></p>
   <table class="versus">
@@ -329,7 +330,7 @@ ${switcher}
 ${rows.map(([k, f]) => `      <tr><th scope="row">${k}</th><td>${f(a)}</td><td>${f(b)}</td></tr>`).join("\n")}
     </tbody>
   </table>
-  <h2>${T.hDiff}</h2>
+  <h2>${esc(T.diffOf(A, B))}</h2>
   <ul class="diff">
 ${list.map(d => `    <li>${esc(d)}</li>`).join("\n")}
   </ul>
@@ -351,8 +352,8 @@ ${others.length ? `  <h2>${T.hRelated}</h2>\n  <nav class="toc">${others.map(v =
   ];
   return page({
     path, T, alternates,
-    title: `${T.title(a.acronym, b.acronym, year())} | cert/map`,
-    description: list.slice(0, 2).join(" ").replace(/[⁨⁩]/g, "").slice(0, 300),
+    title: `${T.title(a.acronym, b.acronym, year())} | ${T.titleTail(a.acronym, b.acronym)}`,
+    description: `${T.orLine(a.acronym, b.acronym)} ${list.slice(0, 2).join(" ")}`.replace(/[⁨⁩]/g, "").slice(0, 300),
     body, ld, modified: [a.price_verified_at, b.price_verified_at].filter(Boolean).sort().pop() || latest,
   });
 }

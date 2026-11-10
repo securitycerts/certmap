@@ -394,4 +394,56 @@ export const LANGS = {
   }),
 };
 
+// How people phrase the same search besides "A vs B": "A or B", "A and B",
+// "difference between A and B". Each page carries these forms in its title,
+// its description, a line under the heading and the heading of the list of
+// differences, so the page matches the query however it was typed.
+// Spanish swaps "o" for "u" and "y" for "e" before a word starting with the
+// same sound (CPTS u OSCP+).
+const esO = b => (/^h?o/i.test(b.replace(/[⁨⁩]/g, "")) ? "u" : "o");
+const esY = b => (/^h?i/i.test(b.replace(/[⁨⁩]/g, "")) ? "e" : "y");
+const PHRASES = {
+  en: {
+    orLine: (a, b) => `${a} or ${b}?`,
+    diffOf: (a, b) => `The difference between ${a} and ${b}`,
+    titleTail: (a, b) => `${a} or ${b}`,
+  },
+  es: {
+    orLine: (a, b) => `¿${a} ${esO(b)} ${b}?`,
+    diffOf: (a, b) => `Diferencias entre ${a} ${esY(b)} ${b}`,
+    titleTail: (a, b) => `${a} ${esO(b)} ${b}`,
+  },
+  fr: {
+    orLine: (a, b) => `${a} ou ${b} ?`,
+    diffOf: (a, b) => `Les différences entre ${a} et ${b}`,
+    titleTail: (a, b) => `${a} ou ${b}`,
+  },
+  de: {
+    orLine: (a, b) => `${a} oder ${b}?`,
+    diffOf: (a, b) => `Die Unterschiede zwischen ${a} und ${b}`,
+    titleTail: (a, b) => `${a} oder ${b}`,
+  },
+  it: {
+    orLine: (a, b) => `${a} o ${b}?`,
+    diffOf: (a, b) => `Le differenze tra ${a} e ${b}`,
+    titleTail: (a, b) => `${a} o ${b}`,
+  },
+  ar: {
+    orLine: (a, b) => `${a} أم ${b}؟`,
+    diffOf: (a, b) => `الفرق بين ${a} و${b}`,
+    titleTail: (a, b) => `${a} أم ${b}`,
+  },
+  ko: {
+    orLine: (a, b) => `${a}, ${b} 중 무엇을 선택할까요?`,
+    diffOf: (a, b) => `${a}, ${b} 차이점`,
+    titleTail: (a, b) => `${a}, ${b} 차이`,
+  },
+  he: {
+    orLine: (a, b) => `${a} או ${b}?`,
+    diffOf: (a, b) => `ההבדלים בין ${a} ל-${b}`,
+    titleTail: (a, b) => `${a} או ${b}`,
+  },
+};
+for (const [code, extra] of Object.entries(PHRASES)) Object.assign(LANGS[code], extra);
+
 export const LANG_ORDER = ["en", "es", "fr", "de", "it", "ar", "ko", "he"];
