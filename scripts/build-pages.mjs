@@ -282,6 +282,8 @@ function homePage() {
   </ol>
 </section>
 
+${sponsorsSection()}
+
 <section class="block">
   <h2>Popular lists</h2>
   <div class="tiles">
@@ -316,8 +318,6 @@ ${[...vendors].sort((a, b) => a.localeCompare(b)).map(v => `    <li><a href="../
 ${qa.map(([q, a], i) => `    <details${i === 0 ? " open" : ""}><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("\n")}
   </div>
 </section>
-
-${sponsorsSection()}
 
 <section class="block">
   <h2>Data and licence</h2>
@@ -356,51 +356,64 @@ const TIERS = [
 const SPONSOR_MAIL = `mailto:${EMAIL}?subject=${encodeURIComponent("Sponsoring cert/map")}`;
 
 const sponsorData = () => JSON.parse(readFileSync(join(ROOT, "data", "sponsors.json"), "utf8"));
+const sponsorLogo = sp => `<a class="slot" href="${esc(sp.url)}" rel="sponsored noopener" title="${esc(sp.name)}"><img src="../${esc(sp.logo)}" alt="${esc(sp.name)}" loading="lazy"></a>`;
 
-function tierHtml(t, data) {
-  const taken = (data[t.id] || []).map(sp =>
-    `<a class="slot" href="${esc(sp.url)}" rel="sponsored noopener"><img src="../${esc(sp.logo)}" alt="${esc(sp.name)}" loading="lazy"></a>`);
-  const free = Array.from({ length: Math.max(0, t.places - taken.length) }, () =>
-    `<a class="slot empty" href="${SPONSOR_MAIL}"><span>${t.name} sponsor</span><strong>Your logo here</strong></a>`);
+// What each tier includes. Kept here, next to the markup, so the page never
+// promises a placement the site does not actually render.
+const TIER_TERMS = {
+  gold: ["Largest logo, shown first on the home page and on this page", "Logo in the sidebar of the interactive roadmap", "Credit in the project README on GitHub"],
+  silver: ["Logo on the home page and on this page", "Credit in the project README on GitHub"],
+  bronze: ["Logo on the home page and on this page"],
+};
+
+function tierCard(t, data) {
+  const taken = data[t.id] || [];
+  const open = Math.max(0, t.places - taken.length);
+  const places = [
+    ...taken.map(sponsorLogo),
+    ...Array.from({ length: open }, () => `<span class="slot empty"><span>Open</span></span>`),
+  ];
   return `  <div class="tier tier-${t.id}">
-    <h3>${t.name}</h3>
-    <div class="slots">${[...taken, ...free].join("")}</div>
+    <div class="tier-head"><h3>${t.name}</h3><span>${t.places} places · ${open ? `${open} open` : "full"}</span></div>
+    <ul class="tier-terms">${TIER_TERMS[t.id].map(x => `<li>${x}</li>`).join("")}</ul>
+    <div class="slots">${places.join("")}</div>
   </div>`;
 }
 
+// Home page: a short, plain statement. Logos appear here once there are
+// sponsors; until then there is nothing to fill and nothing that looks empty.
 function sponsorsSection() {
   const data = sponsorData();
-  return `<section class="block sponsors" id="sponsors">
-  <h2>Sponsors</h2>
-  <div class="prose">
-    <p>cert/map is free and open source, with no ads and no tracking. Sponsors keep it that way and pay for the unglamorous part: checking ${certs.length} prices against the vendors' own pages, again and again. Sponsorship buys a place on this page and nothing else. It never changes which certifications are listed, where they sit on the roadmap or what is said about them.</p>
-  </div>
-${TIERS.map(t => tierHtml(t, data)).join("\n")}
-  <div class="sponsor-cta">
-    <div><strong>Put your organisation here</strong><span>See <a href="../sponsors/">what sponsoring cert/map involves</a>, or write to <a href="mailto:${EMAIL}">${EMAIL}</a>.</span></div>
-    <a class="btn primary big" href="../sponsors/">Become a sponsor</a>
+  const all = TIERS.flatMap(t => (data[t.id] || []).map(sp => ({ ...sp, tier: t.id })));
+  const logos = all.length
+    ? `  <div class="supporters">${all.map(sp => `<span class="supporter tier-${sp.tier}">${sponsorLogo(sp)}</span>`).join("")}</div>\n`
+    : "";
+  return `<section class="block" id="sponsors">
+  <h2>${all.length ? "Supported by" : "Independent by design"}</h2>
+${logos}  <div class="support">
+    <div>
+      <strong>No ads, no tracking, nothing for sale in the data</strong>
+      <span>cert/map is funded by a small number of sponsors: organisations that train, hire or equip security professionals. Sponsorship is by arrangement and never touches what is listed.</span>
+    </div>
+    <a class="btn" href="../sponsors/">Sponsorship</a>
   </div>
 </section>`;
 }
 
-// The sponsorship page. It states only what is true of the project today: who
-// the roadmap is written for, what a sponsor's place looks like and the terms.
-// There are no audience figures because the site has no analytics to take them
-// from; anyone interested is told how to ask for what does exist.
 function sponsorFaq() {
   return [
-    ["How do I sponsor cert/map?",
-      `Write to ${EMAIL} with the name of your organisation and the tier you are interested in. You get the terms and price of each tier by reply, and once agreed your logo goes live with the next update of the site.`],
-    ["What does a sponsor get?",
-      "A place on the cert/map home page and on this page, with your logo linking to your site, in the tier you choose: gold places are the largest and come first, then silver, then bronze. Sponsors are also credited in the project's README on GitHub."],
     ["Who reads cert/map?",
-      "People deciding which cybersecurity certification to take next: students and career changers choosing a first credential, practitioners planning a specialism such as penetration testing, cloud security or incident response, and team leads mapping training for their staff. They arrive comparing price, exam format and prerequisites, which is the moment a training provider, a lab platform or a recruiter wants to be seen."],
+      "People deciding which cybersecurity certification to take next: students and career changers choosing a first credential, practitioners planning a specialism such as penetration testing, cloud security or incident response, and team leads mapping training for their staff. They arrive comparing price, exam format and prerequisites, in the middle of a training decision."],
+    ["What does a sponsor get?",
+      "A place in one of three tiers, with your logo linked to your site. Each tier lists exactly where the logo appears. Gold places are the largest and come first, then silver, then bronze."],
+    ["How many sponsors are there?",
+      `Ten at most: ${TIERS.map(t => `${t.places} ${t.name.toLowerCase()}`).join(", ")}. The number is fixed so that a place stays visible and the pages stay uncluttered.`],
     ["Can a certification vendor or training provider sponsor?",
       "Yes, on the same terms as anyone else. Sponsoring does not add, remove, move or reword any certification. Listings follow the published data and the contribution rules, and sponsored places are marked as such."],
     ["Do you provide traffic figures?",
-      "cert/map runs no analytics and no tracking scripts, so there is no visitor dashboard to quote from. Ask by email and you will get what does exist: search impressions and clicks from the search console, and the public activity of the repository."],
-    ["Is sponsorship the only way to support the project?",
-      "No. The dataset is community maintained, so a pull request that corrects a price or adds a missing certification is just as welcome."],
+      "cert/map runs no analytics and no tracking scripts, by choice. On request you get what exists without them: search impressions and clicks from the search console, and the public activity of the repository."],
+    ["How does it start?",
+      `Write to ${EMAIL} with your organisation and the tier that interests you. You get the terms by reply; once agreed, your logo goes live with the next update of the site.`],
   ];
 }
 
@@ -408,49 +421,62 @@ function sponsorsPage() {
   const data = sponsorData();
   const qa = sponsorFaq();
   const pages = certs.length + vendors.size + DOMAINS.length + LISTS.length + ROLE_PATHS.length;
+  const total = TIERS.reduce((n, t) => n + t.places, 0);
   const stat = (n, label) => `<div class="stat"><strong>${n}</strong><span>${label}</span></div>`;
-  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / Sponsors</nav>
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / Sponsorship</nav>
 <section class="hero">
   <p class="kicker">Sponsorship</p>
   <h1>Sponsor the open cybersecurity certification roadmap</h1>
-  <p class="lead">Put your organisation in front of people who are choosing their next security certification, and help keep an independent, ad-free reference up to date.</p>
-  <p class="cta"><a class="btn primary big" href="${SPONSOR_MAIL}">Become a sponsor</a> <a class="btn big" href="#tiers">See the tiers</a></p>
+  <p class="lead">${total} places in three tiers, for organisations that train, hire or equip the people who plan their security careers here.</p>
+  <p class="cta"><a class="btn primary big" href="#tiers">See the tiers</a> <a class="btn big" href="${SPONSOR_MAIL}">Enquire</a></p>
   <div class="stats">${stat(certs.length, "certifications tracked")}${stat(vendors.size, "vendors covered")}${stat(pages, "reference pages")}${stat("0", "ads or trackers")}</div>
 </section>
 
 <section class="block">
-  <h2>Why sponsor cert/map</h2>
-  <ol class="steps three">
-    <li><strong>A focused audience</strong><span>Readers come to compare certifications by cost, level and exam format. They are students, practitioners and team leads in the middle of a training decision.</span></li>
-    <li><strong>A reference people return to</strong><span>Every certification, vendor, domain and career path has its own page with current prices, so the site is used again each time someone plans a next step.</span></li>
-    <li><strong>Independent by design</strong><span>Open source, no ads, no tracking. Your name sits beside a resource that readers trust because nothing in it is for sale.</span></li>
+  <h2>Who you reach</h2>
+  <ol class="steps three plain">
+    <li><strong>People mid-decision</strong><span>Readers come to compare certifications by cost, level and exam format. They are students, practitioners and team leads choosing where to spend training time and budget.</span></li>
+    <li><strong>A reference, not a feed</strong><span>Every certification, vendor, domain and career path has its own page with current prices, so the site is opened again each time someone plans a next step.</span></li>
+    <li><strong>A setting readers trust</strong><span>Open source, no ads, no tracking. A sponsor's name sits beside a resource where nothing in the data is for sale.</span></li>
   </ol>
 </section>
 
 <section class="block sponsors" id="tiers">
-  <h2>Sponsorship tiers</h2>
-  <div class="prose">
-    <p>There are three tiers with a fixed number of places each. A place is your logo, linked to your site, on the cert/map home page and on this page. Gold places are the largest and are shown first; silver and bronze follow. Prices and terms are sent by email, and places are given in the order they are agreed.</p>
+  <h2>Tiers</h2>
+  <div class="tiers">
+${TIERS.map(t => tierCard(t, data)).join("\n")}
   </div>
-${TIERS.map(t => tierHtml(t, data)).join("\n")}
-  <div class="sponsor-cta">
-    <div><strong>Take one of the open places</strong><span>Write to <a href="mailto:${EMAIL}">${EMAIL}</a> and you will get the details of each tier by reply.</span></div>
-    <a class="btn primary big" href="${SPONSOR_MAIL}">Email us</a>
-  </div>
+  <p class="fine">The first sponsor in each tier is listed as a founding sponsor. Terms and prices are sent on request, and places are assigned in the order they are agreed.</p>
 </section>
 
 <section class="block">
-  <h2>What sponsorship pays for</h2>
+  <h2>How it works</h2>
+  <ol class="steps three">
+    <li><strong>Write</strong><span>Tell us who you are and which tier interests you, at ${EMAIL}.</span></li>
+    <li><strong>Agree</strong><span>You receive the terms of the tier. Sponsorship runs for a fixed period and renews by agreement.</span></li>
+    <li><strong>Go live</strong><span>Your logo is added with the next update of the site and stays for the agreed term.</span></li>
+  </ol>
+</section>
+
+<section class="block">
+  <h2>What sponsorship supports, and what it does not buy</h2>
   <div class="prose two">
-    <p>Exam prices change without notice and vendors retire, rename and replace certifications every few months. Keeping ${certs.length} entries honest means re-reading ${vendors.size} vendors' own pages and recording the date each price was last seen. That work, the hosting and the domain are what sponsors fund.</p>
-    <p>What sponsorship does not buy is influence. It never adds, removes, moves or rewords a certification, and sponsored places are labelled as sponsored. The dataset stays open under CC BY 4.0 and the code under the MIT licence.</p>
+    <p>Exam prices change without notice and vendors retire, rename and replace certifications every few months. Keeping ${certs.length} entries accurate means re-reading ${vendors.size} vendors' own pages and recording the date each price was last seen. Sponsorship funds that work, the hosting and the domain.</p>
+    <p>It does not buy influence. Sponsoring never adds, removes, moves or rewords a certification, and sponsored places are labelled. The dataset stays open under CC BY 4.0 and the code under the MIT licence.</p>
   </div>
 </section>
 
 <section class="block">
-  <h2>Questions from sponsors</h2>
+  <h2>Questions</h2>
   <div class="faq">
 ${qa.map(([q, a], i) => `    <details${i === 0 ? " open" : ""}><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("\n")}
+  </div>
+</section>
+
+<section class="block">
+  <div class="support">
+    <div><strong>Sponsorship enquiries</strong><span><a href="mailto:${EMAIL}">${EMAIL}</a></span></div>
+    <a class="btn primary" href="${SPONSOR_MAIL}">Enquire</a>
   </div>
 </section>`;
   const url = SITE + "sponsors/";
@@ -462,17 +488,26 @@ ${qa.map(([q, a], i) => `    <details${i === 0 ? " open" : ""}><summary>${esc(q)
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: qa.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
     { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: "cert/map", item: SITE },
-      { "@type": "ListItem", position: 2, name: "Sponsors", item: url },
+      { "@type": "ListItem", position: 2, name: "Sponsorship", item: url },
     ] },
   ];
   const image = "assets/og/sponsors.png";
   return page({
     path: "sponsors/",
     title: "Sponsor cert/map: reach people choosing cybersecurity certifications",
-    description: `Sponsor the open-source cybersecurity certification roadmap. Gold, silver and bronze places in front of students and security professionals comparing ${certs.length} certifications. Independent, no ads, no tracking.`,
+    description: `Sponsorship of the open-source cybersecurity certification roadmap: ${total} places in gold, silver and bronze tiers, in front of students and security professionals comparing ${certs.length} certifications. Independent, no ads, no tracking.`,
     body, ld, modified: latest,
     image: existsSync(join(ROOT, image)) ? image : undefined,
   });
+}
+
+// The roadmap's sidebar ends with the gold sponsors' logos, or with a plain
+// link while there are none. Written between markers in map/index.html.
+function sidebarSponsor() {
+  const gold = sponsorData().gold || [];
+  if (!gold.length) return `      <a class="sponsor-link" href="../sponsors/">Sponsorship</a>`;
+  return `      <div class="sponsor-side"><span>Supported by</span>${gold.map(sp =>
+    `<a href="${esc(sp.url)}" rel="sponsored noopener" title="${esc(sp.name)}"><img src="../${esc(sp.logo)}" alt="${esc(sp.name)}" loading="lazy"></a>`).join("")}</div>`;
 }
 
 // /about/ was the address of this page before it became the home page.
@@ -860,6 +895,7 @@ function refreshCounts(file) {
     .replace(/\b\d+ vendors\b/g, `${vendors.size} vendors`)
     .replace(/\b\d+ domains\b/g, `${DOMAINS.length} domains`)
     .replace(/\bcompare \d+ certs\b/g, `compare ${certs.length} certs`)
+    .replace(/(<!-- build:sponsor -->)[\s\S]*?(<!-- \/build:sponsor -->)/, `$1\n${sidebarSponsor()}\n      $2`)
     .replace(/("dateModified":")\d{4}-\d{2}-\d{2}"/, `$1${latest}"`)
     // The page's CSP pins the inline JSON-LD block by hash, so the hash has to
     // follow any change to the block.

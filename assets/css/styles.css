@@ -905,15 +905,9 @@ input[type="checkbox"]:checked {
 .checks label:has(input:checked) .check-count { color: var(--accent); }
 .checks.scroll { max-height: 216px; }
 
-/* ---------- SPONSOR PLACE (sidebar) ---------- */
-.sponsor-slot {
-  display: flex; flex-direction: column; align-items: center; gap: 2px;
-  margin-top: 18px; padding: 12px 10px; text-align: center;
-  border: 1px dashed var(--border-strong); border-radius: var(--radius);
-  color: var(--muted);
-}
-.sponsor-slot span { font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); }
-.sponsor-slot strong { font-size: 12.5px; font-weight: 500; color: var(--text-dim); }
-.sponsor-slot small { font-size: 10.5px; }
-.sponsor-slot:hover { border-color: var(--accent); color: var(--text-dim); }
-.sponsor-slot:hover strong { color: var(--text); }
+/* ---------- SPONSORS (sidebar) ---------- */
+.sponsor-link { display: block; margin-top: 16px; text-align: center; font-size: 11px; color: var(--muted); }
+.sponsor-link:hover { color: var(--accent); }
+.sponsor-side { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
+.sponsor-side span { font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+.sponsor-side img { max-width: 150px; max-height: 44px; object-fit: contain; }
