@@ -1,4 +1,4 @@
-import { fmtPrice } from "./format.js?v=9a0c9316";
+import { fmtPrice } from "./format.js?v=f2c316b1";
 
 const DELAY = 450;
 const HIDE_DELAY = 80;
@@ -53,9 +53,14 @@ function render(c) {
   el.appendChild(dl);
 }
 
-function position(rect) {
+function position(rect, target) {
   const el = tipEl;
-  const vw = document.documentElement.clientWidth;
+  // While the detail drawer is open it covers the right of the page, so the
+  // usable width ends at its left edge. Chips inside the drawer are exempt:
+  // their tooltip has to sit over it.
+  const drawer = document.getElementById("drawer");
+  const drawerOpen = drawer && !drawer.classList.contains("hidden") && !drawer.contains(target);
+  const vw = drawerOpen ? Math.max(0, drawer.getBoundingClientRect().left) : document.documentElement.clientWidth;
   const vh = document.documentElement.clientHeight;
   const tw = el.offsetWidth;
   const th = el.offsetHeight;
@@ -71,7 +76,7 @@ function position(rect) {
 function show(target, cert) {
   render(cert);
   tipEl.classList.add("visible");
-  requestAnimationFrame(() => position(target.getBoundingClientRect()));
+  requestAnimationFrame(() => position(target.getBoundingClientRect(), target));
 }
 
 function hide() {
