@@ -197,26 +197,74 @@ function faq() {
 
 function aboutPage() {
   const perDomain = count(certs, "domain"), perVendor = count(certs, "vendor");
-  const chips = (names, file, n) => names.map(x => `<a href="../certs/${file(x)}">${esc(x)} <small>${n.get(x) || 0}</small></a>`).join(" ");
   const qa = faq();
-  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / About</nav>
-<h1>About cert/map, the cybersecurity certification roadmap</h1>
-<p class="lead">cert/map charts ${certs.length} cybersecurity certifications from ${vendors.size} vendors across ${DOMAINS.length} domains and four seniority levels, from entry-level credentials such as CompTIA Security+ to expert ones such as OSCE3 and CISSP.</p>
-<p>Each entry lists the current exam price in USD, exam length and format, renewal cycle and prerequisites, checked against the vendor's own page. Pick the certifications you are aiming for to get a path ordered by prerequisite with its total cost and study time, then share it with a link. The project is open source and the dataset is free to reuse.</p>
-<p class="cta"><a class="btn primary" href="../">Open the interactive roadmap</a> <a class="btn" href="../certs/">All certifications as a list</a> <a class="btn" href="../data/certs.csv">Download the dataset</a></p>
-<h2>Popular lists</h2>
-<nav class="toc">${LISTS.map(l => `<a href="../certs/${listFile(l)}">${esc(l.name)} <small>${listItems(l).length}</small></a>`).join(" ")}</nav>
-<h2>Certifications by domain</h2>
-<nav class="toc">${chips(DOMAINS, domainFile, perDomain)}</nav>
-<h2>Certifications by vendor</h2>
-<nav class="toc">${chips([...vendors].sort((a, b) => a.localeCompare(b)), vendorFile, perVendor)}</nav>
-<h2>Questions and answers</h2>
-<div class="faq">
-${qa.map(([q, a]) => `  <h3>${esc(q)}</h3>\n  <p>${esc(a)}</p>`).join("\n")}
-</div>
-<h2>Data and licence</h2>
-<p>The whole dataset is one CSV file, also published as <a href="../data/certs.json">JSON</a>, with a plain-text digest for language models at <a href="../llms.txt">llms.txt</a> and <a href="../llms-full.txt">llms-full.txt</a>. The code is MIT licensed and the dataset is CC BY 4.0. Corrections are welcome on <a href="https://github.com/securitycerts/certmap">GitHub</a>.</p>
-<p>The matrix layout is inspired by Paul Jerimy's Security Certification Roadmap. cert/map is independent and not affiliated with any of the listed vendors.</p>`;
+  const verified = certs.filter(c => c.price_verified_at).length;
+  const biggest = Math.max(...perDomain.values());
+  const short = l => l.name.replace(/ ?cybersecurity certifications ?/i, " ").replace(/^ with /, "").trim().replace(/^./, ch => ch.toUpperCase());
+  const stat = (n, label) => `<div class="stat"><strong>${n}</strong><span>${label}</span></div>`;
+  const mark = `<svg class="mark" viewBox="0 0 32 32" width="56" height="56" aria-hidden="true"><rect class="mark-bg" x="1" y="1" width="30" height="30" rx="8"/><g class="mark-grid"><circle cx="9" cy="9" r="1.5"/><circle cx="16" cy="9" r="1.5"/><circle cx="9" cy="16" r="1.5"/><circle cx="23" cy="16" r="1.5"/><circle cx="16" cy="23" r="1.5"/><circle cx="23" cy="23" r="1.5"/></g><path class="mark-path" d="M9 23H16V16H23V9"/><circle class="mark-node" cx="9" cy="23" r="2.2"/><circle class="mark-node" cx="16" cy="16" r="1.8"/><circle class="mark-node" cx="23" cy="9" r="3"/></svg>`;
+  const body = `<section class="hero">
+  ${mark}
+  <p class="kicker">About</p>
+  <h1>The cybersecurity certification roadmap</h1>
+  <p class="lead">cert/map charts every certification worth knowing in security by subject and by seniority, with what each one costs, how it is examined and what it leads to.</p>
+  <p class="cta"><a class="btn primary" href="../">Open the interactive roadmap</a> <a class="btn" href="../certs/">Browse the full list</a></p>
+  <div class="stats">${stat(certs.length, "certifications")}${stat(vendors.size, "vendors")}${stat(DOMAINS.length, "domains")}${stat(verified, "prices verified")}</div>
+</section>
+
+<section class="block">
+  <h2>What it is</h2>
+  <div class="prose two">
+    <p>The roadmap places ${certs.length} certifications from ${vendors.size} vendors on a grid of ${DOMAINS.length} domains and four seniority levels, from entry-level credentials such as CompTIA Security+ to expert ones such as OSCE3 and CISSP. Each entry lists the current exam price in US dollars, the length and format of the exam, the renewal cycle and the prerequisites, checked against the vendor's own page.</p>
+    <p>Pick the certifications you are aiming for and the site orders them by prerequisite, adds up the exam cost and the study time, and gives you a link to share the result. The project is open source, the dataset is free to reuse and corrections are welcome.</p>
+  </div>
+</section>
+
+<section class="block">
+  <h2>How to use it</h2>
+  <ol class="steps">
+    <li><strong>Explore</strong><span>Scan the matrix by domain and level, or filter by vendor, price, exam format and DoD 8140 status.</span></li>
+    <li><strong>Select</strong><span>Add the certifications you want. Prerequisites can be pulled in with one click.</span></li>
+    <li><strong>Plan</strong><span>See the path in order, with the total exam cost and an estimate of the study time.</span></li>
+    <li><strong>Share</strong><span>Name the roadmap and copy its link. Anyone who opens it sees the same path.</span></li>
+  </ol>
+</section>
+
+<section class="block">
+  <h2>Popular lists</h2>
+  <div class="tiles">
+${LISTS.map(l => `    <a class="tile" href="../certs/${listFile(l)}"><strong>${listItems(l).length}</strong><span>${esc(short(l))}</span></a>`).join("\n")}
+  </div>
+</section>
+
+<section class="block">
+  <h2>Certifications by domain</h2>
+  <ul class="bars">
+${DOMAINS.map(d => `    <li><a href="../certs/${domainFile(d)}">${esc(d)}</a><span class="bar"><i data-w="${Math.max(1, Math.round((perDomain.get(d) || 0) / biggest * 20))}"></i></span><b>${perDomain.get(d) || 0}</b></li>`).join("\n")}
+  </ul>
+</section>
+
+<section class="block">
+  <h2>Certifications by vendor</h2>
+  <ul class="columns">
+${[...vendors].sort((a, b) => a.localeCompare(b)).map(v => `    <li><a href="../certs/${vendorFile(v)}">${esc(v)}</a><b>${perVendor.get(v)}</b></li>`).join("\n")}
+  </ul>
+</section>
+
+<section class="block">
+  <h2>Questions and answers</h2>
+  <div class="faq">
+${qa.map(([q, a], i) => `    <details${i === 0 ? " open" : ""}><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("\n")}
+  </div>
+</section>
+
+<section class="block">
+  <h2>Data and licence</h2>
+  <div class="prose two">
+    <p>The whole dataset is one CSV file, also published as <a href="../data/certs.json">JSON</a>, with a plain-text digest for language models at <a href="../llms.txt">llms.txt</a> and <a href="../llms-full.txt">llms-full.txt</a>. The code is MIT licensed and the dataset is CC BY 4.0. Corrections are welcome on <a href="https://github.com/securitycerts/certmap">GitHub</a>.</p>
+    <p>The matrix layout is inspired by Paul Jerimy's Security Certification Roadmap. cert/map is independent and is not affiliated with any of the listed vendors. All trademarks belong to their owners.</p>
+  </div>
+</section>`;
   const ld = [
     { "@context": "https://schema.org", "@type": "AboutPage", name: "About cert/map", url: SITE + "about/", isPartOf: { "@type": "WebSite", name: "cert/map", url: SITE } },
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: qa.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
