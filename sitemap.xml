@@ -2931,6 +2931,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://certmap.dev/certs/vendor-osint-industries.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://certmap.dev/certs/sec-plus.html</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -4522,6 +4527,11 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/basel-osint.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/osint-industries-training.html</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>

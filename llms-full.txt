@@ -1,6 +1,6 @@
 # cert/map: full certification list
 
-> 319 cybersecurity certifications from 69 vendors, grouped by domain and ordered from beginner to expert. Prices are exam list prices in USD. Generated from data/certs.csv; last price check 2026-11-10.
+> 320 cybersecurity certifications from 70 vendors, grouped by domain and ordered from beginner to expert. Prices are exam list prices in USD. Generated from data/certs.csv; last price check 2026-11-10.
 
 Source: https://certmap.dev/
 Dataset: https://certmap.dev/data/certs.csv and https://certmap.dev/data/certs.json
@@ -2257,6 +2257,18 @@ Vendor-neutral OSINT practitioner certification from the OSMOSIS Association wit
 - Renewal: every 3 years
 - Official page: https://osmosisinstitute.org/osc/
 - cert/map page: https://certmap.dev/certs/osc-osmosis.html
+
+### OSINT Ind.: OSINT Industries OSINT Training
+
+Practitioner-led OSINT training of about 18 hours over three days, built from modules such as OSINT Fundamentals, Advanced OSINT and OSINT for ICAC analysts. Course-based, with hands-on exercises; some courses end in an assessment such as a CTF or a quiz.
+
+- Vendor: OSINT Industries
+- Level: intermediate
+- Exam price: Not published (Bespoke training built from modules; price on request)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://www.osint.industries/services/training
+- cert/map page: https://certmap.dev/certs/osint-industries-training.html
 
 ### SMIA: Certified Social Media Intelligence Analyst
 

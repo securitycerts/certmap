@@ -1,12 +1,12 @@
 # cert/map
 
-> Open-source static roadmap of 319 cybersecurity certifications mapped across 17 domains and four seniority tiers. Filter by vendor, level or price, inspect each certification's prerequisites, renewal cycle and DoD 8140 status, and plan a study path with running cost and time-to-completion totals.
+> Open-source static roadmap of 320 cybersecurity certifications mapped across 17 domains and four seniority tiers. Filter by vendor, level or price, inspect each certification's prerequisites, renewal cycle and DoD 8140 status, and plan a study path with running cost and time-to-completion totals.
 
 cert/map is a community-maintained reference for the cybersecurity certification landscape. The entire dataset lives in a single CSV file at `data/certs.csv`; the browser parses it at load time, so the data is also directly machine-readable for anyone integrating it. The project is hosted on GitHub Pages at https://certmap.dev/.
 
 ## Vendors covered
 
-8kSec, Altered Security, APIsec University, arcX, AWS, Basel Institute, Cellebrite, Centri, Chainalysis, Check Point, Cisco, CNCF, CompTIA, Coursera, CREST, CrowdStrike, CSA, CWNP, CyberDefenders, CyberWarFare Labs, DRI International, EC-Council, edX, Elastic, Fortinet, GIAC, GitHub, Google, Hack The Box, HashiCorp, IACIS, IAPP, INE, IntelTechniques, ISA, ISACA, ISC2, ISFCE, Juniper, Linux Foundation, LPI, Magnet Forensics, McAfee Institute, MCSI, Microsoft, OffSec, Okta, OpenText, OSMOSIS, Palo Alto Networks, PCI SSC, PECB, PeopleCert, PortSwigger, Practical DevSecOps, Red Hat, SABSA, SailPoint, Social Links, Splunk, TCM Security, The Open Group, The SecOps Group, TRM Labs, VMware, Wireshark, Zero-Point Security, Zscaler, zSecurity.
+8kSec, Altered Security, APIsec University, arcX, AWS, Basel Institute, Cellebrite, Centri, Chainalysis, Check Point, Cisco, CNCF, CompTIA, Coursera, CREST, CrowdStrike, CSA, CWNP, CyberDefenders, CyberWarFare Labs, DRI International, EC-Council, edX, Elastic, Fortinet, GIAC, GitHub, Google, Hack The Box, HashiCorp, IACIS, IAPP, INE, IntelTechniques, ISA, ISACA, ISC2, ISFCE, Juniper, Linux Foundation, LPI, Magnet Forensics, McAfee Institute, MCSI, Microsoft, OffSec, Okta, OpenText, OSINT Industries, OSMOSIS, Palo Alto Networks, PCI SSC, PECB, PeopleCert, PortSwigger, Practical DevSecOps, Red Hat, SABSA, SailPoint, Social Links, Splunk, TCM Security, The Open Group, The SecOps Group, TRM Labs, VMware, Wireshark, Zero-Point Security, Zscaler, zSecurity.
 
 ## Pages
 
@@ -17,12 +17,12 @@ cert/map is a community-maintained reference for the cybersecurity certification
 - [Full text digest](https://certmap.dev/llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](https://certmap.dev/data/certs.json) and [as CSV](https://certmap.dev/data/certs.csv)
 - [Beginner cybersecurity certifications](https://certmap.dev/certs/list-beginner.html): 68 certifications
-- [Intermediate cybersecurity certifications](https://certmap.dev/certs/list-intermediate.html): 136 certifications
+- [Intermediate cybersecurity certifications](https://certmap.dev/certs/list-intermediate.html): 137 certifications
 - [Advanced cybersecurity certifications](https://certmap.dev/certs/list-advanced.html): 74 certifications
 - [Expert cybersecurity certifications](https://certmap.dev/certs/list-expert.html): 41 certifications
 - [Free cybersecurity certifications](https://certmap.dev/certs/list-free.html): 3 certifications
 - [Cybersecurity certifications under $300](https://certmap.dev/certs/list-under-300.html): 80 certifications
-- [Hands-on cybersecurity certifications with practical exams](https://certmap.dev/certs/list-hands-on.html): 102 certifications
+- [Hands-on cybersecurity certifications with practical exams](https://certmap.dev/certs/list-hands-on.html): 103 certifications
 - [DoD 8140 approved cybersecurity certifications](https://certmap.dev/certs/list-dod-8140.html): 31 certifications
 - [Penetration tester certification path](https://certmap.dev/certs/path-pentester.html): eJPT, PJPT, PNPT, OSCP+, OSEP
 - [Red team operator certification path](https://certmap.dev/certs/path-red-team-operator.html): CRTO, OSCP+, OSED, OSWE, OSEP
