@@ -322,21 +322,21 @@ ${[
 `;
 }
 
-// Plain-text section at the bottom of the app page. It gives a crawler that
+// Collapsed section at the bottom of the app page. It gives a crawler that
 // does not run the app something to read and a link to every domain and vendor
 // page; for a person it doubles as a site index.
 function aboutSection() {
   const perDomain = count(certs, "domain"), perVendor = count(certs, "vendor");
   const links = (names, file, n) => names.map(x => `<li><a href="certs/${file(x)}">${esc(x)}</a> <span>${n.get(x) || 0}</span></li>`).join("");
-  return `        <section class="about" id="about" aria-labelledby="about-title">
-          <h2 id="about-title">About this cybersecurity certification roadmap</h2>
+  return `        <details class="about" id="about">
+          <summary><h2>About this cybersecurity certification roadmap</h2><span>Browse by domain or vendor</span></summary>
           <p>cert/map charts ${certs.length} cybersecurity certifications from ${vendors.size} vendors across ${DOMAINS.length} domains and four seniority levels, from entry-level credentials such as CompTIA Security+ to expert ones such as OSCE3 and CISSP. Each entry lists the current exam price in USD, exam length and format, renewal cycle and prerequisites, checked against the vendor's own page. Pick the certifications you are aiming for to get a path ordered by prerequisite with its total cost and study time, then share it with a link.</p>
           <p><a href="certs/">See every certification as a plain list with prices</a> or <a href="data/certs.csv">download the dataset</a>.</p>
           <h3>Certifications by domain</h3>
           <ul class="about-links">${links(DOMAINS, domainFile, perDomain)}</ul>
           <h3>Certifications by vendor</h3>
           <ul class="about-links">${links([...vendors].sort((a, b) => a.localeCompare(b)), vendorFile, perVendor)}</ul>
-        </section>`;
+        </details>`;
 }
 
 // Keep the quoted totals honest wherever a hand-written file mentions them.
