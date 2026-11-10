@@ -1157,6 +1157,11 @@ Entry-level multiple-choice exam on application security fundamentals, with fact
   - Mock Pentesting Exams (The SecOps Group, official, free): https://pentestingexams.com/mock-pentesting-exams/
   - OWASP Top 10 (OWASP Foundation, free): https://owasp.org/www-project-top-ten/
   - Web Security Academy (PortSwigger, free): https://portswigger.net/web-security
+  - OWASP Juice Shop (TryHackMe, free): https://tryhackme.com/room/owaspjuiceshop
+  - OWASP Top 10 2025: IAAA Failures (TryHackMe, free): https://tryhackme.com/room/owasptopten2025one
+  - OWASP Juice Shop (OWASP, free): https://github.com/juice-shop/juice-shop
+  - WebGoat (OWASP, free): https://github.com/WebGoat/WebGoat
+  - Damn Vulnerable Web Application (DVWA) (digininja, free): https://github.com/digininja/DVWA
 
 ### CASA: Certified API Security Analyst
 
@@ -1278,6 +1283,12 @@ HTB Certified Web Exploitation Specialist (CWES), formerly Certified Bug Bounty 
   - HTB Certified Web Exploitation Specialist (Hack The Box, official, free): https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-specialist
   - Academy Certifications (Hack The Box, official, free): https://help.hackthebox.com/en/articles/12741732-academy-certifications
   - Web Penetration Tester Job Role Path (Hack The Box, official): https://academy.hackthebox.com/path/preview/web-penetration-tester
+  - Web Requests (Hack The Box, official): https://academy.hackthebox.com/course/preview/web-requests
+  - Using Web Proxies (Hack The Box, official): https://academy.hackthebox.com/course/preview/using-web-proxies
+  - Web Attacks (Hack The Box, official): https://academy.hackthebox.com/course/preview/web-attacks
+  - Bug Bounty Hunting Process (Hack The Box, official): https://academy.hackthebox.com/course/preview/bug-bounty-hunting-process
+  - Web Security Academy: All labs (PortSwigger, free): https://portswigger.net/web-security/all-labs
+  - PayloadsAllTheThings (swisskyrepo, free): https://github.com/swisskyrepo/PayloadsAllTheThings
 
 ### ECDE: EC-Council Certified DevSecOps Engineer
 
@@ -1310,6 +1321,12 @@ Hands-on web application penetration testing certification.
   - eWPT Certification (INE, official, free): https://ine.com/security/certifications/ewpt-certification
   - Web Application Penetration Testing Professional (INE, official): https://my.ine.com/CyberSecurity/learning-paths/8c322180-1499-40c7-af8f-a877554fca3d/web-application-penetration-testing-professional
   - Web Security Academy (PortSwigger, free): https://portswigger.net/web-security
+  - Web Security Academy: All labs (PortSwigger, free): https://portswigger.net/web-security/all-labs
+  - SQL Injection Lab (TryHackMe, free): https://tryhackme.com/room/sqlilab
+  - Web Application Pentesting (TryHackMe): https://tryhackme.com/path/outline/webapppentesting
+  - OWASP Juice Shop (OWASP, free): https://github.com/juice-shop/juice-shop
+  - Damn Vulnerable Web Application (DVWA) (digininja, free): https://github.com/digininja/DVWA
+  - Web Security Testing Guide (OWASP, free): https://github.com/OWASP/wstg
 
 ### GH-500: GitHub Advanced Security
 
@@ -1359,6 +1376,12 @@ Hands-on web application security assessment certification.
   - WEB-200 Syllabus (OffSec, official, free): https://www.offsec.com/documentation/WEB-200-Syllabus.pdf
   - WEB-200: Foundational Web Application Assessments with Kali Linux (OffSec, official): https://www.offsec.com/courses/web-200/
   - Web Security Academy (PortSwigger, free): https://portswigger.net/web-security
+  - Web Security Academy: All labs (PortSwigger, free): https://portswigger.net/web-security/all-labs
+  - OWASP Juice Shop (TryHackMe, free): https://tryhackme.com/room/owaspjuiceshop
+  - SQL Injection Lab (TryHackMe, free): https://tryhackme.com/room/sqlilab
+  - Web Application Pentesting (TryHackMe): https://tryhackme.com/path/outline/webapppentesting
+  - OWASP Juice Shop (OWASP, free): https://github.com/juice-shop/juice-shop
+  - Damn Vulnerable Web Application (DVWA) (digininja, free): https://github.com/digininja/DVWA
 
 ### PAPA: Practical AI Pentest Associate
 
@@ -1392,6 +1415,12 @@ Practical web application penetration testing certification.
   - Practical Bug Bounty (TCM Security, official): https://tcm-sec.com/academy/practical-bug-bounty/
   - Practical Web Hacking (TCM Security, official): https://tcm-sec.com/academy/practical-web-hacking/
   - Web Security Academy (PortSwigger, free): https://portswigger.net/web-security
+  - OWASP Juice Shop (TryHackMe, free): https://tryhackme.com/room/owaspjuiceshop
+  - OWASP Top 10 2025: IAAA Failures (TryHackMe, free): https://tryhackme.com/room/owasptopten2025one
+  - SQL Injection (TryHackMe, free): https://tryhackme.com/room/sqlinjectionlm
+  - Web Security Academy: All labs (PortSwigger, free): https://portswigger.net/web-security/all-labs
+  - OWASP Juice Shop (OWASP, free): https://github.com/juice-shop/juice-shop
+  - Damn Vulnerable Web Application (DVWA) (digininja, free): https://github.com/digininja/DVWA
 
 ### COAE: HTB Certified Offensive AI Expert
 
@@ -1524,6 +1553,11 @@ Advanced web application exploitation and white-box code review certification.
   - WEB-300 OSWE Exam Guide (OffSec, official, free): https://help.offsec.com/hc/en-us/articles/360046869951-WEB-300-Advanced-Web-Attacks-and-Exploitation-OSWE-Exam-Guide
   - WEB-300 Syllabus (OffSec, official, free): https://www.offsec.com/documentation/awae-syllabus.pdf
   - WEB-300: Advanced Web Attacks and Exploitation (OffSec, official): https://www.offsec.com/courses/web-300/
+  - Intro to Whitebox Pentesting (Hack The Box): https://academy.hackthebox.com/course/preview/intro-to-whitebox-pentesting
+  - Insecure deserialization labs (PortSwigger, free): https://portswigger.net/web-security/deserialization
+  - TUDO (bmdyy, free): https://github.com/bmdyy/tudo
+  - Vulnerable Code Snippets (YesWeHack, free): https://github.com/yeswehack/vulnerable-code-snippets
+  - AWAE-PREP (wetw0rk, free): https://github.com/wetw0rk/AWAE-PREP
 
 ## Security Operations
 
@@ -4259,6 +4293,12 @@ Entry-level red team certification with a six-hour practical exam covering exter
 - cert/map page: https://certmap.dev/certs/crta.html
 - Preparation:
   - Certified Red Team Analyst (CRTA) (CyberWarFare Labs, official, free): https://cyberwarfare.live/certifications/red-team-analyst-crta/
+  - Attacktive Directory (TryHackMe, free): https://tryhackme.com/room/attacktivedirectory
+  - Red Team Fundamentals (TryHackMe, free): https://tryhackme.com/room/redteamfundamentals
+  - Lateral Movement and Pivoting (TryHackMe): https://tryhackme.com/room/lateralmovementandpivoting
+  - Post-Exploitation Basics (TryHackMe, free): https://tryhackme.com/room/postexploit
+  - GOAD (Game of Active Directory) (Orange-Cyberdefense, free): https://github.com/Orange-Cyberdefense/GOAD
+  - Vulnerable-AD (safebuffer, free): https://github.com/safebuffer/vulnerable-AD
 
 ### eJPT: eLearnSecurity Junior Penetration Tester
 
@@ -4278,6 +4318,12 @@ Entry-level practical penetration testing certification.
   - eJPT Certification (INE, official, free): https://ine.com/security/certifications/ejpt-certification
   - eJPT Certification Guide (INE, official, free): https://ine.com/blog/my-ejpt-experience-lily-clark
   - Penetration Testing Student (INE, official): https://my.ine.com/CyberSecurity/learning-paths/61f88d91-79ff-4d8f-af68-873883dbbd8c/penetration-testing-student
+  - Jr Penetration Tester (TryHackMe): https://tryhackme.com/path/outline/jrpenetrationtester
+  - Blue (TryHackMe, free): https://tryhackme.com/room/blue
+  - Metasploit: Introduction (TryHackMe, free): https://tryhackme.com/room/metasploitintro
+  - Nmap (TryHackMe, free): https://tryhackme.com/room/furthernmap
+  - Network Services (TryHackMe, free): https://tryhackme.com/room/networkservices
+  - Getting Started (Hack The Box): https://academy.hackthebox.com/course/preview/getting-started
 
 ### MCRTA: MCSI Certified Red Team Analyst
 
@@ -4311,6 +4357,12 @@ Entry-level practical internal network penetration testing certification.
   - Practical Ethical Hacking (TCM Security, official): https://tcm-sec.com/academy/practical-ethical-hacking/
   - Practical Ethical Hacking Resources (TCM Security, official, free): https://github.com/TCM-Course-Resources/Practical-Ethical-Hacking-Resources
   - TCM Academy Free Tier (TCM Security, official, free): https://tcm-sec.com/academy/tcm-academy-free-tier/
+  - Attacktive Directory (TryHackMe, free): https://tryhackme.com/room/attacktivedirectory
+  - Post-Exploitation Basics (TryHackMe, free): https://tryhackme.com/room/postexploit
+  - VulnNet: Roasted (TryHackMe, free): https://tryhackme.com/room/vulnnetroasted
+  - Introduction to Active Directory (Hack The Box): https://academy.hackthebox.com/course/preview/introduction-to-active-directory
+  - Vulnerable-AD (safebuffer, free): https://github.com/safebuffer/vulnerable-AD
+  - InternalAllTheThings (swisskyrepo, free): https://github.com/swisskyrepo/InternalAllTheThings
 
 ### ASCP: API Security Certified Professional
 
@@ -4343,8 +4395,13 @@ Practical web application security exam in which the candidate has four hours to
   - How to prepare for the Burp Suite Certified Practitioner exam (PortSwigger, official, free): https://portswigger.net/web-security/certification/how-to-prepare
   - Hints and guidance for the Burp Suite Certified Practitioner exam (PortSwigger, official, free): https://portswigger.net/web-security/certification/exam-hints-and-guidance
   - Web Security Academy: All labs (PortSwigger, official, free): https://portswigger.net/web-security/all-labs
+  - Web Security Academy: Learning paths (PortSwigger, official, free): https://portswigger.net/web-security/learning-paths
   - Practice Exam (PortSwigger, official, free): https://portswigger.net/web-security/certification/practice-exam
   - Mystery lab challenge (PortSwigger, official, free): https://portswigger.net/web-security/mystery-lab-challenge
+  - Cross-Site Scripting (XSS) Cheat Sheet (PortSwigger, official, free): https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+  - Burp Suite: The Basics (TryHackMe): https://tryhackme.com/room/burpsuitebasics
+  - Burp Suite: Repeater (TryHackMe, free): https://tryhackme.com/room/burpsuiterepeater
+  - PayloadsAllTheThings (swisskyrepo, free): https://github.com/swisskyrepo/PayloadsAllTheThings
 
 ### CAPen: Certified AppSec Pentester
 
@@ -4379,6 +4436,12 @@ Broad ethical hacking certification covering attack methodology.
   - CEH Exam Blueprint v5 (EC-Council, official, free): https://cert.eccouncil.org/wp-content/uploads/2024/04/CEH-Exam-Blueprint-v5.pdf
   - Certified Ethical Hacker certification page (EC-Council, official, free): https://cert.eccouncil.org/certified-ethical-hacker.html
   - Certified Ethical Hacker (CEH) course (EC-Council, official): https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/
+  - Jr Penetration Tester (TryHackMe): https://tryhackme.com/path/outline/jrpenetrationtester
+  - Nmap (TryHackMe, free): https://tryhackme.com/room/furthernmap
+  - SQL Injection (TryHackMe, free): https://tryhackme.com/room/sqlinjectionlm
+  - Wifi Hacking 101 (TryHackMe, free): https://tryhackme.com/room/wifihacking101
+  - Crack the hash (TryHackMe, free): https://tryhackme.com/room/crackthehash
+  - Metasploitable3 (rapid7, free): https://github.com/rapid7/metasploitable3
   - CEH Certified Ethical Hacker v13 Study Guide (Sybex (Wiley)): https://www.wiley.com/en-us/-p-9781394394289
 
 ### CNPen: Certified Network Pentester
@@ -4397,6 +4460,12 @@ Four-hour practical exam on network penetration testing, taken online and on dem
 - Preparation:
   - Certified Network Pentester (CNPen) (The SecOps Group, official, free): https://pentestingexams.com/certifications/professional/certified-network-pentester/
   - Mock Pentesting Exams (The SecOps Group, official, free): https://pentestingexams.com/mock-pentesting-exams/
+  - Nmap (TryHackMe, free): https://tryhackme.com/room/furthernmap
+  - Network Services (TryHackMe, free): https://tryhackme.com/room/networkservices
+  - Network Services 2 (TryHackMe, free): https://tryhackme.com/room/networkservices2
+  - Attacktive Directory (TryHackMe, free): https://tryhackme.com/room/attacktivedirectory
+  - Crack the hash (TryHackMe, free): https://tryhackme.com/room/crackthehash
+  - Footprinting (Hack The Box): https://academy.hackthebox.com/course/preview/footprinting
 
 ### COASP: Certified Offensive AI Security Professional
 
@@ -4443,6 +4512,12 @@ Hands-on entry-level Active Directory red team certification.
   - Blog (Altered Security, official, free): https://www.alteredsecurity.com/blogs
   - Attacking & Defending Active Directory: Beginner's Edition (CRTP) (Altered Security, official): https://www.alteredsecurity.com/crtp-bootcamp
   - Attacking and Defending Active Directory Lab (CRTP) (Altered Security, official): https://www.alteredsecurity.com/adlab
+  - Active Directory Basics (TryHackMe): https://tryhackme.com/room/winadbasics
+  - Enumerating Active Directory (TryHackMe): https://tryhackme.com/room/adenumeration
+  - Exploiting Active Directory (TryHackMe): https://tryhackme.com/room/exploitingad
+  - GOAD (Game of Active Directory) (Orange-Cyberdefense, free): https://github.com/Orange-Cyberdefense/GOAD
+  - PowerSploit (PowerShellMafia, free): https://github.com/PowerShellMafia/PowerSploit
+  - BloodHound (SpecterOps, free): https://github.com/SpecterOps/BloodHound
 
 ### eCPPT: INE Certified Professional Penetration Tester
 
@@ -4459,6 +4534,12 @@ Practical penetration testing exam for working penetration testers. The credenti
 - Preparation:
   - eCPPT Certification (INE, official, free): https://ine.com/security/certifications/ecppt-certification
   - Penetration Testing Professional (INE, official): https://my.ine.com/CyberSecurity/learning-paths/5e26d0ba-d258-49e0-a421-56cc06626f46/penetration-testing-professional
+  - Wreath (TryHackMe): https://tryhackme.com/room/wreath
+  - Attacktive Directory (TryHackMe, free): https://tryhackme.com/room/attacktivedirectory
+  - Linux Privilege Escalation (TryHackMe, free): https://tryhackme.com/room/linprivesc
+  - Offensive Pentesting (TryHackMe): https://tryhackme.com/path/outline/pentesting
+  - Pivoting, Tunneling, and Port Forwarding (Hack The Box): https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding
+  - GOAD (Game of Active Directory) (Orange-Cyberdefense, free): https://github.com/Orange-Cyberdefense/GOAD
 
 ### eMAPT: eLearnSecurity Mobile Application Penetration Tester
 
@@ -4506,6 +4587,12 @@ Vendor-neutral penetration testing certification with hands-on simulations.
 - Preparation:
   - PenTest+ Certification V3 (CompTIA, official, free): https://www.comptia.org/en-us/certifications/pentest/
   - PenTest+ (V3) Practice Questions (CompTIA, official, free): https://www.comptia.org/en-us/certifications/pentest/practice-questions/
+  - CompTIA Pentest+ (TryHackMe): https://tryhackme.com/path/outline/pentestplus
+  - Nmap (TryHackMe, free): https://tryhackme.com/room/furthernmap
+  - Metasploit: Introduction (TryHackMe, free): https://tryhackme.com/room/metasploitintro
+  - Penetration Testing Process (Hack The Box): https://academy.hackthebox.com/course/preview/penetration-testing-process
+  - VulnHub (VulnHub, free): https://www.vulnhub.com/
+  - HackTricks (HackTricks-wiki, free): https://github.com/HackTricks-wiki/hacktricks
   - CompTIA PenTest+ Study Guide: Exam PT0-003, 3rd Edition (Sybex (Wiley)): https://www.wiley.com/en-us/-p-9781394285006
 
 ### PNPT: Practical Network Penetration Tester
@@ -4527,6 +4614,12 @@ Practical 5-day penetration test with report deliverable.
   - Open-Source Intelligence (OSINT) Fundamentals (TCM Security, official): https://tcm-sec.com/academy/open-source-intelligence-osint-fundamentals/
   - External Pentest Playbook (TCM Security, official): https://tcm-sec.com/academy/external-pentest-playbook/
   - Free Resources (TCM Security, official, free): https://certifications.tcm-sec.com/free-resources/
+  - Attacktive Directory (TryHackMe, free): https://tryhackme.com/room/attacktivedirectory
+  - OhSINT (TryHackMe, free): https://tryhackme.com/room/ohsint
+  - Sakura Room (TryHackMe, free): https://tryhackme.com/room/sakura
+  - Wreath (TryHackMe): https://tryhackme.com/room/wreath
+  - GOAD (Game of Active Directory) (Orange-Cyberdefense, free): https://github.com/Orange-Cyberdefense/GOAD
+  - Vulnerable-AD (safebuffer, free): https://github.com/safebuffer/vulnerable-AD
 
 ### CETP: Certified Evasion Techniques Professional
 
@@ -4560,6 +4653,12 @@ Fully practical penetration testing exam (CPENT AI) taken as one 24-hour session
   - CPENT v2 Exam Blueprint (EC-Council, official, free): https://cert.eccouncil.org/images/doc/CPENTv2-Exam-Blueprint.pdf
   - Certified Penetration Testing Professional certification page (EC-Council, official, free): https://cert.eccouncil.org/certified-penetration-testing-professional-cpent.html
   - CPENT AI course (EC-Council, official): https://www.eccouncil.org/train-certify/certified-penetration-testing-professional-cpent/
+  - Wreath (TryHackMe): https://tryhackme.com/room/wreath
+  - Linux PrivEsc (TryHackMe, free): https://tryhackme.com/room/linuxprivesc
+  - Windows PrivEsc (TryHackMe, free): https://tryhackme.com/room/windows10privesc
+  - Attacktive Directory (TryHackMe, free): https://tryhackme.com/room/attacktivedirectory
+  - PWN101 (TryHackMe, free): https://tryhackme.com/room/pwn101
+  - Pivoting, Tunneling, and Port Forwarding (Hack The Box): https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding
 
 ### CPTS: HTB Certified Penetration Testing Specialist
 
@@ -4579,6 +4678,12 @@ Hands-on penetration testing certification with 7-day exam and report.
   - HTB Certified Penetration Testing Specialist (Hack The Box, official, free): https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist
   - Academy Certifications (Hack The Box, official, free): https://help.hackthebox.com/en/articles/12741732-academy-certifications
   - Penetration Tester Job Role Path (Hack The Box, official): https://academy.hackthebox.com/path/preview/penetration-tester
+  - Getting Started (Hack The Box, official): https://academy.hackthebox.com/course/preview/getting-started
+  - Active Directory Enumeration & Attacks (Hack The Box, official): https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks
+  - Pivoting, Tunneling, and Port Forwarding (Hack The Box, official): https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding
+  - Attacking Enterprise Networks (Hack The Box, official): https://academy.hackthebox.com/course/preview/attacking-enterprise-networks
+  - GOAD (Game of Active Directory) (Orange-Cyberdefense, free): https://github.com/Orange-Cyberdefense/GOAD
+  - HackTricks (HackTricks-wiki, free): https://github.com/HackTricks-wiki/hacktricks
 
 ### CRTO: Certified Red Team Operator
 
@@ -4596,6 +4701,12 @@ Hands-on red team operations certification covering Cobalt Strike tradecraft.
 - Preparation:
   - Red Team Ops (Zero-Point Security, official): https://www.zeropointsecurity.co.uk/course/red-team-ops
   - Cobalt Strike User Guide (Fortra, free): https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/welcome_main.htm
+  - Red Teaming (TryHackMe): https://tryhackme.com/path/outline/redteaming
+  - Red Team Fundamentals (TryHackMe, free): https://tryhackme.com/room/redteamfundamentals
+  - Intro to C2 (TryHackMe): https://tryhackme.com/room/introtoc2
+  - Lateral Movement and Pivoting (TryHackMe): https://tryhackme.com/room/lateralmovementandpivoting
+  - GOAD (Game of Active Directory) (Orange-Cyberdefense, free): https://github.com/Orange-Cyberdefense/GOAD
+  - Cobalt Strike Community Kit (Cobalt-Strike, free): https://github.com/Cobalt-Strike/community_kit
 
 ### GPEN: GIAC Penetration Tester
 
@@ -4614,6 +4725,12 @@ Penetration testing methodology and exploitation certification.
 - Preparation:
   - GIAC Penetration Tester (GPEN) exam objectives (GIAC, official, free): https://www.giac.org/certifications/penetration-tester-gpen
   - SEC560: Enterprise Penetration Testing (SANS Institute, official): https://www.sans.org/cyber-security-courses/enterprise-penetration-testing
+  - Attacktive Directory (TryHackMe, free): https://tryhackme.com/room/attacktivedirectory
+  - Attacking Kerberos (TryHackMe): https://tryhackme.com/room/attackingkerberos
+  - Password Attacks (TryHackMe): https://tryhackme.com/room/passwordattacks
+  - Lateral Movement and Pivoting (TryHackMe): https://tryhackme.com/room/lateralmovementandpivoting
+  - Crack the hash (TryHackMe, free): https://tryhackme.com/room/crackthehash
+  - BloodHound (SpecterOps, free): https://github.com/SpecterOps/BloodHound
   - GPEN GIAC Certified Penetration Tester All-in-One Exam Guide (McGraw Hill): https://www.mheducation.com/highered/mhp/product/gpen-giac-certified-penetration-tester-all-one-exam-guide.html
 
 ### GRTP: GIAC Red Team Professional
@@ -4664,6 +4781,12 @@ Hands-on 24-hour penetration testing exam; industry-respected red team credentia
   - OSCP Exam Guide: What to Expect and How to Prepare (OffSec, official, free): https://www.offsec.com/blog/oscp-exam-guide/
   - PEN-200: Penetration Testing with Kali Linux (OffSec, official): https://www.offsec.com/courses/pen-200/
   - Proving Grounds Practice (OffSec, official): https://www.offsec.com/products/proving-grounds/
+  - Offensive Pentesting (TryHackMe): https://tryhackme.com/path/outline/pentesting
+  - Linux PrivEsc (TryHackMe, free): https://tryhackme.com/room/linuxprivesc
+  - Windows PrivEsc (TryHackMe, free): https://tryhackme.com/room/windows10privesc
+  - Attacktive Directory (TryHackMe, free): https://tryhackme.com/room/attacktivedirectory
+  - NetSecFocus Trophy Room (TJ Null, free): https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview
+  - HackTricks (HackTricks-wiki, free): https://github.com/HackTricks-wiki/hacktricks
 
 ### CAPE: HTB Certified Active Directory Pentesting Expert
 
@@ -4709,6 +4832,12 @@ Hands-on Active Directory red team certification.
   - Blog (Altered Security, official, free): https://www.alteredsecurity.com/blogs
   - Attacking & Defending Active Directory: Advanced Edition (CRTE) (Altered Security, official): https://www.alteredsecurity.com/crte-bootcamp
   - Windows Red Team Lab (CRTE) (Altered Security, official): https://www.alteredsecurity.com/redteamlab
+  - Exploiting Active Directory (TryHackMe): https://tryhackme.com/room/exploitingad
+  - Persisting Active Directory (TryHackMe): https://tryhackme.com/room/persistingad
+  - Kerberos Attacks (Hack The Box): https://academy.hackthebox.com/course/preview/kerberos-attacks
+  - Active Directory Trust Attacks (Hack The Box): https://academy.hackthebox.com/course/preview/active-directory-trust-attacks
+  - GOAD (Game of Active Directory) (Orange-Cyberdefense, free): https://github.com/Orange-Cyberdefense/GOAD
+  - InternalAllTheThings (swisskyrepo, free): https://github.com/swisskyrepo/InternalAllTheThings
 
 ### CRTL: Certified Red Team Lead
 
@@ -4788,6 +4917,12 @@ Advanced evasion and bypass techniques for mature defensive environments.
   - OSEP Exam Guide (OffSec, official, free): https://help.offsec.com/hc/en-us/articles/360050293792-OSEP-Exam-Guide
   - PEN-300 Syllabus (OffSec, official, free): https://www.offsec.com/documentation/PEN300-Syllabus.pdf
   - PEN-300: Advanced Evasion Techniques and Breaching Defenses (OffSec, official): https://www.offsec.com/courses/pen-300/
+  - Red Teaming (TryHackMe): https://tryhackme.com/path/outline/redteaming
+  - Bypassing UAC (TryHackMe, free): https://tryhackme.com/room/bypassinguac
+  - AV Evasion: Shellcode (TryHackMe): https://tryhackme.com/room/avevasionshellcode
+  - Lateral Movement and Pivoting (TryHackMe): https://tryhackme.com/room/lateralmovementandpivoting
+  - GOAD (Game of Active Directory) (Orange-Cyberdefense, free): https://github.com/Orange-Cyberdefense/GOAD
+  - Red Teaming Tactics and Techniques (mantvydasb, free): https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques
 
 ## Exploitation
 
@@ -4808,6 +4943,12 @@ Advanced exploitation and exploit development certification.
   - GIAC Exploit Researcher and Advanced Penetration Tester (GXPN) (GIAC, official, free): https://www.giac.org/certifications/exploit-researcher-advanced-penetration-tester-gxpn/
   - Best Practices for GIAC Practitioner Exam Preparation (GIAC, official, free): https://www.giac.org/how-to-prepare/practitioner
   - SEC660: Advanced Penetration Testing, Exploit Writing, and Ethical Hacking (SANS Institute, official): https://www.sans.org/cyber-security-courses/advanced-penetration-testing-exploits-ethical-hacking/
+  - pwn.college (pwn.college, free): https://pwn.college/
+  - ROP Emporium (ROP Emporium, free): https://ropemporium.com/
+  - Exploit Education (Exploit Education, free): https://exploit.education/
+  - Intro To Pwntools (TryHackMe, free): https://tryhackme.com/room/introtopwntools
+  - L2 MAC Flooding & ARP Spoofing (TryHackMe, free): https://tryhackme.com/room/layer2
+  - how2heap (shellphish, free): https://github.com/shellphish/how2heap
 
 ### OMSE: Offensive Mobile Security Expert
 
@@ -4853,6 +4994,12 @@ Windows exploit development certification covering buffer overflows and shellcod
   - EXP-301 OSED Exam Guide (OffSec, official, free): https://help.offsec.com/hc/en-us/articles/360052977212-EXP-301-Windows-User-Mode-Exploit-Development-OSED-Exam-Guide
   - EXP-301 Syllabus (OffSec, official, free): https://www.offsec.com/documentation/EXP301-syllabus.pdf
   - EXP-301: Windows User Mode Exploit Development (OffSec, official): https://www.offsec.com/courses/exp-301/
+  - Corelan Exploit Writing Tutorials (Corelan, free): https://www.corelan.be/index.php/articles/
+  - Gatekeeper (TryHackMe, free): https://tryhackme.com/room/gatekeeper
+  - Brainstorm (TryHackMe): https://tryhackme.com/room/brainstorm
+  - Stack-Based Buffer Overflows on Windows x86 (Hack The Box): https://academy.hackthebox.com/course/preview/stack-based-buffer-overflows-on-windows-x86
+  - Vulnserver (stephenbradshaw, free): https://github.com/stephenbradshaw/vulnserver
+  - osed-scripts (epi052, free): https://github.com/epi052/osed-scripts
 
 ### OSEE: OffSec Exploitation Expert
 

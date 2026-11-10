@@ -276,3 +276,150 @@ fcp-nse4,guide,FortiOS Administrator Exam,Fortinet,https://training.fortinet.com
 fcp-nse4,guide,NSE 4 FortiOS,Fortinet,https://training.fortinet.com/local/staticpage/view.php?page=nse_4,true,true,false
 fcp-nse4,course,Training Institute Library: NSE 4,Fortinet,https://training.fortinet.com/local/library/?category=Certification:NSE_4,,true,false
 fcp-nse4,guide,FortiOS 7.6.0 Administration Guide,Fortinet,https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide,true,true,false
+oscp,repo,NetSecFocus Trophy Room,TJ Null,https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview,true,false,false
+oscp,lab,Offensive Pentesting,TryHackMe,https://tryhackme.com/path/outline/pentesting,,false,false
+oscp,lab,Linux PrivEsc,TryHackMe,https://tryhackme.com/room/linuxprivesc,true,false,false
+oscp,lab,Windows PrivEsc,TryHackMe,https://tryhackme.com/room/windows10privesc,true,false,false
+oscp,lab,Attacktive Directory,TryHackMe,https://tryhackme.com/room/attacktivedirectory,true,false,false
+oscp,repo,HackTricks,HackTricks-wiki,https://github.com/HackTricks-wiki/hacktricks,true,false,false
+osep,repo,GOAD (Game of Active Directory),Orange-Cyberdefense,https://github.com/Orange-Cyberdefense/GOAD,true,false,false
+osep,lab,Red Teaming,TryHackMe,https://tryhackme.com/path/outline/redteaming,,false,false
+osep,lab,Bypassing UAC,TryHackMe,https://tryhackme.com/room/bypassinguac,true,false,false
+osep,lab,AV Evasion: Shellcode,TryHackMe,https://tryhackme.com/room/avevasionshellcode,false,false,false
+osep,lab,Lateral Movement and Pivoting,TryHackMe,https://tryhackme.com/room/lateralmovementandpivoting,false,false,false
+osep,repo,Red Teaming Tactics and Techniques,mantvydasb,https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques,true,false,false
+oswe,repo,TUDO,bmdyy,https://github.com/bmdyy/tudo,true,false,false
+oswe,repo,Vulnerable Code Snippets,YesWeHack,https://github.com/yeswehack/vulnerable-code-snippets,true,false,false
+oswe,repo,AWAE-PREP,wetw0rk,https://github.com/wetw0rk/AWAE-PREP,true,false,false
+oswe,lab,Intro to Whitebox Pentesting,Hack The Box,https://academy.hackthebox.com/course/preview/intro-to-whitebox-pentesting,,false,false
+oswe,lab,Insecure deserialization labs,PortSwigger,https://portswigger.net/web-security/deserialization,true,false,false
+oswa,lab,Web Security Academy: All labs,PortSwigger,https://portswigger.net/web-security/all-labs,true,false,false
+oswa,repo,OWASP Juice Shop,OWASP,https://github.com/juice-shop/juice-shop,true,false,false
+oswa,repo,Damn Vulnerable Web Application (DVWA),digininja,https://github.com/digininja/DVWA,true,false,false
+oswa,lab,OWASP Juice Shop,TryHackMe,https://tryhackme.com/room/owaspjuiceshop,true,false,false
+oswa,lab,SQL Injection Lab,TryHackMe,https://tryhackme.com/room/sqlilab,true,false,false
+oswa,lab,Web Application Pentesting,TryHackMe,https://tryhackme.com/path/outline/webapppentesting,,false,false
+osed,repo,Vulnserver,stephenbradshaw,https://github.com/stephenbradshaw/vulnserver,true,false,false
+osed,repo,osed-scripts,epi052,https://github.com/epi052/osed-scripts,true,false,false
+osed,course,Corelan Exploit Writing Tutorials,Corelan,https://www.corelan.be/index.php/articles/,true,false,false
+osed,lab,Gatekeeper,TryHackMe,https://tryhackme.com/room/gatekeeper,true,false,false
+osed,lab,Brainstorm,TryHackMe,https://tryhackme.com/room/brainstorm,false,false,false
+osed,lab,Stack-Based Buffer Overflows on Windows x86,Hack The Box,https://academy.hackthebox.com/course/preview/stack-based-buffer-overflows-on-windows-x86,,false,false
+pnpt,lab,Attacktive Directory,TryHackMe,https://tryhackme.com/room/attacktivedirectory,true,false,false
+pnpt,lab,OhSINT,TryHackMe,https://tryhackme.com/room/ohsint,true,false,false
+pnpt,lab,Sakura Room,TryHackMe,https://tryhackme.com/room/sakura,true,false,false
+pnpt,lab,Wreath,TryHackMe,https://tryhackme.com/room/wreath,false,false,false
+pnpt,repo,GOAD (Game of Active Directory),Orange-Cyberdefense,https://github.com/Orange-Cyberdefense/GOAD,true,false,false
+pnpt,repo,Vulnerable-AD,safebuffer,https://github.com/safebuffer/vulnerable-AD,true,false,false
+pjpt,lab,Attacktive Directory,TryHackMe,https://tryhackme.com/room/attacktivedirectory,true,false,false
+pjpt,lab,Post-Exploitation Basics,TryHackMe,https://tryhackme.com/room/postexploit,true,false,false
+pjpt,lab,VulnNet: Roasted,TryHackMe,https://tryhackme.com/room/vulnnetroasted,true,false,false
+pjpt,repo,Vulnerable-AD,safebuffer,https://github.com/safebuffer/vulnerable-AD,true,false,false
+pjpt,lab,Introduction to Active Directory,Hack The Box,https://academy.hackthebox.com/course/preview/introduction-to-active-directory,,false,false
+pjpt,repo,InternalAllTheThings,swisskyrepo,https://github.com/swisskyrepo/InternalAllTheThings,true,false,false
+pwpa,repo,OWASP Juice Shop,OWASP,https://github.com/juice-shop/juice-shop,true,false,false
+pwpa,lab,OWASP Juice Shop,TryHackMe,https://tryhackme.com/room/owaspjuiceshop,true,false,false
+pwpa,lab,OWASP Top 10 2025: IAAA Failures,TryHackMe,https://tryhackme.com/room/owasptopten2025one,true,false,false
+pwpa,lab,SQL Injection,TryHackMe,https://tryhackme.com/room/sqlinjectionlm,true,false,false
+pwpa,lab,Web Security Academy: All labs,PortSwigger,https://portswigger.net/web-security/all-labs,true,false,false
+pwpa,repo,Damn Vulnerable Web Application (DVWA),digininja,https://github.com/digininja/DVWA,true,false,false
+ejpt,lab,Jr Penetration Tester,TryHackMe,https://tryhackme.com/path/outline/jrpenetrationtester,,false,false
+ejpt,lab,Blue,TryHackMe,https://tryhackme.com/room/blue,true,false,false
+ejpt,lab,Metasploit: Introduction,TryHackMe,https://tryhackme.com/room/metasploitintro,true,false,false
+ejpt,lab,Nmap,TryHackMe,https://tryhackme.com/room/furthernmap,true,false,false
+ejpt,lab,Network Services,TryHackMe,https://tryhackme.com/room/networkservices,true,false,false
+ejpt,lab,Getting Started,Hack The Box,https://academy.hackthebox.com/course/preview/getting-started,,false,false
+ecppt,lab,Wreath,TryHackMe,https://tryhackme.com/room/wreath,false,false,false
+ecppt,lab,Attacktive Directory,TryHackMe,https://tryhackme.com/room/attacktivedirectory,true,false,false
+ecppt,lab,Linux Privilege Escalation,TryHackMe,https://tryhackme.com/room/linprivesc,true,false,false
+ecppt,lab,Offensive Pentesting,TryHackMe,https://tryhackme.com/path/outline/pentesting,,false,false
+ecppt,lab,"Pivoting, Tunneling, and Port Forwarding",Hack The Box,https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding,,false,false
+ecppt,repo,GOAD (Game of Active Directory),Orange-Cyberdefense,https://github.com/Orange-Cyberdefense/GOAD,true,false,false
+ewpt,lab,Web Security Academy: All labs,PortSwigger,https://portswigger.net/web-security/all-labs,true,false,false
+ewpt,repo,OWASP Juice Shop,OWASP,https://github.com/juice-shop/juice-shop,true,false,false
+ewpt,repo,Damn Vulnerable Web Application (DVWA),digininja,https://github.com/digininja/DVWA,true,false,false
+ewpt,repo,Web Security Testing Guide,OWASP,https://github.com/OWASP/wstg,true,false,false
+ewpt,lab,SQL Injection Lab,TryHackMe,https://tryhackme.com/room/sqlilab,true,false,false
+ewpt,lab,Web Application Pentesting,TryHackMe,https://tryhackme.com/path/outline/webapppentesting,,false,false
+cpts,lab,Getting Started,Hack The Box,https://academy.hackthebox.com/course/preview/getting-started,,true,false
+cpts,lab,Active Directory Enumeration & Attacks,Hack The Box,https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks,,true,false
+cpts,lab,"Pivoting, Tunneling, and Port Forwarding",Hack The Box,https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding,,true,false
+cpts,lab,Attacking Enterprise Networks,Hack The Box,https://academy.hackthebox.com/course/preview/attacking-enterprise-networks,,true,false
+cpts,repo,GOAD (Game of Active Directory),Orange-Cyberdefense,https://github.com/Orange-Cyberdefense/GOAD,true,false,false
+cpts,repo,HackTricks,HackTricks-wiki,https://github.com/HackTricks-wiki/hacktricks,true,false,false
+cbbh,lab,Web Requests,Hack The Box,https://academy.hackthebox.com/course/preview/web-requests,,true,false
+cbbh,lab,Using Web Proxies,Hack The Box,https://academy.hackthebox.com/course/preview/using-web-proxies,,true,false
+cbbh,lab,Web Attacks,Hack The Box,https://academy.hackthebox.com/course/preview/web-attacks,,true,false
+cbbh,lab,Bug Bounty Hunting Process,Hack The Box,https://academy.hackthebox.com/course/preview/bug-bounty-hunting-process,,true,false
+cbbh,lab,Web Security Academy: All labs,PortSwigger,https://portswigger.net/web-security/all-labs,true,false,false
+cbbh,repo,PayloadsAllTheThings,swisskyrepo,https://github.com/swisskyrepo/PayloadsAllTheThings,true,false,false
+crto,lab,Red Teaming,TryHackMe,https://tryhackme.com/path/outline/redteaming,,false,false
+crto,lab,Red Team Fundamentals,TryHackMe,https://tryhackme.com/room/redteamfundamentals,true,false,false
+crto,lab,Intro to C2,TryHackMe,https://tryhackme.com/room/introtoc2,false,false,false
+crto,lab,Lateral Movement and Pivoting,TryHackMe,https://tryhackme.com/room/lateralmovementandpivoting,false,false,false
+crto,repo,GOAD (Game of Active Directory),Orange-Cyberdefense,https://github.com/Orange-Cyberdefense/GOAD,true,false,false
+crto,repo,Cobalt Strike Community Kit,Cobalt-Strike,https://github.com/Cobalt-Strike/community_kit,true,false,false
+crtp,lab,Active Directory Basics,TryHackMe,https://tryhackme.com/room/winadbasics,false,false,false
+crtp,lab,Enumerating Active Directory,TryHackMe,https://tryhackme.com/room/adenumeration,false,false,false
+crtp,lab,Exploiting Active Directory,TryHackMe,https://tryhackme.com/room/exploitingad,false,false,false
+crtp,repo,GOAD (Game of Active Directory),Orange-Cyberdefense,https://github.com/Orange-Cyberdefense/GOAD,true,false,false
+crtp,repo,PowerSploit,PowerShellMafia,https://github.com/PowerShellMafia/PowerSploit,true,false,false
+crtp,repo,BloodHound,SpecterOps,https://github.com/SpecterOps/BloodHound,true,false,false
+crte,repo,GOAD (Game of Active Directory),Orange-Cyberdefense,https://github.com/Orange-Cyberdefense/GOAD,true,false,false
+crte,lab,Exploiting Active Directory,TryHackMe,https://tryhackme.com/room/exploitingad,false,false,false
+crte,lab,Persisting Active Directory,TryHackMe,https://tryhackme.com/room/persistingad,false,false,false
+crte,lab,Kerberos Attacks,Hack The Box,https://academy.hackthebox.com/course/preview/kerberos-attacks,,false,false
+crte,lab,Active Directory Trust Attacks,Hack The Box,https://academy.hackthebox.com/course/preview/active-directory-trust-attacks,,false,false
+crte,repo,InternalAllTheThings,swisskyrepo,https://github.com/swisskyrepo/InternalAllTheThings,true,false,false
+bscp,lab,Web Security Academy: Learning paths,PortSwigger,https://portswigger.net/web-security/learning-paths,true,true,false
+bscp,repo,Cross-Site Scripting (XSS) Cheat Sheet,PortSwigger,https://portswigger.net/web-security/cross-site-scripting/cheat-sheet,true,true,false
+bscp,repo,PayloadsAllTheThings,swisskyrepo,https://github.com/swisskyrepo/PayloadsAllTheThings,true,false,false
+bscp,lab,Burp Suite: The Basics,TryHackMe,https://tryhackme.com/room/burpsuitebasics,false,false,false
+bscp,lab,Burp Suite: Repeater,TryHackMe,https://tryhackme.com/room/burpsuiterepeater,true,false,false
+pentest-plus,lab,CompTIA Pentest+,TryHackMe,https://tryhackme.com/path/outline/pentestplus,,false,false
+pentest-plus,lab,Nmap,TryHackMe,https://tryhackme.com/room/furthernmap,true,false,false
+pentest-plus,lab,Metasploit: Introduction,TryHackMe,https://tryhackme.com/room/metasploitintro,true,false,false
+pentest-plus,lab,Penetration Testing Process,Hack The Box,https://academy.hackthebox.com/course/preview/penetration-testing-process,,false,false
+pentest-plus,lab,VulnHub,VulnHub,https://www.vulnhub.com/,true,false,false
+pentest-plus,repo,HackTricks,HackTricks-wiki,https://github.com/HackTricks-wiki/hacktricks,true,false,false
+ceh,lab,Jr Penetration Tester,TryHackMe,https://tryhackme.com/path/outline/jrpenetrationtester,,false,false
+ceh,lab,Nmap,TryHackMe,https://tryhackme.com/room/furthernmap,true,false,false
+ceh,lab,SQL Injection,TryHackMe,https://tryhackme.com/room/sqlinjectionlm,true,false,false
+ceh,lab,Wifi Hacking 101,TryHackMe,https://tryhackme.com/room/wifihacking101,true,false,false
+ceh,lab,Crack the hash,TryHackMe,https://tryhackme.com/room/crackthehash,true,false,false
+ceh,repo,Metasploitable3,rapid7,https://github.com/rapid7/metasploitable3,true,false,false
+cpent,lab,Wreath,TryHackMe,https://tryhackme.com/room/wreath,false,false,false
+cpent,lab,Linux PrivEsc,TryHackMe,https://tryhackme.com/room/linuxprivesc,true,false,false
+cpent,lab,Windows PrivEsc,TryHackMe,https://tryhackme.com/room/windows10privesc,true,false,false
+cpent,lab,Attacktive Directory,TryHackMe,https://tryhackme.com/room/attacktivedirectory,true,false,false
+cpent,lab,PWN101,TryHackMe,https://tryhackme.com/room/pwn101,true,false,false
+cpent,lab,"Pivoting, Tunneling, and Port Forwarding",Hack The Box,https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding,,false,false
+gpen,lab,Attacktive Directory,TryHackMe,https://tryhackme.com/room/attacktivedirectory,true,false,false
+gpen,lab,Attacking Kerberos,TryHackMe,https://tryhackme.com/room/attackingkerberos,false,false,false
+gpen,lab,Password Attacks,TryHackMe,https://tryhackme.com/room/passwordattacks,false,false,false
+gpen,lab,Lateral Movement and Pivoting,TryHackMe,https://tryhackme.com/room/lateralmovementandpivoting,false,false,false
+gpen,lab,Crack the hash,TryHackMe,https://tryhackme.com/room/crackthehash,true,false,false
+gpen,repo,BloodHound,SpecterOps,https://github.com/SpecterOps/BloodHound,true,false,false
+gxpn,course,pwn.college,pwn.college,https://pwn.college/,true,false,false
+gxpn,lab,ROP Emporium,ROP Emporium,https://ropemporium.com/,true,false,false
+gxpn,lab,Exploit Education,Exploit Education,https://exploit.education/,true,false,false
+gxpn,repo,how2heap,shellphish,https://github.com/shellphish/how2heap,true,false,false
+gxpn,lab,Intro To Pwntools,TryHackMe,https://tryhackme.com/room/introtopwntools,true,false,false
+gxpn,lab,L2 MAC Flooding & ARP Spoofing,TryHackMe,https://tryhackme.com/room/layer2,true,false,false
+cnpen,lab,Nmap,TryHackMe,https://tryhackme.com/room/furthernmap,true,false,false
+cnpen,lab,Network Services,TryHackMe,https://tryhackme.com/room/networkservices,true,false,false
+cnpen,lab,Network Services 2,TryHackMe,https://tryhackme.com/room/networkservices2,true,false,false
+cnpen,lab,Attacktive Directory,TryHackMe,https://tryhackme.com/room/attacktivedirectory,true,false,false
+cnpen,lab,Crack the hash,TryHackMe,https://tryhackme.com/room/crackthehash,true,false,false
+cnpen,lab,Footprinting,Hack The Box,https://academy.hackthebox.com/course/preview/footprinting,,false,false
+crta,repo,GOAD (Game of Active Directory),Orange-Cyberdefense,https://github.com/Orange-Cyberdefense/GOAD,true,false,false
+crta,repo,Vulnerable-AD,safebuffer,https://github.com/safebuffer/vulnerable-AD,true,false,false
+crta,lab,Attacktive Directory,TryHackMe,https://tryhackme.com/room/attacktivedirectory,true,false,false
+crta,lab,Red Team Fundamentals,TryHackMe,https://tryhackme.com/room/redteamfundamentals,true,false,false
+crta,lab,Lateral Movement and Pivoting,TryHackMe,https://tryhackme.com/room/lateralmovementandpivoting,false,false,false
+crta,lab,Post-Exploitation Basics,TryHackMe,https://tryhackme.com/room/postexploit,true,false,false
+secops-cap,repo,OWASP Juice Shop,OWASP,https://github.com/juice-shop/juice-shop,true,false,false
+secops-cap,repo,WebGoat,OWASP,https://github.com/WebGoat/WebGoat,true,false,false
+secops-cap,repo,Damn Vulnerable Web Application (DVWA),digininja,https://github.com/digininja/DVWA,true,false,false
+secops-cap,lab,OWASP Juice Shop,TryHackMe,https://tryhackme.com/room/owaspjuiceshop,true,false,false
+secops-cap,lab,OWASP Top 10 2025: IAAA Failures,TryHackMe,https://tryhackme.com/room/owasptopten2025one,true,false,false
