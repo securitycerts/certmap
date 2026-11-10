@@ -345,7 +345,9 @@ input, select { font: inherit; }
 
 /* ---------- LIST / SEARCH RESULTS ---------- */
 .list {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 300px));
+  display: grid; /* Rows always fill the width. The 300px floor keeps the stretch small: a card
+     is never more than about a quarter wider than its minimum. */
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   gap: 10px;
 }
 .list-card {
@@ -749,7 +751,7 @@ a.prereq-chip { color: var(--text); }
 .rm-head h2 { margin: 0; font-size: 20px; letter-spacing: -.01em; overflow-wrap: anywhere; }
 .rm-sub { margin: 4px 0 0; font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .rm-actions { display: flex; gap: 6px; flex-wrap: wrap; }
-.rm-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 334px), 334px)); gap: 10px; }
+.rm-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 334px), 1fr)); gap: 10px; }
 .rm-step { display: grid; grid-template-columns: 26px 1fr; gap: 8px; align-items: start; min-width: 0; }
 .rm-num {
   width: 26px; height: 26px; margin-top: 10px; border-radius: 50%;
