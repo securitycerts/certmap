@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cartp",
+  "acronym": "CARTP",
+  "name": "Certified by Altered Security Red Team Professional for Azure",
+  "vendor": "Altered Security",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "intermediate",
+  "price_usd": 449,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cartp.html",
+  "api": "https://certmap.dev/api/v1/certs/cartp.json",
+  "description": "Hands-on 24-hour exam on assessing Azure and Entra ID environments, including multi-tenant and hybrid identity attacks. Expires after three years with a free renewal exam.",
+  "tags": [
+   "cloud",
+   "azure",
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "30-day lab access with one exam attempt; extra attempts $99",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": 0,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.alteredsecurity.com/azureadlab",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

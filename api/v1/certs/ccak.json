@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccak",
+  "acronym": "CCAK",
+  "name": "Certificate of Cloud Auditing Knowledge",
+  "vendor": "CSA",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ccak.html",
+  "api": "https://certmap.dev/api/v1/certs/ccak.json",
+  "description": "Cloud auditing certificate jointly issued by CSA and ISACA. Discontinued for new purchases as of October 2025 when the CSA/ISACA partnership ended; existing holders keep their credential.",
+  "tags": [
+   "cloud",
+   "audit"
+  ],
+  "currency_note": "Discontinued for new purchases (October 2025)",
+  "price_verified_at": null,
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "ccsk"
+  ],
+  "leads_to": [],
+  "official_url": "https://labs.cloudsecurityalliance.org/ccak/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

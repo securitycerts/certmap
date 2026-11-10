@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gx-pt",
+  "acronym": "GX-PT",
+  "name": "GIAC Experienced Penetration Tester",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "expert",
+  "price_usd": 1299,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/gx-pt.html",
+  "api": "https://certmap.dev/api/v1/certs/gx-pt.json",
+  "description": "Applied Knowledge exam of 25 CyberLive performance-based challenges in four hours covering network mapping, vulnerability identification and exploitation. Counts toward the GSE portfolio.",
+  "tags": [
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "Applied Knowledge exam; $499 for holders of an active GPEN",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/experienced-penetration-tester-gxpt",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

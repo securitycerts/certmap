@@ -1,0 +1,104 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "btl2",
+  "acronym": "BTL2",
+  "name": "Blue Team Level 2",
+  "vendor": "Centri",
+  "issuer": null,
+  "domain": "Incident Handling",
+  "level": "advanced",
+  "price_usd": 2683,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/btl2.html",
+  "api": "https://certmap.dev/api/v1/certs/btl2.json",
+  "description": "Advanced defensive certification with a practical assessment of up to 72 hours and a written report that is marked by hand. Issued by Centri, the provider formerly named Security Blue Team.",
+  "tags": [
+   "blue-team",
+   "dfir",
+   "threat-hunting",
+   "hands-on",
+   "security-blue-team"
+  ],
+  "currency_note": "Vendor lists GBP only (GBP 1,999); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); price covers training and exam",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 4320,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.centri.org/certifications/blue-team-level-2",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-btl2.html",
+   "phases": [
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 1,
+       "type": "lab",
+       "title": "Basic Malware RE",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/basicmalwarere",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 2,
+       "type": "lab",
+       "title": "Memory Forensics",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/memoryforensics",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 3,
+       "type": "lab",
+       "title": "Seized",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/seized/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Training exercises",
+       "provider": "Malware-Traffic-Analysis.net",
+       "url": "https://www.malware-traffic-analysis.net/training-exercises.html",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "repo",
+       "title": "Velociraptor",
+       "provider": "Velocidex",
+       "url": "https://github.com/Velocidex/velociraptor",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "SOC Level 2 path",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/path/outline/soclevel2",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

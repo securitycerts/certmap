@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cpsa",
+  "acronym": "CPSA",
+  "name": "CREST Practitioner Security Analyst",
+  "vendor": "CREST",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "beginner",
+  "price_usd": 369,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cpsa.html",
+  "api": "https://certmap.dev/api/v1/certs/cpsa.json",
+  "description": "Entry-level closed-book multiple-choice exam of 120 questions in two hours on assessing operating systems, network services and web applications. A valid CPSA is required before sitting the CRT.",
+  "tags": [
+   "red-team",
+   "crest"
+  ],
+  "currency_note": "GBP 275 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "crt"
+  ],
+  "official_url": "https://www.crest-approved.org/certification-careers/crest-certifications/crest-practitioner-security-analyst/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

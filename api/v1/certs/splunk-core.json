@@ -1,0 +1,146 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "splunk-core",
+  "acronym": "SCCU",
+  "name": "Splunk Core Certified User",
+  "vendor": "Splunk",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "beginner",
+  "price_usd": 130,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/splunk-core.html",
+  "api": "https://certmap.dev/api/v1/certs/splunk-core.json",
+  "description": "Foundational Splunk search and reporting certification.",
+  "tags": [
+   "siem"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 60,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-splunk-core.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Splunk Core Certified User Exam Blueprint",
+       "provider": "Splunk",
+       "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-user.pdf",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "Splunk Core Certified User",
+       "provider": "Splunk",
+       "url": "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Free Training Courses",
+       "provider": "Splunk",
+       "url": "https://www.splunk.com/en_us/training/free-courses/overview.html",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Search Tutorial",
+       "provider": "Splunk",
+       "url": "https://help.splunk.com/en/splunk-enterprise/get-started/search-tutorial",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 5,
+       "type": "repo",
+       "title": "Boss of the SOC v3 dataset",
+       "provider": "Splunk",
+       "url": "https://github.com/splunk/botsv3",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "Boss of the SOC v1 dataset",
+       "provider": "Splunk",
+       "url": "https://github.com/splunk/botsv1",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "Splunk Boss of the SOC",
+       "provider": "Splunk",
+       "url": "https://bots.splunk.com/",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "Splunk: Exploring SPL",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/splunkexploringspl",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "lab",
+       "title": "Splunk: The Basics",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/splunk101",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 10,
+       "type": "lab",
+       "title": "Boss Of The SOC v1",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/boss-of-the-soc-v1/",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

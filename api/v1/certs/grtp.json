@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "grtp",
+  "acronym": "GRTP",
+  "name": "GIAC Red Team Professional",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/grtp.html",
+  "api": "https://certmap.dev/api/v1/certs/grtp.json",
+  "description": "Validates the ability to plan and run end-to-end red team engagements, including attack infrastructure and adversary emulation. Exam has 82 questions in three hours and includes CyberLive tasks.",
+  "tags": [
+   "red-team",
+   "adversary-emulation"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/red-team-professional-grtp",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "edx-ibm-cybersecurity-analyst",
+  "acronym": "IBM Analyst edX",
+  "name": "IBM Cybersecurity Analyst Professional Certificate",
+  "vendor": "edX",
+  "issuer": "IBM",
+  "domain": "Security Operations",
+  "level": "beginner",
+  "price_usd": 1697,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/edx-ibm-cybersecurity-analyst.html",
+  "api": "https://certmap.dev/api/v1/certs/edx-ibm-cybersecurity-analyst.json",
+  "description": "Fourteen-course IBM program covering security tools, operating systems, networking, databases, compliance frameworks, penetration testing, incident response, and Security+ and CySA+ practice, with a capstone. Course-based certificate assessed through labs and projects, with no proctored exam.",
+  "tags": [
+   "ibm",
+   "entry-level",
+   "soc",
+   "incident-response",
+   "course-based",
+   "edx"
+  ],
+  "currency_note": "Program bundle price $1,697.40 shown on the edX page (list $1,886 for the courses bought separately); one-off payment, not a subscription.",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.edx.org/certificates/professional-certificate/ibm-cybersecurity-analyst",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

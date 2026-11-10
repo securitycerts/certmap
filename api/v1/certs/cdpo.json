@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cdpo",
+  "acronym": "CDPO",
+  "name": "Certified Data Protection Officer",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cdpo.html",
+  "api": "https://certmap.dev/api/v1/certs/cdpo.json",
+  "description": "Data protection and GDPR compliance certification.",
+  "tags": [
+   "privacy",
+   "grc"
+  ],
+  "currency_note": "Not in the vendor's current catalogue (checked 2026-11-10); kept for existing holders",
+  "price_verified_at": null,
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/programs/certified-data-protection-officer-cdpo/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cipm",
+  "acronym": "CIPM",
+  "name": "Certified Information Privacy Manager",
+  "vendor": "IAPP",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "advanced",
+  "price_usd": 550,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cipm.html",
+  "api": "https://certmap.dev/api/v1/certs/cipm.json",
+  "description": "Privacy program management certification.",
+  "tags": [
+   "privacy",
+   "management"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 150,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://iapp.org/certify/cipm/",
+  "comparisons": [
+   {
+    "with": "cipp",
+    "page": "https://certmap.dev/certs/compare-cipp-vs-cipm.html"
+   }
+  ],
+  "study_plan": null
+ }
+}

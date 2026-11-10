@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gsoa",
+  "acronym": "GSOA",
+  "name": "GIAC Strategic OSINT Analyst",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "OSINT",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/gsoa.html",
+  "api": "https://certmap.dev/api/v1/certs/gsoa.json",
+  "description": "Advanced OSINT certification covering collection at scale, analysis and media verification. Proctored exam of 82 questions in 3 hours that includes CyberLive hands-on items, passing score 66%.",
+  "tags": [
+   "osint",
+   "cyberlive",
+   "hands-on"
+  ],
+  "currency_note": "Exam attempt only; SANS SEC587 is the affiliated course (optional)",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/strategic-osint-analyst-gsoa",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

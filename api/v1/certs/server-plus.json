@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "server-plus",
+  "acronym": "Server+",
+  "name": "CompTIA Server+",
+  "vendor": "CompTIA",
+  "issuer": null,
+  "domain": "Asset Security",
+  "level": "intermediate",
+  "price_usd": 399,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/server-plus.html",
+  "api": "https://certmap.dev/api/v1/certs/server-plus.json",
+  "description": "Server administration certification.",
+  "tags": [
+   "sysadmin"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.comptia.org/certifications/server",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

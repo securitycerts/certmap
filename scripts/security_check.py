@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # Directories and file types that are either third-party, generated, or binary and
 # therefore not contributor-authored source we need to scan.
 SKIP_DIRS = {".git", "node_modules", "favicon", "images", "dist", "coverage", ".cache", "vendor", "certs",
-             "es", "fr", "de", "it", "ar", "ko", "he"}
+             "es", "fr", "de", "it", "ar", "ko", "he", "v1"}
 SKIP_FILES = {"package-lock.json"}
 SKIP_SUFFIXES = {
     ".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".ico", ".icns",

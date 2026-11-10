@@ -1,0 +1,46 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "az-500",
+  "acronym": "AZ-500",
+  "name": "Microsoft Azure Security Engineer",
+  "vendor": "Microsoft",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/az-500.html",
+  "api": "https://certmap.dev/api/v1/certs/az-500.json",
+  "description": "Retired on August 31, 2026 and succeeded by the Cloud and AI Security Engineer Associate (SC-500). Covered security controls, identity, network and data protection in Azure.",
+  "tags": [
+   "cloud",
+   "azure"
+  ],
+  "currency_note": "Retired August 31, 2026; replaced by SC-500 (165 USD)",
+  "price_verified_at": null,
+  "duration_min": 150,
+  "exam_count": 1,
+  "validity_years": 1,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://learn.microsoft.com/credentials/certifications/azure-security-engineer/",
+  "comparisons": [
+   {
+    "with": "sc-200",
+    "page": "https://certmap.dev/certs/compare-az-500-vs-sc-200.html"
+   },
+   {
+    "with": "sc-500",
+    "page": "https://certmap.dev/certs/compare-az-500-vs-sc-500.html"
+   }
+  ],
+  "study_plan": null
+ }
+}

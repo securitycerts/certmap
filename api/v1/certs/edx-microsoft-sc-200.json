@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "edx-microsoft-sc-200",
+  "acronym": "MS SC-200 edX",
+  "name": "Microsoft SC-200 Security Operations Analyst Professional Certificate",
+  "vendor": "edX",
+  "issuer": "Microsoft",
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 216,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/edx-microsoft-sc-200.html",
+  "api": "https://certmap.dev/api/v1/certs/edx-microsoft-sc-200.json",
+  "description": "Three Microsoft courses aligned to SC-200 covering threat mitigation with Microsoft Defender, SIEM and SOAR with Microsoft Sentinel, and data protection with Microsoft Purview. Course-based certificate; the proctored SC-200 exam is separate.",
+  "tags": [
+   "microsoft",
+   "sentinel",
+   "defender",
+   "sc-200-prep",
+   "soc",
+   "course-based",
+   "edx"
+  ],
+  "currency_note": "Program bundle price $216 shown on the edX page (list $240 for the courses bought separately); one-off payment, not a subscription.",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.edx.org/certificates/professional-certificate/microsoft-sc-200-security-operations-analyst",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

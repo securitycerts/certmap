@@ -1,0 +1,165 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "net-plus",
+  "acronym": "Network+",
+  "name": "CompTIA Network+",
+  "vendor": "CompTIA",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "beginner",
+  "price_usd": 399,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/net-plus.html",
+  "api": "https://certmap.dev/api/v1/certs/net-plus.json",
+  "description": "Foundational networking certification covering protocols, topologies and basic security.",
+  "tags": [
+   "networking",
+   "foundational"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.comptia.org/certifications/network",
+  "comparisons": [
+   {
+    "with": "ccna",
+    "page": "https://certmap.dev/certs/compare-net-plus-vs-ccna.html"
+   },
+   {
+    "with": "sec-plus",
+    "page": "https://certmap.dev/certs/compare-net-plus-vs-sec-plus.html"
+   },
+   {
+    "with": "a-plus",
+    "page": "https://certmap.dev/certs/compare-a-plus-vs-net-plus.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-net-plus.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Network+ Certification",
+       "provider": "CompTIA",
+       "url": "https://www.comptia.org/en-us/certifications/network/",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "CompTIA Network+ N10-009 Training Course",
+       "provider": "Professor Messer",
+       "url": "https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 3,
+       "type": "book",
+       "title": "CompTIA Network+ Study Guide: Exam N10-009, 6th Edition",
+       "provider": "Sybex (Wiley)",
+       "url": "https://www.wiley.com/en-us/-p-9781394235605",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "What is Networking?",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/whatisnetworking",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Intro to LAN",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/introtolan",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "Networking Concepts",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/networkingconcepts",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "DNS in Detail",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/dnsindetail",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "Introduction to Networking",
+       "provider": "Hack The Box",
+       "url": "https://academy.hackthebox.com/course/preview/introduction-to-networking",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 9,
+       "type": "practice",
+       "title": "Network+ (V9) Practice Questions",
+       "provider": "CompTIA",
+       "url": "https://www.comptia.org/en-us/certifications/network/practice-questions/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 10,
+       "type": "practice",
+       "title": "Subnetting Questions",
+       "provider": "subnettingpractice.com",
+       "url": "https://subnettingpractice.com/",
+       "free": true,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "apisec-casa",
+  "acronym": "CASA",
+  "name": "Certified API Security Analyst",
+  "vendor": "APIsec University",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "beginner",
+  "price_usd": 125,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/apisec-casa.html",
+  "api": "https://certmap.dev/api/v1/certs/apisec-casa.json",
+  "description": "Exam of 100 multiple-choice questions in two hours on API security and the OWASP API Security Top 10, with an 80% pass mark.",
+  "tags": [
+   "api-security",
+   "owasp",
+   "appsec"
+  ],
+  "currency_note": "Retakes $75",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://au.apisec.ai/certifications",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

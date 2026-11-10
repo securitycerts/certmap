@@ -1,0 +1,71 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "crtl",
+  "acronym": "CRTL",
+  "name": "Certified Red Team Lead",
+  "vendor": "Zero-Point Security",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "expert",
+  "price_usd": 603,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/crtl.html",
+  "api": "https://certmap.dev/api/v1/certs/crtl.json",
+  "description": "Awarded for passing the Red Team Lead exam of the Red Team Ops II course, which covers operating against modern defences such as EDR, application control and Credential Guard. The certification does not expire.",
+  "tags": [
+   "red-team",
+   "evasion",
+   "c2"
+  ],
+  "currency_note": "GBP 449 for the Red Team Ops II course, exam attempts included; USD converted at 1.3423 on 2026-11-10",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.zeropointsecurity.co.uk/course/red-team-ops-ii",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-crtl.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Cobalt Strike User Guide",
+       "provider": "Fortra",
+       "url": "https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/welcome_main.htm",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "Red Team Ops II",
+       "provider": "Zero-Point Security",
+       "url": "https://www.zeropointsecurity.co.uk/course/red-team-ops-ii",
+       "free": false,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

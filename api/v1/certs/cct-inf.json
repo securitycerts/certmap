@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cct-inf",
+  "acronym": "CCT INF",
+  "name": "CREST Certified Tester - Infrastructure",
+  "vendor": "CREST",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "expert",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cct-inf.html",
+  "api": "https://certmap.dev/api/v1/certs/cct-inf.json",
+  "description": "Advanced certification with a three-hour written exam and a three-hour practical exam on network and operating system level testing. Accepted by the UK NCSC CHECK scheme.",
+  "tags": [
+   "red-team",
+   "crest",
+   "hands-on"
+  ],
+  "currency_note": "Certified-level exams are listed at GBP 1,600 in two separately booked parts (written and practical); the page does not say whether the price covers both parts",
+  "price_verified_at": null,
+  "duration_min": 360,
+  "exam_count": 2,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.crest-approved.org/certification-careers/crest-certifications/crest-certified-infrastructure-tester/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

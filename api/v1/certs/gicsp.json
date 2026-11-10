@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gicsp",
+  "acronym": "GICSP",
+  "name": "GIAC Global Industrial Cyber Security Professional",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "ICS/IoT",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gicsp.html",
+  "api": "https://certmap.dev/api/v1/certs/gicsp.json",
+  "description": "Industrial control systems security certification.",
+  "tags": [
+   "ics",
+   "ot"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/global-industrial-cyber-security-professional-gicsp/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

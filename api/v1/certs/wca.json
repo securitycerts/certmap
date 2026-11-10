@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "wca",
+  "acronym": "WCA-101",
+  "name": "Wireshark Certified Analyst",
+  "vendor": "Wireshark",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "intermediate",
+  "price_usd": 349,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/wca.html",
+  "api": "https://certmap.dev/api/v1/certs/wca.json",
+  "description": "Official packet analysis certification from the Wireshark Foundation. The WCA-101 exam has 50 to 60 questions and is delivered through Kryterion.",
+  "tags": [
+   "networking",
+   "packet-analysis"
+  ],
+  "currency_note": "Per exam attempt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.wireshark.org/certifications",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

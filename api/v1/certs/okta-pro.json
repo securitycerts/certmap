@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "okta-pro",
+  "acronym": "Okta Pro",
+  "name": "Okta Certified Professional",
+  "vendor": "Okta",
+  "issuer": null,
+  "domain": "IAM",
+  "level": "beginner",
+  "price_usd": 250,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/okta-pro.html",
+  "api": "https://certmap.dev/api/v1/certs/okta-pro.json",
+  "description": "Okta identity platform professional certification.",
+  "tags": [
+   "iam",
+   "identity"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "okta-admin"
+  ],
+  "official_url": "https://www.okta.com/services/certification/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

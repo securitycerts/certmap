@@ -1,0 +1,46 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "chainalysis-daf",
+  "acronym": "DAF",
+  "name": "Chainalysis Digital Asset Fundamentals",
+  "vendor": "Chainalysis",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "beginner",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/chainalysis-daf.html",
+  "api": "https://certmap.dev/api/v1/certs/chainalysis-daf.json",
+  "description": "Core blockchain concepts, digital asset mechanics and the UTXO and account-based models. Required before every other Chainalysis certification.",
+  "tags": [
+   "blockchain",
+   "crypto-investigation",
+   "foundational",
+   "vendor"
+  ],
+  "currency_note": "Foundational modules are open to anyone without a licence; the full pathway is included with a Chainalysis licence",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "chainalysis-cci",
+   "chainalysis-ccai",
+   "chainalysis-elite",
+   "chainalysis-cca",
+   "chainalysis-ccs",
+   "chainalysis-asc"
+  ],
+  "official_url": "https://www.chainalysis.com/digital-asset-fundamentals/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

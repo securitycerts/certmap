@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "crage",
+  "acronym": "CRAGE",
+  "name": "Certified Responsible AI Governance & Ethics",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": 450,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/crage.html",
+  "api": "https://certmap.dev/api/v1/certs/crage.json",
+  "description": "AI governance certification covering responsible AI, risk analysis and ethics. Exam duration and format are not published on the program page.",
+  "tags": [
+   "ai",
+   "governance"
+  ],
+  "currency_note": "Remote-proctored exam voucher",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/ai-courses/certified-responsible-ai-governance-ethics-crage/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

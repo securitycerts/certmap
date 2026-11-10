@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cert-f",
+  "acronym": "CERT-F",
+  "name": "Certified Evidence Repair Technician - Forensic",
+  "vendor": "Cellebrite",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "expert",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cert-f.html",
+  "api": "https://certmap.dev/api/v1/certs/cert-f.json",
+  "description": "Mobile device repair for forensic extraction, covering disassembly, micro-soldering and replacement of ports, screens and buttons. The course page states the credential is earned by passing a practical competency exam at the end of the 5-day in-person course.",
+  "tags": [
+   "forensics",
+   "mobile",
+   "hardware",
+   "repair"
+  ],
+  "currency_note": "Price on request (no public price); exam taken at the end of the 5-day in-person course; optional training kit costs extra",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cellebrite.com/training/cellebrite-evidence-repair-technician-forensic/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

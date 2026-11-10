@@ -1,0 +1,43 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccnp-cyber",
+  "acronym": "CCNP Cybersecurity",
+  "name": "CCNP Cybersecurity",
+  "vendor": "Cisco",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "advanced",
+  "price_usd": 400,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ccnp-cyber.html",
+  "api": "https://certmap.dev/api/v1/certs/ccnp-cyber.json",
+  "description": "Professional-level security operations certification requiring the 350-201 CBRCOR core exam and one concentration exam (300-215 CBRFIR forensics and incident response, or 300-220 CBRTHD threat hunting).",
+  "tags": [
+   "blue-team",
+   "soc",
+   "cisco"
+  ],
+  "currency_note": "Core exam; plus $300 concentration exam",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 2,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/cybersecurity/ccnp-cybersecurity/index.html",
+  "comparisons": [
+   {
+    "with": "ccnp-sec",
+    "page": "https://certmap.dev/certs/compare-ccnp-cyber-vs-ccnp-sec.html"
+   }
+  ],
+  "study_plan": null
+ }
+}

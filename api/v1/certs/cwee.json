@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cwee",
+  "acronym": "CWEE",
+  "name": "HTB Certified Web Exploitation Expert",
+  "vendor": "Hack The Box",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "expert",
+  "price_usd": 350,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cwee.html",
+  "api": "https://certmap.dev/api/v1/certs/cwee.json",
+  "description": "Hands-on advanced web exploitation certification.",
+  "tags": [
+   "appsec",
+   "web",
+   "hands-on"
+  ],
+  "currency_note": "Exam voucher only, two attempts; job-role path access sold separately",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 14400,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-expert",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

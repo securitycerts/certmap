@@ -1,0 +1,139 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "crtp",
+  "acronym": "CRTP",
+  "name": "Certified Red Team Professional",
+  "vendor": "Altered Security",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "intermediate",
+  "price_usd": 249,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/crtp.html",
+  "api": "https://certmap.dev/api/v1/certs/crtp.json",
+  "description": "Hands-on entry-level Active Directory red team certification.",
+  "tags": [
+   "red-team",
+   "active-directory",
+   "hands-on"
+  ],
+  "currency_note": "30-day lab access with one exam attempt; extra attempts $99",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": 0,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.alteredsecurity.com/adlab",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-crtp.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Blog",
+       "provider": "Altered Security",
+       "url": "https://www.alteredsecurity.com/blogs",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "Attacking & Defending Active Directory: Beginner's Edition (CRTP)",
+       "provider": "Altered Security",
+       "url": "https://www.alteredsecurity.com/crtp-bootcamp",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 3,
+       "type": "lab",
+       "title": "Attacking and Defending Active Directory Lab (CRTP)",
+       "provider": "Altered Security",
+       "url": "https://www.alteredsecurity.com/adlab",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 4,
+       "type": "repo",
+       "title": "GOAD (Game of Active Directory)",
+       "provider": "Orange-Cyberdefense",
+       "url": "https://github.com/Orange-Cyberdefense/GOAD",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "repo",
+       "title": "PowerSploit",
+       "provider": "PowerShellMafia",
+       "url": "https://github.com/PowerShellMafia/PowerSploit",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "BloodHound",
+       "provider": "SpecterOps",
+       "url": "https://github.com/SpecterOps/BloodHound",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "Active Directory Basics",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/winadbasics",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "Enumerating Active Directory",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/adenumeration",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "lab",
+       "title": "Exploiting Active Directory",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/exploitingad",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

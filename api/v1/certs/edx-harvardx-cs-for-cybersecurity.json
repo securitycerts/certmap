@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "edx-harvardx-cs-for-cybersecurity",
+  "acronym": "CS50 Cyber Cert",
+  "name": "HarvardX Computer Science for Cybersecurity Professional Certificate",
+  "vendor": "edX",
+  "issuer": "Harvard",
+  "domain": "Security & Risk Management",
+  "level": "beginner",
+  "price_usd": 601,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/edx-harvardx-cs-for-cybersecurity.html",
+  "api": "https://certmap.dev/api/v1/certs/edx-harvardx-cs-for-cybersecurity.json",
+  "description": "Two-course Harvard program combining CS50's Introduction to Computer Science with CS50's Introduction to Cybersecurity. Course-based certificate assessed through course assignments, with no proctored exam.",
+  "tags": [
+   "harvard",
+   "harvardx",
+   "cs50",
+   "university",
+   "foundational",
+   "course-based",
+   "edx"
+  ],
+  "currency_note": "Program bundle price $601.20 shown on the edX page (list $668 for the courses bought separately); one-off payment, not a subscription.",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.edx.org/certificates/professional-certificate/harvardx-computer-science-for-cybersecurity",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

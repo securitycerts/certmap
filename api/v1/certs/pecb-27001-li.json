@@ -1,0 +1,43 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pecb-27001-li",
+  "acronym": "ISO 27001 LI",
+  "name": "PECB Certified ISO/IEC 27001 Lead Implementer",
+  "vendor": "PECB",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pecb-27001-li.html",
+  "api": "https://certmap.dev/api/v1/certs/pecb-27001-li.json",
+  "description": "Certification for professionals who establish, implement and maintain an information security management system based on ISO/IEC 27001. Valid for three years with maintenance fees.",
+  "tags": [
+   "iso-27001",
+   "isms",
+   "grc"
+  ],
+  "currency_note": "Exam and certification fees are included in the price of the PECB training course; no standalone list price published",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001/iso-iec-27001-lead-implementer",
+  "comparisons": [
+   {
+    "with": "pecb-27001-la",
+    "page": "https://certmap.dev/certs/compare-pecb-27001-la-vs-pecb-27001-li.html"
+   }
+  ],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gcpn",
+  "acronym": "GCPN",
+  "name": "GIAC Cloud Penetration Tester",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gcpn.html",
+  "api": "https://certmap.dev/api/v1/certs/gcpn.json",
+  "description": "Covers cloud penetration testing fundamentals, AWS and Azure attacks, and cloud-native applications with containers and CI/CD pipelines. Exam has 75 questions in two hours.",
+  "tags": [
+   "cloud",
+   "red-team"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/cloud-penetration-tester-gcpn",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "coursera-infosec-cissp",
+  "acronym": "Infosec CISSP",
+  "name": "Infosec Certified Information Systems Security Professional (CISSP) Specialization",
+  "vendor": "Coursera",
+  "issuer": "Infosec",
+  "domain": "Security & Risk Management",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/coursera-infosec-cissp.html",
+  "api": "https://certmap.dev/api/v1/certs/coursera-infosec-cissp.json",
+  "description": "Eight-course Infosec specialization reviewing the CISSP domains, with end-of-course assessments and a final practice exam. Course-based exam-preparation certificate; the proctored ISC2 CISSP exam is separate.",
+  "tags": [
+   "infosec",
+   "cissp-prep",
+   "management",
+   "course-based",
+   "coursera"
+  ],
+  "currency_note": "Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.coursera.org/specializations/cissp",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

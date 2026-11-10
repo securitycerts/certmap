@@ -1,0 +1,154 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "osip",
+  "acronym": "OSIP",
+  "name": "Open Source Intelligence Professional",
+  "vendor": "IntelTechniques",
+  "issuer": null,
+  "domain": "OSINT",
+  "level": "advanced",
+  "price_usd": 300,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/osip.html",
+  "api": "https://certmap.dev/api/v1/certs/osip.json",
+  "description": "Practical certification in which the candidate receives a simulated client request and has 10 days to deliver an investigation case file, graded pass or fail against a professional standard. It does not expire.",
+  "tags": [
+   "osint",
+   "hands-on",
+   "investigation",
+   "report"
+  ],
+  "currency_note": "One-time assessment fee; requires an active IntelTechniques online video training membership ($699 per year) or a live course within one year; training plus certification bundle $999",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 14400,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://inteltechniques.com/training-osip.html",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-osip.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Open Source Intelligence Professional (OSIP)",
+       "provider": "IntelTechniques",
+       "url": "https://inteltechniques.com/training-osip.html",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "OSINT Training",
+       "provider": "IntelTechniques",
+       "url": "https://inteltechniques.com/training.html",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "book",
+       "title": "OSINT Techniques, 11th Edition",
+       "provider": "IntelTechniques",
+       "url": "https://inteltechniques.com/book1.html",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Google Dorking",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/googledorking",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Shodan.io",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/shodan",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "Trace Labs OSINT VM",
+       "provider": "Trace Labs",
+       "url": "https://github.com/tracelabs/tlosint-vm",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "repo",
+       "title": "Awesome OSINT",
+       "provider": "jivoi",
+       "url": "https://github.com/jivoi/awesome-osint",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "OSINT: Corporate Recon",
+       "provider": "Hack The Box",
+       "url": "https://academy.hackthebox.com/course/preview/osint-corporate-recon",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 9,
+       "type": "practice",
+       "title": "IntelTechniques Search Tools",
+       "provider": "IntelTechniques",
+       "url": "https://inteltechniques.com/tools/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 10,
+       "type": "practice",
+       "title": "List of OSINT Exercises",
+       "provider": "Sofia Santos (Gralhix)",
+       "url": "https://gralhix.com/list-of-osint-exercises/",
+       "free": true,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

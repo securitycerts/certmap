@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "sailpoint-eng",
+  "acronym": "SP-IIQ",
+  "name": "SailPoint Certified IdentityIQ Engineer",
+  "vendor": "SailPoint",
+  "issuer": null,
+  "domain": "IAM",
+  "level": "intermediate",
+  "price_usd": 400,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/sailpoint-eng.html",
+  "api": "https://certmap.dev/api/v1/certs/sailpoint-eng.json",
+  "description": "SailPoint IdentityIQ engineering certification.",
+  "tags": [
+   "iam",
+   "identity"
+  ],
+  "currency_note": null,
+  "price_verified_at": null,
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.sailpoint.com/services/training/certification/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

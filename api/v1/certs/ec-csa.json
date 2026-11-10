@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ec-csa",
+  "acronym": "CSA",
+  "name": "EC-Council Certified SOC Analyst",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 450,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ec-csa.html",
+  "api": "https://certmap.dev/api/v1/certs/ec-csa.json",
+  "description": "SOC analyst certification covering monitoring, detection and triage.",
+  "tags": [
+   "blue-team",
+   "soc"
+  ],
+  "currency_note": "Remote-proctored exam voucher (CSA v2)",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/programs/certified-soc-analyst-csa/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

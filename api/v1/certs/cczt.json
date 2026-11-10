@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cczt",
+  "acronym": "CCZT",
+  "name": "Certificate of Competence in Zero Trust",
+  "vendor": "CSA",
+  "issuer": null,
+  "domain": "Security Architecture & Engineering",
+  "level": "intermediate",
+  "price_usd": 175,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cczt.html",
+  "api": "https://certmap.dev/api/v1/certs/cczt.json",
+  "description": "Zero trust architecture and implementation certificate.",
+  "tags": [
+   "zero-trust",
+   "architecture"
+  ],
+  "currency_note": "Exam token includes two attempts, two-year window",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cloudsecurityalliance.org/education/cczt",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

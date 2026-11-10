@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "sc-401",
+  "acronym": "SC-401",
+  "name": "Microsoft Information Security Administrator",
+  "vendor": "Microsoft",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": 165,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/sc-401.html",
+  "api": "https://certmap.dev/api/v1/certs/sc-401.json",
+  "description": "Microsoft information security administrator certification (exam SC-401, replacing the retired SC-400); covers information protection, DLP, retention and insider risk with Microsoft Purview.",
+  "tags": [
+   "grc",
+   "data-protection"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 100,
+  "exam_count": 1,
+  "validity_years": 1,
+  "renewal_cost": 0,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://learn.microsoft.com/credentials/certifications/information-security-administrator/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

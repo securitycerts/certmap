@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "edx-taux-unlocking-information-security",
+  "acronym": "TAUx InfoSec",
+  "name": "Tel Aviv University Unlocking Information Security Professional Certificate",
+  "vendor": "edX",
+  "issuer": "Tel Aviv University",
+  "domain": "Security Architecture & Engineering",
+  "level": "intermediate",
+  "price_usd": 268,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/edx-taux-unlocking-information-security.html",
+  "api": "https://certmap.dev/api/v1/certs/edx-taux-unlocking-information-security.json",
+  "description": "Two Tel Aviv University courses covering vulnerabilities and exploits, cryptography, buffer overflows, and network and web offense and defense. Course-based certificate with no proctored exam.",
+  "tags": [
+   "tel-aviv-university",
+   "taux",
+   "university",
+   "cryptography",
+   "exploits",
+   "course-based",
+   "edx"
+  ],
+  "currency_note": "Program bundle price $268.19 shown on the edX page (list $297.99 for the courses bought separately); one-off payment, not a subscription.",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.edx.org/certificates/professional-certificate/taux-unlocking-information-security",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

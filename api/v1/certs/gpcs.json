@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gpcs",
+  "acronym": "GPCS",
+  "name": "GIAC Public Cloud Security",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "intermediate",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gpcs.html",
+  "api": "https://certmap.dev/api/v1/certs/gpcs.json",
+  "description": "Multi-cloud security certification covering AWS, Azure and GCP.",
+  "tags": [
+   "cloud"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/public-cloud-security-gpcs/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

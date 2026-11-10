@@ -1,0 +1,268 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "crtia",
+  "acronym": "CRTIA",
+  "name": "CREST Registered Threat Intelligence Analyst",
+  "vendor": "CREST",
+  "issuer": null,
+  "domain": "Cyber Threat Intelligence",
+  "level": "advanced",
+  "price_usd": 805,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/crtia.html",
+  "api": "https://certmap.dev/api/v1/certs/crtia.json",
+  "description": "CREST-accredited threat intelligence analyst certification.",
+  "tags": [
+   "cti",
+   "crest"
+  ],
+  "currency_note": "GBP 600 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.crest-approved.org/certifications/crest-registered-threat-intelligence-analyst/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-crtia.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CREST Registered Threat Intelligence Analyst (CRTIA) examination page",
+       "provider": "CREST",
+       "url": "https://www.crest-approved.org/certification-careers/crest-certifications/crest-registered-threat-intelligence-analyst/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "CRTIA Syllabus",
+       "provider": "CREST",
+       "url": "https://www.crest-approved.org/wp-content/uploads/2022/06/CREST-Registered-Threat-Intelligence-Analyst-Syllabus.pdf",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "guide",
+       "title": "CRTIA Examination Notes for Candidates",
+       "provider": "CREST",
+       "url": "https://www.crest-approved.org/wp-content/uploads/2022/06/CREST-Registered-Threat-Intelligence-Analyst-Examination-Notes-for-Candidates.pdf",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 4,
+       "type": "reading",
+       "title": "Tools and Standards for Cyber Threat Intelligence Projects (2013)",
+       "provider": "Greg Farnham, SANS Institute",
+       "url": "https://www.sans.org/white-papers/34375/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "reading",
+       "title": "Automated Defense: Using Threat Intelligence to Augment Security (2015)",
+       "provider": "Paul Poputa-Clean, SANS Institute",
+       "url": "https://www.sans.org/white-papers/35692/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "reading",
+       "title": "Technology Overview for Machine-Readable Threat Intelligence (2014)",
+       "provider": "Rob McMillan and Craig Lawson, Gartner",
+       "url": "https://www.gartner.com/en/documents/2647115",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "reading",
+       "title": "National Cyber Security Strategy 2016 to 2021",
+       "provider": "Cabinet Office, HM Government",
+       "url": "https://www.gov.uk/government/publications/national-cyber-security-strategy-2016-to-2021",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "reading",
+       "title": "National Cyber Strategy 2022 (supersedes 2016-21)",
+       "provider": "Cabinet Office, HM Government",
+       "url": "https://www.gov.uk/government/publications/national-cyber-strategy-2022",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "reading",
+       "title": "ENISA Threat Landscape Report 2018",
+       "provider": "ENISA",
+       "url": "https://www.enisa.europa.eu/publications/enisa-threat-landscape-report-2018",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 10,
+       "type": "book",
+       "title": "Psychology of Intelligence Analysis (1999)",
+       "provider": "Richards J. Heuer Jr., Center for the Study of Intelligence, CIA",
+       "url": "https://www.cia.gov/resources/csi/books-monographs/psychology-of-intelligence-analysis-2/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 11,
+       "type": "reading",
+       "title": "Cyber threat intelligence and the lessons from law enforcement (2013)",
+       "provider": "KPMG",
+       "url": "https://assets.kpmg.com/content/dam/kpmg/pdf/2013/02/cyber-threat-intelligence-final3.pdf",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 12,
+       "type": "reading",
+       "title": "Five Steps To Build An Effective Threat Intelligence Capability (2013)",
+       "provider": "Rick Holland, Forrester",
+       "url": "https://www.forrester.com/report/five-steps-to-build-an-effective-threat-intelligence-capability/RES83841",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 13,
+       "type": "reading",
+       "title": "MITRE ATT&CK Resources",
+       "provider": "MITRE",
+       "url": "https://attack.mitre.org/resources/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 14,
+       "type": "reading",
+       "title": "The Diamond Model of Intrusion Analysis (2013)",
+       "provider": "Sergio Caltagirone, Andrew Pendergast, Christopher Betz",
+       "url": "https://www.activeresponse.org/wp-content/uploads/2013/07/diamond.pdf",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 15,
+       "type": "book",
+       "title": "OSINT Techniques: Resources for Uncovering Online Information, 11th Edition (2024, current edition of Open Source Intelligence Techniques)",
+       "provider": "Michael Bazzell, IntelTechniques",
+       "url": "https://inteltechniques.com/book1.html",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 16,
+       "type": "reading",
+       "title": "Critical Thinking and Intelligence Analysis, Occasional Paper Number Fourteen (2007)",
+       "provider": "David T. Moore, National Defense Intelligence College",
+       "url": "https://apps.dtic.mil/sti/pdfs/ADA481702.pdf",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 17,
+       "type": "reading",
+       "title": "The Accuracy of Intelligence Assessment: Bias, Perception, and Judgment in Analysis and Decision (1993)",
+       "provider": "Alexander P. Butterfield Jr., US Naval War College",
+       "url": "https://apps.dtic.mil/sti/tr/pdf/ADA266925.pdf",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 18,
+       "type": "reading",
+       "title": "Intelligence Preparation of the Cyber Environment, SANS CTI Summit 2018",
+       "provider": "Rob Dartnall, SANS Digital Forensics and Incident Response",
+       "url": "https://www.youtube.com/watch?v=3bXr-CF9NBI",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 19,
+       "type": "reading",
+       "title": "Conventional Intelligence Analysis in Cyber Threat Intelligence, SANS CTI Summit 2017",
+       "provider": "Rob Dartnall, SANS Digital Forensics and Incident Response",
+       "url": "https://www.youtube.com/watch?v=jzHw8lkocXA",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 20,
+       "type": "reading",
+       "title": "What is Cyber Threat Intelligence and how is it used? (2019)",
+       "provider": "CREST (CTIPs)",
+       "url": "https://www.crest-approved.org/wp-content/uploads/2022/04/CREST-Cyber-Threat-Intelligence.pdf",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 21,
+       "type": "reading",
+       "title": "CBEST Threat Intelligence-Led Assessments, Implementation Guide (2024 edition)",
+       "provider": "Bank of England",
+       "url": "https://www.bankofengland.co.uk/financial-stability/operational-resilience-of-the-financial-sector/cbest-threat-intelligence-led-assessments-implementation-guide",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 22,
+       "type": "reading",
+       "title": "What is TIBER-EU? (framework home page)",
+       "provider": "European Central Bank",
+       "url": "https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 23,
+       "type": "reading",
+       "title": "ENISA Threat Landscape (2026 edition)",
+       "provider": "ENISA",
+       "url": "https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 24,
+       "type": "book",
+       "title": "Definitive Guide to Cyber Threat Intelligence (2015)",
+       "provider": "Jon Friedman and Mark Bouchard, CyberEdge Group",
+       "url": "https://cyberedgegroup.com/resources/definitive-guide-to-cyber-threat-intelligence/",
+       "free": true,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

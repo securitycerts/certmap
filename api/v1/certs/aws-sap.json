@@ -1,0 +1,44 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "aws-sap",
+  "acronym": "SAP-C03",
+  "name": "AWS Solutions Architect Professional",
+  "vendor": "AWS",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "expert",
+  "price_usd": 300,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/aws-sap.html",
+  "api": "https://certmap.dev/api/v1/certs/aws-sap.json",
+  "description": "Advanced AWS architecture and design certification.",
+  "tags": [
+   "cloud",
+   "aws"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "aws-saa"
+  ],
+  "leads_to": [],
+  "official_url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+  "comparisons": [
+   {
+    "with": "aws-saa",
+    "page": "https://certmap.dev/certs/compare-aws-saa-vs-aws-sap.html"
+   }
+  ],
+  "study_plan": null
+ }
+}

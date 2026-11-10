@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cnd",
+  "acronym": "CND",
+  "name": "EC-Council Certified Network Defender",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "intermediate",
+  "price_usd": 550,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cnd.html",
+  "api": "https://certmap.dev/api/v1/certs/cnd.json",
+  "description": "Network defence and security operations certification.",
+  "tags": [
+   "networking",
+   "blue-team"
+  ],
+  "currency_note": "Remote-proctored exam voucher",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/programs/certified-network-defender-cnd/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

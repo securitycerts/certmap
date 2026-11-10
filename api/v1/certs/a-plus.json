@@ -1,0 +1,119 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "a-plus",
+  "acronym": "A+",
+  "name": "CompTIA A+",
+  "vendor": "CompTIA",
+  "issuer": null,
+  "domain": "Asset Security",
+  "level": "beginner",
+  "price_usd": 274,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/a-plus.html",
+  "api": "https://certmap.dev/api/v1/certs/a-plus.json",
+  "description": "Entry-level IT support certification covering hardware and operating systems.",
+  "tags": [
+   "foundational",
+   "help-desk"
+  ],
+  "currency_note": "Per exam (2 required)",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 2,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.comptia.org/certifications/a",
+  "comparisons": [
+   {
+    "with": "ccna",
+    "page": "https://certmap.dev/certs/compare-a-plus-vs-ccna.html"
+   },
+   {
+    "with": "net-plus",
+    "page": "https://certmap.dev/certs/compare-a-plus-vs-net-plus.html"
+   },
+   {
+    "with": "sec-plus",
+    "page": "https://certmap.dev/certs/compare-a-plus-vs-sec-plus.html"
+   },
+   {
+    "with": "itf-plus",
+    "page": "https://certmap.dev/certs/compare-a-plus-vs-itf-plus.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-a-plus.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "A+ Core 1 and 2 Certification V15",
+       "provider": "CompTIA",
+       "url": "https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "CompTIA A+ 220-1201 Training Course",
+       "provider": "Professor Messer",
+       "url": "https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 3,
+       "type": "course",
+       "title": "CompTIA A+ 220-1202 Training Course",
+       "provider": "Professor Messer",
+       "url": "https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 4,
+       "type": "practice",
+       "title": "A+ Core 1 (V15) Practice Questions",
+       "provider": "CompTIA",
+       "url": "https://www.comptia.org/en-us/certifications/a/core-1-v15/practice-questions/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 5,
+       "type": "practice",
+       "title": "A+ Core 2 (V15) Practice Questions",
+       "provider": "CompTIA",
+       "url": "https://www.comptia.org/en-us/certifications/a/core-2-v15/practice-questions/",
+       "free": true,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

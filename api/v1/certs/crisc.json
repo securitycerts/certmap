@@ -1,0 +1,110 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "crisc",
+  "acronym": "CRISC",
+  "name": "Certified in Risk and Information Systems Control",
+  "vendor": "ISACA",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "expert",
+  "price_usd": 575,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/crisc.html",
+  "api": "https://certmap.dev/api/v1/certs/crisc.json",
+  "description": "Enterprise risk management certification for risk and control professionals.",
+  "tags": [
+   "risk",
+   "grc"
+  ],
+  "currency_note": "Member rate; $760 non-member",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.isaca.org/credentialing/crisc",
+  "comparisons": [
+   {
+    "with": "cisa",
+    "page": "https://certmap.dev/certs/compare-cisa-vs-crisc.html"
+   },
+   {
+    "with": "cism",
+    "page": "https://certmap.dev/certs/compare-cism-vs-crisc.html"
+   },
+   {
+    "with": "cgrc",
+    "page": "https://certmap.dev/certs/compare-cgrc-vs-crisc.html"
+   },
+   {
+    "with": "cgeit",
+    "page": "https://certmap.dev/certs/compare-cgeit-vs-crisc.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-crisc.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CRISC Exam Content Outline",
+       "provider": "ISACA",
+       "url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "CRISC Online Review Course",
+       "provider": "ISACA",
+       "url": "https://www.isaca.org/store2/product/CRISC-ORC-C",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "book",
+       "title": "CRISC Review Manual",
+       "provider": "ISACA",
+       "url": "https://www.isaca.org/store2/product/CRISC-RM-C",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 4,
+       "type": "practice",
+       "title": "CRISC Questions, Answers & Explanations",
+       "provider": "ISACA",
+       "url": "https://www.isaca.org/store2/product/CRISC-QAE-C",
+       "free": false,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

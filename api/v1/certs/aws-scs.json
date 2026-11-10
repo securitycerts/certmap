@@ -1,0 +1,138 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "aws-scs",
+  "acronym": "SCS-C03",
+  "name": "AWS Certified Security Specialty",
+  "vendor": "AWS",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "advanced",
+  "price_usd": 300,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/aws-scs.html",
+  "api": "https://certmap.dev/api/v1/certs/aws-scs.json",
+  "description": "AWS security specialty certification (exam SCS-C03) covering threat detection, IAM, data protection and incident response.",
+  "tags": [
+   "cloud",
+   "aws"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 170,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://aws.amazon.com/certification/certified-security-specialty/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-aws-scs.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "AWS Certified Security - Specialty (SCS-C03) Exam Guide",
+       "provider": "AWS",
+       "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "AWS Certified Security - Specialty (SCS-C03) study roadmap",
+       "provider": "Tutorials Dojo",
+       "url": "https://tutorialsdojo.com/cert_roadmap/aws-certified-security-specialty-scs-c03/",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Exam Prep: AWS Certified Security - Specialty (SCS-C03)",
+       "provider": "AWS Skill Builder",
+       "url": "https://skillbuilder.aws/category/exam-prep/security-specialty-SCS-C03",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Amazon GuardDuty & Amazon Detective Workshop",
+       "provider": "AWS",
+       "url": "https://catalog.workshops.aws/security",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 5,
+       "type": "repo",
+       "title": "CloudGoat",
+       "provider": "Rhino Security Labs",
+       "url": "https://github.com/RhinoSecurityLabs/cloudgoat",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "IAM Vulnerable",
+       "provider": "Bishop Fox",
+       "url": "https://github.com/BishopFox/iam-vulnerable",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "repo",
+       "title": "CloudFoxable",
+       "provider": "Bishop Fox",
+       "url": "https://github.com/BishopFox/cloudfoxable",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "repo",
+       "title": "Prowler",
+       "provider": "Prowler",
+       "url": "https://github.com/prowler-cloud/prowler",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "repo",
+       "title": "Stratus Red Team",
+       "provider": "Datadog",
+       "url": "https://github.com/DataDog/stratus-red-team",
+       "free": true,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

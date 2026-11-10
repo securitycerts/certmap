@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "oscc-sjd",
+  "acronym": "OSCC-SJD",
+  "name": "OffSec CyberCore Certified: Secure Java Essentials",
+  "vendor": "OffSec",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "beginner",
+  "price_usd": 899,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/oscc-sjd.html",
+  "api": "https://certmap.dev/api/v1/certs/oscc-sjd.json",
+  "description": "Foundational defensive cybersecurity certification for junior SOC and IT roles.",
+  "tags": [
+   "foundational",
+   "appsec",
+   "java"
+  ],
+  "currency_note": "CyberCore bundle: one year of course access, labs and two exam attempts",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 360,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.offsec.com/courses/sjd-100/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

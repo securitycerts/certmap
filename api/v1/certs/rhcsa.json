@@ -1,0 +1,163 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "rhcsa",
+  "acronym": "RHCSA",
+  "name": "Red Hat Certified System Administrator",
+  "vendor": "Red Hat",
+  "issuer": null,
+  "domain": "*nix",
+  "level": "intermediate",
+  "price_usd": 500,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/rhcsa.html",
+  "api": "https://certmap.dev/api/v1/certs/rhcsa.json",
+  "description": "Hands-on Red Hat Enterprise Linux administration certification.",
+  "tags": [
+   "linux",
+   "hands-on"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-06-08",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "rhce"
+  ],
+  "official_url": "https://www.redhat.com/en/services/certification/rhcsa",
+  "comparisons": [
+   {
+    "with": "ccna",
+    "page": "https://certmap.dev/certs/compare-ccna-vs-rhcsa.html"
+   },
+   {
+    "with": "rhce",
+    "page": "https://certmap.dev/certs/compare-rhcsa-vs-rhce.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-rhcsa.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Red Hat Certified System Administrator (RHCSA) exam (EX200)",
+       "provider": "Red Hat",
+       "url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "Red Hat System Administration I (RH124)",
+       "provider": "Red Hat",
+       "url": "https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Red Hat System Administration II (RH134)",
+       "provider": "Red Hat",
+       "url": "https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 4,
+       "type": "course",
+       "title": "RHCSA Rapid Track course (RH199)",
+       "provider": "Red Hat",
+       "url": "https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 5,
+       "type": "course",
+       "title": "Red Hat Enterprise Linux Technical Overview (RH024)",
+       "provider": "Red Hat",
+       "url": "https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 6,
+       "type": "book",
+       "title": "Red Hat RHCSA 10 Cert Guide: EX200",
+       "provider": "Pearson IT Certification",
+       "url": "https://www.pearsonitcertification.com/store/red-hat-rhcsa-10-cert-guide-ex200-9780135576663",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "Red Hat Enterprise Linux interactive labs",
+       "provider": "Red Hat",
+       "url": "https://www.redhat.com/en/interactive-labs/enterprise-linux",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "Download Red Hat Enterprise Linux (Red Hat Developer)",
+       "provider": "Red Hat",
+       "url": "https://developers.redhat.com/products/rhel/download",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 9,
+       "type": "repo",
+       "title": "rhcsa8env",
+       "provider": "rdbreak",
+       "url": "https://github.com/rdbreak/rhcsa8env",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 10,
+       "type": "practice",
+       "title": "RHCSA practice questions",
+       "provider": "chlebik",
+       "url": "https://github.com/chlebik/rhcsa-practice-questions",
+       "free": true,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

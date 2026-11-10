@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pan-secops-pro",
+  "acronym": "SecOps Pro",
+  "name": "Palo Alto Networks Security Operations Professional",
+  "vendor": "Palo Alto Networks",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 200,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pan-secops-pro.html",
+  "api": "https://certmap.dev/api/v1/certs/pan-secops-pro.json",
+  "description": "Professional-level role-based certification in the Palo Alto Networks Security Operations track, the step before the XDR, XSIAM and XSOAR specialist certifications.",
+  "tags": [
+   "blue-team",
+   "soc"
+  ],
+  "currency_note": "Professional-level exam",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-professional",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

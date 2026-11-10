@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pcnse",
+  "acronym": "PCNSE",
+  "name": "Palo Alto Networks Certified Network Security Engineer",
+  "vendor": "Palo Alto Networks",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pcnse.html",
+  "api": "https://certmap.dev/api/v1/certs/pcnse.json",
+  "description": "Retired in July 2025 and succeeded by Palo Alto Networks role-based credentials (Next-Generation Firewall Engineer, Network Security Professional). Covered PAN-OS configuration, deployment and troubleshooting.",
+  "tags": [
+   "networking",
+   "firewall"
+  ],
+  "currency_note": "Retired July 2025; successor exams priced $200 to $250",
+  "price_verified_at": null,
+  "duration_min": 80,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.paloaltonetworks.com/services/education/certification",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

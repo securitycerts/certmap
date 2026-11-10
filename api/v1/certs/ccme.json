@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccme",
+  "acronym": "CCME",
+  "name": "Cellebrite Certified Mobile Examiner for Inseyets",
+  "vendor": "Cellebrite",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "expert",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ccme.html",
+  "api": "https://certmap.dev/api/v1/certs/ccme.json",
+  "description": "Capstone certification of the Cellebrite mobile forensics track, requiring active CCO and CCPA certifications and completion of the Cellebrite Advanced Smartphone Analysis (CASA) course. Candidates must score 80% or above on both a time-limited practical skills assessment of two device examinations and a proctored 75-question knowledge exam, within 45 days of enrollment.",
+  "tags": [
+   "forensics",
+   "mobile",
+   "inseyets",
+   "capstone"
+  ],
+  "currency_note": "Price on request (page says to log in to MyCellebrite for all costs); requires prior CCO, CCPA and the CASA course",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 2,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "ccfp",
+   "ccpa"
+  ],
+  "leads_to": [],
+  "official_url": "https://cellebrite.com/training/cellebrite-certified-mobile-examiner-ccme/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

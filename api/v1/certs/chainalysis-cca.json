@@ -1,0 +1,44 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "chainalysis-cca",
+  "acronym": "Compliance Analyst",
+  "name": "Chainalysis Certified Compliance Analyst",
+  "vendor": "Chainalysis",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/chainalysis-cca.html",
+  "api": "https://certmap.dev/api/v1/certs/chainalysis-cca.json",
+  "description": "Compliance-track credential covering AML/CTF, sanctions and digital asset risk frameworks for making defensible risk determinations.",
+  "tags": [
+   "blockchain",
+   "aml",
+   "compliance",
+   "sanctions",
+   "vendor"
+  ],
+  "currency_note": "No per-seat fee; certifications are included with a Chainalysis licence",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": "Chainalysis licence holders",
+  "prerequisites": [
+   "chainalysis-daf"
+  ],
+  "leads_to": [
+   "chainalysis-ccs"
+  ],
+  "official_url": "https://www.chainalysis.com/certified-compliance-analyst/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

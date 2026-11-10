@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cetp",
+  "acronym": "CETP",
+  "name": "Certified Evasion Techniques Professional",
+  "vendor": "Altered Security",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "advanced",
+  "price_usd": 449,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cetp.html",
+  "api": "https://certmap.dev/api/v1/certs/cetp.json",
+  "description": "Hands-on 48-hour exam on Windows internals and bypassing EDR products. Expires after three years with a free renewal exam.",
+  "tags": [
+   "red-team",
+   "evasion",
+   "hands-on"
+  ],
+  "currency_note": "30-day lab access with one exam attempt; extra attempts $99",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": 0,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.alteredsecurity.com/evasionlab",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccsp",
+  "acronym": "CCSP",
+  "name": "Certified Cloud Security Professional",
+  "vendor": "ISC2",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "expert",
+  "price_usd": 599,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ccsp.html",
+  "api": "https://certmap.dev/api/v1/certs/ccsp.json",
+  "description": "Cloud security architecture and operations certification; requires 5 years experience.",
+  "tags": [
+   "cloud",
+   "architecture"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.isc2.org/Certifications/CCSP",
+  "comparisons": [
+   {
+    "with": "cissp",
+    "page": "https://certmap.dev/certs/compare-ccsp-vs-cissp.html"
+   },
+   {
+    "with": "ccsk",
+    "page": "https://certmap.dev/certs/compare-ccsk-vs-ccsp.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-ccsp.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CCSP Certification Exam Outline",
+       "provider": "ISC2",
+       "url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "Self-Study Tools and Resources for the ISC2 CCSP Exam",
+       "provider": "ISC2",
+       "url": "https://www.isc2.org/certifications/ccsp/ccsp-self-study-resources",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "CCSP Online Self-Paced Certification Training",
+       "provider": "ISC2",
+       "url": "https://www.isc2.org/training/online-self-paced/ccsp-online-self-paced",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 4,
+       "type": "practice",
+       "title": "CCSP Flash Cards",
+       "provider": "ISC2",
+       "url": "https://cloud.connect.isc2.org/ccsp-flashcards",
+       "free": true,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

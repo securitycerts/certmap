@@ -1,0 +1,185 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cissp",
+  "acronym": "CISSP",
+  "name": "Certified Information Systems Security Professional",
+  "vendor": "ISC2",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "expert",
+  "price_usd": 749,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cissp.html",
+  "api": "https://certmap.dev/api/v1/certs/cissp.json",
+  "description": "Gold-standard cybersecurity certification covering 8 domains; requires 5 years experience.",
+  "tags": [
+   "management",
+   "senior"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "issap",
+   "issep",
+   "issmp"
+  ],
+  "official_url": "https://www.isc2.org/Certifications/CISSP",
+  "comparisons": [
+   {
+    "with": "cism",
+    "page": "https://certmap.dev/certs/compare-cism-vs-cissp.html"
+   },
+   {
+    "with": "sec-plus",
+    "page": "https://certmap.dev/certs/compare-sec-plus-vs-cissp.html"
+   },
+   {
+    "with": "ccsp",
+    "page": "https://certmap.dev/certs/compare-ccsp-vs-cissp.html"
+   },
+   {
+    "with": "casp-plus",
+    "page": "https://certmap.dev/certs/compare-casp-plus-vs-cissp.html"
+   },
+   {
+    "with": "csslp",
+    "page": "https://certmap.dev/certs/compare-cissp-vs-csslp.html"
+   },
+   {
+    "with": "cciso",
+    "page": "https://certmap.dev/certs/compare-cciso-vs-cissp.html"
+   },
+   {
+    "with": "cgrc",
+    "page": "https://certmap.dev/certs/compare-cgrc-vs-cissp.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-cissp.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CISSP Certification Exam Outline",
+       "provider": "ISC2",
+       "url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "CISSP MindMaps",
+       "provider": "Destination Certification",
+       "url": "https://destcert.com/cissp-mindmaps/",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "CISSP Online Self-Paced Certification Training",
+       "provider": "ISC2",
+       "url": "https://www.isc2.org/training/online-self-paced/cissp-online-self-paced",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 4,
+       "type": "book",
+       "title": "ISC2 CISSP Official Study Guide, 10th Edition",
+       "provider": "Sybex (Wiley)",
+       "url": "https://www.wiley.com/en-us/-p-9781394254699",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Governance & Regulation",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/cybergovernanceregulation",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "Secure Network Architecture",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/introtosecurityarchitecture",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "SDLC",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/sdlc",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "Security Engineer path",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/path/outline/security-engineer-training",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "lab",
+       "title": "Threat Modelling",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/threatmodelling",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 10,
+       "type": "practice",
+       "title": "CISSP Flash Cards",
+       "provider": "ISC2",
+       "url": "https://cloud.connect.isc2.org/cissp-flashcards",
+       "free": true,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

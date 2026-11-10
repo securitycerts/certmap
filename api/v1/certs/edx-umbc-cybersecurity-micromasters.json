@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "edx-umbc-cybersecurity-micromasters",
+  "acronym": "UMBC MicroMasters",
+  "name": "UMBC Principles of Cybersecurity MicroMasters Program",
+  "vendor": "edX",
+  "issuer": "UMBC",
+  "domain": "Security & Risk Management",
+  "level": "intermediate",
+  "price_usd": 672,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/edx-umbc-cybersecurity-micromasters.html",
+  "api": "https://certmap.dev/api/v1/certs/edx-umbc-cybersecurity-micromasters.json",
+  "description": "Three courses from the University of Maryland Baltimore County (USMx) covering identity and access management, cryptography, network attacks, mobile, IoT and cloud security, digital forensics and governance. Course-based MicroMasters credential with no single proctored exam.",
+  "tags": [
+   "umbc",
+   "usmx",
+   "university",
+   "micromasters",
+   "course-based",
+   "edx"
+  ],
+  "currency_note": "Program bundle price $672.30 shown on the edX page (list $747 for the courses bought separately); one-off payment, not a subscription.",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.edx.org/masters/micromasters/usmx-principles-of-cybersecurity",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cp-ccse",
+  "acronym": "CCSE",
+  "name": "Check Point Certified Security Expert",
+  "vendor": "Check Point",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "advanced",
+  "price_usd": 250,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cp-ccse.html",
+  "api": "https://certmap.dev/api/v1/certs/cp-ccse.json",
+  "description": "Advanced Check Point administration covering clustering, advanced VPN and performance tuning.",
+  "tags": [
+   "networking",
+   "firewall"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-06-08",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "ccsa"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.checkpoint.com/services/training/certification-program/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

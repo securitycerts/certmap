@@ -1,0 +1,138 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gcti",
+  "acronym": "GCTI",
+  "name": "GIAC Cyber Threat Intelligence",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Cyber Threat Intelligence",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gcti.html",
+  "api": "https://certmap.dev/api/v1/certs/gcti.json",
+  "description": "Cyber threat intelligence analysis certification.",
+  "tags": [
+   "cti",
+   "blue-team"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/cyber-threat-intelligence-gcti/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-gcti.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "GIAC Cyber Threat Intelligence (GCTI) exam objectives",
+       "provider": "GIAC",
+       "url": "https://www.giac.org/certifications/cyber-threat-intelligence-gcti",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "Cyber Threat Intelligence Consumption poster",
+       "provider": "SANS Institute",
+       "url": "https://www.sans.org/posters/cyber-threat-intelligence-consumption",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "FOR578: Cyber Threat Intelligence",
+       "provider": "SANS Institute",
+       "url": "https://www.sans.org/cyber-security-courses/cyber-threat-intelligence",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 4,
+       "type": "course",
+       "title": "CTI Training",
+       "provider": "MITRE ATT&CK",
+       "url": "https://attack.mitre.org/resources/learn-more-about-attack/training/cti/",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Intro to Cyber Threat Intel",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/cyberthreatintel",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "Threat Intelligence Tools",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/threatinteltools",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "Pyramid Of Pain",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/pyramidofpainax",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "repo",
+       "title": "MISP",
+       "provider": "MISP",
+       "url": "https://github.com/MISP/MISP",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "repo",
+       "title": "OpenCTI",
+       "provider": "OpenCTI-Platform",
+       "url": "https://github.com/OpenCTI-Platform/opencti",
+       "free": true,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

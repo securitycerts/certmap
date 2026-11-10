@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "aws-ans",
+  "acronym": "ANS-C01",
+  "name": "AWS Advanced Networking Specialty",
+  "vendor": "AWS",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "advanced",
+  "price_usd": 300,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/aws-ans.html",
+  "api": "https://certmap.dev/api/v1/certs/aws-ans.json",
+  "description": "AWS networking specialty certification.",
+  "tags": [
+   "cloud",
+   "aws",
+   "networking"
+  ],
+  "currency_note": "Exam retires; last day to take it is December 31, 2026",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 170,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "sc-500",
+  "acronym": "SC-500",
+  "name": "Microsoft Cloud and AI Security Engineer",
+  "vendor": "Microsoft",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "intermediate",
+  "price_usd": 165,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/sc-500.html",
+  "api": "https://certmap.dev/api/v1/certs/sc-500.json",
+  "description": "Associate certification covering identity, access and governance, security for storage, databases, networking and compute, AI workloads and security posture management in Azure and hybrid environments. Replaced AZ-500 in 2026.",
+  "tags": [
+   "cloud",
+   "azure",
+   "ai-security"
+  ],
+  "currency_note": "Replaces AZ-500",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 1,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
+  "comparisons": [
+   {
+    "with": "az-500",
+    "page": "https://certmap.dev/certs/compare-az-500-vs-sc-500.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-sc-500.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Study guide for Exam SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads",
+       "provider": "Microsoft",
+       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "Implement security for AI (learning path)",
+       "provider": "Microsoft",
+       "url": "https://learn.microsoft.com/en-us/training/paths/implement-ai-security/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Secure access to resources by using Microsoft Entra (learning path)",
+       "provider": "Microsoft",
+       "url": "https://learn.microsoft.com/en-us/training/paths/secure-access-resources-entra/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 4,
+       "type": "course",
+       "title": "Course SC-500T00-A: Implement end-to-end security controls for cloud and AI workloads",
+       "provider": "Microsoft",
+       "url": "https://learn.microsoft.com/en-us/training/courses/sc-500t00",
+       "free": false,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

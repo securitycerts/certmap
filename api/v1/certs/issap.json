@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "issap",
+  "acronym": "ISSAP",
+  "name": "ISC2 Information Systems Security Architecture Professional",
+  "vendor": "ISC2",
+  "issuer": null,
+  "domain": "Security Architecture & Engineering",
+  "level": "expert",
+  "price_usd": 599,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/issap.html",
+  "api": "https://certmap.dev/api/v1/certs/issap.json",
+  "description": "Architecture-focused concentration for CISSP holders, covering enterprise security architecture and design.",
+  "tags": [
+   "architecture",
+   "senior"
+  ],
+  "currency_note": "CISSP concentration",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [
+   "cissp"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.isc2.org/certifications/issap",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

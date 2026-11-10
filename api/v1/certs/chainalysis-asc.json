@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "chainalysis-asc",
+  "acronym": "Asset Seizure",
+  "name": "Chainalysis Asset Seizure Certification",
+  "vendor": "Chainalysis",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/chainalysis-asc.html",
+  "api": "https://certmap.dev/api/v1/certs/chainalysis-asc.json",
+  "description": "Covers the full lifecycle of crypto asset seizure, from identification and custody through legal documentation and disposition.",
+  "tags": [
+   "blockchain",
+   "crypto-investigation",
+   "asset-seizure",
+   "law-enforcement",
+   "vendor"
+  ],
+  "currency_note": "No per-seat fee; certifications are included with a Chainalysis licence",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": "Qualified government professionals only",
+  "prerequisites": [
+   "chainalysis-daf"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.chainalysis.com/asset-seizure-certification/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

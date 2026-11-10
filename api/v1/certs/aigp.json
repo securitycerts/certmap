@@ -1,0 +1,43 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "aigp",
+  "acronym": "AIGP",
+  "name": "Artificial Intelligence Governance Professional",
+  "vendor": "IAPP",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": 799,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/aigp.html",
+  "api": "https://certmap.dev/api/v1/certs/aigp.json",
+  "description": "AI governance certification covering AI foundations, applicable laws and frameworks, and governance of AI development and deployment. Exam has 100 questions in 2 hours 45 minutes.",
+  "tags": [
+   "ai",
+   "governance",
+   "grc"
+  ],
+  "currency_note": "Non-member; $649 IAPP member",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 165,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://iapp.org/certify/aigp/",
+  "comparisons": [
+   {
+    "with": "cipp",
+    "page": "https://certmap.dev/certs/compare-aigp-vs-cipp.html"
+   }
+  ],
+  "study_plan": null
+ }
+}

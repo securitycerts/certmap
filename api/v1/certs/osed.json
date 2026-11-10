@@ -1,0 +1,141 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "osed",
+  "acronym": "OSED",
+  "name": "OffSec Exploit Developer",
+  "vendor": "OffSec",
+  "issuer": null,
+  "domain": "Exploitation",
+  "level": "expert",
+  "price_usd": 1749,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/osed.html",
+  "api": "https://certmap.dev/api/v1/certs/osed.json",
+  "description": "Windows exploit development certification covering buffer overflows and shellcode.",
+  "tags": [
+   "exploit-dev",
+   "windows"
+  ],
+  "currency_note": "Course and cert bundle: 90-day lab and one exam attempt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "osce3",
+   "osee"
+  ],
+  "official_url": "https://www.offsec.com/courses/exp-301/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-osed.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "EXP-301 OSED Exam Guide",
+       "provider": "OffSec",
+       "url": "https://help.offsec.com/hc/en-us/articles/360052977212-EXP-301-Windows-User-Mode-Exploit-Development-OSED-Exam-Guide",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "EXP-301 Syllabus",
+       "provider": "OffSec",
+       "url": "https://www.offsec.com/documentation/EXP301-syllabus.pdf",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "EXP-301: Windows User Mode Exploit Development",
+       "provider": "OffSec",
+       "url": "https://www.offsec.com/courses/exp-301/",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 4,
+       "type": "course",
+       "title": "Corelan Exploit Writing Tutorials",
+       "provider": "Corelan",
+       "url": "https://www.corelan.be/index.php/articles/",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Gatekeeper",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/gatekeeper",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "Vulnserver",
+       "provider": "stephenbradshaw",
+       "url": "https://github.com/stephenbradshaw/vulnserver",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "repo",
+       "title": "osed-scripts",
+       "provider": "epi052",
+       "url": "https://github.com/epi052/osed-scripts",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "Brainstorm",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/brainstorm",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "lab",
+       "title": "Stack-Based Buffer Overflows on Windows x86",
+       "provider": "Hack The Box",
+       "url": "https://academy.hackthebox.com/course/preview/stack-based-buffer-overflows-on-windows-x86",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

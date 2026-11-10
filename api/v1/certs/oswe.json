@@ -1,0 +1,140 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "oswe",
+  "acronym": "OSWE",
+  "name": "OffSec Web Expert",
+  "vendor": "OffSec",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "expert",
+  "price_usd": 1749,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/oswe.html",
+  "api": "https://certmap.dev/api/v1/certs/oswe.json",
+  "description": "Advanced web application exploitation and white-box code review certification.",
+  "tags": [
+   "appsec",
+   "web"
+  ],
+  "currency_note": "Course and cert bundle: 90-day lab and one exam attempt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "osce3"
+  ],
+  "official_url": "https://www.offsec.com/courses/web-300/",
+  "comparisons": [
+   {
+    "with": "oscp",
+    "page": "https://certmap.dev/certs/compare-oscp-vs-oswe.html"
+   },
+   {
+    "with": "osep",
+    "page": "https://certmap.dev/certs/compare-osep-vs-oswe.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-oswe.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "WEB-300 OSWE Exam Guide",
+       "provider": "OffSec",
+       "url": "https://help.offsec.com/hc/en-us/articles/360046869951-WEB-300-Advanced-Web-Attacks-and-Exploitation-OSWE-Exam-Guide",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "WEB-300 Syllabus",
+       "provider": "OffSec",
+       "url": "https://www.offsec.com/documentation/awae-syllabus.pdf",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "WEB-300: Advanced Web Attacks and Exploitation",
+       "provider": "OffSec",
+       "url": "https://www.offsec.com/courses/web-300/",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Insecure deserialization labs",
+       "provider": "PortSwigger",
+       "url": "https://portswigger.net/web-security/deserialization",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "repo",
+       "title": "TUDO",
+       "provider": "bmdyy",
+       "url": "https://github.com/bmdyy/tudo",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "Vulnerable Code Snippets",
+       "provider": "YesWeHack",
+       "url": "https://github.com/yeswehack/vulnerable-code-snippets",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "repo",
+       "title": "AWAE-PREP",
+       "provider": "wetw0rk",
+       "url": "https://github.com/wetw0rk/AWAE-PREP",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "Intro to Whitebox Pentesting",
+       "provider": "Hack The Box",
+       "url": "https://academy.hackthebox.com/course/preview/intro-to-whitebox-pentesting",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

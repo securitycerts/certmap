@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "osc-osmosis",
+  "acronym": "OSC",
+  "name": "Open-Source Certified",
+  "vendor": "OSMOSIS",
+  "issuer": null,
+  "domain": "OSINT",
+  "level": "intermediate",
+  "price_usd": 395,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/osc-osmosis.html",
+  "api": "https://certmap.dev/api/v1/certs/osc-osmosis.json",
+  "description": "Vendor-neutral OSINT practitioner certification from the OSMOSIS Association with a proctored exam of 100 multiple-choice and true/false questions. Applicants document 75 hours of related experience in the previous year and sign an ethics statement; renewal needs 45 CPEs in three years.",
+  "tags": [
+   "osint",
+   "vendor-neutral",
+   "ethics"
+  ],
+  "currency_note": "Virtual proctored exam; an older OSMOSIS FAQ quotes $200 and a $150 annual maintenance fee, not confirmed on the current pages",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://osmosisinstitute.org/osc/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

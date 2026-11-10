@@ -19,6 +19,7 @@
 //   r/index.html         landing page that shared roadmap links point at
 //   llms-full.txt        every certification as Markdown, for language models
 //   data/certs.json      the dataset as JSON
+//   api/v1/*.json        the same data as a static JSON API, plus api/openapi.json and api/index.html
 //   sitemap.xml          the home page plus all of the above
 //
 // It also stamps a content hash on every stylesheet and module URL.
@@ -116,7 +117,7 @@ ${body}
   <p>${T.code === "en"
     ? `Part of <a href="../">cert/map</a>, an open-source roadmap of cybersecurity certifications. Prices are list prices in USD and can change, so confirm with the vendor before paying.${modified ? ` Last reviewed ${modified}.` : ""}`
     : `${esc(T.footer)}${modified ? ` <time datetime="${modified}">${modified}</time>` : ""}`}</p>
-  <p><a href="https://github.com/securitycerts/certmap">Source and dataset on GitHub</a> · <a href="../sponsors/">Become a sponsor</a> · <a href="mailto:${EMAIL}">${EMAIL}</a></p>
+  <p><a href="https://github.com/securitycerts/certmap">Source and dataset on GitHub</a> · <a href="../api/">API</a> · <a href="../sponsors/">Become a sponsor</a> · <a href="mailto:${EMAIL}">${EMAIL}</a></p>
 </footer>
 ${script ? `<script src="../${script}?v=${fileHash(script)}"></script>\n` : ""}</body>
 </html>
@@ -598,6 +599,165 @@ ${qa.map(([q, a], i) => `    <details${i === 0 ? " open" : ""}><summary>${esc(q)
   });
 }
 
+// ---------- static JSON API ----------
+// The site has no server, so the API is a set of JSON files written here and
+// served like any other page. GitHub Pages sends Access-Control-Allow-Origin: *
+// on every file, so another site can fetch them from the browser. Everything is
+// under api/v1/ so a breaking change can ship as v2 without moving these.
+const API = "api/v1/";
+const apiUrl = rel => SITE + API + rel;
+
+function apiCertSummary(c) {
+  return {
+    id: c.id, acronym: c.acronym, name: c.name, vendor: c.vendor, issuer: c.issuer || null,
+    domain: c.domain, level: c.level, price_usd: c.price_usd, hands_on: c.hands_on,
+    page: SITE + `certs/${c.id}.html`, api: apiUrl(`certs/${c.id}.json`),
+  };
+}
+
+function apiCert(c) {
+  const list = RESOURCES.get(c.id) || [];
+  return {
+    ...apiCertSummary(c),
+    description: c.description, tags: c.tags,
+    currency_note: c.currency_note || null, price_verified_at: c.price_verified_at || null,
+    duration_min: c.duration_min, exam_count: c.exam_count,
+    validity_years: c.validity_years || 0, renewal_cost: Number.isFinite(c.renewal_cost) ? c.renewal_cost : null,
+    dod_8140: c.dod_8140, restricted_to: c.restricted_to || null,
+    prerequisites: c.prerequisites,
+    leads_to: certs.filter(o => o.prerequisites.includes(c.id)).map(o => o.id),
+    official_url: c.url,
+    comparisons: (VERSUS.get(c.id) || []).map(v => ({ with: v.id, page: SITE + `certs/${v.file}` })),
+    study_plan: list.length ? {
+      page: SITE + `certs/${planFile(c)}`,
+      phases: studyPlan(list).map(ph => ({
+        id: ph.id,
+        steps: ph.items.map(r => ({ step: r.step, type: r.type, title: r.title, provider: r.provider, url: r.url, free: r.free, official: r.official })),
+      })),
+      sponsored: list.filter(r => r.sponsored).map(r => ({ type: r.type, title: r.title, provider: r.provider, url: r.url })),
+    } : null,
+  };
+}
+
+function buildApi() {
+  const dir = join(ROOT, "api", "v1");
+  rmSync(dir, { recursive: true, force: true });
+  mkdirSync(join(dir, "certs"), { recursive: true });
+  const write = (rel, data) => writeFileSync(join(dir, rel), JSON.stringify(data, null, 1) + "\n");
+  const meta = {
+    license: "CC BY 4.0", license_url: "https://creativecommons.org/licenses/by/4.0/",
+    attribution: "Data from cert/map (https://certmap.dev/)", updated: latest,
+  };
+
+  write("index.json", {
+    name: "cert/map API", version: "v1", ...meta,
+    docs: SITE + "api/", openapi: SITE + "api/openapi.json",
+    counts: { certifications: certs.length, vendors: vendors.size, domains: DOMAINS.length, comparisons: PAIRS.length, study_plans: RESOURCES.size },
+    endpoints: {
+      certifications: apiUrl("certs.json"), certification: apiUrl("certs/{id}.json"),
+      vendors: apiUrl("vendors.json"), domains: apiUrl("domains.json"),
+      comparisons: apiUrl("comparisons.json"), paths: apiUrl("paths.json"),
+    },
+  });
+  write("certs.json", { ...meta, count: certs.length, certifications: certs.map(apiCertSummary) });
+  for (const c of certs) write(`certs/${c.id}.json`, { ...meta, certification: apiCert(c) });
+  write("vendors.json", { ...meta, count: vendors.size, vendors: [...vendors].sort((a, b) => a.localeCompare(b)).map(v => ({
+    name: v, page: SITE + `certs/${vendorFile(v)}`, certifications: certs.filter(c => c.vendor === v).map(c => c.id),
+  })) });
+  write("domains.json", { ...meta, count: DOMAINS.length, domains: DOMAINS.map(d => ({
+    name: d, page: SITE + `certs/${domainFile(d)}`, certifications: certs.filter(c => c.domain === d).map(c => c.id),
+  })) });
+  write("comparisons.json", { ...meta, count: PAIRS.length, comparisons: PAIRS.map(r => ({
+    a: r.a, b: r.b,
+    pages: Object.fromEntries(LANG_ORDER.map(code => [code, SITE + comparePath(byId.get(r.a), byId.get(r.b), LANGS[code])])),
+  })) });
+  write("paths.json", { ...meta, count: ROLE_PATHS.length, paths: ROLE_PATHS.map(p => ({
+    id: p.id, name: p.name, certifications: pathCerts(p).map(c => c.id), ...pathTotals(pathCerts(p)), page: SITE + `certs/${pathFile(p)}`,
+  })) });
+
+  const ref = name => ({ $ref: `#/components/schemas/${name}` });
+  const ok = (summary, schema) => ({ get: { summary, responses: { 200: { description: "OK", content: { "application/json": { schema } } } } } });
+  writeFileSync(join(ROOT, "api", "openapi.json"), JSON.stringify({
+    openapi: "3.1.0",
+    info: { title: "cert/map API", version: "1.0.0", description: "Read-only, static JSON about cybersecurity certifications: prices, prerequisites, study plans and comparisons. No key, no rate limit; please cache.", license: { name: "CC BY 4.0", url: meta.license_url } },
+    servers: [{ url: SITE + "api/v1" }],
+    paths: {
+      "/index.json": ok("Entry point: counts and endpoint URLs", { type: "object" }),
+      "/certs.json": ok("Every certification, summarised", { type: "object", properties: { count: { type: "integer" }, certifications: { type: "array", items: ref("CertificationSummary") } } }),
+      "/certs/{id}.json": { parameters: [{ name: "id", in: "path", required: true, schema: { type: "string" }, example: "oscp" }], ...ok("One certification in full, with its study plan and comparisons", { type: "object", properties: { certification: ref("Certification") } }) },
+      "/vendors.json": ok("Vendors and the ids of their certifications", { type: "object" }),
+      "/domains.json": ok("Domains and the ids of their certifications", { type: "object" }),
+      "/comparisons.json": ok("Certification pairs that have a comparison page, per language", { type: "object" }),
+      "/paths.json": ok("Preset role paths with cost and study-time totals", { type: "object" }),
+    },
+    components: { schemas: {
+      CertificationSummary: { type: "object", properties: {
+        id: { type: "string" }, acronym: { type: "string" }, name: { type: "string" }, vendor: { type: "string" }, issuer: { type: ["string", "null"] },
+        domain: { type: "string", enum: DOMAINS }, level: { type: "string", enum: LEVELS },
+        price_usd: { type: ["number", "null"], description: "Exam list price in USD. null when not published, 0 when free." },
+        hands_on: { type: "boolean" }, page: { type: "string", format: "uri" }, api: { type: "string", format: "uri" } } },
+      Certification: { allOf: [ref("CertificationSummary"), { type: "object", properties: {
+        description: { type: "string" }, tags: { type: "array", items: { type: "string" } },
+        price_verified_at: { type: ["string", "null"], format: "date" }, duration_min: { type: ["integer", "null"] },
+        validity_years: { type: "integer", description: "0 means it does not expire." }, dod_8140: { type: "boolean" },
+        prerequisites: { type: "array", items: { type: "string" } }, leads_to: { type: "array", items: { type: "string" } },
+        official_url: { type: "string", format: "uri" }, comparisons: { type: "array", items: { type: "object" } },
+        study_plan: { type: ["object", "null"], description: "Ordered preparation steps in four phases: know, learn, practice, test." } } }] },
+    } },
+  }, null, 1) + "\n");
+  return certs.length + 7;
+}
+
+function apiPage() {
+  const sample = byId.get("oscp") || certs[0];
+  const code = text => `<pre><code>${esc(text)}</code></pre>`;
+  const row = (path, what) => `      <tr><td><a href="v1/${path.replace("{id}", sample.id)}"><code>/api/v1/${path}</code></a></td><td>${what}</td></tr>`;
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / API</nav>
+<article>
+  <h1>cert/map API</h1>
+  <p class="lead">The certification data as plain JSON: prices, levels, prerequisites, study plans and comparisons for ${certs.length} cybersecurity certifications. Free to use, no key, callable from a browser.</p>
+  <p class="cta"><a class="btn primary" href="v1/index.json">Open the entry point</a> <a class="btn" href="openapi.json">OpenAPI description</a></p>
+  <h2>Endpoints</h2>
+  <table>
+    <thead><tr><th>URL</th><th>Returns</th></tr></thead>
+    <tbody>
+${row("index.json", "Counts and the URL of every endpoint")}
+${row("certs.json", "Every certification, summarised: vendor, domain, level, price")}
+${row("certs/{id}.json", "One certification in full, with its study plan and comparisons")}
+${row("vendors.json", "Vendors and the ids of their certifications")}
+${row("domains.json", "Domains and the ids of their certifications")}
+${row("comparisons.json", "Pairs that have a comparison page, with the page in each language")}
+${row("paths.json", "Preset role paths with cost and study-time totals")}
+    </tbody>
+  </table>
+  <h2>Example</h2>
+  <p>Show the current exam price of a certification on your own page:</p>
+${code(`const res = await fetch("${apiUrl(`certs/${sample.id}.json`)}");
+const { certification } = await res.json();
+console.log(certification.acronym, certification.price_usd);   // ${sample.acronym} ${sample.price_usd}`)}
+  <h2>How it works</h2>
+  <ul class="diff">
+    <li>It is static. The files are regenerated whenever the dataset changes, so there is nothing to query: fetch a file and filter it on your side.</li>
+    <li>Cross-origin requests are allowed, so it works from client-side code on any site.</li>
+    <li>Responses are cached for about ten minutes. Please cache on your side too instead of fetching on every page view.</li>
+    <li>URLs under <code>/api/v1/</code> keep their shape. A breaking change would be published as <code>v2</code>.</li>
+    <li><code>price_usd</code> is the exam list price in US dollars: <code>null</code> when the vendor does not publish one, <code>0</code> when it is free. <code>price_verified_at</code> is the date it was last seen on the vendor's page.</li>
+  </ul>
+  <h2>Licence and attribution</h2>
+  <p>The data is published under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. You can use it in any project, commercial or not, as long as you credit cert/map with a link to <a href="../">certmap.dev</a>. Prices change without notice, so tell your readers to confirm with the vendor.</p>
+  <p>The whole dataset is also available as single files: <a href="../data/certs.json">certs.json</a>, <a href="../data/certs.csv">certs.csv</a>, <a href="../data/resources.csv">resources.csv</a> and <a href="../data/comparisons.csv">comparisons.csv</a>.</p>
+</article>`;
+  return page({
+    path: "api/",
+    title: "cert/map API: free JSON data on cybersecurity certifications",
+    description: `A free, static JSON API with the price, level, prerequisites, study plan and comparisons of ${certs.length} cybersecurity certifications. No key, CORS enabled, CC BY 4.0.`,
+    body, modified: latest,
+    ld: [{ "@context": "https://schema.org", "@type": "WebAPI", name: "cert/map API", url: SITE + "api/", documentation: SITE + "api/",
+      description: "Read-only JSON about cybersecurity certifications.", license: "https://creativecommons.org/licenses/by/4.0/",
+      provider: { "@type": "Organization", name: "cert/map", url: SITE } }],
+  });
+}
+
 // ---------- sponsors ----------
 // data/sponsors.json lists the sponsors of each tier as { name, url, logo },
 // with `logo` a path under images/. Tiers always show a fixed number of places:
@@ -873,6 +1033,7 @@ ${[...vendors].sort((a, b) => a.localeCompare(b)).join(", ")}.
 - [Home](${SITE}): what the roadmap is, with answers on cost, beginner options and exam formats
 - [Interactive roadmap](${SITE}map/): the matrix of every certification by domain and level
 - [Sponsors](${SITE}sponsors/): how to sponsor the project, the tiers and the terms
+- [API](${SITE}api/): static JSON under \`${SITE}api/v1/\`, entry point ${SITE}api/v1/index.json, one file per certification at \`${SITE}api/v1/certs/<id>.json\` including its study plan, described in ${SITE}api/openapi.json
 - [All certifications](${SITE}certs/): every certification with vendor, level and price
 - [Full text digest](${SITE}llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](${SITE}data/certs.json) and [as CSV](${SITE}data/certs.csv)
@@ -1209,6 +1370,7 @@ ${[
     url(SITE + "certs/", latest, "0.9"),
     url(SITE + "map/", latest, "0.9"),
     url(SITE + "sponsors/", latest, "0.8"),
+    url(SITE + "api/", latest, "0.7"),
     ...LISTS.map(l => url(SITE + `certs/${listFile(l)}`, latest, "0.8")),
     ...ROLE_PATHS.map(p => url(SITE + `certs/${pathFile(p)}`, latest, "0.8")),
     ...certs.filter(c => RESOURCES.has(c.id)).map(c => url(SITE + `certs/${planFile(c)}`, latest, "0.8")),
@@ -1263,6 +1425,8 @@ writeFileSync(join(ROOT, "r", "index.html"), sharedPage());
 mkdirSync(join(ROOT, "about"), { recursive: true });
 writeFileSync(join(ROOT, "about", "index.html"), aboutRedirect());
 writeFileSync(join(ROOT, "index.html"), homePage());
+const apiFiles = buildApi();
+writeFileSync(join(ROOT, "api", "index.html"), apiPage());
 mkdirSync(join(ROOT, "sponsors"), { recursive: true });
 writeFileSync(join(ROOT, "sponsors", "index.html"), sponsorsPage());
 writeFileSync(join(ROOT, "llms-full.txt"), llmsFull());
@@ -1273,4 +1437,4 @@ writeFileSync(join(ROOT, "sitemap.xml"), sitemap());
 refreshCounts("map/index.html");
 refreshCounts("llms.txt");
 refreshCounts("README.md");
-console.log(`OK: ${certs.length} certification, ${vendors.size} vendor, ${DOMAINS.length} domain and ${LISTS.length} list pages, about/, llms-full.txt, certs.json, sitemap.xml. Assets v=${version}.`);
+console.log(`OK: ${certs.length} certification, ${vendors.size} vendor, ${DOMAINS.length} domain and ${LISTS.length} list pages, about/, llms-full.txt, certs.json, sitemap.xml, ${apiFiles} API files. Assets v=${version}.`);

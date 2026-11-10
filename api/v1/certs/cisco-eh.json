@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cisco-eh",
+  "acronym": "Cisco EH",
+  "name": "Cisco Certificate in Ethical Hacking",
+  "vendor": "Cisco",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "beginner",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cisco-eh.html",
+  "api": "https://certmap.dev/api/v1/certs/cisco-eh.json",
+  "description": "Certificate earned by completing the Cisco Networking Academy Ethical Hacker course and one capture the flag challenge in Cisco U. It has no traditional exam and is valid for life.",
+  "tags": [
+   "red-team",
+   "ctf",
+   "cisco",
+   "hands-on"
+  ],
+  "currency_note": "No exam fee listed; earned through the Networking Academy Ethical Hacker course plus a Cisco U. capture the flag challenge",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/ethical-hacker/index.html",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

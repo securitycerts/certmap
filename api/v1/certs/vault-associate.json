@@ -1,0 +1,85 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "vault-associate",
+  "acronym": "Vault Associate",
+  "name": "HashiCorp Certified: Vault Associate",
+  "vendor": "HashiCorp",
+  "issuer": null,
+  "domain": "IAM",
+  "level": "beginner",
+  "price_usd": 71,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/vault-associate.html",
+  "api": "https://certmap.dev/api/v1/certs/vault-associate.json",
+  "description": "One-hour online proctored multiple-choice exam on HashiCorp Vault fundamentals, including secrets management, authentication methods and policies.",
+  "tags": [
+   "secrets-management",
+   "vault",
+   "devsecops"
+  ],
+  "currency_note": "List price $70.50 plus local taxes; no free retake",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 60,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://developer.hashicorp.com/certifications/vault-associate",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-vault-associate.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Exam content list - Vault Associate (003)",
+       "provider": "HashiCorp",
+       "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "Learning path - Vault Associate (003)",
+       "provider": "HashiCorp",
+       "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 3,
+       "type": "practice",
+       "title": "Sample questions - Vault Associate (003)",
+       "provider": "HashiCorp",
+       "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-questions-003",
+       "free": true,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

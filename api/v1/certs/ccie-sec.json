@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccie-sec",
+  "acronym": "CCIE Security",
+  "name": "Cisco Certified Internetwork Expert Security",
+  "vendor": "Cisco",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "expert",
+  "price_usd": 1600,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ccie-sec.html",
+  "api": "https://certmap.dev/api/v1/certs/ccie-sec.json",
+  "description": "Expert-level 8-hour hands-on lab certification.",
+  "tags": [
+   "networking",
+   "cisco",
+   "hands-on"
+  ],
+  "currency_note": "Lab exam; plus $400 core exam (350-701 SCOR)",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 480,
+  "exam_count": 2,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/security/ccie-security/index.html",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

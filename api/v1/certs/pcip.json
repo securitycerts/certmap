@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pcip",
+  "acronym": "PCIP",
+  "name": "PCI Professional",
+  "vendor": "PCI SSC",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": 1700,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pcip.html",
+  "api": "https://certmap.dev/api/v1/certs/pcip.json",
+  "description": "Individual qualification from the PCI Security Standards Council on the PCI DSS. Closed-book exam of 75 multiple-choice questions, with requalification every three years.",
+  "tags": [
+   "pci-dss",
+   "payments",
+   "compliance"
+  ],
+  "currency_note": "Exam only, non-participating organisations; $1,000 for participating organisations; rises to $1,900 on 2027-01-01",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.pcisecuritystandards.org/program_training_and_qualification/pci_professional_qualification/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

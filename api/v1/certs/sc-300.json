@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "sc-300",
+  "acronym": "SC-300",
+  "name": "Microsoft Identity and Access Administrator",
+  "vendor": "Microsoft",
+  "issuer": null,
+  "domain": "IAM",
+  "level": "intermediate",
+  "price_usd": 165,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/sc-300.html",
+  "api": "https://certmap.dev/api/v1/certs/sc-300.json",
+  "description": "Entra ID identity management certification.",
+  "tags": [
+   "iam",
+   "azure"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 100,
+  "exam_count": 1,
+  "validity_years": 1,
+  "renewal_cost": 0,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://learn.microsoft.com/credentials/certifications/identity-and-access-administrator/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

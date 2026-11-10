@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "jncis-sec",
+  "acronym": "JNCIS-SEC",
+  "name": "Juniper Networks Certified Specialist Security",
+  "vendor": "Juniper",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "intermediate",
+  "price_usd": 300,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/jncis-sec.html",
+  "api": "https://certmap.dev/api/v1/certs/jncis-sec.json",
+  "description": "Specialist Junos certification covering SRX firewall, IPsec and screen protection.",
+  "tags": [
+   "networking",
+   "firewall"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-06-08",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://learningportal.juniper.net/juniper/user_activity_info.aspx?id=14363",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "secops-cap",
+  "acronym": "CAP",
+  "name": "Certified AppSec Practitioner",
+  "vendor": "The SecOps Group",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "beginner",
+  "price_usd": 134,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/secops-cap.html",
+  "api": "https://certmap.dev/api/v1/certs/secops-cap.json",
+  "description": "Entry-level multiple-choice exam on application security fundamentals, with factual and scenario-based questions. The certificate does not expire.",
+  "tags": [
+   "appsec",
+   "web",
+   "foundational"
+  ],
+  "currency_note": "Vendor lists GBP only (GBP 100); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 60,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://pentestingexams.com/certifications/essentials/certified-application-security-practitioner/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-secops-cap.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Certified AppSec Practitioner (CAP)",
+       "provider": "The SecOps Group",
+       "url": "https://pentestingexams.com/certifications/essentials/certified-application-security-practitioner/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "OWASP Top 10",
+       "provider": "OWASP Foundation",
+       "url": "https://owasp.org/www-project-top-ten/",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 3,
+       "type": "lab",
+       "title": "Web Security Academy",
+       "provider": "PortSwigger",
+       "url": "https://portswigger.net/web-security",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "OWASP Juice Shop",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/owaspjuiceshop",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "OWASP Top 10 2025: IAAA Failures",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/owasptopten2025one",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "OWASP Juice Shop",
+       "provider": "OWASP",
+       "url": "https://github.com/juice-shop/juice-shop",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "repo",
+       "title": "WebGoat",
+       "provider": "OWASP",
+       "url": "https://github.com/WebGoat/WebGoat",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "repo",
+       "title": "Damn Vulnerable Web Application (DVWA)",
+       "provider": "digininja",
+       "url": "https://github.com/digininja/DVWA",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 9,
+       "type": "practice",
+       "title": "Mock Pentesting Exams",
+       "provider": "The SecOps Group",
+       "url": "https://pentestingexams.com/mock-pentesting-exams/",
+       "free": true,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

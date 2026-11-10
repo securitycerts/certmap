@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pan-netsec-architect",
+  "acronym": "NetSec Architect",
+  "name": "Palo Alto Networks Network Security Architect",
+  "vendor": "Palo Alto Networks",
+  "issuer": null,
+  "domain": "Security Architecture & Engineering",
+  "level": "expert",
+  "price_usd": 300,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pan-netsec-architect.html",
+  "api": "https://certmap.dev/api/v1/certs/pan-netsec-architect.json",
+  "description": "Architect-level certification at the top of the Palo Alto Networks Network Security track, focused on designing network security architectures.",
+  "tags": [
+   "networking",
+   "architecture"
+  ],
+  "currency_note": "Architect-level exam",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-architect",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

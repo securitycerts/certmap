@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cloudnetx",
+  "acronym": "CloudNetX",
+  "name": "CompTIA CloudNetX",
+  "vendor": "CompTIA",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "advanced",
+  "price_usd": 544,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cloudnetx.html",
+  "api": "https://certmap.dev/api/v1/certs/cloudnetx.json",
+  "description": "Advanced certification on designing and securing hybrid and cloud network architectures. Single 165-minute exam (CNX-001) with up to 90 questions.",
+  "tags": [
+   "network",
+   "cloud",
+   "architecture"
+  ],
+  "currency_note": "Exam CNX-001",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 165,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.comptia.org/en-us/certifications/cloudnetx/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

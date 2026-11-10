@@ -1,0 +1,25 @@
+{
+ "name": "cert/map API",
+ "version": "v1",
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "docs": "https://certmap.dev/api/",
+ "openapi": "https://certmap.dev/api/openapi.json",
+ "counts": {
+  "certifications": 320,
+  "vendors": 70,
+  "domains": 17,
+  "comparisons": 60,
+  "study_plans": 79
+ },
+ "endpoints": {
+  "certifications": "https://certmap.dev/api/v1/certs.json",
+  "certification": "https://certmap.dev/api/v1/certs/{id}.json",
+  "vendors": "https://certmap.dev/api/v1/vendors.json",
+  "domains": "https://certmap.dev/api/v1/domains.json",
+  "comparisons": "https://certmap.dev/api/v1/comparisons.json",
+  "paths": "https://certmap.dev/api/v1/paths.json"
+ }
+}

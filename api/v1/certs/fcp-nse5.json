@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "fcp-nse5",
+  "acronym": "NSE 5",
+  "name": "Fortinet NSE 5 Network Security Analyst",
+  "vendor": "Fortinet",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "advanced",
+  "price_usd": 200,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/fcp-nse5.html",
+  "api": "https://certmap.dev/api/v1/certs/fcp-nse5.json",
+  "description": "Analyst-level Fortinet certification covering centralized management and log analysis with FortiManager and FortiAnalyzer.",
+  "tags": [
+   "networking",
+   "blue-team"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-06-08",
+  "duration_min": 75,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "fcp-nse4"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.fortinet.com/training-certification",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

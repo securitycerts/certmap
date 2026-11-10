@@ -1,0 +1,46 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cgrc",
+  "acronym": "CGRC",
+  "name": "Certified in Governance Risk and Compliance",
+  "vendor": "ISC2",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "advanced",
+  "price_usd": 599,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cgrc.html",
+  "api": "https://certmap.dev/api/v1/certs/cgrc.json",
+  "description": "Risk management framework certification for GRC professionals.",
+  "tags": [
+   "grc",
+   "risk"
+  ],
+  "currency_note": "Formerly CAP",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.isc2.org/Certifications/CGRC",
+  "comparisons": [
+   {
+    "with": "crisc",
+    "page": "https://certmap.dev/certs/compare-cgrc-vs-crisc.html"
+   },
+   {
+    "with": "cissp",
+    "page": "https://certmap.dev/certs/compare-cgrc-vs-cissp.html"
+   }
+  ],
+  "study_plan": null
+ }
+}

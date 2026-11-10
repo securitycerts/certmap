@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccfr",
+  "acronym": "CCFR",
+  "name": "CrowdStrike Certified Falcon Responder",
+  "vendor": "CrowdStrike",
+  "issuer": null,
+  "domain": "Incident Handling",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ccfr.html",
+  "api": "https://certmap.dev/api/v1/certs/ccfr.json",
+  "description": "90-minute, 60-question exam on triaging and responding to detections in the CrowdStrike Falcon platform. Valid for three years.",
+  "tags": [
+   "edr",
+   "falcon",
+   "incident-response",
+   "vendor"
+  ],
+  "currency_note": "Voucher bought through Pearson VUE or a CrowdStrike account executive; price not shown in the official exam guide",
+  "price_verified_at": null,
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.pearsonvue.com/us/en/crowdstrike.html",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

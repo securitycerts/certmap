@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "lpic-3-security",
+  "acronym": "LPIC-3 303",
+  "name": "LPIC-3 Security",
+  "vendor": "LPI",
+  "issuer": null,
+  "domain": "*nix",
+  "level": "advanced",
+  "price_usd": 200,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/lpic-3-security.html",
+  "api": "https://certmap.dev/api/v1/certs/lpic-3-security.json",
+  "description": "Enterprise-level Linux security certification. Exam 303-300 has 60 questions and requires an active LPIC-2.",
+  "tags": [
+   "linux",
+   "hardening"
+  ],
+  "currency_note": "US price; lower in other pricing tiers",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 5,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "lpic-2"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.lpi.org/our-certifications/lpic-3-303-overview/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,137 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gpen",
+  "acronym": "GPEN",
+  "name": "GIAC Penetration Tester",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gpen.html",
+  "api": "https://certmap.dev/api/v1/certs/gpen.json",
+  "description": "Penetration testing methodology and exploitation certification.",
+  "tags": [
+   "red-team"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/penetration-tester-gpen/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-gpen.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "GIAC Penetration Tester (GPEN) exam objectives",
+       "provider": "GIAC",
+       "url": "https://www.giac.org/certifications/penetration-tester-gpen",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "SEC560: Enterprise Penetration Testing",
+       "provider": "SANS Institute",
+       "url": "https://www.sans.org/cyber-security-courses/enterprise-penetration-testing",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "book",
+       "title": "GPEN GIAC Certified Penetration Tester All-in-One Exam Guide",
+       "provider": "McGraw Hill",
+       "url": "https://www.mheducation.com/highered/mhp/product/gpen-giac-certified-penetration-tester-all-one-exam-guide.html",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Attacktive Directory",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/attacktivedirectory",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Crack the hash",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/crackthehash",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "BloodHound",
+       "provider": "SpecterOps",
+       "url": "https://github.com/SpecterOps/BloodHound",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "Attacking Kerberos",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/attackingkerberos",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "Password Attacks",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/passwordattacks",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "lab",
+       "title": "Lateral Movement and Pivoting",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/lateralmovementandpivoting",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "sailpoint-ise",
+  "acronym": "SP-ISE",
+  "name": "SailPoint Certified Identity Security Engineer",
+  "vendor": "SailPoint",
+  "issuer": null,
+  "domain": "IAM",
+  "level": "intermediate",
+  "price_usd": 400,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/sailpoint-ise.html",
+  "api": "https://certmap.dev/api/v1/certs/sailpoint-ise.json",
+  "description": "SailPoint professional certification launched in February 2025. Up to 73 questions with up to 120 minutes of seat time, valid for two years.",
+  "tags": [
+   "iam",
+   "identity"
+  ],
+  "currency_note": "Or 4 training units",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://community.sailpoint.com/t5/Identity-University-Blog/What-s-new-in-SailPoint-s-Certification-and-Credentialing/ba-p/263974",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

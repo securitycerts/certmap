@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "case-java",
+  "acronym": "CASE Java",
+  "name": "EC-Council Certified Application Security Engineer (Java)",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "intermediate",
+  "price_usd": 450,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/case-java.html",
+  "api": "https://certmap.dev/api/v1/certs/case-java.json",
+  "description": "Secure Java application development certification.",
+  "tags": [
+   "appsec",
+   "java",
+   "sdlc"
+  ],
+  "currency_note": "Remote-proctored exam voucher",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/programs/certified-application-security-engineer-case-java/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

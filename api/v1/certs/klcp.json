@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "klcp",
+  "acronym": "KLCP",
+  "name": "Kali Linux Certified Professional",
+  "vendor": "OffSec",
+  "issuer": null,
+  "domain": "*nix",
+  "level": "beginner",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/klcp.html",
+  "api": "https://certmap.dev/api/v1/certs/klcp.json",
+  "description": "Kali Linux operating system fundamentals and tooling certification.",
+  "tags": [
+   "linux",
+   "kali",
+   "foundational"
+  ],
+  "currency_note": "PEN-103 free with an OffSec account; KLCP exam is a separate purchase, price not published",
+  "price_verified_at": null,
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.offsec.com/courses/pen-103/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

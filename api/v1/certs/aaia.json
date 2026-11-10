@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "aaia",
+  "acronym": "AAIA",
+  "name": "Advanced in AI Audit",
+  "vendor": "ISACA",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "advanced",
+  "price_usd": 459,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/aaia.html",
+  "api": "https://certmap.dev/api/v1/certs/aaia.json",
+  "description": "Credential on auditing AI systems, covering AI governance and risk, AI operations and AI auditing tools. Requires an active CISA or another qualifying audit designation (for example CIA or CPA).",
+  "tags": [
+   "ai",
+   "audit"
+  ],
+  "currency_note": "Member rate; $599 non-member; $50 application fee",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 150,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "cisa"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.isaca.org/credentialing/aaia",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

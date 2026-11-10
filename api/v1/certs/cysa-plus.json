@@ -1,0 +1,162 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cysa-plus",
+  "acronym": "CySA+",
+  "name": "CompTIA CySA+",
+  "vendor": "CompTIA",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 439,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cysa-plus.html",
+  "api": "https://certmap.dev/api/v1/certs/cysa-plus.json",
+  "description": "Intermediate security operations certification covering threat detection, vulnerability management and incident response for SOC analysts.",
+  "tags": [
+   "blue-team",
+   "soc"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 165,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [
+   "sec-plus"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.comptia.org/certifications/cybersecurity-analyst",
+  "comparisons": [
+   {
+    "with": "sec-plus",
+    "page": "https://certmap.dev/certs/compare-sec-plus-vs-cysa-plus.html"
+   },
+   {
+    "with": "casp-plus",
+    "page": "https://certmap.dev/certs/compare-cysa-plus-vs-casp-plus.html"
+   },
+   {
+    "with": "pentest-plus",
+    "page": "https://certmap.dev/certs/compare-cysa-plus-vs-pentest-plus.html"
+   },
+   {
+    "with": "btl1",
+    "page": "https://certmap.dev/certs/compare-btl1-vs-cysa-plus.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-cysa-plus.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CySA+ Certification V4",
+       "provider": "CompTIA",
+       "url": "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "book",
+       "title": "CompTIA CySA+ Study Guide: Exam CS0-004, 4th Edition",
+       "provider": "Sybex (Wiley)",
+       "url": "https://www.wiley.com/en-us/-p-9781394414871",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 3,
+       "type": "lab",
+       "title": "Vulnerabilities 101",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/vulnerabilities101",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "OpenVAS",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/openvas",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Intro to Log Analysis",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/introtologanalysis",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "Sigma",
+       "provider": "SigmaHQ",
+       "url": "https://github.com/SigmaHQ/sigma",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "repo",
+       "title": "Security Onion",
+       "provider": "Security Onion Solutions",
+       "url": "https://github.com/Security-Onion-Solutions/securityonion",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "SOC Level 1 path",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/path/outline/soclevel1",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 9,
+       "type": "practice",
+       "title": "CySA+ (V4) Practice Questions",
+       "provider": "CompTIA",
+       "url": "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/practice-questions/",
+       "free": true,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

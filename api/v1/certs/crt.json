@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "crt",
+  "acronym": "CRT",
+  "name": "CREST Registered Penetration Tester",
+  "vendor": "CREST",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "intermediate",
+  "price_usd": 805,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/crt.html",
+  "api": "https://certmap.dev/api/v1/certs/crt.json",
+  "description": "Intermediate practical exam of 2.5 hours in a provided Kali Linux environment, covering infrastructure and web application testing. Accepted by the UK NCSC CHECK scheme.",
+  "tags": [
+   "red-team",
+   "crest",
+   "hands-on"
+  ],
+  "currency_note": "GBP 600 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 150,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "cpsa"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.crest-approved.org/skills-certifications-careers/crest-registered-penetration-tester/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

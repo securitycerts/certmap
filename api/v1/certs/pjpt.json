@@ -1,0 +1,152 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pjpt",
+  "acronym": "PJPT",
+  "name": "Practical Junior Penetration Tester",
+  "vendor": "TCM Security",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "beginner",
+  "price_usd": 249,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/pjpt.html",
+  "api": "https://certmap.dev/api/v1/certs/pjpt.json",
+  "description": "Entry-level practical internal network penetration testing certification.",
+  "tags": [
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://certifications.tcm-sec.com/pjpt/",
+  "comparisons": [
+   {
+    "with": "ejpt",
+    "page": "https://certmap.dev/certs/compare-ejpt-vs-pjpt.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-pjpt.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Practical Junior Penetration Tester (PJPT) Certification",
+       "provider": "TCM Security",
+       "url": "https://certifications.tcm-sec.com/pjpt/",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "Practical Ethical Hacking Resources",
+       "provider": "TCM Security",
+       "url": "https://github.com/TCM-Course-Resources/Practical-Ethical-Hacking-Resources",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "course",
+       "title": "TCM Academy Free Tier",
+       "provider": "TCM Security",
+       "url": "https://tcm-sec.com/academy/tcm-academy-free-tier/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 4,
+       "type": "course",
+       "title": "Practical Ethical Hacking",
+       "provider": "TCM Security",
+       "url": "https://tcm-sec.com/academy/practical-ethical-hacking/",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Attacktive Directory",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/attacktivedirectory",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "Post-Exploitation Basics",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/postexploit",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "VulnNet: Roasted",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/vulnnetroasted",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "repo",
+       "title": "Vulnerable-AD",
+       "provider": "safebuffer",
+       "url": "https://github.com/safebuffer/vulnerable-AD",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "repo",
+       "title": "InternalAllTheThings",
+       "provider": "swisskyrepo",
+       "url": "https://github.com/swisskyrepo/InternalAllTheThings",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 10,
+       "type": "lab",
+       "title": "Introduction to Active Directory",
+       "provider": "Hack The Box",
+       "url": "https://academy.hackthebox.com/course/preview/introduction-to-active-directory",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "jncia-junos",
+  "acronym": "JNCIA-Junos",
+  "name": "Juniper Networks Certified Associate Junos",
+  "vendor": "Juniper",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "beginner",
+  "price_usd": 200,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/jncia-junos.html",
+  "api": "https://certmap.dev/api/v1/certs/jncia-junos.json",
+  "description": "Foundational Junos networking certification covering CLI, interfaces and basic routing.",
+  "tags": [
+   "networking"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-06-08",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://learningportal.juniper.net/juniper/user_activity_info.aspx?id=14354",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

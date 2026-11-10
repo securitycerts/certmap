@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "secai-plus",
+  "acronym": "SecAI+",
+  "name": "CompTIA SecAI+",
+  "vendor": "CompTIA",
+  "issuer": null,
+  "domain": "Security Architecture & Engineering",
+  "level": "intermediate",
+  "price_usd": 298,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/secai-plus.html",
+  "api": "https://certmap.dev/api/v1/certs/secai-plus.json",
+  "description": "Certification on securing AI systems and using AI in security operations, governance and compliance. Single 60-minute exam (CY0-001) with up to 60 questions.",
+  "tags": [
+   "ai",
+   "ai-security"
+  ],
+  "currency_note": "Exam CY0-001",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 60,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "sec-plus"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.comptia.org/en-us/certifications/secai/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

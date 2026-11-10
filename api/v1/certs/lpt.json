@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "lpt",
+  "acronym": "LPT",
+  "name": "Licensed Penetration Tester Master",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "expert",
+  "price_usd": 999,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/lpt.html",
+  "api": "https://certmap.dev/api/v1/certs/lpt.json",
+  "description": "Elite penetration testing credential awarded for scoring 90 percent or higher on EC-Council's 24-hour online proctored CPENT live-range exam.",
+  "tags": [
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "CPENT Exam + Range (store price); LPT (Master) is awarded for scoring 90% or higher on the CPENT exam, there is no separate LPT exam",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "ceh"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/train-certify/licensed-penetration-tester-lpt-master/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

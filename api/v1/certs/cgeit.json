@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cgeit",
+  "acronym": "CGEIT",
+  "name": "Certified in the Governance of Enterprise IT",
+  "vendor": "ISACA",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "expert",
+  "price_usd": 575,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cgeit.html",
+  "api": "https://certmap.dev/api/v1/certs/cgeit.json",
+  "description": "Executive-level IT governance certification.",
+  "tags": [
+   "governance",
+   "executive"
+  ],
+  "currency_note": "Member rate; $760 non-member",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.isaca.org/credentialing/cgeit",
+  "comparisons": [
+   {
+    "with": "crisc",
+    "page": "https://certmap.dev/certs/compare-cgeit-vs-crisc.html"
+   }
+  ],
+  "study_plan": null
+ }
+}

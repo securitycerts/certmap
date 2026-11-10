@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cwpe",
+  "acronym": "CWPE",
+  "name": "HTB Certified Wi-Fi Pentesting Expert",
+  "vendor": "Hack The Box",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "expert",
+  "price_usd": 350,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cwpe.html",
+  "api": "https://certmap.dev/api/v1/certs/cwpe.json",
+  "description": "Practical exam on attacking WEP, WPS, WPA2, WPA3 and WPA-Enterprise networks, rogue access points and pivoting into internal networks, with a written report. Requires completing the Wi-Fi Penetration Tester job-role path.",
+  "tags": [
+   "wireless",
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "Exam voucher only, two attempts; job-role path access sold separately",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 10080,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://academy.hackthebox.com/preview/certifications/htb-certified-wi-fi-pentesting-expert",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

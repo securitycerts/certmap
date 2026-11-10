@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cctia",
+  "acronym": "CCTA",
+  "name": "Certified Counterintelligence Threat Analyst",
+  "vendor": "McAfee Institute",
+  "issuer": null,
+  "domain": "Cyber Threat Intelligence",
+  "level": "intermediate",
+  "price_usd": 1397,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cctia.html",
+  "api": "https://certmap.dev/api/v1/certs/cctia.json",
+  "description": "Counterintelligence threat analysis certification.",
+  "tags": [
+   "cti"
+  ],
+  "currency_note": "List price for the program (training, exam license and certification); needs-based scholarship rate $699 for self-paying students",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.mcafeeinstitute.edu/products/certified-counterintelligence-threat-analyst-ccta",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

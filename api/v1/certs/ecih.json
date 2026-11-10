@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ecih",
+  "acronym": "ECIH",
+  "name": "EC-Council Certified Incident Handler",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Incident Handling",
+  "level": "intermediate",
+  "price_usd": 450,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ecih.html",
+  "api": "https://certmap.dev/api/v1/certs/ecih.json",
+  "description": "Incident handling and response certification.",
+  "tags": [
+   "ir"
+  ],
+  "currency_note": "Remote-proctored exam voucher",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/programs/ec-council-certified-incident-handler-ecih/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

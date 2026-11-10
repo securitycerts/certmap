@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cbcp",
+  "acronym": "CBCP",
+  "name": "Certified Business Continuity Professional",
+  "vendor": "DRI International",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cbcp.html",
+  "api": "https://certmap.dev/api/v1/certs/cbcp.json",
+  "description": "Business continuity credential requiring more than two years of experience, five subject-area essays with references and a pass of at least 75% on the DRI Qualifying Examination.",
+  "tags": [
+   "business-continuity",
+   "disaster-recovery",
+   "resilience"
+  ],
+  "currency_note": "Application fee $400 and annual renewal fee $225; the Qualifying Examination fee is usually included in DRI course pricing",
+  "price_verified_at": null,
+  "duration_min": 150,
+  "exam_count": 1,
+  "validity_years": 1,
+  "renewal_cost": 225,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://drii.org/certification/cbcp",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

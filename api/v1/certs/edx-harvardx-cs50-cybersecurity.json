@@ -1,0 +1,43 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "edx-harvardx-cs50-cybersecurity",
+  "acronym": "CS50 Cyber",
+  "name": "HarvardX CS50's Introduction to Cybersecurity",
+  "vendor": "edX",
+  "issuer": "Harvard",
+  "domain": "Security & Risk Management",
+  "level": "beginner",
+  "price_usd": 449,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/edx-harvardx-cs50-cybersecurity.html",
+  "api": "https://certmap.dev/api/v1/certs/edx-harvardx-cs50-cybersecurity.json",
+  "description": "Single introductory Harvard course for technical and non-technical audiences covering passwords and authentication, phishing, malware, network attacks, encryption and privacy. Course-based verified certificate assessed through assignments, with no proctored exam.",
+  "tags": [
+   "harvard",
+   "harvardx",
+   "cs50",
+   "university",
+   "foundational",
+   "single-course",
+   "course-based",
+   "edx"
+  ],
+  "currency_note": "Verified certificate price $449 shown on the edX page; the course can be audited for free without a certificate.",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.edx.org/learn/cybersecurity/harvard-university-cs50-s-introduction-to-cybersecurity",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -138,6 +138,10 @@ The dataset is community-maintained. Most vendors do not publish their exam fees
 
 If you find an out-of-date price, a wrong URL or a missing certification, please open a pull request against `data/certs.csv`. See `CONTRIBUTING.md`.
 
+## API
+
+The build also writes the data as a static JSON API under `api/v1/`: an entry point (`index.json`), every certification summarised (`certs.json`), one file per certification with its study plan and comparisons (`certs/<id>.json`), plus vendors, domains, comparisons and role paths. It is documented at [certmap.dev/api](https://certmap.dev/api/) and in `api/openapi.json`. It needs no key and can be fetched from a browser on any site. The data is CC BY 4.0: credit cert/map with a link.
+
 ## Sponsors
 
 cert/map is free, open source and has no ads or tracking. Sponsors are shown on the home page in three tiers (gold, silver, bronze). What sponsoring involves is explained at [certmap.dev/sponsors](https://certmap.dev/sponsors/); to become one, write to contact@certmap.dev. Sponsorship never changes which certifications are listed or what is said about them.

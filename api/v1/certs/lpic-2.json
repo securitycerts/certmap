@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "lpic-2",
+  "acronym": "LPIC-2",
+  "name": "LPIC-2 Linux Engineer",
+  "vendor": "LPI",
+  "issuer": null,
+  "domain": "*nix",
+  "level": "intermediate",
+  "price_usd": 200,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/lpic-2.html",
+  "api": "https://certmap.dev/api/v1/certs/lpic-2.json",
+  "description": "Mid-level Linux engineering certification.",
+  "tags": [
+   "linux"
+  ],
+  "currency_note": "Per exam (2 required)",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 2,
+  "validity_years": 5,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "lpic-1"
+  ],
+  "leads_to": [
+   "lpic-3-security"
+  ],
+  "official_url": "https://www.lpi.org/our-certifications/lpic-2-overview/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

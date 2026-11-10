@@ -1,0 +1,155 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cka",
+  "acronym": "CKA",
+  "name": "Certified Kubernetes Administrator",
+  "vendor": "CNCF",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "intermediate",
+  "price_usd": 445,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cka.html",
+  "api": "https://certmap.dev/api/v1/certs/cka.json",
+  "description": "Hands-on Kubernetes operator certification with a live shell exam.",
+  "tags": [
+   "cloud",
+   "kubernetes",
+   "hands-on"
+  ],
+  "currency_note": "Performance-based exam, two attempts",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "cks"
+  ],
+  "official_url": "https://www.cncf.io/training/certification/cka/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-cka.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CNCF Certification Curriculum (CKA)",
+       "provider": "CNCF",
+       "url": "https://github.com/cncf/curriculum",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "Kubernetes Fundamentals (LFS258)",
+       "provider": "The Linux Foundation",
+       "url": "https://training.linuxfoundation.org/training/kubernetes-fundamentals/",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Certified Kubernetes Administrator (CKA) free course",
+       "provider": "freeCodeCamp",
+       "url": "https://www.freecodecamp.org/news/prepare-for-the-kubernetes-administrator-certification-and-pass/",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "CKA Playground",
+       "provider": "Killercoda",
+       "url": "https://killercoda.com/playgrounds/scenario/cka",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Kubernetes Tutorials",
+       "provider": "Kubernetes",
+       "url": "https://kubernetes.io/docs/tutorials/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "Play with Kubernetes",
+       "provider": "Play with Kubernetes",
+       "url": "https://labs.play-with-k8s.com/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "repo",
+       "title": "Kubernetes The Hard Way",
+       "provider": "kelseyhightower",
+       "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "repo",
+       "title": "CKA practice exercises",
+       "provider": "alijahnas",
+       "url": "https://github.com/alijahnas/CKA-practice-exercises",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "repo",
+       "title": "CKA Exercises",
+       "provider": "chadmcrowell",
+       "url": "https://github.com/chadmcrowell/CKA-Exercises",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 10,
+       "type": "practice",
+       "title": "CKA Simulator",
+       "provider": "Killer Shell",
+       "url": "https://killer.sh/cka",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

@@ -1,0 +1,148 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cfce",
+  "acronym": "CFCE",
+  "name": "Certified Forensic Computer Examiner",
+  "vendor": "IACIS",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "advanced",
+  "price_usd": 800,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cfce.html",
+  "api": "https://certmap.dev/api/v1/certs/cfce.json",
+  "description": "Two-phase digital forensics certification: a peer review of four practical problems, then a hard drive practical and a 100-question knowledge test. External candidates must show 72 hours of relevant training.",
+  "tags": [
+   "digital-forensics",
+   "peer-review",
+   "hands-on"
+  ],
+  "currency_note": "External certification fee; candidates who attend the IACIS BCFE course are entered automatically",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.iacis.com/certification/cfce/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-cfce.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Certified Forensic Computer Examiner (CFCE)",
+       "provider": "IACIS",
+       "url": "https://www.iacis.com/certification/cfce/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "BCFE/CFCE Core Competencies 2026",
+       "provider": "IACIS",
+       "url": "https://www.iacis.com/wp-content/uploads/2026/08/BCFE-CFCE-Core-Competencies-2026.pdf",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "guide",
+       "title": "2026 CFCE Bibliography",
+       "provider": "IACIS",
+       "url": "https://www.iacis.com/wp-content/uploads/2016/02/2026-CFCE-Bibliography.pdf",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 4,
+       "type": "course",
+       "title": "BCFE: Basic Computer Forensic Examiner",
+       "provider": "IACIS",
+       "url": "https://www.iacis.com/courses/basic-computer-forensics-examiner/",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Disk Analysis & Autopsy",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/autopsy2ze0",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "Intro to Digital Forensics",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/introdigitalforensics",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "Case 001 - The Stolen Szechuan Sauce",
+       "provider": "DFIR Madness",
+       "url": "https://dfirmadness.com/the-stolen-szechuan-sauce/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "repo",
+       "title": "Autopsy",
+       "provider": "The Sleuth Kit",
+       "url": "https://github.com/sleuthkit/autopsy",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "repo",
+       "title": "Digital Corpora",
+       "provider": "Digital Corpora",
+       "url": "https://digitalcorpora.org/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 10,
+       "type": "repo",
+       "title": "CFReDS Portal",
+       "provider": "NIST",
+       "url": "https://cfreds.nist.gov/",
+       "free": true,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

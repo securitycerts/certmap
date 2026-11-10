@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "az-700",
+  "acronym": "AZ-700",
+  "name": "Microsoft Azure Network Engineer Associate",
+  "vendor": "Microsoft",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "intermediate",
+  "price_usd": 165,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/az-700.html",
+  "api": "https://certmap.dev/api/v1/certs/az-700.json",
+  "description": "Azure networking certification covering virtual networks, hybrid connectivity and load balancing.",
+  "tags": [
+   "cloud",
+   "azure",
+   "networking"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 100,
+  "exam_count": 1,
+  "validity_years": 1,
+  "renewal_cost": 0,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "az-104"
+  ],
+  "leads_to": [],
+  "official_url": "https://learn.microsoft.com/credentials/certifications/azure-network-engineer-associate/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

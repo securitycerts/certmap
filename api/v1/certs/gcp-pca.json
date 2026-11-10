@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gcp-pca",
+  "acronym": "PCA",
+  "name": "Google Cloud Professional Cloud Architect",
+  "vendor": "Google",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "advanced",
+  "price_usd": 200,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gcp-pca.html",
+  "api": "https://certmap.dev/api/v1/certs/gcp-pca.json",
+  "description": "Google Cloud architecture certification.",
+  "tags": [
+   "cloud",
+   "gcp"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": 100,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cloud.google.com/learn/certification/cloud-architect",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

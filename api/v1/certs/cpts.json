@@ -1,0 +1,151 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cpts",
+  "acronym": "CPTS",
+  "name": "HTB Certified Penetration Testing Specialist",
+  "vendor": "Hack The Box",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "advanced",
+  "price_usd": 210,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cpts.html",
+  "api": "https://certmap.dev/api/v1/certs/cpts.json",
+  "description": "Hands-on penetration testing certification with 7-day exam and report.",
+  "tags": [
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "Exam voucher only, two attempts; job-role path access sold separately",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 14400,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
+  "comparisons": [
+   {
+    "with": "oscp",
+    "page": "https://certmap.dev/certs/compare-cpts-vs-oscp.html"
+   },
+   {
+    "with": "cbbh",
+    "page": "https://certmap.dev/certs/compare-cbbh-vs-cpts.html"
+   },
+   {
+    "with": "cdsa",
+    "page": "https://certmap.dev/certs/compare-cdsa-vs-cpts.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-cpts.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "HTB Certified Penetration Testing Specialist",
+       "provider": "Hack The Box",
+       "url": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "Academy Certifications",
+       "provider": "Hack The Box",
+       "url": "https://help.hackthebox.com/en/articles/12741732-academy-certifications",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Penetration Tester Job Role Path",
+       "provider": "Hack The Box",
+       "url": "https://academy.hackthebox.com/path/preview/penetration-tester",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Getting Started",
+       "provider": "Hack The Box",
+       "url": "https://academy.hackthebox.com/course/preview/getting-started",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Active Directory Enumeration & Attacks",
+       "provider": "Hack The Box",
+       "url": "https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "Pivoting, Tunneling, and Port Forwarding",
+       "provider": "Hack The Box",
+       "url": "https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "Attacking Enterprise Networks",
+       "provider": "Hack The Box",
+       "url": "https://academy.hackthebox.com/course/preview/attacking-enterprise-networks",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 8,
+       "type": "repo",
+       "title": "GOAD (Game of Active Directory)",
+       "provider": "Orange-Cyberdefense",
+       "url": "https://github.com/Orange-Cyberdefense/GOAD",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "repo",
+       "title": "HackTricks",
+       "provider": "HackTricks-wiki",
+       "url": "https://github.com/HackTricks-wiki/hacktricks",
+       "free": true,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

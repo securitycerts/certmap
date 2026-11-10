@@ -1,0 +1,144 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "aws-clf",
+  "acronym": "CLF-C02",
+  "name": "AWS Certified Cloud Practitioner",
+  "vendor": "AWS",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "beginner",
+  "price_usd": 100,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/aws-clf.html",
+  "api": "https://certmap.dev/api/v1/certs/aws-clf.json",
+  "description": "Foundational AWS cloud certification.",
+  "tags": [
+   "cloud",
+   "aws",
+   "fundamentals"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+  "comparisons": [
+   {
+    "with": "az-900",
+    "page": "https://certmap.dev/certs/compare-aws-clf-vs-az-900.html"
+   },
+   {
+    "with": "aws-saa",
+    "page": "https://certmap.dev/certs/compare-aws-clf-vs-aws-saa.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-aws-clf.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "AWS Certified Cloud Practitioner (CLF-C02) Exam Guide",
+       "provider": "AWS",
+       "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "AWS Educate",
+       "provider": "AWS",
+       "url": "https://aws.amazon.com/education/awseducate/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Exam Prep: AWS Certified Cloud Practitioner (CLF-C02)",
+       "provider": "AWS Skill Builder",
+       "url": "https://skillbuilder.aws/category/exam-prep/cloud-practitioner-foundational-CLF-C02",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 4,
+       "type": "course",
+       "title": "AWS Cloud Practitioner Essentials",
+       "provider": "AWS Skill Builder",
+       "url": "https://skillbuilder.aws/learn/94T2BEN85A/aws-cloud-practitioner-essentials/8D79F3AVR7",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 5,
+       "type": "course",
+       "title": "AWS Certified Cloud Practitioner Study Course",
+       "provider": "freeCodeCamp",
+       "url": "https://www.freecodecamp.org/news/aws-certified-cloud-practitioner-certification-study-course-pass-the-exam/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "book",
+       "title": "AWS Certified Cloud Practitioner Study Guide: Foundational (CLF-C02) Exam, 2nd Edition",
+       "provider": "Sybex (Wiley)",
+       "url": "https://www.wiley.com/en-us/-p-9781394235636",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "AWS Hands-On Tutorials",
+       "provider": "AWS",
+       "url": "https://aws.amazon.com/getting-started/hands-on/",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 8,
+       "type": "practice",
+       "title": "AWS Certified Cloud Practitioner CLF-C02 Sample Exam Questions",
+       "provider": "Tutorials Dojo",
+       "url": "https://tutorialsdojo.com/aws-certified-cloud-practitioner-clf-c02-sample-exam-questions/",
+       "free": true,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

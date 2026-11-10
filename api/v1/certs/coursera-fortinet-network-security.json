@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "coursera-fortinet-network-security",
+  "acronym": "Fortinet NetSec",
+  "name": "Fortinet Network Security Specialization",
+  "vendor": "Coursera",
+  "issuer": "Fortinet",
+  "domain": "Communication & Network Security",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/coursera-fortinet-network-security.html",
+  "api": "https://certmap.dev/api/v1/certs/coursera-fortinet-network-security.json",
+  "description": "Five-course Fortinet specialization covering the core Fortinet network security products and how to design, deploy, administer and support an enterprise security infrastructure with them. Course-based certificate with no proctored exam.",
+  "tags": [
+   "fortinet",
+   "firewall",
+   "network-security",
+   "course-based",
+   "coursera"
+  ],
+  "currency_note": "Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.coursera.org/specializations/fortinet-network-security",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

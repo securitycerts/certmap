@@ -1,0 +1,44 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "az-104",
+  "acronym": "AZ-104",
+  "name": "Microsoft Azure Administrator",
+  "vendor": "Microsoft",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "intermediate",
+  "price_usd": 165,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/az-104.html",
+  "api": "https://certmap.dev/api/v1/certs/az-104.json",
+  "description": "Azure infrastructure administration certification.",
+  "tags": [
+   "cloud",
+   "azure"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 100,
+  "exam_count": 1,
+  "validity_years": 1,
+  "renewal_cost": 0,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "az-700"
+  ],
+  "official_url": "https://learn.microsoft.com/credentials/certifications/azure-administrator/",
+  "comparisons": [
+   {
+    "with": "az-900",
+    "page": "https://certmap.dev/certs/compare-az-900-vs-az-104.html"
+   }
+  ],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gdat",
+  "acronym": "GDAT",
+  "name": "GIAC Defending Advanced Threats",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "expert",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gdat.html",
+  "api": "https://certmap.dev/api/v1/certs/gdat.json",
+  "description": "Advanced purple team and defense certification.",
+  "tags": [
+   "blue-team",
+   "purple-team"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/defending-advanced-threats-gdat/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

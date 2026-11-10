@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "emapt",
+  "acronym": "eMAPT",
+  "name": "eLearnSecurity Mobile Application Penetration Tester",
+  "vendor": "INE",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "intermediate",
+  "price_usd": 450,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/emapt.html",
+  "api": "https://certmap.dev/api/v1/certs/emapt.json",
+  "description": "Hands-on mobile application penetration testing certification covering Android and iOS.",
+  "tags": [
+   "mobile",
+   "appsec",
+   "hands-on"
+  ],
+  "currency_note": "Exam voucher only; bundle with 3 months of training $599",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 8640,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://ine.com/security/certifications/emapt-certification",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

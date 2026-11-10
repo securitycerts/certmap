@@ -1,0 +1,97 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cipp",
+  "acronym": "CIPP",
+  "name": "Certified Information Privacy Professional",
+  "vendor": "IAPP",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": 550,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cipp.html",
+  "api": "https://certmap.dev/api/v1/certs/cipp.json",
+  "description": "Privacy law and regulation certification.",
+  "tags": [
+   "privacy",
+   "grc"
+  ],
+  "currency_note": "Per concentration",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 150,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://iapp.org/certify/cipp/",
+  "comparisons": [
+   {
+    "with": "cipm",
+    "page": "https://certmap.dev/certs/compare-cipp-vs-cipm.html"
+   },
+   {
+    "with": "aigp",
+    "page": "https://certmap.dev/certs/compare-aigp-vs-cipp.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-cipp.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CIPP certification",
+       "provider": "IAPP",
+       "url": "https://iapp.org/certify/cipp",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "Free study guides",
+       "provider": "IAPP",
+       "url": "https://iapp.org/certify/free-study-guides",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "guide",
+       "title": "How to prepare",
+       "provider": "IAPP",
+       "url": "https://iapp.org/certify/how-to-prepare",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 4,
+       "type": "course",
+       "title": "Certified Information Privacy Professional training",
+       "provider": "IAPP",
+       "url": "https://iapp.org/train/cipp-training",
+       "free": false,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

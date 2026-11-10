@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ecthp",
+  "acronym": "eCTHP",
+  "name": "eLearnSecurity Certified Threat Hunting Professional",
+  "vendor": "INE",
+  "issuer": null,
+  "domain": "Cyber Threat Intelligence",
+  "level": "advanced",
+  "price_usd": 450,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ecthp.html",
+  "api": "https://certmap.dev/api/v1/certs/ecthp.json",
+  "description": "Hands-on threat hunting certification covering adversary tradecraft and detection engineering.",
+  "tags": [
+   "threat-hunting",
+   "blue-team",
+   "hands-on"
+  ],
+  "currency_note": "Exam voucher only; bundle with 3 months of training $599",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 4320,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://ine.com/security/certifications/ecthp-certification",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

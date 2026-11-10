@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gcp-psoe",
+  "acronym": "PSOE",
+  "name": "Google Cloud Professional Security Operations Engineer",
+  "vendor": "Google",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "advanced",
+  "price_usd": 200,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gcp-psoe.html",
+  "api": "https://certmap.dev/api/v1/certs/gcp-psoe.json",
+  "description": "Covers detection engineering, threat hunting, incident response, data management and platform operations with Google Cloud security tooling. Multiple choice exam of 50 to 60 questions.",
+  "tags": [
+   "blue-team",
+   "soc",
+   "gcp"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cloud.google.com/learn/certification/security-operations-engineer",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

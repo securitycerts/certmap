@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "caisp",
+  "acronym": "CAISP",
+  "name": "Certified AI Security Professional",
+  "vendor": "Practical DevSecOps",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "intermediate",
+  "price_usd": 1099,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/caisp.html",
+  "api": "https://certmap.dev/api/v1/certs/caisp.json",
+  "description": "Practical exam of five challenges in six hours, followed by 24 hours to submit a report, covering attacks on and defences for AI and LLM systems. Lifetime credential.",
+  "tags": [
+   "ai-security",
+   "llm",
+   "hands-on"
+  ],
+  "currency_note": "List price; includes course, labs and one exam attempt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 360,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.practical-devsecops.com/certified-ai-security-professional/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

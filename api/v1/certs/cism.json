@@ -1,0 +1,106 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cism",
+  "acronym": "CISM",
+  "name": "Certified Information Security Manager",
+  "vendor": "ISACA",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "expert",
+  "price_usd": 575,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cism.html",
+  "api": "https://certmap.dev/api/v1/certs/cism.json",
+  "description": "Information security management certification focused on governance and program management.",
+  "tags": [
+   "management",
+   "grc"
+  ],
+  "currency_note": "Member rate; $760 non-member",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.isaca.org/credentialing/cism",
+  "comparisons": [
+   {
+    "with": "cissp",
+    "page": "https://certmap.dev/certs/compare-cism-vs-cissp.html"
+   },
+   {
+    "with": "crisc",
+    "page": "https://certmap.dev/certs/compare-cism-vs-crisc.html"
+   },
+   {
+    "with": "cisa",
+    "page": "https://certmap.dev/certs/compare-cisa-vs-cism.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-cism.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CISM Exam Content Outline",
+       "provider": "ISACA",
+       "url": "https://www.isaca.org/credentialing/cism/cism-exam-content-outline",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "CISM Online Review Course",
+       "provider": "ISACA",
+       "url": "https://www.isaca.org/store2/product/CISM-ORC-C",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "book",
+       "title": "CISM Review Manual",
+       "provider": "ISACA",
+       "url": "https://www.isaca.org/store2/product/CISM-RM-C",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 4,
+       "type": "practice",
+       "title": "CISM Questions, Answers & Explanations Database",
+       "provider": "ISACA",
+       "url": "https://www.isaca.org/store2/product/CISM-QAE-C",
+       "free": false,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "osce3",
+  "acronym": "OSCE3",
+  "name": "Offensive Security Certified Expert 3",
+  "vendor": "OffSec",
+  "issuer": null,
+  "domain": "Exploitation",
+  "level": "expert",
+  "price_usd": 0,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/osce3.html",
+  "api": "https://certmap.dev/api/v1/certs/osce3.json",
+  "description": "Aggregate credential awarded for completing OSEP, OSED and OSWE.",
+  "tags": [
+   "red-team",
+   "senior"
+  ],
+  "currency_note": "Awarded for holding OSEP+OSED+OSWE",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 0,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "osep",
+   "osed",
+   "oswe"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.offsec.com/certificates/osce3/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

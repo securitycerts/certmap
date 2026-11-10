@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccst-cyber",
+  "acronym": "CCST CS",
+  "name": "Cisco Certified Support Technician Cybersecurity",
+  "vendor": "Cisco",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "beginner",
+  "price_usd": 125,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ccst-cyber.html",
+  "api": "https://certmap.dev/api/v1/certs/ccst-cyber.json",
+  "description": "Entry-level Cisco cybersecurity certification.",
+  "tags": [
+   "fundamentals"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 50,
+  "exam_count": 1,
+  "validity_years": 5,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/index.html",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

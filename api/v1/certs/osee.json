@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "osee",
+  "acronym": "OSEE",
+  "name": "OffSec Exploitation Expert",
+  "vendor": "OffSec",
+  "issuer": null,
+  "domain": "Exploitation",
+  "level": "expert",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/osee.html",
+  "api": "https://certmap.dev/api/v1/certs/osee.json",
+  "description": "Advanced Windows exploit development covering bypassing modern mitigations.",
+  "tags": [
+   "exploit-dev",
+   "windows",
+   "hands-on"
+  ],
+  "currency_note": "No standalone price; EXP-401 (AWE) is in-person live training via Learn Enterprise",
+  "price_verified_at": null,
+  "duration_min": 4320,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "osed"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.offsec.com/courses/exp-401/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ecdfp",
+  "acronym": "eCDFP",
+  "name": "INE Certified Digital Forensics Professional",
+  "vendor": "INE",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "advanced",
+  "price_usd": 450,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ecdfp.html",
+  "api": "https://certmap.dev/api/v1/certs/ecdfp.json",
+  "description": "Scenario-based digital forensics exam covering evidence acquisition and analysis of disk, network and log artefacts. The credential is valid for three years.",
+  "tags": [
+   "forensics",
+   "dfir",
+   "hands-on"
+  ],
+  "currency_note": "Exam voucher only; bundle with 3 months of training $599",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://ine.com/security/certifications/ecdfp-certification",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

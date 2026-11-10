@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "papa",
+  "acronym": "PAPA",
+  "name": "Practical AI Pentest Associate",
+  "vendor": "TCM Security",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "intermediate",
+  "price_usd": 249,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/papa.html",
+  "api": "https://certmap.dev/api/v1/certs/papa.json",
+  "description": "Associate-level practical exam on exploiting an agentic AI application, with a written report. Does not expire.",
+  "tags": [
+   "ai",
+   "appsec",
+   "hands-on"
+  ],
+  "currency_note": "Exam voucher with 12 months of training and one free retake",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://certifications.tcm-sec.com/papa/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

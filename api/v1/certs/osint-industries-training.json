@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "osint-industries-training",
+  "acronym": "OSINT Ind.",
+  "name": "OSINT Industries OSINT Training",
+  "vendor": "OSINT Industries",
+  "issuer": null,
+  "domain": "OSINT",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/osint-industries-training.html",
+  "api": "https://certmap.dev/api/v1/certs/osint-industries-training.json",
+  "description": "Practitioner-led OSINT training of about 18 hours over three days, built from modules such as OSINT Fundamentals, Advanced OSINT and OSINT for ICAC analysts. Course-based, with hands-on exercises; some courses end in an assessment such as a CTF or a quiz.",
+  "tags": [
+   "osint",
+   "training",
+   "course-based",
+   "law-enforcement",
+   "hands-on"
+  ],
+  "currency_note": "Bespoke training built from modules; price on request",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.osint.industries/services/training",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

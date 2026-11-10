@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ctia",
+  "acronym": "CTIA",
+  "name": "EC-Council Certified Threat Intelligence Analyst",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Cyber Threat Intelligence",
+  "level": "intermediate",
+  "price_usd": 450,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ctia.html",
+  "api": "https://certmap.dev/api/v1/certs/ctia.json",
+  "description": "Threat intelligence analyst certification covering CTI lifecycle, collection and analysis.",
+  "tags": [
+   "cti",
+   "blue-team"
+  ],
+  "currency_note": "Remote-proctored exam voucher (CTIA v2)",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/train-certify/certified-threat-intelligence-analyst-ctia/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

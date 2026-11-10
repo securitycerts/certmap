@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gwapt",
+  "acronym": "GWAPT",
+  "name": "GIAC Web Application Penetration Tester",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gwapt.html",
+  "api": "https://certmap.dev/api/v1/certs/gwapt.json",
+  "description": "Web application penetration testing certification.",
+  "tags": [
+   "appsec",
+   "web"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/web-application-penetration-tester-gwapt/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

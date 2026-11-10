@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "mwasp",
+  "acronym": "MWASP",
+  "name": "MCSI Web Application Security Practitioner",
+  "vendor": "MCSI",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/mwasp.html",
+  "api": "https://certmap.dev/api/v1/certs/mwasp.json",
+  "description": "Practical web application security and assessment certification.",
+  "tags": [
+   "appsec",
+   "web",
+   "hands-on"
+  ],
+  "currency_note": "Not in the vendor's current catalogue (checked 2026-11-10); kept for existing holders",
+  "price_verified_at": null,
+  "duration_min": 4320,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.mosse-institute.com/certifications.html",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "osda",
+  "acronym": "OSDA",
+  "name": "OffSec Defense Analyst",
+  "vendor": "OffSec",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 1749,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/osda.html",
+  "api": "https://certmap.dev/api/v1/certs/osda.json",
+  "description": "Blue team detection and SOC analyst certification from OffSec.",
+  "tags": [
+   "blue-team",
+   "soc"
+  ],
+  "currency_note": "Course and cert bundle: 90-day lab and one exam attempt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.offsec.com/courses/soc-200/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-osda.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "OSDA Exam Guide",
+       "provider": "OffSec",
+       "url": "https://help.offsec.com/hc/en-us/articles/4410105675412-OSDA-Exam-Guide",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "OSDA Exam FAQ",
+       "provider": "OffSec",
+       "url": "https://help.offsec.com/hc/en-us/articles/10170036616084-OSDA-Exam-FAQ",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "guide",
+       "title": "SOC-200 Syllabus",
+       "provider": "OffSec",
+       "url": "https://www.offsec.com/documentation/SOC-200-Syllabus.pdf",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 4,
+       "type": "course",
+       "title": "SOC-200: Foundational Security Operations and Defensive Analysis",
+       "provider": "OffSec",
+       "url": "https://www.offsec.com/courses/soc-200/",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 5,
+       "type": "repo",
+       "title": "Sigma",
+       "provider": "SigmaHQ",
+       "url": "https://github.com/SigmaHQ/sigma",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "Atomic Red Team",
+       "provider": "Red Canary",
+       "url": "https://github.com/redcanaryco/atomic-red-team",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "repo",
+       "title": "DetectionLab",
+       "provider": "clong",
+       "url": "https://github.com/clong/DetectionLab",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "repo",
+       "title": "Detection Rules",
+       "provider": "Elastic",
+       "url": "https://github.com/elastic/detection-rules",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "lab",
+       "title": "Windows Event Logs",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/windowseventlogs",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 10,
+       "type": "lab",
+       "title": "Elastic Stack: The Basics",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/investigatingwithelk101",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

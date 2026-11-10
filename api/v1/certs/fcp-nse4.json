@@ -1,0 +1,90 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "fcp-nse4",
+  "acronym": "NSE 4",
+  "name": "Fortinet NSE 4 FortiOS Administrator",
+  "vendor": "Fortinet",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "intermediate",
+  "price_usd": 200,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/fcp-nse4.html",
+  "api": "https://certmap.dev/api/v1/certs/fcp-nse4.json",
+  "description": "FortiGate operator certification covering firewall policy, routing, VPN and SD-WAN basics.",
+  "tags": [
+   "networking",
+   "firewall"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-06-08",
+  "duration_min": 105,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "fcp-nse5"
+  ],
+  "official_url": "https://www.fortinet.com/training-certification",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-fcp-nse4.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "FortiOS Administrator Exam",
+       "provider": "Fortinet",
+       "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "NSE 4 FortiOS",
+       "provider": "Fortinet",
+       "url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_4",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "guide",
+       "title": "FortiOS 7.6.0 Administration Guide",
+       "provider": "Fortinet",
+       "url": "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 4,
+       "type": "course",
+       "title": "Training Institute Library: NSE 4",
+       "provider": "Fortinet",
+       "url": "https://training.fortinet.com/local/library/?category=Certification:NSE_4",
+       "free": false,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

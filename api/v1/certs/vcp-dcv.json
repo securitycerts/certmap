@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "vcp-dcv",
+  "acronym": "VCP-DCV",
+  "name": "VMware Certified Professional - Data Center Virtualization",
+  "vendor": "VMware",
+  "issuer": null,
+  "domain": "Asset Security",
+  "level": "intermediate",
+  "price_usd": 250,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/vcp-dcv.html",
+  "api": "https://certmap.dev/api/v1/certs/vcp-dcv.json",
+  "description": "vSphere administration certification covering compute, storage and networking virtualisation.",
+  "tags": [
+   "virtualization",
+   "ops"
+  ],
+  "currency_note": null,
+  "price_verified_at": null,
+  "duration_min": 135,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.broadcom.com/support/education/vmware/certification",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

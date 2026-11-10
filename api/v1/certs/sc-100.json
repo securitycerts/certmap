@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "sc-100",
+  "acronym": "SC-100",
+  "name": "Microsoft Cybersecurity Architect",
+  "vendor": "Microsoft",
+  "issuer": null,
+  "domain": "Security Architecture & Engineering",
+  "level": "expert",
+  "price_usd": 165,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/sc-100.html",
+  "api": "https://certmap.dev/api/v1/certs/sc-100.json",
+  "description": "Microsoft cybersecurity architect expert certification (exam SC-100); requires one associate prerequisite such as AZ-500, SC-200 or SC-300.",
+  "tags": [
+   "cloud",
+   "azure",
+   "architecture"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 150,
+  "exam_count": 1,
+  "validity_years": 1,
+  "renewal_cost": 0,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "sc-200"
+  ],
+  "leads_to": [],
+  "official_url": "https://learn.microsoft.com/credentials/certifications/cybersecurity-architect-expert/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pan-ngfw-engineer",
+  "acronym": "NGFW Engineer",
+  "name": "Palo Alto Networks Next-Generation Firewall Engineer",
+  "vendor": "Palo Alto Networks",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "advanced",
+  "price_usd": 250,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pan-ngfw-engineer.html",
+  "api": "https://certmap.dev/api/v1/certs/pan-ngfw-engineer.json",
+  "description": "Specialist-level role-based certification for engineers who deploy and operate Palo Alto Networks next-generation firewalls. One of the successors to the retired PCNSE.",
+  "tags": [
+   "networking",
+   "firewall"
+  ],
+  "currency_note": "Specialist-level exam",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

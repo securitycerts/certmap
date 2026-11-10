@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gse",
+  "acronym": "GSE",
+  "name": "GIAC Security Expert",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Security Architecture & Engineering",
+  "level": "expert",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/gse.html",
+  "api": "https://certmap.dev/api/v1/certs/gse.json",
+  "description": "Portfolio credential awarded for holding six active GIAC Practitioner certifications and four GIAC Applied Knowledge certifications. It replaced the former multi-day GSE lab exam.",
+  "tags": [
+   "capstone",
+   "hands-on"
+  ],
+  "currency_note": "No separate GSE fee; portfolio of 6 Practitioner and 4 Applied Knowledge (GX) certifications, each paid separately",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 10,
+  "validity_years": 4,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "gsec",
+   "gcih"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/get-certified/giac-portfolio-certifications/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

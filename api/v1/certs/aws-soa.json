@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "aws-soa",
+  "acronym": "SOA-C03",
+  "name": "AWS Certified CloudOps Engineer Associate",
+  "vendor": "AWS",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "intermediate",
+  "price_usd": 150,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/aws-soa.html",
+  "api": "https://certmap.dev/api/v1/certs/aws-soa.json",
+  "description": "Associate certification on deploying, operating and monitoring workloads on AWS. Renamed from SysOps Administrator Associate with exam version SOA-C03 in September 2025.",
+  "tags": [
+   "cloud",
+   "aws",
+   "ops"
+  ],
+  "currency_note": "Formerly SysOps Administrator Associate",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 130,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

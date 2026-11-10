@@ -1,0 +1,104 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cisa",
+  "acronym": "CISA",
+  "name": "Certified Information Systems Auditor",
+  "vendor": "ISACA",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "expert",
+  "price_usd": 575,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cisa.html",
+  "api": "https://certmap.dev/api/v1/certs/cisa.json",
+  "description": "Information systems audit certification; the standard for IT auditors.",
+  "tags": [
+   "audit",
+   "grc"
+  ],
+  "currency_note": "Member rate; $760 non-member",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "aaia"
+  ],
+  "official_url": "https://www.isaca.org/credentialing/cisa",
+  "comparisons": [
+   {
+    "with": "crisc",
+    "page": "https://certmap.dev/certs/compare-cisa-vs-crisc.html"
+   },
+   {
+    "with": "cism",
+    "page": "https://certmap.dev/certs/compare-cisa-vs-cism.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-cisa.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CISA Exam Content Outline",
+       "provider": "ISACA",
+       "url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "CISA Online Review Course",
+       "provider": "ISACA",
+       "url": "https://www.isaca.org/store2/product/CISA-ORC-C",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "book",
+       "title": "CISA Official Review Manual",
+       "provider": "ISACA",
+       "url": "https://www.isaca.org/store2/product/CISA-RM-C",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 4,
+       "type": "practice",
+       "title": "CISA Questions, Answers & Explanations",
+       "provider": "ISACA",
+       "url": "https://www.isaca.org/store2/product/CISA-QAE-C",
+       "free": false,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

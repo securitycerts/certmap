@@ -1,0 +1,164 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cks",
+  "acronym": "CKS",
+  "name": "Certified Kubernetes Security Specialist",
+  "vendor": "CNCF",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "advanced",
+  "price_usd": 445,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cks.html",
+  "api": "https://certmap.dev/api/v1/certs/cks.json",
+  "description": "Hands-on Kubernetes security certification covering runtime, supply chain and cluster hardening.",
+  "tags": [
+   "cloud",
+   "kubernetes",
+   "hands-on"
+  ],
+  "currency_note": "Performance-based exam, two attempts",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "cka"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.cncf.io/training/certification/cks/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-cks.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CNCF Certification Curriculum (CKS)",
+       "provider": "CNCF",
+       "url": "https://github.com/cncf/curriculum",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "Certified Kubernetes Security Specialist curated resources",
+       "provider": "Walid Shaari",
+       "url": "https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Kubernetes Security Essentials (LFS260)",
+       "provider": "The Linux Foundation",
+       "url": "https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Killer Shell CKS scenarios",
+       "provider": "Killercoda",
+       "url": "https://killercoda.com/killer-shell-cks",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Cluster Hardening",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/clusterhardening",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "Kubernetes Goat",
+       "provider": "madhuakula",
+       "url": "https://github.com/madhuakula/kubernetes-goat",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "repo",
+       "title": "kube-bench",
+       "provider": "Aqua Security",
+       "url": "https://github.com/aquasecurity/kube-bench",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "repo",
+       "title": "Falco",
+       "provider": "Falco",
+       "url": "https://github.com/falcosecurity/falco",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "repo",
+       "title": "Trivy",
+       "provider": "Aqua Security",
+       "url": "https://github.com/aquasecurity/trivy",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 10,
+       "type": "repo",
+       "title": "CKS course environment",
+       "provider": "Killer Shell",
+       "url": "https://github.com/killer-sh/cks-course-environment",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 11,
+       "type": "practice",
+       "title": "CKS Simulator",
+       "provider": "Killer Shell",
+       "url": "https://killer.sh/cks",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

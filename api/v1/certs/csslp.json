@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "csslp",
+  "acronym": "CSSLP",
+  "name": "Certified Secure Software Lifecycle Professional",
+  "vendor": "ISC2",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "expert",
+  "price_usd": 599,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/csslp.html",
+  "api": "https://certmap.dev/api/v1/certs/csslp.json",
+  "description": "Secure software development lifecycle certification for developers and architects.",
+  "tags": [
+   "appsec",
+   "sdlc"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.isc2.org/Certifications/CSSLP",
+  "comparisons": [
+   {
+    "with": "cissp",
+    "page": "https://certmap.dev/certs/compare-cissp-vs-csslp.html"
+   }
+  ],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cpent",
+  "acronym": "CPENT",
+  "name": "Certified Penetration Testing Professional",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cpent.html",
+  "api": "https://certmap.dev/api/v1/certs/cpent.json",
+  "description": "Fully practical penetration testing exam (CPENT AI) taken as one 24-hour session or two 12-hour sessions, followed by a written report. A score of 90 percent or higher also grants the LPT (Master) credential.",
+  "tags": [
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "CPENT Exam + Range (store price); scoring 90% or higher also awards LPT (Master)",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/train-certify/certified-penetration-testing-professional-cpent/",
+  "comparisons": [
+   {
+    "with": "ceh",
+    "page": "https://certmap.dev/certs/compare-ceh-vs-cpent.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-cpent.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CPENT v2 Exam Blueprint",
+       "provider": "EC-Council",
+       "url": "https://cert.eccouncil.org/images/doc/CPENTv2-Exam-Blueprint.pdf",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "Certified Penetration Testing Professional certification page",
+       "provider": "EC-Council",
+       "url": "https://cert.eccouncil.org/certified-penetration-testing-professional-cpent.html",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "CPENT AI course",
+       "provider": "EC-Council",
+       "url": "https://www.eccouncil.org/train-certify/certified-penetration-testing-professional-cpent/",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Linux PrivEsc",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/linuxprivesc",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Windows PrivEsc",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/windows10privesc",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "Attacktive Directory",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/attacktivedirectory",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "PWN101",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/pwn101",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "Wreath",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/wreath",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "lab",
+       "title": "Pivoting, Tunneling, and Port Forwarding",
+       "provider": "Hack The Box",
+       "url": "https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "edrp",
+  "acronym": "EDRP",
+  "name": "EC-Council Disaster Recovery Professional",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Incident Handling",
+  "level": "intermediate",
+  "price_usd": 450,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/edrp.html",
+  "api": "https://certmap.dev/api/v1/certs/edrp.json",
+  "description": "Disaster recovery and business continuity certification.",
+  "tags": [
+   "ir",
+   "bcp"
+  ],
+  "currency_note": "Remote-proctored exam voucher (EDRP v4)",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/programs/disaster-recovery-professional-edrp/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

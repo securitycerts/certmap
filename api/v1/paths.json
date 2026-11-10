@@ -1,0 +1,137 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "count": 8,
+ "paths": [
+  {
+   "id": "pentester",
+   "name": "Penetration tester",
+   "certifications": [
+    "ejpt",
+    "pjpt",
+    "pnpt",
+    "oscp",
+    "osep"
+   ],
+   "hours": 940,
+   "months": 21.9,
+   "cost": 4496,
+   "unknown": 0,
+   "page": "https://certmap.dev/certs/path-pentester.html"
+  },
+  {
+   "id": "red-team-operator",
+   "name": "Red team operator",
+   "certifications": [
+    "crto",
+    "oscp",
+    "osed",
+    "oswe",
+    "osep"
+   ],
+   "hours": 1780,
+   "months": 41.4,
+   "cost": 7532,
+   "unknown": 0,
+   "page": "https://certmap.dev/certs/path-red-team-operator.html"
+  },
+  {
+   "id": "soc-analyst",
+   "name": "SOC analyst",
+   "certifications": [
+    "sec-plus",
+    "gcih",
+    "osda",
+    "splunk-cda",
+    "cysa-plus"
+   ],
+   "hours": 620,
+   "months": 14.4,
+   "cost": 3756,
+   "unknown": 0,
+   "page": "https://certmap.dev/certs/path-soc-analyst.html"
+  },
+  {
+   "id": "dfir-investigator",
+   "name": "DFIR investigator",
+   "certifications": [
+    "encase",
+    "gcfe",
+    "gcfa",
+    "gnfa",
+    "grem"
+   ],
+   "hours": 1220,
+   "months": 28.4,
+   "cost": 4496,
+   "unknown": 0,
+   "page": "https://certmap.dev/certs/path-dfir-investigator.html"
+  },
+  {
+   "id": "threat-intel-analyst",
+   "name": "Threat intelligence analyst",
+   "certifications": [
+    "sec-plus",
+    "ctia",
+    "gosi",
+    "gcti",
+    "gdat"
+   ],
+   "hours": 1020,
+   "months": 23.7,
+   "cost": 3886,
+   "unknown": 0,
+   "page": "https://certmap.dev/certs/path-threat-intel-analyst.html"
+  },
+  {
+   "id": "appsec-engineer",
+   "name": "Application security engineer",
+   "certifications": [
+    "sec-plus",
+    "oswa",
+    "gwapt",
+    "csslp",
+    "oswe"
+   ],
+   "hours": 1300,
+   "months": 30.2,
+   "cost": 5535,
+   "unknown": 0,
+   "page": "https://certmap.dev/certs/path-appsec-engineer.html"
+  },
+  {
+   "id": "cloud-security",
+   "name": "Cloud security architect",
+   "certifications": [
+    "sec-plus",
+    "ccsk",
+    "sc-500",
+    "aws-scs",
+    "ccsp"
+   ],
+   "hours": 1020,
+   "months": 23.7,
+   "cost": 1948,
+   "unknown": 0,
+   "page": "https://certmap.dev/certs/path-cloud-security.html"
+  },
+  {
+   "id": "grc-manager",
+   "name": "GRC manager",
+   "certifications": [
+    "cgrc",
+    "cisa",
+    "cism",
+    "cissp",
+    "crisc"
+   ],
+   "hours": 1940,
+   "months": 45.1,
+   "cost": 3073,
+   "unknown": 0,
+   "page": "https://certmap.dev/certs/path-grc-manager.html"
+  }
+ ]
+}

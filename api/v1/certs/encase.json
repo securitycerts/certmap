@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "encase",
+  "acronym": "EnCE",
+  "name": "EnCase Certified Examiner",
+  "vendor": "OpenText",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "intermediate",
+  "price_usd": 500,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/encase.html",
+  "api": "https://certmap.dev/api/v1/certs/encase.json",
+  "description": "EnCase forensic examiner certification.",
+  "tags": [
+   "forensics"
+  ],
+  "currency_note": "Plus training",
+  "price_verified_at": "2026-06-08",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": 250,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.opentext.com/products/encase-training/encase-certified-examiner-ence-certification-program",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

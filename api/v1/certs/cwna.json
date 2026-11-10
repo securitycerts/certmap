@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cwna",
+  "acronym": "CWNA",
+  "name": "Certified Wireless Network Administrator",
+  "vendor": "CWNP",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "beginner",
+  "price_usd": 275,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cwna.html",
+  "api": "https://certmap.dev/api/v1/certs/cwna.json",
+  "description": "Vendor-neutral enterprise Wi-Fi administration certification with a 60-question exam. It is the required base credential for the CWNP professional-level certifications.",
+  "tags": [
+   "wireless",
+   "wifi",
+   "networking",
+   "vendor-neutral"
+  ],
+  "currency_note": "List price $274.99 (exam CWNA-110)",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "cwsp"
+  ],
+  "official_url": "https://www.cwnp.com/certifications/cwna",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

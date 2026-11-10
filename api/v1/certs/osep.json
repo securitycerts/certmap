@@ -1,0 +1,151 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "osep",
+  "acronym": "OSEP",
+  "name": "OffSec Experienced Penetration Tester",
+  "vendor": "OffSec",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "expert",
+  "price_usd": 1749,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/osep.html",
+  "api": "https://certmap.dev/api/v1/certs/osep.json",
+  "description": "Advanced evasion and bypass techniques for mature defensive environments.",
+  "tags": [
+   "red-team",
+   "evasion"
+  ],
+  "currency_note": "Course and cert bundle: 90-day lab and one exam attempt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "oscp"
+  ],
+  "leads_to": [
+   "osce3"
+  ],
+  "official_url": "https://www.offsec.com/courses/pen-300/",
+  "comparisons": [
+   {
+    "with": "oscp",
+    "page": "https://certmap.dev/certs/compare-oscp-vs-osep.html"
+   },
+   {
+    "with": "oswe",
+    "page": "https://certmap.dev/certs/compare-osep-vs-oswe.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-osep.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "OSEP Exam Guide",
+       "provider": "OffSec",
+       "url": "https://help.offsec.com/hc/en-us/articles/360050293792-OSEP-Exam-Guide",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "PEN-300 Syllabus",
+       "provider": "OffSec",
+       "url": "https://www.offsec.com/documentation/PEN300-Syllabus.pdf",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "PEN-300: Advanced Evasion Techniques and Breaching Defenses",
+       "provider": "OffSec",
+       "url": "https://www.offsec.com/courses/pen-300/",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Bypassing UAC",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/bypassinguac",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "repo",
+       "title": "GOAD (Game of Active Directory)",
+       "provider": "Orange-Cyberdefense",
+       "url": "https://github.com/Orange-Cyberdefense/GOAD",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "Red Teaming Tactics and Techniques",
+       "provider": "mantvydasb",
+       "url": "https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "Red Teaming",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/path/outline/redteaming",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "AV Evasion: Shellcode",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/avevasionshellcode",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "lab",
+       "title": "Lateral Movement and Pivoting",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/lateralmovementandpivoting",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

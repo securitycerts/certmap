@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cciso",
+  "acronym": "CCISO",
+  "name": "Certified Chief Information Security Officer",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "expert",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cciso.html",
+  "api": "https://certmap.dev/api/v1/certs/cciso.json",
+  "description": "Executive-level CISO certification covering five governance domains.",
+  "tags": [
+   "management",
+   "executive"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 150,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/programs/certified-chief-information-security-officer-cciso/",
+  "comparisons": [
+   {
+    "with": "cissp",
+    "page": "https://certmap.dev/certs/compare-cciso-vs-cissp.html"
+   }
+  ],
+  "study_plan": null
+ }
+}

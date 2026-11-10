@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "elastic-siem-analyst",
+  "acronym": "Elastic SIEM Analyst",
+  "name": "Elastic Certified SIEM Analyst",
+  "vendor": "Elastic",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 400,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/elastic-siem-analyst.html",
+  "api": "https://certmap.dev/api/v1/certs/elastic-siem-analyst.json",
+  "description": "Exam for security analysts using Elastic Security, covering ECS, Discover, visualisations, detection rules, alerts, Timeline and Cases, completed with only the Elastic documentation as a reference.",
+  "tags": [
+   "siem",
+   "elastic",
+   "detection",
+   "vendor"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.elastic.co/training/elastic-certified-siem-analyst-exam",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

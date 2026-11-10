@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cdpse",
+  "acronym": "CDPSE",
+  "name": "ISACA Certified Data Privacy Solutions Engineer",
+  "vendor": "ISACA",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "advanced",
+  "price_usd": 575,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cdpse.html",
+  "api": "https://certmap.dev/api/v1/certs/cdpse.json",
+  "description": "ISACA privacy engineering certification covering governance, architecture and lifecycle of personal data.",
+  "tags": [
+   "privacy",
+   "grc"
+  ],
+  "currency_note": "Member rate; $760 non-member",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 210,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.isaca.org/credentialing/certified-data-privacy-solutions-engineer",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

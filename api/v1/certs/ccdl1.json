@@ -1,0 +1,148 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccdl1",
+  "acronym": "CCDL1",
+  "name": "Certified CyberDefender Level 1",
+  "vendor": "CyberDefenders",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "beginner",
+  "price_usd": 350,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ccdl1.html",
+  "api": "https://certmap.dev/api/v1/certs/ccdl1.json",
+  "description": "Entry-level SOC analyst certification with a practical exam covering alert triage, investigation and documented handover.",
+  "tags": [
+   "blue-team",
+   "soc",
+   "hands-on"
+  ],
+  "currency_note": "Exam only, two attempts included; exam plus prep bundle $600",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberdefenders.org/certifications/certified-cyberdefender-level1/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-ccdl1.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CCDL1 Exam Outline",
+       "provider": "CyberDefenders",
+       "url": "https://help.cyberdefenders.org/en/articles/14880875-ccdl1-exam-outline",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "Study Plan and Exam Readiness",
+       "provider": "CyberDefenders",
+       "url": "https://help.cyberdefenders.org/en/articles/13990297-study-plan-and-exam-readiness",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Certified CyberDefender Level 1 (CCDL1)",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/certifications/certified-cyberdefender-level1/",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "PacketMaze",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/packetmaze/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Tomcat Takeover",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/tomcat-takeover/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "PsExec Hunt",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/psexec-hunt/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "Oski",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/oski/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "RedLine",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/redline/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 9,
+       "type": "lab",
+       "title": "PhishStrike",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/phishstrike/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 10,
+       "type": "lab",
+       "title": "Blue Team Labs",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blue-team-labs/",
+       "free": false,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

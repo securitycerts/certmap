@@ -1,0 +1,154 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccdl2",
+  "acronym": "CCDL2",
+  "name": "Certified CyberDefender Level 2",
+  "vendor": "CyberDefenders",
+  "issuer": null,
+  "domain": "Incident Handling",
+  "level": "intermediate",
+  "price_usd": 850,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ccdl2.html",
+  "api": "https://certmap.dev/api/v1/certs/ccdl2.json",
+  "description": "Threat hunting and DFIR certification, formerly named CCD, assessed through a 48-hour practical exam covering disk and memory forensics, network analysis and SIEM hunting.",
+  "tags": [
+   "blue-team",
+   "dfir",
+   "threat-hunting",
+   "hands-on"
+  ],
+  "currency_note": "Exam only, two attempts included; exam plus prep bundle $1,700. Formerly CCD",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberdefenders.org/certifications/certified-cyberdefender-level2/",
+  "comparisons": [
+   {
+    "with": "cdsa",
+    "page": "https://certmap.dev/certs/compare-ccdl2-vs-cdsa.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-ccdl2.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CCDL2 Syllabus",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/static/files/CCDL2_Syllabus.pdf",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "CCDL2 Training Overview",
+       "provider": "CyberDefenders",
+       "url": "https://help.cyberdefenders.org/en/articles/8922969-ccdl2-training-overview",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Certified CyberDefender Level 2 (CCDL2)",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/certifications/certified-cyberdefender-level2/",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Reveal",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/reveal/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Insider",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/insider/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "DumpMe",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/dumpme/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "3CX Supply Chain",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/3cx-supply-chain/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "The Crime",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/the-crime/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 9,
+       "type": "lab",
+       "title": "Blue Team Labs",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blue-team-labs/",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 10,
+       "type": "repo",
+       "title": "Volatility 3",
+       "provider": "Volatility Foundation",
+       "url": "https://github.com/volatilityfoundation/volatility3",
+       "free": true,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

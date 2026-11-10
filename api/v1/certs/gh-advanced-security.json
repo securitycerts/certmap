@@ -1,0 +1,81 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gh-advanced-security",
+  "acronym": "GH-500",
+  "name": "GitHub Advanced Security",
+  "vendor": "GitHub",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gh-advanced-security.html",
+  "api": "https://certmap.dev/api/v1/certs/gh-advanced-security.json",
+  "description": "Exam GH-500 on using GitHub Advanced Security to secure code, secrets and dependencies, covering secret protection, supply chain security and code scanning with CodeQL.",
+  "tags": [
+   "devsecops",
+   "appsec",
+   "supply-chain",
+   "github"
+  ],
+  "currency_note": "Price varies by the country or region where the exam is proctored",
+  "price_verified_at": null,
+  "duration_min": 100,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-gh-advanced-security.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Study guide for Exam GH-500: GitHub Advanced Security",
+       "provider": "Microsoft Learn",
+       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "About GitHub Advanced Security",
+       "provider": "GitHub",
+       "url": "https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "GitHub Advanced Security Part 1 of 2",
+       "provider": "Microsoft Learn",
+       "url": "https://learn.microsoft.com/en-us/training/paths/github-advanced-security/",
+       "free": true,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "osmr",
+  "acronym": "OSMR",
+  "name": "Offensive Security macOS Researcher",
+  "vendor": "OffSec",
+  "issuer": null,
+  "domain": "Exploitation",
+  "level": "expert",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/osmr.html",
+  "api": "https://certmap.dev/api/v1/certs/osmr.json",
+  "description": "macOS exploit development and control-bypass certification (EXP-312). New OSMR exams were placed on hiatus in November 2025; existing credentials remain valid.",
+  "tags": [
+   "exploit-dev",
+   "macos"
+  ],
+  "currency_note": "On hiatus since November 2025; EXP-312 withdrawn, no new exams",
+  "price_verified_at": null,
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.offsec.com/courses/exp-312/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

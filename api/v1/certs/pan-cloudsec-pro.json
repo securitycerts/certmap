@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pan-cloudsec-pro",
+  "acronym": "CloudSec Pro",
+  "name": "Palo Alto Networks Cloud Security Professional",
+  "vendor": "Palo Alto Networks",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "intermediate",
+  "price_usd": 200,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pan-cloudsec-pro.html",
+  "api": "https://certmap.dev/api/v1/certs/pan-cloudsec-pro.json",
+  "description": "Professional-level role-based certification in the Palo Alto Networks Cloud Security track, positioned below the Cloud Security Engineer specialist certification.",
+  "tags": [
+   "cloud",
+   "cnapp"
+  ],
+  "currency_note": "Professional-level exam",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-professional",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

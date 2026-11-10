@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "mosint",
+  "acronym": "MOIS",
+  "name": "MCSI Certified OSINT Expert",
+  "vendor": "MCSI",
+  "issuer": null,
+  "domain": "OSINT",
+  "level": "beginner",
+  "price_usd": 699,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/mosint.html",
+  "api": "https://certmap.dev/api/v1/certs/mosint.json",
+  "description": "Hands-on OSINT investigation certification.",
+  "tags": [
+   "osint"
+  ],
+  "currency_note": "Self-paced",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 4320,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.mosse-institute.com/certifications/mois-certified-osint-expert.html",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

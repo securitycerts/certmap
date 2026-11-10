@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gfact",
+  "acronym": "GFACT",
+  "name": "GIAC Foundational Cybersecurity Technologies",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "beginner",
+  "price_usd": 399,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gfact.html",
+  "api": "https://certmap.dev/api/v1/certs/gfact.json",
+  "description": "Foundational cybersecurity technologies certification.",
+  "tags": [
+   "fundamentals"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 199,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/foundational-cybersecurity-technologies-gfact/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

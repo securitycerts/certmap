@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cert/map API: free JSON data on cybersecurity certifications</title>
+
+<meta name="description" content="A free, static JSON API with the price, level, prerequisites, study plan and comparisons of 320 cybersecurity certifications. No key, CORS enabled, CC BY 4.0.">
+<link rel="canonical" href="https://certmap.dev/api/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="cert/map">
+<meta property="og:title" content="cert/map API: free JSON data on cybersecurity certifications">
+<meta property="og:description" content="A free, static JSON API with the price, level, prerequisites, study plan and comparisons of 320 cybersecurity certifications. No key, CORS enabled, CC BY 4.0.">
+<meta property="og:url" content="https://certmap.dev/api/">
+<meta property="og:image" content="https://certmap.dev/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://certmap.dev/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0d12">
+<link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg">
+<link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+<link rel="stylesheet" href="../assets/css/static.css?v=2e7a8178">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebAPI","name":"cert/map API","url":"https://certmap.dev/api/","documentation":"https://certmap.dev/api/","description":"Read-only JSON about cybersecurity certifications.","license":"https://creativecommons.org/licenses/by/4.0/","provider":{"@type":"Organization","name":"cert/map","url":"https://certmap.dev/"}}]</script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../">cert<span>/</span>map</a>
+  <nav><a href="../certs/">All certifications</a><a href="../sponsors/">Sponsors</a><a href="../map/">Interactive roadmap</a></nav>
+</header>
+<main>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / API</nav>
+<article>
+  <h1>cert/map API</h1>
+  <p class="lead">The certification data as plain JSON: prices, levels, prerequisites, study plans and comparisons for 320 cybersecurity certifications. Free to use, no key, callable from a browser.</p>
+  <p class="cta"><a class="btn primary" href="v1/index.json">Open the entry point</a> <a class="btn" href="openapi.json">OpenAPI description</a></p>
+  <h2>Endpoints</h2>
+  <table>
+    <thead><tr><th>URL</th><th>Returns</th></tr></thead>
+    <tbody>
+      <tr><td><a href="v1/index.json"><code>/api/v1/index.json</code></a></td><td>Counts and the URL of every endpoint</td></tr>
+      <tr><td><a href="v1/certs.json"><code>/api/v1/certs.json</code></a></td><td>Every certification, summarised: vendor, domain, level, price</td></tr>
+      <tr><td><a href="v1/certs/oscp.json"><code>/api/v1/certs/{id}.json</code></a></td><td>One certification in full, with its study plan and comparisons</td></tr>
+      <tr><td><a href="v1/vendors.json"><code>/api/v1/vendors.json</code></a></td><td>Vendors and the ids of their certifications</td></tr>
+      <tr><td><a href="v1/domains.json"><code>/api/v1/domains.json</code></a></td><td>Domains and the ids of their certifications</td></tr>
+      <tr><td><a href="v1/comparisons.json"><code>/api/v1/comparisons.json</code></a></td><td>Pairs that have a comparison page, with the page in each language</td></tr>
+      <tr><td><a href="v1/paths.json"><code>/api/v1/paths.json</code></a></td><td>Preset role paths with cost and study-time totals</td></tr>
+    </tbody>
+  </table>
+  <h2>Example</h2>
+  <p>Show the current exam price of a certification on your own page:</p>
+<pre><code>const res = await fetch(&quot;https://certmap.dev/api/v1/certs/oscp.json&quot;);
+const { certification } = await res.json();
+console.log(certification.acronym, certification.price_usd);   // OSCP+ 1749</code></pre>
+  <h2>How it works</h2>
+  <ul class="diff">
+    <li>It is static. The files are regenerated whenever the dataset changes, so there is nothing to query: fetch a file and filter it on your side.</li>
+    <li>Cross-origin requests are allowed, so it works from client-side code on any site.</li>
+    <li>Responses are cached for about ten minutes. Please cache on your side too instead of fetching on every page view.</li>
+    <li>URLs under <code>/api/v1/</code> keep their shape. A breaking change would be published as <code>v2</code>.</li>
+    <li><code>price_usd</code> is the exam list price in US dollars: <code>null</code> when the vendor does not publish one, <code>0</code> when it is free. <code>price_verified_at</code> is the date it was last seen on the vendor's page.</li>
+  </ul>
+  <h2>Licence and attribution</h2>
+  <p>The data is published under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. You can use it in any project, commercial or not, as long as you credit cert/map with a link to <a href="../">certmap.dev</a>. Prices change without notice, so tell your readers to confirm with the vendor.</p>
+  <p>The whole dataset is also available as single files: <a href="../data/certs.json">certs.json</a>, <a href="../data/certs.csv">certs.csv</a>, <a href="../data/resources.csv">resources.csv</a> and <a href="../data/comparisons.csv">comparisons.csv</a>.</p>
+</article>
+</main>
+<footer>
+  <p>Part of <a href="../">cert/map</a>, an open-source roadmap of cybersecurity certifications. Prices are list prices in USD and can change, so confirm with the vendor before paying. Last reviewed 2026-11-10.</p>
+  <p><a href="https://github.com/securitycerts/certmap">Source and dataset on GitHub</a> · <a href="../api/">API</a> · <a href="../sponsors/">Become a sponsor</a> · <a href="mailto:contact@certmap.dev">contact@certmap.dev</a></p>
+</footer>
+</body>
+</html>

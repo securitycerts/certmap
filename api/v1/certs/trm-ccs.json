@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "trm-ccs",
+  "acronym": "TRM-CCS",
+  "name": "TRM Certified Crypto Compliance Specialist",
+  "vendor": "TRM Labs",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": 1100,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/trm-ccs.html",
+  "api": "https://certmap.dev/api/v1/certs/trm-ccs.json",
+  "description": "Cryptocurrency compliance certification covering AML, KYC and sanctions screening for digital assets.",
+  "tags": [
+   "blockchain",
+   "crypto",
+   "aml",
+   "compliance"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.trmlabs.com/training-and-certifications/crypto-compliance-specialist",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

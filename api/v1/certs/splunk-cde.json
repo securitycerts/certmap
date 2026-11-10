@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "splunk-cde",
+  "acronym": "SCDE",
+  "name": "Splunk Certified Cybersecurity Defense Engineer",
+  "vendor": "Splunk",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "advanced",
+  "price_usd": 130,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/splunk-cde.html",
+  "api": "https://certmap.dev/api/v1/certs/splunk-cde.json",
+  "description": "Professional-level Splunk security certification above the Cybersecurity Defense Analyst. The exam has 60 multiple choice questions.",
+  "tags": [
+   "siem",
+   "blue-team",
+   "soc"
+  ],
+  "currency_note": "Per exam attempt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 75,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

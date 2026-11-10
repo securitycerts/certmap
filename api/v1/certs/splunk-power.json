@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "splunk-power",
+  "acronym": "SCCPU",
+  "name": "Splunk Core Certified Power User",
+  "vendor": "Splunk",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 130,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/splunk-power.html",
+  "api": "https://certmap.dev/api/v1/certs/splunk-power.json",
+  "description": "Splunk advanced search and dashboarding certification.",
+  "tags": [
+   "siem"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 60,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

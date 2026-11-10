@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "aair",
+  "acronym": "AAIR",
+  "name": "Advanced in AI Risk",
+  "vendor": "ISACA",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "advanced",
+  "price_usd": 459,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/aair.html",
+  "api": "https://certmap.dev/api/v1/certs/aair.json",
+  "description": "Credential on identifying, assessing and managing risk in AI systems. Candidates must hold a qualifying designation such as CRISC, CISA or CISSP.",
+  "tags": [
+   "ai",
+   "risk"
+  ],
+  "currency_note": "Member rate; $599 non-member; $50 application fee; requires a qualifying designation such as CRISC, CISA or CISSP",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.isaca.org/credentialing/aair",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

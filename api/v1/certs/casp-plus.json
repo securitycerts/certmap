@@ -1,0 +1,95 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "casp-plus",
+  "acronym": "CASP+",
+  "name": "CompTIA SecurityX",
+  "vendor": "CompTIA",
+  "issuer": null,
+  "domain": "Security Architecture & Engineering",
+  "level": "advanced",
+  "price_usd": 544,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/casp-plus.html",
+  "api": "https://certmap.dev/api/v1/certs/casp-plus.json",
+  "description": "Advanced security practitioner certification covering enterprise security architecture.",
+  "tags": [
+   "architecture",
+   "senior"
+  ],
+  "currency_note": "Formerly CASP+",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 165,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [
+   "sec-plus"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.comptia.org/certifications/securityx",
+  "comparisons": [
+   {
+    "with": "cysa-plus",
+    "page": "https://certmap.dev/certs/compare-cysa-plus-vs-casp-plus.html"
+   },
+   {
+    "with": "cissp",
+    "page": "https://certmap.dev/certs/compare-casp-plus-vs-cissp.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-casp-plus.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "SecurityX Certification",
+       "provider": "CompTIA",
+       "url": "https://www.comptia.org/en-us/certifications/securityx/",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "book",
+       "title": "CompTIA SecurityX CAS-005 Study Guide",
+       "provider": "Dion Training",
+       "url": "https://www.diontraining.com/products/comptia-securityx-study-guide-ebook",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 3,
+       "type": "practice",
+       "title": "SecurityX (V5) Practice Questions",
+       "provider": "CompTIA",
+       "url": "https://www.comptia.org/en-us/certifications/securityx/practice-questions/",
+       "free": true,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

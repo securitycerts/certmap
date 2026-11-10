@@ -257,3 +257,8 @@ h2.phase small { font: 500 12px var(--mono); }
 
 .steps.five { grid-template-columns: repeat(5, 1fr); }
 @media (max-width: 900px) { .steps.five { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---------- code ---------- */
+pre { margin: 0 0 14px; padding: 14px 16px; overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; background: var(--panel); direction: ltr; text-align: left; }
+code { font: 12.5px/1.6 var(--mono); }
+td code { white-space: nowrap; }

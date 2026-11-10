@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "itil5-f",
+  "acronym": "ITIL5-F",
+  "name": "ITIL Foundation (Version 5)",
+  "vendor": "PeopleCert",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "beginner",
+  "price_usd": 536,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/itil5-f.html",
+  "api": "https://certmap.dev/api/v1/certs/itil5-f.json",
+  "description": "Foundation certification for ITIL (Version 5), the successor framework to ITIL 4 for IT service management. Sold alongside ITIL 4 Foundation.",
+  "tags": [
+   "itsm"
+  ],
+  "currency_note": "Exam bundle price on peoplecert.org",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-5-foundation-version-50-4154",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

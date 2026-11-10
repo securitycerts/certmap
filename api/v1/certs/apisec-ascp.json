@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "apisec-ascp",
+  "acronym": "ASCP",
+  "name": "API Security Certified Professional",
+  "vendor": "APIsec University",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "intermediate",
+  "price_usd": 450,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/apisec-ascp.html",
+  "api": "https://certmap.dev/api/v1/certs/apisec-ascp.json",
+  "description": "12-hour practical exam in which the candidate performs a live penetration test of two API-driven applications.",
+  "tags": [
+   "api-security",
+   "pentest",
+   "hands-on"
+  ],
+  "currency_note": "One free retake included",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 720,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://au.apisec.ai/certifications",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

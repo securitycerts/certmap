@@ -1,0 +1,173 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ceh",
+  "acronym": "CEH",
+  "name": "Certified Ethical Hacker",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "intermediate",
+  "price_usd": 1199,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ceh.html",
+  "api": "https://certmap.dev/api/v1/certs/ceh.json",
+  "description": "Broad ethical hacking certification covering attack methodology.",
+  "tags": [
+   "red-team"
+  ],
+  "currency_note": "Pearson VUE exam voucher",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "lpt"
+  ],
+  "official_url": "https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/",
+  "comparisons": [
+   {
+    "with": "sec-plus",
+    "page": "https://certmap.dev/certs/compare-sec-plus-vs-ceh.html"
+   },
+   {
+    "with": "pentest-plus",
+    "page": "https://certmap.dev/certs/compare-ceh-vs-pentest-plus.html"
+   },
+   {
+    "with": "chfi",
+    "page": "https://certmap.dev/certs/compare-ceh-vs-chfi.html"
+   },
+   {
+    "with": "ejpt",
+    "page": "https://certmap.dev/certs/compare-ejpt-vs-ceh.html"
+   },
+   {
+    "with": "cpent",
+    "page": "https://certmap.dev/certs/compare-ceh-vs-cpent.html"
+   },
+   {
+    "with": "oscp",
+    "page": "https://certmap.dev/certs/compare-ceh-vs-oscp.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-ceh.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "CEH Exam Blueprint v5",
+       "provider": "EC-Council",
+       "url": "https://cert.eccouncil.org/wp-content/uploads/2024/04/CEH-Exam-Blueprint-v5.pdf",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "Certified Ethical Hacker certification page",
+       "provider": "EC-Council",
+       "url": "https://cert.eccouncil.org/certified-ethical-hacker.html",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Certified Ethical Hacker (CEH) course",
+       "provider": "EC-Council",
+       "url": "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 4,
+       "type": "book",
+       "title": "CEH Certified Ethical Hacker v13 Study Guide",
+       "provider": "Sybex (Wiley)",
+       "url": "https://www.wiley.com/en-us/-p-9781394394289",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Nmap",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/furthernmap",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "SQL Injection",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/sqlinjectionlm",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "Wifi Hacking 101",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/wifihacking101",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "Crack the hash",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/crackthehash",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "repo",
+       "title": "Metasploitable3",
+       "provider": "rapid7",
+       "url": "https://github.com/rapid7/metasploitable3",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 10,
+       "type": "lab",
+       "title": "Jr Penetration Tester",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/path/outline/jrpenetrationtester",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

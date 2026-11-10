@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "sl-ocp1",
+  "acronym": "OCP1",
+  "name": "Social Links OSINT Certification Program Level 1",
+  "vendor": "Social Links",
+  "issuer": null,
+  "domain": "OSINT",
+  "level": "beginner",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/sl-ocp1.html",
+  "api": "https://certmap.dev/api/v1/certs/sl-ocp1.json",
+  "description": "Vendor program on OSINT investigation with Social Links products in five modules (social media, messengers, niche platforms, advanced features, corporate sources), each followed by a test. The certificate is issued after all tests are passed and is valid for three years.",
+  "tags": [
+   "osint",
+   "vendor-specific",
+   "socmint"
+  ],
+  "currency_note": "Price not published; enrolment through Social Links (customer success manager or osint@sociallinks.io)",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://social-links.learnworlds.com/course/ocp1",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

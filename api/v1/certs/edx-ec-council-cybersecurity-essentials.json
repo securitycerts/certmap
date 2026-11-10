@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "edx-ec-council-cybersecurity-essentials",
+  "acronym": "EC-C Essentials",
+  "name": "EC-Council Cybersecurity Essentials Professional Certificate",
+  "vendor": "edX",
+  "issuer": "EC-Council",
+  "domain": "Security Operations",
+  "level": "beginner",
+  "price_usd": 348,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/edx-ec-council-cybersecurity-essentials.html",
+  "api": "https://certmap.dev/api/v1/certs/edx-ec-council-cybersecurity-essentials.json",
+  "description": "Three EC-Council courses: Network Defense Essentials (NDE), Ethical Hacking Essentials (EHE) and Digital Forensics Essentials (DFE), with add-on labs in the verified track. Course-based certificate; the edX page labels the courses intermediate.",
+  "tags": [
+   "ec-council",
+   "nde",
+   "ehe",
+   "dfe",
+   "entry-level",
+   "course-based",
+   "edx"
+  ],
+  "currency_note": "Program bundle price $348.30 shown on the edX page (list $387 for the courses bought separately); one-off payment, not a subscription.",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.edx.org/certificates/professional-certificate/ec-council-cybersecurity-essentials",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccse",
+  "acronym": "CCSE",
+  "name": "EC-Council Certified Cloud Security Engineer",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "intermediate",
+  "price_usd": 550,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ccse.html",
+  "api": "https://certmap.dev/api/v1/certs/ccse.json",
+  "description": "Vendor-neutral cloud security engineering certification.",
+  "tags": [
+   "cloud"
+  ],
+  "currency_note": "Remote-proctored exam voucher (CCSE v2)",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/train-certify/certified-cloud-security-engineer-ccse/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

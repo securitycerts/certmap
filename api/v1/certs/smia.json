@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "smia",
+  "acronym": "SMIA",
+  "name": "Certified Social Media Intelligence Analyst",
+  "vendor": "McAfee Institute",
+  "issuer": null,
+  "domain": "OSINT",
+  "level": "intermediate",
+  "price_usd": 1397,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/smia.html",
+  "api": "https://certmap.dev/api/v1/certs/smia.json",
+  "description": "Certification in social media intelligence and online investigations with an OSINT foundation module, assessed by a proctored board exam. Eligibility requires a degree or diploma plus relevant paid professional experience.",
+  "tags": [
+   "osint",
+   "socmint",
+   "investigation"
+  ],
+  "currency_note": "List price for the program (training, exam license and certification); needs-based scholarship rate $699 for self-paying students; exam-only option $450",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.mcafeeinstitute.edu/products/certified-social-media-intelligence-analyst-smia",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

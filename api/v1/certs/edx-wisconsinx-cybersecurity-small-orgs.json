@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "edx-wisconsinx-cybersecurity-small-orgs",
+  "acronym": "UW Small Org Sec",
+  "name": "University of Wisconsin-Madison Cybersecurity Fundamentals for Small Organizations Professional Certificate",
+  "vendor": "edX",
+  "issuer": "University of Wisconsin-Madison",
+  "domain": "GRC",
+  "level": "beginner",
+  "price_usd": 591,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/edx-wisconsinx-cybersecurity-small-orgs.html",
+  "api": "https://certmap.dev/api/v1/certs/edx-wisconsinx-cybersecurity-small-orgs.json",
+  "description": "Three University of Wisconsin-Madison courses covering cybersecurity principles, data and information privacy, and cybersecurity planning and policy. Course-based certificate with no proctored exam.",
+  "tags": [
+   "university-of-wisconsin-madison",
+   "wisconsinx",
+   "university",
+   "privacy",
+   "policy",
+   "course-based",
+   "edx"
+  ],
+  "currency_note": "Program bundle price $591.30 shown on the edX page (list $657 for the courses bought separately); one-off payment, not a subscription.",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.edx.org/certificates/professional-certificate/wisconsinx-cybersecurity-fundamentals-for-small-organizations",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

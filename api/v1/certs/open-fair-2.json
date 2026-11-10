@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "open-fair-2",
+  "acronym": "Open FAIR",
+  "name": "Open FAIR 2 Foundation",
+  "vendor": "The Open Group",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "beginner",
+  "price_usd": 405,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/open-fair-2.html",
+  "api": "https://certmap.dev/api/v1/certs/open-fair-2.json",
+  "description": "Knowledge-based certification on the Open FAIR body of knowledge for quantitative information risk analysis.",
+  "tags": [
+   "risk",
+   "fair",
+   "quantitative-risk"
+  ],
+  "currency_note": "Pearson VUE exam booking fee (exam OGOF-101); retail voucher $435",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 60,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.opengroup.org/certifications/openfair",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

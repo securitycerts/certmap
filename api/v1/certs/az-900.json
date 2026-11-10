@@ -1,0 +1,144 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "az-900",
+  "acronym": "AZ-900",
+  "name": "Microsoft Azure Fundamentals",
+  "vendor": "Microsoft",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "beginner",
+  "price_usd": 99,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/az-900.html",
+  "api": "https://certmap.dev/api/v1/certs/az-900.json",
+  "description": "Azure cloud fundamentals certification.",
+  "tags": [
+   "cloud",
+   "azure",
+   "fundamentals"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 45,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://learn.microsoft.com/credentials/certifications/azure-fundamentals/",
+  "comparisons": [
+   {
+    "with": "aws-clf",
+    "page": "https://certmap.dev/certs/compare-aws-clf-vs-az-900.html"
+   },
+   {
+    "with": "az-104",
+    "page": "https://certmap.dev/certs/compare-az-900-vs-az-104.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-az-900.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Study guide for Exam AZ-900: Microsoft Azure Fundamentals",
+       "provider": "Microsoft",
+       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "Introduction to Cloud Infrastructure: Describe Cloud Concepts",
+       "provider": "Microsoft",
+       "url": "https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Introduction to Cloud Infrastructure: Describe Azure Architecture and Services",
+       "provider": "Microsoft",
+       "url": "https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 4,
+       "type": "course",
+       "title": "Introduction to Cloud Infrastructure: Describe Azure Management and Governance",
+       "provider": "Microsoft",
+       "url": "https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 5,
+       "type": "course",
+       "title": "Course AZ-900T00-A: Introduction to Cloud Infrastructure",
+       "provider": "Microsoft",
+       "url": "https://learn.microsoft.com/en-us/training/courses/az-900t00",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 6,
+       "type": "course",
+       "title": "Azure Fundamentals Certification (AZ-900) free course",
+       "provider": "freeCodeCamp",
+       "url": "https://www.freecodecamp.org/news/azure-fundamentals-certification-az-900-exam-course/",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "AZ-900 Microsoft Azure Fundamentals lab exercises",
+       "provider": "Microsoft",
+       "url": "https://microsoftlearning.github.io/AZ-900-Microsoft-Azure-Fundamentals/",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 8,
+       "type": "practice",
+       "title": "AZ-900 Practice Assessment",
+       "provider": "Microsoft",
+       "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23",
+       "free": true,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

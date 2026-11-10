@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "osth",
+  "acronym": "OSTH",
+  "name": "OffSec Threat Hunter",
+  "vendor": "OffSec",
+  "issuer": null,
+  "domain": "Cyber Threat Intelligence",
+  "level": "intermediate",
+  "price_usd": 1749,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/osth.html",
+  "api": "https://certmap.dev/api/v1/certs/osth.json",
+  "description": "Threat hunting certification covering adversary tradecraft detection.",
+  "tags": [
+   "threat-hunting",
+   "blue-team",
+   "hands-on"
+  ],
+  "currency_note": "Course and cert bundle: 90-day lab and one exam attempt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 480,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.offsec.com/courses/th-200/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

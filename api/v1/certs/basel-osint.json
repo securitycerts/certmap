@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "basel-osint",
+  "acronym": "Basel OSINT",
+  "name": "Basel LEARN Open-Source Intelligence (OSINT)",
+  "vendor": "Basel Institute",
+  "issuer": null,
+  "domain": "OSINT",
+  "level": "beginner",
+  "price_usd": 0,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/basel-osint.html",
+  "api": "https://certmap.dev/api/v1/certs/basel-osint.json",
+  "description": "Free self-paced OSINT course for financial and corruption investigators built around a simulated illegal fishing case that ends with an OSINT report. It awards a certificate of completion from the International Centre for Asset Recovery rather than an examined certification, and is widely used in the asset recovery and OSINT community.",
+  "tags": [
+   "osint",
+   "free",
+   "financial-investigation",
+   "certificate-of-completion"
+  ],
+  "currency_note": "Free self-paced eLearning course",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://learn.baselgovernance.org/course/view.php?id=79",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

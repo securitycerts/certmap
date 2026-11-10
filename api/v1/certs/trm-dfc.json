@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "trm-dfc",
+  "acronym": "TRM-DFC",
+  "name": "TRM Digital Forensics and Cryptocurrencies",
+  "vendor": "TRM Labs",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "intermediate",
+  "price_usd": 1100,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/trm-dfc.html",
+  "api": "https://certmap.dev/api/v1/certs/trm-dfc.json",
+  "description": "Digital forensics certification focused on cryptocurrency artefacts and on-chain evidence handling.",
+  "tags": [
+   "blockchain",
+   "crypto",
+   "dfir"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.trmlabs.com/training-and-certifications/digital-forensics-and-cryptocurrencies",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

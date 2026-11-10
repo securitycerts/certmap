@@ -1,0 +1,95 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccsk",
+  "acronym": "CCSK",
+  "name": "Certificate of Cloud Security Knowledge",
+  "vendor": "CSA",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "intermediate",
+  "price_usd": 445,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ccsk.html",
+  "api": "https://certmap.dev/api/v1/certs/ccsk.json",
+  "description": "Vendor-neutral foundational cloud security certificate from CSA.",
+  "tags": [
+   "cloud",
+   "vendor-neutral"
+  ],
+  "currency_note": "Exam + chatbot bundle, two attempts, two-year window",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "ccak"
+  ],
+  "official_url": "https://cloudsecurityalliance.org/education/ccsk",
+  "comparisons": [
+   {
+    "with": "ccsp",
+    "page": "https://certmap.dev/certs/compare-ccsk-vs-ccsp.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-ccsk.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Certificate of Cloud Security Knowledge (CCSK)",
+       "provider": "Cloud Security Alliance",
+       "url": "https://cloudsecurityalliance.org/education/ccsk",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "CCSK v5 Prep Kit",
+       "provider": "Cloud Security Alliance",
+       "url": "https://cloudsecurityalliance.org/artifacts/ccsk-v5-prep-kit",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "guide",
+       "title": "Security Guidance for Cloud Computing v5",
+       "provider": "Cloud Security Alliance",
+       "url": "https://cloudsecurityalliance.org/artifacts/security-guidance-v5",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 4,
+       "type": "course",
+       "title": "CCSK Plus Training (Lecture + Labs)",
+       "provider": "Cloud Security Alliance",
+       "url": "https://cloudsecurityalliance.org/education/ccsk-plus",
+       "free": false,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

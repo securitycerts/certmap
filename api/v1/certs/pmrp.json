@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pmrp",
+  "acronym": "PMRP",
+  "name": "Practical Malware Research Professional",
+  "vendor": "TCM Security",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "intermediate",
+  "price_usd": 499,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/pmrp.html",
+  "api": "https://certmap.dev/api/v1/certs/pmrp.json",
+  "description": "Practical exam on malware analysis and triage that requires an analysis report and detection rules for the samples. Formerly the Practical Junior Malware Researcher (PJMR); does not expire.",
+  "tags": [
+   "malware",
+   "reverse-engineering",
+   "hands-on"
+  ],
+  "currency_note": "Exam voucher with 12 months of training and one free retake",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 7200,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://certifications.tcm-sec.com/pmrp/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "sabsa-scf",
+  "acronym": "SCF",
+  "name": "SABSA Chartered Security Architect, Foundation Certificate",
+  "vendor": "SABSA",
+  "issuer": null,
+  "domain": "Security Architecture & Engineering",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/sabsa-scf.html",
+  "api": "https://certmap.dev/api/v1/certs/sabsa-scf.json",
+  "description": "Foundation level of the SABSA enterprise security architecture framework. Two modules (F1 and F2) of 48 multiple-choice questions and 60 minutes each, with a 75% pass mark per module.",
+  "tags": [
+   "architecture",
+   "sabsa",
+   "enterprise"
+  ],
+  "currency_note": "Fee set by accredited education partners; candidates must attend an official SABSA Foundation course",
+  "price_verified_at": null,
+  "duration_min": 120,
+  "exam_count": 2,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.sabsa.org/certification/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

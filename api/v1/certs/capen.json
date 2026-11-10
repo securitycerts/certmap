@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "capen",
+  "acronym": "CAPen",
+  "name": "Certified AppSec Pentester",
+  "vendor": "The SecOps Group",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "intermediate",
+  "price_usd": 336,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/capen.html",
+  "api": "https://certmap.dev/api/v1/certs/capen.json",
+  "description": "Four-hour practical exam on web application penetration testing, taken online and on demand. The certificate does not expire.",
+  "tags": [
+   "web",
+   "appsec",
+   "pentest",
+   "hands-on"
+  ],
+  "currency_note": "Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://pentestingexams.com/certifications/professional/certified-appsec-pentester/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

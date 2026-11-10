@@ -1,0 +1,152 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "coursera-google-cybersecurity",
+  "acronym": "Google Cyber",
+  "name": "Google Cybersecurity Professional Certificate",
+  "vendor": "Coursera",
+  "issuer": "Google",
+  "domain": "Security Operations",
+  "level": "beginner",
+  "price_usd": 294,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/coursera-google-cybersecurity.html",
+  "api": "https://certmap.dev/api/v1/certs/coursera-google-cybersecurity.json",
+  "description": "Nine-course entry-level program covering security frameworks, network security, Linux, SQL, SIEM and IDS tools, incident detection and response, and Python automation. Course-based certificate assessed through quizzes, hands-on labs and portfolio activities, with no proctored exam.",
+  "tags": [
+   "google",
+   "entry-level",
+   "soc",
+   "siem",
+   "python",
+   "course-based",
+   "coursera"
+  ],
+  "currency_note": "Subscription: $49 a month for an estimated 6 months (at 7 hours a week), after a 7-day free trial; US and Canada price.",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.coursera.org/professional-certificates/google-cybersecurity",
+  "comparisons": [
+   {
+    "with": "sec-plus",
+    "page": "https://certmap.dev/certs/compare-coursera-google-cybersecurity-vs-sec-plus.html"
+   },
+   {
+    "with": "cc",
+    "page": "https://certmap.dev/certs/compare-cc-vs-coursera-google-cybersecurity.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-coursera-google-cybersecurity.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Google Cybersecurity Certificate",
+       "provider": "Grow with Google",
+       "url": "https://grow.google/certificates/cybersecurity/",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "Google Cybersecurity Professional Certificate",
+       "provider": "Google (Coursera)",
+       "url": "https://www.coursera.org/professional-certificates/google-cybersecurity",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Foundations of Cybersecurity",
+       "provider": "Google (Coursera)",
+       "url": "https://www.coursera.org/learn/foundations-of-cybersecurity",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Linux Fundamentals (Pt1)",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/linuxfundamentalspart1",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Python Basics",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/pythonbasics",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "Introduction to SIEM",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/introtosiem",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "repo",
+       "title": "Suricata",
+       "provider": "OISF",
+       "url": "https://github.com/OISF/suricata",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "Pre Security path",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/path/outline/presecurity",
+       "free": false,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "lab",
+       "title": "SQL Fundamentals",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/sqlfundamentals",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

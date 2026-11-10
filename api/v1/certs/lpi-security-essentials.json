@@ -1,0 +1,36 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "lpi-security-essentials",
+  "acronym": "LPI SE",
+  "name": "LPI Security Essentials",
+  "vendor": "LPI",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "beginner",
+  "price_usd": 120,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/lpi-security-essentials.html",
+  "api": "https://certmap.dev/api/v1/certs/lpi-security-essentials.json",
+  "description": "Entry-level certificate on basic IT security concepts. Exam 020-100 has 40 questions and the certificate does not expire.",
+  "tags": [
+   "fundamentals"
+  ],
+  "currency_note": "US price; lower in other pricing tiers",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 60,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.lpi.org/our-certifications/security-essentials-overview/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "wcna",
+  "acronym": "WCNA",
+  "name": "Wireshark Certified Network Analyst",
+  "vendor": "Wireshark",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "intermediate",
+  "price_usd": 299,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/wcna.html",
+  "api": "https://certmap.dev/api/v1/certs/wcna.json",
+  "description": "Wireshark protocol analysis certification covering packet capture, decoding and troubleshooting.",
+  "tags": [
+   "networking",
+   "packet-analysis",
+   "hands-on"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-06-08",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.wcnacertification.com/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

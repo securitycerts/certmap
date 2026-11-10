@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "oscc-sec",
+  "acronym": "OSCC-SEC",
+  "name": "OffSec CyberCore Certified: Security Essentials",
+  "vendor": "OffSec",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "beginner",
+  "price_usd": 899,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/oscc-sec.html",
+  "api": "https://certmap.dev/api/v1/certs/oscc-sec.json",
+  "description": "Foundational cybersecurity certification covering core concepts and tradecraft basics.",
+  "tags": [
+   "foundational",
+   "hands-on"
+  ],
+  "currency_note": "CyberCore bundle: one year of course access, labs and two exam attempts",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 360,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.offsec.com/courses/sec-100/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

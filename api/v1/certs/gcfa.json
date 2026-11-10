@@ -1,0 +1,156 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gcfa",
+  "acronym": "GCFA",
+  "name": "GIAC Certified Forensic Analyst",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gcfa.html",
+  "api": "https://certmap.dev/api/v1/certs/gcfa.json",
+  "description": "Advanced digital forensics and incident response certification.",
+  "tags": [
+   "forensics",
+   "dfir"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/certified-forensic-analyst-gcfa/",
+  "comparisons": [
+   {
+    "with": "gcfe",
+    "page": "https://certmap.dev/certs/compare-gcfe-vs-gcfa.html"
+   },
+   {
+    "with": "gcih",
+    "page": "https://certmap.dev/certs/compare-gcih-vs-gcfa.html"
+   }
+  ],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-gcfa.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "GIAC Certified Forensic Analyst (GCFA) exam objectives",
+       "provider": "GIAC",
+       "url": "https://www.giac.org/certifications/certified-forensic-analyst-gcfa",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "Hunt Evil poster",
+       "provider": "SANS Institute",
+       "url": "https://www.sans.org/posters/hunt-evil",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "FOR508: Advanced Incident Response, Threat Hunting, and Digital Forensics",
+       "provider": "SANS Institute",
+       "url": "https://www.sans.org/cyber-security-courses/advanced-incident-response-threat-hunting-training",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "SIFT Workstation",
+       "provider": "SANS Institute",
+       "url": "https://www.sans.org/tools/sift-workstation",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Case 001 - The Stolen Szechuan Sauce",
+       "provider": "DFIR Madness",
+       "url": "https://dfirmadness.com/the-stolen-szechuan-sauce/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "lab",
+       "title": "Windows Forensics 1",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/windowsforensics1",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "Szechuan Sauce",
+       "provider": "CyberDefenders",
+       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/szechuan-sauce/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "repo",
+       "title": "Volatility 3",
+       "provider": "Volatility Foundation",
+       "url": "https://github.com/volatilityfoundation/volatility3",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "repo",
+       "title": "Plaso",
+       "provider": "log2timeline",
+       "url": "https://github.com/log2timeline/plaso",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 10,
+       "type": "repo",
+       "title": "Eric Zimmerman's Tools",
+       "provider": "Eric Zimmerman",
+       "url": "https://ericzimmerman.github.io/",
+       "free": true,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

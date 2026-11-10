@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "coursera-colorado-network-security",
+  "acronym": "CU NetSec",
+  "name": "University of Colorado Fundamentals of Computer Network Security Specialization",
+  "vendor": "Coursera",
+  "issuer": "University of Colorado",
+  "domain": "Communication & Network Security",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/coursera-colorado-network-security.html",
+  "api": "https://certmap.dev/api/v1/certs/coursera-colorado-network-security.json",
+  "description": "Four-course University of Colorado System specialization covering secure system design, applied cryptography and PKI, penetration testing basics, and firewalls and intrusion detection. Course-based certificate assessed through projects on cloud instances, with no proctored exam.",
+  "tags": [
+   "university-of-colorado",
+   "university",
+   "network-security",
+   "cryptography",
+   "course-based",
+   "coursera"
+  ],
+  "currency_note": "Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week (the page FAQ says about 16 weeks).",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.coursera.org/specializations/computer-network-security",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

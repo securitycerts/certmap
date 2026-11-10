@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gsoc",
+  "acronym": "GSOC",
+  "name": "GIAC Security Operations Certified",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gsoc.html",
+  "api": "https://certmap.dev/api/v1/certs/gsoc.json",
+  "description": "Covers SOC monitoring, detection, log analysis and incident triage with blue-team tools. Exam has 75 questions in two hours.",
+  "tags": [
+   "blue-team",
+   "soc"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/security-operations-certified-gsoc",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

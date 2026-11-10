@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccfp",
+  "acronym": "CCO",
+  "name": "Cellebrite Certified Operator for Inseyets",
+  "vendor": "Cellebrite",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ccfp.html",
+  "api": "https://certmap.dev/api/v1/certs/ccfp.json",
+  "description": "Mobile device unlocking, extraction, decoding and data review with Cellebrite Inseyets. Earned by passing a knowledge test and a practical skills assessment (80% minimum) at the end of the 2-day course; renewed every two years through a recertification exam.",
+  "tags": [
+   "forensics",
+   "mobile",
+   "inseyets",
+   "extraction"
+  ],
+  "currency_note": "Price on request (no public price; registration via Cellebrite Community portal); exam included with the 2-day course, usually taken as a 5-day CCO + CCPA bundle",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "ccme"
+  ],
+  "official_url": "https://cellebrite.com/training/cellebrite-training-inseyets/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

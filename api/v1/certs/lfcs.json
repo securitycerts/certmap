@@ -1,0 +1,144 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "lfcs",
+  "acronym": "LFCS",
+  "name": "Linux Foundation Certified System Administrator",
+  "vendor": "Linux Foundation",
+  "issuer": null,
+  "domain": "*nix",
+  "level": "intermediate",
+  "price_usd": 445,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/lfcs.html",
+  "api": "https://certmap.dev/api/v1/certs/lfcs.json",
+  "description": "Online proctored performance-based exam in which candidates solve Linux system administration tasks from the command line.",
+  "tags": [
+   "linux",
+   "sysadmin",
+   "hands-on"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-lfcs.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Linux Foundation Certified System Administrator (LFCS)",
+       "provider": "The Linux Foundation",
+       "url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 2,
+       "type": "course",
+       "title": "Introduction to Linux (LFS101)",
+       "provider": "The Linux Foundation",
+       "url": "https://training.linuxfoundation.org/training/introduction-to-linux/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Linux System Administration Essentials (LFS207)",
+       "provider": "The Linux Foundation",
+       "url": "https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/",
+       "free": false,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "SadServers",
+       "provider": "SadServers",
+       "url": "https://sadservers.com/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "Bandit",
+       "provider": "OverTheWire",
+       "url": "https://overthewire.org/wargames/bandit/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "Linux Upskill Challenge",
+       "provider": "livialima",
+       "url": "https://github.com/livialima/linuxupskillchallenge",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "repo",
+       "title": "LFCS preparation notes",
+       "provider": "Bes0n",
+       "url": "https://github.com/Bes0n/LFCS",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "lab",
+       "title": "LFCS Practice",
+       "provider": "Killercoda",
+       "url": "https://killercoda.com/lfcs",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "test",
+     "steps": [
+      {
+       "step": 9,
+       "type": "practice",
+       "title": "LFCS Simulator",
+       "provider": "Killer Shell",
+       "url": "https://killer.sh/lfcs",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

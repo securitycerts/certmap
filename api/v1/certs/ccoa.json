@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccoa",
+  "acronym": "CCOA",
+  "name": "Certified Cybersecurity Operations Analyst",
+  "vendor": "ISACA",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 399,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ccoa.html",
+  "api": "https://certmap.dev/api/v1/certs/ccoa.json",
+  "description": "Cybersecurity operations analyst certification covering threat detection, incident response and vulnerability analysis. Four-hour exam mixing multiple-choice and performance-based questions.",
+  "tags": [
+   "soc",
+   "blue-team",
+   "hands-on"
+  ],
+  "currency_note": "Member rate; $499 non-member",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.isaca.org/credentialing/ccoa",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

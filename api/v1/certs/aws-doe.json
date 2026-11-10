@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "aws-doe",
+  "acronym": "DOP-C02",
+  "name": "AWS Certified DevOps Engineer Professional",
+  "vendor": "AWS",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "expert",
+  "price_usd": 300,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/aws-doe.html",
+  "api": "https://certmap.dev/api/v1/certs/aws-doe.json",
+  "description": "Professional-level AWS certification covering CI/CD, infrastructure automation, monitoring and operations at scale.",
+  "tags": [
+   "cloud",
+   "aws",
+   "devops"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "aws-saa"
+  ],
+  "leads_to": [],
+  "official_url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

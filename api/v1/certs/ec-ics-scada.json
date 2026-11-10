@@ -1,0 +1,37 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ec-ics-scada",
+  "acronym": "ICS/SCADA",
+  "name": "ICS/SCADA Cybersecurity",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "ICS/IoT",
+  "level": "intermediate",
+  "price_usd": 699,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ec-ics-scada.html",
+  "api": "https://certmap.dev/api/v1/certs/ec-ics-scada.json",
+  "description": "Certification on defending industrial control systems and SCADA networks. Exam has 75 multiple-choice questions in 2 hours.",
+  "tags": [
+   "ics",
+   "ot"
+  ],
+  "currency_note": "Remote-proctored exam voucher",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/train-certify/ics-scada-cybersecurity/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "okta-admin",
+  "acronym": "Okta Admin",
+  "name": "Okta Certified Administrator",
+  "vendor": "Okta",
+  "issuer": null,
+  "domain": "IAM",
+  "level": "intermediate",
+  "price_usd": 250,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/okta-admin.html",
+  "api": "https://certmap.dev/api/v1/certs/okta-admin.json",
+  "description": "Second-level Okta certification for administrators, taken after Okta Certified Professional. Valid for two years.",
+  "tags": [
+   "iam",
+   "identity"
+  ],
+  "currency_note": "Retake $100",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "okta-pro"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.okta.com/services/certification/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

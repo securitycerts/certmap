@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "aaism",
+  "acronym": "AAISM",
+  "name": "Advanced in AI Security Management",
+  "vendor": "ISACA",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "advanced",
+  "price_usd": 459,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/aaism.html",
+  "api": "https://certmap.dev/api/v1/certs/aaism.json",
+  "description": "Credential on managing security for AI systems across AI governance, AI risk management and AI technologies and controls. Candidates must hold an active CISM or CISSP; the exam has 90 questions.",
+  "tags": [
+   "ai",
+   "ai-security",
+   "management"
+  ],
+  "currency_note": "Member rate; $599 non-member; requires active CISM or CISSP",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.isaca.org/credentialing/aaism",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

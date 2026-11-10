@@ -1,0 +1,80 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cdp-devsecops",
+  "acronym": "CDP",
+  "name": "Certified DevSecOps Professional",
+  "vendor": "Practical DevSecOps",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "intermediate",
+  "price_usd": 899,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cdp-devsecops.html",
+  "api": "https://certmap.dev/api/v1/certs/cdp-devsecops.json",
+  "description": "Practical exam of five challenges to be solved in six hours, followed by 24 hours to submit a report, covering security automation in CI/CD pipelines. Lifetime credential.",
+  "tags": [
+   "devsecops",
+   "ci-cd",
+   "hands-on"
+  ],
+  "currency_note": "List price; includes course, labs and one exam attempt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 360,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.practical-devsecops.com/certified-devsecops-professional/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-cdp-devsecops.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Exam and Certification Process",
+       "provider": "Practical DevSecOps",
+       "url": "https://www.practical-devsecops.com/exam-and-certification/",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "DevSecOps University",
+       "provider": "Practical DevSecOps",
+       "url": "https://www.practical-devsecops.com/devsecops-university/",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Certified DevSecOps Professional (CDP)",
+       "provider": "Practical DevSecOps",
+       "url": "https://www.practical-devsecops.com/certified-devsecops-professional/",
+       "free": false,
+       "official": true
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

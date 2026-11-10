@@ -1,0 +1,139 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "kcsa",
+  "acronym": "KCSA",
+  "name": "Kubernetes and Cloud Native Security Associate",
+  "vendor": "CNCF",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "beginner",
+  "price_usd": 250,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/kcsa.html",
+  "api": "https://certmap.dev/api/v1/certs/kcsa.json",
+  "description": "Entry-level multiple choice exam on Kubernetes and cloud native security fundamentals. Online and proctored, with no prerequisites.",
+  "tags": [
+   "cloud",
+   "kubernetes",
+   "fundamentals"
+  ],
+  "currency_note": "Includes one retake",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://training.linuxfoundation.org/certification/kubernetes-and-cloud-native-security-associate-kcsa/",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-kcsa.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "KCSA Curriculum",
+       "provider": "CNCF",
+       "url": "https://github.com/cncf/curriculum/blob/main/KCSA%20Curriculum.pdf",
+       "free": true,
+       "official": true
+      },
+      {
+       "step": 2,
+       "type": "guide",
+       "title": "Kubernetes Documentation: Security",
+       "provider": "Kubernetes",
+       "url": "https://kubernetes.io/docs/concepts/security/",
+       "free": true,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "learn",
+     "steps": [
+      {
+       "step": 3,
+       "type": "course",
+       "title": "Introduction to Kubernetes (LFS158)",
+       "provider": "The Linux Foundation",
+       "url": "https://training.linuxfoundation.org/training/introduction-to-kubernetes/",
+       "free": false,
+       "official": true
+      },
+      {
+       "step": 4,
+       "type": "course",
+       "title": "Kubernetes and Cloud Native Security Associate (KCSA) Course",
+       "provider": "KodeKloud",
+       "url": "https://kodekloud.com/courses/kubernetes-and-cloud-native-security-associate-kcsa",
+       "free": false,
+       "official": false
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 5,
+       "type": "lab",
+       "title": "K8s Best Security Practices",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/k8sbestsecuritypractices",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "Kubernetes Goat",
+       "provider": "madhuakula",
+       "url": "https://github.com/madhuakula/kubernetes-goat",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "repo",
+       "title": "kube-bench",
+       "provider": "Aqua Security",
+       "url": "https://github.com/aquasecurity/kube-bench",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 8,
+       "type": "repo",
+       "title": "OWASP Kubernetes Top Ten",
+       "provider": "OWASP",
+       "url": "https://kubernetes-top10.owasp.org/",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 9,
+       "type": "repo",
+       "title": "CNCF TAG Security",
+       "provider": "CNCF",
+       "url": "https://github.com/cncf/tag-security",
+       "free": true,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

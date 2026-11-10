@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cwsp",
+  "acronym": "CWSP",
+  "name": "Certified Wireless Security Professional",
+  "vendor": "CWNP",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "intermediate",
+  "price_usd": 350,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cwsp.html",
+  "api": "https://certmap.dev/api/v1/certs/cwsp.json",
+  "description": "Vendor-neutral certification on securing enterprise Wi-Fi networks, with a 60-question exam. Candidates must hold a current CWNA credential.",
+  "tags": [
+   "wireless",
+   "wifi",
+   "network-security",
+   "vendor-neutral"
+  ],
+  "currency_note": "List price $349.99 (exam CWSP-208); requires a current CWNA",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "cwna"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.cwnp.com/certifications/cwsp",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

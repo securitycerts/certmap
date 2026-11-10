@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cosintp",
+  "acronym": "C|OSINT|P",
+  "name": "Certified OSINT Professional",
+  "vendor": "zSecurity",
+  "issuer": null,
+  "domain": "OSINT",
+  "level": "intermediate",
+  "price_usd": 500,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cosintp.html",
+  "api": "https://certmap.dev/api/v1/certs/cosintp.json",
+  "description": "Practical OSINT certification assessed through a 72-hour real-world investigation scenario followed by a written report of methods, findings and conclusions. The page states no expiry period.",
+  "tags": [
+   "osint",
+   "hands-on",
+   "report"
+  ],
+  "currency_note": "List price $499.99 for the exam (promotional price $399.99 seen); bundle with the OSINT course lists at $549.99",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 4320,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://zsecurity.org/?p=206962",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

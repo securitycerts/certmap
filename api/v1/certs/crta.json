@@ -1,0 +1,116 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "crta",
+  "acronym": "CRTA",
+  "name": "Certified Red Team Analyst",
+  "vendor": "CyberWarFare Labs",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "beginner",
+  "price_usd": 69,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/crta.html",
+  "api": "https://certmap.dev/api/v1/certs/crta.json",
+  "description": "Entry-level red team certification with a six-hour practical exam covering external and internal operations against an Active Directory environment.",
+  "tags": [
+   "red-team",
+   "active-directory",
+   "hands-on"
+  ],
+  "currency_note": "Includes course material, 30 days of lab access and two exam attempts",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 360,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberwarfare.live/certifications/red-team-analyst-crta",
+  "comparisons": [],
+  "study_plan": {
+   "page": "https://certmap.dev/certs/plan-crta.html",
+   "phases": [
+    {
+     "id": "know",
+     "steps": [
+      {
+       "step": 1,
+       "type": "guide",
+       "title": "Certified Red Team Analyst (CRTA)",
+       "provider": "CyberWarFare Labs",
+       "url": "https://cyberwarfare.live/certifications/red-team-analyst-crta/",
+       "free": true,
+       "official": true
+      }
+     ]
+    },
+    {
+     "id": "practice",
+     "steps": [
+      {
+       "step": 2,
+       "type": "lab",
+       "title": "Attacktive Directory",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/attacktivedirectory",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 3,
+       "type": "lab",
+       "title": "Red Team Fundamentals",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/redteamfundamentals",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 4,
+       "type": "lab",
+       "title": "Post-Exploitation Basics",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/postexploit",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 5,
+       "type": "repo",
+       "title": "GOAD (Game of Active Directory)",
+       "provider": "Orange-Cyberdefense",
+       "url": "https://github.com/Orange-Cyberdefense/GOAD",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 6,
+       "type": "repo",
+       "title": "Vulnerable-AD",
+       "provider": "safebuffer",
+       "url": "https://github.com/safebuffer/vulnerable-AD",
+       "free": true,
+       "official": false
+      },
+      {
+       "step": 7,
+       "type": "lab",
+       "title": "Lateral Movement and Pivoting",
+       "provider": "TryHackMe",
+       "url": "https://tryhackme.com/room/lateralmovementandpivoting",
+       "free": false,
+       "official": false
+      }
+     ]
+    }
+   ],
+   "sponsored": []
+  }
+ }
+}

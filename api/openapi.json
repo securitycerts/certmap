@@ -1,0 +1,311 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "cert/map API",
+  "version": "1.0.0",
+  "description": "Read-only, static JSON about cybersecurity certifications: prices, prerequisites, study plans and comparisons. No key, no rate limit; please cache.",
+  "license": {
+   "name": "CC BY 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  }
+ },
+ "servers": [
+  {
+   "url": "https://certmap.dev/api/v1"
+  }
+ ],
+ "paths": {
+  "/index.json": {
+   "get": {
+    "summary": "Entry point: counts and endpoint URLs",
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/certs.json": {
+   "get": {
+    "summary": "Every certification, summarised",
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "count": {
+           "type": "integer"
+          },
+          "certifications": {
+           "type": "array",
+           "items": {
+            "$ref": "#/components/schemas/CertificationSummary"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/certs/{id}.json": {
+   "parameters": [
+    {
+     "name": "id",
+     "in": "path",
+     "required": true,
+     "schema": {
+      "type": "string"
+     },
+     "example": "oscp"
+    }
+   ],
+   "get": {
+    "summary": "One certification in full, with its study plan and comparisons",
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "certification": {
+           "$ref": "#/components/schemas/Certification"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/vendors.json": {
+   "get": {
+    "summary": "Vendors and the ids of their certifications",
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/domains.json": {
+   "get": {
+    "summary": "Domains and the ids of their certifications",
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/comparisons.json": {
+   "get": {
+    "summary": "Certification pairs that have a comparison page, per language",
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/paths.json": {
+   "get": {
+    "summary": "Preset role paths with cost and study-time totals",
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "CertificationSummary": {
+    "type": "object",
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "acronym": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "vendor": {
+      "type": "string"
+     },
+     "issuer": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "domain": {
+      "type": "string",
+      "enum": [
+       "Communication & Network Security",
+       "IAM",
+       "Security Architecture & Engineering",
+       "Asset Security",
+       "Security & Risk Management",
+       "Software Security",
+       "Security Operations",
+       "Cyber Threat Intelligence",
+       "OSINT",
+       "Cloud/SysOps",
+       "*nix",
+       "ICS/IoT",
+       "GRC",
+       "Forensics",
+       "Incident Handling",
+       "Penetration Testing",
+       "Exploitation"
+      ]
+     },
+     "level": {
+      "type": "string",
+      "enum": [
+       "beginner",
+       "intermediate",
+       "advanced",
+       "expert"
+      ]
+     },
+     "price_usd": {
+      "type": [
+       "number",
+       "null"
+      ],
+      "description": "Exam list price in USD. null when not published, 0 when free."
+     },
+     "hands_on": {
+      "type": "boolean"
+     },
+     "page": {
+      "type": "string",
+      "format": "uri"
+     },
+     "api": {
+      "type": "string",
+      "format": "uri"
+     }
+    }
+   },
+   "Certification": {
+    "allOf": [
+     {
+      "$ref": "#/components/schemas/CertificationSummary"
+     },
+     {
+      "type": "object",
+      "properties": {
+       "description": {
+        "type": "string"
+       },
+       "tags": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "price_verified_at": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "format": "date"
+       },
+       "duration_min": {
+        "type": [
+         "integer",
+         "null"
+        ]
+       },
+       "validity_years": {
+        "type": "integer",
+        "description": "0 means it does not expire."
+       },
+       "dod_8140": {
+        "type": "boolean"
+       },
+       "prerequisites": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "leads_to": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "official_url": {
+        "type": "string",
+        "format": "uri"
+       },
+       "comparisons": {
+        "type": "array",
+        "items": {
+         "type": "object"
+        }
+       },
+       "study_plan": {
+        "type": [
+         "object",
+         "null"
+        ],
+        "description": "Ordered preparation steps in four phases: know, learn, practice, test."
+       }
+      }
+     }
+    ]
+   }
+  }
+ }
+}
