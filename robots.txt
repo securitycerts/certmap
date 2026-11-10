@@ -76,4 +76,4 @@ Allow: /
 User-agent: MistralAI-User
 Allow: /
 
-Sitemap: https://securitycerts.github.io/certmap/sitemap.xml
+Sitemap: https://certmap.dev/sitemap.xml

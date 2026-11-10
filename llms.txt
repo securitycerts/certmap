@@ -2,7 +2,7 @@
 
 > Open-source static roadmap of 272 cybersecurity certifications mapped across 16 domains and four seniority tiers. Filter by vendor, level or price, inspect each certification's prerequisites, renewal cycle and DoD 8140 status, and plan a study path with running cost and time-to-completion totals.
 
-cert/map is a community-maintained reference for the cybersecurity certification landscape. The entire dataset lives in a single CSV file at `data/certs.csv`; the browser parses it at load time, so the data is also directly machine-readable for anyone integrating it. The project is hosted on GitHub Pages at https://securitycerts.github.io/certmap/.
+cert/map is a community-maintained reference for the cybersecurity certification landscape. The entire dataset lives in a single CSV file at `data/certs.csv`; the browser parses it at load time, so the data is also directly machine-readable for anyone integrating it. The project is hosted on GitHub Pages at https://certmap.dev/.
 
 ## Vendors covered
 
@@ -66,13 +66,13 @@ Each certification is placed at one of four tiers:
 
 ## Key URLs
 
-- [Live application](https://securitycerts.github.io/certmap/)
-- [All certifications, plain HTML](https://securitycerts.github.io/certmap/certs/)
-- [Dataset (CSV)](https://securitycerts.github.io/certmap/data/certs.csv)
+- [Live application](https://certmap.dev/)
+- [All certifications, plain HTML](https://certmap.dev/certs/)
+- [Dataset (CSV)](https://certmap.dev/data/certs.csv)
 - [Schema reference](https://github.com/securitycerts/certmap/blob/main/data/schema.md)
 - [Contributing guide](https://github.com/securitycerts/certmap/blob/main/CONTRIBUTING.md)
 - [Source repository](https://github.com/securitycerts/certmap)
-- [Sitemap](https://securitycerts.github.io/certmap/sitemap.xml)
+- [Sitemap](https://certmap.dev/sitemap.xml)
 
 ## Features of the live site
 

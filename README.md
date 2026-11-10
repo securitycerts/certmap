@@ -1,6 +1,6 @@
 # cert/map: Cybersecurity Certification Roadmap
 
-**Live site: [securitycerts.github.io/certmap](https://securitycerts.github.io/certmap/)** · [All certifications as a list](https://securitycerts.github.io/certmap/certs/) · [Dataset (CSV)](data/certs.csv)
+**Live site: [certmap.dev](https://certmap.dev/)** · [All certifications as a list](https://certmap.dev/certs/) · [Dataset (CSV)](data/certs.csv)
 
 An interactive security certification roadmap: 272 cybersecurity certifications from 62 vendors, mapped by domain and seniority, with current exam prices, prerequisites and renewal cycles. Build a certification path and share it with a link.
 
@@ -115,7 +115,7 @@ npm run links      # node scripts/check-links.mjs  (append an id substring to sc
 
 - Add the site to [Google Search Console](https://search.google.com/search-console) and Bing Webmaster Tools and submit `sitemap.xml`. Until a site is verified and its sitemap submitted, a `github.io` project page can take a long time to be crawled.
 - Fill in the repository's About box on GitHub: the live URL as the website, a one-line description, and topics such as `cybersecurity`, `certifications`, `security-certification-roadmap`, `infosec`, `career-roadmap`. GitHub repository pages rank on their own for these searches.
-- With a custom domain, set it under Settings, Pages, and replace `https://securitycerts.github.io/certmap/` in `index.html`, `robots.txt`, `llms.txt` and the `SITE` constant in `scripts/build-pages.mjs`.
+- The site is served from `certmap.dev`, set under Settings, Pages, Custom domain. The address is hardcoded in `index.html`, `robots.txt`, `llms.txt`, `404.html` and the `SITE` constant in `scripts/build-pages.mjs`; change all of them together if the domain ever moves.
 
 There are no environment variables or secrets to configure.
 

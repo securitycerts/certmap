@@ -20,7 +20,7 @@ import { createHash } from "node:crypto";
 import { parseCSV, rowsToCerts, DOMAINS } from "../assets/js/data.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const SITE = "https://securitycerts.github.io/certmap/";
+const SITE = "https://certmap.dev/";
 const OUT = join(ROOT, "certs");
 const LEVELS = ["beginner", "intermediate", "advanced", "expert"];
 const LEVEL_LABEL = { beginner: "Beginner", intermediate: "Intermediate", advanced: "Advanced", expert: "Expert" };
