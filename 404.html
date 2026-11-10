@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex" />
 <title>Redirecting…</title>
 <link rel="canonical" href="/" />
-<meta http-equiv="refresh" content="0; url=/" />
+<meta http-equiv="refresh" content="1; url=/?moved=1" />
 <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
 <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
 <meta name="theme-color" content="#0b0d12" />
@@ -21,8 +21,8 @@
 <body>
 <main>
   <div>cert/map</div>
-  <div class="dim">Redirecting to <a href="/">/</a>…</div>
+  <div class="dim">Redirecting to <a href="/?moved=1">certmap.dev</a>…</div>
 </main>
-<script>location.replace("/");</script>
+<script>location.replace("/?moved=" + Date.now() + location.hash);</script>
 </body>
 </html>
