@@ -68,6 +68,12 @@ Foundational networking certification covering protocols, topologies and basic s
   - Network+ Certification (CompTIA, official, free): https://www.comptia.org/en-us/certifications/network/
   - Network+ (V9) Practice Questions (CompTIA, official, free): https://www.comptia.org/en-us/certifications/network/practice-questions/
   - CompTIA Network+ N10-009 Training Course (Professor Messer, free): https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/
+  - What is Networking? (TryHackMe, free): https://tryhackme.com/room/whatisnetworking
+  - Intro to LAN (TryHackMe, free): https://tryhackme.com/room/introtolan
+  - Networking Concepts (TryHackMe, free): https://tryhackme.com/room/networkingconcepts
+  - DNS in Detail (TryHackMe, free): https://tryhackme.com/room/dnsindetail
+  - Introduction to Networking (Hack The Box): https://academy.hackthebox.com/course/preview/introduction-to-networking
+  - Subnetting Questions (subnettingpractice.com, free): https://subnettingpractice.com/
   - CompTIA Network+ Study Guide: Exam N10-009, 6th Edition (Sybex (Wiley)): https://www.wiley.com/en-us/-p-9781394235605
 
 ### AZ-700: Microsoft Azure Network Engineer Associate
@@ -102,8 +108,14 @@ Foundational Cisco networking certification.
 - Preparation:
   - CCNA Exam Topics (Cisco, official, free): https://learningnetwork.cisco.com/s/ccna-exam-topics
   - CCNA: Introduction to Networks (Cisco Networking Academy, official): https://www.netacad.com/courses/ccna-introduction-networks
+  - Networking Basics (Cisco Networking Academy, official, free): https://www.netacad.com/courses/networking-basics
   - Cisco Packet Tracer (Cisco Networking Academy, official, free): https://www.netacad.com/cisco-packet-tracer
+  - DevNet Sandbox (Cisco, official, free): https://developer.cisco.com/sandbox
   - Free CCNA v1.1 200-301 Complete Course (Jeremy's IT Lab, free): https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ
+  - Networking Concepts (TryHackMe, free): https://tryhackme.com/room/networkingconcepts
+  - Intro to LAN (TryHackMe, free): https://tryhackme.com/room/introtolan
+  - Subnetting Questions (subnettingpractice.com, free): https://subnettingpractice.com/
+  - containerlab (srl-labs, free): https://github.com/srl-labs/containerlab
   - CCNA 200-301 Official Cert Guide Library, 2nd Edition (Cisco Press): https://www.ciscopress.com/store/ccna-200-301-official-cert-guide-library-9780138221393
 
 ### CCSA: Check Point Certified Security Administrator
@@ -786,6 +798,11 @@ Entry-level cybersecurity certification covering foundational security principle
   - Self-Study Tools and Resources for the ISC2 CC Exam (ISC2, official, free): https://www.isc2.org/certifications/cc/cc-self-study-resources
   - CC Online Self-Paced Certification Training (ISC2, official): https://www.isc2.org/training/online-self-paced/cc-online-self-paced
   - Certified in Cybersecurity Flash Cards (ISC2, official, free): https://cloud.connect.isc2.org/cc-flashcards
+  - Introduction to Cybersecurity (Cisco Networking Academy, free): https://www.netacad.com/courses/introduction-to-cybersecurity
+  - Pre Security path (TryHackMe): https://tryhackme.com/path/outline/presecurity
+  - Security Principles (TryHackMe, free): https://tryhackme.com/room/securityprinciples
+  - Defensive Security Intro (TryHackMe, free): https://tryhackme.com/room/defensivesecurityintro
+  - Governance & Regulation (TryHackMe, free): https://tryhackme.com/room/cybergovernanceregulation
   - CC Certified in Cybersecurity Study Guide (Sybex (Wiley)): https://www.wiley.com/en-us/-p-9781394213832
 
 ### CCST CS: Cisco Certified Support Technician Cybersecurity
@@ -819,6 +836,11 @@ Entry-level practical exam combining a gray-box penetration test with validation
   - HTB Certified Junior Cybersecurity Associate (Hack The Box, official, free): https://academy.hackthebox.com/preview/certifications/htb-certified-junior-cybersecurity-associate
   - Academy Certifications (Hack The Box, official, free): https://help.hackthebox.com/en/articles/12741732-academy-certifications
   - Junior Cybersecurity Analyst Job Role Path (Hack The Box, official): https://academy.hackthebox.com/path/preview/junior-cybersecurity-analyst
+  - Introduction to Information Security (Hack The Box, official): https://academy.hackthebox.com/course/preview/introduction-to-information-security
+  - Network Foundations (Hack The Box, official): https://academy.hackthebox.com/course/preview/network-foundations
+  - Linux Fundamentals (Hack The Box, official): https://academy.hackthebox.com/course/preview/linux-fundamentals
+  - Windows Fundamentals (Hack The Box, official): https://academy.hackthebox.com/course/preview/windows-fundamentals
+  - Introduction to Networking (Hack The Box, official): https://academy.hackthebox.com/course/preview/introduction-to-networking
 
 ### CS50 Cyber: HarvardX CS50's Introduction to Cybersecurity
 
@@ -973,7 +995,12 @@ Microsoft fundamentals certification covering security identity and compliance b
 - Preparation:
   - Study guide for Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals (Microsoft, official, free): https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900
   - Course SC-900T00-A: Introduction to Microsoft Security, Compliance, and Identity (Microsoft, official): https://learn.microsoft.com/en-us/training/courses/sc-900t00
+  - Introduction to security, compliance, and identity concepts (Microsoft, official, free): https://learn.microsoft.com/en-us/training/paths/describe-concepts-of-security-compliance-identity/
+  - Introduction to Microsoft Entra (Microsoft, official, free): https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-identity-access/
+  - Introduction to Microsoft security solutions (Microsoft, official, free): https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-security-solutions/
+  - Introduction to Microsoft Purview and Microsoft's privacy principles (Microsoft, official, free): https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/
   - SC-900 lab exercises (Microsoft, official, free): https://microsoftlearning.github.io/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/
+  - SC-900 Practice Assessment (Microsoft, official, free): https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/practice/assessment?assessment-type=practice&assessmentId=71
   - Microsoft Security, Compliance, and Identity Fundamentals (SC-900) free course (freeCodeCamp, free): https://www.freecodecamp.org/news/microsoft-security-compliance-certification-sc-900/
 
 ### Security+: CompTIA Security+
@@ -995,6 +1022,11 @@ Foundational vendor-neutral cybersecurity certification covering core concepts a
   - Security+ Certification (CompTIA, official, free): https://www.comptia.org/en-us/certifications/security/
   - Security+ (V7) Practice Questions (CompTIA, official, free): https://www.comptia.org/en-us/certifications/security/v7/practice-questions/
   - CompTIA Security+ SY0-701 Training Course (Professor Messer, free): https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/
+  - Cyber Security 101 path (TryHackMe): https://tryhackme.com/path/outline/cybersecurity101
+  - Pre Security path (TryHackMe): https://tryhackme.com/path/outline/presecurity
+  - Security Principles (TryHackMe, free): https://tryhackme.com/room/securityprinciples
+  - Cryptography Basics (TryHackMe, free): https://tryhackme.com/room/cryptographybasics
+  - Vulnerabilities 101 (TryHackMe, free): https://tryhackme.com/room/vulnerabilities101
   - CompTIA Security+ Study Guide: Exam SY0-701, 9th Edition (Sybex (Wiley)): https://www.wiley.com/en-us/-p-9781394211418
 
 ### CBCP: Certified Business Continuity Professional
@@ -1028,6 +1060,12 @@ Hands-on foundational security certification from GIAC.
 - Preparation:
   - GIAC Security Essentials (GSEC) exam objectives (GIAC, official, free): https://www.giac.org/certifications/security-essentials-gsec
   - SEC401: Security Essentials (SANS Institute, official): https://www.sans.org/cyber-security-courses/security-essentials
+  - Holiday Hack Challenge (SANS Institute, official): https://www.sans.org/cyber-ranges/holiday-hack-challenge
+  - Cyber Security 101 path (TryHackMe): https://tryhackme.com/path/outline/cybersecurity101
+  - Security Principles (TryHackMe, free): https://tryhackme.com/room/securityprinciples
+  - Cryptography Basics (TryHackMe, free): https://tryhackme.com/room/cryptographybasics
+  - Windows Fundamentals 1 (TryHackMe, free): https://tryhackme.com/room/windowsfundamentals1xbx
+  - Linux Fundamentals (Pt1) (TryHackMe, free): https://tryhackme.com/room/linuxfundamentalspart1
   - GSEC GIAC Security Essentials Certification All-in-One Exam Guide, Second Edition (McGraw Hill): https://www.mheducation.com/highered/mhp/product/gsec-giac-security-essentials-certification-all-one-exam-guide-second-edition.html
 
 ### TAISE: Trusted AI Safety Expert
@@ -1119,6 +1157,11 @@ Gold-standard cybersecurity certification covering 8 domains; requires 5 years e
   - CISSP Online Self-Paced Certification Training (ISC2, official): https://www.isc2.org/training/online-self-paced/cissp-online-self-paced
   - CISSP Flash Cards (ISC2, official, free): https://cloud.connect.isc2.org/cissp-flashcards
   - CISSP MindMaps (Destination Certification, free): https://destcert.com/cissp-mindmaps/
+  - Security Engineer path (TryHackMe): https://tryhackme.com/path/outline/security-engineer-training
+  - Governance & Regulation (TryHackMe, free): https://tryhackme.com/room/cybergovernanceregulation
+  - Secure Network Architecture (TryHackMe, free): https://tryhackme.com/room/introtosecurityarchitecture
+  - SDLC (TryHackMe, free): https://tryhackme.com/room/sdlc
+  - Threat Modelling (TryHackMe): https://tryhackme.com/room/threatmodelling
   - ISC2 CISSP Official Study Guide, 10th Edition (Sybex (Wiley)): https://www.wiley.com/en-us/-p-9781394254699
 
 ### ISSMP: ISC2 Information Systems Security Management Professional
@@ -1579,6 +1622,12 @@ Junior defensive security certification assessed through a 24-hour practical inc
   - Blue Team Level 1 (Centri, official, free): https://www.centri.org/certifications/blue-team-level-1
   - Blue Team Junior Analyst Pathway (Centri, official, free): https://www.centri.org/courses/blue-team-junior-analyst-pathway-bundle
   - Blue Team Labs Online (Centri, official): https://blueteamlabs.online/
+  - SOC Level 1 path (TryHackMe): https://tryhackme.com/path/outline/soclevel1
+  - Phishing Analysis Fundamentals (TryHackMe, free): https://tryhackme.com/room/phishingemails1tryoe
+  - Disk Analysis & Autopsy (TryHackMe, free): https://tryhackme.com/room/autopsy2ze0
+  - PhishStrike (CyberDefenders, free): https://cyberdefenders.org/blueteam-ctf-challenges/phishstrike/
+  - PacketMaze (CyberDefenders, free): https://cyberdefenders.org/blueteam-ctf-challenges/packetmaze/
+  - SOC Analyst Learning Path (LetsDefend): https://app.letsdefend.io/path/soc-analyst-learning-path
 
 ### CCDL1: Certified CyberDefender Level 1
 
@@ -1597,6 +1646,12 @@ Entry-level SOC analyst certification with a practical exam covering alert triag
   - Study Plan and Exam Readiness (CyberDefenders, official, free): https://help.cyberdefenders.org/en/articles/13990297-study-plan-and-exam-readiness
   - Certified CyberDefender Level 1 (CCDL1) (CyberDefenders, official): https://cyberdefenders.org/certifications/certified-cyberdefender-level1/
   - Blue Team Labs (CyberDefenders, official): https://cyberdefenders.org/blue-team-labs/
+  - PacketMaze (CyberDefenders, official, free): https://cyberdefenders.org/blueteam-ctf-challenges/packetmaze/
+  - Tomcat Takeover (CyberDefenders, official, free): https://cyberdefenders.org/blueteam-ctf-challenges/tomcat-takeover/
+  - PsExec Hunt (CyberDefenders, official, free): https://cyberdefenders.org/blueteam-ctf-challenges/psexec-hunt/
+  - Oski (CyberDefenders, official, free): https://cyberdefenders.org/blueteam-ctf-challenges/oski/
+  - RedLine (CyberDefenders, official, free): https://cyberdefenders.org/blueteam-ctf-challenges/redline/
+  - PhishStrike (CyberDefenders, official, free): https://cyberdefenders.org/blueteam-ctf-challenges/phishstrike/
 
 ### CCT: Certified Cybersecurity Technician
 
@@ -1683,6 +1738,12 @@ Nine-course entry-level program covering security frameworks, network security, 
   - Google Cybersecurity Certificate (Grow with Google, official, free): https://grow.google/certificates/cybersecurity/
   - Google Cybersecurity Professional Certificate (Google (Coursera), official): https://www.coursera.org/professional-certificates/google-cybersecurity
   - Foundations of Cybersecurity (Google (Coursera), official): https://www.coursera.org/learn/foundations-of-cybersecurity
+  - Pre Security path (TryHackMe): https://tryhackme.com/path/outline/presecurity
+  - Linux Fundamentals (Pt1) (TryHackMe, free): https://tryhackme.com/room/linuxfundamentalspart1
+  - Python Basics (TryHackMe, free): https://tryhackme.com/room/pythonbasics
+  - Introduction to SIEM (TryHackMe, free): https://tryhackme.com/room/introtosiem
+  - SQL Fundamentals (TryHackMe): https://tryhackme.com/room/sqlfundamentals
+  - Suricata (OISF, free): https://github.com/OISF/suricata
 
 ### IBM Analyst: IBM Cybersecurity Analyst Professional Certificate
 
@@ -1783,6 +1844,12 @@ Foundational Splunk search and reporting certification.
   - Splunk Core Certified User (Splunk, official, free): https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html
   - Free Training Courses (Splunk, official, free): https://www.splunk.com/en_us/training/free-courses/overview.html
   - Search Tutorial (Splunk, official, free): https://help.splunk.com/en/splunk-enterprise/get-started/search-tutorial
+  - Splunk Boss of the SOC (Splunk, official): https://bots.splunk.com/
+  - Boss of the SOC v3 dataset (Splunk, official, free): https://github.com/splunk/botsv3
+  - Boss of the SOC v1 dataset (Splunk, official, free): https://github.com/splunk/botsv1
+  - Splunk: Exploring SPL (TryHackMe, free): https://tryhackme.com/room/splunkexploringspl
+  - Splunk: The Basics (TryHackMe): https://tryhackme.com/room/splunk101
+  - Boss Of The SOC v1 (CyberDefenders): https://cyberdefenders.org/blueteam-ctf-challenges/boss-of-the-soc-v1/
 
 ### CCFA: CrowdStrike Certified Falcon Administrator
 
@@ -1815,6 +1882,12 @@ Cisco SOC analyst associate certification.
 - Preparation:
   - CCNA Cybersecurity (200-201 CCNACBR) Exam Topics (Cisco, official, free): https://learningnetwork.cisco.com/s/ccnacbr-exam-topics
   - CyberOps Associate (Cisco Networking Academy, official): https://www.netacad.com/courses/cyberops-associate
+  - Cybersecurity career path (Cisco Networking Academy, official, free): https://www.netacad.com/career-paths/cybersecurity
+  - SOC Level 1 path (TryHackMe): https://tryhackme.com/path/outline/soclevel1
+  - Snort (TryHackMe, free): https://tryhackme.com/room/snort
+  - Traffic Analysis Essentials (TryHackMe, free): https://tryhackme.com/room/trafficanalysisessentials
+  - Training exercises (Malware-Traffic-Analysis.net, free): https://www.malware-traffic-analysis.net/training-exercises.html
+  - Security Onion (Security Onion Solutions, free): https://github.com/Security-Onion-Solutions/securityonion
   - CCNA Cybersecurity CCNACBR 200-201 Official Cert Guide (Cisco Press): https://www.ciscopress.com/store/cisco-cyberops-associate-cbrops-200-201-official-cert-9780136807834
 
 ### CCOA: Certified Cybersecurity Operations Analyst
@@ -1849,6 +1922,12 @@ Hands-on defensive SOC analyst certification.
   - HTB Certified Defensive Security Analyst (Hack The Box, official, free): https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst
   - Academy Certifications (Hack The Box, official, free): https://help.hackthebox.com/en/articles/12741732-academy-certifications
   - SOC Analyst Job Role Path (Hack The Box, official): https://academy.hackthebox.com/path/preview/soc-analyst
+  - Incident Handling Process (Hack The Box, official): https://academy.hackthebox.com/course/preview/incident-handling-process
+  - Security Monitoring & SIEM Fundamentals (Hack The Box, official): https://academy.hackthebox.com/course/preview/security-monitoring--siem-fundamentals
+  - Windows Event Logs & Finding Evil (Hack The Box, official): https://academy.hackthebox.com/course/preview/windows-event-logs--finding-evil
+  - Introduction to Threat Hunting & Hunting With Elastic (Hack The Box, official): https://academy.hackthebox.com/course/preview/introduction-to-threat-hunting--hunting-with-elastic
+  - YARA & Sigma for SOC Analysts (Hack The Box, official): https://academy.hackthebox.com/course/preview/yara--sigma-for-soc-analysts
+  - Sigma (SigmaHQ, free): https://github.com/SigmaHQ/sigma
 
 ### CSA: EC-Council Certified SOC Analyst
 
@@ -1883,6 +1962,12 @@ Intermediate security operations certification covering threat detection, vulner
 - Preparation:
   - CySA+ Certification V4 (CompTIA, official, free): https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/
   - CySA+ (V4) Practice Questions (CompTIA, official, free): https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/practice-questions/
+  - SOC Level 1 path (TryHackMe): https://tryhackme.com/path/outline/soclevel1
+  - Vulnerabilities 101 (TryHackMe, free): https://tryhackme.com/room/vulnerabilities101
+  - OpenVAS (TryHackMe, free): https://tryhackme.com/room/openvas
+  - Intro to Log Analysis (TryHackMe, free): https://tryhackme.com/room/introtologanalysis
+  - Sigma (SigmaHQ, free): https://github.com/SigmaHQ/sigma
+  - Security Onion (Security Onion Solutions, free): https://github.com/Security-Onion-Solutions/securityonion
   - CompTIA CySA+ Study Guide: Exam CS0-004, 4th Edition (Sybex (Wiley)): https://www.wiley.com/en-us/-p-9781394414871
 
 ### Elastic SIEM Analyst: Elastic Certified SIEM Analyst
@@ -1986,6 +2071,12 @@ Blue team detection and SOC analyst certification from OffSec.
   - OSDA Exam FAQ (OffSec, official, free): https://help.offsec.com/hc/en-us/articles/10170036616084-OSDA-Exam-FAQ
   - SOC-200 Syllabus (OffSec, official, free): https://www.offsec.com/documentation/SOC-200-Syllabus.pdf
   - SOC-200: Foundational Security Operations and Defensive Analysis (OffSec, official): https://www.offsec.com/courses/soc-200/
+  - Windows Event Logs (TryHackMe): https://tryhackme.com/room/windowseventlogs
+  - Elastic Stack: The Basics (TryHackMe): https://tryhackme.com/room/investigatingwithelk101
+  - Sigma (SigmaHQ, free): https://github.com/SigmaHQ/sigma
+  - Atomic Red Team (Red Canary, free): https://github.com/redcanaryco/atomic-red-team
+  - DetectionLab (clong, free): https://github.com/clong/DetectionLab
+  - Detection Rules (Elastic, free): https://github.com/elastic/detection-rules
 
 ### SC-200: Microsoft Security Operations Analyst
 
@@ -2006,6 +2097,11 @@ Microsoft Sentinel and Defender SOC analyst certification.
   - Course SC-200T00-A: Defend against cyberthreats with Microsoft's security operations platform (Microsoft, official): https://learn.microsoft.com/en-us/training/courses/sc-200t00
   - Mitigate threats using Microsoft Defender XDR (learning path) (Microsoft, official, free): https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/
   - SC-200 Microsoft Security Operations Analyst lab exercises (Microsoft, official, free): https://microsoftlearning.github.io/SC-200T00A-Microsoft-Security-Operations-Analyst/
+  - Microsoft Sentinel Training Lab (Microsoft, official, free): https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Training/Azure-Sentinel-Training-Lab
+  - Kusto Detective Agency (Microsoft, official): https://detective.kusto.io/
+  - SC-200 Practice Assessment (Microsoft, official, free): https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/practice/assessment?assessment-type=practice&assessmentId=72
+  - KC7 (KC7 Foundation, free): https://kc7cyber.com/
+  - Must Learn KQL (rod-trent, free): https://github.com/rod-trent/MustLearnKQL
 
 ### SCCPU: Splunk Core Certified Power User
 
@@ -2068,6 +2164,11 @@ Hands-on security operations certification for IT administrators.
   - SSCP Study Tools and Resources (ISC2, official, free): https://www.isc2.org/certifications/sscp/sscp-self-study-resources
   - SSCP Training (ISC2, official): https://www.isc2.org/training/3-ways-to-train/sscp
   - SSCP Flash Cards (ISC2, official, free): https://cloud.connect.isc2.org/sscp-flashcards
+  - Security Engineer path (TryHackMe): https://tryhackme.com/path/outline/security-engineer-training
+  - Governance & Regulation (TryHackMe, free): https://tryhackme.com/room/cybergovernanceregulation
+  - Secure Network Architecture (TryHackMe, free): https://tryhackme.com/room/introtosecurityarchitecture
+  - Cryptography Basics (TryHackMe, free): https://tryhackme.com/room/cryptographybasics
+  - Identity and Access Management (TryHackMe): https://tryhackme.com/room/iaaaidm
 
 ### CCFH: CrowdStrike Certified Falcon Hunter
 
@@ -2347,6 +2448,12 @@ Cyber threat intelligence analysis certification.
   - GIAC Cyber Threat Intelligence (GCTI) exam objectives (GIAC, official, free): https://www.giac.org/certifications/cyber-threat-intelligence-gcti
   - Cyber Threat Intelligence Consumption poster (SANS Institute, official, free): https://www.sans.org/posters/cyber-threat-intelligence-consumption
   - FOR578: Cyber Threat Intelligence (SANS Institute, official): https://www.sans.org/cyber-security-courses/cyber-threat-intelligence
+  - CTI Training (MITRE ATT&CK, free): https://attack.mitre.org/resources/learn-more-about-attack/training/cti/
+  - Intro to Cyber Threat Intel (TryHackMe, free): https://tryhackme.com/room/cyberthreatintel
+  - Threat Intelligence Tools (TryHackMe, free): https://tryhackme.com/room/threatinteltools
+  - Pyramid Of Pain (TryHackMe, free): https://tryhackme.com/room/pyramidofpainax
+  - MISP (MISP, free): https://github.com/MISP/MISP
+  - OpenCTI (OpenCTI-Platform, free): https://github.com/OpenCTI-Platform/opencti
 
 ## OSINT
 
@@ -2472,6 +2579,12 @@ Open source intelligence collection and analysis certification.
   - GIAC Open Source Intelligence (GOSI) exam objectives (GIAC, official, free): https://www.giac.org/certifications/open-source-intelligence-gosi
   - OSINT Poster (SANS Institute, official, free): https://www.sans.org/posters/osint-poster
   - SEC497: Practical Open-Source Intelligence (OSINT) (SANS Institute, official): https://www.sans.org/cyber-security-courses/practical-open-source-intelligence
+  - OhSINT (TryHackMe, free): https://tryhackme.com/room/ohsint
+  - Sakura Room (TryHackMe, free): https://tryhackme.com/room/sakura
+  - Searchlight - IMINT (TryHackMe, free): https://tryhackme.com/room/searchlightosint
+  - Geolocating Images (TryHackMe, free): https://tryhackme.com/room/geolocatingimages
+  - OSINT Framework (OSINT Framework, free): https://osintframework.com/
+  - Bellingcat's Online Investigation Toolkit (Bellingcat, free): https://bellingcat.gitbook.io/toolkit
 
 ### OSC: Open-Source Certified
 
@@ -2544,6 +2657,12 @@ Practical certification in which the candidate receives a simulated client reque
   - OSINT Training (IntelTechniques, official): https://inteltechniques.com/training.html
   - IntelTechniques Search Tools (IntelTechniques, official, free): https://inteltechniques.com/tools/
   - OSINT Techniques, 11th Edition (IntelTechniques, official): https://inteltechniques.com/book1.html
+  - Google Dorking (TryHackMe, free): https://tryhackme.com/room/googledorking
+  - Shodan.io (TryHackMe, free): https://tryhackme.com/room/shodan
+  - OSINT: Corporate Recon (Hack The Box): https://academy.hackthebox.com/course/preview/osint-corporate-recon
+  - List of OSINT Exercises (Sofia Santos (Gralhix), free): https://gralhix.com/list-of-osint-exercises/
+  - Trace Labs OSINT VM (Trace Labs, free): https://github.com/tracelabs/tlosint-vm
+  - Awesome OSINT (jivoi, free): https://github.com/jivoi/awesome-osint
 
 ## Cloud/SysOps
 
@@ -2578,6 +2697,9 @@ Azure cloud fundamentals certification.
 - Preparation:
   - Study guide for Exam AZ-900: Microsoft Azure Fundamentals (Microsoft, official, free): https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900
   - Course AZ-900T00-A: Introduction to Cloud Infrastructure (Microsoft, official): https://learn.microsoft.com/en-us/training/courses/az-900t00
+  - Introduction to Cloud Infrastructure: Describe Cloud Concepts (Microsoft, official, free): https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/
+  - Introduction to Cloud Infrastructure: Describe Azure Architecture and Services (Microsoft, official, free): https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/
+  - Introduction to Cloud Infrastructure: Describe Azure Management and Governance (Microsoft, official, free): https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/
   - AZ-900 Microsoft Azure Fundamentals lab exercises (Microsoft, official, free): https://microsoftlearning.github.io/AZ-900-Microsoft-Azure-Fundamentals/
   - AZ-900 Practice Assessment (Microsoft, official, free): https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23
   - Azure Fundamentals Certification (AZ-900) free course (freeCodeCamp, free): https://www.freecodecamp.org/news/azure-fundamentals-certification-az-900-exam-course/
@@ -2599,6 +2721,10 @@ Foundational AWS cloud certification.
 - Preparation:
   - AWS Certified Cloud Practitioner (CLF-C02) Exam Guide (AWS, official, free): https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html
   - Exam Prep: AWS Certified Cloud Practitioner (CLF-C02) (AWS Skill Builder, official): https://skillbuilder.aws/category/exam-prep/cloud-practitioner-foundational-CLF-C02
+  - AWS Cloud Practitioner Essentials (AWS Skill Builder, official): https://skillbuilder.aws/learn/94T2BEN85A/aws-cloud-practitioner-essentials/8D79F3AVR7
+  - AWS Educate (AWS, official, free): https://aws.amazon.com/education/awseducate/
+  - AWS Hands-On Tutorials (AWS, official): https://aws.amazon.com/getting-started/hands-on/
+  - AWS Certified Cloud Practitioner Study Course (freeCodeCamp, free): https://www.freecodecamp.org/news/aws-certified-cloud-practitioner-certification-study-course-pass-the-exam/
   - AWS Certified Cloud Practitioner CLF-C02 Sample Exam Questions (Tutorials Dojo, free): https://tutorialsdojo.com/aws-certified-cloud-practitioner-clf-c02-sample-exam-questions/
   - AWS Certified Cloud Practitioner Study Guide: Foundational (CLF-C02) Exam, 2nd Edition (Sybex (Wiley)): https://www.wiley.com/en-us/-p-9781394235636
 
@@ -2630,8 +2756,14 @@ Entry-level multiple choice exam on Kubernetes and cloud native security fundame
 - cert/map page: https://certmap.dev/certs/kcsa.html
 - Preparation:
   - KCSA Curriculum (CNCF, official, free): https://github.com/cncf/curriculum/blob/main/KCSA%20Curriculum.pdf
+  - Introduction to Kubernetes (LFS158) (The Linux Foundation, official): https://training.linuxfoundation.org/training/introduction-to-kubernetes/
   - Kubernetes Documentation: Security (Kubernetes, free): https://kubernetes.io/docs/concepts/security/
   - Kubernetes and Cloud Native Security Associate (KCSA) Course (KodeKloud): https://kodekloud.com/courses/kubernetes-and-cloud-native-security-associate-kcsa
+  - K8s Best Security Practices (TryHackMe, free): https://tryhackme.com/room/k8sbestsecuritypractices
+  - Kubernetes Goat (madhuakula, free): https://github.com/madhuakula/kubernetes-goat
+  - kube-bench (Aqua Security, free): https://github.com/aquasecurity/kube-bench
+  - OWASP Kubernetes Top Ten (OWASP, free): https://kubernetes-top10.owasp.org/
+  - CNCF TAG Security (CNCF, free): https://github.com/cncf/tag-security
 
 ### AZ-104: Microsoft Azure Administrator
 
@@ -2728,7 +2860,12 @@ Hands-on Kubernetes operator certification with a live shell exam.
   - Kubernetes Fundamentals (LFS258) (The Linux Foundation, official): https://training.linuxfoundation.org/training/kubernetes-fundamentals/
   - Certified Kubernetes Administrator (CKA) free course (freeCodeCamp, free): https://www.freecodecamp.org/news/prepare-for-the-kubernetes-administrator-certification-and-pass/
   - CKA Playground (Killercoda, free): https://killercoda.com/playgrounds/scenario/cka
+  - Kubernetes Tutorials (Kubernetes, free): https://kubernetes.io/docs/tutorials/
+  - Play with Kubernetes (Play with Kubernetes, free): https://labs.play-with-k8s.com/
   - CKA Simulator (Killer Shell): https://killer.sh/cka
+  - Kubernetes The Hard Way (kelseyhightower, free): https://github.com/kelseyhightower/kubernetes-the-hard-way
+  - CKA practice exercises (alijahnas, free): https://github.com/alijahnas/CKA-practice-exercises
+  - CKA Exercises (chadmcrowell, free): https://github.com/chadmcrowell/CKA-Exercises
 
 ### Cloud+: CompTIA Cloud+
 
@@ -2816,7 +2953,12 @@ AWS architecture certification covering core services and design.
 - Preparation:
   - AWS Certified Solutions Architect - Associate (SAA-C03) Exam Guide (AWS, official, free): https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html
   - Exam Prep: AWS Certified Solutions Architect - Associate (SAA-C03) (AWS Skill Builder, official): https://skillbuilder.aws/category/exam-prep/solutions-architect-associate-SAA-C03
+  - AWS Well-Architected Labs (AWS, official): https://www.wellarchitectedlabs.com/
+  - AWS Hands-On Tutorials (AWS, official): https://aws.amazon.com/getting-started/hands-on/
+  - AWS Workshops (AWS, official): https://builder.aws.com/build/workshops
   - AWS Certified Solutions Architect Associate SAA-C03 Study Path (Tutorials Dojo, free): https://tutorialsdojo.com/aws-certified-solutions-architect-associate-exam-saa-c03-study-path/
+  - AWS Certified Solutions Architect free 10-hour course (freeCodeCamp, free): https://www.freecodecamp.org/news/pass-the-aws-certified-solutions-architect-exam-with-this-free-10-hour-course/
+  - learn.cantrill.io labs (acantril, free): https://github.com/acantril/learn-cantrill-io-labs
   - AWS Certified Solutions Architect Study Guide: Associate (SAA-C03) Exam, 4th Edition (Sybex (Wiley)): https://www.wiley.com/en-us/-p-9781119982623
 
 ### SC-500: Microsoft Cloud and AI Security Engineer
@@ -2886,7 +3028,13 @@ Hands-on Kubernetes security certification covering runtime, supply chain and cl
   - Kubernetes Security Essentials (LFS260) (The Linux Foundation, official): https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/
   - Certified Kubernetes Security Specialist curated resources (Walid Shaari, free): https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist
   - Killer Shell CKS scenarios (Killercoda, free): https://killercoda.com/killer-shell-cks
+  - Cluster Hardening (TryHackMe, free): https://tryhackme.com/room/clusterhardening
   - CKS Simulator (Killer Shell): https://killer.sh/cks
+  - Kubernetes Goat (madhuakula, free): https://github.com/madhuakula/kubernetes-goat
+  - kube-bench (Aqua Security, free): https://github.com/aquasecurity/kube-bench
+  - Falco (Falco, free): https://github.com/falcosecurity/falco
+  - Trivy (Aqua Security, free): https://github.com/aquasecurity/trivy
+  - CKS course environment (Killer Shell, free): https://github.com/killer-sh/cks-course-environment
 
 ### CloudSec Engineer: Palo Alto Networks Cloud Security Engineer
 
@@ -3000,7 +3148,13 @@ AWS security specialty certification (exam SCS-C03) covering threat detection, I
 - Preparation:
   - AWS Certified Security - Specialty (SCS-C03) Exam Guide (AWS, official, free): https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html
   - Exam Prep: AWS Certified Security - Specialty (SCS-C03) (AWS Skill Builder, official): https://skillbuilder.aws/category/exam-prep/security-specialty-SCS-C03
+  - Amazon GuardDuty & Amazon Detective Workshop (AWS, official): https://catalog.workshops.aws/security
   - AWS Certified Security - Specialty (SCS-C03) study roadmap (Tutorials Dojo, free): https://tutorialsdojo.com/cert_roadmap/aws-certified-security-specialty-scs-c03/
+  - CloudGoat (Rhino Security Labs, free): https://github.com/RhinoSecurityLabs/cloudgoat
+  - IAM Vulnerable (Bishop Fox, free): https://github.com/BishopFox/iam-vulnerable
+  - CloudFoxable (Bishop Fox, free): https://github.com/BishopFox/cloudfoxable
+  - Prowler (Prowler, free): https://github.com/prowler-cloud/prowler
+  - Stratus Red Team (Datadog, free): https://github.com/DataDog/stratus-red-team
 
 ### CCSP: Certified Cloud Security Professional
 
@@ -3085,6 +3239,12 @@ Vendor-neutral Linux system administration certification.
 - Preparation:
   - Linux+ Certification V8 (CompTIA, official, free): https://www.comptia.org/en-us/certifications/linux/
   - Linux+ (V8) Practice Questions (CompTIA, official, free): https://www.comptia.org/en-us/certifications/linux/practice-questions/
+  - Linux Upskill Challenge (Linux Upskill Challenge, free): https://linuxupskillchallenge.org/
+  - Linux Journey (LabEx, free): https://labex.io/linuxjourney
+  - Linux Fundamentals (Pt1) (TryHackMe, free): https://tryhackme.com/room/linuxfundamentalspart1
+  - Bash Scripting (TryHackMe, free): https://tryhackme.com/room/bashscripting
+  - Linux Strength Training (TryHackMe, free): https://tryhackme.com/room/linuxstrengthtraining
+  - Bandit (OverTheWire, free): https://overthewire.org/wargames/bandit/
   - CompTIA Linux+ Study Guide: Exam XK0-006, 6th Edition (Sybex (Wiley)): https://www.wiley.com/en-us/-p-9781394316328
 
 ### LPIC-1: LPIC-1 Linux Administrator
@@ -3104,6 +3264,11 @@ Foundational vendor-neutral Linux certification.
   - LPIC-1 Exam 101 and 102 Objectives (Linux Professional Institute, official, free): https://www.lpi.org/our-certifications/exam-101-102-objectives/
   - LPIC-1 Exam 101 Learning Materials (Linux Professional Institute, official, free): https://learning.lpi.org/en/learning-materials/101-500/
   - LPIC-1 Exam 102 Learning Materials (Linux Professional Institute, official, free): https://learning.lpi.org/en/learning-materials/102-500/
+  - Linux Upskill Challenge (Linux Upskill Challenge, free): https://linuxupskillchallenge.org/
+  - Linux Journey (LabEx, free): https://labex.io/linuxjourney
+  - Linux Fundamentals (Pt1) (TryHackMe, free): https://tryhackme.com/room/linuxfundamentalspart1
+  - Bash Scripting (TryHackMe, free): https://tryhackme.com/room/bashscripting
+  - Bandit (OverTheWire, free): https://overthewire.org/wargames/bandit/
 
 ### LFCS: Linux Foundation Certified System Administrator
 
@@ -3122,7 +3287,12 @@ Online proctored performance-based exam in which candidates solve Linux system a
   - Linux Foundation Certified System Administrator (LFCS) (The Linux Foundation, official, free): https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/
   - Linux System Administration Essentials (LFS207) (The Linux Foundation, official): https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/
   - Introduction to Linux (LFS101) (The Linux Foundation, official, free): https://training.linuxfoundation.org/training/introduction-to-linux/
+  - LFCS Practice (Killercoda): https://killercoda.com/lfcs
+  - SadServers (SadServers, free): https://sadservers.com/
+  - Bandit (OverTheWire, free): https://overthewire.org/wargames/bandit/
   - LFCS Simulator (Killer Shell): https://killer.sh/lfcs
+  - Linux Upskill Challenge (livialima, free): https://github.com/livialima/linuxupskillchallenge
+  - LFCS preparation notes (Bes0n, free): https://github.com/Bes0n/LFCS
 
 ### LPIC-2: LPIC-2 Linux Engineer
 
@@ -3158,6 +3328,11 @@ Hands-on Red Hat Enterprise Linux administration certification.
   - Red Hat System Administration I (RH124) (Red Hat, official): https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i
   - Red Hat System Administration II (RH134) (Red Hat, official): https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii
   - RHCSA Rapid Track course (RH199) (Red Hat, official): https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course
+  - Red Hat Enterprise Linux Technical Overview (RH024) (Red Hat, official): https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview
+  - Red Hat Enterprise Linux interactive labs (Red Hat, official): https://www.redhat.com/en/interactive-labs/enterprise-linux
+  - Download Red Hat Enterprise Linux (Red Hat Developer) (Red Hat, official): https://developers.redhat.com/products/rhel/download
+  - RHCSA practice questions (chlebik, free): https://github.com/chlebik/rhcsa-practice-questions
+  - rhcsa8env (rdbreak, free): https://github.com/rdbreak/rhcsa8env
   - Red Hat RHCSA 10 Cert Guide: EX200 (Pearson IT Certification): https://www.pearsonitcertification.com/store/red-hat-rhcsa-10-cert-guide-ex200-9780135576663
 
 ### LPIC-3 303: LPIC-3 Security
@@ -3945,6 +4120,12 @@ Two-phase digital forensics certification: a peer review of four practical probl
   - BCFE/CFCE Core Competencies 2026 (IACIS, official, free): https://www.iacis.com/wp-content/uploads/2026/08/BCFE-CFCE-Core-Competencies-2026.pdf
   - 2026 CFCE Bibliography (IACIS, official, free): https://www.iacis.com/wp-content/uploads/2016/02/2026-CFCE-Bibliography.pdf
   - BCFE: Basic Computer Forensic Examiner (IACIS, official): https://www.iacis.com/courses/basic-computer-forensics-examiner/
+  - Disk Analysis & Autopsy (TryHackMe, free): https://tryhackme.com/room/autopsy2ze0
+  - Intro to Digital Forensics (TryHackMe, free): https://tryhackme.com/room/introdigitalforensics
+  - Case 001 - The Stolen Szechuan Sauce (DFIR Madness, free): https://dfirmadness.com/the-stolen-szechuan-sauce/
+  - Autopsy (The Sleuth Kit, free): https://github.com/sleuthkit/autopsy
+  - Digital Corpora (Digital Corpora, free): https://digitalcorpora.org/
+  - CFReDS Portal (NIST, free): https://cfreds.nist.gov/
 
 ### eCDFP: INE Certified Digital Forensics Professional
 
@@ -3979,6 +4160,12 @@ Advanced digital forensics and incident response certification.
   - Hunt Evil poster (SANS Institute, official, free): https://www.sans.org/posters/hunt-evil
   - FOR508: Advanced Incident Response, Threat Hunting, and Digital Forensics (SANS Institute, official): https://www.sans.org/cyber-security-courses/advanced-incident-response-threat-hunting-training
   - SIFT Workstation (SANS Institute, official, free): https://www.sans.org/tools/sift-workstation
+  - Case 001 - The Stolen Szechuan Sauce (DFIR Madness, free): https://dfirmadness.com/the-stolen-szechuan-sauce/
+  - Windows Forensics 1 (TryHackMe, free): https://tryhackme.com/room/windowsforensics1
+  - Szechuan Sauce (CyberDefenders, free): https://cyberdefenders.org/blueteam-ctf-challenges/szechuan-sauce/
+  - Volatility 3 (Volatility Foundation, free): https://github.com/volatilityfoundation/volatility3
+  - Plaso (log2timeline, free): https://github.com/log2timeline/plaso
+  - Eric Zimmerman's Tools (Eric Zimmerman, free): https://ericzimmerman.github.io/
 
 ### GCFR: GIAC Cloud Forensics Responder
 
@@ -4157,6 +4344,12 @@ Threat hunting and DFIR certification, formerly named CCD, assessed through a 48
   - CCDL2 Training Overview (CyberDefenders, official, free): https://help.cyberdefenders.org/en/articles/8922969-ccdl2-training-overview
   - Certified CyberDefender Level 2 (CCDL2) (CyberDefenders, official): https://cyberdefenders.org/certifications/certified-cyberdefender-level2/
   - Blue Team Labs (CyberDefenders, official): https://cyberdefenders.org/blue-team-labs/
+  - Reveal (CyberDefenders, official, free): https://cyberdefenders.org/blueteam-ctf-challenges/reveal/
+  - Insider (CyberDefenders, official, free): https://cyberdefenders.org/blueteam-ctf-challenges/insider/
+  - DumpMe (CyberDefenders, official, free): https://cyberdefenders.org/blueteam-ctf-challenges/dumpme/
+  - 3CX Supply Chain (CyberDefenders, official, free): https://cyberdefenders.org/blueteam-ctf-challenges/3cx-supply-chain/
+  - The Crime (CyberDefenders, official, free): https://cyberdefenders.org/blueteam-ctf-challenges/the-crime/
+  - Volatility 3 (Volatility Foundation, free): https://github.com/volatilityfoundation/volatility3
 
 ### CCFR: CrowdStrike Certified Falcon Responder
 
@@ -4232,6 +4425,12 @@ Incident response and handler certification covering attacker techniques and IR 
   - GIAC Certified Incident Handler (GCIH) exam objectives (GIAC, official, free): https://www.giac.org/certifications/certified-incident-handler-gcih
   - Incident Handler's Handbook (SANS Institute, official, free): https://www.sans.org/white-papers/33901
   - SEC504: Hacker Tools, Techniques, and Incident Handling (SANS Institute, official): https://www.sans.org/cyber-security-courses/hacker-techniques-incident-handling
+  - Preparation (TryHackMe, free): https://tryhackme.com/room/preparation
+  - Identification & Scoping (TryHackMe, free): https://tryhackme.com/room/identificationandscoping
+  - Metasploit: Introduction (TryHackMe, free): https://tryhackme.com/room/metasploitintro
+  - Nmap Live Host Discovery (TryHackMe, free): https://tryhackme.com/room/nmap01
+  - Atomic Red Team (Red Canary, free): https://github.com/redcanaryco/atomic-red-team
+  - Awesome Incident Response (meirwah, free): https://github.com/meirwah/awesome-incident-response
   - GCIH GIAC Certified Incident Handler All-in-One Exam Guide (McGraw Hill): https://www.mheducation.com/highered/mhp/product/gcih-giac-certified-incident-handler-all-one-exam-guide.html
 
 ### MIRE: MCSI Incident Response Engineer
@@ -4274,6 +4473,13 @@ Advanced defensive certification with a practical assessment of up to 72 hours a
 - Renewal: does not expire
 - Official page: https://www.centri.org/certifications/blue-team-level-2
 - cert/map page: https://certmap.dev/certs/btl2.html
+- Preparation:
+  - SOC Level 2 path (TryHackMe): https://tryhackme.com/path/outline/soclevel2
+  - Basic Malware RE (TryHackMe, free): https://tryhackme.com/room/basicmalwarere
+  - Memory Forensics (TryHackMe, free): https://tryhackme.com/room/memoryforensics
+  - Seized (CyberDefenders, free): https://cyberdefenders.org/blueteam-ctf-challenges/seized/
+  - Training exercises (Malware-Traffic-Analysis.net, free): https://www.malware-traffic-analysis.net/training-exercises.html
+  - Velociraptor (Velocidex, free): https://github.com/Velocidex/velociraptor
 
 ## Penetration Testing
 

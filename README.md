@@ -20,7 +20,7 @@ The site is a single-page application that runs straight from the repository wit
 - A data-freshness indicator and a per-cert "verified N ago" badge, driven by the date each price was last confirmed against the vendor.
 - Shareable roadmaps: name your selection and copy a link (`r/#<ids>?name=<title>`, which opens `#/roadmap/<ids>` in the app and gives the link its own preview card when pasted in a chat or a post). Whoever opens it sees the ordered path with cost and study-time totals, and can adopt it as their own selection without losing theirs by accident.
 - Side-by-side comparisons (`certs/compare-<a>-vs-<b>.html`) for the pairs listed in `data/comparisons.csv`, chosen from search autocomplete suggestions. Every sentence on them is computed from the dataset, and each page is published in English, Spanish, French, German, Italian, Arabic, Korean and Hebrew with hreflang links.
-- "How to prepare" on each certification: exam guides, courses, labs and books from `data/resources.csv`, each link opened when it was added. A sponsored entry is shown in its own labelled box and carries rel="sponsored".
+- A study plan on each certification: exam guides, courses, reading, direct links to practice labs (TryHackMe rooms, Hack The Box Academy modules, CyberDefenders and others), open-source projects and practice questions from `data/resources.csv`, numbered in the order to use them. Each link was opened when it was added, and `npm run resources` re-checks them all. A sponsored entry is shown in its own labelled box and carries rel="sponsored".
 - A graph view of any roadmap (React Flow): prerequisites as arrows, steps laid out by seniority, draggable and zoomable. Notes can be written on each step and travel inside the link.
 - A page and a link-preview image for each preset role path under `certs/path-<role>.html`, and a "Download image" button that saves a card of any custom roadmap.
 - A right-click menu on every certification, domain header and panel: open, select with prerequisites, copy link or Markdown, filter by the same vendor, domain or level. Shift + right-click keeps the browser's own menu.
@@ -68,6 +68,7 @@ The site is a single-page application that runs straight from the repository wit
 │   ├── build-og.mjs             Dev-only. Renders the preview cards with Playwright.
 │   ├── vendor-graph.mjs         Dev-only. Bundles React and React Flow with esbuild.
 │   ├── build-favicon.mjs        Dev-only. Renders the favicon set from the header mark.
+│   ├── check-resources.mjs      Dev-only. Data-quality and link report for data/resources.csv.
 │   ├── security_check.py        Dependency-free security checks for contributions.
 │   └── check-links.mjs          Dev-only Playwright link checker (run `npm i` first).
 ├── .github/
