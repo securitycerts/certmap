@@ -200,3 +200,6 @@ main p { text-align: justify; hyphens: auto; -webkit-hyphens: auto; text-wrap: p
   .tier-gold .slots { grid-template-columns: 1fr; }
   .tier-silver .slots, .tier-bronze .slots { grid-template-columns: repeat(2, 1fr); }
 }
+
+.steps.three { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 760px) { .steps.three { grid-template-columns: 1fr; } }

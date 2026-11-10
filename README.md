@@ -136,7 +136,7 @@ If you find an out-of-date price, a wrong URL or a missing certification, please
 
 ## Sponsors
 
-cert/map is free, open source and has no ads or tracking. Sponsors are shown on the home page in three tiers (gold, silver, bronze); to become one, write to contact@certmap.dev. Sponsorship never changes which certifications are listed or what is said about them.
+cert/map is free, open source and has no ads or tracking. Sponsors are shown on the home page in three tiers (gold, silver, bronze). What sponsoring involves is explained at [certmap.dev/sponsors](https://certmap.dev/sponsors/); to become one, write to contact@certmap.dev. Sponsorship never changes which certifications are listed or what is said about them.
 
 Sponsors are listed in `data/sponsors.json` as `{ "name", "url", "logo" }` per tier, with `logo` a path under `images/`. Places that are not taken are drawn as empty slots.
 

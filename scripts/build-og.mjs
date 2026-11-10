@@ -90,6 +90,28 @@ p{font-size:26px;color:#b3b9c5;margin-top:14px}
 <div class="steps">${levels.map((l, i) => `<div class="step" style="--c:${COLOR[l]};--w:${[58, 72, 50, 80, 64][i]}%"><small>STEP ${i + 1}</small><i></i></div>`).join('<div class="arrow">›</div>')}</div>`;
 }
 
+// The card for the sponsorship page: the three tiers as open places.
+function sponsorCard() {
+  const tier = (name, colour, n) => `<div class="tier"><small style="color:${colour}">${name}</small><div class="row">${'<i></i>'.repeat(n)}</div></div>`;
+  return `<!doctype html><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0}
+body{width:1200px;height:630px;background:#0b0d12;color:#e6e8ec;font-family:-apple-system,"Segoe UI",Inter,sans-serif;padding:60px 64px;display:flex;flex-direction:column;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:16px;font:700 30px ui-monospace,Menlo,monospace;letter-spacing:-.02em}
+.brand b{color:#8aa9d4;font-weight:700}
+.kicker{font-size:20px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8aa9d4;margin-bottom:10px}
+h1{font-size:62px;line-height:1.05;letter-spacing:-.03em;max-width:1000px}
+p{font-size:26px;color:#b3b9c5;margin-top:14px}
+.tiers{display:flex;gap:22px}
+.tier{flex:1}
+.tier small{display:block;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
+.row{display:flex;gap:8px}
+.row i{flex:1;height:58px;border:2px dashed #2e3645;border-radius:10px;background:#13171f}
+</style>
+<div class="brand">${MARK.replace('width="56" height="56"', 'width="48" height="48"')}<span>cert<b>/</b>map</span></div>
+<div><div class="kicker">Sponsorship</div><h1>Sponsor the open cybersecurity certification roadmap</h1><p>${certs.length} certifications · ${vendors} vendors · no ads, no tracking</p></div>
+<div class="tiers">${tier("Gold", "#d4af37", 2)}${tier("Silver", "#aab4c3", 3)}${tier("Bronze", "#c08457", 5)}</div>`;
+}
+
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
 await page.setContent(html);
@@ -97,6 +119,8 @@ await page.screenshot({ path: join(ROOT, "assets", "og.png") });
 mkdirSync(join(ROOT, "assets", "og"), { recursive: true });
 await page.setContent(sharedCard());
 await page.screenshot({ path: join(ROOT, "assets", "og", "shared.png") });
+await page.setContent(sponsorCard());
+await page.screenshot({ path: join(ROOT, "assets", "og", "sponsors.png") });
 for (const p of ROLE_PATHS) {
   await page.setContent(pathCard(p));
   await page.screenshot({ path: join(ROOT, "assets", "og", `path-${p.id}.png`) });
