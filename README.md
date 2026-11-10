@@ -14,7 +14,7 @@ The site is a single-page application that runs straight from the repository wit
 
 ## What it does
 
-- A 16-domain by 4-level matrix view of every certification in the dataset.
+- A matrix of every certification by domain (17 of them) and seniority level (4) of every certification in the dataset.
 - A list view with full names, vendors and tags, grouped by domain.
 - Filters for level, domain, vendor, price range, free-only, DoD 8140, verified-price-only and the absence of prerequisites, summarised as a row of removable chips above the results.
 - A data-freshness indicator and a per-cert "verified N ago" badge, driven by the date each price was last confirmed against the vendor.

@@ -44,7 +44,7 @@ SECRET_PATTERNS = [
 ]
 
 # Text columns of the dataset that end up rendered on the page.
-CSV_TEXT_COLUMNS = ["name", "acronym", "vendor", "description", "currency_note", "tags", "restricted_to"]
+CSV_TEXT_COLUMNS = ["name", "acronym", "vendor", "description", "currency_note", "tags", "restricted_to", "issuer"]
 # A leading one of these in a CSV cell is how spreadsheet formula injection starts.
 FORMULA_PREFIXES = ("=", "+", "@", "\t")
 

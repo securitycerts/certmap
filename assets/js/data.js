@@ -2,7 +2,7 @@
 export const DOMAINS = [
   "Communication & Network Security", "IAM", "Security Architecture & Engineering",
   "Asset Security", "Security & Risk Management",
-  "Software Security", "Security Operations", "Cyber Threat Intelligence",
+  "Software Security", "Security Operations", "Cyber Threat Intelligence", "OSINT",
   "Cloud/SysOps", "*nix", "ICS/IoT", "GRC", "Forensics", "Incident Handling",
   "Penetration Testing", "Exploitation"
 ];
@@ -58,6 +58,7 @@ export function rowsToCerts(rows) {
     renewal_cost: toNum(r[idx.renewal_cost]),
     hands_on: toBool(r[idx.hands_on]),
     price_verified_at: r[idx.price_verified_at]?.trim() || "",
+    issuer: r[idx.issuer]?.trim() || "",
   }));
 }
 

@@ -1,10 +1,10 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
   fmtPrice, fmtAgo, isStale, slug,
-} from "./format.js?v=f2c316b1";
-import { el, svg } from "./dom.js?v=f2c316b1";
-import { makeLogo } from "./logo.js?v=f2c316b1";
-import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=f2c316b1";
+} from "./format.js?v=7b3d1832";
+import { el, svg } from "./dom.js?v=7b3d1832";
+import { makeLogo } from "./logo.js?v=7b3d1832";
+import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=7b3d1832";
 
 export { slug, fmtPrice };
 
@@ -299,6 +299,7 @@ export function renderDrawer(root, c, byId) {
   const dl = el("dl", {},
     el("dt", { text: "Domain" }),
     el("dd", {}, el("a", { href: `#/domain/${slug(c.domain)}`, class: "muted", text: c.domain })),
+    c.issuer ? [el("dt", { text: "Issued by" }), el("dd", { text: `${c.issuer}, on ${c.vendor}` })] : null,
     el("dt", { text: "Level" }), el("dd", { text: LEVEL_LABEL[c.level] }),
     el("dt", { text: "Price (USD)" }), priceDd,
     c.exam_count > 1 ? [el("dt", { text: "Exams required" }), el("dd", { text: String(c.exam_count) })] : null,
@@ -334,7 +335,7 @@ export function renderDrawer(root, c, byId) {
   children.push(el("p", { class: "desc", text: c.description }), dl);
 
   if (c.tags.length) {
-    children.push(el("div", { class: "tags" }, c.tags.map(t => el("span", { class: "tag", text: t }))));
+    children.push(el("div", { class: "tags" }, c.tags.map(t => el("a", { class: "tag", href: `?tag=${encodeURIComponent(t)}`, "data-tag": t, title: `Show every certification tagged ${t}`, text: t }))));
   }
 
   children.push(el("div", { class: "actions" },
@@ -399,7 +400,7 @@ export function buildFilters({ levelEl, domainEl, vendorEl }, meta, state, onCha
       e.target.checked ? state.filters.domains.add(d) : state.filters.domains.delete(d);
       onChange();
     });
-    return el("label", {}, inp, el("span", { class: "check-name", text: d }), el("span", { class: "check-count", text: String(meta.domainCount.get(d) || 0) }));
+    return el("label", { title: d }, inp, el("span", { class: "check-name", text: d }), el("span", { class: "check-count", text: String(meta.domainCount.get(d) || 0) }));
   }));
 
   vendorEl.replaceChildren(...meta.vendors.map(v => {
@@ -408,6 +409,6 @@ export function buildFilters({ levelEl, domainEl, vendorEl }, meta, state, onCha
       e.target.checked ? state.filters.vendors.add(v) : state.filters.vendors.delete(v);
       onChange();
     });
-    return el("label", { "data-vendor": v.toLowerCase() }, inp, el("span", { class: "check-name", text: v }), el("span", { class: "check-count", text: String(meta.vendorCount.get(v) || 0) }));
+    return el("label", { "data-vendor": v.toLowerCase(), title: v }, inp, el("span", { class: "check-name", text: v }), el("span", { class: "check-count", text: String(meta.vendorCount.get(v) || 0) }));
   }));
 }

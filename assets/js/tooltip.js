@@ -1,4 +1,4 @@
-import { fmtPrice } from "./format.js?v=f2c316b1";
+import { fmtPrice } from "./format.js?v=7b3d1832";
 
 const DELAY = 450;
 const HIDE_DELAY = 80;
@@ -32,7 +32,7 @@ function render(c) {
   const name = document.createElement("div"); name.className = "tt-name"; name.textContent = c.name;
   el.appendChild(name);
 
-  const vend = document.createElement("div"); vend.className = "tt-vendor"; vend.textContent = `${c.vendor} · ${c.domain}`;
+  const vend = document.createElement("div"); vend.className = "tt-vendor"; vend.textContent = `${c.issuer ? c.issuer + " on " + c.vendor : c.vendor} · ${c.domain}`;
   el.appendChild(vend);
 
   if (c.description) {

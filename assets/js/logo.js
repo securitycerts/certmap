@@ -53,11 +53,24 @@ function vendorHost(c) {
   try { return new URL(c.url).hostname; } catch { return null; }
 }
 
-function vendorLogoUrl(c, size) {
-  const key = (c.vendor || "").trim().toLowerCase();
-  const local = VENDOR_IMAGE[key];
+// Certificates hosted on a course platform are issued by someone else (Google
+// on Coursera, Harvard on edX). Their cert url points at the platform, so the
+// issuer's site has to be named here for the favicon fallback.
+const ISSUER_HOST = {
+  "ibm": "ibm.com",
+  "infosec": "infosecinstitute.com",
+  "nyu": "nyu.edu",
+  "university of colorado": "colorado.edu",
+  "rit": "rit.edu",
+  "umbc": "umbc.edu",
+  "harvard": "harvard.edu",
+  "tel aviv university": "tau.ac.il",
+  "university of wisconsin-madison": "wisc.edu",
+};
+
+function logoUrl(name, host, size) {
+  const local = VENDOR_IMAGE[name.trim().toLowerCase()];
   if (local) return `images/${local}`;
-  const host = vendorHost(c);
   if (!host) return null;
   const cacheKey = host + "@" + size;
   let url = FAVICON_URL.get(cacheKey);
@@ -68,12 +81,14 @@ function vendorLogoUrl(c, size) {
   return url;
 }
 
-export function makeLogo(c, cls, size = 64) {
+// One logo tile for an organisation: its initial at first, replaced by the
+// image once it loads.
+function logoTile(name, host, cls, size) {
   const wrap = document.createElement("span");
   wrap.className = cls;
-  wrap.textContent = (c.vendor || "?")[0].toUpperCase();
+  wrap.textContent = (name || "?")[0].toUpperCase();
 
-  const cacheKey = (c.vendor || "?").toLowerCase() + "@" + size;
+  const cacheKey = (name || "?").toLowerCase() + "@" + size;
   const cached = IMG_CACHE.get(cacheKey);
   if (cached === "failed") return wrap;
   if (cached) {
@@ -82,7 +97,7 @@ export function makeLogo(c, cls, size = 64) {
     return wrap;
   }
 
-  const url = vendorLogoUrl(c, size);
+  const url = logoUrl(name || "", host, size);
   if (!url) return wrap;
 
   // A freshly built Image() loads as soon as src is set; we deliberately do not
@@ -99,4 +114,18 @@ export function makeLogo(c, cls, size = 64) {
   img.addEventListener("error", () => { IMG_CACHE.set(cacheKey, "failed"); });
   img.src = url;
   return wrap;
+}
+
+// The logo for a cert. When the cert has an issuer other than its vendor, two
+// tiles are shown: who issues it, then the platform it is taken on.
+export function makeLogo(c, cls, size = 64) {
+  const vendor = logoTile(c.vendor, vendorHost(c), cls, size);
+  if (!c.issuer) return vendor;
+  const issuer = logoTile(c.issuer, ISSUER_HOST[c.issuer.toLowerCase()] || null, cls, size);
+  issuer.title = c.issuer;
+  vendor.title = c.vendor;
+  const pair = document.createElement("span");
+  pair.className = "logo-pair";
+  pair.append(issuer, vendor);
+  return pair;
 }

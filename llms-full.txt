@@ -126,6 +126,7 @@ Network defence and security operations certification.
 Four-course University of Colorado System specialization covering secure system design, applied cryptography and PKI, penetration testing basics, and firewalls and intrusion detection. Course-based certificate assessed through projects on cloud instances, with no proctored exam.
 
 - Vendor: Coursera
+- Issued by: University of Colorado
 - Level: intermediate
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week (the page FAQ says about 16 weeks).)
 - Exam format: hands-on, performance-based
@@ -153,6 +154,7 @@ Vendor-neutral certification on securing enterprise Wi-Fi networks, with a 60-qu
 Five-course Fortinet specialization covering the core Fortinet network security products and how to design, deploy, administer and support an enterprise security infrastructure with them. Course-based certificate with no proctored exam.
 
 - Vendor: Coursera
+- Issued by: Fortinet
 - Level: intermediate
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.)
 - Exam format: written or multiple choice
@@ -373,6 +375,7 @@ Retired in July 2025 and succeeded by Palo Alto Networks role-based credentials 
 Four graduate-level courses from Rochester Institute of Technology: Cybersecurity Fundamentals, Computer Forensics, Cybersecurity Risk Management and Network Security. Course-based MicroMasters credential with no single proctored exam.
 
 - Vendor: edX
+- Issued by: RIT
 - Level: advanced
 - Exam price: $1,436 (Program bundle price $1,436.40 shown on the edX page (list $1,596 for the courses bought separately); one-off payment, not a subscription.)
 - Price checked: 2026-11-10
@@ -558,6 +561,7 @@ Certification on securing AI systems and using AI in security operations, govern
 Two Tel Aviv University courses covering vulnerabilities and exploits, cryptography, buffer overflows, and network and web offense and defense. Course-based certificate with no proctored exam.
 
 - Vendor: edX
+- Issued by: Tel Aviv University
 - Level: intermediate
 - Exam price: $268 (Program bundle price $268.19 shown on the edX page (list $297.99 for the courses bought separately); one-off payment, not a subscription.)
 - Price checked: 2026-11-10
@@ -587,6 +591,7 @@ Advanced security practitioner certification covering enterprise security archit
 Five-course advanced program on security architecture: Zero Trust identity models, network segmentation, DevSecOps pipelines and cyber risk reporting, aligned to the SC-100 exam. Course-based certificate assessed through five portfolio projects, with no proctored exam.
 
 - Vendor: Coursera
+- Issued by: Microsoft
 - Level: advanced
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.)
 - Exam format: hands-on, performance-based
@@ -773,6 +778,7 @@ Entry-level practical exam combining a gray-box penetration test with validation
 Single introductory Harvard course for technical and non-technical audiences covering passwords and authentication, phishing, malware, network attacks, encryption and privacy. Course-based verified certificate assessed through assignments, with no proctored exam.
 
 - Vendor: edX
+- Issued by: Harvard
 - Level: beginner
 - Exam price: $449 (Verified certificate price $449 shown on the edX page; the course can be audited for free without a certificate.)
 - Price checked: 2026-11-10
@@ -786,6 +792,7 @@ Single introductory Harvard course for technical and non-technical audiences cov
 Two-course Harvard program combining CS50's Introduction to Computer Science with CS50's Introduction to Cybersecurity. Course-based certificate assessed through course assignments, with no proctored exam.
 
 - Vendor: edX
+- Issued by: Harvard
 - Level: beginner
 - Exam price: $601 (Program bundle price $601.20 shown on the edX page (list $668 for the courses bought separately); one-off payment, not a subscription.)
 - Price checked: 2026-11-10
@@ -813,6 +820,7 @@ Foundational cybersecurity technologies certification.
 Four-course IBM program covering cybersecurity tools and attacks, operating system security, compliance frameworks and database security. Course-based certificate assessed through labs and a final project, with no proctored exam.
 
 - Vendor: edX
+- Issued by: IBM
 - Level: beginner
 - Exam price: $536 (Program bundle price $536.40 shown on the edX page (list $596 for the courses bought separately); one-off payment, not a subscription.)
 - Price checked: 2026-11-10
@@ -826,6 +834,7 @@ Four-course IBM program covering cybersecurity tools and attacks, operating syst
 Twelve-course entry-level program from IBM and ISC2 covering security principles, access controls, network security, security operations and incident response, with preparation for the ISC2 Certified in Cybersecurity exam. Course-based certificate assessed through labs and projects, with no proctored exam.
 
 - Vendor: Coursera
+- Issued by: IBM
 - Level: beginner
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 3 months at 10 hours a week.)
 - Exam format: hands-on, performance-based
@@ -838,6 +847,7 @@ Twelve-course entry-level program from IBM and ISC2 covering security principles
 Five-course ISC2 specialization covering security principles, incident response and business continuity, access control, network security and security operations, aligned to the Certified in Cybersecurity exam domains. Course-based certificate assessed through quizzes and case studies; the proctored CC exam is separate.
 
 - Vendor: Coursera
+- Issued by: ISC2
 - Level: beginner
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.)
 - Exam format: written or multiple choice
@@ -864,6 +874,7 @@ Entry-level certificate on basic IT security concepts. Exam 020-100 has 40 quest
 Four-course New York University specialization covering cyber attacks and risk analysis, authentication and cryptography, network security and firewalls, and enterprise security and compliance frameworks. Course-based certificate assessed through quizzes and projects, with no proctored exam.
 
 - Vendor: Coursera
+- Issued by: NYU
 - Level: beginner
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 2 months at 10 hours a week.)
 - Exam format: written or multiple choice
@@ -975,6 +986,7 @@ AI safety and security certificate developed by CSA with Northeastern University
 Three courses from the University of Maryland Baltimore County (USMx) covering identity and access management, cryptography, network attacks, mobile, IoT and cloud security, digital forensics and governance. Course-based MicroMasters credential with no single proctored exam.
 
 - Vendor: edX
+- Issued by: UMBC
 - Level: intermediate
 - Exam price: $672 (Program bundle price $672.30 shown on the edX page (list $747 for the courses bought separately); one-off payment, not a subscription.)
 - Price checked: 2026-11-10
@@ -1001,6 +1013,7 @@ Credential on managing security for AI systems across AI governance, AI risk man
 Eight-course Infosec specialization reviewing the CISSP domains, with end-of-course assessments and a final practice exam. Course-based exam-preparation certificate; the proctored ISC2 CISSP exam is separate.
 
 - Vendor: Coursera
+- Issued by: Infosec
 - Level: advanced
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.)
 - Exam format: written or multiple choice
@@ -1451,6 +1464,7 @@ Entry-level cybersecurity technician certification (exam 212-82). The exam has 6
 Seven-course Cisco specialization covering security operations center basics, network and endpoint monitoring, attack analysis and incident handling for entry-level analysts. Course-based certificate assessed through quizzes, with no projects and no proctored exam.
 
 - Vendor: Coursera
+- Issued by: Cisco
 - Level: beginner
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 12 weeks at 2 hours a week.)
 - Exam format: written or multiple choice
@@ -1463,6 +1477,7 @@ Seven-course Cisco specialization covering security operations center basics, ne
 Three EC-Council courses: Network Defense Essentials (NDE), Ethical Hacking Essentials (EHE) and Digital Forensics Essentials (DFE), with add-on labs in the verified track. Course-based certificate; the edX page labels the courses intermediate.
 
 - Vendor: edX
+- Issued by: EC-Council
 - Level: beginner
 - Exam price: $348 (Program bundle price $348.30 shown on the edX page (list $387 for the courses bought separately); one-off payment, not a subscription.)
 - Price checked: 2026-11-10
@@ -1476,6 +1491,7 @@ Three EC-Council courses: Network Defense Essentials (NDE), Ethical Hacking Esse
 Five-course entry-level program covering information security fundamentals, risk assessment, security operations, incident response and threat hunting. Course-based certificate assessed through hands-on labs and projects, with no proctored exam.
 
 - Vendor: Coursera
+- Issued by: EC-Council
 - Level: beginner
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 months at 10 hours a week.)
 - Exam format: hands-on, performance-based
@@ -1501,6 +1517,7 @@ Entry-level defensive certification on security monitoring, alert triage, threat
 Nine-course entry-level program covering security frameworks, network security, Linux, SQL, SIEM and IDS tools, incident detection and response, and Python automation. Course-based certificate assessed through quizzes, hands-on labs and portfolio activities, with no proctored exam.
 
 - Vendor: Coursera
+- Issued by: Google
 - Level: beginner
 - Exam price: $294 (Subscription: $49 a month for an estimated 6 months (at 7 hours a week), after a 7-day free trial; US and Canada price.)
 - Price checked: 2026-11-10
@@ -1514,6 +1531,7 @@ Nine-course entry-level program covering security frameworks, network security, 
 Fourteen-course entry-level program covering security tools, operating systems, networking, databases, compliance frameworks, penetration testing, incident response and forensics, with a capstone. Course-based certificate assessed through labs and projects, with no proctored exam.
 
 - Vendor: Coursera
+- Issued by: IBM
 - Level: beginner
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 months at 10 hours a week.)
 - Exam format: hands-on, performance-based
@@ -1526,6 +1544,7 @@ Fourteen-course entry-level program covering security tools, operating systems, 
 Fourteen-course IBM program covering security tools, operating systems, networking, databases, compliance frameworks, penetration testing, incident response, and Security+ and CySA+ practice, with a capstone. Course-based certificate assessed through labs and projects, with no proctored exam.
 
 - Vendor: edX
+- Issued by: IBM
 - Level: beginner
 - Exam price: $1,697 (Program bundle price $1,697.40 shown on the edX page (list $1,886 for the courses bought separately); one-off payment, not a subscription.)
 - Price checked: 2026-11-10
@@ -1539,6 +1558,7 @@ Fourteen-course IBM program covering security tools, operating systems, networki
 Three-course IBM program covering generative AI basics, prompt engineering and the use of generative AI in threat intelligence, behaviour analytics and incident reporting. Course-based certificate with hands-on exercises and no proctored exam.
 
 - Vendor: edX
+- Issued by: IBM
 - Level: beginner
 - Exam price: $132 (Program bundle price $132.30 shown on the edX page (list $147 for the courses bought separately); one-off payment, not a subscription.)
 - Price checked: 2026-11-10
@@ -1552,6 +1572,7 @@ Three-course IBM program covering generative AI basics, prompt engineering and t
 Seven-course ISC2 training program covering the SSCP domains, including access controls, security operations, risk identification, incident response, cryptography, and network and systems security. Course-based certificate assessed through knowledge checks and final assessments; the proctored SSCP exam is separate.
 
 - Vendor: Coursera
+- Issued by: ISC2
 - Level: beginner
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.)
 - Exam format: written or multiple choice
@@ -1564,6 +1585,7 @@ Seven-course ISC2 training program covering the SSCP domains, including access c
 Nine-course entry-level program covering networking and cloud basics, threat vectors, identity and access in Microsoft Entra, Microsoft Defender, SIEM and compliance, plus SC-900 exam preparation. Course-based certificate assessed through capstone projects, with no proctored exam.
 
 - Vendor: Coursera
+- Issued by: Microsoft
 - Level: beginner
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 6 months at 10 hours a week.)
 - Exam format: hands-on, performance-based
@@ -1718,6 +1740,7 @@ Continuous security monitoring certification.
 Three Google Cloud courses on the Google Security Operations (Chronicle) platform covering investigation, search, data ingestion, detections and modern security operations principles. Course-based certificate with no proctored exam.
 
 - Vendor: edX
+- Issued by: Google
 - Level: intermediate
 - Exam price: $122 (Program bundle price $121.50 shown on the edX page (list $135 for the courses bought separately); one-off payment, not a subscription.)
 - Price checked: 2026-11-10
@@ -1745,6 +1768,7 @@ Covers SOC monitoring, detection, log analysis and incident triage with blue-tea
 Five-course Infosec specialization on writing Python scripts to automate offensive and defensive security tasks, organised around MITRE ATT&CK and Shield use cases. Course-based certificate assessed through coding projects, with no proctored exam.
 
 - Vendor: Coursera
+- Issued by: Infosec
 - Level: intermediate
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 4 weeks at 10 hours a week.)
 - Exam format: hands-on, performance-based
@@ -1757,6 +1781,7 @@ Five-course Infosec specialization on writing Python scripts to automate offensi
 Three Microsoft courses aligned to SC-200 covering threat mitigation with Microsoft Defender, SIEM and SOAR with Microsoft Sentinel, and data protection with Microsoft Purview. Course-based certificate; the proctored SC-200 exam is separate.
 
 - Vendor: edX
+- Issued by: Microsoft
 - Level: intermediate
 - Exam price: $216 (Program bundle price $216 shown on the edX page (list $240 for the courses bought separately); one-off payment, not a subscription.)
 - Price checked: 2026-11-10
@@ -2015,19 +2040,6 @@ Counterintelligence threat analysis certification.
 - Official page: https://www.mcafeeinstitute.edu/products/certified-counterintelligence-threat-analyst-ccta
 - cert/map page: https://certmap.dev/certs/cctia.html
 
-### CSMIE: Certified Social Media Intelligence Expert
-
-Social media intelligence and investigation certification.
-
-- Vendor: McAfee Institute
-- Level: intermediate
-- Exam price: $1,997 (List price for the program (training, exam license and certification); needs-based scholarship rate $999 for self-paying students)
-- Price checked: 2026-11-10
-- Exam format: written or multiple choice
-- Renewal: every 2 years
-- Official page: https://www.mcafeeinstitute.edu/products/certified-social-media-intelligence-expert-csmie
-- cert/map page: https://certmap.dev/certs/csmie.html
-
 ### CTIA: EC-Council Certified Threat Intelligence Analyst
 
 Threat intelligence analyst certification covering CTI lifecycle, collection and analysis.
@@ -2041,20 +2053,6 @@ Threat intelligence analyst certification covering CTI lifecycle, collection and
 - Renewal: every 3 years
 - Official page: https://www.eccouncil.org/train-certify/certified-threat-intelligence-analyst-ctia/
 - cert/map page: https://certmap.dev/certs/ctia.html
-
-### GOSI: GIAC Open Source Intelligence
-
-Open source intelligence collection and analysis certification.
-
-- Vendor: GIAC
-- Level: intermediate
-- Exam price: $999 (Exam only; SANS SEC487 is the recommended preparatory course (optional))
-- Price checked: 2026-11-10
-- Exam length: 120 minutes
-- Exam format: written or multiple choice
-- Renewal: every 4 years
-- Official page: https://www.giac.org/certifications/open-source-intelligence-gosi/
-- cert/map page: https://certmap.dev/certs/gosi.html
 
 ### MTIA: MCSI Certified Threat Intelligence Analyst
 
@@ -2125,6 +2123,63 @@ Cyber threat intelligence analysis certification.
 - Official page: https://www.giac.org/certifications/cyber-threat-intelligence-gcti/
 - cert/map page: https://certmap.dev/certs/gcti.html
 
+## OSINT
+
+### MOIS: MCSI Certified OSINT Expert
+
+Hands-on OSINT investigation certification.
+
+- Vendor: MCSI
+- Level: beginner
+- Exam price: $699 (Self-paced)
+- Price checked: 2026-11-10
+- Exam length: 3 days
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.mosse-institute.com/certifications/mois-certified-osint-expert.html
+- cert/map page: https://certmap.dev/certs/mosint.html
+
+### PORP: Practical OSINT Research Professional
+
+Practical OSINT Research Professional (PORP), formerly Practical Junior OSINT Researcher. Hands-on OSINT investigation certification with a practical exam and report.
+
+- Vendor: TCM Security
+- Level: beginner
+- Exam price: $399
+- Price checked: 2026-11-10
+- Exam length: 3 days
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://certifications.tcm-sec.com/pjor/
+- cert/map page: https://certmap.dev/certs/pjor.html
+
+### CSMIE: Certified Social Media Intelligence Expert
+
+Social media intelligence and investigation certification.
+
+- Vendor: McAfee Institute
+- Level: intermediate
+- Exam price: $1,997 (List price for the program (training, exam license and certification); needs-based scholarship rate $999 for self-paying students)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.mcafeeinstitute.edu/products/certified-social-media-intelligence-expert-csmie
+- cert/map page: https://certmap.dev/certs/csmie.html
+
+### GOSI: GIAC Open Source Intelligence
+
+Open source intelligence collection and analysis certification.
+
+- Vendor: GIAC
+- Level: intermediate
+- Exam price: $999 (Exam only; SANS SEC487 is the recommended preparatory course (optional))
+- Price checked: 2026-11-10
+- Exam length: 120 minutes
+- Exam format: written or multiple choice
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/open-source-intelligence-gosi/
+- cert/map page: https://certmap.dev/certs/gosi.html
+
 ## Cloud/SysOps
 
 ### ACE: Google Cloud Associate Cloud Engineer
@@ -2174,6 +2229,7 @@ Foundational AWS cloud certification.
 Five-course entry-level program on cloud security with Google Cloud: risk management, identity and access, threat detection, and incident response using tools such as Security Command Center. Course-based certificate assessed through hands-on labs, with no proctored exam.
 
 - Vendor: Coursera
+- Issued by: Google
 - Level: beginner
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 2 months at 10 hours a week.)
 - Exam format: hands-on, performance-based
@@ -2338,6 +2394,7 @@ Multi-cloud security certification covering AWS, Azure and GCP.
 Three Microsoft courses aligned to AZ-500 covering identity and access management, securing Azure networking, compute and storage, and managing security operations. Course-based certificate; the proctored AZ-500 exam is separate.
 
 - Vendor: edX
+- Issued by: Microsoft
 - Level: intermediate
 - Exam price: $149 (Program bundle price $148.50 shown on the edX page (list $165 for the courses bought separately); one-off payment, not a subscription.)
 - Price checked: 2026-11-10
@@ -2802,34 +2859,6 @@ Foundation certification for ITIL (Version 5), the successor framework to ITIL 4
 - Official page: https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-5-foundation-version-50-4154
 - cert/map page: https://certmap.dev/certs/itil5-f.html
 
-### MOIS: MCSI Certified OSINT Expert
-
-Hands-on OSINT investigation certification.
-
-- Vendor: MCSI
-- Level: beginner
-- Exam price: $699 (Self-paced)
-- Price checked: 2026-11-10
-- Exam length: 3 days
-- Exam format: written or multiple choice
-- Renewal: does not expire
-- Official page: https://www.mosse-institute.com/certifications/mois-certified-osint-expert.html
-- cert/map page: https://certmap.dev/certs/mosint.html
-
-### PORP: Practical OSINT Research Professional
-
-Practical OSINT Research Professional (PORP), formerly Practical Junior OSINT Researcher. Hands-on OSINT investigation certification with a practical exam and report.
-
-- Vendor: TCM Security
-- Level: beginner
-- Exam price: $399
-- Price checked: 2026-11-10
-- Exam length: 3 days
-- Exam format: written or multiple choice
-- Renewal: does not expire
-- Official page: https://certifications.tcm-sec.com/pjor/
-- cert/map page: https://certmap.dev/certs/pjor.html
-
 ### Project+: CompTIA Project+
 
 Project management certification.
@@ -2849,6 +2878,7 @@ Project management certification.
 Three University of Wisconsin-Madison courses covering cybersecurity principles, data and information privacy, and cybersecurity planning and policy. Course-based certificate with no proctored exam.
 
 - Vendor: edX
+- Issued by: University of Wisconsin-Madison
 - Level: beginner
 - Exam price: $591 (Program bundle price $591.30 shown on the edX page (list $657 for the courses bought separately); one-off payment, not a subscription.)
 - Price checked: 2026-11-10
@@ -3963,6 +3993,7 @@ Hands-on mobile application penetration testing certification covering Android a
 Six-course program on ethical hacking with Kali Linux, Metasploit, Wireshark and OpenVAS, covering reconnaissance, vulnerability scanning, exploitation, reporting and incident response. Course-based certificate assessed through labs and projects, with no proctored exam.
 
 - Vendor: Coursera
+- Issued by: IBM
 - Level: intermediate
 - Exam price: Not published (Coursera monthly subscription; the official page showed no monthly price (only an unrelated Coursera Plus annual offer). Coursera estimates 2 months at 10 hours a week.)
 - Exam format: hands-on, performance-based

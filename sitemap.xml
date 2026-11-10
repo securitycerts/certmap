@@ -136,6 +136,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://certmap.dev/certs/domain-osint.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://certmap.dev/certs/domain-cloud-sysops.html</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.8</priority>

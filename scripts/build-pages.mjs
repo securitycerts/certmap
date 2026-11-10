@@ -383,7 +383,7 @@ function llmsFull() {
     out += `\n## ${domain}\n`;
     for (const c of items) {
       out += `\n### ${c.acronym}: ${c.name}\n\n${c.description}\n\n`
-        + line("Vendor", c.vendor) + line("Level", c.level)
+        + line("Vendor", c.vendor) + line("Issued by", c.issuer) + line("Level", c.level)
         + line("Exam price", money(c.price_usd) + (c.currency_note ? ` (${c.currency_note})` : ""))
         + line("Price checked", c.price_verified_at) + line("Exam length", duration(c.duration_min))
         + line("Exam format", c.hands_on ? "hands-on, performance-based" : "written or multiple choice")
@@ -529,6 +529,7 @@ function certPage(c) {
 
   const facts = [
     ["Vendor", `<a href="${vendorFile(c.vendor)}">${esc(c.vendor)} certifications</a>`],
+    c.issuer ? ["Issued by", esc(c.issuer)] : null,
     ["Domain", `<a href="${domainFile(c.domain)}">${esc(c.domain)}</a>`],
     ["Level", `<a href="list-${c.level}.html">${LEVEL_LABEL[c.level]}</a>`],
     ["Exam price", esc(price) + (c.currency_note ? ` <small>${esc(c.currency_note)}</small>` : "")],
@@ -560,7 +561,7 @@ function certPage(c) {
   <dl class="facts">
 ${facts.map(([k, v]) => `    <div><dt>${k}</dt><dd>${v}</dd></div>`).join("\n")}
   </dl>
-${c.tags.length ? `  <p class="tags">${c.tags.map(t => `<span>${esc(t)}</span>`).join(" ")}</p>\n` : ""}${related.length ? `  <h2>Other ${esc(c.domain)} certifications</h2>
+${c.tags.length ? `  <p class="tags">${c.tags.map(t => `<a href="../?tag=${encodeURIComponent(t)}">${esc(t)}</a>`).join(" ")}</p>\n` : ""}${related.length ? `  <h2>Other ${esc(c.domain)} certifications</h2>
   <ul class="related">
 ${related.map(o => `    <li>${certLink(o)} <span>${esc(o.vendor)}, ${LEVEL_LABEL[o.level]}, ${esc(money(o.price_usd))}</span></li>`).join("\n")}
   </ul>\n` : ""}</article>`;
@@ -684,6 +685,7 @@ function refreshCounts(file) {
   const after = before
     .replace(/\b\d+ cybersecurity certifications\b/g, `${certs.length} cybersecurity certifications`)
     .replace(/\b\d+ vendors\b/g, `${vendors.size} vendors`)
+    .replace(/\b\d+ domains\b/g, `${DOMAINS.length} domains`)
     .replace(/\bcompare \d+ certs\b/g, `compare ${certs.length} certs`)
     .replace(/("dateModified":")\d{4}-\d{2}-\d{2}"/, `$1${latest}"`)
     // The page's CSP pins the inline JSON-LD block by hash, so the hash has to

@@ -9,7 +9,7 @@ const CSV_PATH = join(__dirname, "..", "data", "certs.csv");
 const DOMAINS = [
   "Communication & Network Security", "IAM", "Security Architecture & Engineering",
   "Asset Security", "Security & Risk Management",
-  "Software Security", "Security Operations", "Cyber Threat Intelligence",
+  "Software Security", "Security Operations", "Cyber Threat Intelligence", "OSINT",
   "Cloud/SysOps", "*nix", "ICS/IoT", "GRC", "Forensics", "Incident Handling",
   "Penetration Testing", "Exploitation"
 ];

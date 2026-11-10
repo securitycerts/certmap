@@ -125,7 +125,7 @@ input, select { font: inherit; }
 
 /* ---------- LAYOUT (independent scroll panes) ---------- */
 .layout {
-  display: grid; grid-template-columns: 248px 1fr;
+  display: grid; grid-template-columns: 264px 1fr;
   height: calc(100vh - var(--top-h));
   overflow: hidden;
   transition: grid-template-columns .22s ease;
@@ -172,7 +172,7 @@ input, select { font: inherit; }
 }
 .chip:hover { border-color: var(--border-strong); color: var(--text); }
 .chip.active { background: var(--accent-soft); border-color: var(--accent); color: var(--text); }
-.checks { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; }
+.checks { display: flex; flex-direction: column; gap: 1px; font-size: 12.5px; }
 .checks.scroll { max-height: 200px; overflow-y: auto; padding-right: 4px; }
 .filter-search {
   width: 100%; margin-bottom: 6px;
@@ -199,18 +199,6 @@ input, select { font: inherit; }
 .filter-search:focus { border-color: var(--accent); }
 .filter-search::placeholder { color: var(--muted); }
 .filter-search::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
-.checks label {
-  display: flex; align-items: center; gap: 8px; cursor: pointer;
-  padding: 4px 6px; border-radius: var(--radius-sm); color: var(--text-dim);
-}
-.checks label:hover { background: var(--panel); color: var(--text); }
-.checks input { accent-color: var(--accent); width: 13px; height: 13px; margin: 0; }
-.check-inline {
-  display: flex; align-items: center; gap: 8px; font-size: 12.5px;
-  padding: 5px 6px; margin-top: 2px; cursor: pointer; color: var(--text-dim); border-radius: var(--radius-sm);
-}
-.check-inline:hover { background: var(--panel); color: var(--text); }
-.check-inline input { accent-color: var(--accent); width: 13px; height: 13px; margin: 0; }
 .freshness {
   display: flex; align-items: center; gap: 6px;
   font-size: 11px; color: var(--muted); margin: 9px 2px 0; line-height: 1.4;
@@ -416,6 +404,7 @@ input, select { font: inherit; }
 .drawer dt { color: var(--muted); }
 .drawer dd { margin: 0; font-variant-numeric: tabular-nums; color: var(--text); }
 .drawer .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 18px; }
+.drawer a.tag:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
 .drawer .tag {
   font-size: 11px; padding: 3px 9px; border: 1px solid var(--border); border-radius: 999px;
   color: var(--text-dim); background: var(--panel);
@@ -531,6 +520,7 @@ input, select { font: inherit; }
   border-radius: 3px; overflow: hidden;
 }
 .lc-acro-wrap { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.logo-pair { display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0; }
 .lc-logo { width: 26px; height: 26px; font-size: 12px; border-radius: 5px; border: 1px solid var(--border); }
 .lc-logo img { width: 100%; height: 100%; object-fit: contain; }
 .flow-head-row { display: flex; align-items: center; gap: 8px; }
@@ -651,8 +641,6 @@ button:disabled { opacity: .45; cursor: not-allowed; }
 button.filter-clear { background: none; border: 0; padding: 0; }
 
 /* ---------- FILTER COUNTS ---------- */
-.check-name { flex: 1; min-width: 0; }
-.check-count { font-size: 10.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
 
 /* ---------- DRAWER BAR ---------- */
 .drawer-bar { display: flex; align-items: center; gap: 2px; padding: 8px 10px 0; flex-shrink: 0; }
@@ -872,3 +860,37 @@ div.gnode-note { border-style: solid; font-style: italic; overflow-wrap: anywher
 .theme-fade, .theme-fade *, .theme-fade *::before, .theme-fade *::after {
   transition: background-color .4s ease, color .4s ease, border-color .4s ease, fill .4s ease, stroke .4s ease, box-shadow .4s ease !important;
 }
+
+/* ---------- CHECKBOXES AND FILTER ROWS ---------- */
+/* One checkbox style everywhere: sidebar filters, matrix pills and cards. */
+input[type="checkbox"] {
+  -webkit-appearance: none; appearance: none;
+  flex: none; display: inline-block; vertical-align: middle;
+  width: 14px; height: 14px; margin: 0;
+  border: 1.5px solid var(--border-strong); border-radius: 4px;
+  background-color: var(--bg); cursor: pointer;
+  transition: background-color .12s, border-color .12s;
+}
+input[type="checkbox"]:hover { border-color: var(--accent); }
+input[type="checkbox"]:checked {
+  border-color: var(--accent); background-color: var(--accent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%230b0d12' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2.5 6.2 5 8.6 9.5 3.6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: center; background-size: 82%;
+}
+.pill-pick input { width: 11px; height: 11px; border-width: 1px; border-radius: 3px; }
+
+/* A filter row: checkbox, a one-line name and its count. The whole row lights
+   up when it is on, so the active filters can be read at a glance. */
+.checks label, .check-inline {
+  display: flex; align-items: center; gap: 9px;
+  padding: 5px 8px; border-radius: 6px;
+  color: var(--text-dim); cursor: pointer;
+  transition: background-color .12s, color .12s;
+}
+.check-inline { font-size: 12.5px; margin-top: 1px; }
+.checks label:hover, .check-inline:hover { background: var(--panel); color: var(--text); }
+.checks label:has(input:checked), .check-inline:has(input:checked) { background: var(--accent-soft); color: var(--text); }
+.check-name { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.check-count { flex: none; min-width: 20px; text-align: right; font: 500 10.5px var(--mono); color: var(--muted); }
+.checks label:has(input:checked) .check-count { color: var(--accent); }
+.checks.scroll { max-height: 216px; }

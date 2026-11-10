@@ -8,7 +8,7 @@ One row per certification. All columns are required (use an empty value when unk
 | `name` | string | yes | Full official name. |
 | `acronym` | string | yes | Short label shown on the card. |
 | `vendor` | string | yes | Issuing organization. Use the vendor's official short name (`ISC2`, `GIAC`, `OffSec`, `CompTIA`, …). |
-| `domain` | enum | yes | One of the 16 domains (see below). |
+| `domain` | enum | yes | One of the domains listed below. |
 | `level` | enum | yes | `beginner` \| `intermediate` \| `advanced` \| `expert`. |
 | `price_usd` | number | yes | Exam fee in USD. Leave empty if unknown. `0` means free. |
 | `currency_note` | string | no | Free-form clarification (e.g. `Members $760 non-members`). |
@@ -25,6 +25,7 @@ One row per certification. All columns are required (use an empty value when unk
 | `renewal_cost` | number | no | Cost of renewing the credential once earned, in USD. Empty means the renewal is CPE-based or free; `0` means there is an explicit zero-cost path. |
 | `hands_on` | bool | no | `true` if the exam is performance-based (practical lab) rather than multiple choice. Defaults to `false`. |
 | `price_verified_at` | date (`YYYY-MM-DD`) | no | Date the `price_usd` value was last confirmed against the vendor's official page. Surfaced in the detail drawer as "Verified N days ago" so readers can judge how stale a figure may be. Empty if never verified. |
+| `issuer` | string | no | Organisation that issues the credential when it is not the vendor. Used for certificates hosted on a course platform: the vendor is the platform (`Coursera`, `edX`) and the issuer is who awards it (`Google`, `IBM`, `Harvard`). Shown as a second logo and as "Issued by" in the detail drawer. Leave empty otherwise. |
 
 ## Allowed `domain` values
 
@@ -37,6 +38,7 @@ Security & Risk Management
 Software Security
 Security Operations
 Cyber Threat Intelligence
+OSINT
 Cloud/SysOps
 *nix
 ICS/IoT

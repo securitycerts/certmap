@@ -22,12 +22,13 @@ The dataset has a single source of truth: `data/certs.csv`. The browser parses t
 
 ## Schema
 
-The full schema is in [`data/schema.md`](data/schema.md). In short, the 21 columns are:
+The full schema is in [`data/schema.md`](data/schema.md). In short, the 22 columns are:
 
 ```
 id, name, acronym, vendor, domain, level, price_usd, currency_note,
 duration_min, validity_years, prerequisites, dod_8140, url, description, tags,
-weight, restricted_to, exam_count, renewal_cost, hands_on, price_verified_at
+weight, restricted_to, exam_count, renewal_cost, hands_on, price_verified_at,
+issuer
 ```
 
 Set `price_verified_at` to the date you saw the price on the vendor's own page; leave it empty otherwise.
@@ -35,7 +36,7 @@ Set `price_verified_at` to the date you saw the price on the vendor's own page; 
 A copy-pasteable template:
 
 ```csv
-my-cert-id,Full Certification Name,ACRO,Vendor,Domain Name,intermediate,500,,180,3,prereq-id,false,https://vendor.example/cert,One or two factual sentences describing what the certification covers.,tag1;tag2,,,1,,false,2026-11-10
+my-cert-id,Full Certification Name,ACRO,Vendor,Domain Name,intermediate,500,,180,3,prereq-id,false,https://vendor.example/cert,One or two factual sentences describing what the certification covers.,tag1;tag2,,,1,,false,2026-11-10,
 ```
 
 ### Closed vocabularies
@@ -51,6 +52,7 @@ Security & Risk Management
 Software Security
 Security Operations
 Cyber Threat Intelligence
+OSINT
 Cloud/SysOps
 *nix
 ICS/IoT

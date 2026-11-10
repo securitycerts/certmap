@@ -1,6 +1,6 @@
 # cert/map
 
-> Open-source static roadmap of 310 cybersecurity certifications mapped across 16 domains and four seniority tiers. Filter by vendor, level or price, inspect each certification's prerequisites, renewal cycle and DoD 8140 status, and plan a study path with running cost and time-to-completion totals.
+> Open-source static roadmap of 310 cybersecurity certifications mapped across 17 domains and four seniority tiers. Filter by vendor, level or price, inspect each certification's prerequisites, renewal cycle and DoD 8140 status, and plan a study path with running cost and time-to-completion totals.
 
 cert/map is a community-maintained reference for the cybersecurity certification landscape. The entire dataset lives in a single CSV file at `data/certs.csv`; the browser parses it at load time, so the data is also directly machine-readable for anyone integrating it. The project is hosted on GitHub Pages at https://certmap.dev/.
 
@@ -39,6 +39,7 @@ cert/map is a community-maintained reference for the cybersecurity certification
 - [Software Security certifications](https://certmap.dev/certs/domain-software-security.html)
 - [Security Operations certifications](https://certmap.dev/certs/domain-security-operations.html)
 - [Cyber Threat Intelligence certifications](https://certmap.dev/certs/domain-cyber-threat-intelligence.html)
+- [OSINT certifications](https://certmap.dev/certs/domain-osint.html)
 - [Cloud/SysOps certifications](https://certmap.dev/certs/domain-cloud-sysops.html)
 - [*nix certifications](https://certmap.dev/certs/domain-nix.html)
 - [ICS/IoT certifications](https://certmap.dev/certs/domain-ics-iot.html)
@@ -52,7 +53,7 @@ Each certification has its own page at `https://certmap.dev/certs/<id>.html` and
 
 ## Domain taxonomy
 
-The roadmap groups certifications across sixteen domains:
+The roadmap groups certifications across seventeen domains:
 
 - Communication & Network Security
 - IAM
@@ -62,6 +63,7 @@ The roadmap groups certifications across sixteen domains:
 - Software Security
 - Security Operations
 - Cyber Threat Intelligence
+- OSINT (open-source intelligence)
 - Cloud/SysOps
 - *nix
 - ICS/IoT
@@ -88,7 +90,7 @@ Each certification is placed at one of four tiers:
 - `name`: full official name
 - `acronym`: short label
 - `vendor`: issuing organisation
-- `domain`: one of the sixteen domains listed above
+- `domain`: one of the domains listed above
 - `level`: `beginner` | `intermediate` | `advanced` | `expert`
 - `price_usd`: exam fee in USD (empty if unknown, `0` if free)
 - `currency_note`: clarification when relevant (member/non-member, bundle, etc.)
@@ -105,6 +107,7 @@ Each certification is placed at one of four tiers:
 - `renewal_cost`: renewal fee in USD when there is one
 - `hands_on`: boolean, true for performance-based exams
 - `price_verified_at`: date the price was last confirmed on the vendor's page
+- `issuer`: organisation that awards the credential when it is not the vendor (course-platform certificates)
 
 ## Key URLs
 
@@ -118,7 +121,7 @@ Each certification is placed at one of four tiers:
 
 ## Features of the live site
 
-- **Matrix view**: 16 columns by 4 rows. Capstone certifications surface to the top of each cell via an optional weight value.
+- **Matrix view**: 17 columns by 4 rows. Capstone certifications surface to the top of each cell via an optional weight value.
 - **List view**: cards grouped by domain with vendor, level, tags and price visible.
 - **Filters**: domain, level, vendor (with substring quick-search), price range, free-only, DoD 8140 only, no-prerequisites only, hands-on exam only, verified prices only.
 - **Shareable roadmaps**: a selection can be named and shared as `r/#<id>,<id>?name=<title>` (which opens `#/roadmap/<id>,<id>` in the app); the link shows the ordered path with cost and study-time totals, as a list or as a graph of prerequisites, and carries any notes written on the steps.

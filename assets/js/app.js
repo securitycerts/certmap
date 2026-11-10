@@ -1,14 +1,14 @@
-import { loadData } from "./data.js?v=f2c316b1";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js?v=f2c316b1";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=f2c316b1";
-import { el } from "./dom.js?v=f2c316b1";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=f2c316b1";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=f2c316b1";
-import { toast, copyText } from "./toast.js?v=f2c316b1";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=f2c316b1";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=f2c316b1";
-import { mountGraph, unmountGraph } from "./graph.js?v=f2c316b1";
-import { downloadRoadmapImage } from "./share-image.js?v=f2c316b1";
+import { loadData } from "./data.js?v=7b3d1832";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js?v=7b3d1832";
+import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=7b3d1832";
+import { el } from "./dom.js?v=7b3d1832";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=7b3d1832";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=7b3d1832";
+import { toast, copyText } from "./toast.js?v=7b3d1832";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=7b3d1832";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=7b3d1832";
+import { mountGraph, unmountGraph } from "./graph.js?v=7b3d1832";
+import { downloadRoadmapImage } from "./share-image.js?v=7b3d1832";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -69,6 +69,7 @@ const emptyFilters = () => ({
   levels: new Set(),
   domains: new Set(),
   vendors: new Set(),
+  tags: new Set(),
   priceMin: null,
   priceMax: null,
   ...Object.fromEntries(FLAGS.map(f => [f.key, false])),
@@ -83,6 +84,7 @@ function buildParams({ withSelection = false } = {}) {
   if (f.levels.size) p.set("level", [...f.levels].join(","));
   if (f.domains.size) p.set("domain", [...f.domains].join(","));
   if (f.vendors.size) p.set("vendor", [...f.vendors].join(","));
+  if (f.tags.size) p.set("tag", [...f.tags].join(","));
   if (f.priceMin != null) p.set("pmin", f.priceMin);
   if (f.priceMax != null) p.set("pmax", f.priceMax);
   for (const flag of FLAGS) if (f[flag.key]) p.set(flag.param, "1");
@@ -162,6 +164,7 @@ function deserializeFilters(meta) {
   if (p.has("level")) state.filters.levels = inSet(p.get("level").split(","), meta.levels);
   if (p.has("domain")) state.filters.domains = inSet(p.get("domain").split(","), meta.domains);
   if (p.has("vendor")) state.filters.vendors = inSet(p.get("vendor").split(","), meta.vendors);
+  if (p.has("tag")) state.filters.tags = inSet(p.get("tag").split(","), meta.tags);
   if (p.has("pmin")) { const n = Number(p.get("pmin")); if (Number.isFinite(n) && n >= 0) state.filters.priceMin = n; }
   if (p.has("pmax")) { const n = Number(p.get("pmax")); if (Number.isFinite(n) && n >= 0) state.filters.priceMax = n; }
   for (const flag of FLAGS) state.filters[flag.key] = p.get(flag.param) === "1";
@@ -200,10 +203,12 @@ function applyFilters(certs) {
   // Every word has to match, in any order: "giac cloud" finds GCLD and GPCS.
   const terms = state.search.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const flags = FLAGS.filter(flag => f[flag.key]);
+  const tags = [...f.tags];
   return certs.filter(c => {
     if (f.levels.size && !f.levels.has(c.level)) return false;
     if (f.domains.size && !f.domains.has(c.domain)) return false;
     if (f.vendors.size && !f.vendors.has(c.vendor)) return false;
+    if (tags.length && !tags.every(t => c.tags.includes(t))) return false;
     if (!flags.every(flag => flag.test(c))) return false;
     if (f.priceMin != null && (c.price_usd ?? 0) < f.priceMin) return false;
     if (f.priceMax != null && (c.price_usd ?? 0) > f.priceMax) return false;
@@ -349,10 +354,22 @@ function removeFilter(kind, value) {
   if (kind === "level") f.levels.delete(value);
   else if (kind === "domain") f.domains.delete(value);
   else if (kind === "vendor") f.vendors.delete(value);
+  else if (kind === "tag") f.tags.delete(value);
   else if (kind === "price") { f.priceMin = null; f.priceMax = null; }
   else if (kind === "flag") f[value] = false;
   else if (kind === "search") state.search = "";
   syncSidebarControls();
+  scheduleRender();
+}
+
+// Show every certification that carries a tag: clear the other filters so the
+// result is not silently narrowed, and go back to the full grid.
+function showTag(tag) {
+  state.search = "";
+  state.filters = emptyFilters();
+  state.filters.tags = new Set([tag]);
+  syncSidebarControls();
+  if (location.hash && location.hash !== "#/") location.hash = "#/";
   scheduleRender();
 }
 
@@ -388,6 +405,7 @@ function renderActiveFilters() {
   for (const l of f.levels) add("level", LEVEL_LABEL[l] || l, "level", l);
   for (const d of f.domains) add("domain", d, "domain", d);
   for (const v of f.vendors) add("vendor", v, "vendor", v);
+  for (const t of f.tags) add("tag", t, "tag", t);
   if (f.priceMin != null || f.priceMax != null) {
     const lo = f.priceMin != null ? "$" + f.priceMin : "$0";
     const hi = f.priceMax != null ? "$" + f.priceMax : "∞";
@@ -547,7 +565,7 @@ function rerender() {
   $("#reset-filters").disabled = !hasActiveFilters();
   // The minimised sidebar still says how many filters are on and can clear them.
   const f = state.filters;
-  const active = f.levels.size + f.domains.size + f.vendors.size
+  const active = f.levels.size + f.domains.size + f.vendors.size + f.tags.size
     + (f.priceMin != null || f.priceMax != null ? 1 : 0)
     + FLAGS.filter(flag => f[flag.key]).length + (state.search.trim() ? 1 : 0);
   $("#rail-count").textContent = String(active);
@@ -939,6 +957,15 @@ async function init() {
 
   $("#drawer-content").addEventListener("click", e => {
     if (!drawerCert) return;
+    const tag = e.target.closest("a[data-tag]");
+    if (tag) {
+      // The href is a real link (it can be copied or opened in a new tab); a
+      // plain click applies the filter in place and shows the results.
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      e.preventDefault();
+      showTag(tag.dataset.tag);
+      return;
+    }
     if (e.target.closest("[data-toggle-cart]")) state.toggleCart(drawerCert);
     else if (e.target.closest("[data-copy-link]")) copyText(certUrl(drawerCert), "Link copied");
   });
