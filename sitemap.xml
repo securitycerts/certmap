@@ -1845,4 +1845,34 @@
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://certmap.dev/certs/chainalysis-daf.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/chainalysis-ccai.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/chainalysis-elite.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/chainalysis-cca.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/chainalysis-ccs.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/chainalysis-asc.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>

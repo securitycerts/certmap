@@ -1,6 +1,6 @@
 # cert/map: full certification list
 
-> 272 cybersecurity certifications from 62 vendors, grouped by domain and ordered from beginner to expert. Prices are exam list prices in USD. Generated from data/certs.csv; last price check 2026-11-10.
+> 278 cybersecurity certifications from 62 vendors, grouped by domain and ordered from beginner to expert. Prices are exam list prices in USD. Generated from data/certs.csv; last price check 2026-11-10.
 
 Source: https://certmap.dev/
 Dataset: https://certmap.dev/data/certs.csv and https://certmap.dev/data/certs.json
@@ -2548,6 +2548,20 @@ Privacy law and regulation certification.
 - Official page: https://iapp.org/certify/cipp/
 - cert/map page: https://certmap.dev/certs/cipp.html
 
+### Compliance Analyst: Chainalysis Certified Compliance Analyst
+
+Compliance-track credential covering AML/CTF, sanctions and digital asset risk frameworks for making defensible risk determinations.
+
+- Vendor: Chainalysis
+- Level: intermediate
+- Exam price: Not published (No per-seat fee; certifications are included with a Chainalysis licence)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Prerequisites: DAF
+- Restricted to: Chainalysis licence holders
+- Official page: https://www.chainalysis.com/certified-compliance-analyst/
+- cert/map page: https://certmap.dev/certs/chainalysis-cca.html
+
 ### CRAGE: Certified Responsible AI Governance & Ethics
 
 AI governance certification covering responsible AI, risk analysis and ethics. Exam duration and format are not published on the program page.
@@ -2738,6 +2752,20 @@ Privacy program management certification.
 - Official page: https://iapp.org/certify/cipm/
 - cert/map page: https://certmap.dev/certs/cipm.html
 
+### Compliance Spec.: Chainalysis Certified Compliance Specialist
+
+Senior compliance credential with deeper coverage of regulatory frameworks, typology analysis and risk programme design.
+
+- Vendor: Chainalysis
+- Level: advanced
+- Exam price: Not published (Announced; the vendor has not published details yet. Included with a Chainalysis licence)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Prerequisites: DAF, Compliance Analyst
+- Restricted to: Chainalysis licence holders
+- Official page: https://www.chainalysis.com/chainalysis-certification-programs/
+- cert/map page: https://certmap.dev/certs/chainalysis-ccs.html
+
 ### GSNA: GIAC Systems and Network Auditor
 
 Technical IT audit certification. Now in abeyance: no longer offered to new candidates; existing holders maintain it through CPE renewal.
@@ -2824,6 +2852,18 @@ Mobile forensics operator certification using Cellebrite UFED.
 - Official page: https://cellebrite.com/en/training/
 - cert/map page: https://certmap.dev/certs/ccfp.html
 
+### DAF: Chainalysis Digital Asset Fundamentals
+
+Core blockchain concepts, digital asset mechanics and the UTXO and account-based models. Required before every other Chainalysis certification.
+
+- Vendor: Chainalysis
+- Level: beginner
+- Exam price: Not published (Foundational modules are open to anyone without a licence; the full pathway is included with a Chainalysis licence)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://www.chainalysis.com/digital-asset-fundamentals/
+- cert/map page: https://certmap.dev/certs/chainalysis-daf.html
+
 ### TRM-CFC: TRM Cryptocurrency Fundamentals
 
 Foundational TRM Labs course covering blockchain analysis and cryptocurrency tracing basics.
@@ -2859,8 +2899,9 @@ Investigator-track credential from Chainalysis Academy on tracing cryptocurrency
 - Exam price: Not published (No per-seat fee; certifications are included with a Chainalysis licence)
 - Exam format: written or multiple choice
 - Renewal: does not expire
+- Prerequisites: DAF
 - Restricted to: Chainalysis licence holders
-- Official page: https://www.chainalysis.com/chainalysis-certification-programs/
+- Official page: https://www.chainalysis.com/certified-investigator/
 - cert/map page: https://certmap.dev/certs/chainalysis-cci.html
 
 ### CEI: Certified Expert Investigator
@@ -2986,6 +3027,34 @@ Digital forensics certification focused on cryptocurrency artefacts and on-chain
 - Renewal: does not expire
 - Official page: https://www.trmlabs.com/training-and-certifications/digital-forensics-and-cryptocurrencies
 - cert/map page: https://certmap.dev/certs/trm-dfc.html
+
+### Asset Seizure: Chainalysis Asset Seizure Certification
+
+Covers the full lifecycle of crypto asset seizure, from identification and custody through legal documentation and disposition.
+
+- Vendor: Chainalysis
+- Level: advanced
+- Exam price: Not published (No per-seat fee; certifications are included with a Chainalysis licence)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Prerequisites: DAF
+- Restricted to: Qualified government professionals only
+- Official page: https://www.chainalysis.com/asset-seizure-certification/
+- cert/map page: https://certmap.dev/certs/chainalysis-asc.html
+
+### CCAI: Chainalysis Certified Advanced Investigator
+
+Advanced investigator credential covering DeFi protocols, complex typologies, privacy networks and cross-chain tracing.
+
+- Vendor: Chainalysis
+- Level: advanced
+- Exam price: Not published (No per-seat fee; certifications are included with a Chainalysis licence)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Prerequisites: DAF, CCI
+- Restricted to: Chainalysis licence holders
+- Official page: https://www.chainalysis.com/certified-advanced-investigator/
+- cert/map page: https://certmap.dev/certs/chainalysis-ccai.html
 
 ### CFCE: Certified Forensic Computer Examiner
 
@@ -3124,6 +3193,20 @@ Cryptocurrency seizure and custody certification covering law-enforcement workfl
 - Restricted to: Law enforcement only
 - Official page: https://www.trmlabs.com/training-and-certifications/crypto-seizure-specialist-certification
 - cert/map page: https://certmap.dev/certs/trm-css.html
+
+### Elite Investigator: Chainalysis Certified Elite Investigator
+
+Top investigator tier covering privacy coins, mixer typologies, DeFi exploits and cross-chain tracing, ending in a practitioner capstone.
+
+- Vendor: Chainalysis
+- Level: expert
+- Exam price: Not published (Announced; the vendor has not published details yet. Included with a Chainalysis licence)
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Prerequisites: DAF, CCAI
+- Restricted to: Chainalysis licence holders
+- Official page: https://www.chainalysis.com/chainalysis-certification-programs/
+- cert/map page: https://certmap.dev/certs/chainalysis-elite.html
 
 ### GREM: GIAC Reverse Engineering Malware
 
