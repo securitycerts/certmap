@@ -108,7 +108,7 @@ ${alternates.map(x => `<link rel="alternate" hreflang="${x.lang}" href="${x.href
 <body>
 <header class="top">
   <a class="brand" href="../">cert<span>/</span>map</a>
-  <nav><a href="../certs/">${T.nav[0]}</a><a href="../sponsors/">${T.nav[1]}</a><a href="../map/">${T.nav[2]}</a></nav>
+  <nav><a href="../certs/">${T.nav[0]}</a><a href="../api/">API</a><a href="../sponsors/">${T.nav[1]}</a><a href="../map/">${T.nav[2]}</a></nav>
 </header>
 <main>
 ${body}
@@ -571,6 +571,17 @@ ${[...vendors].sort((a, b) => a.localeCompare(b)).map(v => `    <li><a href="../
   <h2>Questions and answers</h2>
   <div class="faq">
 ${qa.map(([q, a], i) => `    <details${i === 0 ? " open" : ""}><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("\n")}
+  </div>
+</section>
+
+<section class="block" id="developers">
+  <h2>For developers</h2>
+  <div class="support">
+    <div>
+      <strong>A free JSON API, no key needed</strong>
+      <span>Every certification with its price, level, prerequisites, study plan and comparisons, as static JSON you can fetch from any site. One file per certification, for example <a href="../api/v1/certs/oscp.json"><code>/api/v1/certs/oscp.json</code></a>.</span>
+    </div>
+    <a class="btn" href="../api/">API documentation</a>
   </div>
 </section>
 

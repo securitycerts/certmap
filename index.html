@@ -29,7 +29,7 @@
 <body>
 <header class="top">
   <a class="brand" href="./">cert<span>/</span>map</a>
-  <nav><a href="certs/">All certifications</a><a href="sponsors/">Sponsors</a><a href="map/">Interactive roadmap</a></nav>
+  <nav><a href="certs/">All certifications</a><a href="api/">API</a><a href="sponsors/">Sponsors</a><a href="map/">Interactive roadmap</a></nav>
 </header>
 <main>
 <section class="hero">
@@ -221,6 +221,17 @@
     <details><summary>How current are the prices?</summary><p>258 of 320 prices carry the date they were last checked against the vendor&#39;s own page; the most recent check was on 2026-11-10. Each certification page shows its own date. Vendors change prices without notice, so confirm before paying.</p></details>
     <details><summary>Does cert/map help me study for a certification?</summary><p>Yes. 79 certifications have a study plan: the exam guide first, then courses and reading, then hands-on practice with direct links to free labs and open-source projects, then practice questions. The plans hold 653 links in total, and every link was opened when it was added.</p></details>
     <details><summary>Can I build and share my own certification path?</summary><p>Yes. Select certifications in the interactive roadmap and it orders them by prerequisite and adds up exam cost and study time. Give the path a name and copy its link: anyone who opens it sees the same roadmap.</p></details>
+  </div>
+</section>
+
+<section class="block" id="developers">
+  <h2>For developers</h2>
+  <div class="support">
+    <div>
+      <strong>A free JSON API, no key needed</strong>
+      <span>Every certification with its price, level, prerequisites, study plan and comparisons, as static JSON you can fetch from any site. One file per certification, for example <a href="api/v1/certs/oscp.json"><code>/api/v1/certs/oscp.json</code></a>.</span>
+    </div>
+    <a class="btn" href="api/">API documentation</a>
   </div>
 </section>
 
