@@ -1,14 +1,14 @@
-import { loadData } from "./data.js?v=5a251008";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js?v=5a251008";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=5a251008";
-import { el } from "./dom.js?v=5a251008";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=5a251008";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=5a251008";
-import { toast, copyText } from "./toast.js?v=5a251008";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro } from "./motion.js?v=5a251008";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=5a251008";
-import { mountGraph, unmountGraph } from "./graph.js?v=5a251008";
-import { downloadRoadmapImage } from "./share-image.js?v=5a251008";
+import { loadData } from "./data.js?v=f69113df";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js?v=f69113df";
+import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=f69113df";
+import { el } from "./dom.js?v=f69113df";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=f69113df";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=f69113df";
+import { toast, copyText } from "./toast.js?v=f69113df";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro } from "./motion.js?v=f69113df";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=f69113df";
+import { mountGraph, unmountGraph } from "./graph.js?v=f69113df";
+import { downloadRoadmapImage } from "./share-image.js?v=f69113df";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -123,7 +123,10 @@ function roadmapHash(ids, name, notes) {
   return `#/roadmap/${ids.join(",")}` + (qs ? "?" + qs : "");
 }
 const myRoadmapHash = () => roadmapHash(selectedCerts().map(c => c.id), state.roadmapName, state.notes);
-const myRoadmapUrl = () => location.origin + location.pathname + myRoadmapHash();
+// What gets copied when a roadmap is shared. It goes through r/, a small page
+// with its own link preview, which forwards to the #/roadmap/ route.
+const shareLink = hash => location.origin + location.pathname + "r/#" + hash.slice("#/roadmap/".length);
+const myRoadmapUrl = () => shareLink(myRoadmapHash());
 
 function loadNotes() {
   try {
@@ -858,7 +861,7 @@ async function init() {
   grid.addEventListener("click", e => {
     const rm = e.target.closest("[data-rm]")?.dataset.rm;
     if (rm === "adopt") { adoptRoadmap(); return; }
-    if (rm === "copy") { copyText(location.origin + location.pathname + baseHash, "Roadmap link copied"); return; }
+    if (rm === "copy") { copyText(shareLink(baseHash), "Roadmap link copied"); return; }
     if (rm === "view-list" || rm === "view-graph") { setRoadmapView(rm.slice(5)); return; }
     if (rm === "image" && shownRoadmap) {
       downloadRoadmapImage(shownRoadmap.ordered, shownRoadmap.name).then(ok => toast(ok ? "Image saved" : "Could not create the image", ok ? {} : { tone: "warn" }));
@@ -919,6 +922,16 @@ async function init() {
   $("#cart-name").addEventListener("input", e => {
     state.roadmapName = cleanName(e.target.value);
     store.set(NAME_KEY, state.roadmapName);
+  });
+
+  // A click on empty space dismisses the open panel. Anything that does
+  // something of its own (a card, a link, a control, the menu) is left alone,
+  // so clicking another certification switches the drawer instead of closing it.
+  document.addEventListener("click", e => {
+    if (!(e.target instanceof Element)) return;
+    if (e.target.closest("#drawer, #cart, #cart-toggle, .ctx, dialog, [data-id], [data-rm], a, button, input, select, label, .react-flow")) return;
+    if (drawerCert) closeDrawer();
+    else if (!$("#cart").classList.contains("hidden")) setCartOpen(false);
   });
 
   window.addEventListener("hashchange", () => { closeContextMenu(); scheduleRender(); });

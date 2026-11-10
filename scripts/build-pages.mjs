@@ -11,6 +11,7 @@
 //   certs/domain-*.html  one page per domain
 //   certs/list-*.html    curated lists (beginner, free, hands-on, DoD 8140, ...)
 //   about/index.html     what the site is, a site index and an FAQ
+//   r/index.html         landing page that shared roadmap links point at
 //   llms-full.txt        every certification as Markdown, for language models
 //   data/certs.json      the dataset as JSON
 //   sitemap.xml          the home page plus all of the above
@@ -322,6 +323,54 @@ ${qa.map(([q, a], i) => `    <details${i === 0 ? " open" : ""}><summary>${esc(q)
     description: `What cert/map is and how to use it: ${certs.length} cybersecurity certifications from ${vendors.size} vendors by domain and level, with answers on cost, beginner options, free and hands-on certifications and DoD 8140.`,
     body, ld, modified: latest,
   });
+}
+
+// ---------- shared roadmap landing page ----------
+// A roadmap lives in the URL fragment, which link-preview crawlers never see,
+// so every shared roadmap would otherwise show the home page's preview. Shared
+// links point at r/ instead: a tiny page with its own title and card that
+// forwards the fragment to the app (assets/js/shared-link.js).
+function sharedPage() {
+  const title = "A cybersecurity certification roadmap, shared with you";
+  const description = "Open it to see the certifications in order, with the exam cost and study time of the whole path. Built on cert/map.";
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${title} | cert/map</title>
+<meta name="description" content="${description}">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="${SITE}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="cert/map">
+<meta property="og:title" content="${title}">
+<meta property="og:description" content="${description}">
+<meta property="og:url" content="${SITE}r/">
+<meta property="og:image" content="${SITE}assets/og/shared.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${title}">
+<meta name="twitter:description" content="${description}">
+<meta name="twitter:image" content="${SITE}assets/og/shared.png">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0d12">
+<link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg">
+<link rel="stylesheet" href="../assets/css/static.css">
+</head>
+<body>
+<main class="hero">
+  <p class="kicker">Shared roadmap</p>
+  <h1>Opening the roadmap</h1>
+  <p class="lead">If nothing happens, <a id="open" href="../">open it in cert/map</a>.</p>
+</main>
+<script src="../assets/js/shared-link.js"></script>
+</body>
+</html>
+`;
 }
 
 // ---------- machine-readable outputs ----------
@@ -654,6 +703,8 @@ for (const d of DOMAINS) writeFileSync(join(OUT, domainFile(d)), domainPage(d));
 for (const l of LISTS) writeFileSync(join(OUT, listFile(l)), listPage(l));
 for (const p of ROLE_PATHS) writeFileSync(join(OUT, pathFile(p)), pathPage(p));
 writeFileSync(join(OUT, "index.html"), hubPage());
+mkdirSync(join(ROOT, "r"), { recursive: true });
+writeFileSync(join(ROOT, "r", "index.html"), sharedPage());
 mkdirSync(join(ROOT, "about"), { recursive: true });
 writeFileSync(join(ROOT, "about", "index.html"), aboutPage());
 writeFileSync(join(ROOT, "llms-full.txt"), llmsFull());
