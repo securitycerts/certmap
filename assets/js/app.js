@@ -1,14 +1,14 @@
-import { loadData } from "./data.js?v=84b0b75e";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=84b0b75e";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=84b0b75e";
-import { el } from "./dom.js?v=84b0b75e";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=84b0b75e";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=84b0b75e";
-import { toast, copyText } from "./toast.js?v=84b0b75e";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=84b0b75e";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=84b0b75e";
-import { mountGraph, unmountGraph } from "./graph.js?v=84b0b75e";
-import { downloadRoadmapImage } from "./share-image.js?v=84b0b75e";
+import { loadData } from "./data.js?v=3e3f6207";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=3e3f6207";
+import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=3e3f6207";
+import { el } from "./dom.js?v=3e3f6207";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=3e3f6207";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=3e3f6207";
+import { toast, copyText } from "./toast.js?v=3e3f6207";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=3e3f6207";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=3e3f6207";
+import { mountGraph, unmountGraph } from "./graph.js?v=3e3f6207";
+import { downloadRoadmapImage } from "./share-image.js?v=3e3f6207";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";

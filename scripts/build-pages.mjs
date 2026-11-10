@@ -10,6 +10,7 @@
 //   certs/vendor-*.html  one page per vendor
 //   certs/domain-*.html  one page per domain
 //   certs/list-*.html    curated lists (beginner, free, hands-on, DoD 8140, ...)
+//   certs/plan-<id>.html  the ordered study plan of each certification that has resources
 //   certs/compare-*.html side-by-side comparisons of the pairs in data/comparisons.csv,
 //                        repeated in es/ fr/ de/ it/ ar/ ko/ he/ with hreflang links
 //   index.html           the home page: what the site is, a site index, an FAQ and the sponsors
@@ -132,7 +133,7 @@ const year = iso => (iso || latest).slice(0, 4);
 const count = (list, key) => list.reduce((m, c) => m.set(c[key], (m.get(c[key]) || 0) + 1), new Map());
 const byLevelThenName = (a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level) || byName(a, b);
 
-if (certs.some(c => /^(vendor|domain|list|path|compare)-/.test(c.id))) throw new Error("a cert id collides with the vendor-/domain-/list- page names");
+if (certs.some(c => /^(vendor|domain|list|path|compare|plan)-/.test(c.id))) throw new Error("a cert id collides with the vendor-/domain-/list- page names");
 
 // Curated cuts of the dataset that match what people actually search for.
 // `app` is the query string that opens the same filter in the interactive app.
@@ -197,21 +198,80 @@ ${certTable(items, { showDomain: true })}
 // "How to prepare": links out to study material. Sponsored entries, when there
 // are any, sit in their own labelled box above the list and carry
 // rel="sponsored", so a paid placement is never read as an editorial pick.
-function prepHtml(c, T = LANGS.en) {
+// The study plan as markup. `fold` wraps each phase in a <details>, used where
+// the plan is one section among others; the plan's own page shows it in full.
+const planFile = c => `plan-${c.id}.html`;
+function planPhases(c, T, { fold }) {
   const list = RESOURCES.get(c.id) || [];
-  if (!list.length) return "";
   const meta = r => [esc(r.provider), T.resource[r.type], r.official ? T.official : "", r.free ? T.freeTag : ""].filter(Boolean).join(" · ");
   const link = r => `<a href="${esc(r.url)}" rel="${r.sponsored ? "sponsored " : ""}noopener noreferrer">${esc(r.title)}</a>`;
   const sponsored = list.filter(r => r.sponsored);
   const phaseIndex = { know: 0, learn: 1, practice: 2, test: 3 };
+  const steps = phase => `<ol class="prep" start="${phase.start}">
+${phase.items.map(r => `    <li value="${r.step}">${link(r)} <span>${meta(r)}</span></li>`).join("\n")}
+  </ol>`;
+  return (sponsored.length ? `  <div class="prep-sponsored"><small>${T.sponsored}</small>\n    <ul class="prep">\n${sponsored.map(r => `      <li>${link(r)} <span>${meta(r)}</span></li>`).join("\n")}\n    </ul>\n  </div>\n` : "")
+    + studyPlan(list).map(phase => {
+      const name = T.phases[phaseIndex[phase.id]];
+      return fold
+        ? `  <details class="phase"${phase.items.length <= 4 ? " open" : ""}><summary>${name} <small>${phase.items.length}</small></summary>\n  ${steps(phase)}\n  </details>`
+        : `  <h2 class="phase" id="${phase.id}">${name} <small>${phase.items.length}</small></h2>\n  ${steps(phase)}`;
+    }).join("\n");
+}
+
+function prepHtml(c, T = LANGS.en) {
+  if (!(RESOURCES.get(c.id) || []).length) return "";
+  const plan = `${T.code === "en" ? "" : "../certs/"}${planFile(c)}`;
   return `  <h2>${esc(T.hPrepare(T.iso(c.acronym)))}</h2>
   <p class="fine">${esc(T.planNote)}</p>
-${sponsored.length ? `  <div class="prep-sponsored"><small>${T.sponsored}</small>\n    <ul class="prep">\n${sponsored.map(r => `      <li>${link(r)} <span>${meta(r)}</span></li>`).join("\n")}\n    </ul>\n  </div>\n` : ""}${studyPlan(list).map(phase => `  <h3 class="phase">${T.phases[phaseIndex[phase.id]]}</h3>
-  <ol class="prep" start="${phase.start}">
-${phase.items.map(r => `    <li value="${r.step}">${link(r)} <span>${meta(r)}</span></li>`).join("\n")}
-  </ol>`).join("\n")}
+${planPhases(c, T, { fold: true })}
+  <p class="cta"><a class="btn" href="${plan}">${esc(T.hPrepare(T.iso(c.acronym)))} →</a></p>
   <p class="fine">${esc(T.resNote)}</p>
 `;
+}
+
+// One page per study plan: the whole plan unfolded, for someone who searched
+// for how to prepare a certification or who wants to keep the plan open while
+// working through it.
+function planPage(c) {
+  const T = LANGS.en;
+  const list = RESOURCES.get(c.id) || [];
+  const plan = studyPlan(list);
+  const free = list.filter(r => r.free && !r.sponsored).length;
+  const labs = list.filter(r => ["lab", "repo"].includes(r.type)).length;
+  const hours = { beginner: 60, intermediate: 140, advanced: 260, expert: 420 }[c.level];
+  const path = `certs/${planFile(c)}`;
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / <a href="./">Certifications</a> / <a href="${c.id}.html">${esc(c.acronym)}</a> / Study plan</nav>
+<article>
+  <h1>${esc(c.acronym)} study plan</h1>
+  <p class="lead">${list.length} resources for ${esc(c.name)}, in the order to use them: what the exam asks for, the material to learn, hands-on practice and a final check.</p>
+  <div class="stats">
+    <div class="stat"><strong>${list.length}</strong><span>steps</span></div>
+    <div class="stat"><strong>${free}</strong><span>free</span></div>
+    <div class="stat"><strong>${labs}</strong><span>labs and open source</span></div>
+    <div class="stat"><strong>${hours}h</strong><span>study budget at ${c.level} level</span></div>
+  </div>
+  <p class="cta"><a class="btn primary" href="../map/#/cert/${c.id}">Open ${esc(c.acronym)} in the interactive roadmap</a> <a class="btn" href="${c.id}.html">${esc(c.acronym)} cost, exam and renewal</a></p>
+  <nav class="toc">${plan.map(ph => `<a href="#${ph.id}">${T.phases[{ know: 0, learn: 1, practice: 2, test: 3 }[ph.id]]} <small>${ph.items.length}</small></a>`).join(" ")}</nav>
+${planPhases(c, T, { fold: false })}
+  <p class="fine">${esc(T.resNote)} Each link was opened when it was added. Exam price: ${esc(money(c.price_usd))}.</p>
+${versusHtml(c)}</article>`;
+  const ld = [
+    { "@context": "https://schema.org", "@type": "ItemList", name: `${c.acronym} study plan`, numberOfItems: list.length,
+      itemListElement: plan.flatMap(ph => ph.items).map(r => ({ "@type": "ListItem", position: r.step, name: r.title, url: r.url })) },
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "cert/map", item: SITE },
+      { "@type": "ListItem", position: 2, name: "Certifications", item: SITE + "certs/" },
+      { "@type": "ListItem", position: 3, name: c.acronym, item: SITE + `certs/${c.id}.html` },
+      { "@type": "ListItem", position: 4, name: "Study plan", item: SITE + path },
+    ] },
+  ];
+  return page({
+    path,
+    title: `${c.acronym} study plan: ${list.length} resources in order, ${free} free (${year()}) | cert/map`,
+    description: `How to prepare for ${c.acronym} (${c.name}): ${list.length} resources in order, with ${labs} practice labs and open-source projects and ${free} free items. Exam guide, courses, reading, labs and practice questions.`.slice(0, 300),
+    body, ld, modified: latest,
+  });
 }
 
 function versusHtml(c) {
@@ -422,6 +482,8 @@ function faq() {
       `${certs.filter(c => c.dod_8140).length} certifications on the roadmap are recognised under the US Department of Defense 8140 framework, including ${listItems(LISTS[7]).slice(0, 6).map(c => c.acronym).join(", ")}.`],
     ["How current are the prices?",
       `${verified} of ${certs.length} prices carry the date they were last checked against the vendor's own page; the most recent check was on ${latest}. Each certification page shows its own date. Vendors change prices without notice, so confirm before paying.`],
+    ["Does cert/map help me study for a certification?",
+      `Yes. ${RESOURCES.size} certifications have a study plan: the exam guide first, then courses and reading, then hands-on practice with direct links to free labs and open-source projects, then practice questions. The plans hold ${[...RESOURCES.values()].reduce((k, l) => k + l.length, 0)} links in total, and every link was opened when it was added.`],
     ["Can I build and share my own certification path?",
       "Yes. Select certifications in the interactive roadmap and it orders them by prerequisite and adds up exam cost and study time. Give the path a name and copy its link: anyone who opens it sees the same roadmap."],
   ];
@@ -439,9 +501,9 @@ function homePage() {
   ${mark}
   <p class="kicker">Open source · ${certs.length} certifications</p>
   <h1>The cybersecurity certification roadmap</h1>
-  <p class="lead">cert/map charts every certification worth knowing in security by subject and by seniority, with what each one costs, how it is examined and what it leads to.</p>
+  <p class="lead">cert/map charts every certification worth knowing in security by subject and by seniority, with what each one costs and what it leads to, and gives you an ordered study plan to prepare for it.</p>
   <p class="cta"><a class="btn primary big" href="../map/">Open the roadmap</a> <a class="btn big" href="../certs/">Browse the full list</a></p>
-  <div class="stats">${stat(certs.length, "certifications")}${stat(vendors.size, "vendors")}${stat(DOMAINS.length, "domains")}${stat(verified, "prices verified")}</div>
+  <div class="stats">${stat(certs.length, "certifications")}${stat(vendors.size, "vendors")}${stat(RESOURCES.size, "study plans")}${stat(verified, "prices verified")}</div>
 </section>
 
 <section class="block">
@@ -454,10 +516,11 @@ function homePage() {
 
 <section class="block">
   <h2>How to use it</h2>
-  <ol class="steps">
+  <ol class="steps five">
     <li><strong>Explore</strong><span>Scan the matrix by domain and level, or filter by vendor, price, exam format and DoD 8140 status.</span></li>
     <li><strong>Select</strong><span>Add the certifications you want. Prerequisites can be pulled in with one click.</span></li>
     <li><strong>Plan</strong><span>See the path in order, with the total exam cost and an estimate of the study time.</span></li>
+    <li><strong>Study</strong><span>Follow each certification's study plan: exam guide, courses, free labs and practice questions, numbered in order.</span></li>
     <li><strong>Share</strong><span>Name the roadmap and copy its link. Anyone who opens it sees the same path.</span></li>
   </ol>
 </section>
@@ -469,6 +532,12 @@ ${sponsorsSection()}
   <div class="tiles">
 ${LISTS.map(l => `    <a class="tile" href="../certs/${listFile(l)}"><strong>${listItems(l).length}</strong><span>${esc(short(l))}</span></a>`).join("\n")}
   </div>
+</section>
+
+<section class="block">
+  <h2>Study plans</h2>
+  <div class="prose"><p>An ordered plan for each of the most sought-after certifications: what to read first, what to practice on and how to check you are ready. Free labs and open-source material are linked directly.</p></div>
+  <nav class="toc">${certs.filter(c => RESOURCES.has(c.id)).sort((x, y) => y.weight - x.weight || byName(x, y)).slice(0, 32).map(c => `<a href="../certs/${planFile(c)}">${esc(c.acronym)} <small>${RESOURCES.get(c.id).length}</small></a>`).join(" ")} <a href="../certs/#plans">All ${RESOURCES.size} plans</a></nav>
 </section>
 
 ${PAIRS.length ? `<section class="block">
@@ -523,8 +592,8 @@ ${qa.map(([q, a], i) => `    <details${i === 0 ? " open" : ""}><summary>${esc(q)
   ];
   return page({
     path: "",
-    title: `Cybersecurity Certification Roadmap: ${certs.length} certs compared by cost and level | cert/map`,
-    description: `cert/map is an open-source cybersecurity certification roadmap: ${certs.length} certifications from ${vendors.size} vendors by domain and seniority, with current exam prices, prerequisites and renewal cycles. Build a certification path and share it.`,
+    title: `Cybersecurity Certification Roadmap and Study Plans: ${certs.length} certs compared | cert/map`,
+    description: `cert/map is an open-source cybersecurity certification roadmap and study organiser: ${certs.length} certifications from ${vendors.size} vendors by domain and seniority, with current exam prices, side-by-side comparisons and ordered study plans with free labs. Build a certification path and share it.`,
     body, ld, modified: latest, root: true, script: "assets/js/landing.js",
   });
 }
@@ -782,6 +851,7 @@ function llmsFull() {
         + line("Prerequisites", c.prerequisites.map(id => byId.get(id)?.acronym || id).join(", "))
         + line("DoD 8140", c.dod_8140 ? "approved" : "") + line("Restricted to", c.restricted_to)
         + line("Official page", c.url) + line("cert/map page", SITE + `certs/${c.id}.html`)
+        + line("Study plan", RESOURCES.has(c.id) ? SITE + `certs/${planFile(c)}` : "")
         + line("Compared with", (VERSUS.get(c.id) || []).map(v => `${byId.get(v.id).acronym} (${SITE}certs/${v.file})`).join(", "))
         + ((RESOURCES.get(c.id) || []).length
           ? "- Preparation:\n" + RESOURCES.get(c.id).map(r => `  - ${r.title} (${r.provider}${r.official ? ", official" : ""}${r.free ? ", free" : ""}${r.sponsored ? ", sponsored" : ""}): ${r.url}\n`).join("")
@@ -807,6 +877,7 @@ ${[...vendors].sort((a, b) => a.localeCompare(b)).join(", ")}.
 - [Full text digest](${SITE}llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](${SITE}data/certs.json) and [as CSV](${SITE}data/certs.csv)
 - [Preparation resources (CSV)](${SITE}data/resources.csv): exam guides, courses, labs and books per certification, ${[...RESOURCES.values()].reduce((k, l) => k + l.length, 0)} links for ${RESOURCES.size} certifications
+- Study plans: ${RESOURCES.size} certifications have an ordered plan at \`${SITE}certs/plan-<id>.html\`, for example ${SITE}certs/plan-oscp.html
 - [Comparison pairs (CSV)](${SITE}data/comparisons.csv): the ${PAIRS.length} pairs that have a side-by-side page
 - Comparison pages exist in eight languages. English is under \`certs/\`; the others use the same file name under \`es/\`, \`fr/\`, \`de/\`, \`it/\`, \`ar/\`, \`ko/\` and \`he/\`, for example ${SITE}es/${PAIRS.length ? compareFile(PAIRS[0].a, PAIRS[0].b) : "compare-a-vs-b.html"}
 ${LISTS.map(l => `- [${l.name}](${SITE}certs/${listFile(l)}): ${listItems(l).length} certifications`).join("\n")}
@@ -1093,6 +1164,8 @@ ${PAIRS.length ? `<h2 id="comparisons">Comparisons</h2>
 <nav class="toc" aria-label="Comparisons">${PAIRS.map(r => `<a href="${compareFile(r.a, r.b)}">${esc(byId.get(r.a).acronym)} vs ${esc(byId.get(r.b).acronym)}</a>`).join(" ")}</nav>
 ` : ""}<h2>Popular lists</h2>
 <nav class="toc" aria-label="Lists">${LISTS.map(l => `<a href="${listFile(l)}">${esc(l.name)}</a>`).join(" ")}</nav>
+<h2 id="plans">Study plans</h2>
+<nav class="toc" aria-label="Study plans">${certs.filter(c => RESOURCES.has(c.id)).sort(byName).map(c => `<a href="${planFile(c)}">${esc(c.acronym)}</a>`).join(" ")}</nav>
 <h2>Career paths</h2>
 <nav class="toc" aria-label="Paths">${ROLE_PATHS.map(p => `<a href="${pathFile(p)}">${esc(p.name)}</a>`).join(" ")}</nav>
 <h2>By domain</h2>
@@ -1138,6 +1211,7 @@ ${[
     url(SITE + "sponsors/", latest, "0.8"),
     ...LISTS.map(l => url(SITE + `certs/${listFile(l)}`, latest, "0.8")),
     ...ROLE_PATHS.map(p => url(SITE + `certs/${pathFile(p)}`, latest, "0.8")),
+    ...certs.filter(c => RESOURCES.has(c.id)).map(c => url(SITE + `certs/${planFile(c)}`, latest, "0.8")),
     ...PAIRS.flatMap(r => LANG_ORDER.map(code => url(SITE + comparePath(byId.get(r.a), byId.get(r.b), LANGS[code]), latest, code === "en" ? "0.8" : "0.6"))),
     ...DOMAINS.map(d => url(SITE + `certs/${domainFile(d)}`, latest, "0.8")),
     ...[...vendors].map(v => url(SITE + `certs/${vendorFile(v)}`, latest, "0.8")),
@@ -1174,6 +1248,7 @@ for (const v of vendors) writeFileSync(join(OUT, vendorFile(v)), vendorPage(v));
 for (const d of DOMAINS) writeFileSync(join(OUT, domainFile(d)), domainPage(d));
 for (const l of LISTS) writeFileSync(join(OUT, listFile(l)), listPage(l));
 for (const p of ROLE_PATHS) writeFileSync(join(OUT, pathFile(p)), pathPage(p));
+for (const c of certs) if (RESOURCES.has(c.id)) writeFileSync(join(OUT, planFile(c)), planPage(c));
 for (const code of LANG_ORDER) {
   const T = LANGS[code];
   if (code !== "en") { rmSync(join(ROOT, code), { recursive: true, force: true }); mkdirSync(join(ROOT, code), { recursive: true }); }

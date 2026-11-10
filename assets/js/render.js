@@ -1,11 +1,11 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
   fmtPrice, fmtAgo, isStale, slug,
-} from "./format.js?v=84b0b75e";
-import { el, svg } from "./dom.js?v=84b0b75e";
-import { makeLogo } from "./logo.js?v=84b0b75e";
-import { studyPlan } from "./data.js?v=84b0b75e";
-import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=84b0b75e";
+} from "./format.js?v=3e3f6207";
+import { el, svg } from "./dom.js?v=3e3f6207";
+import { makeLogo } from "./logo.js?v=3e3f6207";
+import { studyPlan } from "./data.js?v=3e3f6207";
+import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=3e3f6207";
 
 export { slug, fmtPrice };
 
@@ -373,13 +373,16 @@ export function renderDrawer(root, c, byId) {
       el("p", { class: "prep-note", text: `In order. Budget about ${LEVEL_HOURS[c.level]} hours for a certification at this level.` }),
       sponsored.length ? el("div", { class: "prep-sponsored" }, el("span", { class: "prep-flag", text: "Sponsored" }),
         el("ul", {}, sponsored.map(r => el("li", {}, link(r), el("span", { class: "prep-meta", text: meta(r) }))))) : null,
-      studyPlan(prep).map(phase => [
-        el("p", { class: "prep-phase", text: PHASE_LABEL[phase.id] }),
+      // Each phase folds away. Short ones start open; a long reading list
+      // starts closed so the plan can be taken in at a glance.
+      studyPlan(prep).map(phase => el("details", { class: "prep-phase", open: phase.items.length <= 4 },
+        el("summary", {}, el("span", { text: PHASE_LABEL[phase.id] }), el("span", { class: "prep-count", text: String(phase.items.length) })),
         el("ol", { start: String(phase.start) }, phase.items.map(r => el("li", {},
           el("span", { class: "prep-step", "aria-hidden": "true", text: String(r.step) }),
           el("span", { class: "prep-body" }, link(r), el("span", { class: "prep-meta", text: meta(r) })),
         ))),
-      ]),
+      )),
+      el("a", { class: "prep-more", href: new URL(`../../certs/plan-${c.id}.html`, import.meta.url).href, text: "Open the full study plan" }),
     ));
   }
 

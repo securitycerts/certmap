@@ -1,8 +1,8 @@
 # cert/map
 
-> Open-source static roadmap of 320 cybersecurity certifications mapped across 17 domains and four seniority tiers. Filter by vendor, level or price, inspect each certification's prerequisites, renewal cycle and DoD 8140 status, and plan a study path with running cost and time-to-completion totals.
+> Open-source roadmap and study organiser for cybersecurity certifications: 320 cybersecurity certifications mapped across 17 domains and four seniority tiers, each with its current exam price, prerequisites and renewal cycle, and for the most sought-after ones an ordered study plan with exam guides, courses, reading, direct links to free practice labs, open-source projects and practice questions. Compare two certifications side by side, build a personal roadmap, annotate it and share it with a link.
 
-cert/map is a community-maintained reference for the cybersecurity certification landscape. The entire dataset lives in a single CSV file at `data/certs.csv`; the browser parses it at load time, so the data is also directly machine-readable for anyone integrating it. The project is hosted on GitHub Pages at https://certmap.dev/.
+cert/map is a community-maintained reference for the cybersecurity certification landscape and a tool for planning how to study for it. It answers three questions: which certification to take (the roadmap and the comparisons), in what order (roadmaps ordered by prerequisite, with cost and study time), and how to prepare each one (study plans whose links are checked). The entire dataset lives in CSV files under `data/`; the browser parses them at load time, so the data is also directly machine-readable for anyone integrating it. The site is at https://certmap.dev/.
 
 ## Vendors covered
 
@@ -17,6 +17,7 @@ cert/map is a community-maintained reference for the cybersecurity certification
 - [Full text digest](https://certmap.dev/llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](https://certmap.dev/data/certs.json) and [as CSV](https://certmap.dev/data/certs.csv)
 - [Preparation resources (CSV)](https://certmap.dev/data/resources.csv): exam guides, courses, labs and books per certification, 653 links for 79 certifications
+- Study plans: 79 certifications have an ordered plan at `https://certmap.dev/certs/plan-<id>.html`, for example https://certmap.dev/certs/plan-oscp.html
 - [Comparison pairs (CSV)](https://certmap.dev/data/comparisons.csv): the 60 pairs that have a side-by-side page
 - Comparison pages exist in eight languages. English is under `certs/`; the others use the same file name under `es/`, `fr/`, `de/`, `it/`, `ar/`, `ko/` and `he/`, for example https://certmap.dev/es/compare-net-plus-vs-ccna.html
 - [Beginner cybersecurity certifications](https://certmap.dev/certs/list-beginner.html): 68 certifications
@@ -258,6 +259,10 @@ Each certification is placed at one of four tiers:
 
 ## Features of the live site
 
+- **Study plans**: for each certification with resources, a numbered plan in four phases (know the exam, learn the material, practice hands-on, test yourself). Each plan has its own page at `certs/plan-<id>.html` and also appears in the roadmap's detail drawer and on the certification page, with each phase folding away.
+- **Practice material**: direct links to TryHackMe rooms and paths, Hack The Box Academy modules, CyberDefenders labs and similar, plus open-source projects (vulnerable applications, lab builders, detection rules, forensic datasets). No exam content or exam write-ups are linked.
+- **Comparisons**: side-by-side pages for the most searched pairs, in English, Spanish, French, German, Italian, Arabic, Korean and Hebrew.
+- **Roadmap builder**: add certifications by search, see them as a list or as a graph of prerequisites, write a note on each step, name the roadmap and share it.
 - **Matrix view**: 17 columns by 4 rows. Capstone certifications surface to the top of each cell via an optional weight value.
 - **List view**: cards grouped by domain with vendor, level, tags and price visible.
 - **Filters**: domain, level, vendor (with substring quick-search), price range, free-only, DoD 8140 only, no-prerequisites only, hands-on exam only, verified prices only.

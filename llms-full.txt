@@ -63,6 +63,7 @@ Foundational networking certification covering protocols, topologies and basic s
 - DoD 8140: approved
 - Official page: https://www.comptia.org/certifications/network
 - cert/map page: https://certmap.dev/certs/net-plus.html
+- Study plan: https://certmap.dev/certs/plan-net-plus.html
 - Compared with: CCNA (https://certmap.dev/certs/compare-net-plus-vs-ccna.html), Security+ (https://certmap.dev/certs/compare-net-plus-vs-sec-plus.html), A+ (https://certmap.dev/certs/compare-a-plus-vs-net-plus.html)
 - Preparation:
   - Network+ Certification (CompTIA, official, free): https://www.comptia.org/en-us/certifications/network/
@@ -104,6 +105,7 @@ Foundational Cisco networking certification.
 - Renewal: every 3 years
 - Official page: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html
 - cert/map page: https://certmap.dev/certs/ccna.html
+- Study plan: https://certmap.dev/certs/plan-ccna.html
 - Compared with: Network+ (https://certmap.dev/certs/compare-net-plus-vs-ccna.html), Security+ (https://certmap.dev/certs/compare-sec-plus-vs-ccna.html), RHCSA (https://certmap.dev/certs/compare-ccna-vs-rhcsa.html), A+ (https://certmap.dev/certs/compare-a-plus-vs-ccna.html), CCNA Cybersecurity (https://certmap.dev/certs/compare-ccna-vs-cyberops-asc.html)
 - Preparation:
   - CCNA Exam Topics (Cisco, official, free): https://learningnetwork.cisco.com/s/ccna-exam-topics
@@ -227,6 +229,7 @@ FortiGate operator certification covering firewall policy, routing, VPN and SD-W
 - Renewal: every 2 years
 - Official page: https://www.fortinet.com/training-certification
 - cert/map page: https://certmap.dev/certs/fcp-nse4.html
+- Study plan: https://certmap.dev/certs/plan-fcp-nse4.html
 - Preparation:
   - FortiOS Administrator Exam (Fortinet, official, free): https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam
   - NSE 4 FortiOS (Fortinet, official, free): https://training.fortinet.com/local/staticpage/view.php?page=nse_4
@@ -473,6 +476,7 @@ One-hour online proctored multiple-choice exam on HashiCorp Vault fundamentals, 
 - Renewal: every 2 years
 - Official page: https://developer.hashicorp.com/certifications/vault-associate
 - cert/map page: https://certmap.dev/certs/vault-associate.html
+- Study plan: https://certmap.dev/certs/plan-vault-associate.html
 - Preparation:
   - Exam content list - Vault Associate (003) (HashiCorp, official, free): https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003
   - Learning path - Vault Associate (003) (HashiCorp, official, free): https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003
@@ -620,6 +624,7 @@ Advanced security practitioner certification covering enterprise security archit
 - DoD 8140: approved
 - Official page: https://www.comptia.org/certifications/securityx
 - cert/map page: https://certmap.dev/certs/casp-plus.html
+- Study plan: https://certmap.dev/certs/plan-casp-plus.html
 - Compared with: CySA+ (https://certmap.dev/certs/compare-cysa-plus-vs-casp-plus.html), CISSP (https://certmap.dev/certs/compare-casp-plus-vs-cissp.html)
 - Preparation:
   - SecurityX Certification (CompTIA, official, free): https://www.comptia.org/en-us/certifications/securityx/
@@ -727,6 +732,7 @@ Entry-level IT support certification covering hardware and operating systems.
 - Renewal: every 3 years
 - Official page: https://www.comptia.org/certifications/a
 - cert/map page: https://certmap.dev/certs/a-plus.html
+- Study plan: https://certmap.dev/certs/plan-a-plus.html
 - Compared with: CCNA (https://certmap.dev/certs/compare-a-plus-vs-ccna.html), Network+ (https://certmap.dev/certs/compare-a-plus-vs-net-plus.html), Security+ (https://certmap.dev/certs/compare-a-plus-vs-sec-plus.html), Tech+ (https://certmap.dev/certs/compare-a-plus-vs-itf-plus.html)
 - Preparation:
   - A+ Core 1 and 2 Certification V15 (CompTIA, official, free): https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/
@@ -792,6 +798,7 @@ Entry-level cybersecurity certification covering foundational security principle
 - Renewal: every 3 years
 - Official page: https://www.isc2.org/certifications/cc
 - cert/map page: https://certmap.dev/certs/cc.html
+- Study plan: https://certmap.dev/certs/plan-cc.html
 - Compared with: Security+ (https://certmap.dev/certs/compare-cc-vs-sec-plus.html), Google Cyber (https://certmap.dev/certs/compare-cc-vs-coursera-google-cybersecurity.html)
 - Preparation:
   - CC Certification Exam Outline (ISC2, official, free): https://www.isc2.org/certifications/cc/cc-certification-exam-outline
@@ -832,6 +839,7 @@ Entry-level practical exam combining a gray-box penetration test with validation
 - Renewal: does not expire
 - Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-junior-cybersecurity-associate
 - cert/map page: https://certmap.dev/certs/cjca.html
+- Study plan: https://certmap.dev/certs/plan-cjca.html
 - Preparation:
   - HTB Certified Junior Cybersecurity Associate (Hack The Box, official, free): https://academy.hackthebox.com/preview/certifications/htb-certified-junior-cybersecurity-associate
   - Academy Certifications (Hack The Box, official, free): https://help.hackthebox.com/en/articles/12741732-academy-certifications
@@ -992,6 +1000,7 @@ Microsoft fundamentals certification covering security identity and compliance b
 - Renewal: does not expire
 - Official page: https://learn.microsoft.com/credentials/certifications/security-compliance-and-identity-fundamentals/
 - cert/map page: https://certmap.dev/certs/sc-900.html
+- Study plan: https://certmap.dev/certs/plan-sc-900.html
 - Preparation:
   - Study guide for Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals (Microsoft, official, free): https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900
   - Course SC-900T00-A: Introduction to Microsoft Security, Compliance, and Identity (Microsoft, official): https://learn.microsoft.com/en-us/training/courses/sc-900t00
@@ -1017,6 +1026,7 @@ Foundational vendor-neutral cybersecurity certification covering core concepts a
 - DoD 8140: approved
 - Official page: https://www.comptia.org/certifications/security
 - cert/map page: https://certmap.dev/certs/sec-plus.html
+- Study plan: https://certmap.dev/certs/plan-sec-plus.html
 - Compared with: Network+ (https://certmap.dev/certs/compare-net-plus-vs-sec-plus.html), CC (https://certmap.dev/certs/compare-cc-vs-sec-plus.html), CySA+ (https://certmap.dev/certs/compare-sec-plus-vs-cysa-plus.html), CCNA (https://certmap.dev/certs/compare-sec-plus-vs-ccna.html), CEH (https://certmap.dev/certs/compare-sec-plus-vs-ceh.html), CISSP (https://certmap.dev/certs/compare-sec-plus-vs-cissp.html), SSCP (https://certmap.dev/certs/compare-sec-plus-vs-sscp.html), Google Cyber (https://certmap.dev/certs/compare-coursera-google-cybersecurity-vs-sec-plus.html), A+ (https://certmap.dev/certs/compare-a-plus-vs-sec-plus.html), BTL1 (https://certmap.dev/certs/compare-btl1-vs-sec-plus.html), GSEC (https://certmap.dev/certs/compare-sec-plus-vs-gsec.html)
 - Preparation:
   - Security+ Certification (CompTIA, official, free): https://www.comptia.org/en-us/certifications/security/
@@ -1056,6 +1066,7 @@ Hands-on foundational security certification from GIAC.
 - DoD 8140: approved
 - Official page: https://www.giac.org/certifications/security-essentials-gsec/
 - cert/map page: https://certmap.dev/certs/gsec.html
+- Study plan: https://certmap.dev/certs/plan-gsec.html
 - Compared with: Security+ (https://certmap.dev/certs/compare-sec-plus-vs-gsec.html)
 - Preparation:
   - GIAC Security Essentials (GSEC) exam objectives (GIAC, official, free): https://www.giac.org/certifications/security-essentials-gsec
@@ -1151,6 +1162,7 @@ Gold-standard cybersecurity certification covering 8 domains; requires 5 years e
 - DoD 8140: approved
 - Official page: https://www.isc2.org/Certifications/CISSP
 - cert/map page: https://certmap.dev/certs/cissp.html
+- Study plan: https://certmap.dev/certs/plan-cissp.html
 - Compared with: CISM (https://certmap.dev/certs/compare-cism-vs-cissp.html), Security+ (https://certmap.dev/certs/compare-sec-plus-vs-cissp.html), CCSP (https://certmap.dev/certs/compare-ccsp-vs-cissp.html), CASP+ (https://certmap.dev/certs/compare-casp-plus-vs-cissp.html), CSSLP (https://certmap.dev/certs/compare-cissp-vs-csslp.html), CCISO (https://certmap.dev/certs/compare-cciso-vs-cissp.html), CGRC (https://certmap.dev/certs/compare-cgrc-vs-cissp.html)
 - Preparation:
   - CISSP Certification Exam Outline (ISC2, official, free): https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline
@@ -1195,6 +1207,7 @@ Entry-level multiple-choice exam on application security fundamentals, with fact
 - Renewal: does not expire
 - Official page: https://pentestingexams.com/certifications/essentials/certified-application-security-practitioner/
 - cert/map page: https://certmap.dev/certs/secops-cap.html
+- Study plan: https://certmap.dev/certs/plan-secops-cap.html
 - Preparation:
   - Certified AppSec Practitioner (CAP) (The SecOps Group, official, free): https://pentestingexams.com/certifications/essentials/certified-application-security-practitioner/
   - Mock Pentesting Exams (The SecOps Group, official, free): https://pentestingexams.com/mock-pentesting-exams/
@@ -1289,6 +1302,7 @@ Practical exam of five challenges to be solved in six hours, followed by 24 hour
 - Renewal: does not expire
 - Official page: https://www.practical-devsecops.com/certified-devsecops-professional/
 - cert/map page: https://certmap.dev/certs/cdp-devsecops.html
+- Study plan: https://certmap.dev/certs/plan-cdp-devsecops.html
 - Preparation:
   - Exam and Certification Process (Practical DevSecOps, official, free): https://www.practical-devsecops.com/exam-and-certification/
   - DevSecOps University (Practical DevSecOps, official, free): https://www.practical-devsecops.com/devsecops-university/
@@ -1321,6 +1335,7 @@ HTB Certified Web Exploitation Specialist (CWES), formerly Certified Bug Bounty 
 - Renewal: does not expire
 - Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-specialist
 - cert/map page: https://certmap.dev/certs/cbbh.html
+- Study plan: https://certmap.dev/certs/plan-cbbh.html
 - Compared with: CPTS (https://certmap.dev/certs/compare-cbbh-vs-cpts.html)
 - Preparation:
   - HTB Certified Web Exploitation Specialist (Hack The Box, official, free): https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-specialist
@@ -1360,6 +1375,7 @@ Hands-on web application penetration testing certification.
 - Renewal: every 3 years
 - Official page: https://ine.com/security/certifications/ewpt-certification
 - cert/map page: https://certmap.dev/certs/ewpt.html
+- Study plan: https://certmap.dev/certs/plan-ewpt.html
 - Preparation:
   - eWPT Certification (INE, official, free): https://ine.com/security/certifications/ewpt-certification
   - Web Application Penetration Testing Professional (INE, official): https://my.ine.com/CyberSecurity/learning-paths/8c322180-1499-40c7-af8f-a877554fca3d/web-application-penetration-testing-professional
@@ -1383,6 +1399,7 @@ Exam GH-500 on using GitHub Advanced Security to secure code, secrets and depend
 - Renewal: every 2 years
 - Official page: https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/
 - cert/map page: https://certmap.dev/certs/gh-advanced-security.html
+- Study plan: https://certmap.dev/certs/plan-gh-advanced-security.html
 - Preparation:
   - Study guide for Exam GH-500: GitHub Advanced Security (Microsoft Learn, official, free): https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500
   - About GitHub Advanced Security (GitHub, official, free): https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security
@@ -1414,6 +1431,7 @@ Hands-on web application security assessment certification.
 - Renewal: does not expire
 - Official page: https://www.offsec.com/courses/web-200/
 - cert/map page: https://certmap.dev/certs/oswa.html
+- Study plan: https://certmap.dev/certs/plan-oswa.html
 - Preparation:
   - WEB-200 OSWA Exam Guide (OffSec, official, free): https://help.offsec.com/hc/en-us/articles/4410105650964-WEB-200-Foundational-Web-Application-Assessments-with-Kali-Linux-OSWA-Exam-Guide
   - WEB-200 Syllabus (OffSec, official, free): https://www.offsec.com/documentation/WEB-200-Syllabus.pdf
@@ -1453,6 +1471,7 @@ Practical web application penetration testing certification.
 - Renewal: does not expire
 - Official page: https://certifications.tcm-sec.com/pwpa/
 - cert/map page: https://certmap.dev/certs/pwpa.html
+- Study plan: https://certmap.dev/certs/plan-pwpa.html
 - Preparation:
   - Practical Web Pentest Associate (PWPA) Certification (TCM Security, official, free): https://certifications.tcm-sec.com/pwpa/
   - Practical Bug Bounty (TCM Security, official): https://tcm-sec.com/academy/practical-bug-bounty/
@@ -1591,6 +1610,7 @@ Advanced web application exploitation and white-box code review certification.
 - Renewal: does not expire
 - Official page: https://www.offsec.com/courses/web-300/
 - cert/map page: https://certmap.dev/certs/oswe.html
+- Study plan: https://certmap.dev/certs/plan-oswe.html
 - Compared with: OSCP+ (https://certmap.dev/certs/compare-oscp-vs-oswe.html), OSEP (https://certmap.dev/certs/compare-osep-vs-oswe.html)
 - Preparation:
   - WEB-300 OSWE Exam Guide (OffSec, official, free): https://help.offsec.com/hc/en-us/articles/360046869951-WEB-300-Advanced-Web-Attacks-and-Exploitation-OSWE-Exam-Guide
@@ -1617,6 +1637,7 @@ Junior defensive security certification assessed through a 24-hour practical inc
 - Renewal: does not expire
 - Official page: https://www.centri.org/certifications/blue-team-level-1
 - cert/map page: https://certmap.dev/certs/btl1.html
+- Study plan: https://certmap.dev/certs/plan-btl1.html
 - Compared with: CDSA (https://certmap.dev/certs/compare-btl1-vs-cdsa.html), Security+ (https://certmap.dev/certs/compare-btl1-vs-sec-plus.html), CySA+ (https://certmap.dev/certs/compare-btl1-vs-cysa-plus.html)
 - Preparation:
   - Blue Team Level 1 (Centri, official, free): https://www.centri.org/certifications/blue-team-level-1
@@ -1641,6 +1662,7 @@ Entry-level SOC analyst certification with a practical exam covering alert triag
 - Renewal: does not expire
 - Official page: https://cyberdefenders.org/certifications/certified-cyberdefender-level1/
 - cert/map page: https://certmap.dev/certs/ccdl1.html
+- Study plan: https://certmap.dev/certs/plan-ccdl1.html
 - Preparation:
   - CCDL1 Exam Outline (CyberDefenders, official, free): https://help.cyberdefenders.org/en/articles/14880875-ccdl1-exam-outline
   - Study Plan and Exam Readiness (CyberDefenders, official, free): https://help.cyberdefenders.org/en/articles/13990297-study-plan-and-exam-readiness
@@ -1733,6 +1755,7 @@ Nine-course entry-level program covering security frameworks, network security, 
 - Renewal: does not expire
 - Official page: https://www.coursera.org/professional-certificates/google-cybersecurity
 - cert/map page: https://certmap.dev/certs/coursera-google-cybersecurity.html
+- Study plan: https://certmap.dev/certs/plan-coursera-google-cybersecurity.html
 - Compared with: Security+ (https://certmap.dev/certs/compare-coursera-google-cybersecurity-vs-sec-plus.html), CC (https://certmap.dev/certs/compare-cc-vs-coursera-google-cybersecurity.html)
 - Preparation:
   - Google Cybersecurity Certificate (Grow with Google, official, free): https://grow.google/certificates/cybersecurity/
@@ -1839,6 +1862,7 @@ Foundational Splunk search and reporting certification.
 - Renewal: every 3 years
 - Official page: https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html
 - cert/map page: https://certmap.dev/certs/splunk-core.html
+- Study plan: https://certmap.dev/certs/plan-splunk-core.html
 - Preparation:
   - Splunk Core Certified User Exam Blueprint (Splunk, official, free): https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-user.pdf
   - Splunk Core Certified User (Splunk, official, free): https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html
@@ -1878,6 +1902,7 @@ Cisco SOC analyst associate certification.
 - DoD 8140: approved
 - Official page: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/cybersecurity/ccna-cybersecurity/index.html
 - cert/map page: https://certmap.dev/certs/cyberops-asc.html
+- Study plan: https://certmap.dev/certs/plan-cyberops-asc.html
 - Compared with: CCNA (https://certmap.dev/certs/compare-ccna-vs-cyberops-asc.html)
 - Preparation:
   - CCNA Cybersecurity (200-201 CCNACBR) Exam Topics (Cisco, official, free): https://learningnetwork.cisco.com/s/ccnacbr-exam-topics
@@ -1917,6 +1942,7 @@ Hands-on defensive SOC analyst certification.
 - Renewal: does not expire
 - Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst
 - cert/map page: https://certmap.dev/certs/cdsa.html
+- Study plan: https://certmap.dev/certs/plan-cdsa.html
 - Compared with: BTL1 (https://certmap.dev/certs/compare-btl1-vs-cdsa.html), CCDL2 (https://certmap.dev/certs/compare-ccdl2-vs-cdsa.html), CPTS (https://certmap.dev/certs/compare-cdsa-vs-cpts.html)
 - Preparation:
   - HTB Certified Defensive Security Analyst (Hack The Box, official, free): https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst
@@ -1958,6 +1984,7 @@ Intermediate security operations certification covering threat detection, vulner
 - DoD 8140: approved
 - Official page: https://www.comptia.org/certifications/cybersecurity-analyst
 - cert/map page: https://certmap.dev/certs/cysa-plus.html
+- Study plan: https://certmap.dev/certs/plan-cysa-plus.html
 - Compared with: Security+ (https://certmap.dev/certs/compare-sec-plus-vs-cysa-plus.html), CASP+ (https://certmap.dev/certs/compare-cysa-plus-vs-casp-plus.html), PenTest+ (https://certmap.dev/certs/compare-cysa-plus-vs-pentest-plus.html), BTL1 (https://certmap.dev/certs/compare-btl1-vs-cysa-plus.html)
 - Preparation:
   - CySA+ Certification V4 (CompTIA, official, free): https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/
@@ -2066,6 +2093,7 @@ Blue team detection and SOC analyst certification from OffSec.
 - Renewal: does not expire
 - Official page: https://www.offsec.com/courses/soc-200/
 - cert/map page: https://certmap.dev/certs/osda.html
+- Study plan: https://certmap.dev/certs/plan-osda.html
 - Preparation:
   - OSDA Exam Guide (OffSec, official, free): https://help.offsec.com/hc/en-us/articles/4410105675412-OSDA-Exam-Guide
   - OSDA Exam FAQ (OffSec, official, free): https://help.offsec.com/hc/en-us/articles/10170036616084-OSDA-Exam-FAQ
@@ -2091,6 +2119,7 @@ Microsoft Sentinel and Defender SOC analyst certification.
 - Renewal: every 1 years
 - Official page: https://learn.microsoft.com/credentials/certifications/security-operations-analyst/
 - cert/map page: https://certmap.dev/certs/sc-200.html
+- Study plan: https://certmap.dev/certs/plan-sc-200.html
 - Compared with: AZ-500 (https://certmap.dev/certs/compare-az-500-vs-sc-200.html)
 - Preparation:
   - Study guide for Exam SC-200: Microsoft Security Operations Analyst (Microsoft, official, free): https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200
@@ -2158,6 +2187,7 @@ Hands-on security operations certification for IT administrators.
 - DoD 8140: approved
 - Official page: https://www.isc2.org/Certifications/SSCP
 - cert/map page: https://certmap.dev/certs/sscp.html
+- Study plan: https://certmap.dev/certs/plan-sscp.html
 - Compared with: Security+ (https://certmap.dev/certs/compare-sec-plus-vs-sscp.html)
 - Preparation:
   - SSCP Certification Exam Outline (ISC2, official, free): https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline
@@ -2390,6 +2420,7 @@ CREST-accredited threat intelligence analyst certification.
 - Renewal: every 3 years
 - Official page: https://www.crest-approved.org/certifications/crest-registered-threat-intelligence-analyst/
 - cert/map page: https://certmap.dev/certs/crtia.html
+- Study plan: https://certmap.dev/certs/plan-crtia.html
 - Preparation:
   - CREST Registered Threat Intelligence Analyst (CRTIA) examination page (CREST, official, free): https://www.crest-approved.org/certification-careers/crest-certifications/crest-registered-threat-intelligence-analyst/
   - CRTIA Syllabus (CREST, official, free): https://www.crest-approved.org/wp-content/uploads/2022/06/CREST-Registered-Threat-Intelligence-Analyst-Syllabus.pdf
@@ -2444,6 +2475,7 @@ Cyber threat intelligence analysis certification.
 - DoD 8140: approved
 - Official page: https://www.giac.org/certifications/cyber-threat-intelligence-gcti/
 - cert/map page: https://certmap.dev/certs/gcti.html
+- Study plan: https://certmap.dev/certs/plan-gcti.html
 - Preparation:
   - GIAC Cyber Threat Intelligence (GCTI) exam objectives (GIAC, official, free): https://www.giac.org/certifications/cyber-threat-intelligence-gcti
   - Cyber Threat Intelligence Consumption poster (SANS Institute, official, free): https://www.sans.org/posters/cyber-threat-intelligence-consumption
@@ -2575,6 +2607,7 @@ Open source intelligence collection and analysis certification.
 - Renewal: every 4 years
 - Official page: https://www.giac.org/certifications/open-source-intelligence-gosi/
 - cert/map page: https://certmap.dev/certs/gosi.html
+- Study plan: https://certmap.dev/certs/plan-gosi.html
 - Preparation:
   - GIAC Open Source Intelligence (GOSI) exam objectives (GIAC, official, free): https://www.giac.org/certifications/open-source-intelligence-gosi
   - OSINT Poster (SANS Institute, official, free): https://www.sans.org/posters/osint-poster
@@ -2652,6 +2685,7 @@ Practical certification in which the candidate receives a simulated client reque
 - Renewal: does not expire
 - Official page: https://inteltechniques.com/training-osip.html
 - cert/map page: https://certmap.dev/certs/osip.html
+- Study plan: https://certmap.dev/certs/plan-osip.html
 - Preparation:
   - Open Source Intelligence Professional (OSIP) (IntelTechniques, official, free): https://inteltechniques.com/training-osip.html
   - OSINT Training (IntelTechniques, official): https://inteltechniques.com/training.html
@@ -2693,6 +2727,7 @@ Azure cloud fundamentals certification.
 - Renewal: does not expire
 - Official page: https://learn.microsoft.com/credentials/certifications/azure-fundamentals/
 - cert/map page: https://certmap.dev/certs/az-900.html
+- Study plan: https://certmap.dev/certs/plan-az-900.html
 - Compared with: CLF-C02 (https://certmap.dev/certs/compare-aws-clf-vs-az-900.html), AZ-104 (https://certmap.dev/certs/compare-az-900-vs-az-104.html)
 - Preparation:
   - Study guide for Exam AZ-900: Microsoft Azure Fundamentals (Microsoft, official, free): https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900
@@ -2717,6 +2752,7 @@ Foundational AWS cloud certification.
 - Renewal: every 3 years
 - Official page: https://aws.amazon.com/certification/certified-cloud-practitioner/
 - cert/map page: https://certmap.dev/certs/aws-clf.html
+- Study plan: https://certmap.dev/certs/plan-aws-clf.html
 - Compared with: AZ-900 (https://certmap.dev/certs/compare-aws-clf-vs-az-900.html), SAA-C03 (https://certmap.dev/certs/compare-aws-clf-vs-aws-saa.html)
 - Preparation:
   - AWS Certified Cloud Practitioner (CLF-C02) Exam Guide (AWS, official, free): https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html
@@ -2754,6 +2790,7 @@ Entry-level multiple choice exam on Kubernetes and cloud native security fundame
 - Renewal: every 2 years
 - Official page: https://training.linuxfoundation.org/certification/kubernetes-and-cloud-native-security-associate-kcsa/
 - cert/map page: https://certmap.dev/certs/kcsa.html
+- Study plan: https://certmap.dev/certs/plan-kcsa.html
 - Preparation:
   - KCSA Curriculum (CNCF, official, free): https://github.com/cncf/curriculum/blob/main/KCSA%20Curriculum.pdf
   - Introduction to Kubernetes (LFS158) (The Linux Foundation, official): https://training.linuxfoundation.org/training/introduction-to-kubernetes/
@@ -2835,6 +2872,7 @@ Vendor-neutral foundational cloud security certificate from CSA.
 - Renewal: does not expire
 - Official page: https://cloudsecurityalliance.org/education/ccsk
 - cert/map page: https://certmap.dev/certs/ccsk.html
+- Study plan: https://certmap.dev/certs/plan-ccsk.html
 - Compared with: CCSP (https://certmap.dev/certs/compare-ccsk-vs-ccsp.html)
 - Preparation:
   - Certificate of Cloud Security Knowledge (CCSK) (Cloud Security Alliance, official, free): https://cloudsecurityalliance.org/education/ccsk
@@ -2855,6 +2893,7 @@ Hands-on Kubernetes operator certification with a live shell exam.
 - Renewal: every 2 years
 - Official page: https://www.cncf.io/training/certification/cka/
 - cert/map page: https://certmap.dev/certs/cka.html
+- Study plan: https://certmap.dev/certs/plan-cka.html
 - Preparation:
   - CNCF Certification Curriculum (CKA) (CNCF, official, free): https://github.com/cncf/curriculum
   - Kubernetes Fundamentals (LFS258) (The Linux Foundation, official): https://training.linuxfoundation.org/training/kubernetes-fundamentals/
@@ -2949,6 +2988,7 @@ AWS architecture certification covering core services and design.
 - Renewal: every 3 years
 - Official page: https://aws.amazon.com/certification/certified-solutions-architect-associate/
 - cert/map page: https://certmap.dev/certs/aws-saa.html
+- Study plan: https://certmap.dev/certs/plan-aws-saa.html
 - Compared with: SAP-C03 (https://certmap.dev/certs/compare-aws-saa-vs-aws-sap.html), CLF-C02 (https://certmap.dev/certs/compare-aws-clf-vs-aws-saa.html)
 - Preparation:
   - AWS Certified Solutions Architect - Associate (SAA-C03) Exam Guide (AWS, official, free): https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html
@@ -2974,6 +3014,7 @@ Associate certification covering identity, access and governance, security for s
 - Renewal: every 1 years
 - Official page: https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/
 - cert/map page: https://certmap.dev/certs/sc-500.html
+- Study plan: https://certmap.dev/certs/plan-sc-500.html
 - Compared with: AZ-500 (https://certmap.dev/certs/compare-az-500-vs-sc-500.html)
 - Preparation:
   - Study guide for Exam SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads (Microsoft, official, free): https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500
@@ -3023,6 +3064,7 @@ Hands-on Kubernetes security certification covering runtime, supply chain and cl
 - Prerequisites: CKA
 - Official page: https://www.cncf.io/training/certification/cks/
 - cert/map page: https://certmap.dev/certs/cks.html
+- Study plan: https://certmap.dev/certs/plan-cks.html
 - Preparation:
   - CNCF Certification Curriculum (CKS) (CNCF, official, free): https://github.com/cncf/curriculum
   - Kubernetes Security Essentials (LFS260) (The Linux Foundation, official): https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/
@@ -3145,6 +3187,7 @@ AWS security specialty certification (exam SCS-C03) covering threat detection, I
 - Renewal: every 3 years
 - Official page: https://aws.amazon.com/certification/certified-security-specialty/
 - cert/map page: https://certmap.dev/certs/aws-scs.html
+- Study plan: https://certmap.dev/certs/plan-aws-scs.html
 - Preparation:
   - AWS Certified Security - Specialty (SCS-C03) Exam Guide (AWS, official, free): https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html
   - Exam Prep: AWS Certified Security - Specialty (SCS-C03) (AWS Skill Builder, official): https://skillbuilder.aws/category/exam-prep/security-specialty-SCS-C03
@@ -3170,6 +3213,7 @@ Cloud security architecture and operations certification; requires 5 years exper
 - DoD 8140: approved
 - Official page: https://www.isc2.org/Certifications/CCSP
 - cert/map page: https://certmap.dev/certs/ccsp.html
+- Study plan: https://certmap.dev/certs/plan-ccsp.html
 - Compared with: CISSP (https://certmap.dev/certs/compare-ccsp-vs-cissp.html), CCSK (https://certmap.dev/certs/compare-ccsk-vs-ccsp.html)
 - Preparation:
   - CCSP Certification Exam Outline (ISC2, official, free): https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline
@@ -3236,6 +3280,7 @@ Vendor-neutral Linux system administration certification.
 - Renewal: every 3 years
 - Official page: https://www.comptia.org/certifications/linux
 - cert/map page: https://certmap.dev/certs/linux-plus.html
+- Study plan: https://certmap.dev/certs/plan-linux-plus.html
 - Preparation:
   - Linux+ Certification V8 (CompTIA, official, free): https://www.comptia.org/en-us/certifications/linux/
   - Linux+ (V8) Practice Questions (CompTIA, official, free): https://www.comptia.org/en-us/certifications/linux/practice-questions/
@@ -3260,6 +3305,7 @@ Foundational vendor-neutral Linux certification.
 - Renewal: every 5 years
 - Official page: https://www.lpi.org/our-certifications/lpic-1-overview/
 - cert/map page: https://certmap.dev/certs/lpic-1.html
+- Study plan: https://certmap.dev/certs/plan-lpic-1.html
 - Preparation:
   - LPIC-1 Exam 101 and 102 Objectives (Linux Professional Institute, official, free): https://www.lpi.org/our-certifications/exam-101-102-objectives/
   - LPIC-1 Exam 101 Learning Materials (Linux Professional Institute, official, free): https://learning.lpi.org/en/learning-materials/101-500/
@@ -3283,6 +3329,7 @@ Online proctored performance-based exam in which candidates solve Linux system a
 - Renewal: every 2 years
 - Official page: https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/
 - cert/map page: https://certmap.dev/certs/lfcs.html
+- Study plan: https://certmap.dev/certs/plan-lfcs.html
 - Preparation:
   - Linux Foundation Certified System Administrator (LFCS) (The Linux Foundation, official, free): https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/
   - Linux System Administration Essentials (LFS207) (The Linux Foundation, official): https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/
@@ -3322,6 +3369,7 @@ Hands-on Red Hat Enterprise Linux administration certification.
 - Renewal: every 3 years
 - Official page: https://www.redhat.com/en/services/certification/rhcsa
 - cert/map page: https://certmap.dev/certs/rhcsa.html
+- Study plan: https://certmap.dev/certs/plan-rhcsa.html
 - Compared with: CCNA (https://certmap.dev/certs/compare-ccna-vs-rhcsa.html), RHCE (https://certmap.dev/certs/compare-rhcsa-vs-rhce.html)
 - Preparation:
   - Red Hat Certified System Administrator (RHCSA) exam (EX200) (Red Hat, official, free): https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam
@@ -3466,6 +3514,7 @@ IT service management foundational certification.
 - Renewal: every 3 years
 - Official page: https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565
 - cert/map page: https://certmap.dev/certs/itil-f.html
+- Study plan: https://certmap.dev/certs/plan-itil-f.html
 - Preparation:
   - ITIL 4 Foundation (PeopleCert, official, free): https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565
   - ITIL 4 Foundation Mock exam (PeopleCert, official): https://www.peoplecert.org/browse-mock-exams/it-governance-and-service-management/ITIL-1/itil-4-foundation-mock-exam
@@ -3552,6 +3601,7 @@ Privacy law and regulation certification.
 - Renewal: every 2 years
 - Official page: https://iapp.org/certify/cipp/
 - cert/map page: https://certmap.dev/certs/cipp.html
+- Study plan: https://certmap.dev/certs/plan-cipp.html
 - Compared with: CIPM (https://certmap.dev/certs/compare-cipp-vs-cipm.html), AIGP (https://certmap.dev/certs/compare-aigp-vs-cipp.html)
 - Preparation:
   - CIPP certification (IAPP, official, free): https://iapp.org/certify/cipp
@@ -3823,6 +3873,7 @@ Information systems audit certification; the standard for IT auditors.
 - DoD 8140: approved
 - Official page: https://www.isaca.org/credentialing/cisa
 - cert/map page: https://certmap.dev/certs/cisa.html
+- Study plan: https://certmap.dev/certs/plan-cisa.html
 - Compared with: CRISC (https://certmap.dev/certs/compare-cisa-vs-crisc.html), CISM (https://certmap.dev/certs/compare-cisa-vs-cism.html)
 - Preparation:
   - CISA Exam Content Outline (ISACA, official, free): https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline
@@ -3844,6 +3895,7 @@ Information security management certification focused on governance and program 
 - DoD 8140: approved
 - Official page: https://www.isaca.org/credentialing/cism
 - cert/map page: https://certmap.dev/certs/cism.html
+- Study plan: https://certmap.dev/certs/plan-cism.html
 - Compared with: CISSP (https://certmap.dev/certs/compare-cism-vs-cissp.html), CRISC (https://certmap.dev/certs/compare-cism-vs-crisc.html), CISA (https://certmap.dev/certs/compare-cisa-vs-cism.html)
 - Preparation:
   - CISM Exam Content Outline (ISACA, official, free): https://www.isaca.org/credentialing/cism/cism-exam-content-outline
@@ -3864,6 +3916,7 @@ Enterprise risk management certification for risk and control professionals.
 - Renewal: every 3 years
 - Official page: https://www.isaca.org/credentialing/crisc
 - cert/map page: https://certmap.dev/certs/crisc.html
+- Study plan: https://certmap.dev/certs/plan-crisc.html
 - Compared with: CISA (https://certmap.dev/certs/compare-cisa-vs-crisc.html), CISM (https://certmap.dev/certs/compare-cism-vs-crisc.html), CGRC (https://certmap.dev/certs/compare-cgrc-vs-crisc.html), CGEIT (https://certmap.dev/certs/compare-cgeit-vs-crisc.html)
 - Preparation:
   - CRISC Exam Content Outline (ISACA, official, free): https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline
@@ -4115,6 +4168,7 @@ Two-phase digital forensics certification: a peer review of four practical probl
 - Renewal: every 3 years
 - Official page: https://www.iacis.com/certification/cfce/
 - cert/map page: https://certmap.dev/certs/cfce.html
+- Study plan: https://certmap.dev/certs/plan-cfce.html
 - Preparation:
   - Certified Forensic Computer Examiner (CFCE) (IACIS, official, free): https://www.iacis.com/certification/cfce/
   - BCFE/CFCE Core Competencies 2026 (IACIS, official, free): https://www.iacis.com/wp-content/uploads/2026/08/BCFE-CFCE-Core-Competencies-2026.pdf
@@ -4154,6 +4208,7 @@ Advanced digital forensics and incident response certification.
 - DoD 8140: approved
 - Official page: https://www.giac.org/certifications/certified-forensic-analyst-gcfa/
 - cert/map page: https://certmap.dev/certs/gcfa.html
+- Study plan: https://certmap.dev/certs/plan-gcfa.html
 - Compared with: GCFE (https://certmap.dev/certs/compare-gcfe-vs-gcfa.html), GCIH (https://certmap.dev/certs/compare-gcih-vs-gcfa.html)
 - Preparation:
   - GIAC Certified Forensic Analyst (GCFA) exam objectives (GIAC, official, free): https://www.giac.org/certifications/certified-forensic-analyst-gcfa
@@ -4316,6 +4371,7 @@ Malware reverse engineering certification.
 - Renewal: every 4 years
 - Official page: https://www.giac.org/certifications/reverse-engineering-malware-grem/
 - cert/map page: https://certmap.dev/certs/grem.html
+- Study plan: https://certmap.dev/certs/plan-grem.html
 - Preparation:
   - GIAC Reverse Engineering Malware (GREM) (GIAC, official, free): https://www.giac.org/certifications/reverse-engineering-malware-grem/
   - FOR610: Reverse-Engineering Malware (SANS Institute, official): https://www.sans.org/cyber-security-courses/reverse-engineering-malware-ai-assisted-analysis
@@ -4338,6 +4394,7 @@ Threat hunting and DFIR certification, formerly named CCD, assessed through a 48
 - Renewal: does not expire
 - Official page: https://cyberdefenders.org/certifications/certified-cyberdefender-level2/
 - cert/map page: https://certmap.dev/certs/ccdl2.html
+- Study plan: https://certmap.dev/certs/plan-ccdl2.html
 - Compared with: CDSA (https://certmap.dev/certs/compare-ccdl2-vs-cdsa.html)
 - Preparation:
   - CCDL2 Syllabus (CyberDefenders, official, free): https://cyberdefenders.org/static/files/CCDL2_Syllabus.pdf
@@ -4420,6 +4477,7 @@ Incident response and handler certification covering attacker techniques and IR 
 - DoD 8140: approved
 - Official page: https://www.giac.org/certifications/certified-incident-handler-gcih/
 - cert/map page: https://certmap.dev/certs/gcih.html
+- Study plan: https://certmap.dev/certs/plan-gcih.html
 - Compared with: GCFA (https://certmap.dev/certs/compare-gcih-vs-gcfa.html)
 - Preparation:
   - GIAC Certified Incident Handler (GCIH) exam objectives (GIAC, official, free): https://www.giac.org/certifications/certified-incident-handler-gcih
@@ -4473,6 +4531,7 @@ Advanced defensive certification with a practical assessment of up to 72 hours a
 - Renewal: does not expire
 - Official page: https://www.centri.org/certifications/blue-team-level-2
 - cert/map page: https://certmap.dev/certs/btl2.html
+- Study plan: https://certmap.dev/certs/plan-btl2.html
 - Preparation:
   - SOC Level 2 path (TryHackMe): https://tryhackme.com/path/outline/soclevel2
   - Basic Malware RE (TryHackMe, free): https://tryhackme.com/room/basicmalwarere
@@ -4522,6 +4581,7 @@ Entry-level red team certification with a six-hour practical exam covering exter
 - Renewal: does not expire
 - Official page: https://cyberwarfare.live/certifications/red-team-analyst-crta
 - cert/map page: https://certmap.dev/certs/crta.html
+- Study plan: https://certmap.dev/certs/plan-crta.html
 - Preparation:
   - Certified Red Team Analyst (CRTA) (CyberWarFare Labs, official, free): https://cyberwarfare.live/certifications/red-team-analyst-crta/
   - Attacktive Directory (TryHackMe, free): https://tryhackme.com/room/attacktivedirectory
@@ -4544,6 +4604,7 @@ Entry-level practical penetration testing certification.
 - Renewal: every 3 years
 - Official page: https://ine.com/security/certifications/ejpt-certification
 - cert/map page: https://certmap.dev/certs/ejpt.html
+- Study plan: https://certmap.dev/certs/plan-ejpt.html
 - Compared with: CEH (https://certmap.dev/certs/compare-ejpt-vs-ceh.html), PJPT (https://certmap.dev/certs/compare-ejpt-vs-pjpt.html)
 - Preparation:
   - eJPT Certification (INE, official, free): https://ine.com/security/certifications/ejpt-certification
@@ -4582,6 +4643,7 @@ Entry-level practical internal network penetration testing certification.
 - Renewal: does not expire
 - Official page: https://certifications.tcm-sec.com/pjpt/
 - cert/map page: https://certmap.dev/certs/pjpt.html
+- Study plan: https://certmap.dev/certs/plan-pjpt.html
 - Compared with: eJPT (https://certmap.dev/certs/compare-ejpt-vs-pjpt.html)
 - Preparation:
   - Practical Junior Penetration Tester (PJPT) Certification (TCM Security, official, free): https://certifications.tcm-sec.com/pjpt/
@@ -4622,6 +4684,7 @@ Practical web application security exam in which the candidate has four hours to
 - Renewal: every 5 years
 - Official page: https://portswigger.net/web-security/certification
 - cert/map page: https://certmap.dev/certs/bscp.html
+- Study plan: https://certmap.dev/certs/plan-bscp.html
 - Preparation:
   - How to prepare for the Burp Suite Certified Practitioner exam (PortSwigger, official, free): https://portswigger.net/web-security/certification/how-to-prepare
   - Hints and guidance for the Burp Suite Certified Practitioner exam (PortSwigger, official, free): https://portswigger.net/web-security/certification/exam-hints-and-guidance
@@ -4662,6 +4725,7 @@ Broad ethical hacking certification covering attack methodology.
 - DoD 8140: approved
 - Official page: https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/
 - cert/map page: https://certmap.dev/certs/ceh.html
+- Study plan: https://certmap.dev/certs/plan-ceh.html
 - Compared with: Security+ (https://certmap.dev/certs/compare-sec-plus-vs-ceh.html), PenTest+ (https://certmap.dev/certs/compare-ceh-vs-pentest-plus.html), CHFI (https://certmap.dev/certs/compare-ceh-vs-chfi.html), eJPT (https://certmap.dev/certs/compare-ejpt-vs-ceh.html), CPENT (https://certmap.dev/certs/compare-ceh-vs-cpent.html), OSCP+ (https://certmap.dev/certs/compare-ceh-vs-oscp.html)
 - Preparation:
   - CEH Exam Blueprint v5 (EC-Council, official, free): https://cert.eccouncil.org/wp-content/uploads/2024/04/CEH-Exam-Blueprint-v5.pdf
@@ -4688,6 +4752,7 @@ Four-hour practical exam on network penetration testing, taken online and on dem
 - Renewal: does not expire
 - Official page: https://pentestingexams.com/certifications/professional/certified-network-pentester
 - cert/map page: https://certmap.dev/certs/cnpen.html
+- Study plan: https://certmap.dev/certs/plan-cnpen.html
 - Preparation:
   - Certified Network Pentester (CNPen) (The SecOps Group, official, free): https://pentestingexams.com/certifications/professional/certified-network-pentester/
   - Mock Pentesting Exams (The SecOps Group, official, free): https://pentestingexams.com/mock-pentesting-exams/
@@ -4739,6 +4804,7 @@ Hands-on entry-level Active Directory red team certification.
 - Renewal: every 3 years
 - Official page: https://www.alteredsecurity.com/adlab
 - cert/map page: https://certmap.dev/certs/crtp.html
+- Study plan: https://certmap.dev/certs/plan-crtp.html
 - Preparation:
   - Blog (Altered Security, official, free): https://www.alteredsecurity.com/blogs
   - Attacking & Defending Active Directory: Beginner's Edition (CRTP) (Altered Security, official): https://www.alteredsecurity.com/crtp-bootcamp
@@ -4762,6 +4828,7 @@ Practical penetration testing exam for working penetration testers. The credenti
 - Renewal: every 3 years
 - Official page: https://ine.com/security/certifications/ecppt-certification
 - cert/map page: https://certmap.dev/certs/ecppt.html
+- Study plan: https://certmap.dev/certs/plan-ecppt.html
 - Preparation:
   - eCPPT Certification (INE, official, free): https://ine.com/security/certifications/ecppt-certification
   - Penetration Testing Professional (INE, official): https://my.ine.com/CyberSecurity/learning-paths/5e26d0ba-d258-49e0-a421-56cc06626f46/penetration-testing-professional
@@ -4814,6 +4881,7 @@ Vendor-neutral penetration testing certification with hands-on simulations.
 - DoD 8140: approved
 - Official page: https://www.comptia.org/certifications/pentest
 - cert/map page: https://certmap.dev/certs/pentest-plus.html
+- Study plan: https://certmap.dev/certs/plan-pentest-plus.html
 - Compared with: CEH (https://certmap.dev/certs/compare-ceh-vs-pentest-plus.html), CySA+ (https://certmap.dev/certs/compare-cysa-plus-vs-pentest-plus.html)
 - Preparation:
   - PenTest+ Certification V3 (CompTIA, official, free): https://www.comptia.org/en-us/certifications/pentest/
@@ -4839,6 +4907,7 @@ Practical 5-day penetration test with report deliverable.
 - Renewal: does not expire
 - Official page: https://certifications.tcm-sec.com/pnpt/
 - cert/map page: https://certmap.dev/certs/pnpt.html
+- Study plan: https://certmap.dev/certs/plan-pnpt.html
 - Preparation:
   - Practical Network Penetration Tester (PNPT) (TCM Security, official, free): https://certifications.tcm-sec.com/pnpt/
   - Practical Ethical Hacking (TCM Security, official): https://tcm-sec.com/academy/practical-ethical-hacking/
@@ -4879,6 +4948,7 @@ Fully practical penetration testing exam (CPENT AI) taken as one 24-hour session
 - Renewal: every 3 years
 - Official page: https://www.eccouncil.org/train-certify/certified-penetration-testing-professional-cpent/
 - cert/map page: https://certmap.dev/certs/cpent.html
+- Study plan: https://certmap.dev/certs/plan-cpent.html
 - Compared with: CEH (https://certmap.dev/certs/compare-ceh-vs-cpent.html)
 - Preparation:
   - CPENT v2 Exam Blueprint (EC-Council, official, free): https://cert.eccouncil.org/images/doc/CPENTv2-Exam-Blueprint.pdf
@@ -4904,6 +4974,7 @@ Hands-on penetration testing certification with 7-day exam and report.
 - Renewal: does not expire
 - Official page: https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist
 - cert/map page: https://certmap.dev/certs/cpts.html
+- Study plan: https://certmap.dev/certs/plan-cpts.html
 - Compared with: OSCP+ (https://certmap.dev/certs/compare-cpts-vs-oscp.html), CWES (https://certmap.dev/certs/compare-cbbh-vs-cpts.html), CDSA (https://certmap.dev/certs/compare-cdsa-vs-cpts.html)
 - Preparation:
   - HTB Certified Penetration Testing Specialist (Hack The Box, official, free): https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist
@@ -4929,6 +5000,7 @@ Hands-on red team operations certification covering Cobalt Strike tradecraft.
 - Renewal: does not expire
 - Official page: https://www.zeropointsecurity.co.uk/course/red-team-ops
 - cert/map page: https://certmap.dev/certs/crto.html
+- Study plan: https://certmap.dev/certs/plan-crto.html
 - Preparation:
   - Red Team Ops (Zero-Point Security, official): https://www.zeropointsecurity.co.uk/course/red-team-ops
   - Cobalt Strike User Guide (Fortra, free): https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/welcome_main.htm
@@ -4953,6 +5025,7 @@ Penetration testing methodology and exploitation certification.
 - DoD 8140: approved
 - Official page: https://www.giac.org/certifications/penetration-tester-gpen/
 - cert/map page: https://certmap.dev/certs/gpen.html
+- Study plan: https://certmap.dev/certs/plan-gpen.html
 - Preparation:
   - GIAC Penetration Tester (GPEN) exam objectives (GIAC, official, free): https://www.giac.org/certifications/penetration-tester-gpen
   - SEC560: Enterprise Penetration Testing (SANS Institute, official): https://www.sans.org/cyber-security-courses/enterprise-penetration-testing
@@ -5005,6 +5078,7 @@ Hands-on 24-hour penetration testing exam; industry-respected red team credentia
 - DoD 8140: approved
 - Official page: https://www.offsec.com/courses/pen-200/
 - cert/map page: https://certmap.dev/certs/oscp.html
+- Study plan: https://certmap.dev/certs/plan-oscp.html
 - Compared with: CPTS (https://certmap.dev/certs/compare-cpts-vs-oscp.html), OSEP (https://certmap.dev/certs/compare-oscp-vs-osep.html), OSWE (https://certmap.dev/certs/compare-oscp-vs-oswe.html), CEH (https://certmap.dev/certs/compare-ceh-vs-oscp.html)
 - Preparation:
   - OSCP+ Exam Guide (OffSec, official, free): https://help.offsec.com/hc/en-us/articles/360040165632-OSCP-Exam-Guide
@@ -5059,6 +5133,7 @@ Hands-on Active Directory red team certification.
 - Renewal: every 3 years
 - Official page: https://www.alteredsecurity.com/redteamlab
 - cert/map page: https://certmap.dev/certs/crte.html
+- Study plan: https://certmap.dev/certs/plan-crte.html
 - Preparation:
   - Blog (Altered Security, official, free): https://www.alteredsecurity.com/blogs
   - Attacking & Defending Active Directory: Advanced Edition (CRTE) (Altered Security, official): https://www.alteredsecurity.com/crte-bootcamp
@@ -5082,6 +5157,7 @@ Awarded for passing the Red Team Lead exam of the Red Team Ops II course, which 
 - Renewal: does not expire
 - Official page: https://www.zeropointsecurity.co.uk/course/red-team-ops-ii
 - cert/map page: https://certmap.dev/certs/crtl.html
+- Study plan: https://certmap.dev/certs/plan-crtl.html
 - Preparation:
   - Red Team Ops II (Zero-Point Security, official): https://www.zeropointsecurity.co.uk/course/red-team-ops-ii
   - Cobalt Strike User Guide (Fortra, free): https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/welcome_main.htm
@@ -5143,6 +5219,7 @@ Advanced evasion and bypass techniques for mature defensive environments.
 - Prerequisites: OSCP+
 - Official page: https://www.offsec.com/courses/pen-300/
 - cert/map page: https://certmap.dev/certs/osep.html
+- Study plan: https://certmap.dev/certs/plan-osep.html
 - Compared with: OSCP+ (https://certmap.dev/certs/compare-oscp-vs-osep.html), OSWE (https://certmap.dev/certs/compare-osep-vs-oswe.html)
 - Preparation:
   - OSEP Exam Guide (OffSec, official, free): https://help.offsec.com/hc/en-us/articles/360050293792-OSEP-Exam-Guide
@@ -5170,6 +5247,7 @@ Advanced exploitation and exploit development certification.
 - Renewal: every 4 years
 - Official page: https://www.giac.org/certifications/exploit-researcher-advanced-penetration-tester-gxpn/
 - cert/map page: https://certmap.dev/certs/gxpn.html
+- Study plan: https://certmap.dev/certs/plan-gxpn.html
 - Preparation:
   - GIAC Exploit Researcher and Advanced Penetration Tester (GXPN) (GIAC, official, free): https://www.giac.org/certifications/exploit-researcher-advanced-penetration-tester-gxpn/
   - Best Practices for GIAC Practitioner Exam Preparation (GIAC, official, free): https://www.giac.org/how-to-prepare/practitioner
@@ -5221,6 +5299,7 @@ Windows exploit development certification covering buffer overflows and shellcod
 - Renewal: does not expire
 - Official page: https://www.offsec.com/courses/exp-301/
 - cert/map page: https://certmap.dev/certs/osed.html
+- Study plan: https://certmap.dev/certs/plan-osed.html
 - Preparation:
   - EXP-301 OSED Exam Guide (OffSec, official, free): https://help.offsec.com/hc/en-us/articles/360052977212-EXP-301-Windows-User-Mode-Exploit-Development-OSED-Exam-Guide
   - EXP-301 Syllabus (OffSec, official, free): https://www.offsec.com/documentation/EXP301-syllabus.pdf

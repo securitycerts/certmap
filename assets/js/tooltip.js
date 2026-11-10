@@ -1,4 +1,4 @@
-import { fmtPrice } from "./format.js?v=84b0b75e";
+import { fmtPrice } from "./format.js?v=3e3f6207";
 
 const DELAY = 450;
 const HIDE_DELAY = 80;
