@@ -458,10 +458,16 @@ input, select { font: inherit; }
 .cart-row .price { color: var(--text-dim); font-variant-numeric: tabular-nums; }
 .cart-row .rm { background: transparent; border: 0; color: var(--muted); font-size: 18px; line-height: 1; padding: 0 4px; }
 .cart-row .rm:hover { color: var(--danger); }
-.cart footer { border-top: 1px solid var(--border); padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.cart footer { border-top: 1px solid var(--border); padding: 12px 16px 10px; display: flex; flex-direction: column; gap: 10px; }
 .cart-sum { font-size: 12px; color: var(--muted); }
 .cart-sum strong { font-size: 18px; margin-left: 8px; color: var(--text); font-variant-numeric: tabular-nums; }
-.cart-actions { display: flex; gap: 6px; }
+.cart-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.cart-actions .btn-ghost { padding: 8px 12px; font-size: 12.5px; text-align: center; }
+.cart-more { display: flex; justify-content: space-between; gap: 12px; }
+.btn-link { background: none; border: 0; padding: 2px 0; font-size: 11.5px; color: var(--muted); }
+.btn-link:hover { color: var(--text); text-decoration: underline; }
+.btn-link.danger:hover { color: var(--danger); }
+.cart.is-empty .cart-name, .cart.is-empty footer { display: none; }
 
 .pagefoot {
   border-top: 1px solid var(--border); padding: 14px 20px; color: var(--muted);
@@ -758,7 +764,6 @@ a.prereq-chip { color: var(--text); }
   border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 5px 8px; font-size: 12px; outline: 0;
 }
 .cart-name input:focus { border-color: var(--accent); }
-.cart-actions { flex-wrap: wrap; }
 h1.brand-tag { font-weight: 400; margin-bottom: 0; }
 .noscript { margin: 0; padding: 16px 20px; color: var(--text-dim); }
 
@@ -848,4 +853,20 @@ div.gnode-note { border-style: solid; font-style: italic; overflow-wrap: anywher
 @media (max-width: 900px) {
   .sidebar-rail { display: none !important; }
   .rm-steps { grid-template-columns: 1fr; }
+}
+
+/* ---------- THEME SWITCH ---------- */
+/* View transition: the old theme stays put and the new one is revealed as a
+   circle growing from the toggle button (position set from app.js). */
+.theme-switching::view-transition-old(root),
+.theme-switching::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+.theme-switching::view-transition-new(root) { animation: theme-reveal .6s cubic-bezier(.4, 0, .2, 1) both; }
+@keyframes theme-reveal {
+  from { clip-path: circle(0 at var(--theme-x) var(--theme-y)); }
+  to { clip-path: circle(var(--theme-r) at var(--theme-x) var(--theme-y)); }
+}
+/* Fallback: cross-fade the colours for the duration of the switch only, so
+   ordinary hover transitions keep their own timing the rest of the time. */
+.theme-fade, .theme-fade *, .theme-fade *::before, .theme-fade *::after {
+  transition: background-color .4s ease, color .4s ease, border-color .4s ease, fill .4s ease, stroke .4s ease, box-shadow .4s ease !important;
 }

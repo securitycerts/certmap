@@ -1,6 +1,6 @@
 # cert/map: full certification list
 
-> 307 cybersecurity certifications from 64 vendors, grouped by domain and ordered from beginner to expert. Prices are exam list prices in USD. Generated from data/certs.csv; last price check 2026-11-10.
+> 310 cybersecurity certifications from 64 vendors, grouped by domain and ordered from beginner to expert. Prices are exam list prices in USD. Generated from data/certs.csv; last price check 2026-11-10.
 
 Source: https://certmap.dev/
 Dataset: https://certmap.dev/data/certs.csv and https://certmap.dev/data/certs.json
@@ -3189,19 +3189,6 @@ Enterprise risk management certification for risk and control professionals.
 
 ## Forensics
 
-### CCO: Cellebrite Certified Operator
-
-Mobile forensics operator certification using Cellebrite UFED.
-
-- Vendor: Cellebrite
-- Level: beginner
-- Exam price: $500
-- Exam length: 180 minutes
-- Exam format: written or multiple choice
-- Renewal: every 2 years
-- Official page: https://cellebrite.com/en/training/
-- cert/map page: https://certmap.dev/certs/ccfp.html
-
 ### DAF: Chainalysis Digital Asset Fundamentals
 
 Core blockchain concepts, digital asset mechanics and the UTXO and account-based models. Required before every other Chainalysis certification.
@@ -3253,6 +3240,18 @@ Investigator-track credential from Chainalysis Academy on tracing cryptocurrency
 - Restricted to: Chainalysis licence holders
 - Official page: https://www.chainalysis.com/certified-investigator/
 - cert/map page: https://certmap.dev/certs/chainalysis-cci.html
+
+### CCO: Cellebrite Certified Operator for Inseyets
+
+Mobile device unlocking, extraction, decoding and data review with Cellebrite Inseyets. Earned by passing a knowledge test and a practical skills assessment (80% minimum) at the end of the 2-day course; renewed every two years through a recertification exam.
+
+- Vendor: Cellebrite
+- Level: intermediate
+- Exam price: Not published (Price on request (no public price; registration via Cellebrite Community portal); exam included with the 2-day course, usually taken as a 5-day CCO + CCPA bundle)
+- Exam format: hands-on, performance-based
+- Renewal: every 2 years
+- Official page: https://cellebrite.com/training/cellebrite-training-inseyets/
+- cert/map page: https://certmap.dev/certs/ccfp.html
 
 ### CEI: Certified Expert Investigator
 
@@ -3406,6 +3405,18 @@ Advanced investigator credential covering DeFi protocols, complex typologies, pr
 - Official page: https://www.chainalysis.com/certified-advanced-investigator/
 - cert/map page: https://certmap.dev/certs/chainalysis-ccai.html
 
+### CCPA: Cellebrite Certified Physical Analyst for Inseyets
+
+Analysis of iOS and Android extractions with Inseyets Physical Analyzer, including SQLite database review, deleted data recovery and reporting. Earned by passing a knowledge test and a practical skills assessment (80% minimum); renewed every two years through a recertification exam.
+
+- Vendor: Cellebrite
+- Level: advanced
+- Exam price: Not published (Price on request (no public price); exam included with the 3-day course, usually taken as a 5-day CCO + CCPA bundle)
+- Exam format: hands-on, performance-based
+- Renewal: every 2 years
+- Official page: https://cellebrite.com/training/cellebrite-training-inseyets/
+- cert/map page: https://certmap.dev/certs/ccpa.html
+
 ### CFCE: Certified Forensic Computer Examiner
 
 Two-phase digital forensics certification: a peer review of four practical problems, then a hard drive practical and a 100-question knowledge test. External candidates must show 72 hours of relevant training.
@@ -3543,6 +3554,31 @@ Cryptocurrency seizure and custody certification covering law-enforcement workfl
 - Restricted to: Law enforcement only
 - Official page: https://www.trmlabs.com/training-and-certifications/crypto-seizure-specialist-certification
 - cert/map page: https://certmap.dev/certs/trm-css.html
+
+### CCME: Cellebrite Certified Mobile Examiner for Inseyets
+
+Capstone certification of the Cellebrite mobile forensics track, requiring active CCO and CCPA certifications and completion of the Cellebrite Advanced Smartphone Analysis (CASA) course. Candidates must score 80% or above on both a time-limited practical skills assessment of two device examinations and a proctored 75-question knowledge exam, within 45 days of enrollment.
+
+- Vendor: Cellebrite
+- Level: expert
+- Exam price: Not published (Price on request (page says to log in to MyCellebrite for all costs); requires prior CCO, CCPA and the CASA course)
+- Exam format: hands-on, performance-based
+- Renewal: every 2 years
+- Prerequisites: CCO, CCPA
+- Official page: https://cellebrite.com/training/cellebrite-certified-mobile-examiner-ccme/
+- cert/map page: https://certmap.dev/certs/ccme.html
+
+### CERT-F: Certified Evidence Repair Technician - Forensic
+
+Mobile device repair for forensic extraction, covering disassembly, micro-soldering and replacement of ports, screens and buttons. The course page states the credential is earned by passing a practical competency exam at the end of the 5-day in-person course.
+
+- Vendor: Cellebrite
+- Level: expert
+- Exam price: Not published (Price on request (no public price); exam taken at the end of the 5-day in-person course; optional training kit costs extra)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://cellebrite.com/training/cellebrite-evidence-repair-technician-forensic/
+- cert/map page: https://certmap.dev/certs/cert-f.html
 
 ### Elite Investigator: Chainalysis Certified Elite Investigator
 

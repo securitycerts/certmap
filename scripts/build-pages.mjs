@@ -714,4 +714,5 @@ const version = stampAssets();
 writeFileSync(join(ROOT, "sitemap.xml"), sitemap());
 refreshCounts("index.html");
 refreshCounts("llms.txt");
+refreshCounts("README.md");
 console.log(`OK: ${certs.length} certification, ${vendors.size} vendor, ${DOMAINS.length} domain and ${LISTS.length} list pages, about/, llms-full.txt, certs.json, sitemap.xml. Assets v=${version}.`);

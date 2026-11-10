@@ -2,7 +2,7 @@
 
 **Live site: [certmap.dev](https://certmap.dev/)** · [All certifications as a list](https://certmap.dev/certs/) · [Dataset (CSV)](data/certs.csv)
 
-An interactive security certification roadmap: 272 cybersecurity certifications from 62 vendors, mapped by domain and seniority, with current exam prices, prerequisites and renewal cycles. Build a certification path and share it with a link.
+An interactive security certification roadmap: 310 cybersecurity certifications from 64 vendors, mapped by domain and seniority, with current exam prices, prerequisites and renewal cycles. Build a certification path and share it with a link.
 
 <img width="1696" height="310" alt="certmap" src="https://github.com/user-attachments/assets/148d2bb1-9007-4851-bb08-66f21cd8c453" />
 

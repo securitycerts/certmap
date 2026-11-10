@@ -1,14 +1,14 @@
-import { loadData } from "./data.js?v=7464e860";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js?v=7464e860";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=7464e860";
-import { el } from "./dom.js?v=7464e860";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=7464e860";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=7464e860";
-import { toast, copyText } from "./toast.js?v=7464e860";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro } from "./motion.js?v=7464e860";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=7464e860";
-import { mountGraph, unmountGraph } from "./graph.js?v=7464e860";
-import { downloadRoadmapImage } from "./share-image.js?v=7464e860";
+import { loadData } from "./data.js?v=3c4b6857";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js?v=3c4b6857";
+import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=3c4b6857";
+import { el } from "./dom.js?v=3c4b6857";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=3c4b6857";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=3c4b6857";
+import { toast, copyText } from "./toast.js?v=3c4b6857";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=3c4b6857";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=3c4b6857";
+import { mountGraph, unmountGraph } from "./graph.js?v=3c4b6857";
+import { downloadRoadmapImage } from "./share-image.js?v=3c4b6857";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -241,6 +241,9 @@ function paintCart() {
   tweenNumber($("#cart-total"), sum, paint);
   const empty = state.cart.size === 0;
   for (const id of ["#cart-md", "#cart-share", "#cart-view", "#cart-csv", "#cart-clear"]) $(id).disabled = empty;
+  // With nothing selected the panel shows only the empty message: a row of
+  // greyed-out buttons says nothing useful.
+  $("#cart").classList.toggle("is-empty", empty);
 }
 
 let flowIds = new Set();
@@ -577,10 +580,34 @@ function setTheme(theme) {
   $('meta[name="theme-color"]')?.setAttribute("content", THEME_COLOR[theme]);
 }
 const currentTheme = () => document.documentElement.dataset.theme;
+// Switching theme repaints every colour on the page at once, which reads as a
+// flash. Where the browser supports view transitions the new theme grows out of
+// the toggle button as a circle; elsewhere the colours cross-fade. With reduced
+// motion the switch stays instant.
 function toggleTheme() {
-  setTheme(currentTheme() === "dark" ? "light" : "dark");
+  const root = document.documentElement;
+  const apply = () => { setTheme(currentTheme() === "dark" ? "light" : "dark"); scheduleRender(); };
   spin($("#theme-toggle svg"));
-  scheduleRender();
+  if (!motionOK()) { apply(); return; }
+
+  if (document.startViewTransition && !document.hidden) {
+    const r = $("#theme-toggle").getBoundingClientRect();
+    const x = r.left + r.width / 2, y = r.top + r.height / 2;
+    root.style.setProperty("--theme-x", x + "px");
+    root.style.setProperty("--theme-y", y + "px");
+    root.style.setProperty("--theme-r", Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y)) + "px");
+    root.classList.add("theme-switching");
+    // The browser may skip the animation (tab in the background, another
+    // transition running); the theme is applied either way.
+    const transition = document.startViewTransition(apply);
+    transition.ready.catch(() => {});
+    transition.finished.catch(() => {}).then(() => root.classList.remove("theme-switching"));
+    return;
+  }
+
+  root.classList.add("theme-fade");
+  apply();
+  setTimeout(() => root.classList.remove("theme-fade"), 450);
 }
 
 function setCartOpen(open) {
