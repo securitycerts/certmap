@@ -3,8 +3,8 @@
 // roadmap on a static host (the path lives in the URL fragment, which preview
 // crawlers never see), so this is the image people can share by hand.
 
-import { fmtPrice } from "./format.js?v=350248d1";
-import { pathSummary } from "./paths.js?v=350248d1";
+import { fmtPrice } from "./format.js?v=7464e860";
+import { pathSummary } from "./paths.js?v=7464e860";
 
 const W = 1200, H = 630;
 const LEVEL_COLOR = { beginner: "#4f7a63", intermediate: "#5b6e96", advanced: "#846a99", expert: "#9a6e6e" };

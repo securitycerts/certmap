@@ -823,7 +823,6 @@ h1.brand-tag { font-weight: 400; margin-bottom: 0; }
 .rm-graph .react-flow__node-cert { padding: 0; border: 0; background: none; width: auto; font-size: inherit; color: inherit; text-align: left; }
 .rm-graph .gedge-next .react-flow__edge-path { stroke: var(--border-strong); stroke-dasharray: 6 5; }
 .rm-graph .gedge-req .react-flow__edge-path { stroke-width: 2; }
-.rm-graph .react-flow__node-cert { cursor: pointer; }
 .gnode:hover { border-color: var(--accent); }
 .rm-graph .react-flow__attribution a { color: var(--muted); }
 .gnode {
@@ -838,7 +837,8 @@ h1.brand-tag { font-weight: 400; margin-bottom: 0; }
 .react-flow__node.selected .gnode { border-color: var(--accent); }
 .gnode-top { display: flex; align-items: center; justify-content: space-between; }
 .gnode-step { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
-.gnode-open { background: none; border: 0; padding: 0 2px; color: var(--muted); font-size: 13px; line-height: 1; }
+.gnode-open { background: var(--panel); border: 1px solid var(--border); border-radius: 5px; width: 22px; height: 20px; padding: 0; color: var(--text-dim); font-size: 12px; line-height: 1; }
+.gnode-open:hover { border-color: var(--accent); }
 .gnode-open:hover { color: var(--accent); }
 .gnode-acro { font: 600 15px var(--mono); color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .gnode-meta { font-size: 11px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

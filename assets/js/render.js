@@ -1,10 +1,10 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
   fmtPrice, fmtAgo, isStale, slug,
-} from "./format.js?v=350248d1";
-import { el, svg } from "./dom.js?v=350248d1";
-import { makeLogo } from "./logo.js?v=350248d1";
-import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=350248d1";
+} from "./format.js?v=7464e860";
+import { el, svg } from "./dom.js?v=7464e860";
+import { makeLogo } from "./logo.js?v=7464e860";
+import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=7464e860";
 
 export { slug, fmtPrice };
 
@@ -161,7 +161,7 @@ export function renderRoadmap(root, selected, state, { name, same, view, notes }
     const hint = el("div", { class: "rm-hint" },
       key("rm-key-req", "Prerequisite"),
       key("rm-key-next", "Suggested order"),
-      el("span", { text: "Click a step to open it. Drag the background to move, use the buttons to zoom." + (same ? " Notes are saved as you type and travel with the link." : "") }),
+      el("span", { text: "Open a step with its ↗ button or a double click. Drag the background to move, use the buttons to zoom." + (same ? " Notes are saved as you type and travel with the link." : "") }),
     );
     root.replaceChildren(head, graphHost, hint);
     return { ordered, graphHost };
