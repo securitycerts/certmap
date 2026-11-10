@@ -69,7 +69,7 @@ function validateExtras(ids) {
   if (res) {
     const header = res[0].map(h => h.trim());
     const col = Object.fromEntries(header.map((h, i) => [h, i]));
-    const types = ["guide", "course", "lab", "practice", "book"];
+    const types = ["guide", "course", "lab", "practice", "repo", "reading", "book"];
     const seen = new Set();
     res.slice(1).forEach((r, n) => {
       const get = k => (r[col[k]] || "").trim();

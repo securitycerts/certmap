@@ -85,7 +85,7 @@ export function tableFromCSV(text) {
   return rows.map(r => Object.fromEntries(header.map((h, i) => [h, (r[i] || "").trim()])));
 }
 
-export const RESOURCE_TYPES = ["guide", "course", "lab", "practice", "book"];
+export const RESOURCE_TYPES = ["guide", "course", "lab", "practice", "repo", "reading", "book"];
 
 // Preparation resources by cert id. Sponsored ones are kept apart from the
 // rest so they can never be mistaken for an editorial pick.
@@ -93,7 +93,7 @@ export function groupResources(rows, byId) {
   const out = new Map();
   for (const r of rows) {
     if (!byId.has(r.cert_id) || !/^https:\/\//.test(r.url) || !RESOURCE_TYPES.includes(r.type)) continue;
-    const item = { type: r.type, title: r.title, provider: r.provider, url: r.url,
+    const item = { type: r.type, title: r.title, provider: r.provider, url: r.url, order: Number(r.order) || 0,
       free: r.free === "true", official: r.official === "true", sponsored: r.sponsored === "true" };
     if (!out.has(r.cert_id)) out.set(r.cert_id, []);
     out.get(r.cert_id).push(item);
@@ -101,6 +101,26 @@ export function groupResources(rows, byId) {
   const order = x => (x.official ? 0 : 1) * 10 + RESOURCE_TYPES.indexOf(x.type);
   for (const list of out.values()) list.sort((a, b) => order(a) - order(b));
   return out;
+}
+
+// A study plan is the same resources in the order to use them: read what the
+// exam asks for, learn the material, practise by hand, then test yourself.
+// Inside a phase an explicit \`order\` column wins; otherwise the vendor's own
+// material comes first and free material before paid.
+export const PLAN_PHASES = [
+  { id: "know", types: ["guide"] },
+  { id: "learn", types: ["course", "reading", "book"] },
+  { id: "practice", types: ["lab", "repo"] },
+  { id: "test", types: ["practice"] },
+];
+export function studyPlan(list) {
+  const rank = r => [r.order || 999, r.official ? 0 : 1, r.free ? 0 : 1];
+  const cmp = (a, b) => { const x = rank(a), y = rank(b); return x[0] - y[0] || x[1] - y[1] || x[2] - y[2]; };
+  let step = 0;
+  return PLAN_PHASES
+    .map(p => ({ id: p.id, items: list.filter(r => !r.sponsored && p.types.includes(r.type)).sort(cmp) }))
+    .filter(p => p.items.length)
+    .map(p => ({ ...p, start: step + 1, items: p.items.map(r => ({ ...r, step: ++step })) }));
 }
 
 // Comparison pairs by cert id: for each cert, the certs it is compared with

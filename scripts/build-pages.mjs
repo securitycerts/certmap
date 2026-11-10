@@ -32,7 +32,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { createHash } from "node:crypto";
 import { existsSync } from "node:fs";
-import { parseCSV, rowsToCerts, DOMAINS, tableFromCSV, groupResources, groupComparisons, compareFile } from "../assets/js/data.js";
+import { parseCSV, rowsToCerts, DOMAINS, tableFromCSV, groupResources, groupComparisons, compareFile, studyPlan } from "../assets/js/data.js";
 import { ROLE_PATHS, orderByPrerequisite, pathTotals } from "../assets/js/paths.js";
 import { LANGS, LANG_ORDER } from "./compare-i18n.mjs";
 
@@ -200,12 +200,16 @@ ${certTable(items, { showDomain: true })}
 function prepHtml(c, T = LANGS.en) {
   const list = RESOURCES.get(c.id) || [];
   if (!list.length) return "";
-  const row = r => `      <li><a href="${esc(r.url)}" rel="${r.sponsored ? "sponsored " : ""}noopener noreferrer">${esc(r.title)}</a> <span>${[esc(r.provider), T.resource[r.type], r.official ? T.official : "", r.free ? T.freeTag : ""].filter(Boolean).join(" · ")}</span></li>`;
+  const meta = r => [esc(r.provider), T.resource[r.type], r.official ? T.official : "", r.free ? T.freeTag : ""].filter(Boolean).join(" · ");
+  const link = r => `<a href="${esc(r.url)}" rel="${r.sponsored ? "sponsored " : ""}noopener noreferrer">${esc(r.title)}</a>`;
   const sponsored = list.filter(r => r.sponsored);
+  const phaseIndex = { know: 0, learn: 1, practice: 2, test: 3 };
   return `  <h2>${esc(T.hPrepare(T.iso(c.acronym)))}</h2>
-${sponsored.length ? `  <div class="prep-sponsored"><small>${T.sponsored}</small>\n    <ul class="prep">\n${sponsored.map(row).join("\n")}\n    </ul>\n  </div>\n` : ""}  <ul class="prep">
-${list.filter(r => !r.sponsored).map(row).join("\n")}
-  </ul>
+  <p class="fine">${esc(T.planNote)}</p>
+${sponsored.length ? `  <div class="prep-sponsored"><small>${T.sponsored}</small>\n    <ul class="prep">\n${sponsored.map(r => `      <li>${link(r)} <span>${meta(r)}</span></li>`).join("\n")}\n    </ul>\n  </div>\n` : ""}${studyPlan(list).map(phase => `  <h3 class="phase">${T.phases[phaseIndex[phase.id]]}</h3>
+  <ol class="prep" start="${phase.start}">
+${phase.items.map(r => `    <li value="${r.step}">${link(r)} <span>${meta(r)}</span></li>`).join("\n")}
+  </ol>`).join("\n")}
   <p class="fine">${esc(T.resNote)}</p>
 `;
 }

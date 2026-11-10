@@ -1,10 +1,11 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
   fmtPrice, fmtAgo, isStale, slug,
-} from "./format.js?v=7fca6d4a";
-import { el, svg } from "./dom.js?v=7fca6d4a";
-import { makeLogo } from "./logo.js?v=7fca6d4a";
-import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=7fca6d4a";
+} from "./format.js?v=84b0b75e";
+import { el, svg } from "./dom.js?v=84b0b75e";
+import { makeLogo } from "./logo.js?v=84b0b75e";
+import { studyPlan } from "./data.js?v=84b0b75e";
+import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=84b0b75e";
 
 export { slug, fmtPrice };
 
@@ -364,15 +365,21 @@ export function renderDrawer(root, c, byId) {
 
   const prep = _dataRef?.resources.get(c.id) || [];
   if (prep.length) {
-    const row = r => el("li", { class: r.sponsored ? "sponsored" : null },
-      el("a", { href: r.url, target: "_blank", rel: (r.sponsored ? "sponsored " : "") + "noopener noreferrer", text: r.title }),
-      el("span", { class: "prep-meta", text: [r.provider, RESOURCE_LABEL[r.type], r.official ? "official" : "", r.free ? "free" : ""].filter(Boolean).join(" · ") }),
-    );
+    const meta = r => [r.provider, RESOURCE_LABEL[r.type], r.official ? "official" : "", r.free ? "free" : ""].filter(Boolean).join(" · ");
+    const link = r => el("a", { href: r.url, target: "_blank", rel: (r.sponsored ? "sponsored " : "") + "noopener noreferrer", text: r.title });
     const sponsored = prep.filter(r => r.sponsored);
     children.push(el("div", { class: "prep" },
-      el("h3", { text: "How to prepare" }),
-      sponsored.length ? el("div", { class: "prep-sponsored" }, el("span", { class: "prep-flag", text: "Sponsored" }), el("ul", {}, sponsored.map(row))) : null,
-      el("ul", {}, prep.filter(r => !r.sponsored).map(row)),
+      el("h3", { text: "Study plan" }),
+      el("p", { class: "prep-note", text: `In order. Budget about ${LEVEL_HOURS[c.level]} hours for a certification at this level.` }),
+      sponsored.length ? el("div", { class: "prep-sponsored" }, el("span", { class: "prep-flag", text: "Sponsored" }),
+        el("ul", {}, sponsored.map(r => el("li", {}, link(r), el("span", { class: "prep-meta", text: meta(r) }))))) : null,
+      studyPlan(prep).map(phase => [
+        el("p", { class: "prep-phase", text: PHASE_LABEL[phase.id] }),
+        el("ol", { start: String(phase.start) }, phase.items.map(r => el("li", {},
+          el("span", { class: "prep-step", "aria-hidden": "true", text: String(r.step) }),
+          el("span", { class: "prep-body" }, link(r), el("span", { class: "prep-meta", text: meta(r) })),
+        ))),
+      ]),
     ));
   }
 
@@ -405,7 +412,8 @@ let _stateRef = null;
 export function bindState(s) { _stateRef = s; }
 let _dataRef = null;
 export function bindData(d) { _dataRef = d; }
-const RESOURCE_LABEL = { guide: "exam guide", course: "course", lab: "labs", practice: "practice questions", book: "book" };
+const PHASE_LABEL = { know: "Know the exam", learn: "Learn the material", practice: "Practice hands-on", test: "Test yourself" };
+const RESOURCE_LABEL = { guide: "exam guide", course: "course", lab: "lab", practice: "practice questions", repo: "open source", reading: "reading", book: "book" };
 function state_has_in_cart(c) { return _stateRef?.cart.has(c.id) || false; }
 
 // Paints the rows and the count, and returns the total so the caller can
