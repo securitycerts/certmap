@@ -1,6 +1,6 @@
 # cert/map: full certification list
 
-> 310 cybersecurity certifications from 64 vendors, grouped by domain and ordered from beginner to expert. Prices are exam list prices in USD. Generated from data/certs.csv; last price check 2026-11-10.
+> 319 cybersecurity certifications from 69 vendors, grouped by domain and ordered from beginner to expert. Prices are exam list prices in USD. Generated from data/certs.csv; last price check 2026-11-10.
 
 Source: https://certmap.dev/
 Dataset: https://certmap.dev/data/certs.csv and https://certmap.dev/data/certs.json
@@ -2125,6 +2125,31 @@ Cyber threat intelligence analysis certification.
 
 ## OSINT
 
+### Basel OSINT: Basel LEARN Open-Source Intelligence (OSINT)
+
+Free self-paced OSINT course for financial and corruption investigators built around a simulated illegal fishing case that ends with an OSINT report. It awards a certificate of completion from the International Centre for Asset Recovery rather than an examined certification, and is widely used in the asset recovery and OSINT community.
+
+- Vendor: Basel Institute
+- Level: beginner
+- Exam price: Free (Free self-paced eLearning course)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: does not expire
+- Official page: https://learn.baselgovernance.org/course/view.php?id=79
+- cert/map page: https://certmap.dev/certs/basel-osint.html
+
+### CO3: Certified Offensive OSINT Operator
+
+Offensive OSINT and reconnaissance certification for red teamers covering attack surface mapping, people and company profiling, OPSEC and automated pipelines. Earned by submitting at least 15 flags in a 30-day practical challenge lab.
+
+- Vendor: CyberWarFare Labs
+- Level: beginner
+- Exam price: $29 (Individual plan with 30 days of challenge lab access; 60 or 90 days cost $9 or $15 more; a $49 figure also appears on the page; a $49 figure also appears on the page)
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://cyberwarfare.live/certifications/offensive-osint-operator-co3
+- cert/map page: https://certmap.dev/certs/co3.html
+
 ### MOIS: MCSI Certified OSINT Expert
 
 Hands-on OSINT investigation certification.
@@ -2139,6 +2164,18 @@ Hands-on OSINT investigation certification.
 - Official page: https://www.mosse-institute.com/certifications/mois-certified-osint-expert.html
 - cert/map page: https://certmap.dev/certs/mosint.html
 
+### OCP1: Social Links OSINT Certification Program Level 1
+
+Vendor program on OSINT investigation with Social Links products in five modules (social media, messengers, niche platforms, advanced features, corporate sources), each followed by a test. The certificate is issued after all tests are passed and is valid for three years.
+
+- Vendor: Social Links
+- Level: beginner
+- Exam price: Not published (Price not published; enrolment through Social Links (customer success manager or osint@sociallinks.io))
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://social-links.learnworlds.com/course/ocp1
+- cert/map page: https://certmap.dev/certs/sl-ocp1.html
+
 ### PORP: Practical OSINT Research Professional
 
 Practical OSINT Research Professional (PORP), formerly Practical Junior OSINT Researcher. Hands-on OSINT investigation certification with a practical exam and report.
@@ -2152,6 +2189,33 @@ Practical OSINT Research Professional (PORP), formerly Practical Junior OSINT Re
 - Renewal: does not expire
 - Official page: https://certifications.tcm-sec.com/pjor/
 - cert/map page: https://certmap.dev/certs/pjor.html
+
+### C|OSINT: Certified in Open Source Intelligence
+
+Board certification in open-source intelligence for investigators, earned by passing the course quizzes and a proctored final exam. Eligibility requires a degree or relevant paid professional experience.
+
+- Vendor: McAfee Institute
+- Level: intermediate
+- Exam price: $2,497 (List price for the program (training, exam license and certification); needs-based scholarship rate $1249 for self-paying students; exam-only option $450)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.mcafeeinstitute.edu/products/certified-osint
+- cert/map page: https://certmap.dev/certs/cosint-mcafee.html
+
+### C|OSINT|P: Certified OSINT Professional
+
+Practical OSINT certification assessed through a 72-hour real-world investigation scenario followed by a written report of methods, findings and conclusions. The page states no expiry period.
+
+- Vendor: zSecurity
+- Level: intermediate
+- Exam price: $500 (List price $499.99 for the exam (promotional price $399.99 seen); bundle with the OSINT course lists at $549.99)
+- Price checked: 2026-11-10
+- Exam length: 3 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://zsecurity.org/?p=206962
+- cert/map page: https://certmap.dev/certs/cosintp.html
 
 ### CSMIE: Certified Social Media Intelligence Expert
 
@@ -2179,6 +2243,61 @@ Open source intelligence collection and analysis certification.
 - Renewal: every 4 years
 - Official page: https://www.giac.org/certifications/open-source-intelligence-gosi/
 - cert/map page: https://certmap.dev/certs/gosi.html
+
+### OSC: Open-Source Certified
+
+Vendor-neutral OSINT practitioner certification from the OSMOSIS Association with a proctored exam of 100 multiple-choice and true/false questions. Applicants document 75 hours of related experience in the previous year and sign an ethics statement; renewal needs 45 CPEs in three years.
+
+- Vendor: OSMOSIS
+- Level: intermediate
+- Exam price: $395 (Virtual proctored exam; an older OSMOSIS FAQ quotes $200 and a $150 annual maintenance fee, not confirmed on the current pages)
+- Price checked: 2026-11-10
+- Exam length: 90 minutes
+- Exam format: written or multiple choice
+- Renewal: every 3 years
+- Official page: https://osmosisinstitute.org/osc/
+- cert/map page: https://certmap.dev/certs/osc-osmosis.html
+
+### SMIA: Certified Social Media Intelligence Analyst
+
+Certification in social media intelligence and online investigations with an OSINT foundation module, assessed by a proctored board exam. Eligibility requires a degree or diploma plus relevant paid professional experience.
+
+- Vendor: McAfee Institute
+- Level: intermediate
+- Exam price: $1,397 (List price for the program (training, exam license and certification); needs-based scholarship rate $699 for self-paying students; exam-only option $450)
+- Price checked: 2026-11-10
+- Exam format: written or multiple choice
+- Renewal: every 2 years
+- Official page: https://www.mcafeeinstitute.edu/products/certified-social-media-intelligence-analyst-smia
+- cert/map page: https://certmap.dev/certs/smia.html
+
+### GSOA: GIAC Strategic OSINT Analyst
+
+Advanced OSINT certification covering collection at scale, analysis and media verification. Proctored exam of 82 questions in 3 hours that includes CyberLive hands-on items, passing score 66%.
+
+- Vendor: GIAC
+- Level: advanced
+- Exam price: $999 (Exam attempt only; SANS SEC587 is the affiliated course (optional))
+- Price checked: 2026-11-10
+- Exam length: 180 minutes
+- Exam format: hands-on, performance-based
+- Renewal: every 4 years
+- Official page: https://www.giac.org/certifications/strategic-osint-analyst-gsoa
+- cert/map page: https://certmap.dev/certs/gsoa.html
+
+### OSIP: Open Source Intelligence Professional
+
+Practical certification in which the candidate receives a simulated client request and has 10 days to deliver an investigation case file, graded pass or fail against a professional standard. It does not expire.
+
+- Vendor: IntelTechniques
+- Level: advanced
+- Exam price: $300 (One-time assessment fee; requires an active IntelTechniques online video training membership ($699 per year) or a live course within one year; training plus certification bundle $999)
+- Price checked: 2026-11-10
+- Exam length: 10 days
+- Exam format: hands-on, performance-based
+- Renewal: does not expire
+- Official page: https://inteltechniques.com/training-osip.html
+- cert/map page: https://certmap.dev/certs/osip.html
 
 ## Cloud/SysOps
 

@@ -501,6 +501,31 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://certmap.dev/certs/vendor-inteltechniques.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/vendor-osmosis.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/vendor-zsecurity.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/vendor-social-links.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/vendor-basel-institute.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://certmap.dev/certs/sec-plus.html</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -2047,6 +2072,51 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/cert-f.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/gsoa.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/cosint-mcafee.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/smia.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/osip.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/osc-osmosis.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/cosintp.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/co3.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/sl-ocp1.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/basel-osint.html</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
