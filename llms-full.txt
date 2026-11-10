@@ -2289,6 +2289,31 @@ CREST-accredited threat intelligence analyst certification.
 - Renewal: every 3 years
 - Official page: https://www.crest-approved.org/certifications/crest-registered-threat-intelligence-analyst/
 - cert/map page: https://certmap.dev/certs/crtia.html
+- Preparation:
+  - CREST Registered Threat Intelligence Analyst (CRTIA) examination page (CREST, official, free): https://www.crest-approved.org/certification-careers/crest-certifications/crest-registered-threat-intelligence-analyst/
+  - CRTIA Syllabus (CREST, official, free): https://www.crest-approved.org/wp-content/uploads/2022/06/CREST-Registered-Threat-Intelligence-Analyst-Syllabus.pdf
+  - CRTIA Examination Notes for Candidates (CREST, official, free): https://www.crest-approved.org/wp-content/uploads/2022/06/CREST-Registered-Threat-Intelligence-Analyst-Examination-Notes-for-Candidates.pdf
+  - Tools and Standards for Cyber Threat Intelligence Projects (2013) (Greg Farnham, SANS Institute, free): https://www.sans.org/white-papers/34375/
+  - Automated Defense: Using Threat Intelligence to Augment Security (2015) (Paul Poputa-Clean, SANS Institute, free): https://www.sans.org/white-papers/35692/
+  - Technology Overview for Machine-Readable Threat Intelligence (2014) (Rob McMillan and Craig Lawson, Gartner): https://www.gartner.com/en/documents/2647115
+  - National Cyber Security Strategy 2016 to 2021 (Cabinet Office, HM Government, free): https://www.gov.uk/government/publications/national-cyber-security-strategy-2016-to-2021
+  - National Cyber Strategy 2022 (supersedes 2016-21) (Cabinet Office, HM Government, free): https://www.gov.uk/government/publications/national-cyber-strategy-2022
+  - ENISA Threat Landscape Report 2018 (ENISA, free): https://www.enisa.europa.eu/publications/enisa-threat-landscape-report-2018
+  - Cyber threat intelligence and the lessons from law enforcement (2013) (KPMG, free): https://assets.kpmg.com/content/dam/kpmg/pdf/2013/02/cyber-threat-intelligence-final3.pdf
+  - Five Steps To Build An Effective Threat Intelligence Capability (2013) (Rick Holland, Forrester): https://www.forrester.com/report/five-steps-to-build-an-effective-threat-intelligence-capability/RES83841
+  - MITRE ATT&CK Resources (MITRE, free): https://attack.mitre.org/resources/
+  - The Diamond Model of Intrusion Analysis (2013) (Sergio Caltagirone, Andrew Pendergast, Christopher Betz, free): https://www.activeresponse.org/wp-content/uploads/2013/07/diamond.pdf
+  - Critical Thinking and Intelligence Analysis, Occasional Paper Number Fourteen (2007) (David T. Moore, National Defense Intelligence College, free): https://apps.dtic.mil/sti/pdfs/ADA481702.pdf
+  - The Accuracy of Intelligence Assessment: Bias, Perception, and Judgment in Analysis and Decision (1993) (Alexander P. Butterfield Jr., US Naval War College, free): https://apps.dtic.mil/sti/tr/pdf/ADA266925.pdf
+  - Intelligence Preparation of the Cyber Environment, SANS CTI Summit 2018 (Rob Dartnall, SANS Digital Forensics and Incident Response, free): https://www.youtube.com/watch?v=3bXr-CF9NBI
+  - Conventional Intelligence Analysis in Cyber Threat Intelligence, SANS CTI Summit 2017 (Rob Dartnall, SANS Digital Forensics and Incident Response, free): https://www.youtube.com/watch?v=jzHw8lkocXA
+  - What is Cyber Threat Intelligence and how is it used? (2019) (CREST (CTIPs), free): https://www.crest-approved.org/wp-content/uploads/2022/04/CREST-Cyber-Threat-Intelligence.pdf
+  - CBEST Threat Intelligence-Led Assessments, Implementation Guide (2024 edition) (Bank of England, free): https://www.bankofengland.co.uk/financial-stability/operational-resilience-of-the-financial-sector/cbest-threat-intelligence-led-assessments-implementation-guide
+  - What is TIBER-EU? (framework home page) (European Central Bank, free): https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html
+  - ENISA Threat Landscape (2026 edition) (ENISA, free): https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026
+  - Psychology of Intelligence Analysis (1999) (Richards J. Heuer Jr., Center for the Study of Intelligence, CIA, free): https://www.cia.gov/resources/csi/books-monographs/psychology-of-intelligence-analysis-2/
+  - OSINT Techniques: Resources for Uncovering Online Information, 11th Edition (2024, current edition of Open Source Intelligence Techniques) (Michael Bazzell, IntelTechniques): https://inteltechniques.com/book1.html
+  - Definitive Guide to Cyber Threat Intelligence (2015) (Jon Friedman and Mark Bouchard, CyberEdge Group, free): https://cyberedgegroup.com/resources/definitive-guide-to-cyber-threat-intelligence/
 
 ### eCTHP: eLearnSecurity Certified Threat Hunting Professional
 

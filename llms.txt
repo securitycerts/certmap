@@ -16,7 +16,7 @@ cert/map is a community-maintained reference for the cybersecurity certification
 - [All certifications](https://certmap.dev/certs/): every certification with vendor, level and price
 - [Full text digest](https://certmap.dev/llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](https://certmap.dev/data/certs.json) and [as CSV](https://certmap.dev/data/certs.csv)
-- [Preparation resources (CSV)](https://certmap.dev/data/resources.csv): exam guides, courses, labs and books per certification, 424 links for 77 certifications
+- [Preparation resources (CSV)](https://certmap.dev/data/resources.csv): exam guides, courses, labs and books per certification, 448 links for 78 certifications
 - [Comparison pairs (CSV)](https://certmap.dev/data/comparisons.csv): the 60 pairs that have a side-by-side page
 - Comparison pages exist in eight languages. English is under `certs/`; the others use the same file name under `es/`, `fr/`, `de/`, `it/`, `ar/`, `ko/` and `he/`, for example https://certmap.dev/es/compare-net-plus-vs-ccna.html
 - [Beginner cybersecurity certifications](https://certmap.dev/certs/list-beginner.html): 68 certifications
