@@ -10,8 +10,8 @@ cert/map is a community-maintained reference for the cybersecurity certification
 
 ## Pages
 
-- [Interactive roadmap](https://certmap.dev/): the matrix of every certification by domain and level
-- [About and FAQ](https://certmap.dev/about/): what the roadmap is, with answers on cost, beginner options and exam formats
+- [Home](https://certmap.dev/): what the roadmap is, with answers on cost, beginner options and exam formats
+- [Interactive roadmap](https://certmap.dev/map/): the matrix of every certification by domain and level
 - [All certifications](https://certmap.dev/certs/): every certification with vendor, level and price
 - [Full text digest](https://certmap.dev/llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](https://certmap.dev/data/certs.json) and [as CSV](https://certmap.dev/data/certs.csv)

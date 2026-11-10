@@ -75,7 +75,7 @@ const MONOGRAM = {
 
 function logoUrl(name, host, size) {
   const local = VENDOR_IMAGE[name.trim().toLowerCase()];
-  if (local) return `images/${local}`;
+  if (local) return new URL(`../../images/${local}`, import.meta.url).href;
   if (!host) return null;
   const cacheKey = host + "@" + size;
   let url = FAVICON_URL.get(cacheKey);

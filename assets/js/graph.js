@@ -2,8 +2,8 @@
 // is a vendored bundle that is only fetched the first time someone opens this
 // view, so the matrix and the list never pay for it.
 
-import { fmtPrice } from "./format.js?v=20e86036";
-import { NOTE_MAX } from "./paths.js?v=20e86036";
+import { fmtPrice } from "./format.js?v=eaf6782d";
+import { NOTE_MAX } from "./paths.js?v=eaf6782d";
 
 const LEVELS = ["beginner", "intermediate", "advanced", "expert"];
 const COL_W = 280, ROW_H = 150;
@@ -16,7 +16,7 @@ async function load() {
   if (!document.querySelector("link[data-reactflow]")) {
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "assets/vendor/reactflow.css";
+    link.href = new URL("../vendor/reactflow.css", import.meta.url).href;
     link.dataset.reactflow = "";
     document.head.appendChild(link);
   }

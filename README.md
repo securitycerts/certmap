@@ -1,6 +1,6 @@
 # cert/map: Cybersecurity Certification Roadmap
 
-**Live site: [certmap.dev](https://certmap.dev/)** · [All certifications as a list](https://certmap.dev/certs/) · [Dataset (CSV)](data/certs.csv)
+**Live site: [certmap.dev](https://certmap.dev/)** · [Interactive roadmap](https://certmap.dev/map/) · [All certifications as a list](https://certmap.dev/certs/) · [Dataset (CSV)](data/certs.csv)
 
 An interactive security certification roadmap: 319 cybersecurity certifications from 69 vendors, mapped by domain and seniority, with current exam prices, prerequisites and renewal cycles. Build a certification path and share it with a link.
 
@@ -74,7 +74,8 @@ The site is a single-page application that runs straight from the repository wit
 │   │   └── security.yml         PR security checks (data, secrets, CSP) plus bandit.
 │   ├── ISSUE_TEMPLATE/          Cert-update and bug-report templates.
 │   └── PULL_REQUEST_TEMPLATE.md
-├── index.html
+├── index.html                   Generated home page (what the site is, FAQ, sponsors).
+├── map/index.html               The interactive roadmap.
 ├── package.json                 Scripts and dev-only dependencies.
 ├── .editorconfig
 ├── .gitignore
@@ -132,6 +133,16 @@ There are no environment variables or secrets to configure.
 The dataset is community-maintained. Most vendors do not publish their exam fees on the public certification pages; figures in `data/certs.csv` are the last known list prices in USD, sourced from official vendor pages where possible and approximate otherwise. Treat the prices as guidance and confirm with the vendor before paying.
 
 If you find an out-of-date price, a wrong URL or a missing certification, please open a pull request against `data/certs.csv`. See `CONTRIBUTING.md`.
+
+## Sponsors
+
+cert/map is free, open source and has no ads or tracking. Sponsors are shown on the home page in three tiers (gold, silver, bronze); to become one, write to contact@certmap.dev. Sponsorship never changes which certifications are listed or what is said about them.
+
+Sponsors are listed in `data/sponsors.json` as `{ "name", "url", "logo" }` per tier, with `logo` a path under `images/`. Places that are not taken are drawn as empty slots.
+
+## Contact
+
+contact@certmap.dev
 
 ## Credit
 

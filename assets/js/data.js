@@ -80,7 +80,8 @@ function buildMeta(certs) {
 
 export async function loadData() {
   // Revalidate on every load so a price fix is visible as soon as it deploys.
-  const res = await fetch("data/certs.csv", { cache: "no-cache" });
+  // Resolved against this module, not the page, so it works wherever the app lives.
+  const res = await fetch(new URL("../../data/certs.csv", import.meta.url), { cache: "no-cache" });
   if (!res.ok) throw new Error(`Failed to fetch certs.csv: ${res.status}`);
   const text = await res.text();
   const certs = rowsToCerts(parseCSV(text));

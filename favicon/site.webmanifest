@@ -18,5 +18,5 @@
   "theme_color": "#0b0d12",
   "background_color": "#0b0d12",
   "display": "standalone",
-  "start_url": "../"
+  "start_url": "../map/"
 }

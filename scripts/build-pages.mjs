@@ -10,7 +10,8 @@
 //   certs/vendor-*.html  one page per vendor
 //   certs/domain-*.html  one page per domain
 //   certs/list-*.html    curated lists (beginner, free, hands-on, DoD 8140, ...)
-//   about/index.html     what the site is, a site index and an FAQ
+//   index.html           the home page: what the site is, a site index, an FAQ and the sponsors
+//   about/index.html     redirect to the home page, its former address
 //   r/index.html         landing page that shared roadmap links point at
 //   llms-full.txt        every certification as Markdown, for language models
 //   data/certs.json      the dataset as JSON
@@ -34,6 +35,7 @@ import { ROLE_PATHS, orderByPrerequisite, pathTotals } from "../assets/js/paths.
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "https://certmap.dev/";
 const OUT = join(ROOT, "certs");
+const EMAIL = "contact@certmap.dev";
 const LEVELS = ["beginner", "intermediate", "advanced", "expert"];
 const LEVEL_LABEL = { beginner: "Beginner", intermediate: "Intermediate", advanced: "Advanced", expert: "Expert" };
 
@@ -57,9 +59,9 @@ const vendors = new Set(certs.map(c => c.vendor));
 const latest = certs.map(c => c.price_verified_at).filter(Boolean).sort().pop() || "2026-01-01";
 const byName = (a, b) => a.acronym.localeCompare(b.acronym);
 
-function page({ path, title, description, body, ld, modified, image = "assets/og.png" }) {
+function page({ path, title, description, body, ld, modified, image = "assets/og.png", root = false, script = "" }) {
   const canonical = SITE + path;
-  return `<!doctype html>
+  const html = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -77,7 +79,7 @@ function page({ path, title, description, body, ld, modified, image = "assets/og
 <meta property="og:image:height" content="630">
 <meta name="twitter:image" content="${SITE}${image}">
 <meta name="twitter:card" content="summary_large_image">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src ${script ? "'self'" : "'none'"}; style-src 'self'; img-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#0b0d12">
@@ -89,18 +91,21 @@ function page({ path, title, description, body, ld, modified, image = "assets/og
 <body>
 <header class="top">
   <a class="brand" href="../">cert<span>/</span>map</a>
-  <nav><a href="../certs/">All certifications</a><a href="../about/">About</a><a href="../">Interactive roadmap</a></nav>
+  <nav><a href="../certs/">All certifications</a><a href="../#sponsors">Sponsors</a><a href="../map/">Interactive roadmap</a></nav>
 </header>
 <main>
 ${body}
 </main>
 <footer>
   <p>Part of <a href="../">cert/map</a>, an open-source roadmap of cybersecurity certifications. Prices are list prices in USD and can change, so confirm with the vendor before paying.${modified ? ` Last reviewed ${modified}.` : ""}</p>
-  <p><a href="https://github.com/securitycerts/certmap">Source and dataset on GitHub</a></p>
+  <p><a href="https://github.com/securitycerts/certmap">Source and dataset on GitHub</a> · <a href="../#sponsors">Sponsors</a> · <a href="mailto:${EMAIL}">${EMAIL}</a></p>
 </footer>
-</body>
+${script ? `<script src="../${script}"></script>\n` : ""}</body>
 </html>
 `;
+  // Pages are written as if they sat one level down. The home page sits at the
+  // root, so its links to the rest of the site lose the leading "../".
+  return root ? html.replaceAll('="../"', '="./"').replaceAll('="../', '="') : html;
 }
 
 const certLink = c => `<a href="${c.id}.html">${esc(c.acronym)}</a>`;
@@ -160,7 +165,7 @@ function listPage(l) {
 <h1>${esc(l.name)}</h1>
 <p class="lead">${esc(l.lead)}</p>
 <p>${items.length} certifications from ${count(items, "vendor").size} vendors match.${esc(priceRange(items))}</p>
-<p class="cta"><a class="btn primary" href="../${l.app}">Open this list in the interactive roadmap</a></p>
+<p class="cta"><a class="btn primary" href="../map/${l.app}">Open this list in the interactive roadmap</a></p>
 ${certTable(items, { showDomain: true })}
 <h2>More lists</h2>
 <nav class="toc">${LISTS.filter(o => o !== l).map(o => `<a href="${listFile(o)}">${esc(o.name)}</a>`).join(" ")}</nav>`;
@@ -176,7 +181,7 @@ ${certTable(items, { showDomain: true })}
 // link to "the SOC analyst path" shows that path when it is pasted somewhere.
 const pathFile = p => `path-${p.id}.html`;
 const pathCerts = p => orderByPrerequisite(p.certs.map(id => byId.get(id)).filter(Boolean));
-const pathAppLink = p => `../#/roadmap/${pathCerts(p).map(c => c.id).join(",")}?name=${encodeURIComponent(p.name + " path")}`;
+const pathAppLink = p => `../map/#/roadmap/${pathCerts(p).map(c => c.id).join(",")}?name=${encodeURIComponent(p.name + " path")}`;
 
 function pathPage(p) {
   const items = pathCerts(p);
@@ -236,7 +241,7 @@ function faq() {
   ];
 }
 
-function aboutPage() {
+function homePage() {
   const perDomain = count(certs, "domain"), perVendor = count(certs, "vendor");
   const qa = faq();
   const verified = certs.filter(c => c.price_verified_at).length;
@@ -246,10 +251,10 @@ function aboutPage() {
   const mark = `<svg class="mark" viewBox="0 0 32 32" width="56" height="56" aria-hidden="true"><rect class="mark-bg" x="1" y="1" width="30" height="30" rx="8"/><g class="mark-grid"><circle cx="9" cy="9" r="1.5"/><circle cx="16" cy="9" r="1.5"/><circle cx="9" cy="16" r="1.5"/><circle cx="23" cy="16" r="1.5"/><circle cx="16" cy="23" r="1.5"/><circle cx="23" cy="23" r="1.5"/></g><path class="mark-path" d="M9 23H16V16H23V9"/><circle class="mark-node" cx="9" cy="23" r="2.2"/><circle class="mark-node" cx="16" cy="16" r="1.8"/><circle class="mark-node" cx="23" cy="9" r="3"/></svg>`;
   const body = `<section class="hero">
   ${mark}
-  <p class="kicker">About</p>
+  <p class="kicker">Open source · ${certs.length} certifications</p>
   <h1>The cybersecurity certification roadmap</h1>
   <p class="lead">cert/map charts every certification worth knowing in security by subject and by seniority, with what each one costs, how it is examined and what it leads to.</p>
-  <p class="cta"><a class="btn primary" href="../">Open the interactive roadmap</a> <a class="btn" href="../certs/">Browse the full list</a></p>
+  <p class="cta"><a class="btn primary big" href="../map/">Open the roadmap</a> <a class="btn big" href="../certs/">Browse the full list</a></p>
   <div class="stats">${stat(certs.length, "certifications")}${stat(vendors.size, "vendors")}${stat(DOMAINS.length, "domains")}${stat(verified, "prices verified")}</div>
 </section>
 
@@ -306,23 +311,88 @@ ${qa.map(([q, a], i) => `    <details${i === 0 ? " open" : ""}><summary>${esc(q)
   </div>
 </section>
 
+${sponsorsSection()}
+
 <section class="block">
   <h2>Data and licence</h2>
   <div class="prose two">
     <p>The whole dataset is one CSV file, also published as <a href="../data/certs.json">JSON</a>, with a plain-text digest for language models at <a href="../llms.txt">llms.txt</a> and <a href="../llms-full.txt">llms-full.txt</a>. The code is MIT licensed and the dataset is CC BY 4.0. Corrections are welcome on <a href="https://github.com/securitycerts/certmap">GitHub</a>.</p>
     <p>The matrix layout is inspired by Paul Jerimy's Security Certification Roadmap. cert/map is independent and is not affiliated with any of the listed vendors. All trademarks belong to their owners.</p>
   </div>
+</section>
+
+<section class="block" id="contact">
+  <h2>Contact</h2>
+  <p class="contact">Questions, corrections or sponsorship: <a href="mailto:${EMAIL}">${EMAIL}</a></p>
 </section>`;
   const ld = [
-    { "@context": "https://schema.org", "@type": "AboutPage", name: "About cert/map", url: SITE + "about/", isPartOf: { "@type": "WebSite", name: "cert/map", url: SITE } },
+    { "@context": "https://schema.org", "@type": "WebSite", name: "cert/map", alternateName: "Cybersecurity Certification Roadmap", url: SITE, inLanguage: "en" },
+    { "@context": "https://schema.org", "@type": "Organization", name: "cert/map", url: SITE, logo: SITE + "favicon/web-app-manifest-512x512.png", email: EMAIL, sameAs: ["https://github.com/securitycerts/certmap"] },
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: qa.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
   ];
   return page({
-    path: "about/",
-    title: `About cert/map: cybersecurity certification roadmap, ${certs.length} certs explained`,
-    description: `What cert/map is and how to use it: ${certs.length} cybersecurity certifications from ${vendors.size} vendors by domain and level, with answers on cost, beginner options, free and hands-on certifications and DoD 8140.`,
-    body, ld, modified: latest,
+    path: "",
+    title: `Cybersecurity Certification Roadmap: ${certs.length} certs compared by cost and level | cert/map`,
+    description: `cert/map is an open-source cybersecurity certification roadmap: ${certs.length} certifications from ${vendors.size} vendors by domain and seniority, with current exam prices, prerequisites and renewal cycles. Build a certification path and share it.`,
+    body, ld, modified: latest, root: true, script: "assets/js/landing.js",
   });
+}
+
+// ---------- sponsors ----------
+// data/sponsors.json lists the sponsors of each tier as { name, url, logo },
+// with `logo` a path under images/. Tiers always show a fixed number of places:
+// real sponsors first, then empty ones that invite the reader to take them.
+const TIERS = [
+  { id: "gold", name: "Gold", places: 2 },
+  { id: "silver", name: "Silver", places: 3 },
+  { id: "bronze", name: "Bronze", places: 5 },
+];
+const SPONSOR_MAIL = `mailto:${EMAIL}?subject=${encodeURIComponent("Sponsoring cert/map")}`;
+
+function sponsorsSection() {
+  const data = JSON.parse(readFileSync(join(ROOT, "data", "sponsors.json"), "utf8"));
+  const tier = t => {
+    const taken = (data[t.id] || []).map(sp =>
+      `<a class="slot" href="${esc(sp.url)}" rel="sponsored noopener"><img src="../${esc(sp.logo)}" alt="${esc(sp.name)}" loading="lazy"></a>`);
+    const free = Array.from({ length: Math.max(0, t.places - taken.length) }, () =>
+      `<a class="slot empty" href="${SPONSOR_MAIL}"><span>${t.name} sponsor</span><strong>Your logo here</strong></a>`);
+    return `  <div class="tier tier-${t.id}">
+    <h3>${t.name}</h3>
+    <div class="slots">${[...taken, ...free].join("")}</div>
+  </div>`;
+  };
+  return `<section class="block sponsors" id="sponsors">
+  <h2>Sponsors</h2>
+  <div class="prose">
+    <p>cert/map is free and open source, with no ads and no tracking. Sponsors keep it that way and pay for the unglamorous part: checking ${certs.length} prices against the vendors' own pages, again and again. Sponsorship buys a place on this page and nothing else. It never changes which certifications are listed, where they sit on the roadmap or what is said about them.</p>
+  </div>
+${TIERS.map(tier).join("\n")}
+  <div class="sponsor-cta">
+    <div><strong>Put your organisation here</strong><span>Write to <a href="mailto:${EMAIL}">${EMAIL}</a> and we will send you the details of each tier.</span></div>
+    <a class="btn primary big" href="${SPONSOR_MAIL}">Become a sponsor</a>
+  </div>
+</section>`;
+}
+
+// /about/ was the address of this page before it became the home page.
+function aboutRedirect() {
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<title>cert/map</title>
+<link rel="canonical" href="${SITE}">
+<meta http-equiv="refresh" content="0; url=../">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'self'; form-action 'none'">
+<link rel="stylesheet" href="../assets/css/static.css">
+</head>
+<body>
+<main class="hero"><p class="lead">This page moved to the <a href="../">cert/map home page</a>.</p></main>
+</body>
+</html>
+`;
 }
 
 // ---------- shared roadmap landing page ----------
@@ -365,7 +435,7 @@ function sharedPage() {
 <main class="hero">
   <p class="kicker">Shared roadmap</p>
   <h1>Opening the roadmap</h1>
-  <p class="lead">If nothing happens, <a id="open" href="../">open it in cert/map</a>.</p>
+  <p class="lead">If nothing happens, <a id="open" href="../map/">open it in cert/map</a>.</p>
 </main>
 <script src="../assets/js/shared-link.js"></script>
 </body>
@@ -405,8 +475,8 @@ ${[...vendors].sort((a, b) => a.localeCompare(b)).join(", ")}.
 
 ## Pages
 
-- [Interactive roadmap](${SITE}): the matrix of every certification by domain and level
-- [About and FAQ](${SITE}about/): what the roadmap is, with answers on cost, beginner options and exam formats
+- [Home](${SITE}): what the roadmap is, with answers on cost, beginner options and exam formats
+- [Interactive roadmap](${SITE}map/): the matrix of every certification by domain and level
 - [All certifications](${SITE}certs/): every certification with vendor, level and price
 - [Full text digest](${SITE}llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](${SITE}data/certs.json) and [as CSV](${SITE}data/certs.csv)
@@ -440,9 +510,9 @@ function stampAssets() {
     const after = strip(before).replace(/(from\s+"\.{1,2}\/[^"]+\.js)"/g, `$1?v=${v}"`);
     if (after !== before) writeFileSync(f, after);
   }
-  const index = join(ROOT, "index.html");
+  const index = join(ROOT, "map", "index.html");
   const before = readFileSync(index, "utf8");
-  const after = strip(before).replace(/("assets\/(?:js|css|vendor)\/[^"?]+\.(?:js|css))"/g, `$1?v=${v}"`);
+  const after = strip(before).replace(/("\.\.\/assets\/(?:js|css|vendor)\/[^"?]+\.(?:js|css))"/g, `$1?v=${v}"`);
   if (after !== before) writeFileSync(index, after);
   return v;
 }
@@ -486,7 +556,7 @@ function vendorPage(vendor) {
   const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / <a href="./">Certifications</a> / ${esc(vendor)}</nav>
 <h1>${esc(vendor)} certifications</h1>
 <p class="lead">${items.length === 1 ? "The one" : `All ${items.length}`} ${esc(vendor)} ${items.length === 1 ? "certification" : "certifications"} on the cert/map security certification roadmap, ordered from beginner to expert, with the domain each one belongs to and its current exam price.${esc(priceRange(items))}</p>
-<p class="cta"><a class="btn primary" href="../?vendor=${encodeURIComponent(vendor)}">Open ${esc(vendor)} in the interactive roadmap</a></p>
+<p class="cta"><a class="btn primary" href="../map/?vendor=${encodeURIComponent(vendor)}">Open ${esc(vendor)} in the interactive roadmap</a></p>
 ${certTable(items, { showVendor: false, showDomain: true })}
 <h2>Domains covered</h2>
 <nav class="toc">${domains.map(d => `<a href="${domainFile(d)}">${esc(d)}</a>`).join(" ")}</nav>`;
@@ -504,7 +574,7 @@ function domainPage(domain) {
   const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / <a href="./">Certifications</a> / ${esc(domain)}</nav>
 <h1>${esc(domain)} certifications</h1>
 <p class="lead">${items.length} ${esc(domain)} certifications from ${count(items, "vendor").size} vendors, laid out as a path from beginner to expert with the current exam price of each.${esc(priceRange(items))}</p>
-<p class="cta"><a class="btn primary" href="../#/domain/${slug(domain)}">Open ${esc(domain)} in the interactive roadmap</a></p>
+<p class="cta"><a class="btn primary" href="../map/#/domain/${slug(domain)}">Open ${esc(domain)} in the interactive roadmap</a></p>
 ${levels.map(l => `<h2>${LEVEL_LABEL[l]} ${esc(domain)} certifications</h2>
 ${certTable(items.filter(c => c.level === l).sort(byName))}`).join("\n")}
 <h2>Other domains</h2>
@@ -556,12 +626,12 @@ function certPage(c) {
   <h1>${esc(c.name)} <span class="acro">${esc(c.acronym)}</span></h1>
   <p class="lead">${esc(c.description)}</p>
   <p>${esc(summary)}</p>
-  <p class="cta"><a class="btn primary" href="../#/cert/${c.id}">Open ${esc(c.acronym)} in the interactive roadmap</a> <a class="btn" href="${esc(c.url)}" rel="noopener noreferrer">Official ${esc(c.vendor)} page</a></p>
+  <p class="cta"><a class="btn primary" href="../map/#/cert/${c.id}">Open ${esc(c.acronym)} in the interactive roadmap</a> <a class="btn" href="${esc(c.url)}" rel="noopener noreferrer">Official ${esc(c.vendor)} page</a></p>
   <h2>${esc(c.acronym)} cost, exam and renewal</h2>
   <dl class="facts">
 ${facts.map(([k, v]) => `    <div><dt>${k}</dt><dd>${v}</dd></div>`).join("\n")}
   </dl>
-${c.tags.length ? `  <p class="tags">${c.tags.map(t => `<a href="../?tag=${encodeURIComponent(t)}">${esc(t)}</a>`).join(" ")}</p>\n` : ""}${related.length ? `  <h2>Other ${esc(c.domain)} certifications</h2>
+${c.tags.length ? `  <p class="tags">${c.tags.map(t => `<a href="../map/?tag=${encodeURIComponent(t)}">${esc(t)}</a>`).join(" ")}</p>\n` : ""}${related.length ? `  <h2>Other ${esc(c.domain)} certifications</h2>
   <ul class="related">
 ${related.map(o => `    <li>${certLink(o)} <span>${esc(o.vendor)}, ${LEVEL_LABEL[o.level]}, ${esc(money(o.price_usd))}</span></li>`).join("\n")}
   </ul>\n` : ""}</article>`;
@@ -623,7 +693,7 @@ ${items.map(c => `      <tr><td>${certLink(c)} <span>${esc(c.name)}</span></td><
   const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / Certifications</nav>
 <h1>Cybersecurity certifications list: ${certs.length} certs with prices</h1>
 <p class="lead">Every certification on the cert/map security certification roadmap, grouped by domain and ordered from beginner to expert, with the vendor and the current exam price in USD. ${vendors.size} vendors are covered, from CompTIA, ISC2, ISACA, GIAC and OffSec to cloud, forensics and hands-on lab providers.</p>
-<p class="cta"><a class="btn primary" href="../">Open the interactive roadmap</a> <a class="btn" href="../data/certs.csv">Download the dataset (CSV)</a></p>
+<p class="cta"><a class="btn primary" href="../map/">Open the interactive roadmap</a> <a class="btn" href="../data/certs.csv">Download the dataset (CSV)</a></p>
 <h2>Popular lists</h2>
 <nav class="toc" aria-label="Lists">${LISTS.map(l => `<a href="${listFile(l)}">${esc(l.name)}</a>`).join(" ")}</nav>
 <h2>Career paths</h2>
@@ -667,7 +737,7 @@ function sitemap() {
 ${[
     url(SITE, latest, "1.0"),
     url(SITE + "certs/", latest, "0.9"),
-    url(SITE + "about/", latest, "0.8"),
+    url(SITE + "map/", latest, "0.9"),
     ...LISTS.map(l => url(SITE + `certs/${listFile(l)}`, latest, "0.8")),
     ...ROLE_PATHS.map(p => url(SITE + `certs/${pathFile(p)}`, latest, "0.8")),
     ...DOMAINS.map(d => url(SITE + `certs/${domainFile(d)}`, latest, "0.8")),
@@ -708,13 +778,14 @@ writeFileSync(join(OUT, "index.html"), hubPage());
 mkdirSync(join(ROOT, "r"), { recursive: true });
 writeFileSync(join(ROOT, "r", "index.html"), sharedPage());
 mkdirSync(join(ROOT, "about"), { recursive: true });
-writeFileSync(join(ROOT, "about", "index.html"), aboutPage());
+writeFileSync(join(ROOT, "about", "index.html"), aboutRedirect());
+writeFileSync(join(ROOT, "index.html"), homePage());
 writeFileSync(join(ROOT, "llms-full.txt"), llmsFull());
 writeFileSync(join(ROOT, "data", "certs.json"), "[\n" + certs.map(c => JSON.stringify(c)).join(",\n") + "\n]\n");
 refreshLlms();
 const version = stampAssets();
 writeFileSync(join(ROOT, "sitemap.xml"), sitemap());
-refreshCounts("index.html");
+refreshCounts("map/index.html");
 refreshCounts("llms.txt");
 refreshCounts("README.md");
 console.log(`OK: ${certs.length} certification, ${vendors.size} vendor, ${DOMAINS.length} domain and ${LISTS.length} list pages, about/, llms-full.txt, certs.json, sitemap.xml. Assets v=${version}.`);

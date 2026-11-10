@@ -10,6 +10,8 @@ Please report security problems privately, not in a public issue.
 2. Describe what you found, the URL or file involved, and the steps to reproduce it. A proof of concept helps.
 3. If the problem is already being exploited, say so at the top.
 
+If you cannot use GitHub, write to contact@certmap.dev with the same details.
+
 You will get an acknowledgement within 7 days and an assessment within 14. Fixes for confirmed issues are released as soon as they are ready, normally within 30 days, and the report is credited to you in the advisory unless you ask otherwise.
 
 Please do not disclose the issue publicly until a fix is live or 90 days have passed, whichever comes first.
