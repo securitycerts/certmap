@@ -37,18 +37,18 @@
   <link rel="alternate" type="application/json" href="../data/certs.json" title="cert/map dataset (JSON)" />
   <link rel="alternate" type="text/csv" href="../data/certs.csv" title="cert/map dataset (CSV)" />
   <link rel="alternate" type="text/plain" href="../llms.txt" title="cert/map digest for language models" />
-  <link rel="stylesheet" href="../assets/css/styles.css?v=cb08b99a" />
-  <link rel="modulepreload" href="../assets/js/app.js?v=cb08b99a" />
-  <link rel="modulepreload" href="../assets/js/data.js?v=cb08b99a" />
-  <link rel="modulepreload" href="../assets/js/render.js?v=cb08b99a" />
-  <link rel="modulepreload" href="../assets/js/format.js?v=cb08b99a" />
-  <link rel="modulepreload" href="../assets/js/dom.js?v=cb08b99a" />
-  <link rel="modulepreload" href="../assets/js/logo.js?v=cb08b99a" />
-  <link rel="modulepreload" href="../assets/js/tooltip.js?v=cb08b99a" />
-  <link rel="modulepreload" href="../assets/js/contextmenu.js?v=cb08b99a" />
-  <link rel="modulepreload" href="../assets/js/toast.js?v=cb08b99a" />
-  <link rel="modulepreload" href="../assets/js/motion.js?v=cb08b99a" />
-  <link rel="modulepreload" href="../assets/vendor/anime.esm.min.js?v=cb08b99a" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=7fca6d4a" />
+  <link rel="modulepreload" href="../assets/js/app.js?v=7fca6d4a" />
+  <link rel="modulepreload" href="../assets/js/data.js?v=7fca6d4a" />
+  <link rel="modulepreload" href="../assets/js/render.js?v=7fca6d4a" />
+  <link rel="modulepreload" href="../assets/js/format.js?v=7fca6d4a" />
+  <link rel="modulepreload" href="../assets/js/dom.js?v=7fca6d4a" />
+  <link rel="modulepreload" href="../assets/js/logo.js?v=7fca6d4a" />
+  <link rel="modulepreload" href="../assets/js/tooltip.js?v=7fca6d4a" />
+  <link rel="modulepreload" href="../assets/js/contextmenu.js?v=7fca6d4a" />
+  <link rel="modulepreload" href="../assets/js/toast.js?v=7fca6d4a" />
+  <link rel="modulepreload" href="../assets/js/motion.js?v=7fca6d4a" />
+  <link rel="modulepreload" href="../assets/vendor/anime.esm.min.js?v=7fca6d4a" />
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to certifications</a>
@@ -103,6 +103,10 @@
       </button>
       <button id="theme-toggle" type="button" class="icon-btn" aria-label="Toggle theme" title="Toggle theme (T)">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button id="my-roadmap" type="button" class="roadmap-btn" title="My roadmap (G)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="6" r="2.5"/><path d="M7.5 18H12V6h4.5"/></svg>
+        <span>My roadmap</span>
       </button>
       <button id="cart-toggle" type="button" class="cart-pill" aria-expanded="false" aria-controls="cart" aria-label="Selected certifications" title="Selection (S)">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11V7a3 3 0 1 1 6 0v4"/><path d="M5 9h14l-1.5 11h-11z"/></svg>
@@ -203,13 +207,13 @@
     <header><h3>Selected certifications</h3><button id="cart-close" type="button" class="icon-btn" aria-label="Close selection">×</button></header>
     <div id="cart-list"></div>
     <label class="cart-name">
-      <span>Roadmap name</span>
+      <span>Roadmap name <em id="cart-saved" class="saved-flag" aria-live="polite">Saved ✓</em></span>
       <input id="cart-name" type="text" maxlength="60" placeholder="e.g. Red team path 2027" autocomplete="off" spellcheck="false" />
     </label>
     <footer>
       <div class="cart-sum">Total <strong id="cart-subtotal">$0</strong></div>
       <div class="cart-actions">
-        <button id="cart-view" type="button" class="btn-ghost primary">View roadmap</button>
+        <button id="cart-view" type="button" class="btn-ghost primary" title="Open your roadmap as a graph (G)">Open roadmap graph</button>
         <button id="cart-share" type="button" class="btn-ghost primary" title="Copy a link anyone can open to see this roadmap">Share link</button>
       </div>
       <div class="cart-more">
@@ -237,6 +241,7 @@
       <div><dt><kbd>Space</kbd></dt><dd>Add or remove it from your selection</dd></div>
       <div><dt><kbd>J</kbd> <kbd>K</kbd></dt><dd>Next, previous certification in the drawer</dd></div>
       <div><dt><kbd>F</kbd></dt><dd>Show or hide the filter sidebar</dd></div>
+      <div><dt><kbd>G</kbd></dt><dd>Open your roadmap (list or graph)</dd></div>
       <div><dt><kbd>S</kbd></dt><dd>Open or close your selection</dd></div>
       <div><dt><kbd>R</kbd></dt><dd>Reset all filters</dd></div>
       <div><dt><kbd>T</kbd></dt><dd>Switch between dark and light</dd></div>
@@ -250,6 +255,6 @@
     <p class="noscript">The interactive roadmap needs JavaScript. The same data is available as plain pages: <a href="../certs/">browse all cybersecurity certifications with prices</a>.</p>
   </noscript>
 
-  <script type="module" src="../assets/js/app.js?v=cb08b99a"></script>
+  <script type="module" src="../assets/js/app.js?v=7fca6d4a"></script>
 </body>
 </html>

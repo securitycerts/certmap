@@ -1,10 +1,10 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
   fmtPrice, fmtAgo, isStale, slug,
-} from "./format.js?v=cb08b99a";
-import { el, svg } from "./dom.js?v=cb08b99a";
-import { makeLogo } from "./logo.js?v=cb08b99a";
-import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=cb08b99a";
+} from "./format.js?v=7fca6d4a";
+import { el, svg } from "./dom.js?v=7fca6d4a";
+import { makeLogo } from "./logo.js?v=7fca6d4a";
+import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=7fca6d4a";
 
 export { slug, fmtPrice };
 
@@ -125,13 +125,33 @@ export function renderFlow(root, selected, byId) {
 // roadmap matches the visitor's own selection, which is when notes can be
 // edited. Returns the ordered certs and, in graph view, the element the graph
 // should be mounted in.
+// The search box that adds a step to your own roadmap. The matches are painted
+// by app.js into .rm-add-results as the user types.
+function addBox() {
+  return el("div", { class: "rm-add" },
+    el("input", { id: "rm-add", type: "search", placeholder: "Add a certification: type an acronym, a name or a vendor", autocomplete: "off", spellcheck: "false", "aria-label": "Add a certification to this roadmap", "aria-controls": "rm-add-results" }),
+    el("div", { id: "rm-add-results", class: "rm-add-results", role: "listbox" }),
+  );
+}
+
+export function renderAddResults(root, certs) {
+  root.replaceChildren(...certs.map(c => el("button", { type: "button", class: "rm-add-item", role: "option", "data-add-id": c.id },
+    el("strong", { text: c.acronym }),
+    el("span", { text: `${c.name} · ${c.vendor} · ${fmtPrice(c.price_usd)}` }),
+  )));
+}
+
 export function renderRoadmap(root, selected, state, { name, same, view, notes }) {
   const ordered = orderByPrerequisite(selected);
   if (!ordered.length) {
-    root.replaceChildren(el("div", { class: "rm-head" },
-      el("div", {},
-        el("h2", { text: "Empty roadmap" }),
-        el("p", { class: "rm-sub", text: "This link does not contain any certification from the current dataset." })),
+    root.replaceChildren(el("div", { class: "rm-head rm-empty" },
+      el("div", { class: "rm-title" },
+        el("p", { class: "rm-kicker", text: "Roadmap" }),
+        el("h2", { text: same ? "Build your roadmap" : "Empty roadmap" }),
+        el("p", { class: "rm-sub", text: same
+          ? "Search for a certification below to add your first step. You can also add from the matrix: right-click a certification, or open it and choose Add to roadmap."
+          : "This link does not contain any certification from the current dataset." }),
+        same ? addBox() : null),
       el("div", { class: "rm-actions" }, el("a", { class: "btn-ghost", href: "#/", text: "Browse all certifications" })),
     ));
     return { ordered, graphHost: null };
@@ -142,9 +162,13 @@ export function renderRoadmap(root, selected, state, { name, same, view, notes }
   });
   const head = el("div", { class: "rm-head" },
     el("div", {},
-      el("p", { class: "rm-kicker", text: "Roadmap" }),
-      el("h2", { text: name || "Certification roadmap" }),
+      el("p", { class: "rm-kicker", text: same ? "Your roadmap" : "Roadmap" }),
+      same
+        ? el("input", { id: "rm-name", class: "rm-name", type: "text", maxlength: "60", value: name, placeholder: "Name your roadmap", "aria-label": "Roadmap name", autocomplete: "off", spellcheck: "false" })
+        : el("h2", { text: name || "Certification roadmap" }),
       el("p", { class: "rm-sub", text: pathSummary(ordered) }),
+      same ? el("p", { id: "rm-saved", class: "rm-saved", "aria-live": "polite", text: "Saved in this browser. The link updates as you edit." }) : null,
+      same ? addBox() : null,
     ),
     el("div", { class: "rm-actions" },
       el("div", { class: "seg", role: "group", "aria-label": "Roadmap view" }, viewBtn("list", "List"), viewBtn("graph", "Graph")),
@@ -366,6 +390,7 @@ export function renderDrawer(root, c, byId) {
   children.push(el("div", { class: "actions" },
     el("a", { class: "btn-ghost", href: c.url, target: "_blank", rel: "noopener noreferrer", text: "Official page ↗" }),
     el("button", { class: "btn-ghost primary", type: "button", "data-toggle-cart": true, text: state_has_in_cart(c) ? "Remove from selection" : "Add to selection" }),
+    el("button", { class: "btn-ghost", type: "button", "data-open-roadmap": true, title: "Add this certification to your roadmap and open it", text: "Add to roadmap" }),
     el("button", { class: "btn-ghost", type: "button", "data-copy-link": true, text: "Copy link" }),
   ));
 

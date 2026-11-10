@@ -2,8 +2,8 @@
 // is a vendored bundle that is only fetched the first time someone opens this
 // view, so the matrix and the list never pay for it.
 
-import { fmtPrice } from "./format.js?v=cb08b99a";
-import { NOTE_MAX } from "./paths.js?v=cb08b99a";
+import { fmtPrice } from "./format.js?v=7fca6d4a";
+import { NOTE_MAX } from "./paths.js?v=7fca6d4a";
 
 const LEVELS = ["beginner", "intermediate", "advanced", "expert"];
 const COL_W = 280, ROW_H = 150;
@@ -60,7 +60,7 @@ function layout(certs, L, perRow) {
   return { nodes, edges };
 }
 
-export async function mountGraph(host, { certs, notes, editable, theme, onOpen, onNote }) {
+export async function mountGraph(host, { certs, notes, editable, theme, onOpen, onNote, onRemove }) {
   let L;
   try { L = await load(); }
   catch { host.textContent = "The graph view could not be loaded."; return; }
@@ -74,6 +74,7 @@ export async function mountGraph(host, { certs, notes, editable, theme, onOpen, 
       h(L.Handle, { type: "target", position: L.Position.Left, isConnectable: false }),
       h("div", { className: "gnode-top" },
         h("span", { className: "gnode-step" }, `Step ${data.step}`),
+        editable ? h("button", { type: "button", className: "gnode-x nodrag", title: "Remove from roadmap", "aria-label": `Remove ${c.acronym}`, onClick: () => onRemove(c.id) }, "×") : null,
         h("button", { type: "button", className: "gnode-open nodrag", title: "Open details", "aria-label": `Open ${c.acronym}`, onClick: () => onOpen(c.id) }, "↗"),
       ),
       h("div", { className: "gnode-acro" }, c.acronym),

@@ -1,14 +1,14 @@
-import { loadData } from "./data.js?v=cb08b99a";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData } from "./render.js?v=cb08b99a";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=cb08b99a";
-import { el } from "./dom.js?v=cb08b99a";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=cb08b99a";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=cb08b99a";
-import { toast, copyText } from "./toast.js?v=cb08b99a";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=cb08b99a";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=cb08b99a";
-import { mountGraph, unmountGraph } from "./graph.js?v=cb08b99a";
-import { downloadRoadmapImage } from "./share-image.js?v=cb08b99a";
+import { loadData } from "./data.js?v=7fca6d4a";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=7fca6d4a";
+import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=7fca6d4a";
+import { el } from "./dom.js?v=7fca6d4a";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=7fca6d4a";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=7fca6d4a";
+import { toast, copyText } from "./toast.js?v=7fca6d4a";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=7fca6d4a";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=7fca6d4a";
+import { mountGraph, unmountGraph } from "./graph.js?v=7fca6d4a";
+import { downloadRoadmapImage } from "./share-image.js?v=7fca6d4a";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -124,7 +124,7 @@ function roadmapHash(ids, name, notes) {
   const qs = p.toString();
   return `#/roadmap/${ids.join(",")}` + (qs ? "?" + qs : "");
 }
-const myRoadmapHash = () => roadmapHash(selectedCerts().map(c => c.id), state.roadmapName, state.notes);
+const myRoadmapHash = () => (state.cart.size ? roadmapHash(selectedCerts().map(c => c.id), state.roadmapName, state.notes) : "#/roadmap/");
 // What gets copied when a roadmap is shared. It goes through r/, a small page
 // with its own link preview, which forwards to the #/roadmap/ route.
 const shareLink = hash => new URL("../../r/", import.meta.url).href + "#" + hash.slice("#/roadmap/".length);
@@ -184,12 +184,16 @@ const state = {
   filters: emptyFilters(),
   cart: new Set(safeLoadCart()),
   roadmapName: cleanName(store.get(NAME_KEY)),
-  roadmapView: safeLS(RM_VIEW_KEY, ALLOWED_RM_VIEWS, "list"),
+  roadmapView: safeLS(RM_VIEW_KEY, ALLOWED_RM_VIEWS, "graph"),
   notes: loadNotes(),
   toggleCart(id) {
+    // On your own roadmap page the page is the selection, so a change has to
+    // repaint it: the address follows the selection and the route does the rest.
+    const onMine = !!readRoadmap(baseHash)?.same;
     this.cart.has(id) ? this.cart.delete(id) : this.cart.add(id);
     persistCart();
     updateSelection(id);
+    if (onMine) location.hash = myRoadmapHash();
   },
 };
 bindState(state);
@@ -245,7 +249,7 @@ function paintCart() {
   };
   tweenNumber($("#cart-total"), sum, paint);
   const empty = state.cart.size === 0;
-  for (const id of ["#cart-md", "#cart-share", "#cart-view", "#cart-csv", "#cart-clear"]) $(id).disabled = empty;
+  for (const id of ["#cart-md", "#cart-share", "#cart-csv", "#cart-clear"]) $(id).disabled = empty;
   // With nothing selected the panel shows only the empty message: a row of
   // greyed-out buttons says nothing useful.
   $("#cart").classList.toggle("is-empty", empty);
@@ -268,13 +272,14 @@ function paintDrawerToggle() {
 // In-place update after a single cert is toggled: no grid repaint needed.
 function updateSelection(id) {
   const selected = state.cart.has(id);
-  const cards = document.querySelectorAll(`[data-id="${CSS.escape(id)}"]`);
+  // Graph nodes are excluded: React Flow owns their "selected" class.
+  const cards = document.querySelectorAll(`[data-id="${CSS.escape(id)}"]:not(.react-flow__node)`);
   cards.forEach(elm => {
     elm.classList.toggle("selected", selected);
     const cb = elm.querySelector('input[type="checkbox"]');
     if (cb) cb.checked = selected;
   });
-  pop($("#grid").querySelectorAll(`[data-id="${CSS.escape(id)}"]`));
+  pop($("#grid").querySelectorAll(`[data-id="${CSS.escape(id)}"]:not(.react-flow__node)`));
   pop($("#cart-toggle"), 1.05);
   paintCart();
   paintFlow();
@@ -441,6 +446,37 @@ function setNote(id, text) {
   }
 }
 
+// The roadmap name can be typed in the selection panel or on the roadmap page
+// itself. Either way it is stored at once, the other field follows, and a
+// short "Saved" confirms it, since nothing else on screen changes.
+let savedTimer;
+function setRoadmapName(value, source) {
+  state.roadmapName = cleanName(value);
+  store.set(NAME_KEY, state.roadmapName);
+  for (const sel of ["#cart-name", "#rm-name"]) {
+    const field = $(sel);
+    if (field && field !== source) field.value = state.roadmapName;
+  }
+  if (readRoadmap(baseHash)?.same) {
+    baseHash = myRoadmapHash();
+    history.replaceState(null, "", location.pathname + location.search + baseHash);
+    lastGridKey = gridKey();
+    document.title = `${state.roadmapName || "Roadmap"} · cert/map`;
+  }
+  for (const sel of ["#cart-saved", "#rm-saved"]) {
+    const flag = $(sel);
+    if (!flag) continue;
+    flag.textContent = "Saved ✓";
+    flag.classList.add("on");
+  }
+  clearTimeout(savedTimer);
+  savedTimer = setTimeout(() => {
+    $("#cart-saved")?.classList.remove("on");
+    const line = $("#rm-saved");
+    if (line) { line.classList.remove("on"); line.textContent = "Saved in this browser. The link updates as you edit."; }
+  }, 1600);
+}
+
 function setRoadmapView(view) {
   if (!ALLOWED_RM_VIEWS.has(view) || view === state.roadmapView) return;
   state.roadmapView = view;
@@ -469,10 +505,11 @@ function paintGrid(filtered) {
     if (graphHost) {
       mountGraph(graphHost, {
         certs: ordered, notes, editable: roadmap.same, theme: currentTheme(),
-        onOpen: openCert, onNote: setNote,
+        onOpen: openCert, onNote: setNote, onRemove: id => state.toggleCart(id),
       });
     }
-    scene = "roadmap:" + state.roadmapView + ":" + roadmap.ids.join(",");
+    scene = "roadmap:" + state.roadmapView;
+    if (refocusAdd) { refocusAdd = false; $("#rm-add")?.focus({ preventScroll: true }); }
   } else if (domain) {
     const certs = filtered.filter(c => c.domain === domain);
     renderList(grid, certs, DATA.meta, state, { grouped: false, heading: crumbHeading("← All domains", domain, certs.length) });
@@ -688,10 +725,38 @@ function exportCsv() {
   toast("Exported my-certs.csv");
 }
 
+// Your roadmap page. With nothing selected yet it opens as an empty builder.
 function viewMyRoadmap() {
-  if (!state.cart.size) return;
   setCartOpen(false);
-  location.hash = myRoadmapHash();
+  const already = location.hash === myRoadmapHash();
+  if (state.roadmapView !== "graph") { state.roadmapView = "graph"; store.set(RM_VIEW_KEY, "graph"); }
+  if (already) scheduleRender(); else location.hash = myRoadmapHash();
+  toast(state.cart.size ? "Your roadmap, as a graph" : "Your roadmap is empty: add a first certification");
+  $("#content").scrollTop = 0;
+}
+
+// Send a cert to your roadmap and go there: the one-step way from the matrix,
+// the list, the drawer or the right-click menu.
+function addToRoadmap(id, { focusAdd = false } = {}) {
+  if (!DATA.byId.has(id)) return;
+  if (!state.cart.has(id)) { state.cart.add(id); persistCart(); toast(`${DATA.byId.get(id).acronym} added to your roadmap`); }
+  refocusAdd = focusAdd;
+  setCartOpen(false);
+  if (location.hash === myRoadmapHash()) scheduleRender(); else location.hash = myRoadmapHash();
+}
+let refocusAdd = false;
+
+function searchToAdd(query) {
+  const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const host = $("#rm-add-results");
+  if (!host) return [];
+  const hits = terms.length
+    ? DATA.certs.filter(c => !state.cart.has(c.id) && terms.every(t => HAYSTACK.get(c.id).includes(t)))
+      .sort((a, b) => (b.acronym.toLowerCase().startsWith(terms[0]) - a.acronym.toLowerCase().startsWith(terms[0])) || a.acronym.localeCompare(b.acronym))
+      .slice(0, 8)
+    : [];
+  renderAddResults(host, hits);
+  return hits;
 }
 
 // Replace the visitor's selection with the roadmap they are looking at.
@@ -724,6 +789,7 @@ function certMenu(c) {
     { heading: `${c.acronym} · ${c.vendor}` },
     drawerCert === c.id ? null : { label: "Open details", hint: "Enter", action: () => openCert(c.id) },
     { label: selected ? "Remove from selection" : "Add to selection", hint: "Space", action: () => state.toggleCart(c.id) },
+    { label: selected ? "Open my roadmap" : "Add and open my roadmap", action: () => addToRoadmap(c.id) },
     missing.length ? {
       label: `Add with prerequisites (${missing.length + (selected ? 0 : 1)})`,
       action: () => addMany([...missing, c.id], n => `Added ${n} to your path`),
@@ -763,6 +829,7 @@ function pageMenu() {
     { separator: true },
     { label: "Copy link to this view", action: () => copyText(shareUrl(), "Link copied") },
     { label: n ? `Open selection (${n})` : "Open selection", hint: "S", action: () => setCartOpen(true) },
+    { label: "My roadmap", hint: "G", action: viewMyRoadmap },
     { label: "Keyboard shortcuts", hint: "?", action: openHelp },
   ];
 }
@@ -827,6 +894,7 @@ function onGlobalKey(e) {
     t: toggleTheme,
     s: () => setCartOpen(),
     f: () => setSidebarOpen(),
+    g: viewMyRoadmap,
     r: resetFilters,
     j: () => stepCert(1),
     k: () => stepCert(-1),
@@ -913,6 +981,12 @@ async function init() {
   // left to the change handler; anything else opens the cert or the domain.
   const grid = $("#grid");
   grid.addEventListener("click", e => {
+    // React Flow puts data-id on its nodes. Without this guard every click on
+    // a graph step, including one meant for its note field, opened the drawer.
+    if (e.target.closest(".react-flow")) return;
+    const add = e.target.closest("[data-add-id]");
+    if (add) { addToRoadmap(add.dataset.addId, { focusAdd: true }); return; }
+    if (e.target.closest(".rm-add, .rm-name")) return;
     const rm = e.target.closest("[data-rm]")?.dataset.rm;
     if (rm === "adopt") { adoptRoadmap(); return; }
     if (rm === "copy") { copyText(shareLink(baseHash), "Roadmap link copied"); return; }
@@ -930,6 +1004,15 @@ async function init() {
   });
   grid.addEventListener("input", e => {
     if (e.target.matches(".rm-note-input")) setNote(e.target.dataset.noteId, e.target.value);
+    else if (e.target.id === "rm-add") searchToAdd(e.target.value);
+    else if (e.target.id === "rm-name") setRoadmapName(e.target.value, e.target);
+  });
+  grid.addEventListener("keydown", e => {
+    if (e.target.id !== "rm-add") return;
+    if (e.key === "Enter") {
+      const first = searchToAdd(e.target.value)[0];
+      if (first) { e.preventDefault(); addToRoadmap(first.id, { focusAdd: true }); }
+    } else if (e.key === "Escape") { e.stopPropagation(); e.target.value = ""; searchToAdd(""); }
   });
   grid.addEventListener("change", e => {
     if (!e.target.matches(".pill-pick input, .lc-pick input")) return;
@@ -937,7 +1020,7 @@ async function init() {
     if (card) state.toggleCart(card.dataset.id);
   });
   grid.addEventListener("keydown", e => {
-    if (e.target.matches("input") || (e.key !== "Enter" && e.key !== " ")) return;
+    if (e.target.matches("input") || e.target.closest(".react-flow") || (e.key !== "Enter" && e.key !== " ")) return;
     const colhead = e.target.closest(".mx-colhead");
     const card = e.target.closest("[data-id]");
     if (!colhead && !card) return;
@@ -967,6 +1050,7 @@ async function init() {
       showTag(tag.dataset.tag);
       return;
     }
+    if (e.target.closest("[data-open-roadmap]")) { addToRoadmap(drawerCert); return; }
     if (e.target.closest("[data-toggle-cart]")) state.toggleCart(drawerCert);
     else if (e.target.closest("[data-copy-link]")) copyText(certUrl(drawerCert), "Link copied");
   });
@@ -981,11 +1065,9 @@ async function init() {
   $("#cart-csv").addEventListener("click", exportCsv);
   $("#cart-share").addEventListener("click", () => copyText(myRoadmapUrl(), "Roadmap link copied"));
   $("#cart-view").addEventListener("click", viewMyRoadmap);
+  $("#my-roadmap").addEventListener("click", viewMyRoadmap);
   $("#cart-name").value = state.roadmapName;
-  $("#cart-name").addEventListener("input", e => {
-    state.roadmapName = cleanName(e.target.value);
-    store.set(NAME_KEY, state.roadmapName);
-  });
+  $("#cart-name").addEventListener("input", e => setRoadmapName(e.target.value, e.target));
 
   // A click on empty space dismisses the open panel. Anything that does
   // something of its own (a card, a link, a control, the menu) is left alone,
