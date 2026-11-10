@@ -37,18 +37,18 @@
   <link rel="alternate" type="application/json" href="data/certs.json" title="cert/map dataset (JSON)" />
   <link rel="alternate" type="text/csv" href="data/certs.csv" title="cert/map dataset (CSV)" />
   <link rel="alternate" type="text/plain" href="llms.txt" title="cert/map digest for language models" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=f69113df" />
-  <link rel="modulepreload" href="assets/js/app.js?v=f69113df" />
-  <link rel="modulepreload" href="assets/js/data.js?v=f69113df" />
-  <link rel="modulepreload" href="assets/js/render.js?v=f69113df" />
-  <link rel="modulepreload" href="assets/js/format.js?v=f69113df" />
-  <link rel="modulepreload" href="assets/js/dom.js?v=f69113df" />
-  <link rel="modulepreload" href="assets/js/logo.js?v=f69113df" />
-  <link rel="modulepreload" href="assets/js/tooltip.js?v=f69113df" />
-  <link rel="modulepreload" href="assets/js/contextmenu.js?v=f69113df" />
-  <link rel="modulepreload" href="assets/js/toast.js?v=f69113df" />
-  <link rel="modulepreload" href="assets/js/motion.js?v=f69113df" />
-  <link rel="modulepreload" href="assets/vendor/anime.esm.min.js?v=f69113df" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=350248d1" />
+  <link rel="modulepreload" href="assets/js/app.js?v=350248d1" />
+  <link rel="modulepreload" href="assets/js/data.js?v=350248d1" />
+  <link rel="modulepreload" href="assets/js/render.js?v=350248d1" />
+  <link rel="modulepreload" href="assets/js/format.js?v=350248d1" />
+  <link rel="modulepreload" href="assets/js/dom.js?v=350248d1" />
+  <link rel="modulepreload" href="assets/js/logo.js?v=350248d1" />
+  <link rel="modulepreload" href="assets/js/tooltip.js?v=350248d1" />
+  <link rel="modulepreload" href="assets/js/contextmenu.js?v=350248d1" />
+  <link rel="modulepreload" href="assets/js/toast.js?v=350248d1" />
+  <link rel="modulepreload" href="assets/js/motion.js?v=350248d1" />
+  <link rel="modulepreload" href="assets/vendor/anime.esm.min.js?v=350248d1" />
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to certifications</a>
@@ -113,6 +113,16 @@
 
   <main class="layout">
     <aside class="sidebar" id="sidebar" aria-label="Filters">
+      <div class="sidebar-rail">
+        <button id="rail-open" type="button" class="icon-btn" aria-label="Show filters" title="Show filters (F)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
+        </button>
+        <span id="rail-count" class="rail-count hidden" title="Active filters"></span>
+        <button id="rail-reset" type="button" class="icon-btn" aria-label="Reset all filters" title="Reset all filters (R)" disabled>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+        </button>
+        <span class="rail-label" aria-hidden="true">Filters</span>
+      </div>
       <div class="sidebar-head">
         <h2>Filters</h2>
         <button id="sidebar-close" type="button" class="icon-btn" aria-label="Hide filters" title="Hide filters (F)">×</button>
@@ -235,6 +245,6 @@
     <p class="noscript">The interactive roadmap needs JavaScript. The same data is available as plain pages: <a href="certs/">browse all cybersecurity certifications with prices</a>.</p>
   </noscript>
 
-  <script type="module" src="assets/js/app.js?v=f69113df"></script>
+  <script type="module" src="assets/js/app.js?v=350248d1"></script>
 </body>
 </html>

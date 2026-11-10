@@ -1,10 +1,10 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
   fmtPrice, fmtAgo, isStale, slug,
-} from "./format.js?v=f69113df";
-import { el, svg } from "./dom.js?v=f69113df";
-import { makeLogo } from "./logo.js?v=f69113df";
-import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=f69113df";
+} from "./format.js?v=350248d1";
+import { el, svg } from "./dom.js?v=350248d1";
+import { makeLogo } from "./logo.js?v=350248d1";
+import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=350248d1";
 
 export { slug, fmtPrice };
 
@@ -157,9 +157,12 @@ export function renderRoadmap(root, selected, state, { name, same, view, notes }
 
   if (view === "graph") {
     const graphHost = el("div", { class: "rm-graph", "aria-label": "Roadmap graph" }, el("p", { class: "rm-graph-loading", text: "Loading graph…" }));
-    const hint = el("p", { class: "rm-hint", text:
-      "Solid arrows are prerequisites, dashed ones the suggested order. Drag to rearrange, scroll to zoom, double-click a step to open it." +
-      (same ? " Notes you type are saved and travel with the link." : "") });
+    const key = (cls, label) => el("span", { class: "rm-key" }, el("i", { class: cls }), label);
+    const hint = el("div", { class: "rm-hint" },
+      key("rm-key-req", "Prerequisite"),
+      key("rm-key-next", "Suggested order"),
+      el("span", { text: "Click a step to open it. Drag the background to move, use the buttons to zoom." + (same ? " Notes are saved as you type and travel with the link." : "") }),
+    );
     root.replaceChildren(head, graphHost, hint);
     return { ordered, graphHost };
   }

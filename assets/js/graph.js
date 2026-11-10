@@ -2,11 +2,11 @@
 // is a vendored bundle that is only fetched the first time someone opens this
 // view, so the matrix and the list never pay for it.
 
-import { fmtPrice } from "./format.js?v=f69113df";
-import { NOTE_MAX } from "./paths.js?v=f69113df";
+import { fmtPrice } from "./format.js?v=350248d1";
+import { NOTE_MAX } from "./paths.js?v=350248d1";
 
 const LEVELS = ["beginner", "intermediate", "advanced", "expert"];
-const COL_W = 290, ROW_H = 132;
+const COL_W = 280, ROW_H = 150;
 
 let lib = null;
 let root = null;
@@ -29,41 +29,33 @@ export function unmountGraph() {
   root = null;
 }
 
-// Columns are seniority levels, left to right; within a column certs keep the
-// order of the path. Solid edges are real prerequisites, dashed ones only show
-// the suggested order between steps that do not depend on each other.
-function layout(certs, L) {
-  const cols = LEVELS.filter(l => certs.some(c => c.level === l));
-  const tallest = Math.max(...cols.map(l => certs.filter(c => c.level === l).length));
-  const nodes = certs.map((c, i) => {
-    const col = cols.indexOf(c.level);
-    const siblings = certs.filter(o => o.level === c.level);
-    const row = siblings.indexOf(c);
-    return {
-      id: c.id,
-      type: "cert",
-      position: { x: col * COL_W, y: (row + (tallest - siblings.length) / 2) * ROW_H },
-      data: { cert: c, step: i + 1 },
-    };
-  });
+// Steps read left to right in the order of the path and wrap into rows, like
+// lines of text, so the eye never has to follow an arrow backwards. Solid
+// arrows are real prerequisites; dashed ones only show the suggested order
+// between two steps that do not depend on each other.
+function layout(certs, L, perRow) {
+  const nodes = certs.map((c, i) => ({
+    id: c.id,
+    type: "cert",
+    position: { x: (i % perRow) * COL_W, y: Math.floor(i / perRow) * ROW_H },
+    data: { cert: c, step: i + 1 },
+  }));
 
   const inPath = new Set(certs.map(c => c.id));
+  const arrow = { type: L.MarkerType.ArrowClosed, width: 18, height: 18 };
   const edges = [];
   const linked = new Set();
   for (const c of certs) {
     for (const p of c.prerequisites) {
       if (!inPath.has(p)) continue;
       linked.add(p + ">" + c.id);
-      edges.push({
-        id: `req-${p}-${c.id}`, source: p, target: c.id, type: "smoothstep", className: "gedge-req",
-        markerEnd: { type: L.MarkerType.ArrowClosed },
-      });
+      edges.push({ id: `req-${p}-${c.id}`, source: p, target: c.id, type: "smoothstep", className: "gedge-req", markerEnd: arrow });
     }
   }
   for (let i = 0; i < certs.length - 1; i++) {
     const a = certs[i].id, b = certs[i + 1].id;
     if (linked.has(a + ">" + b)) continue;
-    edges.push({ id: `next-${a}-${b}`, source: a, target: b, type: "smoothstep", className: "gedge-next", animated: true });
+    edges.push({ id: `next-${a}-${b}`, source: a, target: b, type: "smoothstep", className: "gedge-next", markerEnd: arrow });
   }
   return { nodes, edges };
 }
@@ -82,7 +74,6 @@ export async function mountGraph(host, { certs, notes, editable, theme, onOpen, 
       h(L.Handle, { type: "target", position: L.Position.Left, isConnectable: false }),
       h("div", { className: "gnode-top" },
         h("span", { className: "gnode-step" }, `Step ${data.step}`),
-        h("button", { type: "button", className: "gnode-open nodrag", title: "Open details", "aria-label": `Open ${c.acronym}`, onClick: () => onOpen(c.id) }, "↗"),
       ),
       h("div", { className: "gnode-acro" }, c.acronym),
       h("div", { className: "gnode-meta" }, `${c.vendor} · ${fmtPrice(c.price_usd)}`),
@@ -97,7 +88,13 @@ export async function mountGraph(host, { certs, notes, editable, theme, onOpen, 
     );
   });
   const nodeTypes = { cert: CertNode };
-  const initial = layout(certs, L);
+  // As many steps per row as fit the panel at a readable size.
+  const perRow = Math.max(2, Math.min(5, Math.floor(host.clientWidth / COL_W) || 3));
+  const initial = layout(certs, L, perRow);
+  // Tall enough for its rows and no taller, so a short path is not a small
+  // island in a large empty panel.
+  const rows = Math.ceil(certs.length / perRow);
+  host.style.height = Math.min(Math.round(window.innerHeight * 0.72), Math.max(300, rows * ROW_H + 110)) + "px";
 
   function Graph() {
     const [nodes, , onNodesChange] = L.useNodesState(initial.nodes);
@@ -106,16 +103,18 @@ export async function mountGraph(host, { certs, notes, editable, theme, onOpen, 
       nodes, edges, onNodesChange, nodeTypes,
       colorMode: theme,
       fitView: true,
-      fitViewOptions: { padding: 0.18, maxZoom: 1.1 },
-      minZoom: 0.25, maxZoom: 1.8,
+      fitViewOptions: { padding: 0.12, maxZoom: 1 },
+      minZoom: 0.3, maxZoom: 1.6,
       nodesConnectable: false,
       deleteKeyCode: null,
-      elementsSelectable: true,
-      onNodeDoubleClick: (_e, node) => onOpen(node.id),
+      zoomOnScroll: false,
+      zoomOnDoubleClick: false,
+      preventScrolling: false,
+      onNodeClick: (e, node) => { if (!e.target.closest("input, button")) onOpen(node.id); },
     },
       h(L.Background, { gap: 22, size: 1 }),
       h(L.Controls, { showInteractive: false }),
-      certs.length > 6 ? h(L.MiniMap, { pannable: true, zoomable: true }) : null,
+      
     );
   }
 

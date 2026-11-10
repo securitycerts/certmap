@@ -1,14 +1,14 @@
-import { loadData } from "./data.js?v=f69113df";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js?v=f69113df";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=f69113df";
-import { el } from "./dom.js?v=f69113df";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=f69113df";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=f69113df";
-import { toast, copyText } from "./toast.js?v=f69113df";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro } from "./motion.js?v=f69113df";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=f69113df";
-import { mountGraph, unmountGraph } from "./graph.js?v=f69113df";
-import { downloadRoadmapImage } from "./share-image.js?v=f69113df";
+import { loadData } from "./data.js?v=350248d1";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js?v=350248d1";
+import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=350248d1";
+import { el } from "./dom.js?v=350248d1";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=350248d1";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=350248d1";
+import { toast, copyText } from "./toast.js?v=350248d1";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro } from "./motion.js?v=350248d1";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=350248d1";
+import { mountGraph, unmountGraph } from "./graph.js?v=350248d1";
+import { downloadRoadmapImage } from "./share-image.js?v=350248d1";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -542,6 +542,14 @@ function rerender() {
   document.title = drawerTitle(certId) || (roadmap ? `${roadmap.name || "Roadmap"} · cert/map` : BASE_TITLE);
   $("#result-count").textContent = `${filtered.length} of ${DATA.certs.length} certifications`;
   $("#reset-filters").disabled = !hasActiveFilters();
+  // The minimised sidebar still says how many filters are on and can clear them.
+  const f = state.filters;
+  const active = f.levels.size + f.domains.size + f.vendors.size
+    + (f.priceMin != null || f.priceMax != null ? 1 : 0)
+    + FLAGS.filter(flag => f[flag.key]).length + (state.search.trim() ? 1 : 0);
+  $("#rail-count").textContent = String(active);
+  $("#rail-count").classList.toggle("hidden", active === 0);
+  $("#rail-reset").disabled = active === 0;
   renderActiveFilters();
   syncDrawer(certId);
   paintCart();
@@ -949,6 +957,8 @@ async function init() {
 
   $("#sidebar-toggle").addEventListener("click", () => setSidebarOpen());
   $("#sidebar-close").addEventListener("click", () => setSidebarOpen(false));
+  $("#rail-open").addEventListener("click", () => setSidebarOpen(true));
+  $("#rail-reset").addEventListener("click", resetFilters);
   $("#backdrop").addEventListener("click", () => setSidebarOpen(false));
 
   rerender();

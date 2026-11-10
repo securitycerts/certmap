@@ -130,8 +130,22 @@ input, select { font: inherit; }
   overflow: hidden;
   transition: grid-template-columns .22s ease;
 }
-.layout.no-sidebar { grid-template-columns: 0 1fr; }
-.layout.no-sidebar .sidebar { visibility: hidden; padding-left: 0; padding-right: 0; border-right: 0; overflow: hidden; }
+/* Minimised: the sidebar stays as a narrow rail with the essentials. */
+.layout.no-sidebar { grid-template-columns: 52px 1fr; }
+.layout.no-sidebar .sidebar { padding: 12px 0; overflow: hidden; }
+.layout.no-sidebar .sidebar > :not(.sidebar-rail) { display: none; }
+.sidebar-rail { display: none; }
+.layout.no-sidebar .sidebar-rail { display: flex; flex-direction: column; align-items: center; gap: 10px; height: 100%; }
+.rail-count {
+  min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font: 600 11px var(--mono); color: var(--text);
+  background: var(--accent-soft); border: 1px solid var(--accent);
+}
+.rail-label {
+  margin-top: 6px; writing-mode: vertical-rl; transform: rotate(180deg);
+  font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--muted);
+}
 .sidebar-head { display: flex; align-items: center; justify-content: space-between; margin: -6px 0 14px; }
 .sidebar-head h2 { margin: 0; font-size: 13px; font-weight: 600; }
 .sidebar-head .icon-btn { width: 26px; height: 26px; font-size: 18px; line-height: 1; }
@@ -331,7 +345,7 @@ input, select { font: inherit; }
 
 /* ---------- LIST / SEARCH RESULTS ---------- */
 .list {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 300px));
   gap: 10px;
 }
 .list-card {
@@ -729,7 +743,7 @@ a.prereq-chip { color: var(--text); }
 .rm-head h2 { margin: 0; font-size: 20px; letter-spacing: -.01em; overflow-wrap: anywhere; }
 .rm-sub { margin: 4px 0 0; font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .rm-actions { display: flex; gap: 6px; flex-wrap: wrap; }
-.rm-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+.rm-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 334px), 334px)); gap: 10px; }
 .rm-step { display: grid; grid-template-columns: 26px 1fr; gap: 8px; align-items: start; min-width: 0; }
 .rm-num {
   width: 26px; height: 26px; margin-top: 10px; border-radius: 50%;
@@ -773,11 +787,14 @@ h1.brand-tag { font-weight: 400; margin-bottom: 0; }
 .rm-note-input:focus, input.gnode-note:focus { border-style: solid; border-color: var(--accent); color: var(--text); }
 .rm-note-input::placeholder, .gnode-note::placeholder { color: var(--muted); }
 .rm-actions { align-items: center; }
-.rm-hint { margin: 8px 2px 0; font-size: 11.5px; color: var(--muted); }
+.rm-hint { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin: 8px 2px 0; font-size: 11.5px; color: var(--muted); }
+.rm-key { display: inline-flex; align-items: center; gap: 6px; color: var(--text-dim); }
+.rm-key i { display: block; width: 22px; height: 0; border-top: 2px solid var(--accent); }
+.rm-key i.rm-key-next { border-top: 2px dashed var(--border-strong); }
 
 /* ---------- ROADMAP GRAPH (React Flow) ---------- */
 .rm-graph {
-  height: min(68vh, 640px); min-height: 360px;
+  height: 420px;
   background: var(--bg-elev); border: 1px solid var(--border); border-radius: var(--radius);
   overflow: hidden;
 }
@@ -804,10 +821,13 @@ h1.brand-tag { font-weight: 400; margin-bottom: 0; }
   font-family: var(--sans);
 }
 .rm-graph .react-flow__node-cert { padding: 0; border: 0; background: none; width: auto; font-size: inherit; color: inherit; text-align: left; }
-.rm-graph .gedge-next .react-flow__edge-path { stroke: var(--border-strong); }
+.rm-graph .gedge-next .react-flow__edge-path { stroke: var(--border-strong); stroke-dasharray: 6 5; }
+.rm-graph .gedge-req .react-flow__edge-path { stroke-width: 2; }
+.rm-graph .react-flow__node-cert { cursor: pointer; }
+.gnode:hover { border-color: var(--accent); }
 .rm-graph .react-flow__attribution a { color: var(--muted); }
 .gnode {
-  width: 210px; padding: 9px 12px 11px;
+  width: 220px; padding: 10px 13px 12px;
   background: var(--raised); border: 1px solid var(--border);
   border-left: 3px solid var(--lvl-intermediate); border-radius: var(--radius);
   box-shadow: 0 4px 14px rgba(0, 0, 0, .25);
@@ -824,3 +844,8 @@ h1.brand-tag { font-weight: 400; margin-bottom: 0; }
 .gnode-meta { font-size: 11px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .gnode-note { margin-top: 7px; }
 div.gnode-note { border-style: solid; font-style: italic; overflow-wrap: anywhere; }
+
+@media (max-width: 900px) {
+  .sidebar-rail { display: none !important; }
+  .rm-steps { grid-template-columns: 1fr; }
+}
