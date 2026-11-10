@@ -24,6 +24,10 @@ jobs:
           node-version: "20"
       - name: Validate data
         run: node scripts/validate.mjs
+      - name: Build static certification pages and sitemap
+        run: node scripts/build-pages.mjs
+      - name: Drop files that are not part of the site
+        run: rm -rf node_modules scripts .github package.json package-lock.json .editorconfig .gitignore
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

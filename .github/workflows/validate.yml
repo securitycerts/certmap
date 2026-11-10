@@ -5,6 +5,7 @@ on:
     paths:
       - "data/**"
       - "scripts/validate.mjs"
+      - "scripts/build-pages.mjs"
 
 jobs:
   validate:
@@ -16,3 +17,5 @@ jobs:
           node-version: "20"
       - name: Validate certs.csv
         run: node scripts/validate.mjs
+      - name: Static pages build
+        run: node scripts/build-pages.mjs

@@ -42,6 +42,13 @@ export function fmtAgo(isoDate) {
   return Math.round(days / 365) + " years ago";
 }
 
+// A verified price older than this many days is flagged as stale in the drawer.
+export const STALE_AFTER_DAYS = 180;
+export function isStale(isoDate) {
+  const then = Date.parse(isoDate + "T00:00:00Z");
+  return Number.isFinite(then) && (Date.now() - then) / 86400000 > STALE_AFTER_DAYS;
+}
+
 // Slugify a domain or vendor name for use in the #/... hash routes.
 export function slug(s) {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

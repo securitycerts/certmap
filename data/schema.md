@@ -1,6 +1,6 @@
 # `certs.csv` schema
 
-One row per certification. All columns are required (use an empty value when unknown — do not omit the column).
+One row per certification. All columns are required (use an empty value when unknown, do not omit the column).
 
 | Column | Type | Required | Notes |
 |---|---|---|---|
@@ -49,10 +49,10 @@ Exploitation
 
 ## Allowed `level` values
 
-- `beginner` — foundational, no significant prerequisites.
-- `intermediate` — assumes 1–3 years experience.
-- `advanced` — assumes deep specialization, 3–5 years.
-- `expert` — capstone certifications, hands-on labs or executive-level credentials.
+- `beginner`, foundational, no significant prerequisites.
+- `intermediate`, assumes 1–3 years experience.
+- `advanced`, assumes deep specialization, 3–5 years.
+- `expert`, capstone certifications, hands-on labs or executive-level credentials.
 
 ## CSV quoting rules
 

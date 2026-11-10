@@ -1,4 +1,4 @@
-# cert/map — open dataset for cybersecurity certifications.
+# cert/map, open dataset for cybersecurity certifications.
 # Crawling, indexing and machine consumption are explicitly permitted.
 
 User-agent: *

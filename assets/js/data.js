@@ -1,5 +1,5 @@
 
-const DOMAINS = [
+export const DOMAINS = [
   "Communication & Network Security", "IAM", "Security Architecture & Engineering",
   "Asset Security", "Security & Risk Management",
   "Software Security", "Security Operations", "Cyber Threat Intelligence",
@@ -8,7 +8,7 @@ const DOMAINS = [
 ];
 const LEVELS = ["beginner", "intermediate", "advanced", "expert"];
 
-function parseCSV(text) {
+export function parseCSV(text) {
   const rows = [];
   let field = "", row = [], inQuotes = false;
   for (let i = 0; i < text.length; i++) {
@@ -33,7 +33,7 @@ const toNum = v => (v === "" || v == null ? null : Number(v));
 const toBool = v => String(v).trim().toLowerCase() === "true";
 const toList = v => (v ? v.split(";").map(s => s.trim()).filter(Boolean) : []);
 
-function rowsToCerts(rows) {
+export function rowsToCerts(rows) {
   const header = rows.shift();
   const idx = Object.fromEntries(header.map((h, i) => [h.trim(), i]));
   return rows.map(r => ({
@@ -63,7 +63,10 @@ function rowsToCerts(rows) {
 
 function buildMeta(certs) {
   const prices = certs.map(c => c.price_usd).filter(n => Number.isFinite(n));
+  const tally = key => certs.reduce((m, c) => m.set(c[key], (m.get(c[key]) || 0) + 1), new Map());
   return {
+    domainCount: tally("domain"),
+    vendorCount: tally("vendor"),
     count: certs.length,
     domains: DOMAINS,
     levels: LEVELS,
@@ -75,7 +78,8 @@ function buildMeta(certs) {
 }
 
 export async function loadData() {
-  const res = await fetch("data/certs.csv");
+  // Revalidate on every load so a price fix is visible as soon as it deploys.
+  const res = await fetch("data/certs.csv", { cache: "no-cache" });
   if (!res.ok) throw new Error(`Failed to fetch certs.csv: ${res.status}`);
   const text = await res.text();
   const certs = rowsToCerts(parseCSV(text));

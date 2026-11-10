@@ -1,51 +1,82 @@
 import { loadData } from "./data.js";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, buildFilters, bindState } from "./render.js";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js";
 import { slug, fmtPrice, LEVEL_LABEL } from "./format.js";
 import { el } from "./dom.js";
-import { initTooltip } from "./tooltip.js";
+import { initTooltip, hideTooltip } from "./tooltip.js";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js";
+import { toast, copyText } from "./toast.js";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro } from "./motion.js";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
 const THEME_KEY = "certs-map.theme";
 const VIEW_KEY = "certs-map.view";
 const SORT_KEY = "certs-map.sort";
+const SIDEBAR_KEY = "certs-map.sidebar";
+const NAME_KEY = "certs-map.roadmap-name";
+const NAME_MAX = 60;
+const THEME_COLOR = { dark: "#0b0d12", light: "#f7f8fa" };
 
 // A cert id is a lowercase slug. We reuse this when reading ids back out of
 // localStorage or a shared URL, both of which are attacker-controllable.
 const ID_RE = /^[a-z0-9][a-z0-9-]{0,63}$/;
 const sanitizeIds = arr => arr.filter(x => typeof x === "string" && ID_RE.test(x)).slice(0, 200);
 
+// Storage can throw (private mode, blocked site data); the page must still work.
+const store = {
+  get(key) { try { return localStorage.getItem(key); } catch { return null; } },
+  set(key, value) { try { localStorage.setItem(key, value); } catch { /* not persisted */ } },
+};
+
 function safeLoadCart() {
   try {
-    const raw = localStorage.getItem(CART_KEY);
-    if (!raw) return [];
-    const v = JSON.parse(raw);
+    const v = JSON.parse(store.get(CART_KEY) || "[]");
     return Array.isArray(v) ? sanitizeIds(v) : [];
   } catch { return []; }
 }
 
 function persistCart() {
-  localStorage.setItem(CART_KEY, JSON.stringify([...state.cart]));
+  store.set(CART_KEY, JSON.stringify([...state.cart]));
 }
 
 const ALLOWED_THEMES = new Set(["dark", "light"]);
 const ALLOWED_VIEWS = new Set(["matrix", "list"]);
 const ALLOWED_SORTS = new Set(["name", "price_asc", "price_desc", "vendor", "level"]);
 function safeLS(key, allowed, fallback) {
-  const v = localStorage.getItem(key);
+  const v = store.get(key);
   return allowed.has(v) ? v : fallback;
 }
 
 const ROLE_PATHS = {
   "pentester": ["ejpt", "pjpt", "oscp", "pnpt", "osep"],
   "soc-analyst": ["sec-plus", "cysa-plus", "gcih", "splunk-cda", "osda"],
-  "cloud-security": ["sec-plus", "ccsk", "aws-scs", "az-500", "ccsp"],
+  "cloud-security": ["sec-plus", "ccsk", "aws-scs", "sc-500", "ccsp"],
   "grc-manager": ["cisa", "cgrc", "cism", "crisc", "cissp"],
   "dfir-investigator": ["gcfe", "gcfa", "grem", "gnfa", "encase"],
   "red-team-operator": ["oscp", "osep", "crto", "osed", "oswe"],
   "appsec-engineer": ["sec-plus", "csslp", "oswa", "gwapt", "oswe"],
   "threat-intel-analyst": ["sec-plus", "gosi", "gcti", "ctia", "gdat"],
 };
+
+// The boolean filters share one shape: a checkbox in the sidebar, a URL
+// parameter, a chip label and a predicate. Adding one is a single row here plus
+// the checkbox in index.html.
+const FLAGS = [
+  { key: "freeOnly", sel: "#free-only", param: "free", chip: "price", label: "Free / unknown", test: c => c.price_usd === 0 || c.price_usd == null },
+  { key: "dodOnly", sel: "#dod-only", param: "dod", chip: "flag", label: "DoD 8140", test: c => c.dod_8140 },
+  { key: "noPrereq", sel: "#no-prereq", param: "noprereq", chip: "flag", label: "No prerequisites", test: c => !c.prerequisites.length },
+  { key: "handsOn", sel: "#hands-on", param: "handson", chip: "flag", label: "Hands-on exam", test: c => c.hands_on },
+  { key: "verifiedOnly", sel: "#verified-only", param: "verified", chip: "flag", label: "Verified prices", test: c => !!c.price_verified_at },
+];
+
+const emptyFilters = () => ({
+  levels: new Set(),
+  domains: new Set(),
+  vendors: new Set(),
+  priceMin: null,
+  priceMax: null,
+  ...Object.fromEntries(FLAGS.map(f => [f.key, false])),
+});
 
 // Build the query string for the current filter/search state. Selection ids are
 // only included for the explicit "copy link" action so the address bar stays
@@ -58,14 +89,13 @@ function buildParams({ withSelection = false } = {}) {
   if (f.vendors.size) p.set("vendor", [...f.vendors].join(","));
   if (f.priceMin != null) p.set("pmin", f.priceMin);
   if (f.priceMax != null) p.set("pmax", f.priceMax);
-  if (f.freeOnly) p.set("free", "1");
-  if (f.dodOnly) p.set("dod", "1");
-  if (f.noPrereq) p.set("noprereq", "1");
-  if (f.verifiedOnly) p.set("verified", "1");
+  for (const flag of FLAGS) if (f[flag.key]) p.set(flag.param, "1");
   if (state.search) p.set("q", state.search);
   if (withSelection && state.cart.size) p.set("sel", [...state.cart].join(","));
   return p;
 }
+
+const hasActiveFilters = () => buildParams().toString() !== "";
 
 function serializeFilters() {
   const qs = buildParams().toString();
@@ -75,10 +105,35 @@ function serializeFilters() {
   }
 }
 
+// Link to the current filters and view (not the selection; that is a roadmap).
 function shareUrl() {
-  const qs = buildParams({ withSelection: true }).toString();
+  const qs = buildParams().toString();
   return location.origin + location.pathname + (qs ? "?" + qs : "") + (location.hash || "");
 }
+
+// ---------- shareable roadmaps ----------
+// A roadmap lives entirely in the URL: #/roadmap/<id>,<id>,...?name=<title>.
+// Opening one shows it as its own page and never touches the visitor's saved
+// selection unless they choose "Use as my selection".
+const cleanName = s => String(s || "").replace(/\s+/g, " ").trim().slice(0, NAME_MAX);
+
+function roadmapHash(ids, name) {
+  const title = cleanName(name);
+  return `#/roadmap/${ids.join(",")}` + (title ? "?name=" + encodeURIComponent(title) : "");
+}
+const roadmapUrl = (ids, name) => location.origin + location.pathname + roadmapHash(ids, name);
+const myRoadmapUrl = () => roadmapUrl(selectedCerts().map(c => c.id), state.roadmapName);
+
+function readRoadmap(hash) {
+  const m = hash.match(/^#\/roadmap\/([a-z0-9,-]*)(?:\?(.*))?$/);
+  if (!m) return null;
+  const ids = [...new Set(sanitizeIds(m[1].split(",")))].filter(id => DATA.byId.has(id));
+  let name = "";
+  try { name = cleanName(new URLSearchParams(m[2] || "").get("name")); } catch { /* malformed escape */ }
+  return { ids, name };
+}
+
+const certUrl = id => location.origin + location.pathname + `#/cert/${id}`;
 
 function deserializeFilters(meta) {
   const p = new URLSearchParams(location.search);
@@ -88,14 +143,13 @@ function deserializeFilters(meta) {
   if (p.has("vendor")) state.filters.vendors = inSet(p.get("vendor").split(","), meta.vendors);
   if (p.has("pmin")) { const n = Number(p.get("pmin")); if (Number.isFinite(n) && n >= 0) state.filters.priceMin = n; }
   if (p.has("pmax")) { const n = Number(p.get("pmax")); if (Number.isFinite(n) && n >= 0) state.filters.priceMax = n; }
-  state.filters.freeOnly = p.get("free") === "1";
-  state.filters.dodOnly = p.get("dod") === "1";
-  state.filters.noPrereq = p.get("noprereq") === "1";
-  state.filters.verifiedOnly = p.get("verified") === "1";
+  for (const flag of FLAGS) state.filters[flag.key] = p.get(flag.param) === "1";
   if (p.has("q")) state.search = String(p.get("q")).slice(0, 200);
+  // Links from before roadmaps existed carried the selection as ?sel=. Open
+  // them as a roadmap instead of overwriting the visitor's own selection.
   if (p.has("sel")) {
     const ids = sanitizeIds(p.get("sel").split(","));
-    if (ids.length) { state.cart = new Set(ids); persistCart(); }
+    if (ids.length) history.replaceState(null, "", location.pathname + roadmapHash(ids, ""));
   }
 }
 
@@ -103,18 +157,9 @@ const state = {
   search: "",
   sort: safeLS(SORT_KEY, ALLOWED_SORTS, "name"),
   view: safeLS(VIEW_KEY, ALLOWED_VIEWS, "matrix"),
-  filters: {
-    levels: new Set(),
-    domains: new Set(),
-    vendors: new Set(),
-    priceMin: null,
-    priceMax: null,
-    freeOnly: false,
-    dodOnly: false,
-    noPrereq: false,
-    verifiedOnly: false,
-  },
+  filters: emptyFilters(),
   cart: new Set(safeLoadCart()),
+  roadmapName: cleanName(store.get(NAME_KEY)),
   toggleCart(id) {
     this.cart.has(id) ? this.cart.delete(id) : this.cart.add(id);
     persistCart();
@@ -124,43 +169,107 @@ const state = {
 bindState(state);
 
 let DATA;
+// Lower-cased search text per cert, built once after the data loads.
+const HAYSTACK = new Map();
 
 function applyFilters(certs) {
   const f = state.filters;
-  const q = state.search.trim().toLowerCase();
+  // Every word has to match, in any order: "giac cloud" finds GCLD and GPCS.
+  const terms = state.search.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const flags = FLAGS.filter(flag => f[flag.key]);
   return certs.filter(c => {
     if (f.levels.size && !f.levels.has(c.level)) return false;
     if (f.domains.size && !f.domains.has(c.domain)) return false;
     if (f.vendors.size && !f.vendors.has(c.vendor)) return false;
-    if (f.freeOnly && !(c.price_usd === 0 || c.price_usd == null)) return false;
-    if (f.dodOnly && !c.dod_8140) return false;
-    if (f.noPrereq && c.prerequisites.length) return false;
-    if (f.verifiedOnly && !c.price_verified_at) return false;
+    if (!flags.every(flag => flag.test(c))) return false;
     if (f.priceMin != null && (c.price_usd ?? 0) < f.priceMin) return false;
     if (f.priceMax != null && (c.price_usd ?? 0) > f.priceMax) return false;
-    if (q) {
-      const hay = (c.id + " " + c.acronym + " " + c.name + " " + c.vendor + " " + c.tags.join(" ") + " " + c.description + " " + c.domain).toLowerCase();
-      if (!hay.includes(q)) return false;
+    if (terms.length) {
+      const hay = HAYSTACK.get(c.id);
+      if (!terms.every(t => hay.includes(t))) return false;
     }
     return true;
   });
 }
 
+// ---------- routing ----------
+// The drawer is an overlay on top of whatever list was showing. `baseHash`
+// remembers that list so opening a cert from a domain or vendor page keeps the
+// page underneath, and closing the drawer returns to it rather than to home.
+let baseHash = "#/";
+function readRoute() {
+  const hash = location.hash || "#/";
+  const cert = hash.match(/^#\/cert\/([a-z0-9-]+)$/);
+  if (cert) return cert[1];
+  baseHash = hash;
+  return null;
+}
+const openCert = id => { location.hash = `#/cert/${id}`; };
+const closeDrawer = () => { location.hash = baseHash; };
+
+// ---------- selection ----------
+function paintCart() {
+  const sum = renderCart($("#cart-list"), $("#cart-count"), DATA.certs, state);
+  const paint = n => {
+    const text = "$" + n.toLocaleString("en-US");
+    $("#cart-total").textContent = text;
+    $("#cart-subtotal").textContent = text;
+  };
+  tweenNumber($("#cart-total"), sum, paint);
+  const empty = state.cart.size === 0;
+  for (const id of ["#cart-md", "#cart-share", "#cart-view", "#cart-csv", "#cart-clear"]) $(id).disabled = empty;
+}
+
+let flowIds = new Set();
+function paintFlow() {
+  const items = DATA.certs.filter(c => state.cart.has(c.id));
+  renderFlow($("#flow"), items, DATA.byId);
+  const fresh = [...$("#flow").querySelectorAll(".flow-node")].filter(n => !flowIds.has(n.dataset.id));
+  if (flowIds.size) staggerIn(fresh, { y: 8 });
+  flowIds = new Set(items.map(c => c.id));
+}
+
+function paintDrawerToggle() {
+  const btn = $("#drawer-content").querySelector("[data-toggle-cart]");
+  if (btn && drawerCert) btn.textContent = state.cart.has(drawerCert) ? "Remove from selection" : "Add to selection";
+}
+
+// In-place update after a single cert is toggled: no grid repaint needed.
 function updateSelection(id) {
   const selected = state.cart.has(id);
-  document.querySelectorAll(`[data-id="${CSS.escape(id)}"]`).forEach(elm => {
+  const cards = document.querySelectorAll(`[data-id="${CSS.escape(id)}"]`);
+  cards.forEach(elm => {
     elm.classList.toggle("selected", selected);
     const cb = elm.querySelector('input[type="checkbox"]');
     if (cb) cb.checked = selected;
   });
-  const items = DATA.certs.filter(c => state.cart.has(c.id));
-  renderCart($("#cart-list"), $("#cart-total"), $("#cart-subtotal"), $("#cart-count"), DATA.certs, state);
-  renderFlow($("#flow"), items, DATA.byId);
-  const btn = $("#drawer-content").querySelector("[data-toggle-cart]");
-  const cmatch = (location.hash || "").match(/^#\/cert\/(.+)$/);
-  if (btn && cmatch) btn.textContent = state.cart.has(cmatch[1]) ? "Remove from selection" : "Add to selection";
+  pop($("#grid").querySelectorAll(`[data-id="${CSS.escape(id)}"]`));
+  pop($("#cart-toggle"), 1.05);
+  paintCart();
+  paintFlow();
+  paintDrawerToggle();
+  lastGridKey = gridKey();
 }
 
+// Everything a cert needs first, transitively, in dependency order.
+function prerequisiteClosure(id, seen = new Set()) {
+  for (const p of DATA.byId.get(id)?.prerequisites || []) {
+    if (seen.has(p) || !DATA.byId.has(p)) continue;
+    prerequisiteClosure(p, seen);
+    seen.add(p);
+  }
+  return seen;
+}
+
+function addMany(ids, message) {
+  const fresh = ids.filter(id => DATA.byId.has(id) && !state.cart.has(id));
+  for (const id of fresh) state.cart.add(id);
+  persistCart();
+  scheduleRender();
+  toast(message(fresh.length));
+}
+
+// ---------- rendering ----------
 // Build the breadcrumb shown above a filtered domain or vendor list.
 function crumbHeading(rootLabel, name, count) {
   return el("span", {},
@@ -180,17 +289,33 @@ function scheduleRender() {
   requestAnimationFrame(() => { frameQueued = false; rerender(); });
 }
 
-// Push the current filter state back into the sidebar controls. Used after a
-// filter is removed from the chip row so the checkboxes and inputs stay in sync.
-function syncSidebarControls() {
+function applyVendorSearch() {
+  const q = $("#filter-vendor-search").value.trim().toLowerCase();
+  $("#filter-vendor").querySelectorAll("label").forEach(lbl => {
+    lbl.classList.toggle("hidden", !!q && !lbl.dataset.vendor.includes(q));
+  });
+}
+
+function paintFilters() {
   buildFilters({ levelEl: $("#filter-level"), domainEl: $("#filter-domain"), vendorEl: $("#filter-vendor") }, DATA.meta, state, scheduleRender);
+  applyVendorSearch();
+}
+
+// Push the current filter state back into the sidebar controls. Used whenever
+// the state is changed from somewhere other than the sidebar itself.
+function syncSidebarControls() {
+  paintFilters();
   $("#search").value = state.search;
   $("#price-min").value = state.filters.priceMin ?? "";
   $("#price-max").value = state.filters.priceMax ?? "";
-  $("#free-only").checked = state.filters.freeOnly;
-  $("#dod-only").checked = state.filters.dodOnly;
-  $("#no-prereq").checked = state.filters.noPrereq;
-  $("#verified-only").checked = state.filters.verifiedOnly;
+  for (const flag of FLAGS) $(flag.sel).checked = state.filters[flag.key];
+}
+
+function resetFilters() {
+  state.search = "";
+  state.filters = emptyFilters();
+  syncSidebarControls();
+  scheduleRender();
 }
 
 function removeFilter(kind, value) {
@@ -199,14 +324,22 @@ function removeFilter(kind, value) {
   else if (kind === "domain") f.domains.delete(value);
   else if (kind === "vendor") f.vendors.delete(value);
   else if (kind === "price") { f.priceMin = null; f.priceMax = null; }
-  else if (kind === "free") f.freeOnly = false;
-  else if (kind === "dod") f.dodOnly = false;
-  else if (kind === "noPrereq") f.noPrereq = false;
-  else if (kind === "verified") f.verifiedOnly = false;
+  else if (kind === "flag") f[value] = false;
   else if (kind === "search") state.search = "";
   syncSidebarControls();
   scheduleRender();
 }
+
+// Narrow one of the set filters to a single value, or lift it if it is already
+// narrowed to exactly that value. Used by the right-click menu.
+function toggleOnly(kind, value) {
+  const set = state.filters[kind];
+  const isOnly = set.size === 1 && set.has(value);
+  state.filters[kind] = isOnly ? new Set() : new Set([value]);
+  syncSidebarControls();
+  scheduleRender();
+}
+const isOnly = (kind, value) => state.filters[kind].size === 1 && state.filters[kind].has(value);
 
 // The row of removable chips above the results that mirrors what is currently
 // filtering the view. Makes the active query visible at a glance, which matters
@@ -234,39 +367,42 @@ function renderActiveFilters() {
     const hi = f.priceMax != null ? "$" + f.priceMax : "∞";
     add("price", `${lo}–${hi}`, "price");
   }
-  if (f.freeOnly) add("price", "Free / unknown", "free");
-  if (f.dodOnly) add("flag", "DoD 8140", "dod");
-  if (f.noPrereq) add("flag", "No prerequisites", "noPrereq");
-  if (f.verifiedOnly) add("flag", "Verified prices", "verified");
+  for (const flag of FLAGS) if (f[flag.key]) add(flag.chip, flag.label, "flag", flag.key);
 
   if (!chips.length) { host.replaceChildren(); host.classList.add("hidden"); return; }
   const clearAll = el("button", { class: "af-clear", type: "button", text: "Clear all" });
-  clearAll.addEventListener("click", () => $("#reset-filters").click());
+  clearAll.addEventListener("click", resetFilters);
   host.replaceChildren(...chips, clearAll);
   host.classList.remove("hidden");
 }
 
-function rerender() {
-  const filtered = applyFilters(DATA.certs);
+// What the grid depends on. If none of it changed (the user only opened or
+// closed a cert) the grid is left alone, which keeps scroll position and focus.
+const gridKey = () => [baseHash, state.view, state.sort, buildParams({ withSelection: true }).toString()].join("|");
+let lastGridKey = null;
+let lastScene = null;
+
+function paintGrid(filtered) {
   const grid = $("#grid");
-  const hash = location.hash || "#/";
+  const dmatch = baseHash.match(/^#\/domain\/(.+)$/);
+  const vmatch = baseHash.match(/^#\/vendor\/(.+)$/);
+  const domain = dmatch && DATA.meta.domains.find(d => slug(d) === dmatch[1]);
+  const vendor = vmatch && DATA.meta.vendors.find(v => slug(v) === vmatch[1]);
+  const roadmap = readRoadmap(baseHash);
+  let scene;
 
-  const dmatch = hash.match(/^#\/domain\/(.+)$/);
-  const vmatch = hash.match(/^#\/vendor\/(.+)$/);
-  const cmatch = hash.match(/^#\/cert\/(.+)$/);
-
-  if (dmatch) {
-    const domain = DATA.meta.domains.find(d => slug(d) === dmatch[1]);
-    if (domain) {
-      const certs = filtered.filter(c => c.domain === domain);
-      renderList(grid, certs, DATA.meta, state, { grouped: false, heading: crumbHeading("← All domains", domain, certs.length) });
-    } else { renderMatrix(grid, filtered, DATA.meta, state); }
-  } else if (vmatch) {
-    const vendor = DATA.meta.vendors.find(v => slug(v) === vmatch[1]);
-    if (vendor) {
-      const certs = filtered.filter(c => c.vendor === vendor);
-      renderList(grid, certs, DATA.meta, state, { grouped: false, heading: crumbHeading("← All vendors", vendor, certs.length) });
-    } else { renderMatrix(grid, filtered, DATA.meta, state); }
+  if (roadmap) {
+    const same = roadmap.ids.length === state.cart.size && roadmap.ids.every(id => state.cart.has(id));
+    renderRoadmap(grid, roadmap.ids.map(id => DATA.byId.get(id)), state, { name: roadmap.name, same });
+    scene = "roadmap:" + roadmap.ids.join(",");
+  } else if (domain) {
+    const certs = filtered.filter(c => c.domain === domain);
+    renderList(grid, certs, DATA.meta, state, { grouped: false, heading: crumbHeading("← All domains", domain, certs.length) });
+    scene = "domain:" + domain;
+  } else if (vendor) {
+    const certs = filtered.filter(c => c.vendor === vendor);
+    renderList(grid, certs, DATA.meta, state, { grouped: false, heading: crumbHeading("← All vendors", vendor, certs.length) });
+    scene = "vendor:" + vendor;
   } else if (state.search.trim()) {
     const q = state.search.trim();
     const heading = [
@@ -274,34 +410,152 @@ function rerender() {
       el("span", { class: "muted", text: `${filtered.length} ${filtered.length === 1 ? "match" : "matches"}` }),
     ];
     renderList(grid, filtered, DATA.meta, state, { grouped: false, heading });
+    scene = "search";
   } else if (state.view === "list") {
     renderList(grid, filtered, DATA.meta, state, { grouped: true });
+    scene = "list";
   } else {
     renderMatrix(grid, filtered, DATA.meta, state);
+    scene = "matrix";
   }
 
-  $("#empty").classList.toggle("hidden", filtered.length > 0);
+  // Animate only when the kind of view changes; filtering within a view stays
+  // instant so typing in the search box never flickers.
+  if (scene !== lastScene) {
+    staggerIn(grid.querySelectorAll(".pill, .list-card"));
+    $("#content").scrollTop = 0;
+  }
+  lastScene = scene;
+}
+
+// ---------- drawer ----------
+let drawerCert = null;
+
+function drawerNeighbours() {
+  const ids = [...new Set([...$("#grid").querySelectorAll("[data-id]")].map(n => n.dataset.id))];
+  const at = ids.indexOf(drawerCert);
+  return { prev: at > 0 ? ids[at - 1] : null, next: at >= 0 && at < ids.length - 1 ? ids[at + 1] : null };
+}
+
+function stepCert(delta) {
+  if (!drawerCert) return;
+  const { prev, next } = drawerNeighbours();
+  const id = delta < 0 ? prev : next;
+  if (id) openCert(id);
+}
+
+function syncDrawer(certId) {
+  const drawer = $("#drawer");
+  if (certId && DATA.byId.has(certId)) {
+    const wasClosed = drawer.classList.contains("hidden");
+    if (drawerCert !== certId) {
+      drawerCert = certId;
+      renderDrawer($("#drawer-content"), DATA.byId.get(certId), DATA.byId);
+      cascade($("#drawer-content"));
+    }
+    drawerIn(drawer);
+    if (wasClosed) $("#drawer-close").focus({ preventScroll: true });
+    const { prev, next } = drawerNeighbours();
+    $("#drawer-prev").disabled = !prev;
+    $("#drawer-next").disabled = !next;
+  } else if (drawerCert) {
+    const id = drawerCert;
+    drawerCert = null;
+    const hadFocus = drawer.contains(document.activeElement);
+    drawerOut(drawer);
+    // Hand focus back to the card the drawer was opened from.
+    if (hadFocus) $("#grid").querySelector(`[data-id="${CSS.escape(id)}"]`)?.focus({ preventScroll: true });
+  }
+}
+const BASE_TITLE = document.title;
+const drawerTitle = id => (id && DATA.byId.has(id) ? `${DATA.byId.get(id).acronym} · cert/map` : "");
+
+function rerender() {
+  const certId = readRoute();
+  const filtered = applyFilters(DATA.certs);
+
+  const key = gridKey();
+  if (key !== lastGridKey) {
+    paintGrid(filtered);
+    lastGridKey = key;
+  }
+
+  const roadmap = readRoadmap(baseHash);
+  $("#empty").classList.toggle("hidden", !!roadmap || filtered.length > 0);
+  document.title = drawerTitle(certId) || (roadmap ? `${roadmap.name || "Roadmap"} · cert/map` : BASE_TITLE);
   $("#result-count").textContent = `${filtered.length} of ${DATA.certs.length} certifications`;
+  $("#reset-filters").disabled = !hasActiveFilters();
   renderActiveFilters();
+  syncDrawer(certId);
+  paintCart();
+  paintFlow();
 
-  if (cmatch && DATA.byId.has(cmatch[1])) {
-    $("#drawer").classList.remove("hidden");
-    $("#drawer").setAttribute("aria-hidden", "false");
-    renderDrawer($("#drawer-content"), DATA.byId.get(cmatch[1]), DATA.byId);
-  } else {
-    $("#drawer").classList.add("hidden");
-    $("#drawer").setAttribute("aria-hidden", "true");
-  }
-
-  renderCart($("#cart-list"), $("#cart-total"), $("#cart-subtotal"), $("#cart-count"), DATA.certs, state);
-  renderFlow($("#flow"), DATA.certs.filter(c => state.cart.has(c.id)), DATA.byId);
-
-  document.querySelectorAll(".seg-btn").forEach(b => b.classList.toggle("active", b.dataset.view === state.view));
+  document.querySelectorAll(".seg-btn").forEach(b => {
+    const on = b.dataset.view === state.view;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-pressed", String(on));
+  });
   serializeFilters();
 }
 
+// ---------- actions ----------
+function setView(view) {
+  if (!ALLOWED_VIEWS.has(view)) return;
+  state.view = view;
+  store.set(VIEW_KEY, view);
+  scheduleRender();
+}
+
+function setTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  store.set(THEME_KEY, theme);
+  $('meta[name="theme-color"]')?.setAttribute("content", THEME_COLOR[theme]);
+}
+const currentTheme = () => document.documentElement.dataset.theme;
+function toggleTheme() {
+  setTheme(currentTheme() === "dark" ? "light" : "dark");
+  spin($("#theme-toggle svg"));
+}
+
+function setCartOpen(open) {
+  const cart = $("#cart");
+  const shouldOpen = open ?? cart.classList.contains("hidden");
+  shouldOpen ? panelIn(cart) : panelOut(cart);
+  $("#cart-toggle").setAttribute("aria-expanded", String(shouldOpen));
+}
+
+// The sidebar is a slide-over on narrow screens and a collapsible column on
+// wide ones. Only the wide-screen choice is remembered between visits.
+const narrow = window.matchMedia("(max-width: 900px)");
+function sidebarIsOpen() {
+  return narrow.matches ? $("#sidebar").classList.contains("open") : !$(".layout").classList.contains("no-sidebar");
+}
+function setSidebarOpen(open) {
+  const shouldOpen = open ?? !sidebarIsOpen();
+  if (narrow.matches) {
+    $("#sidebar").classList.toggle("open", shouldOpen);
+    $("#backdrop").classList.toggle("hidden", !shouldOpen);
+  } else {
+    $(".layout").classList.toggle("no-sidebar", !shouldOpen);
+    store.set(SIDEBAR_KEY, shouldOpen ? "1" : "0");
+  }
+  $("#sidebar-toggle").setAttribute("aria-expanded", String(shouldOpen));
+  if (!shouldOpen && $("#sidebar").contains(document.activeElement)) $("#sidebar-toggle").focus();
+}
+
+function openHelp() {
+  const dlg = $("#help");
+  if (dlg.open) return;
+  dlg.showModal();
+  cascade(dlg.querySelector(".help-list"), { step: 16 });
+}
+
+function selectedCerts() {
+  return DATA.certs.filter(c => state.cart.has(c.id));
+}
+
 function exportMd() {
-  const items = DATA.certs.filter(c => state.cart.has(c.id));
+  const items = selectedCerts();
   const total = items.reduce((a, c) => a + (c.price_usd || 0), 0);
   const lines = [
     "# My Security Certification Path", "",
@@ -309,181 +563,317 @@ function exportMd() {
     ...items.map(c => `| [${c.acronym}](${c.url}) | ${c.vendor} | ${c.level} | ${fmtPrice(c.price_usd)} |`),
     "", `**Total: $${total.toLocaleString("en-US")}**`,
   ];
-  navigator.clipboard.writeText(lines.join("\n"));
+  return copyText(lines.join("\n"), "Selection copied as Markdown");
 }
 
 function exportCsv() {
-  const items = DATA.certs.filter(c => state.cart.has(c.id));
   const rows = [["id", "acronym", "name", "vendor", "domain", "level", "price_usd", "url"]];
-  items.forEach(c => rows.push([c.id, c.acronym, c.name, c.vendor, c.domain, c.level, c.price_usd ?? "", c.url]));
+  selectedCerts().forEach(c => rows.push([c.id, c.acronym, c.name, c.vendor, c.domain, c.level, c.price_usd ?? "", c.url]));
   const csv = rows.map(r => r.map(v => /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : v).join(",")).join("\n");
-  const blob = new Blob([csv], { type: "text/csv" });
   const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
+  a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
   a.download = "my-certs.csv"; a.click();
   URL.revokeObjectURL(a.href);
+  toast("Exported my-certs.csv");
 }
 
-// Briefly swap a button's label to confirm a clipboard copy without a toast.
-function flashCopied(btn, label = "Copied") {
-  const original = btn.textContent;
-  btn.textContent = label;
-  btn.disabled = true;
-  setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 1200);
+function viewMyRoadmap() {
+  if (!state.cart.size) return;
+  setCartOpen(false);
+  location.hash = roadmapHash(selectedCerts().map(c => c.id), state.roadmapName);
+}
+
+// Replace the visitor's selection with the roadmap they are looking at.
+function adoptRoadmap() {
+  const roadmap = readRoadmap(baseHash);
+  if (!roadmap?.ids.length) return;
+  state.cart = new Set(roadmap.ids);
+  persistCart();
+  if (roadmap.name) { state.roadmapName = roadmap.name; store.set(NAME_KEY, roadmap.name); $("#cart-name").value = roadmap.name; }
+  scheduleRender();
+  toast(`Selection replaced with ${roadmap.ids.length} certifications`);
+}
+
+function clearSelection() {
+  if (!state.cart.size) return;
+  const before = [...state.cart];
+  state.cart.clear();
+  persistCart();
+  scheduleRender();
+  toast(`Cleared ${before.length} ${before.length === 1 ? "certification" : "certifications"}`);
+}
+
+// ---------- right-click menu ----------
+function certMenu(c) {
+  const selected = state.cart.has(c.id);
+  const missing = [...prerequisiteClosure(c.id)].filter(id => !state.cart.has(id));
+  return [
+    { heading: `${c.acronym} · ${c.vendor}` },
+    drawerCert === c.id ? null : { label: "Open details", hint: "Enter", action: () => openCert(c.id) },
+    { label: selected ? "Remove from selection" : "Add to selection", hint: "Space", action: () => state.toggleCart(c.id) },
+    missing.length ? {
+      label: `Add with prerequisites (${missing.length + (selected ? 0 : 1)})`,
+      action: () => addMany([...missing, c.id], n => `Added ${n} to your path`),
+    } : null,
+    { label: "Open official page ↗", action: () => window.open(c.url, "_blank", "noopener,noreferrer") },
+    { separator: true },
+    { label: "Copy link", action: () => copyText(certUrl(c.id), "Link copied") },
+    { label: "Copy name", action: () => copyText(`${c.acronym} (${c.name})`, "Name copied") },
+    { label: "Copy as Markdown", action: () => copyText(`[${c.acronym}](${c.url})`, "Markdown copied") },
+    { separator: true },
+    { label: `Only ${c.vendor}`, checked: isOnly("vendors", c.vendor), action: () => toggleOnly("vendors", c.vendor) },
+    { label: `Only ${c.domain}`, checked: isOnly("domains", c.domain), action: () => toggleOnly("domains", c.domain) },
+    { label: `Only ${LEVEL_LABEL[c.level]} level`, checked: isOnly("levels", c.level), action: () => toggleOnly("levels", c.level) },
+  ];
+}
+
+function domainMenu(domain) {
+  const count = DATA.meta.domainCount.get(domain) || 0;
+  return [
+    { heading: `${domain} · ${count}` },
+    { label: "Open domain", hint: "Enter", action: () => { location.hash = `#/domain/${slug(domain)}`; } },
+    { label: "Only this domain", checked: isOnly("domains", domain), action: () => toggleOnly("domains", domain) },
+    { label: "Copy link", action: () => copyText(location.origin + location.pathname + `#/domain/${slug(domain)}`, "Link copied") },
+  ];
+}
+
+function pageMenu() {
+  const n = state.cart.size;
+  return [
+    { heading: "View" },
+    { label: "Matrix", hint: "M", checked: state.view === "matrix", action: () => setView("matrix") },
+    { label: "List", hint: "L", checked: state.view === "list", action: () => setView("list") },
+    { separator: true },
+    { label: currentTheme() === "dark" ? "Light theme" : "Dark theme", hint: "T", action: toggleTheme },
+    { label: sidebarIsOpen() ? "Hide filters" : "Show filters", hint: "F", action: () => setSidebarOpen() },
+    { label: "Reset filters", hint: "R", disabled: !hasActiveFilters(), action: resetFilters },
+    { separator: true },
+    { label: "Copy link to this view", action: () => copyText(shareUrl(), "Link copied") },
+    { label: n ? `Open selection (${n})` : "Open selection", hint: "S", action: () => setCartOpen(true) },
+    { label: "Keyboard shortcuts", hint: "?", action: openHelp },
+  ];
+}
+
+function selectionMenu() {
+  const empty = state.cart.size === 0;
+  return [
+    { heading: `Selection · ${state.cart.size}` },
+    { label: "Copy as Markdown", disabled: empty, action: exportMd },
+    { label: "View as roadmap", disabled: empty, action: viewMyRoadmap },
+    { label: "Copy roadmap link", disabled: empty, action: () => copyText(myRoadmapUrl(), "Roadmap link copied") },
+    { label: "Export CSV", disabled: empty, action: exportCsv },
+    { separator: true },
+    { label: "Clear selection", danger: true, disabled: empty, action: clearSelection },
+  ];
+}
+
+// Decide which menu a right-click gets. Returning null hands the event back to
+// the browser: form fields, plain links and selected text keep the native menu.
+function resolveMenu(target) {
+  if (!(target instanceof Element) || !DATA) return null;
+  if (target.closest("input, textarea, select, dialog")) return null;
+  if (String(window.getSelection?.() || "").trim()) return null;
+  hideTooltip();
+
+  const card = target.closest("[data-id], [data-ctx-id]");
+  const id = card?.dataset.id || card?.dataset.ctxId;
+  if (id && DATA.byId.has(id)) return certMenu(DATA.byId.get(id));
+  if (target.closest("a[href]")) return null;
+
+  const colhead = target.closest(".mx-colhead");
+  if (colhead) {
+    const domain = DATA.meta.domains.find(d => slug(d) === colhead.dataset.navDomain);
+    if (domain) return domainMenu(domain);
+  }
+  if (target.closest("#drawer") && drawerCert) return certMenu(DATA.byId.get(drawerCert));
+  if (target.closest("#cart")) return selectionMenu();
+  if (target.closest("#content")) return pageMenu();
+  return null;
+}
+
+// ---------- keyboard ----------
+const isTyping = node => !!node?.closest?.("input, textarea, select, [contenteditable]");
+
+function onGlobalKey(e) {
+  if (e.defaultPrevented || e.ctrlKey || e.metaKey || e.altKey) return;
+  if ($("#help").open) return;
+
+  if (e.key === "Escape") {
+    if (drawerCert) closeDrawer();
+    else if (!$("#cart").classList.contains("hidden")) setCartOpen(false);
+    else if (narrow.matches && sidebarIsOpen()) setSidebarOpen(false);
+    return;
+  }
+  if (isTyping(e.target)) return;
+
+  const actions = {
+    "/": () => $("#search").focus(),
+    "?": openHelp,
+    m: () => setView("matrix"),
+    l: () => setView("list"),
+    t: toggleTheme,
+    s: () => setCartOpen(),
+    f: () => setSidebarOpen(),
+    r: resetFilters,
+    j: () => stepCert(1),
+    k: () => stepCert(-1),
+  };
+  const fn = actions[e.key.length === 1 ? e.key.toLowerCase() : e.key];
+  if (!fn) return;
+  e.preventDefault();
+  fn();
 }
 
 async function init() {
-  document.documentElement.dataset.theme = safeLS(THEME_KEY, ALLOWED_THEMES, "dark");
+  setTheme(safeLS(THEME_KEY, ALLOWED_THEMES, "dark"));
   DATA = await loadData();
+  for (const c of DATA.certs) {
+    HAYSTACK.set(c.id, [c.id, c.acronym, c.name, c.vendor, c.tags.join(" "), c.description, c.domain, c.level].join(" ").toLowerCase());
+  }
   initTooltip(DATA);
+  initContextMenu(resolveMenu);
 
   deserializeFilters(DATA.meta);
   // Drop any selected id (from storage or a shared link) that no longer exists.
   for (const id of [...state.cart]) if (!DATA.byId.has(id)) state.cart.delete(id);
-
-  buildFilters(
-    { levelEl: $("#filter-level"), domainEl: $("#filter-domain"), vendorEl: $("#filter-vendor") },
-    DATA.meta, state, scheduleRender
-  );
-
-  if (state.search) $("#search").value = state.search;
-  if (state.filters.priceMin != null) $("#price-min").value = state.filters.priceMin;
-  if (state.filters.priceMax != null) $("#price-max").value = state.filters.priceMax;
-  $("#free-only").checked = state.filters.freeOnly;
-  $("#dod-only").checked = state.filters.dodOnly;
-  $("#no-prereq").checked = state.filters.noPrereq;
-  $("#verified-only").checked = state.filters.verifiedOnly;
+  syncSidebarControls();
 
   const verifiedCount = DATA.certs.filter(c => c.price_verified_at).length;
   $("#freshness").textContent = `${verifiedCount} of ${DATA.certs.length} prices verified against the vendor`;
 
-  const presetEl = $("#preset");
-  if (presetEl) presetEl.addEventListener("change", e => {
+  $("#preset").addEventListener("change", e => {
     const ids = ROLE_PATHS[e.target.value];
-    if (!ids) return;
-    for (const cid of ids) if (DATA.byId.has(cid)) state.cart.add(cid);
-    persistCart();
+    const label = e.target.selectedOptions[0]?.textContent || "preset";
     e.target.value = "";
-    scheduleRender();
+    if (!ids) return;
+    addMany(ids, n => n ? `Added ${n} from the ${label.toLowerCase()} path` : `The ${label.toLowerCase()} path is already selected`);
   });
 
   const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
   const onSearch = debounce(v => { state.search = v; scheduleRender(); }, 80);
   $("#search").addEventListener("input", e => onSearch(e.target.value));
-  $("#search").addEventListener("keydown", e => { if (e.key === "Escape") { e.target.value = ""; state.search = ""; scheduleRender(); } });
-
-  document.addEventListener("keydown", e => {
-    if (e.key === "/" && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "SELECT") {
-      e.preventDefault(); $("#search").focus();
-    }
-    if (e.key === "Escape" && !$("#drawer").classList.contains("hidden")) {
-      location.hash = "#/";
-    }
+  $("#search").addEventListener("keydown", e => {
+    if (e.key !== "Escape") return;
+    e.stopPropagation();
+    if (e.target.value) { e.target.value = ""; state.search = ""; scheduleRender(); }
+    else e.target.blur();
   });
+
+  document.addEventListener("keydown", onGlobalKey);
 
   const sortEl = $("#sort"); sortEl.value = state.sort;
-  sortEl.addEventListener("change", e => { state.sort = e.target.value; localStorage.setItem(SORT_KEY, state.sort); scheduleRender(); });
+  sortEl.addEventListener("change", e => { state.sort = e.target.value; store.set(SORT_KEY, state.sort); scheduleRender(); });
 
-  document.querySelectorAll(".seg-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      state.view = btn.dataset.view;
-      localStorage.setItem(VIEW_KEY, state.view);
-      scheduleRender();
-    });
-  });
+  document.querySelectorAll(".seg-btn").forEach(btn => btn.addEventListener("click", () => setView(btn.dataset.view)));
 
-  $("#price-min").addEventListener("input", e => { state.filters.priceMin = e.target.value ? Number(e.target.value) : null; scheduleRender(); });
-  $("#price-max").addEventListener("input", e => { state.filters.priceMax = e.target.value ? Number(e.target.value) : null; scheduleRender(); });
-  $("#free-only").addEventListener("change", e => { state.filters.freeOnly = e.target.checked; scheduleRender(); });
-  $("#dod-only").addEventListener("change", e => { state.filters.dodOnly = e.target.checked; scheduleRender(); });
-  $("#no-prereq").addEventListener("change", e => { state.filters.noPrereq = e.target.checked; scheduleRender(); });
-  $("#verified-only").addEventListener("change", e => { state.filters.verifiedOnly = e.target.checked; scheduleRender(); });
+  const priceInput = key => e => {
+    const n = e.target.value === "" ? null : Number(e.target.value);
+    state.filters[key] = Number.isFinite(n) && n >= 0 ? n : null;
+    scheduleRender();
+  };
+  $("#price-min").addEventListener("input", priceInput("priceMin"));
+  $("#price-max").addEventListener("input", priceInput("priceMax"));
+  for (const flag of FLAGS) {
+    $(flag.sel).addEventListener("change", e => { state.filters[flag.key] = e.target.checked; scheduleRender(); });
+  }
 
-  const vendorSearch = $("#filter-vendor-search");
-  vendorSearch.addEventListener("input", e => {
-    const q = e.target.value.trim().toLowerCase();
-    $("#filter-vendor").querySelectorAll("label").forEach(lbl => {
-      lbl.style.display = !q || lbl.dataset.vendor.includes(q) ? "" : "none";
-    });
-  });
+  $("#filter-vendor-search").addEventListener("input", applyVendorSearch);
 
   document.querySelectorAll(".filter-clear").forEach(elm => {
     elm.addEventListener("click", () => {
       state.filters[elm.dataset.clear] = new Set();
-      buildFilters({ levelEl: $("#filter-level"), domainEl: $("#filter-domain"), vendorEl: $("#filter-vendor") }, DATA.meta, state, scheduleRender);
+      paintFilters();
       scheduleRender();
     });
   });
 
-  $("#reset-filters").addEventListener("click", () => {
-    state.search = ""; $("#search").value = "";
-    state.filters = { levels: new Set(), domains: new Set(), vendors: new Set(), priceMin: null, priceMax: null, freeOnly: false, dodOnly: false, noPrereq: false, verifiedOnly: false };
-    $("#price-min").value = ""; $("#price-max").value = "";
-    document.querySelectorAll("#sidebar input[type=checkbox]").forEach(i => i.checked = false);
-    buildFilters({ levelEl: $("#filter-level"), domainEl: $("#filter-domain"), vendorEl: $("#filter-vendor") }, DATA.meta, state, scheduleRender);
-    scheduleRender();
-  });
+  $("#reset-filters").addEventListener("click", resetFilters);
+  $("#empty-reset").addEventListener("click", resetFilters);
+  $("#theme-toggle").addEventListener("click", toggleTheme);
+  $("#help-toggle").addEventListener("click", openHelp);
+  $("#help").addEventListener("click", e => { if (e.target === e.currentTarget) e.currentTarget.close(); });
+  $("#help-close").addEventListener("click", () => $("#help").close());
 
-  $("#theme-toggle").addEventListener("click", () => {
-    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-    document.documentElement.dataset.theme = next;
-    localStorage.setItem(THEME_KEY, next);
-  });
-
-  // Delegated clicks for the grid: one listener handles every pill and card
+  // Delegated handlers for the grid: one listener serves every pill and card
   // regardless of how often the matrix repaints. A click on the pick checkbox is
-  // left to the change handler below; anything else opens the cert or domain.
-  $("#grid").addEventListener("click", e => {
+  // left to the change handler; anything else opens the cert or the domain.
+  const grid = $("#grid");
+  grid.addEventListener("click", e => {
+    const rm = e.target.closest("[data-rm]")?.dataset.rm;
+    if (rm === "adopt") { adoptRoadmap(); return; }
+    if (rm === "copy") { copyText(location.origin + location.pathname + baseHash, "Roadmap link copied"); return; }
     const colhead = e.target.closest(".mx-colhead");
     if (colhead?.dataset.navDomain) { location.hash = `#/domain/${colhead.dataset.navDomain}`; return; }
     if (e.target.closest(".pill-pick, .lc-pick")) return;
     const card = e.target.closest("[data-id]");
-    if (card) location.hash = `#/cert/${card.dataset.id}`;
+    if (card) openCert(card.dataset.id);
   });
-  $("#grid").addEventListener("change", e => {
-    if (e.target.matches(".pill-pick input, .lc-pick input")) {
-      const card = e.target.closest("[data-id]");
-      if (card) state.toggleCart(card.dataset.id);
-    }
+  grid.addEventListener("change", e => {
+    if (!e.target.matches(".pill-pick input, .lc-pick input")) return;
+    const card = e.target.closest("[data-id]");
+    if (card) state.toggleCart(card.dataset.id);
   });
-  $("#flow").addEventListener("click", e => {
+  grid.addEventListener("keydown", e => {
+    if (e.target.matches("input") || (e.key !== "Enter" && e.key !== " ")) return;
+    const colhead = e.target.closest(".mx-colhead");
+    const card = e.target.closest("[data-id]");
+    if (!colhead && !card) return;
+    e.preventDefault();
+    if (colhead) location.hash = `#/domain/${colhead.dataset.navDomain}`;
+    else if (e.key === "Enter") openCert(card.dataset.id);
+    else state.toggleCart(card.dataset.id);
+  });
+
+  const flow = $("#flow");
+  const flowOpen = e => {
     if (e.target.closest(".flow-head")) return;
     const node = e.target.closest(".flow-node[data-id]");
-    if (node) location.hash = `#/cert/${node.dataset.id}`;
-  });
+    if (node) { e.preventDefault(); openCert(node.dataset.id); }
+  };
+  flow.addEventListener("click", flowOpen);
+  flow.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") flowOpen(e); });
 
   $("#drawer-content").addEventListener("click", e => {
-    if (e.target.closest("[data-toggle-cart]")) {
-      const cmatch = (location.hash || "").match(/^#\/cert\/(.+)$/);
-      if (cmatch) state.toggleCart(cmatch[1]);
-    }
+    if (!drawerCert) return;
+    if (e.target.closest("[data-toggle-cart]")) state.toggleCart(drawerCert);
+    else if (e.target.closest("[data-copy-link]")) copyText(certUrl(drawerCert), "Link copied");
   });
-  $("#drawer-close").addEventListener("click", () => { location.hash = "#/"; });
-  $("#cart-toggle").addEventListener("click", () => $("#cart").classList.toggle("hidden"));
-  $("#cart-close").addEventListener("click", () => $("#cart").classList.add("hidden"));
-  $("#cart-clear").addEventListener("click", () => { state.cart.clear(); persistCart(); scheduleRender(); });
-  $("#cart-md").addEventListener("click", e => { exportMd(); flashCopied(e.currentTarget); });
+  $("#drawer-close").addEventListener("click", closeDrawer);
+  $("#drawer-prev").addEventListener("click", () => stepCert(-1));
+  $("#drawer-next").addEventListener("click", () => stepCert(1));
+
+  $("#cart-toggle").addEventListener("click", () => setCartOpen());
+  $("#cart-close").addEventListener("click", () => setCartOpen(false));
+  $("#cart-clear").addEventListener("click", clearSelection);
+  $("#cart-md").addEventListener("click", exportMd);
   $("#cart-csv").addEventListener("click", exportCsv);
-  $("#cart-share").addEventListener("click", e => {
-    navigator.clipboard.writeText(shareUrl()).then(() => flashCopied(e.currentTarget, "Link copied"));
+  $("#cart-share").addEventListener("click", () => copyText(myRoadmapUrl(), "Roadmap link copied"));
+  $("#cart-view").addEventListener("click", viewMyRoadmap);
+  $("#cart-name").value = state.roadmapName;
+  $("#cart-name").addEventListener("input", e => {
+    state.roadmapName = cleanName(e.target.value);
+    store.set(NAME_KEY, state.roadmapName);
   });
 
-  window.addEventListener("hashchange", scheduleRender);
+  window.addEventListener("hashchange", () => { closeContextMenu(); scheduleRender(); });
 
-  const mql = window.matchMedia("(max-width: 900px)");
-  const onMql = () => { if (mql.matches) state.view = "list"; };
-  mql.addEventListener?.("change", onMql); onMql();
-
-  const toggleSidebar = open => {
-    const sb = $("#sidebar"), bd = $("#backdrop");
-    const shouldOpen = open ?? !sb.classList.contains("open");
-    sb.classList.toggle("open", shouldOpen);
-    bd.classList.toggle("hidden", !shouldOpen);
+  // The matrix does not fit a phone, so narrow screens always get the list.
+  // Crossing the breakpoint also resets the sidebar to that layout's default.
+  const onNarrow = () => {
+    if (narrow.matches && state.view !== "list") { state.view = "list"; scheduleRender(); }
+    $("#sidebar").classList.remove("open");
+    $("#backdrop").classList.add("hidden");
+    $(".layout").classList.toggle("no-sidebar", !narrow.matches && store.get(SIDEBAR_KEY) === "0");
+    $("#sidebar-toggle").setAttribute("aria-expanded", String(sidebarIsOpen()));
   };
-  $("#mobile-filter").addEventListener("click", () => toggleSidebar(true));
-  $("#backdrop").addEventListener("click", () => toggleSidebar(false));
+  narrow.addEventListener?.("change", onNarrow); onNarrow();
+
+  $("#sidebar-toggle").addEventListener("click", () => setSidebarOpen());
+  $("#sidebar-close").addEventListener("click", () => setSidebarOpen(false));
+  $("#backdrop").addEventListener("click", () => setSidebarOpen(false));
 
   rerender();
+  logoIntro($(".logo"));
 }
 
 init().catch(err => {

@@ -1,6 +1,6 @@
 # cert/map
 
-> Open-source static roadmap of 176 cybersecurity certifications mapped across 16 domains and four seniority tiers. Filter by vendor, level or price, inspect each certification's prerequisites, renewal cycle and DoD 8140 status, and plan a study path with running cost and time-to-completion totals.
+> Open-source static roadmap of 272 cybersecurity certifications mapped across 16 domains and four seniority tiers. Filter by vendor, level or price, inspect each certification's prerequisites, renewal cycle and DoD 8140 status, and plan a study path with running cost and time-to-completion totals.
 
 cert/map is a community-maintained reference for the cybersecurity certification landscape. The entire dataset lives in a single CSV file at `data/certs.csv`; the browser parses it at load time, so the data is also directly machine-readable for anyone integrating it. The project is hosted on GitHub Pages at https://securitycerts.github.io/certmap/.
 
@@ -33,36 +33,41 @@ The roadmap groups certifications across sixteen domains:
 
 Each certification is placed at one of four tiers:
 
-- **beginner** — foundational, no significant prerequisites
-- **intermediate** — assumes one to three years of relevant experience
-- **advanced** — specialised, three to five years
-- **expert** — capstone hands-on credentials or executive-level certifications
+- **beginner**: foundational, no significant prerequisites
+- **intermediate**: assumes one to three years of relevant experience
+- **advanced**: specialised, three to five years
+- **expert**: capstone hands-on credentials or executive-level certifications
 
 ## Dataset schema
 
 `data/certs.csv` columns:
 
-- `id` — slug, primary key (e.g. `oscp`, `cissp`)
-- `name` — full official name
-- `acronym` — short label
-- `vendor` — issuing organisation
-- `domain` — one of the sixteen domains listed above
-- `level` — `beginner` | `intermediate` | `advanced` | `expert`
-- `price_usd` — exam fee in USD (empty if unknown, `0` if free)
-- `currency_note` — clarification when relevant (member/non-member, bundle, etc.)
-- `duration_min` — exam length in minutes
-- `validity_years` — renewal cycle; `0` or empty means lifetime
-- `prerequisites` — semicolon-separated `id` values
-- `dod_8140` — boolean for US DoD 8140 framework approval
-- `url` — vendor's official certification page
-- `description` — one to two factual sentences
-- `tags` — semicolon-separated free-form tags
-- `weight` — optional integer for intra-cell ordering in the matrix
-- `restricted_to` — optional audience restriction (e.g. `Law enforcement only`)
+- `id`: slug, primary key (e.g. `oscp`, `cissp`)
+- `name`: full official name
+- `acronym`: short label
+- `vendor`: issuing organisation
+- `domain`: one of the sixteen domains listed above
+- `level`: `beginner` | `intermediate` | `advanced` | `expert`
+- `price_usd`: exam fee in USD (empty if unknown, `0` if free)
+- `currency_note`: clarification when relevant (member/non-member, bundle, etc.)
+- `duration_min`: exam length in minutes
+- `validity_years`: renewal cycle; `0` or empty means lifetime
+- `prerequisites`: semicolon-separated `id` values
+- `dod_8140`: boolean for US DoD 8140 framework approval
+- `url`: vendor's official certification page
+- `description`: one to two factual sentences
+- `tags`: semicolon-separated free-form tags
+- `weight`: optional integer for intra-cell ordering in the matrix
+- `restricted_to`: optional audience restriction (e.g. `Law enforcement only`)
+- `exam_count`: number of separate exams required
+- `renewal_cost`: renewal fee in USD when there is one
+- `hands_on`: boolean, true for performance-based exams
+- `price_verified_at`: date the price was last confirmed on the vendor's page
 
 ## Key URLs
 
 - [Live application](https://securitycerts.github.io/certmap/)
+- [All certifications, plain HTML](https://securitycerts.github.io/certmap/certs/)
 - [Dataset (CSV)](https://securitycerts.github.io/certmap/data/certs.csv)
 - [Schema reference](https://github.com/securitycerts/certmap/blob/main/data/schema.md)
 - [Contributing guide](https://github.com/securitycerts/certmap/blob/main/CONTRIBUTING.md)
@@ -71,15 +76,17 @@ Each certification is placed at one of four tiers:
 
 ## Features of the live site
 
-- **Matrix view** — 17 columns by 4 rows. Capstone certifications surface to the top of each cell via an optional weight value.
-- **List view** — cards grouped by domain with vendor, level, tags and price visible.
-- **Filters** — domain, level, vendor (with substring quick-search), price range, free-only, DoD 8140 only, no-prerequisites only.
-- **Detail drawer** — opens on click, deep-linkable as `#/cert/<id>`, lists prerequisites as clickable chips back to other certifications.
-- **Path planner** — pick multiple certifications and the site sorts them by prerequisite and difficulty, then reports total cost, total study hours and approximate months at ten study-hours per week.
-- **Delayed hover tooltip** — appears after a 450 ms hover and previews the cert's price, exam length, renewal cycle and prerequisites.
-- **Light and dark themes** — dark by default.
-- **Mobile layout** — drawer-style filter panel, single-column list, the matrix view collapses to the list.
-- **Strict CSP** — `script-src 'self'` with a hashed JSON-LD island; no third-party scripts, no `unsafe-inline`.
+- **Matrix view**: 17 columns by 4 rows. Capstone certifications surface to the top of each cell via an optional weight value.
+- **List view**: cards grouped by domain with vendor, level, tags and price visible.
+- **Filters**: domain, level, vendor (with substring quick-search), price range, free-only, DoD 8140 only, no-prerequisites only, hands-on exam only, verified prices only.
+- **Shareable roadmaps**: a selection can be named and shared as `#/roadmap/<id>,<id>?name=<title>`; the link opens the ordered path with cost and study-time totals.
+- **Static pages**: every certification has a plain HTML page at `certs/<id>.html`, and `certs/` lists them all by domain.
+- **Detail drawer**: opens on click, deep-linkable as `#/cert/<id>`, lists prerequisites as clickable chips back to other certifications.
+- **Path planner**: pick multiple certifications and the site sorts them by prerequisite and difficulty, then reports total cost, total study hours and approximate months at ten study-hours per week.
+- **Delayed hover tooltip**: appears after a 450 ms hover and previews the cert's price, exam length, renewal cycle and prerequisites.
+- **Light and dark themes**: dark by default.
+- **Mobile layout**: drawer-style filter panel, single-column list, the matrix view collapses to the list.
+- **Strict CSP**: `script-src 'self'` with a hashed JSON-LD island; no third-party scripts, no `unsafe-inline`.
 
 ## How prices and accuracy work
 

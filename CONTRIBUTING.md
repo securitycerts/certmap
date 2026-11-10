@@ -5,7 +5,7 @@ Most contributions to this project are dataset changes: adding a missing certifi
 ## Adding or updating a certification
 
 1. Fork the repository and clone your fork.
-2. Open `data/certs.csv` in any editor that can save UTF-8 CSV (VS Code, Sublime, Numbers, Excel — all fine). Add a new row or edit an existing one.
+2. Open `data/certs.csv` in any editor that can save UTF-8 CSV (VS Code, Sublime, Numbers, Excel, all fine). Add a new row or edit an existing one.
 3. Validate the file:
    ```bash
    npm run validate
@@ -22,17 +22,20 @@ The dataset has a single source of truth: `data/certs.csv`. The browser parses t
 
 ## Schema
 
-The full schema is in [`data/schema.md`](data/schema.md). In short, the 15 columns are:
+The full schema is in [`data/schema.md`](data/schema.md). In short, the 21 columns are:
 
 ```
 id, name, acronym, vendor, domain, level, price_usd, currency_note,
-duration_min, validity_years, prerequisites, dod_8140, url, description, tags
+duration_min, validity_years, prerequisites, dod_8140, url, description, tags,
+weight, restricted_to, exam_count, renewal_cost, hands_on, price_verified_at
 ```
+
+Set `price_verified_at` to the date you saw the price on the vendor's own page; leave it empty otherwise.
 
 A copy-pasteable template:
 
 ```csv
-my-cert-id,Full Certification Name,ACRO,Vendor,Domain Name,intermediate,500,,180,3,prereq-id,false,https://vendor.example/cert,One or two factual sentences describing what the certification covers.,tag1;tag2
+my-cert-id,Full Certification Name,ACRO,Vendor,Domain Name,intermediate,500,,180,3,prereq-id,false,https://vendor.example/cert,One or two factual sentences describing what the certification covers.,tag1;tag2,,,1,,false,2026-11-10
 ```
 
 ### Closed vocabularies
@@ -82,9 +85,10 @@ If a certification does not fit one of these domains or levels, open an issue fi
 ```bash
 npm run dev         # serve the site on http://localhost:8000
 npm run validate    # run the CSV validator
+npm run build       # generate certs/*.html and sitemap.xml
 ```
 
-There is no transpilation, no bundler and no test framework. JavaScript runs as ES modules directly in the browser. CSS is hand-written. Treat the existing structure as a guide for new code: small files, no abstractions you do not need, no animations beyond the existing fades.
+There is no transpilation, no bundler and no test framework. JavaScript runs as ES modules directly in the browser. CSS is hand-written. Treat the existing structure as a guide for new code: small files and no abstractions you do not need. Animations go through `assets/js/motion.js`, which wraps the vendored anime.js bundle, respects `prefers-reduced-motion` and clears the inline styles it sets; do not add CSS keyframes or call anime.js from other modules.
 
 ## Licensing
 

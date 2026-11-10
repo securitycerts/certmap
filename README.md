@@ -1,4 +1,8 @@
-# 
+# cert/map: Cybersecurity Certification Roadmap
+
+**Live site: [securitycerts.github.io/certmap](https://securitycerts.github.io/certmap/)** · [All certifications as a list](https://securitycerts.github.io/certmap/certs/) · [Dataset (CSV)](data/certs.csv)
+
+An interactive security certification roadmap: 272 cybersecurity certifications from 62 vendors, mapped by domain and seniority, with current exam prices, prerequisites and renewal cycles. Build a certification path and share it with a link.
 
 <img width="1696" height="310" alt="certmap" src="https://github.com/user-attachments/assets/148d2bb1-9007-4851-bb08-66f21cd8c453" />
 
@@ -6,7 +10,7 @@
 
 A static, open-source roadmap of cybersecurity certifications, organised by domain and seniority. Filter by vendor, level or price; open any certification for its full record; select multiple to plan a path with running cost and study-time estimates.
 
-The site is a single-page application with no build step and no runtime dependencies. The dataset lives in one CSV file so that non-technical contributors can submit changes without touching JavaScript.
+The site is a single-page application that runs straight from the repository with no bundler. Its only runtime library is [anime.js](https://animejs.com/), vendored in `assets/vendor` so nothing is loaded from a third party. The dataset lives in one CSV file so that non-technical contributors can submit changes without touching JavaScript.
 
 ## What it does
 
@@ -14,7 +18,11 @@ The site is a single-page application with no build step and no runtime dependen
 - A list view with full names, vendors and tags, grouped by domain.
 - Filters for level, domain, vendor, price range, free-only, DoD 8140, verified-price-only and the absence of prerequisites, summarised as a row of removable chips above the results.
 - A data-freshness indicator and a per-cert "verified N ago" badge, driven by the date each price was last confirmed against the vendor.
-- A shareable link that encodes the current filters and selection, so a planned path can be sent or bookmarked.
+- Shareable roadmaps: name your selection and copy a link (`#/roadmap/<ids>?name=<title>`). Whoever opens it sees the ordered path with cost and study-time totals, and can adopt it as their own selection without losing theirs by accident.
+- A right-click menu on every certification, domain header and panel: open, select with prerequisites, copy link or Markdown, filter by the same vendor, domain or level. Shift + right-click keeps the browser's own menu.
+- Keyboard control throughout: cards are focusable, `Enter` opens, `Space` selects, `J`/`K` step through certifications in the drawer, and `?` lists every shortcut.
+- A collapsible filter sidebar (`F`), a hands-on-exam filter and per-domain and per-vendor counts.
+- Static, crawlable pages for every certification under `certs/`, generated from the same CSV, plus a sitemap.
 - A delayed hover tooltip showing price, exam length, renewal cycle, prerequisites and a brief description.
 - A detail drawer per certification, deep-linkable via `#/cert/<id>`.
 - A path planner that orders selected certifications by prerequisite and difficulty, with a running total of cost, study hours and approximate months at ten study-hours per week.
@@ -28,9 +36,15 @@ The site is a single-page application with no build step and no runtime dependen
 .
 ├── assets/
 │   ├── css/styles.css           Design tokens, layout, components.
+│   ├── css/static.css           Stylesheet for the generated pages under certs/.
+│   ├── og.png                   Social preview card (npm run og).
+│   ├── vendor/                  anime.js ESM bundle and its licence (npm run vendor).
 │   └── js/
 │       ├── app.js               State, routing, filter pipeline, event wiring.
-│       ├── render.js            Matrix, list, drawer, cart and flow renderers.
+│       ├── render.js            Matrix, list, roadmap, drawer, cart and flow renderers.
+│       ├── motion.js            Every animation, behind a reduced-motion guard.
+│       ├── contextmenu.js       Right-click menu.
+│       ├── toast.js             Confirmation messages and clipboard helper.
 │       ├── format.js            Price/date formatters and the level vocabulary.
 │       ├── logo.js              Vendor logos with a per-session load cache.
 │       ├── dom.js               Small element builders (no innerHTML).
@@ -41,6 +55,8 @@ The site is a single-page application with no build step and no runtime dependen
 │   └── schema.md                Column-by-column schema documentation.
 ├── scripts/
 │   ├── validate.mjs             Node script (no deps). Validates the CSV.
+│   ├── build-pages.mjs          Node script (no deps). Writes certs/*.html and sitemap.xml.
+│   ├── build-og.mjs             Dev-only. Renders assets/og.png with Playwright.
 │   ├── security_check.py        Dependency-free security checks for contributions.
 │   └── check-links.mjs          Dev-only Playwright link checker (run `npm i` first).
 ├── .github/
@@ -51,7 +67,7 @@ The site is a single-page application with no build step and no runtime dependen
 │   ├── ISSUE_TEMPLATE/          Cert-update and bug-report templates.
 │   └── PULL_REQUEST_TEMPLATE.md
 ├── index.html
-├── package.json                 Scripts only; no dependencies.
+├── package.json                 Scripts and dev-only dependencies.
 ├── .editorconfig
 ├── .gitignore
 ├── CONTRIBUTING.md
@@ -73,8 +89,11 @@ If you change `data/certs.csv`, validate it:
 
 ```bash
 npm run validate   # node scripts/validate.mjs
-npm run security   # python3 scripts/security_check.py — data, secret and CSP checks
+npm run security   # python3 scripts/security_check.py (data, secret and CSP checks)
+npm run build      # node scripts/build-pages.mjs (static pages under certs/ and sitemap.xml)
 ```
+
+`npm run build` is what search engines see: one plain HTML page per certification, an index of all of them and the sitemap. The deploy workflow runs it on every push, so `certs/` is not committed. It also refreshes the certification count quoted in `index.html` and `llms.txt`.
 
 The dataset has a single source of truth: `data/certs.csv`. The browser parses the CSV directly at load time; there is no generated JSON to keep in sync. Node 18 or newer is only needed for the validator; the browser side has no Node dependency.
 
@@ -90,7 +109,13 @@ npm run links      # node scripts/check-links.mjs  (append an id substring to sc
 
 1. Push the repository to GitHub.
 2. In the repository settings, under **Pages**, set the source to **GitHub Actions**.
-3. Push to `main`. The workflow in `.github/workflows/pages.yml` runs the build script, uploads the working tree as an artefact and publishes it.
+3. Push to `main`. The workflow in `.github/workflows/pages.yml` validates the data, generates the static pages, uploads the site as an artefact and publishes it.
+
+### Getting found
+
+- Add the site to [Google Search Console](https://search.google.com/search-console) and Bing Webmaster Tools and submit `sitemap.xml`. Until a site is verified and its sitemap submitted, a `github.io` project page can take a long time to be crawled.
+- Fill in the repository's About box on GitHub: the live URL as the website, a one-line description, and topics such as `cybersecurity`, `certifications`, `security-certification-roadmap`, `infosec`, `career-roadmap`. GitHub repository pages rank on their own for these searches.
+- With a custom domain, set it under Settings, Pages, and replace `https://securitycerts.github.io/certmap/` in `index.html`, `robots.txt`, `llms.txt` and the `SITE` constant in `scripts/build-pages.mjs`.
 
 There are no environment variables or secrets to configure.
 

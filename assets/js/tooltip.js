@@ -100,6 +100,12 @@ function onLeave(e) {
   hideTimer = setTimeout(hide, HIDE_DELAY);
 }
 
+// Dismiss immediately and cancel a pending show (used when a menu opens).
+export function hideTooltip() {
+  clearTimeout(showTimer);
+  hide();
+}
+
 export function initTooltip(data) {
   DATA = data;
   if (!window.matchMedia("(hover: hover)").matches) return;
