@@ -59,13 +59,18 @@ function vendorHost(c) {
 const ISSUER_HOST = {
   "ibm": "ibm.com",
   "infosec": "infosecinstitute.com",
-  "nyu": "nyu.edu",
-  "university of colorado": "colorado.edu",
-  "rit": "rit.edu",
-  "umbc": "umbc.edu",
-  "harvard": "harvard.edu",
-  "tel aviv university": "tau.ac.il",
-  "university of wisconsin-madison": "wisc.edu",
+};
+
+// University favicons are detailed crests that turn to mush at 26px. These
+// issuers get a drawn tile instead: their usual abbreviation on their own colour.
+const MONOGRAM = {
+  "nyu": { text: "NYU", bg: "#57068c", fg: "#ffffff" },
+  "university of colorado": { text: "CU", bg: "#000000", fg: "#cfb87c" },
+  "rit": { text: "RIT", bg: "#f76902", fg: "#ffffff" },
+  "umbc": { text: "UMBC", bg: "#000000", fg: "#fdb515" },
+  "harvard": { text: "H", bg: "#a51c30", fg: "#ffffff" },
+  "tel aviv university": { text: "TAU", bg: "#0b2e5c", fg: "#ffffff" },
+  "university of wisconsin-madison": { text: "UW", bg: "#c5050c", fg: "#ffffff" },
 };
 
 function logoUrl(name, host, size) {
@@ -87,6 +92,16 @@ function logoTile(name, host, cls, size) {
   const wrap = document.createElement("span");
   wrap.className = cls;
   wrap.textContent = (name || "?")[0].toUpperCase();
+
+  const mono = MONOGRAM[(name || "").trim().toLowerCase()];
+  if (mono) {
+    wrap.textContent = mono.text;
+    wrap.classList.add("logo-mono");
+    wrap.dataset.len = String(mono.text.length);
+    wrap.style.backgroundColor = mono.bg;
+    wrap.style.color = mono.fg;
+    return wrap;
+  }
 
   const cacheKey = (name || "?").toLowerCase() + "@" + size;
   const cached = IMG_CACHE.get(cacheKey);

@@ -1,10 +1,10 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
   fmtPrice, fmtAgo, isStale, slug,
-} from "./format.js?v=7b3d1832";
-import { el, svg } from "./dom.js?v=7b3d1832";
-import { makeLogo } from "./logo.js?v=7b3d1832";
-import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=7b3d1832";
+} from "./format.js?v=20e86036";
+import { el, svg } from "./dom.js?v=20e86036";
+import { makeLogo } from "./logo.js?v=20e86036";
+import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=20e86036";
 
 export { slug, fmtPrice };
 
