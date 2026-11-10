@@ -15,7 +15,8 @@
     "security": "python3 scripts/security_check.py",
     "links": "node scripts/check-links.mjs",
     "og": "node scripts/build-og.mjs",
-    "vendor": "cp node_modules/animejs/dist/bundles/anime.esm.min.js assets/vendor/anime.esm.min.js && cp node_modules/animejs/LICENSE.md assets/vendor/anime.LICENSE.md && node scripts/vendor-graph.mjs"
+    "vendor": "cp node_modules/animejs/dist/bundles/anime.esm.min.js assets/vendor/anime.esm.min.js && cp node_modules/animejs/LICENSE.md assets/vendor/anime.LICENSE.md && node scripts/vendor-graph.mjs",
+    "favicon": "node scripts/build-favicon.mjs"
   },
   "devDependencies": {
     "@xyflow/react": "^12.12.1",

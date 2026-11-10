@@ -64,6 +64,7 @@ The site is a single-page application that runs straight from the repository wit
 │   ├── build-pages.mjs          Node script (no deps). Writes certs/*.html and sitemap.xml.
 │   ├── build-og.mjs             Dev-only. Renders the preview cards with Playwright.
 │   ├── vendor-graph.mjs         Dev-only. Bundles React and React Flow with esbuild.
+│   ├── build-favicon.mjs        Dev-only. Renders the favicon set from the header mark.
 │   ├── security_check.py        Dependency-free security checks for contributions.
 │   └── check-links.mjs          Dev-only Playwright link checker (run `npm i` first).
 ├── .github/
