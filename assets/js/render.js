@@ -1,9 +1,10 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
   fmtPrice, fmtAgo, isStale, slug,
-} from "./format.js?v=22fef1b3";
-import { el, svg } from "./dom.js?v=22fef1b3";
-import { makeLogo } from "./logo.js?v=22fef1b3";
+} from "./format.js?v=5a251008";
+import { el, svg } from "./dom.js?v=5a251008";
+import { makeLogo } from "./logo.js?v=5a251008";
+import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=5a251008";
 
 export { slug, fmtPrice };
 
@@ -73,9 +74,7 @@ export function renderFlow(root, selected, byId) {
   root.classList.remove("hidden");
 
   const ordered = orderByPrerequisite(selected);
-  const totalHours = ordered.reduce((a, c) => a + LEVEL_HOURS[c.level], 0);
-  const totalCost = ordered.reduce((a, c) => a + (c.price_usd || 0), 0);
-  const totalMonths = Math.round(totalHours / 10 / 4.3 * 10) / 10;
+  const { hours: totalHours, cost: totalCost, months: totalMonths } = pathTotals(ordered);
 
   const open = localStorage.getItem("certs-map.flow-open") !== "0";
   root.classList.toggle("collapsed", !open);
@@ -121,10 +120,12 @@ export function renderFlow(root, selected, byId) {
   root.replaceChildren(head, el("div", { class: "flow-scroller" }, chain));
 }
 
-// A roadmap opened from a shared link: the certs in the order they should be
-// taken, with the same cost and study-time totals as the path planner. `same`
-// is true when the roadmap already matches the visitor's own selection.
-export function renderRoadmap(root, selected, state, { name, same }) {
+// A roadmap page: the certs in the order they should be taken, with the same
+// cost and study-time totals as the path planner. `same` is true when the
+// roadmap matches the visitor's own selection, which is when notes can be
+// edited. Returns the ordered certs and, in graph view, the element the graph
+// should be mounted in.
+export function renderRoadmap(root, selected, state, { name, same, view, notes }) {
   const ordered = orderByPrerequisite(selected);
   if (!ordered.length) {
     root.replaceChildren(el("div", { class: "rm-head" },
@@ -133,49 +134,48 @@ export function renderRoadmap(root, selected, state, { name, same }) {
         el("p", { class: "rm-sub", text: "This link does not contain any certification from the current dataset." })),
       el("div", { class: "rm-actions" }, el("a", { class: "btn-ghost", href: "#/", text: "Browse all certifications" })),
     ));
-    return;
+    return { ordered, graphHost: null };
   }
-  const hours = ordered.reduce((a, c) => a + LEVEL_HOURS[c.level], 0);
-  const cost = ordered.reduce((a, c) => a + (c.price_usd || 0), 0);
-  const months = Math.round(hours / 10 / 4.3 * 10) / 10;
-  const unknown = ordered.filter(c => c.price_usd == null).length;
 
+  const viewBtn = (id, label) => el("button", {
+    type: "button", class: "seg-btn" + (view === id ? " active" : ""), "data-rm": "view-" + id, "aria-pressed": String(view === id), text: label,
+  });
   const head = el("div", { class: "rm-head" },
     el("div", {},
       el("p", { class: "rm-kicker", text: "Roadmap" }),
       el("h2", { text: name || "Certification roadmap" }),
-      el("p", { class: "rm-sub", text:
-        `${ordered.length} ${ordered.length === 1 ? "certification" : "certifications"} · ${hours}h of study ≈ ${months} months at 10h a week · $${cost.toLocaleString("en-US")}` +
-        (unknown ? ` plus ${unknown} with no published price` : "") }),
+      el("p", { class: "rm-sub", text: pathSummary(ordered) }),
     ),
     el("div", { class: "rm-actions" },
+      el("div", { class: "seg", role: "group", "aria-label": "Roadmap view" }, viewBtn("list", "List"), viewBtn("graph", "Graph")),
       el("button", { type: "button", class: "btn-ghost primary", "data-rm": "adopt", disabled: same, text: same ? "This is your selection" : "Use as my selection" }),
       el("button", { type: "button", class: "btn-ghost", "data-rm": "copy", text: "Copy link" }),
+      el("button", { type: "button", class: "btn-ghost", "data-rm": "image", title: "Save a picture of this roadmap to share", text: "Download image" }),
       el("a", { class: "btn-ghost", href: "#/", text: "Browse all" }),
     ),
   );
-  const steps = el("ol", { class: "rm-steps" }, ordered.map((c, i) =>
-    el("li", { class: "rm-step" }, el("span", { class: "rm-num", "aria-hidden": "true", text: String(i + 1) }), listCard(c, state))));
-  root.replaceChildren(head, steps);
-}
 
-// Topologically order the selected certs so prerequisites come before the certs
-// that need them, falling back to level then acronym. Anything we can't place
-// (a cycle, or a prerequisite that isn't selected) is appended at the end.
-function orderByPrerequisite(selected) {
-  const inSet = new Set(selected.map(c => c.id));
-  const placed = new Set();
-  const ordered = [];
-  let safety = selected.length + 1;
-  while (placed.size < selected.length && safety-- > 0) {
-    const ready = selected
-      .filter(c => !placed.has(c.id) && c.prerequisites.every(p => !inSet.has(p) || placed.has(p)))
-      .sort((a, b) => LEVEL_ORDER[a.level] - LEVEL_ORDER[b.level] || a.acronym.localeCompare(b.acronym));
-    if (!ready.length) break;
-    for (const c of ready) { ordered.push(c); placed.add(c.id); }
+  if (view === "graph") {
+    const graphHost = el("div", { class: "rm-graph", "aria-label": "Roadmap graph" }, el("p", { class: "rm-graph-loading", text: "Loading graph…" }));
+    const hint = el("p", { class: "rm-hint", text:
+      "Solid arrows are prerequisites, dashed ones the suggested order. Drag to rearrange, scroll to zoom, double-click a step to open it." +
+      (same ? " Notes you type are saved and travel with the link." : "") });
+    root.replaceChildren(head, graphHost, hint);
+    return { ordered, graphHost };
   }
-  for (const c of selected) if (!placed.has(c.id)) ordered.push(c);
-  return ordered;
+
+  const steps = el("ol", { class: "rm-steps" }, ordered.map((c, i) => {
+    const note = notes.get(c.id) || "";
+    const noteEl = same
+      ? el("input", { class: "rm-note-input", type: "text", maxlength: String(NOTE_MAX), value: note, placeholder: "Add a note", "aria-label": `Note for ${c.acronym}`, "data-note-id": c.id })
+      : (note ? el("p", { class: "rm-note", text: note }) : null);
+    return el("li", { class: "rm-step" },
+      el("span", { class: "rm-num", "aria-hidden": "true", text: String(i + 1) }),
+      el("div", { class: "rm-body" }, listCard(c, state), noteEl),
+    );
+  }));
+  root.replaceChildren(head, steps);
+  return { ordered, graphHost: null };
 }
 
 // Cards behave like buttons: focusable, Enter opens the cert, Space toggles it

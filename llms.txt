@@ -23,6 +23,14 @@ cert/map is a community-maintained reference for the cybersecurity certification
 - [Cybersecurity certifications under $300](https://certmap.dev/certs/list-under-300.html): 73 certifications
 - [Hands-on cybersecurity certifications with practical exams](https://certmap.dev/certs/list-hands-on.html): 80 certifications
 - [DoD 8140 approved cybersecurity certifications](https://certmap.dev/certs/list-dod-8140.html): 31 certifications
+- [Penetration tester certification path](https://certmap.dev/certs/path-pentester.html): eJPT, PJPT, PNPT, OSCP+, OSEP
+- [Red team operator certification path](https://certmap.dev/certs/path-red-team-operator.html): CRTO, OSCP+, OSED, OSWE, OSEP
+- [SOC analyst certification path](https://certmap.dev/certs/path-soc-analyst.html): Security+, GCIH, OSDA, SCDA, CySA+
+- [DFIR investigator certification path](https://certmap.dev/certs/path-dfir-investigator.html): EnCE, GCFE, GCFA, GNFA, GREM
+- [Threat intelligence analyst certification path](https://certmap.dev/certs/path-threat-intel-analyst.html): Security+, CTIA, GOSI, GCTI, GDAT
+- [Application security engineer certification path](https://certmap.dev/certs/path-appsec-engineer.html): Security+, OSWA, GWAPT, CSSLP, OSWE
+- [Cloud security architect certification path](https://certmap.dev/certs/path-cloud-security.html): Security+, CCSK, SC-500, SCS-C03, CCSP
+- [GRC manager certification path](https://certmap.dev/certs/path-grc-manager.html): CGRC, CISA, CISM, CISSP, CRISC
 - [Communication & Network Security certifications](https://certmap.dev/certs/domain-communication-network-security.html)
 - [IAM certifications](https://certmap.dev/certs/domain-iam.html)
 - [Security Architecture & Engineering certifications](https://certmap.dev/certs/domain-security-architecture-engineering.html)

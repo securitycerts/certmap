@@ -26,7 +26,9 @@ import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync } from "nod
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { createHash } from "node:crypto";
+import { existsSync } from "node:fs";
 import { parseCSV, rowsToCerts, DOMAINS } from "../assets/js/data.js";
+import { ROLE_PATHS, orderByPrerequisite, pathTotals } from "../assets/js/paths.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "https://certmap.dev/";
@@ -54,7 +56,7 @@ const vendors = new Set(certs.map(c => c.vendor));
 const latest = certs.map(c => c.price_verified_at).filter(Boolean).sort().pop() || "2026-01-01";
 const byName = (a, b) => a.acronym.localeCompare(b.acronym);
 
-function page({ path, title, description, body, ld, modified }) {
+function page({ path, title, description, body, ld, modified, image = "assets/og.png" }) {
   const canonical = SITE + path;
   return `<!doctype html>
 <html lang="en">
@@ -69,7 +71,10 @@ function page({ path, title, description, body, ld, modified }) {
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${canonical}">
-<meta property="og:image" content="${SITE}assets/og.png">
+<meta property="og:image" content="${SITE}${image}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="${SITE}${image}">
 <meta name="twitter:card" content="summary_large_image">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="no-referrer">
@@ -104,7 +109,7 @@ const year = iso => (iso || latest).slice(0, 4);
 const count = (list, key) => list.reduce((m, c) => m.set(c[key], (m.get(c[key]) || 0) + 1), new Map());
 const byLevelThenName = (a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level) || byName(a, b);
 
-if (certs.some(c => /^(vendor|domain|list)-/.test(c.id))) throw new Error("a cert id collides with the vendor-/domain-/list- page names");
+if (certs.some(c => /^(vendor|domain|list|path)-/.test(c.id))) throw new Error("a cert id collides with the vendor-/domain-/list- page names");
 
 // Curated cuts of the dataset that match what people actually search for.
 // `app` is the query string that opens the same filter in the interactive app.
@@ -162,6 +167,41 @@ ${certTable(items, { showDomain: true })}
     path, title: `${l.name}: ${items.length} compared with prices (${year()}) | cert/map`,
     description: `${l.lead} ${items.length} certifications including ${items.slice(0, 5).map(c => c.acronym).join(", ")}.${priceRange(items)}`.slice(0, 300),
     body, ld: itemListLd(l.name, path, items), modified: latest,
+  });
+}
+
+// ---------- role paths ----------
+// Each preset path gets a page of its own with its own preview image, so a
+// link to "the SOC analyst path" shows that path when it is pasted somewhere.
+const pathFile = p => `path-${p.id}.html`;
+const pathCerts = p => orderByPrerequisite(p.certs.map(id => byId.get(id)).filter(Boolean));
+const pathAppLink = p => `../#/roadmap/${pathCerts(p).map(c => c.id).join(",")}?name=${encodeURIComponent(p.name + " path")}`;
+
+function pathPage(p) {
+  const items = pathCerts(p);
+  const t = pathTotals(items);
+  const path = `certs/${pathFile(p)}`;
+  const image = `assets/og/path-${p.id}.png`;
+  const lower = /^(SOC|DFIR|GRC)\b/.test(p.name) ? p.name : p.name[0].toLowerCase() + p.name.slice(1);
+  const cost = "$" + t.cost.toLocaleString("en-US");
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / <a href="./">Certifications</a> / ${esc(p.name)} path</nav>
+<h1>${esc(p.name)} certification path</h1>
+<p class="lead">A suggested route for a ${esc(lower)}: ${items.length} certifications in the order to take them, about ${t.hours} hours of study and ${cost} in exam fees.</p>
+<p>At ten hours of study a week the whole path takes roughly ${t.months} months. Prerequisites come first, then the order follows seniority. Open it in the interactive roadmap to add or drop steps, write notes on each one and share your own version.</p>
+<p class="cta"><a class="btn primary" href="${pathAppLink(p)}">Open this path in the interactive roadmap</a></p>
+<table>
+    <thead><tr><th>Step</th><th>Certification</th><th>Vendor</th><th>Level</th><th>Exam price</th></tr></thead>
+    <tbody>
+${items.map((c, i) => `      <tr><td>${i + 1}</td><td>${certLink(c)} <span>${esc(c.name)}</span></td><td><a href="${vendorFile(c.vendor)}">${esc(c.vendor)}</a></td><td>${LEVEL_LABEL[c.level]}</td><td>${esc(money(c.price_usd))}</td></tr>`).join("\n")}
+    </tbody>
+  </table>
+<h2>Other certification paths</h2>
+<nav class="toc">${ROLE_PATHS.filter(o => o !== p).map(o => `<a href="${pathFile(o)}">${esc(o.name)}</a>`).join(" ")}</nav>`;
+  return page({
+    path, title: `${p.name} certification path: ${items.length} certs in order, ${cost} (${year()}) | cert/map`,
+    description: `${p.name} certification roadmap: ${items.map(c => c.acronym).join(", ")}. About ${t.hours} hours of study and ${cost} in exam fees, with prerequisites and current prices.`.slice(0, 300),
+    body, ld: itemListLd(`${p.name} certification path`, path, items), modified: latest,
+    image: existsSync(join(ROOT, image)) ? image : undefined,
   });
 }
 
@@ -234,6 +274,13 @@ function aboutPage() {
   <h2>Popular lists</h2>
   <div class="tiles">
 ${LISTS.map(l => `    <a class="tile" href="../certs/${listFile(l)}"><strong>${listItems(l).length}</strong><span>${esc(short(l))}</span></a>`).join("\n")}
+  </div>
+</section>
+
+<section class="block">
+  <h2>Career paths</h2>
+  <div class="tiles">
+${ROLE_PATHS.map(p => `    <a class="tile" href="../certs/${pathFile(p)}"><strong>$${pathTotals(pathCerts(p)).cost.toLocaleString("en-US")}</strong><span>${esc(p.name)}</span></a>`).join("\n")}
   </div>
 </section>
 
@@ -315,6 +362,7 @@ ${[...vendors].sort((a, b) => a.localeCompare(b)).join(", ")}.
 - [Full text digest](${SITE}llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](${SITE}data/certs.json) and [as CSV](${SITE}data/certs.csv)
 ${LISTS.map(l => `- [${l.name}](${SITE}certs/${listFile(l)}): ${listItems(l).length} certifications`).join("\n")}
+${ROLE_PATHS.map(p => `- [${p.name} certification path](${SITE}certs/${pathFile(p)}): ${pathCerts(p).map(c => c.acronym).join(", ")}`).join("\n")}
 ${DOMAINS.map(d => `- [${d} certifications](${SITE}certs/${domainFile(d)})`).join("\n")}
 
 Each certification has its own page at \`${SITE}certs/<id>.html\` and each vendor at \`${SITE}certs/vendor-<name>.html\`.
@@ -528,6 +576,8 @@ ${items.map(c => `      <tr><td>${certLink(c)} <span>${esc(c.name)}</span></td><
 <p class="cta"><a class="btn primary" href="../">Open the interactive roadmap</a> <a class="btn" href="../data/certs.csv">Download the dataset (CSV)</a></p>
 <h2>Popular lists</h2>
 <nav class="toc" aria-label="Lists">${LISTS.map(l => `<a href="${listFile(l)}">${esc(l.name)}</a>`).join(" ")}</nav>
+<h2>Career paths</h2>
+<nav class="toc" aria-label="Paths">${ROLE_PATHS.map(p => `<a href="${pathFile(p)}">${esc(p.name)}</a>`).join(" ")}</nav>
 <h2>By domain</h2>
 <nav class="toc" aria-label="Domains">${DOMAINS.map(d => `<a href="#${slug(d)}">${esc(d)}</a>`).join(" ")}</nav>
 ${sections}
@@ -569,6 +619,7 @@ ${[
     url(SITE + "certs/", latest, "0.9"),
     url(SITE + "about/", latest, "0.8"),
     ...LISTS.map(l => url(SITE + `certs/${listFile(l)}`, latest, "0.8")),
+    ...ROLE_PATHS.map(p => url(SITE + `certs/${pathFile(p)}`, latest, "0.8")),
     ...DOMAINS.map(d => url(SITE + `certs/${domainFile(d)}`, latest, "0.8")),
     ...[...vendors].map(v => url(SITE + `certs/${vendorFile(v)}`, latest, "0.8")),
     ...certs.map(c => url(SITE + `certs/${c.id}.html`, c.price_verified_at || latest, "0.7")),
@@ -601,6 +652,7 @@ for (const c of certs) writeFileSync(join(OUT, `${c.id}.html`), certPage(c));
 for (const v of vendors) writeFileSync(join(OUT, vendorFile(v)), vendorPage(v));
 for (const d of DOMAINS) writeFileSync(join(OUT, domainFile(d)), domainPage(d));
 for (const l of LISTS) writeFileSync(join(OUT, listFile(l)), listPage(l));
+for (const p of ROLE_PATHS) writeFileSync(join(OUT, pathFile(p)), pathPage(p));
 writeFileSync(join(OUT, "index.html"), hubPage());
 mkdirSync(join(ROOT, "about"), { recursive: true });
 writeFileSync(join(ROOT, "about", "index.html"), aboutPage());

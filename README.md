@@ -10,7 +10,7 @@ An interactive security certification roadmap: 272 cybersecurity certifications 
 
 A static, open-source roadmap of cybersecurity certifications, organised by domain and seniority. Filter by vendor, level or price; open any certification for its full record; select multiple to plan a path with running cost and study-time estimates.
 
-The site is a single-page application that runs straight from the repository with no bundler. Its only runtime library is [anime.js](https://animejs.com/), vendored in `assets/vendor` so nothing is loaded from a third party. The dataset lives in one CSV file so that non-technical contributors can submit changes without touching JavaScript.
+The site is a single-page application that runs straight from the repository with no bundler. Its runtime libraries are vendored in `assets/vendor` so nothing is loaded from a third party: [anime.js](https://animejs.com/) for motion, and a bundle of React and [React Flow](https://reactflow.dev/) that is fetched only when the roadmap graph view is opened. The dataset lives in one CSV file so that non-technical contributors can submit changes without touching JavaScript.
 
 ## What it does
 
@@ -19,6 +19,8 @@ The site is a single-page application that runs straight from the repository wit
 - Filters for level, domain, vendor, price range, free-only, DoD 8140, verified-price-only and the absence of prerequisites, summarised as a row of removable chips above the results.
 - A data-freshness indicator and a per-cert "verified N ago" badge, driven by the date each price was last confirmed against the vendor.
 - Shareable roadmaps: name your selection and copy a link (`#/roadmap/<ids>?name=<title>`). Whoever opens it sees the ordered path with cost and study-time totals, and can adopt it as their own selection without losing theirs by accident.
+- A graph view of any roadmap (React Flow): prerequisites as arrows, steps laid out by seniority, draggable and zoomable. Notes can be written on each step and travel inside the link.
+- A page and a link-preview image for each preset role path under `certs/path-<role>.html`, and a "Download image" button that saves a card of any custom roadmap.
 - A right-click menu on every certification, domain header and panel: open, select with prerequisites, copy link or Markdown, filter by the same vendor, domain or level. Shift + right-click keeps the browser's own menu.
 - Keyboard control throughout: cards are focusable, `Enter` opens, `Space` selects, `J`/`K` step through certifications in the drawer, and `?` lists every shortcut.
 - A collapsible filter sidebar (`F`), a hands-on-exam filter and per-domain and per-vendor counts.
@@ -44,6 +46,9 @@ The site is a single-page application that runs straight from the repository wit
 │       ├── app.js               State, routing, filter pipeline, event wiring.
 │       ├── render.js            Matrix, list, roadmap, drawer, cart and flow renderers.
 │       ├── motion.js            Every animation, behind a reduced-motion guard.
+│       ├── paths.js             Preset role paths, path ordering and totals, note codec.
+│       ├── graph.js             Roadmap graph view (React Flow, loaded on demand).
+│       ├── share-image.js       Canvas card of a roadmap for download.
 │       ├── contextmenu.js       Right-click menu.
 │       ├── toast.js             Confirmation messages and clipboard helper.
 │       ├── format.js            Price/date formatters and the level vocabulary.
@@ -57,7 +62,8 @@ The site is a single-page application that runs straight from the repository wit
 ├── scripts/
 │   ├── validate.mjs             Node script (no deps). Validates the CSV.
 │   ├── build-pages.mjs          Node script (no deps). Writes certs/*.html and sitemap.xml.
-│   ├── build-og.mjs             Dev-only. Renders assets/og.png with Playwright.
+│   ├── build-og.mjs             Dev-only. Renders the preview cards with Playwright.
+│   ├── vendor-graph.mjs         Dev-only. Bundles React and React Flow with esbuild.
 │   ├── security_check.py        Dependency-free security checks for contributions.
 │   └── check-links.mjs          Dev-only Playwright link checker (run `npm i` first).
 ├── .github/

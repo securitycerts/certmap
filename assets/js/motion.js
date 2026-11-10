@@ -6,7 +6,7 @@
 // anime.js is vendored in assets/vendor so the site keeps its no-build,
 // same-origin-only setup (see the Content-Security-Policy in index.html).
 
-import { animate, stagger, utils, svg } from "../vendor/anime.esm.min.js?v=22fef1b3";
+import { animate, stagger, utils, svg } from "../vendor/anime.esm.min.js?v=5a251008";
 
 const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
 export const motionOK = () => !reduced.matches;

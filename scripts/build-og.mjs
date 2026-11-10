@@ -1,12 +1,14 @@
 #!/usr/bin/env node
-// Renders the social preview card (assets/og.png, 1200x630) with Playwright.
+// Renders the social preview cards with Playwright: assets/og.png for the site
+// and assets/og/path-<id>.png for each preset path (1200x630).
 // Dev-only: run `npm run og` after the certification count changes noticeably.
 
-import { readFileSync } from "node:fs";
+import { readFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { chromium } from "playwright";
 import { parseCSV, rowsToCerts, DOMAINS } from "../assets/js/data.js";
+import { ROLE_PATHS, orderByPrerequisite, pathTotals } from "../assets/js/paths.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const certs = rowsToCerts(parseCSV(readFileSync(join(ROOT, "data", "certs.csv"), "utf8")));
@@ -35,9 +37,42 @@ p{font-size:28px;color:#b3b9c5;margin-top:18px}
 <div><h1>Cybersecurity Certification Roadmap</h1><p>${certs.length} certifications · ${vendors} vendors · ${DOMAINS.length} domains · current exam prices</p></div>
 <div class="grid">${cells}</div>`;
 
+const MARK = html.match(/<svg[\s\S]*?<\/svg>/)[0];
+const byId = new Map(certs.map(c => [c.id, c]));
+const money = n => (n == null ? "price n/a" : n === 0 ? "Free" : "$" + n.toLocaleString("en-US"));
+
+// One card per preset path, used as the link preview of certs/path-<id>.html.
+function pathCard(p) {
+  const items = orderByPrerequisite(p.certs.map(id => byId.get(id)).filter(Boolean));
+  const t = pathTotals(items);
+  return `<!doctype html><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0}
+body{width:1200px;height:630px;background:#0b0d12;color:#e6e8ec;font-family:-apple-system,"Segoe UI",Inter,sans-serif;padding:60px 64px;display:flex;flex-direction:column;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:16px;font:700 30px ui-monospace,Menlo,monospace;letter-spacing:-.02em}
+.brand b{color:#8aa9d4;font-weight:700}
+.kicker{font-size:20px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8aa9d4;margin-bottom:10px}
+h1{font-size:64px;line-height:1.05;letter-spacing:-.03em}
+p{font-size:26px;color:#b3b9c5;margin-top:14px}
+.steps{display:flex;align-items:stretch;gap:10px}
+.step{flex:1;min-width:0;background:#13171f;border:1px solid #232a37;border-top:4px solid var(--c);border-radius:10px;padding:14px 16px}
+.step small{display:block;font-size:13px;font-weight:600;letter-spacing:.08em;color:#7d8595}
+.step strong{display:block;font:700 26px ui-monospace,Menlo,monospace;margin:4px 0 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.step span{font-size:16px;color:#b3b9c5;white-space:nowrap}
+.arrow{align-self:center;color:#2e3645;font-size:26px}
+</style>
+<div class="brand">${MARK.replace('width="56" height="56"', 'width="48" height="48"')}<span>cert<b>/</b>map</span></div>
+<div><div class="kicker">Certification path</div><h1>${p.name}</h1><p>${items.length} certifications · ${t.hours}h of study · $${t.cost.toLocaleString("en-US")} in exam fees</p></div>
+<div class="steps">${items.map((c, i) => `<div class="step" style="--c:${COLOR[c.level]}"><small>STEP ${i + 1}</small><strong>${c.acronym}</strong><span>${money(c.price_usd)}</span></div>`).join('<div class="arrow">›</div>')}</div>`;
+}
+
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
 await page.setContent(html);
 await page.screenshot({ path: join(ROOT, "assets", "og.png") });
+mkdirSync(join(ROOT, "assets", "og"), { recursive: true });
+for (const p of ROLE_PATHS) {
+  await page.setContent(pathCard(p));
+  await page.screenshot({ path: join(ROOT, "assets", "og", `path-${p.id}.png`) });
+}
 await browser.close();
-console.log(`OK: assets/og.png (${certs.length} certifications, ${vendors} vendors).`);
+console.log(`OK: assets/og.png and ${ROLE_PATHS.length} path cards (${certs.length} certifications, ${vendors} vendors).`);

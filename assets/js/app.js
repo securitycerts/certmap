@@ -1,11 +1,14 @@
-import { loadData } from "./data.js?v=22fef1b3";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js?v=22fef1b3";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=22fef1b3";
-import { el } from "./dom.js?v=22fef1b3";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=22fef1b3";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=22fef1b3";
-import { toast, copyText } from "./toast.js?v=22fef1b3";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro } from "./motion.js?v=22fef1b3";
+import { loadData } from "./data.js?v=5a251008";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js?v=5a251008";
+import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=5a251008";
+import { el } from "./dom.js?v=5a251008";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=5a251008";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=5a251008";
+import { toast, copyText } from "./toast.js?v=5a251008";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro } from "./motion.js?v=5a251008";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=5a251008";
+import { mountGraph, unmountGraph } from "./graph.js?v=5a251008";
+import { downloadRoadmapImage } from "./share-image.js?v=5a251008";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -15,6 +18,9 @@ const SORT_KEY = "certs-map.sort";
 const SIDEBAR_KEY = "certs-map.sidebar";
 const NAME_KEY = "certs-map.roadmap-name";
 const NAME_MAX = 60;
+const NOTES_KEY = "certs-map.notes.v1";
+const RM_VIEW_KEY = "certs-map.roadmap-view";
+const ALLOWED_RM_VIEWS = new Set(["list", "graph"]);
 const THEME_COLOR = { dark: "#0b0d12", light: "#f7f8fa" };
 
 // A cert id is a lowercase slug. We reuse this when reading ids back out of
@@ -47,16 +53,6 @@ function safeLS(key, allowed, fallback) {
   return allowed.has(v) ? v : fallback;
 }
 
-const ROLE_PATHS = {
-  "pentester": ["ejpt", "pjpt", "oscp", "pnpt", "osep"],
-  "soc-analyst": ["sec-plus", "cysa-plus", "gcih", "splunk-cda", "osda"],
-  "cloud-security": ["sec-plus", "ccsk", "aws-scs", "sc-500", "ccsp"],
-  "grc-manager": ["cisa", "cgrc", "cism", "crisc", "cissp"],
-  "dfir-investigator": ["gcfe", "gcfa", "grem", "gnfa", "encase"],
-  "red-team-operator": ["oscp", "osep", "crto", "osed", "oswe"],
-  "appsec-engineer": ["sec-plus", "csslp", "oswa", "gwapt", "oswe"],
-  "threat-intel-analyst": ["sec-plus", "gosi", "gcti", "ctia", "gdat"],
-};
 
 // The boolean filters share one shape: a checkbox in the sidebar, a URL
 // parameter, a chip label and a predicate. Adding one is a single row here plus
@@ -117,20 +113,42 @@ function shareUrl() {
 // selection unless they choose "Use as my selection".
 const cleanName = s => String(s || "").replace(/\s+/g, " ").trim().slice(0, NAME_MAX);
 
-function roadmapHash(ids, name) {
+function roadmapHash(ids, name, notes) {
+  const p = new URLSearchParams();
   const title = cleanName(name);
-  return `#/roadmap/${ids.join(",")}` + (title ? "?name=" + encodeURIComponent(title) : "");
+  if (title) p.set("name", title);
+  const packed = notes ? encodeNotes(notes, ids) : "";
+  if (packed) p.set("notes", packed);
+  const qs = p.toString();
+  return `#/roadmap/${ids.join(",")}` + (qs ? "?" + qs : "");
 }
-const roadmapUrl = (ids, name) => location.origin + location.pathname + roadmapHash(ids, name);
-const myRoadmapUrl = () => roadmapUrl(selectedCerts().map(c => c.id), state.roadmapName);
+const myRoadmapHash = () => roadmapHash(selectedCerts().map(c => c.id), state.roadmapName, state.notes);
+const myRoadmapUrl = () => location.origin + location.pathname + myRoadmapHash();
+
+function loadNotes() {
+  try {
+    const obj = JSON.parse(store.get(NOTES_KEY) || "{}");
+    const out = new Map();
+    for (const [id, text] of Object.entries(obj || {})) {
+      if (ID_RE.test(id) && typeof text === "string" && cleanNote(text)) out.set(id, cleanNote(text));
+    }
+    return out;
+  } catch { return new Map(); }
+}
+const persistNotes = () => store.set(NOTES_KEY, JSON.stringify(Object.fromEntries(state.notes)));
 
 function readRoadmap(hash) {
   const m = hash.match(/^#\/roadmap\/([a-z0-9,-]*)(?:\?(.*))?$/);
   if (!m) return null;
   const ids = [...new Set(sanitizeIds(m[1].split(",")))].filter(id => DATA.byId.has(id));
-  let name = "";
-  try { name = cleanName(new URLSearchParams(m[2] || "").get("name")); } catch { /* malformed escape */ }
-  return { ids, name };
+  let name = "", notes = new Map();
+  try {
+    const p = new URLSearchParams(m[2] || "");
+    name = cleanName(p.get("name"));
+    notes = decodeNotes(p.get("notes"), ids);
+  } catch { /* malformed escape */ }
+  const same = ids.length === state.cart.size && ids.every(id => state.cart.has(id));
+  return { ids, name, notes, same };
 }
 
 const certUrl = id => location.origin + location.pathname + `#/cert/${id}`;
@@ -160,6 +178,8 @@ const state = {
   filters: emptyFilters(),
   cart: new Set(safeLoadCart()),
   roadmapName: cleanName(store.get(NAME_KEY)),
+  roadmapView: safeLS(RM_VIEW_KEY, ALLOWED_RM_VIEWS, "list"),
+  notes: loadNotes(),
   toggleCart(id) {
     this.cart.has(id) ? this.cart.delete(id) : this.cart.add(id);
     persistCart();
@@ -378,9 +398,31 @@ function renderActiveFilters() {
 
 // What the grid depends on. If none of it changed (the user only opened or
 // closed a cert) the grid is left alone, which keeps scroll position and focus.
-const gridKey = () => [baseHash, state.view, state.sort, buildParams({ withSelection: true }).toString()].join("|");
+const gridKey = () => [baseHash, state.view, state.sort, state.roadmapView, currentTheme(), buildParams({ withSelection: true }).toString()].join("|");
 let lastGridKey = null;
 let lastScene = null;
+let shownRoadmap = null;
+
+// Notes are edited in place (list or graph), so they never trigger a repaint.
+// While you are looking at your own roadmap the address bar is kept in step,
+// so copying the URL always includes what you just typed.
+function setNote(id, text) {
+  const note = cleanNote(text);
+  note ? state.notes.set(id, note) : state.notes.delete(id);
+  persistNotes();
+  if (readRoadmap(baseHash)?.same) {
+    baseHash = myRoadmapHash();
+    history.replaceState(null, "", location.pathname + location.search + baseHash);
+    lastGridKey = gridKey();
+  }
+}
+
+function setRoadmapView(view) {
+  if (!ALLOWED_RM_VIEWS.has(view) || view === state.roadmapView) return;
+  state.roadmapView = view;
+  store.set(RM_VIEW_KEY, view);
+  scheduleRender();
+}
 
 function paintGrid(filtered) {
   const grid = $("#grid");
@@ -391,10 +433,22 @@ function paintGrid(filtered) {
   const roadmap = readRoadmap(baseHash);
   let scene;
 
+  unmountGraph();
   if (roadmap) {
-    const same = roadmap.ids.length === state.cart.size && roadmap.ids.every(id => state.cart.has(id));
-    renderRoadmap(grid, roadmap.ids.map(id => DATA.byId.get(id)), state, { name: roadmap.name, same });
-    scene = "roadmap:" + roadmap.ids.join(",");
+    // Your own roadmap shows your live notes; someone else's shows the notes
+    // that came with the link.
+    const notes = roadmap.same ? state.notes : roadmap.notes;
+    const { ordered, graphHost } = renderRoadmap(grid, roadmap.ids.map(id => DATA.byId.get(id)), state, {
+      name: roadmap.name, same: roadmap.same, view: state.roadmapView, notes,
+    });
+    shownRoadmap = { ordered, name: roadmap.name };
+    if (graphHost) {
+      mountGraph(graphHost, {
+        certs: ordered, notes, editable: roadmap.same, theme: currentTheme(),
+        onOpen: openCert, onNote: setNote,
+      });
+    }
+    scene = "roadmap:" + state.roadmapView + ":" + roadmap.ids.join(",");
   } else if (domain) {
     const certs = filtered.filter(c => c.domain === domain);
     renderList(grid, certs, DATA.meta, state, { grouped: false, heading: crumbHeading("← All domains", domain, certs.length) });
@@ -515,6 +569,7 @@ const currentTheme = () => document.documentElement.dataset.theme;
 function toggleTheme() {
   setTheme(currentTheme() === "dark" ? "light" : "dark");
   spin($("#theme-toggle svg"));
+  scheduleRender();
 }
 
 function setCartOpen(open) {
@@ -580,7 +635,7 @@ function exportCsv() {
 function viewMyRoadmap() {
   if (!state.cart.size) return;
   setCartOpen(false);
-  location.hash = roadmapHash(selectedCerts().map(c => c.id), state.roadmapName);
+  location.hash = myRoadmapHash();
 }
 
 // Replace the visitor's selection with the roadmap they are looking at.
@@ -589,6 +644,8 @@ function adoptRoadmap() {
   if (!roadmap?.ids.length) return;
   state.cart = new Set(roadmap.ids);
   persistCart();
+  for (const [id, text] of roadmap.notes) state.notes.set(id, text);
+  persistNotes();
   if (roadmap.name) { state.roadmapName = roadmap.name; store.set(NAME_KEY, roadmap.name); $("#cart-name").value = roadmap.name; }
   scheduleRender();
   toast(`Selection replaced with ${roadmap.ids.length} certifications`);
@@ -742,7 +799,7 @@ async function init() {
   $("#freshness").textContent = `${verifiedCount} of ${DATA.certs.length} prices verified against the vendor`;
 
   $("#preset").addEventListener("change", e => {
-    const ids = ROLE_PATHS[e.target.value];
+    const ids = ROLE_PATHS.find(p => p.id === e.target.value)?.certs;
     const label = e.target.selectedOptions[0]?.textContent || "preset";
     e.target.value = "";
     if (!ids) return;
@@ -802,11 +859,20 @@ async function init() {
     const rm = e.target.closest("[data-rm]")?.dataset.rm;
     if (rm === "adopt") { adoptRoadmap(); return; }
     if (rm === "copy") { copyText(location.origin + location.pathname + baseHash, "Roadmap link copied"); return; }
+    if (rm === "view-list" || rm === "view-graph") { setRoadmapView(rm.slice(5)); return; }
+    if (rm === "image" && shownRoadmap) {
+      downloadRoadmapImage(shownRoadmap.ordered, shownRoadmap.name).then(ok => toast(ok ? "Image saved" : "Could not create the image", ok ? {} : { tone: "warn" }));
+      return;
+    }
+    if (e.target.closest(".rm-note-input")) return;
     const colhead = e.target.closest(".mx-colhead");
     if (colhead?.dataset.navDomain) { location.hash = `#/domain/${colhead.dataset.navDomain}`; return; }
     if (e.target.closest(".pill-pick, .lc-pick")) return;
     const card = e.target.closest("[data-id]");
     if (card) openCert(card.dataset.id);
+  });
+  grid.addEventListener("input", e => {
+    if (e.target.matches(".rm-note-input")) setNote(e.target.dataset.noteId, e.target.value);
   });
   grid.addEventListener("change", e => {
     if (!e.target.matches(".pill-pick input, .lc-pick input")) return;

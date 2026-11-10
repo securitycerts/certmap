@@ -56,6 +56,46 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://certmap.dev/certs/path-pentester.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/path-red-team-operator.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/path-soc-analyst.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/path-dfir-investigator.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/path-threat-intel-analyst.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/path-appsec-engineer.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/path-cloud-security.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/path-grc-manager.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://certmap.dev/certs/domain-communication-network-security.html</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.8</priority>
