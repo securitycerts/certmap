@@ -1,14 +1,14 @@
-import { loadData } from "./data.js?v=75415574";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState } from "./render.js?v=75415574";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=75415574";
-import { el } from "./dom.js?v=75415574";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=75415574";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=75415574";
-import { toast, copyText } from "./toast.js?v=75415574";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=75415574";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=75415574";
-import { mountGraph, unmountGraph } from "./graph.js?v=75415574";
-import { downloadRoadmapImage } from "./share-image.js?v=75415574";
+import { loadData } from "./data.js?v=cb08b99a";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData } from "./render.js?v=cb08b99a";
+import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=cb08b99a";
+import { el } from "./dom.js?v=cb08b99a";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=cb08b99a";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=cb08b99a";
+import { toast, copyText } from "./toast.js?v=cb08b99a";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=cb08b99a";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=cb08b99a";
+import { mountGraph, unmountGraph } from "./graph.js?v=cb08b99a";
+import { downloadRoadmapImage } from "./share-image.js?v=cb08b99a";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -840,6 +840,7 @@ function onGlobalKey(e) {
 async function init() {
   setTheme(safeLS(THEME_KEY, ALLOWED_THEMES, "dark"));
   DATA = await loadData();
+  bindData(DATA);
   for (const c of DATA.certs) {
     HAYSTACK.set(c.id, [c.id, c.acronym, c.name, c.vendor, c.tags.join(" "), c.description, c.domain, c.level].join(" ").toLowerCase());
   }

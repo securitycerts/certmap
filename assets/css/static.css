@@ -203,3 +203,31 @@ main p { text-align: justify; hyphens: auto; -webkit-hyphens: auto; text-wrap: p
 
 .steps.three { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 760px) { .steps.three { grid-template-columns: 1fr; } }
+
+/* ---------- comparisons and preparation ---------- */
+table.versus th[scope="row"] { width: 150px; text-transform: none; letter-spacing: 0; font-size: 13px; font-weight: 500; color: var(--muted); }
+table.versus thead th { font-size: 15px; text-transform: none; letter-spacing: 0; }
+table.versus thead th a { font: 700 16px var(--mono); }
+table.versus td { width: 40%; text-align: left; white-space: normal; padding-right: 14px; }
+table.versus td:last-child, table.versus th:last-child { text-align: left; white-space: normal; }
+table.versus small { display: block; }
+.diff { margin: 0; padding-left: 20px; color: var(--text-dim); }
+.diff li { margin-bottom: 6px; max-width: 75ch; }
+ul.prep { list-style: none; margin: 0; padding: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+ul.prep li { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; padding: 9px 14px; border-bottom: 1px solid var(--border); background: var(--panel); }
+ul.prep li:last-child { border-bottom: 0; }
+ul.prep span { font-size: 12.5px; color: var(--muted); }
+.prep-sponsored { margin-bottom: 10px; }
+.prep-sponsored small { display: block; margin-bottom: 4px; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; }
+
+/* ---------- languages and right-to-left pages ---------- */
+.langs { display: flex; flex-wrap: wrap; gap: 4px 6px; margin: -8px 0 18px; font-size: 12.5px; }
+.langs a, .langs span { padding: 2px 9px; border: 1px solid var(--border); border-radius: 999px; color: var(--text-dim); }
+.langs span { border-color: var(--accent); color: var(--text); background: var(--accent-soft); }
+.langs a:hover { border-color: var(--accent); text-decoration: none; }
+[dir="rtl"] th, [dir="rtl"] table.versus td, [dir="rtl"] table.versus td:last-child, [dir="rtl"] table.versus th:last-child { text-align: right; }
+[dir="rtl"] th, [dir="rtl"] td { padding: 7px 0 7px 10px; }
+[dir="rtl"] .diff { padding-left: 0; padding-right: 20px; }
+[dir="rtl"] .fine, [dir="rtl"] .cta { text-align: right; }
+[dir="rtl"] body { font-family: "Segoe UI", Tahoma, "Noto Sans Arabic", "Noto Sans Hebrew", -apple-system, sans-serif; }
+[dir="rtl"] .faq summary { text-align: right; }

@@ -1,0 +1,134 @@
+cert_id,type,title,provider,url,free,official,sponsored
+oscp,guide,OSCP+ Exam Guide,OffSec,https://help.offsec.com/hc/en-us/articles/360040165632-OSCP-Exam-Guide,true,true,false
+oscp,guide,PEN-200 (PWK) Syllabus,OffSec,https://www.offsec.com/documentation/penetration-testing-with-kali.pdf,true,true,false
+oscp,course,PEN-200: Penetration Testing with Kali Linux,OffSec,https://www.offsec.com/courses/pen-200/,false,true,false
+oscp,lab,Proving Grounds Practice,OffSec,https://www.offsec.com/products/proving-grounds/,false,true,false
+oscp,guide,OSCP Exam Guide: What to Expect and How to Prepare,OffSec,https://www.offsec.com/blog/oscp-exam-guide/,true,true,false
+osep,guide,OSEP Exam Guide,OffSec,https://help.offsec.com/hc/en-us/articles/360050293792-OSEP-Exam-Guide,true,true,false
+osep,guide,PEN-300 Syllabus,OffSec,https://www.offsec.com/documentation/PEN300-Syllabus.pdf,true,true,false
+osep,course,PEN-300: Advanced Evasion Techniques and Breaching Defenses,OffSec,https://www.offsec.com/courses/pen-300/,false,true,false
+oswe,guide,WEB-300 OSWE Exam Guide,OffSec,https://help.offsec.com/hc/en-us/articles/360046869951-WEB-300-Advanced-Web-Attacks-and-Exploitation-OSWE-Exam-Guide,true,true,false
+oswe,guide,WEB-300 Syllabus,OffSec,https://www.offsec.com/documentation/awae-syllabus.pdf,true,true,false
+oswe,course,WEB-300: Advanced Web Attacks and Exploitation,OffSec,https://www.offsec.com/courses/web-300/,false,true,false
+osed,guide,EXP-301 OSED Exam Guide,OffSec,https://help.offsec.com/hc/en-us/articles/360052977212-EXP-301-Windows-User-Mode-Exploit-Development-OSED-Exam-Guide,true,true,false
+osed,guide,EXP-301 Syllabus,OffSec,https://www.offsec.com/documentation/EXP301-syllabus.pdf,true,true,false
+osed,course,EXP-301: Windows User Mode Exploit Development,OffSec,https://www.offsec.com/courses/exp-301/,false,true,false
+oswa,guide,WEB-200 OSWA Exam Guide,OffSec,https://help.offsec.com/hc/en-us/articles/4410105650964-WEB-200-Foundational-Web-Application-Assessments-with-Kali-Linux-OSWA-Exam-Guide,true,true,false
+oswa,guide,WEB-200 Syllabus,OffSec,https://www.offsec.com/documentation/WEB-200-Syllabus.pdf,true,true,false
+oswa,course,WEB-200: Foundational Web Application Assessments with Kali Linux,OffSec,https://www.offsec.com/courses/web-200/,false,true,false
+oswa,lab,Web Security Academy,PortSwigger,https://portswigger.net/web-security,true,false,false
+osda,guide,OSDA Exam Guide,OffSec,https://help.offsec.com/hc/en-us/articles/4410105675412-OSDA-Exam-Guide,true,true,false
+osda,guide,OSDA Exam FAQ,OffSec,https://help.offsec.com/hc/en-us/articles/10170036616084-OSDA-Exam-FAQ,true,true,false
+osda,guide,SOC-200 Syllabus,OffSec,https://www.offsec.com/documentation/SOC-200-Syllabus.pdf,true,true,false
+osda,course,SOC-200: Foundational Security Operations and Defensive Analysis,OffSec,https://www.offsec.com/courses/soc-200/,false,true,false
+pnpt,guide,Practical Network Penetration Tester (PNPT),TCM Security,https://certifications.tcm-sec.com/pnpt/,true,true,false
+pnpt,course,Practical Ethical Hacking,TCM Security,https://tcm-sec.com/academy/practical-ethical-hacking/,false,true,false
+pnpt,course,Open-Source Intelligence (OSINT) Fundamentals,TCM Security,https://tcm-sec.com/academy/open-source-intelligence-osint-fundamentals/,false,true,false
+pnpt,course,External Pentest Playbook,TCM Security,https://tcm-sec.com/academy/external-pentest-playbook/,false,true,false
+pnpt,course,Free Resources,TCM Security,https://certifications.tcm-sec.com/free-resources/,true,true,false
+pjpt,guide,Practical Junior Penetration Tester (PJPT) Certification,TCM Security,https://certifications.tcm-sec.com/pjpt/,true,true,false
+pjpt,course,Practical Ethical Hacking,TCM Security,https://tcm-sec.com/academy/practical-ethical-hacking/,false,true,false
+pjpt,course,Practical Ethical Hacking Resources,TCM Security,https://github.com/TCM-Course-Resources/Practical-Ethical-Hacking-Resources,true,true,false
+pjpt,course,TCM Academy Free Tier,TCM Security,https://tcm-sec.com/academy/tcm-academy-free-tier/,true,true,false
+pwpa,guide,Practical Web Pentest Associate (PWPA) Certification,TCM Security,https://certifications.tcm-sec.com/pwpa/,true,true,false
+pwpa,course,Practical Bug Bounty,TCM Security,https://tcm-sec.com/academy/practical-bug-bounty/,false,true,false
+pwpa,course,Practical Web Hacking,TCM Security,https://tcm-sec.com/academy/practical-web-hacking/,false,true,false
+pwpa,lab,Web Security Academy,PortSwigger,https://portswigger.net/web-security,true,false,false
+ejpt,guide,eJPT Certification,INE,https://ine.com/security/certifications/ejpt-certification,true,true,false
+ejpt,course,Penetration Testing Student,INE,https://my.ine.com/CyberSecurity/learning-paths/61f88d91-79ff-4d8f-af68-873883dbbd8c/penetration-testing-student,,true,false
+ejpt,guide,eJPT Certification Guide,INE,https://ine.com/blog/my-ejpt-experience-lily-clark,true,true,false
+ecppt,guide,eCPPT Certification,INE,https://ine.com/security/certifications/ecppt-certification,true,true,false
+ecppt,course,Penetration Testing Professional,INE,https://my.ine.com/CyberSecurity/learning-paths/5e26d0ba-d258-49e0-a421-56cc06626f46/penetration-testing-professional,false,true,false
+ewpt,guide,eWPT Certification,INE,https://ine.com/security/certifications/ewpt-certification,true,true,false
+ewpt,course,Web Application Penetration Testing Professional,INE,https://my.ine.com/CyberSecurity/learning-paths/8c322180-1499-40c7-af8f-a877554fca3d/web-application-penetration-testing-professional,false,true,false
+ewpt,lab,Web Security Academy,PortSwigger,https://portswigger.net/web-security,true,false,false
+cpts,guide,HTB Certified Penetration Testing Specialist,Hack The Box,https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist,true,true,false
+cpts,course,Penetration Tester Job Role Path,Hack The Box,https://academy.hackthebox.com/path/preview/penetration-tester,false,true,false
+cpts,guide,Academy Certifications,Hack The Box,https://help.hackthebox.com/en/articles/12741732-academy-certifications,true,true,false
+cbbh,guide,HTB Certified Web Exploitation Specialist,Hack The Box,https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-specialist,true,true,false
+cbbh,course,Web Penetration Tester Job Role Path,Hack The Box,https://academy.hackthebox.com/path/preview/web-penetration-tester,false,true,false
+cbbh,guide,Academy Certifications,Hack The Box,https://help.hackthebox.com/en/articles/12741732-academy-certifications,true,true,false
+cdsa,guide,HTB Certified Defensive Security Analyst,Hack The Box,https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst,true,true,false
+cdsa,course,SOC Analyst Job Role Path,Hack The Box,https://academy.hackthebox.com/path/preview/soc-analyst,false,true,false
+cdsa,guide,Academy Certifications,Hack The Box,https://help.hackthebox.com/en/articles/12741732-academy-certifications,true,true,false
+cjca,guide,HTB Certified Junior Cybersecurity Associate,Hack The Box,https://academy.hackthebox.com/preview/certifications/htb-certified-junior-cybersecurity-associate,true,true,false
+cjca,course,Junior Cybersecurity Analyst Job Role Path,Hack The Box,https://academy.hackthebox.com/path/preview/junior-cybersecurity-analyst,false,true,false
+cjca,guide,Academy Certifications,Hack The Box,https://help.hackthebox.com/en/articles/12741732-academy-certifications,true,true,false
+crto,course,Red Team Ops,Zero-Point Security,https://www.zeropointsecurity.co.uk/course/red-team-ops,false,true,false
+crto,guide,Cobalt Strike User Guide,Fortra,https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/welcome_main.htm,true,false,false
+crtl,course,Red Team Ops II,Zero-Point Security,https://www.zeropointsecurity.co.uk/course/red-team-ops-ii,false,true,false
+crtl,guide,Cobalt Strike User Guide,Fortra,https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/welcome_main.htm,true,false,false
+crtp,lab,Attacking and Defending Active Directory Lab (CRTP),Altered Security,https://www.alteredsecurity.com/adlab,false,true,false
+crtp,course,Attacking & Defending Active Directory: Beginner's Edition (CRTP),Altered Security,https://www.alteredsecurity.com/crtp-bootcamp,false,true,false
+crtp,guide,Blog,Altered Security,https://www.alteredsecurity.com/blogs,true,true,false
+crte,lab,Windows Red Team Lab (CRTE),Altered Security,https://www.alteredsecurity.com/redteamlab,false,true,false
+crte,course,Attacking & Defending Active Directory: Advanced Edition (CRTE),Altered Security,https://www.alteredsecurity.com/crte-bootcamp,false,true,false
+crte,guide,Blog,Altered Security,https://www.alteredsecurity.com/blogs,true,true,false
+bscp,guide,How to prepare for the Burp Suite Certified Practitioner exam,PortSwigger,https://portswigger.net/web-security/certification/how-to-prepare,true,true,false
+bscp,guide,Hints and guidance for the Burp Suite Certified Practitioner exam,PortSwigger,https://portswigger.net/web-security/certification/exam-hints-and-guidance,true,true,false
+bscp,practice,Practice Exam,PortSwigger,https://portswigger.net/web-security/certification/practice-exam,true,true,false
+bscp,lab,Web Security Academy: All labs,PortSwigger,https://portswigger.net/web-security/all-labs,true,true,false
+bscp,practice,Mystery lab challenge,PortSwigger,https://portswigger.net/web-security/mystery-lab-challenge,true,true,false
+btl1,guide,Blue Team Level 1,Centri,https://www.centri.org/certifications/blue-team-level-1,true,true,false
+btl1,course,Blue Team Junior Analyst Pathway,Centri,https://www.centri.org/courses/blue-team-junior-analyst-pathway-bundle,true,true,false
+btl1,lab,Blue Team Labs Online,Centri,https://blueteamlabs.online/,,true,false
+ccdl1,guide,CCDL1 Exam Outline,CyberDefenders,https://help.cyberdefenders.org/en/articles/14880875-ccdl1-exam-outline,true,true,false
+ccdl1,guide,Study Plan and Exam Readiness,CyberDefenders,https://help.cyberdefenders.org/en/articles/13990297-study-plan-and-exam-readiness,true,true,false
+ccdl1,course,Certified CyberDefender Level 1 (CCDL1),CyberDefenders,https://cyberdefenders.org/certifications/certified-cyberdefender-level1/,false,true,false
+ccdl1,lab,Blue Team Labs,CyberDefenders,https://cyberdefenders.org/blue-team-labs/,,true,false
+ccdl2,guide,CCDL2 Syllabus,CyberDefenders,https://cyberdefenders.org/static/files/CCDL2_Syllabus.pdf,true,true,false
+ccdl2,guide,CCDL2 Training Overview,CyberDefenders,https://help.cyberdefenders.org/en/articles/8922969-ccdl2-training-overview,true,true,false
+ccdl2,course,Certified CyberDefender Level 2 (CCDL2),CyberDefenders,https://cyberdefenders.org/certifications/certified-cyberdefender-level2/,false,true,false
+ccdl2,lab,Blue Team Labs,CyberDefenders,https://cyberdefenders.org/blue-team-labs/,,true,false
+cnpen,guide,Certified Network Pentester (CNPen),The SecOps Group,https://pentestingexams.com/certifications/professional/certified-network-pentester/,true,true,false
+cnpen,practice,Mock Pentesting Exams,The SecOps Group,https://pentestingexams.com/mock-pentesting-exams/,true,true,false
+secops-cap,guide,Certified AppSec Practitioner (CAP),The SecOps Group,https://pentestingexams.com/certifications/essentials/certified-application-security-practitioner/,true,true,false
+secops-cap,practice,Mock Pentesting Exams,The SecOps Group,https://pentestingexams.com/mock-pentesting-exams/,true,true,false
+secops-cap,guide,OWASP Top 10,OWASP Foundation,https://owasp.org/www-project-top-ten/,true,false,false
+secops-cap,lab,Web Security Academy,PortSwigger,https://portswigger.net/web-security,true,false,false
+crta,guide,Certified Red Team Analyst (CRTA),CyberWarFare Labs,https://cyberwarfare.live/certifications/red-team-analyst-crta/,true,true,false
+osip,guide,Open Source Intelligence Professional (OSIP),IntelTechniques,https://inteltechniques.com/training-osip.html,true,true,false
+osip,course,OSINT Training,IntelTechniques,https://inteltechniques.com/training.html,false,true,false
+osip,book,"OSINT Techniques, 11th Edition",IntelTechniques,https://inteltechniques.com/book1.html,false,true,false
+osip,practice,IntelTechniques Search Tools,IntelTechniques,https://inteltechniques.com/tools/,true,true,false
+cfce,guide,Certified Forensic Computer Examiner (CFCE),IACIS,https://www.iacis.com/certification/cfce/,true,true,false
+cfce,guide,BCFE/CFCE Core Competencies 2026,IACIS,https://www.iacis.com/wp-content/uploads/2026/08/BCFE-CFCE-Core-Competencies-2026.pdf,true,true,false
+cfce,guide,2026 CFCE Bibliography,IACIS,https://www.iacis.com/wp-content/uploads/2016/02/2026-CFCE-Bibliography.pdf,true,true,false
+cfce,course,BCFE: Basic Computer Forensic Examiner,IACIS,https://www.iacis.com/courses/basic-computer-forensics-examiner/,false,true,false
+rhcsa,guide,Red Hat Certified System Administrator (RHCSA) exam (EX200),Red Hat,https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam,true,true,false
+rhcsa,course,Red Hat System Administration I (RH124),Red Hat,https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i,false,true,false
+rhcsa,course,Red Hat System Administration II (RH134),Red Hat,https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii,false,true,false
+rhcsa,course,RHCSA Rapid Track course (RH199),Red Hat,https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course,false,true,false
+rhcsa,book,Red Hat RHCSA 10 Cert Guide: EX200,Pearson IT Certification,https://www.pearsonitcertification.com/store/red-hat-rhcsa-10-cert-guide-ex200-9780135576663,false,false,false
+lpic-1,guide,LPIC-1 Exam 101 and 102 Objectives,Linux Professional Institute,https://www.lpi.org/our-certifications/exam-101-102-objectives/,true,true,false
+lpic-1,course,LPIC-1 Exam 101 Learning Materials,Linux Professional Institute,https://learning.lpi.org/en/learning-materials/101-500/,true,true,false
+lpic-1,course,LPIC-1 Exam 102 Learning Materials,Linux Professional Institute,https://learning.lpi.org/en/learning-materials/102-500/,true,true,false
+lfcs,guide,Linux Foundation Certified System Administrator (LFCS),The Linux Foundation,https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/,true,true,false
+lfcs,course,Linux System Administration Essentials (LFS207),The Linux Foundation,https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/,false,true,false
+lfcs,course,Introduction to Linux (LFS101),The Linux Foundation,https://training.linuxfoundation.org/training/introduction-to-linux/,true,true,false
+lfcs,practice,LFCS Simulator,Killer Shell,https://killer.sh/lfcs,false,false,false
+vault-associate,guide,Exam content list - Vault Associate (003),HashiCorp,https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003,true,true,false
+vault-associate,course,Learning path - Vault Associate (003),HashiCorp,https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003,true,true,false
+vault-associate,practice,Sample questions - Vault Associate (003),HashiCorp,https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-questions-003,true,true,false
+gh-advanced-security,guide,Study guide for Exam GH-500: GitHub Advanced Security,Microsoft Learn,https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500,true,true,false
+gh-advanced-security,course,GitHub Advanced Security Part 1 of 2,Microsoft Learn,https://learn.microsoft.com/en-us/training/paths/github-advanced-security/,true,true,false
+gh-advanced-security,guide,About GitHub Advanced Security,GitHub,https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security,true,true,false
+cdp-devsecops,course,Certified DevSecOps Professional (CDP),Practical DevSecOps,https://www.practical-devsecops.com/certified-devsecops-professional/,false,true,false
+cdp-devsecops,guide,Exam and Certification Process,Practical DevSecOps,https://www.practical-devsecops.com/exam-and-certification/,true,true,false
+cdp-devsecops,guide,DevSecOps University,Practical DevSecOps,https://www.practical-devsecops.com/devsecops-university/,true,true,false
+gxpn,guide,GIAC Exploit Researcher and Advanced Penetration Tester (GXPN),GIAC,https://www.giac.org/certifications/exploit-researcher-advanced-penetration-tester-gxpn/,true,true,false
+gxpn,course,"SEC660: Advanced Penetration Testing, Exploit Writing, and Ethical Hacking",SANS Institute,https://www.sans.org/cyber-security-courses/advanced-penetration-testing-exploits-ethical-hacking/,false,true,false
+gxpn,guide,Best Practices for GIAC Practitioner Exam Preparation,GIAC,https://www.giac.org/how-to-prepare/practitioner,true,true,false
+grem,guide,GIAC Reverse Engineering Malware (GREM),GIAC,https://www.giac.org/certifications/reverse-engineering-malware-grem/,true,true,false
+grem,course,FOR610: Reverse-Engineering Malware,SANS Institute,https://www.sans.org/cyber-security-courses/reverse-engineering-malware-ai-assisted-analysis,false,true,false
+grem,book,Practical Malware Analysis,No Starch Press,https://nostarch.com/malware,false,false,false
+grem,lab,REMnux,REMnux,https://remnux.org/,true,false,false
+grem,guide,Cheat Sheet for Analyzing Malicious Software,Lenny Zeltser,https://zeltser.com/malware-analysis-cheat-sheet/,true,false,false
+splunk-core,guide,Splunk Core Certified User Exam Blueprint,Splunk,https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-user.pdf,true,true,false
+splunk-core,guide,Splunk Core Certified User,Splunk,https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html,true,true,false
+splunk-core,course,Free Training Courses,Splunk,https://www.splunk.com/en_us/training/free-courses/overview.html,true,true,false
+splunk-core,lab,Search Tutorial,Splunk,https://help.splunk.com/en/splunk-enterprise/get-started/search-tutorial,true,true,false
+fcp-nse4,guide,FortiOS Administrator Exam,Fortinet,https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam,true,true,false
+fcp-nse4,guide,NSE 4 FortiOS,Fortinet,https://training.fortinet.com/local/staticpage/view.php?page=nse_4,true,true,false
+fcp-nse4,course,Training Institute Library: NSE 4,Fortinet,https://training.fortinet.com/local/library/?category=Certification:NSE_4,,true,false
+fcp-nse4,guide,FortiOS 7.6.0 Administration Guide,Fortinet,https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide,true,true,false

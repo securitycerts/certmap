@@ -10,6 +10,8 @@
 //   certs/vendor-*.html  one page per vendor
 //   certs/domain-*.html  one page per domain
 //   certs/list-*.html    curated lists (beginner, free, hands-on, DoD 8140, ...)
+//   certs/compare-*.html side-by-side comparisons of the pairs in data/comparisons.csv,
+//                        repeated in es/ fr/ de/ it/ ar/ ko/ he/ with hreflang links
 //   index.html           the home page: what the site is, a site index, an FAQ and the sponsors
 //   sponsors/index.html  what sponsoring involves, the tiers and an FAQ
 //   about/index.html     redirect to the home page, its former address
@@ -30,8 +32,9 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { createHash } from "node:crypto";
 import { existsSync } from "node:fs";
-import { parseCSV, rowsToCerts, DOMAINS } from "../assets/js/data.js";
+import { parseCSV, rowsToCerts, DOMAINS, tableFromCSV, groupResources, groupComparisons, compareFile } from "../assets/js/data.js";
 import { ROLE_PATHS, orderByPrerequisite, pathTotals } from "../assets/js/paths.js";
+import { LANGS, LANG_ORDER } from "./compare-i18n.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "https://certmap.dev/";
@@ -64,15 +67,21 @@ const byId = new Map(certs.map(c => [c.id, c]));
 const vendors = new Set(certs.map(c => c.vendor));
 const latest = certs.map(c => c.price_verified_at).filter(Boolean).sort().pop() || "2026-01-01";
 const byName = (a, b) => a.acronym.localeCompare(b.acronym);
+const table = file => tableFromCSV(readFileSync(join(ROOT, "data", file), "utf8"));
+const RESOURCES = groupResources(table("resources.csv"), byId);
+const PAIR_ROWS = table("comparisons.csv").filter(r => byId.has(r.a) && byId.has(r.b) && r.a !== r.b);
+const VERSUS = groupComparisons(PAIR_ROWS, byId);
+const PAIRS = [...new Map(PAIR_ROWS.map(r => [[r.a, r.b].sort().join("|"), r])).values()];
 
-function page({ path, title, description, body, ld, modified, image = "assets/og.png", root = false, script = "" }) {
+function page({ path, title, description, body, ld, modified, image = "assets/og.png", root = false, script = "", T = LANGS.en, alternates = [] }) {
   const canonical = SITE + path;
   const html = `<!doctype html>
-<html lang="en">
+<html lang="${T.code}"${T.dir === "rtl" ? ' dir="rtl"' : ""}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
+${alternates.map(x => `<link rel="alternate" hreflang="${x.lang}" href="${x.href}">`).join("\n")}
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${canonical}">
 <meta property="og:type" content="article">
@@ -97,13 +106,15 @@ function page({ path, title, description, body, ld, modified, image = "assets/og
 <body>
 <header class="top">
   <a class="brand" href="../">cert<span>/</span>map</a>
-  <nav><a href="../certs/">All certifications</a><a href="../sponsors/">Sponsors</a><a href="../map/">Interactive roadmap</a></nav>
+  <nav><a href="../certs/">${T.nav[0]}</a><a href="../sponsors/">${T.nav[1]}</a><a href="../map/">${T.nav[2]}</a></nav>
 </header>
 <main>
 ${body}
 </main>
 <footer>
-  <p>Part of <a href="../">cert/map</a>, an open-source roadmap of cybersecurity certifications. Prices are list prices in USD and can change, so confirm with the vendor before paying.${modified ? ` Last reviewed ${modified}.` : ""}</p>
+  <p>${T.code === "en"
+    ? `Part of <a href="../">cert/map</a>, an open-source roadmap of cybersecurity certifications. Prices are list prices in USD and can change, so confirm with the vendor before paying.${modified ? ` Last reviewed ${modified}.` : ""}`
+    : `${esc(T.footer)}${modified ? ` <time datetime="${modified}">${modified}</time>` : ""}`}</p>
   <p><a href="https://github.com/securitycerts/certmap">Source and dataset on GitHub</a> · <a href="../sponsors/">Become a sponsor</a> · <a href="mailto:${EMAIL}">${EMAIL}</a></p>
 </footer>
 ${script ? `<script src="../${script}?v=${fileHash(script)}"></script>\n` : ""}</body>
@@ -121,7 +132,7 @@ const year = iso => (iso || latest).slice(0, 4);
 const count = (list, key) => list.reduce((m, c) => m.set(c[key], (m.get(c[key]) || 0) + 1), new Map());
 const byLevelThenName = (a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level) || byName(a, b);
 
-if (certs.some(c => /^(vendor|domain|list|path)-/.test(c.id))) throw new Error("a cert id collides with the vendor-/domain-/list- page names");
+if (certs.some(c => /^(vendor|domain|list|path|compare)-/.test(c.id))) throw new Error("a cert id collides with the vendor-/domain-/list- page names");
 
 // Curated cuts of the dataset that match what people actually search for.
 // `app` is the query string that opens the same filter in the interactive app.
@@ -179,6 +190,170 @@ ${certTable(items, { showDomain: true })}
     path, title: `${l.name}: ${items.length} compared with prices (${year()}) | cert/map`,
     description: `${l.lead} ${items.length} certifications including ${items.slice(0, 5).map(c => c.acronym).join(", ")}.${priceRange(items)}`.slice(0, 300),
     body, ld: itemListLd(l.name, path, items), modified: latest,
+  });
+}
+
+// ---------- preparation resources ----------
+// "How to prepare": links out to study material. Sponsored entries, when there
+// are any, sit in their own labelled box above the list and carry
+// rel="sponsored", so a paid placement is never read as an editorial pick.
+function prepHtml(c, T = LANGS.en) {
+  const list = RESOURCES.get(c.id) || [];
+  if (!list.length) return "";
+  const row = r => `      <li><a href="${esc(r.url)}" rel="${r.sponsored ? "sponsored " : ""}noopener noreferrer">${esc(r.title)}</a> <span>${[esc(r.provider), T.resource[r.type], r.official ? T.official : "", r.free ? T.freeTag : ""].filter(Boolean).join(" · ")}</span></li>`;
+  const sponsored = list.filter(r => r.sponsored);
+  return `  <h2>${esc(T.hPrepare(T.iso(c.acronym)))}</h2>
+${sponsored.length ? `  <div class="prep-sponsored"><small>${T.sponsored}</small>\n    <ul class="prep">\n${sponsored.map(row).join("\n")}\n    </ul>\n  </div>\n` : ""}  <ul class="prep">
+${list.filter(r => !r.sponsored).map(row).join("\n")}
+  </ul>
+  <p class="fine">${esc(T.resNote)}</p>
+`;
+}
+
+function versusHtml(c) {
+  const list = VERSUS.get(c.id) || [];
+  if (!list.length) return "";
+  return `  <h2>Compare ${esc(c.acronym)} with</h2>
+  <nav class="toc">${list.map(v => `<a href="${v.file}">${esc(c.acronym)} vs ${esc(byId.get(v.id).acronym)}</a>`).join(" ")}</nav>
+`;
+}
+
+// ---------- comparison pages ----------
+// Everything on a comparison page is computed from the two rows of the
+// dataset: the table, the list of differences and the answers below it. No
+// opinion is added, so a page can never disagree with the data it sits on.
+// The wording for each language lives in compare-i18n.mjs.
+const prereqClosure = (id, seen = new Set()) => {
+  for (const p of byId.get(id)?.prerequisites || []) if (!seen.has(p) && byId.has(p)) { seen.add(p); prereqClosure(p, seen); }
+  return seen;
+};
+const comparePath = (a, b, T) => `${T.code === "en" ? "certs" : T.code}/${compareFile(a.id, b.id)}`;
+
+function compareFacts(a, b, T) {
+  const A = T.iso(a.acronym), B = T.iso(b.acronym);
+  const name = c => T.iso(c.acronym);
+  const priced = c => (c.price_usd === 0 ? T.free : T.money(c.price_usd));
+  let price;
+  if (a.price_usd != null && b.price_usd != null) {
+    if (a.price_usd === b.price_usd) price = T.priceSame(priced(a));
+    else {
+      const [lo, hi] = a.price_usd < b.price_usd ? [a, b] : [b, a];
+      price = T.priceDiff(name(lo), priced(lo), name(hi), priced(hi), T.money(hi.price_usd - lo.price_usd));
+    }
+  } else if (a.price_usd != null || b.price_usd != null) {
+    const [known, unknown] = a.price_usd != null ? [a, b] : [b, a];
+    price = T.priceOne(name(known), priced(known), name(unknown));
+  } else price = T.priceNone;
+
+  let level;
+  if (a.level !== b.level) {
+    const [lo, hi] = LEVELS.indexOf(a.level) < LEVELS.indexOf(b.level) ? [a, b] : [b, a];
+    level = T.levelDiff(name(lo), T.levels[lo.level], name(hi), T.levels[hi.level]);
+  } else level = T.levelSame(T.levels[a.level]);
+
+  const format = a.hands_on !== b.hands_on
+    ? T.formatDiff(name(a.hands_on ? a : b), name(a.hands_on ? b : a))
+    : T.formatSame(a.hands_on);
+
+  const renewOf = c => (c.validity_years ? T.renews(c.validity_years) : T.never);
+  const renew = a.validity_years === b.validity_years
+    ? (a.validity_years ? T.renewBoth(a.validity_years) : T.renewNeither)
+    : T.renewEach(A, renewOf(a), B, renewOf(b));
+
+  const list = [price, level, format];
+  if (a.duration_min && b.duration_min && a.duration_min !== b.duration_min) {
+    const [short, long] = a.duration_min < b.duration_min ? [a, b] : [b, a];
+    list.push(T.lengthDiff(name(long), T.duration(long.duration_min), name(short), T.duration(short.duration_min)));
+  }
+  list.push(renew);
+  if (a.dod_8140 !== b.dod_8140) list.push(T.dod(name(a.dod_8140 ? a : b), name(a.dod_8140 ? b : a)));
+  if (prereqClosure(b.id).has(a.id)) list.push(T.prereq(A, B));
+  if (prereqClosure(a.id).has(b.id)) list.push(T.prereq(B, A));
+  if (a.vendor === b.vendor) list.push(T.sameVendor(T.iso(a.vendor)));
+
+  const fmt = c => (c.hands_on ? T.handsOn : T.written);
+  const qa = [
+    [T.q.cheaper(A, B), price],
+    [T.q.level(A, B), a.level === b.level ? T.levelAnswerSame(T.levels[a.level]) : T.levelAnswerDiff(A, T.levels[a.level], B, T.levels[b.level])],
+    [T.q.expire(A, B), renew],
+    [T.q.handsOn(A, B), T.formatEach(A, fmt(a), B, fmt(b))],
+  ];
+  return { list, qa };
+}
+
+function comparePage(a, b, T) {
+  const file = compareFile(a.id, b.id);
+  const path = comparePath(a, b, T);
+  const { list, qa } = compareFacts(a, b, T);
+  const certs = T.code === "en" ? "" : "../certs/";      // cert, vendor and domain pages exist in English only
+  const link = c => `<a href="${certs}${c.id}.html">${esc(c.acronym)}</a>`;
+  const L = T.labels;
+  const priced = c => (c.price_usd == null ? T.notPublished : c.price_usd === 0 ? T.free : T.money(c.price_usd));
+  const rows = [
+    [L.name, c => `<a href="${certs}${c.id}.html">${esc(c.name)}</a>`],
+    [L.vendor, c => `<a href="${certs}${vendorFile(c.vendor)}">${esc(c.vendor)}</a>`],
+    [L.domain, c => `<a href="${certs}${domainFile(c.domain)}">${esc(c.domain)}</a>`],
+    [L.level, c => T.levels[c.level]],
+    [L.price, c => esc(priced(c)) + (T.code === "en" && c.currency_note ? `<small>${esc(c.currency_note)}</small>` : "")],
+    [L.checked, c => (c.price_verified_at ? `<time datetime="${c.price_verified_at}">${c.price_verified_at}</time>` : T.notVerified)],
+    [L.length, c => T.duration(c.duration_min) || T.notStated],
+    [L.format, c => (c.hands_on ? T.handsOn : T.written)],
+    [L.exams, c => String(c.exam_count)],
+    [L.renewal, c => (c.validity_years ? T.every(c.validity_years) : T.noExpiry)],
+    [L.dod, c => (c.dod_8140 ? T.approved : T.notListed)],
+    [L.prereq, c => c.prerequisites.map(id => byId.get(id)).filter(Boolean).map(link).join(", ") || T.none],
+  ];
+  const others = [...new Map([...(VERSUS.get(a.id) || []), ...(VERSUS.get(b.id) || [])]
+    .filter(v => v.file !== file).map(v => [v.file, v])).values()];
+  const label = v => { const [x, y] = v.file.replace(/^compare-|\.html$/g, "").split("-vs-"); return `${byId.get(x).acronym} vs ${byId.get(y).acronym}`; };
+  const alternates = [
+    ...LANG_ORDER.map(code => ({ lang: code, href: SITE + comparePath(a, b, LANGS[code]) })),
+    { lang: "x-default", href: SITE + comparePath(a, b, LANGS.en) },
+  ];
+  const switcher = `<nav class="langs" aria-label="Language">${LANG_ORDER.map(code => {
+    const o = LANGS[code];
+    return code === T.code
+      ? `<span lang="${code}" aria-current="true">${o.name}</span>`
+      : `<a lang="${code}" hreflang="${code}" href="../${comparePath(a, b, o)}">${o.name}</a>`;
+  }).join(" ")}</nav>`;
+  const A = T.iso(a.acronym), B = T.iso(b.acronym);
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / <a href="../certs/">${T.crumbCerts}</a> / <a href="../certs/#comparisons">${T.crumbCompare}</a></nav>
+${switcher}
+<article>
+  <h1><bdi>${esc(a.acronym)}</bdi> vs <bdi>${esc(b.acronym)}</bdi></h1>
+  <p class="lead">${esc(T.lead(T.iso(a.name), T.iso(b.name)))}</p>
+  <p class="cta"><a class="btn primary" href="../map/#/roadmap/${a.id},${b.id}?name=${encodeURIComponent(`${a.acronym} vs ${b.acronym}`)}">${T.cta}</a></p>
+  <table class="versus">
+    <thead><tr><th></th><th>${link(a)}</th><th>${link(b)}</th></tr></thead>
+    <tbody>
+${rows.map(([k, f]) => `      <tr><th scope="row">${k}</th><td>${f(a)}</td><td>${f(b)}</td></tr>`).join("\n")}
+    </tbody>
+  </table>
+  <h2>${T.hDiff}</h2>
+  <ul class="diff">
+${list.map(d => `    <li>${esc(d)}</li>`).join("\n")}
+  </ul>
+${T.hCovers ? `  <h2>${T.hCovers}</h2>
+  <p><strong>${esc(a.acronym)}.</strong> ${esc(a.description)}</p>
+  <p><strong>${esc(b.acronym)}.</strong> ${esc(b.description)}</p>
+` : ""}${prepHtml(a, T)}${prepHtml(b, T)}  <h2>${T.hQuestions}</h2>
+  <div class="faq">
+${qa.map(([q, ans]) => `    <details><summary>${esc(q)}</summary><p>${esc(ans)}</p></details>`).join("\n")}
+  </div>
+${others.length ? `  <h2>${T.hRelated}</h2>\n  <nav class="toc">${others.map(v => `<a href="${v.file}"><bdi>${esc(label(v))}</bdi></a>`).join(" ")}</nav>\n` : ""}</article>`;
+  const ld = [
+    { "@context": "https://schema.org", "@type": "FAQPage", inLanguage: T.code, mainEntity: qa.map(([q, ans]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: ans } })) },
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "cert/map", item: SITE },
+      { "@type": "ListItem", position: 2, name: T.crumbCerts, item: SITE + "certs/" },
+      { "@type": "ListItem", position: 3, name: `${a.acronym} vs ${b.acronym}`, item: SITE + path },
+    ] },
+  ];
+  return page({
+    path, T, alternates,
+    title: `${T.title(a.acronym, b.acronym, year())} | cert/map`,
+    description: list.slice(0, 2).join(" ").replace(/[⁨⁩]/g, "").slice(0, 300),
+    body, ld, modified: [a.price_verified_at, b.price_verified_at].filter(Boolean).sort().pop() || latest,
   });
 }
 
@@ -291,7 +466,12 @@ ${LISTS.map(l => `    <a class="tile" href="../certs/${listFile(l)}"><strong>${l
   </div>
 </section>
 
-<section class="block">
+${PAIRS.length ? `<section class="block">
+  <h2>Popular comparisons</h2>
+  <nav class="toc">${PAIRS.slice(0, 24).map(r => `<a href="../certs/${compareFile(r.a, r.b)}">${esc(byId.get(r.a).acronym)} vs ${esc(byId.get(r.b).acronym)}</a>`).join(" ")}</nav>
+</section>
+
+` : ""}<section class="block">
   <h2>Career paths</h2>
   <div class="tiles">
 ${ROLE_PATHS.map(p => `    <a class="tile" href="../certs/${pathFile(p)}"><strong>$${pathTotals(pathCerts(p)).cost.toLocaleString("en-US")}</strong><span>${esc(p.name)}</span></a>`).join("\n")}
@@ -619,6 +799,7 @@ ${[...vendors].sort((a, b) => a.localeCompare(b)).join(", ")}.
 - [Dataset as JSON](${SITE}data/certs.json) and [as CSV](${SITE}data/certs.csv)
 ${LISTS.map(l => `- [${l.name}](${SITE}certs/${listFile(l)}): ${listItems(l).length} certifications`).join("\n")}
 ${ROLE_PATHS.map(p => `- [${p.name} certification path](${SITE}certs/${pathFile(p)}): ${pathCerts(p).map(c => c.acronym).join(", ")}`).join("\n")}
+${PAIRS.map(r => `- [${byId.get(r.a).acronym} vs ${byId.get(r.b).acronym}](${SITE}certs/${compareFile(r.a, r.b)})`).join("\n")}
 ${DOMAINS.map(d => `- [${d} certifications](${SITE}certs/${domainFile(d)})`).join("\n")}
 
 Each certification has its own page at \`${SITE}certs/<id>.html\` and each vendor at \`${SITE}certs/vendor-<name>.html\`.
@@ -771,7 +952,7 @@ ${facts.map(([k, v]) => `    <div><dt>${k}</dt><dd>${v}</dd></div>`).join("\n")}
 ${c.tags.length ? `  <p class="tags">${c.tags.map(t => `<a href="../map/?tag=${encodeURIComponent(t)}">${esc(t)}</a>`).join(" ")}</p>\n` : ""}${related.length ? `  <h2>Other ${esc(c.domain)} certifications</h2>
   <ul class="related">
 ${related.map(o => `    <li>${certLink(o)} <span>${esc(o.vendor)}, ${LEVEL_LABEL[o.level]}, ${esc(money(o.price_usd))}</span></li>`).join("\n")}
-  </ul>\n` : ""}</article>`;
+  </ul>\n` : ""}${prepHtml(c)}${versusHtml(c)}</article>`;
 
   const ld = [
     {
@@ -831,7 +1012,9 @@ ${items.map(c => `      <tr><td>${certLink(c)} <span>${esc(c.name)}</span></td><
 <h1>Cybersecurity certifications list: ${certs.length} certs with prices</h1>
 <p class="lead">Every certification on the cert/map security certification roadmap, grouped by domain and ordered from beginner to expert, with the vendor and the current exam price in USD. ${vendors.size} vendors are covered, from CompTIA, ISC2, ISACA, GIAC and OffSec to cloud, forensics and hands-on lab providers.</p>
 <p class="cta"><a class="btn primary" href="../map/">Open the interactive roadmap</a> <a class="btn" href="../data/certs.csv">Download the dataset (CSV)</a></p>
-<h2>Popular lists</h2>
+${PAIRS.length ? `<h2 id="comparisons">Comparisons</h2>
+<nav class="toc" aria-label="Comparisons">${PAIRS.map(r => `<a href="${compareFile(r.a, r.b)}">${esc(byId.get(r.a).acronym)} vs ${esc(byId.get(r.b).acronym)}</a>`).join(" ")}</nav>
+` : ""}<h2>Popular lists</h2>
 <nav class="toc" aria-label="Lists">${LISTS.map(l => `<a href="${listFile(l)}">${esc(l.name)}</a>`).join(" ")}</nav>
 <h2>Career paths</h2>
 <nav class="toc" aria-label="Paths">${ROLE_PATHS.map(p => `<a href="${pathFile(p)}">${esc(p.name)}</a>`).join(" ")}</nav>
@@ -878,6 +1061,7 @@ ${[
     url(SITE + "sponsors/", latest, "0.8"),
     ...LISTS.map(l => url(SITE + `certs/${listFile(l)}`, latest, "0.8")),
     ...ROLE_PATHS.map(p => url(SITE + `certs/${pathFile(p)}`, latest, "0.8")),
+    ...PAIRS.flatMap(r => LANG_ORDER.map(code => url(SITE + comparePath(byId.get(r.a), byId.get(r.b), LANGS[code]), latest, code === "en" ? "0.8" : "0.6"))),
     ...DOMAINS.map(d => url(SITE + `certs/${domainFile(d)}`, latest, "0.8")),
     ...[...vendors].map(v => url(SITE + `certs/${vendorFile(v)}`, latest, "0.8")),
     ...certs.map(c => url(SITE + `certs/${c.id}.html`, c.price_verified_at || latest, "0.7")),
@@ -913,6 +1097,14 @@ for (const v of vendors) writeFileSync(join(OUT, vendorFile(v)), vendorPage(v));
 for (const d of DOMAINS) writeFileSync(join(OUT, domainFile(d)), domainPage(d));
 for (const l of LISTS) writeFileSync(join(OUT, listFile(l)), listPage(l));
 for (const p of ROLE_PATHS) writeFileSync(join(OUT, pathFile(p)), pathPage(p));
+for (const code of LANG_ORDER) {
+  const T = LANGS[code];
+  if (code !== "en") { rmSync(join(ROOT, code), { recursive: true, force: true }); mkdirSync(join(ROOT, code), { recursive: true }); }
+  for (const r of PAIRS) {
+    const a = byId.get(r.a), b = byId.get(r.b);
+    writeFileSync(join(ROOT, comparePath(a, b, T)), comparePage(a, b, T));
+  }
+}
 writeFileSync(join(OUT, "index.html"), hubPage());
 mkdirSync(join(ROOT, "r"), { recursive: true });
 writeFileSync(join(ROOT, "r", "index.html"), sharedPage());

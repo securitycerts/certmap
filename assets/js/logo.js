@@ -108,6 +108,7 @@ function logoTile(name, host, cls, size) {
   if (cached === "failed") return wrap;
   if (cached) {
     // Already loaded once this session: clone the bytes the browser has cached.
+    wrap.classList.toggle("logo-light", "fetched" in cached.dataset);
     wrap.replaceChildren(cached.cloneNode());
     return wrap;
   }
@@ -122,8 +123,14 @@ function logoTile(name, host, cls, size) {
   img.decoding = "async";
   img.alt = "";
   img.referrerPolicy = "no-referrer";
+  // A favicon is drawn for a browser tab, usually a dark mark on a transparent
+  // background, which disappears on a dark tile. Our own logo files are made
+  // for this page; anything fetched gets a light tile behind it.
+  const fetched = !url.includes("/images/");
+  if (fetched) img.dataset.fetched = "";
   img.addEventListener("load", () => {
     IMG_CACHE.set(cacheKey, img);
+    wrap.classList.toggle("logo-light", fetched);
     wrap.replaceChildren(img.cloneNode());
   });
   img.addEventListener("error", () => { IMG_CACHE.set(cacheKey, "failed"); });

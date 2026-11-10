@@ -1,10 +1,10 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
   fmtPrice, fmtAgo, isStale, slug,
-} from "./format.js?v=75415574";
-import { el, svg } from "./dom.js?v=75415574";
-import { makeLogo } from "./logo.js?v=75415574";
-import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=75415574";
+} from "./format.js?v=cb08b99a";
+import { el, svg } from "./dom.js?v=cb08b99a";
+import { makeLogo } from "./logo.js?v=cb08b99a";
+import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=cb08b99a";
 
 export { slug, fmtPrice };
 
@@ -338,6 +338,31 @@ export function renderDrawer(root, c, byId) {
     children.push(el("div", { class: "tags" }, c.tags.map(t => el("a", { class: "tag", href: `?tag=${encodeURIComponent(t)}`, "data-tag": t, title: `Show every certification tagged ${t}`, text: t }))));
   }
 
+  const prep = _dataRef?.resources.get(c.id) || [];
+  if (prep.length) {
+    const row = r => el("li", { class: r.sponsored ? "sponsored" : null },
+      el("a", { href: r.url, target: "_blank", rel: (r.sponsored ? "sponsored " : "") + "noopener noreferrer", text: r.title }),
+      el("span", { class: "prep-meta", text: [r.provider, RESOURCE_LABEL[r.type], r.official ? "official" : "", r.free ? "free" : ""].filter(Boolean).join(" · ") }),
+    );
+    const sponsored = prep.filter(r => r.sponsored);
+    children.push(el("div", { class: "prep" },
+      el("h3", { text: "How to prepare" }),
+      sponsored.length ? el("div", { class: "prep-sponsored" }, el("span", { class: "prep-flag", text: "Sponsored" }), el("ul", {}, sponsored.map(row))) : null,
+      el("ul", {}, prep.filter(r => !r.sponsored).map(row)),
+    ));
+  }
+
+  const versus = _dataRef?.comparisons.get(c.id) || [];
+  if (versus.length) {
+    children.push(el("div", { class: "prep" },
+      el("h3", { text: "Compare" }),
+      el("div", { class: "versus" }, versus.map(v => el("a", {
+        class: "prereq-chip", href: new URL(`../../certs/${v.file}`, import.meta.url).href,
+        text: `${c.acronym} vs ${byId.get(v.id)?.acronym || v.id}`,
+      }))),
+    ));
+  }
+
   children.push(el("div", { class: "actions" },
     el("a", { class: "btn-ghost", href: c.url, target: "_blank", rel: "noopener noreferrer", text: "Official page ↗" }),
     el("button", { class: "btn-ghost primary", type: "button", "data-toggle-cart": true, text: state_has_in_cart(c) ? "Remove from selection" : "Add to selection" }),
@@ -353,6 +378,9 @@ function certChip(id, byId) {
 }
 let _stateRef = null;
 export function bindState(s) { _stateRef = s; }
+let _dataRef = null;
+export function bindData(d) { _dataRef = d; }
+const RESOURCE_LABEL = { guide: "exam guide", course: "course", lab: "labs", practice: "practice questions", book: "book" };
 function state_has_in_cart(c) { return _stateRef?.cart.has(c.id) || false; }
 
 // Paints the rows and the count, and returns the total so the caller can

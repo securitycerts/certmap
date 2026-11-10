@@ -41,6 +41,55 @@ function parseCSV(text) {
   return rows.filter(r => r.length > 1 || (r.length === 1 && r[0] !== ""));
 }
 
+// data/comparisons.csv and data/resources.csv are optional companions of the
+// dataset. Both refer to certs by id, so a typo there would silently drop a row.
+function validateExtras(ids) {
+  const errors = [];
+  const read = name => {
+    try { return parseCSV(readFileSync(join(__dirname, "..", "data", name), "utf8")); }
+    catch { return null; }
+  };
+  let pairs = 0, resources = 0;
+
+  const cmp = read("comparisons.csv");
+  if (cmp) {
+    const seen = new Set();
+    cmp.slice(1).forEach((r, n) => {
+      const [a, b] = r.map(x => (x || "").trim());
+      const where = `comparisons.csv L${n + 2}`;
+      if (!ids.has(a) || !ids.has(b)) return errors.push(`${where}: unknown cert id in "${a},${b}"`);
+      if (a === b) return errors.push(`${where}: a cert cannot be compared with itself`);
+      const key = [a, b].sort().join("|");
+      if (seen.has(key)) return errors.push(`${where}: duplicate pair ${a} / ${b}`);
+      seen.add(key); pairs++;
+    });
+  }
+
+  const res = read("resources.csv");
+  if (res) {
+    const header = res[0].map(h => h.trim());
+    const col = Object.fromEntries(header.map((h, i) => [h, i]));
+    const types = ["guide", "course", "lab", "practice", "book"];
+    const seen = new Set();
+    res.slice(1).forEach((r, n) => {
+      const get = k => (r[col[k]] || "").trim();
+      const where = `resources.csv L${n + 2}`;
+      if (!ids.has(get("cert_id"))) errors.push(`${where}: unknown cert id "${get("cert_id")}"`);
+      if (!types.includes(get("type"))) errors.push(`${where}: type must be one of ${types.join(", ")}`);
+      if (!get("title") || !get("provider")) errors.push(`${where}: title and provider are required`);
+      if (!/^https:\/\/[^\s<>"]+$/.test(get("url"))) errors.push(`${where}: url must be https`);
+      if (/[?&](utm_|ref=|aff|tag=)/i.test(get("url"))) errors.push(`${where}: url carries a tracking or affiliate parameter`);
+      for (const k of ["free", "official", "sponsored"]) {
+        if (!["true", "false", ""].includes(get(k))) errors.push(`${where}: ${k} must be true, false or empty`);
+      }
+      const key = get("cert_id") + "|" + get("url");
+      if (seen.has(key)) errors.push(`${where}: duplicate resource for ${get("cert_id")}`);
+      seen.add(key); resources++;
+    });
+  }
+  return { errors, pairs, resources };
+}
+
 function main() {
   const csv = readFileSync(CSV_PATH, "utf8");
   const rows = parseCSV(csv);
@@ -131,7 +180,12 @@ function main() {
     console.error("Validation errors:\n" + errors.map(e => "  - " + e).join("\n"));
     process.exit(1);
   }
-  console.log(`OK: ${rows.length} certs validated.`);
+  const extra = validateExtras(ids);
+  if (extra.errors.length) {
+    console.error("Validation errors:\n" + extra.errors.map(e => "  - " + e).join("\n"));
+    process.exit(1);
+  }
+  console.log(`OK: ${rows.length} certs, ${extra.pairs} comparisons and ${extra.resources} resources validated.`);
 }
 
 main();

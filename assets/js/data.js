@@ -78,6 +78,55 @@ function buildMeta(certs) {
   };
 }
 
+// Any CSV with a header row, as an array of objects keyed by column name.
+export function tableFromCSV(text) {
+  const rows = parseCSV(text);
+  const header = (rows.shift() || []).map(h => h.trim());
+  return rows.map(r => Object.fromEntries(header.map((h, i) => [h, (r[i] || "").trim()])));
+}
+
+export const RESOURCE_TYPES = ["guide", "course", "lab", "practice", "book"];
+
+// Preparation resources by cert id. Sponsored ones are kept apart from the
+// rest so they can never be mistaken for an editorial pick.
+export function groupResources(rows, byId) {
+  const out = new Map();
+  for (const r of rows) {
+    if (!byId.has(r.cert_id) || !/^https:\/\//.test(r.url) || !RESOURCE_TYPES.includes(r.type)) continue;
+    const item = { type: r.type, title: r.title, provider: r.provider, url: r.url,
+      free: r.free === "true", official: r.official === "true", sponsored: r.sponsored === "true" };
+    if (!out.has(r.cert_id)) out.set(r.cert_id, []);
+    out.get(r.cert_id).push(item);
+  }
+  const order = x => (x.official ? 0 : 1) * 10 + RESOURCE_TYPES.indexOf(x.type);
+  for (const list of out.values()) list.sort((a, b) => order(a) - order(b));
+  return out;
+}
+
+// Comparison pairs by cert id: for each cert, the certs it is compared with
+// and the name of the page that holds the comparison.
+export const compareFile = (a, b) => `compare-${a}-vs-${b}.html`;
+export function groupComparisons(rows, byId) {
+  const out = new Map();
+  const seen = new Set();
+  for (const { a, b } of rows) {
+    if (!byId.has(a) || !byId.has(b) || a === b || seen.has([a, b].sort().join("|"))) continue;
+    seen.add([a, b].sort().join("|"));
+    for (const [x, y] of [[a, b], [b, a]]) {
+      if (!out.has(x)) out.set(x, []);
+      out.get(x).push({ id: y, file: compareFile(a, b) });
+    }
+  }
+  return out;
+}
+
+async function optionalTable(path) {
+  try {
+    const res = await fetch(new URL(path, import.meta.url), { cache: "no-cache" });
+    return res.ok ? tableFromCSV(await res.text()) : [];
+  } catch { return []; }
+}
+
 export async function loadData() {
   // Revalidate on every load so a price fix is visible as soon as it deploys.
   // Resolved against this module, not the page, so it works wherever the app lives.
@@ -87,5 +136,9 @@ export async function loadData() {
   const certs = rowsToCerts(parseCSV(text));
   const meta = buildMeta(certs);
   const byId = new Map(certs.map(c => [c.id, c]));
-  return { certs, meta, byId };
+  const [resources, comparisons] = await Promise.all([
+    optionalTable("../../data/resources.csv"),
+    optionalTable("../../data/comparisons.csv"),
+  ]);
+  return { certs, meta, byId, resources: groupResources(resources, byId), comparisons: groupComparisons(comparisons, byId) };
 }
