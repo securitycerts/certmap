@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cwi-rto",
+  "acronym": "CWI-RTO",
+  "name": "Certified Windows Internals Red Team Operator",
+  "vendor": "CyberWarFare Labs",
+  "issuer": null,
+  "domain": "Exploitation",
+  "level": "advanced",
+  "price_usd": 29,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cwi-rto.html",
+  "api": "https://certmap.dev/api/v1/certs/cwi-rto.json",
+  "description": "Certification on Windows internals for offensive work, covering Win32 and NT APIs, kernel data structures and debugging with WinDbg. Assessed by a task-based exam with no fixed end date, submitted as a PDF report.",
+  "tags": [
+   "windows-internals",
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "Includes course material and the exam; lower promotional prices are frequent",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberwarfare.live/certifications/windows-internals-red-team-operator-cwi-rto",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

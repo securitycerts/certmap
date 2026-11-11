@@ -33,7 +33,8 @@
   "restricted_to": null,
   "prerequisites": [],
   "leads_to": [
-   "cwsp"
+   "cwsp",
+   "cwne"
   ],
   "official_url": "https://www.cwnp.com/certifications/cwna",
   "comparisons": [],

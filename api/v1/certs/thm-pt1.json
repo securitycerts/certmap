@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "thm-pt1",
+  "acronym": "PT1",
+  "name": "TryHackMe Junior Penetration Tester",
+  "vendor": "TryHackMe",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "beginner",
+  "price_usd": 349,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/thm-pt1.html",
+  "api": "https://certmap.dev/api/v1/certs/thm-pt1.json",
+  "description": "Entry-level practical penetration testing certification covering web application, network and Active Directory testing, privilege escalation and report writing. The exam is a simulated engagement completed within a 48-hour window with a client-style report.",
+  "tags": [
+   "red-team",
+   "hands-on",
+   "entry-level"
+  ],
+  "currency_note": "USD figure taken from the comparison table on the official page (reference only); the exam details block showed a localized EUR 301; includes one free retake",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://tryhackme.com/certification/junior-penetration-tester",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ad-rts",
+  "acronym": "AD-RTS",
+  "name": "Active Directory Red Team Specialist",
+  "vendor": "CyberWarFare Labs",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "intermediate",
+  "price_usd": 49,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ad-rts.html",
+  "api": "https://certmap.dev/api/v1/certs/ad-rts.json",
+  "description": "Active Directory attack certification covering enterprise attack paths, AD CS, Exchange and virtualization infrastructure. Earned by submitting at least 24 flags in a 30-day practical challenge lab.",
+  "tags": [
+   "red-team",
+   "active-directory",
+   "hands-on"
+  ],
+  "currency_note": "Includes course material and a 30-day challenge lab; lower promotional prices are frequent",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberwarfare.live/certifications/active-directory-red-team-specialist-ad-rts",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

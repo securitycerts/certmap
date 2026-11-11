@@ -28,7 +28,7 @@
   "exam_count": 2,
   "validity_years": 3,
   "renewal_cost": null,
-  "dod_8140": true,
+  "dod_8140": false,
   "restricted_to": null,
   "prerequisites": [],
   "leads_to": [],

@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cpia",
+  "acronym": "CPIA",
+  "name": "CREST Practitioner Intrusion Analyst",
+  "vendor": "CREST",
+  "issuer": null,
+  "domain": "Incident Handling",
+  "level": "beginner",
+  "price_usd": 369,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cpia.html",
+  "api": "https://certmap.dev/api/v1/certs/cpia.json",
+  "description": "Entry-level closed-book exam of 120 multiple-choice questions in two hours on incident handling, network and host intrusion analysis and high-level malware analysis, pass mark 60%. A valid CPIA is required before sitting the CRIA.",
+  "tags": [
+   "blue-team",
+   "ir",
+   "crest"
+  ],
+  "currency_note": "GBP 275 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [
+   "cria"
+  ],
+  "official_url": "https://www.crest-approved.org/certification-careers/crest-certifications/crest-practitioner-intrusion-analyst/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

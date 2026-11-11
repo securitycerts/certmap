@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "grca",
+  "acronym": "GRCA",
+  "name": "GRC Auditor",
+  "vendor": "OCEG",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/grca.html",
+  "api": "https://certmap.dev/api/v1/certs/grca.json",
+  "description": "Certification on auditing governance, risk and compliance capabilities. Online open-book exam of 100 scored multiple-choice questions in 120 minutes with a pass mark of 70; it renews yearly with the membership and 8 CPE credits from the second year.",
+  "tags": [
+   "grc",
+   "audit",
+   "open-book"
+  ],
+  "currency_note": "No separate exam fee; the exam, retakes and maintenance are included in the paid OCEG All Access Pass membership",
+  "price_verified_at": null,
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 1,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.oceg.org/certifications/grc-audit-certification",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

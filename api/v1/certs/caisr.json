@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "caisr",
+  "acronym": "CAISR",
+  "name": "Certified AI Security Researcher",
+  "vendor": "8kSec",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/caisr.html",
+  "api": "https://certmap.dev/api/v1/certs/caisr.json",
+  "description": "24-hour practical exam in a dedicated lab with LLM endpoints, RAG pipelines, MCP servers and agent systems, followed by 24 hours to submit a security research report.",
+  "tags": [
+   "ai-security",
+   "llm",
+   "hands-on"
+  ],
+  "currency_note": "Offered on completion of the accompanying 8kSec training class; no standalone exam price published",
+  "price_verified_at": null,
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://8ksec.io/caisr/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

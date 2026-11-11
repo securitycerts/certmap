@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "insightvm-admin",
+  "acronym": "InsightVM Admin",
+  "name": "InsightVM Certified Administrator",
+  "vendor": "Rapid7",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 215,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/insightvm-admin.html",
+  "api": "https://certmap.dev/api/v1/certs/insightvm-admin.json",
+  "description": "Vendor certification for administrators of the Rapid7 InsightVM vulnerability management product. Online open-book exam of two hours with a passing score of 80%, awarded as a digital badge.",
+  "tags": [
+   "vulnerability-management",
+   "rapid7",
+   "open-book"
+  ],
+  "currency_note": "One exam attempt per purchase",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://academy.rapid7.com/insightvm-certified-administrator-exam",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

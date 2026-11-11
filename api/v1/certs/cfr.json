@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cfr",
+  "acronym": "CFR",
+  "name": "CyberSec First Responder",
+  "vendor": "CertNexus",
+  "issuer": null,
+  "domain": "Incident Handling",
+  "level": "intermediate",
+  "price_usd": 368,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cfr.html",
+  "api": "https://certmap.dev/api/v1/certs/cfr.json",
+  "description": "120-minute, 80-item multiple-choice and multiple-response exam (CFR-410) on threat detection, analysis and incident response. Valid for three years, renewed by continuing education or by retaking the exam.",
+  "tags": [
+   "incident-response",
+   "blue-team",
+   "vendor-neutral"
+  ],
+  "currency_note": "Exam voucher listed at $367.50 in the CertNexus store, rounded up; delivered through Pearson VUE",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": 150,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://certnexus.com/cybersec-first-responder-cfr/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

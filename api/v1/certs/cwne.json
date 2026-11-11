@@ -1,0 +1,44 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cwne",
+  "acronym": "CWNE",
+  "name": "Certified Wireless Network Expert",
+  "vendor": "CWNP",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "expert",
+  "price_usd": 500,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cwne.html",
+  "api": "https://certmap.dev/api/v1/certs/cwne.json",
+  "description": "Top CWNP credential awarded by board review, not by exam. Applicants must hold the CWNP professional certifications plus CWISA and one external networking certification, and submit essays, publications and three endorsements; renewal requires 60 continuing education credits.",
+  "tags": [
+   "wireless",
+   "wifi",
+   "networking",
+   "vendor-neutral",
+   "capstone"
+  ],
+  "currency_note": "Application fee; there is no CWNE exam, the prerequisite certification exams are paid separately",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "cwna",
+   "cwsp"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.cwnp.com/certifications/cwne/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

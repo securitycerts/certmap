@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pecb-27005-lrm",
+  "acronym": "ISO 27005 LRM",
+  "name": "PECB Certified ISO/IEC 27005 Lead Risk Manager",
+  "vendor": "PECB",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pecb-27005-lrm.html",
+  "api": "https://certmap.dev/api/v1/certs/pecb-27005-lrm.json",
+  "description": "Certification on managing an information security risk management programme based on ISO/IEC 27005, including assessment methods such as OCTAVE, EBIOS and MEHARI. Requires passing the PECB exam plus five years of professional experience, two of them in information security risk management.",
+  "tags": [
+   "iso-27005",
+   "risk-management",
+   "isms"
+  ],
+  "currency_note": "Exam and certification fees are included in the price of the PECB training course; no standalone list price published",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27005/iso-27005-lead-risk-manager",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

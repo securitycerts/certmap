@@ -38,7 +38,19 @@
     "zdta",
     "coursera-fortinet-network-security",
     "coursera-colorado-network-security",
-    "edx-ritx-cybersecurity-micromasters"
+    "edx-ritx-cybersecurity-micromasters",
+    "gcia",
+    "gawn",
+    "gx-ia",
+    "cnsp",
+    "ztca",
+    "zdte",
+    "nse7-secure-networking",
+    "nse7-sase",
+    "nse8",
+    "f5-cts-ltm",
+    "f5-cts-asm",
+    "cwne"
    ]
   },
   {
@@ -50,7 +62,11 @@
     "sc-300",
     "okta-admin",
     "sailpoint-ise",
-    "vault-associate"
+    "vault-associate",
+    "ccis",
+    "sailpoint-iiq-associate",
+    "sailpoint-isa",
+    "vault-ops-advanced"
    ]
   },
   {
@@ -68,7 +84,12 @@
     "pan-netsec-architect",
     "sabsa-scf",
     "coursera-microsoft-sc-100-architecture",
-    "edx-taux-unlocking-information-security"
+    "edx-taux-unlocking-information-security",
+    "gaips",
+    "gdsa",
+    "sabsa-scp",
+    "sabsa-scm",
+    "togaf-irs"
    ]
   },
   {
@@ -78,7 +99,8 @@
     "a-plus",
     "itf-plus",
     "server-plus",
-    "vcp-dcv"
+    "vcp-dcv",
+    "cdmp"
    ]
   },
   {
@@ -108,7 +130,22 @@
     "edx-ibm-cybersecurity-fundamentals",
     "edx-umbc-cybersecurity-micromasters",
     "edx-harvardx-cs-for-cybersecurity",
-    "edx-harvardx-cs50-cybersecurity"
+    "edx-harvardx-cs50-cybersecurity",
+    "gslc",
+    "gstrt",
+    "gx-cs",
+    "ssap",
+    "csedp",
+    "pecb-31000-lrm",
+    "pecb-27005-lrm",
+    "pecb-lcm",
+    "mbcp",
+    "abcp",
+    "dri-ccrp",
+    "cbci",
+    "fair-ccrp",
+    "asis-cpp",
+    "nacd-cyber-risk"
    ]
   },
   {
@@ -139,7 +176,17 @@
     "gh-advanced-security",
     "cdp-devsecops",
     "caisp",
-    "apisec-casa"
+    "apisec-casa",
+    "ascpc",
+    "pwpe",
+    "c-aimlpen",
+    "c-agaipen",
+    "caisr",
+    "airtp-plus",
+    "csc-devsecops",
+    "cde-devsecops",
+    "csse",
+    "ctmp"
    ]
   },
   {
@@ -187,7 +234,20 @@
     "edx-ibm-genai-cybersecurity",
     "edx-ec-council-cybersecurity-essentials",
     "edx-microsoft-sc-200",
-    "edx-googlecloud-security-operations"
+    "edx-googlecloud-security-operations",
+    "gmle",
+    "gasae",
+    "gcda",
+    "gsom",
+    "psap",
+    "csom",
+    "sal1",
+    "cbtp",
+    "mcbta",
+    "cpta-v2",
+    "tenable-vm-specialist",
+    "tenable-sc-specialist",
+    "insightvm-admin"
    ]
   },
   {
@@ -202,7 +262,9 @@
     "ccii",
     "cctia",
     "osth",
-    "ecthp"
+    "ecthp",
+    "mandiant-ctia",
+    "arcx-ptia"
    ]
   },
   {
@@ -260,7 +322,23 @@
     "aws-soa",
     "ccnse",
     "coursera-google-cloud-cybersecurity",
-    "edx-microsoft-security-engineer"
+    "edx-microsoft-security-engineer",
+    "gcad",
+    "gctd",
+    "oaotc",
+    "ogotc",
+    "arte",
+    "azrte",
+    "grte",
+    "secops-ccsp-aws",
+    "ccpenx-aws",
+    "ccpenx-azure",
+    "azrts",
+    "carts",
+    "gcrts",
+    "chmrts",
+    "k8s-rta",
+    "cccs"
    ]
   },
   {
@@ -274,7 +352,8 @@
     "lpic-2",
     "klcp",
     "lpic-3-security",
-    "lfcs"
+    "lfcs",
+    "ex415"
    ]
   },
   {
@@ -286,7 +365,13 @@
     "iec-62443",
     "secot-plus",
     "ec-ics-scada",
-    "pipa"
+    "pipa",
+    "gcip",
+    "ciotsp",
+    "ciotp",
+    "fortinet-ot-security",
+    "nnce",
+    "tenable-ot-specialist"
    ]
   },
   {
@@ -320,7 +405,17 @@
     "pcip",
     "chainalysis-cca",
     "chainalysis-ccs",
-    "edx-wisconsinx-cybersecurity-small-orgs"
+    "edx-wisconsinx-cybersecurity-small-orgs",
+    "fip",
+    "exin-pdpf",
+    "exin-pdpp",
+    "pecb-27001-f",
+    "grca",
+    "iia-cia",
+    "ctprp",
+    "ctpra",
+    "ccsfp",
+    "itil4-ism"
    ]
   },
   {
@@ -357,7 +452,21 @@
     "chainalysis-asc",
     "ccpa",
     "ccme",
-    "cert-f"
+    "cert-f",
+    "gx-fe",
+    "gx-fa",
+    "gbfa",
+    "gasf",
+    "gime",
+    "cawfe",
+    "icmde",
+    "13cubed-iwe",
+    "13cubed-iwm",
+    "13cubed-ild",
+    "13cubed-ime",
+    "camre",
+    "cimre",
+    "cmmre"
    ]
   },
   {
@@ -372,7 +481,17 @@
     "ecir",
     "btl2",
     "ccdl2",
-    "ccfr"
+    "ccfr",
+    "gx-ih",
+    "geir",
+    "glir",
+    "gcil",
+    "cpia",
+    "cria",
+    "ccim",
+    "cbteamerx",
+    "cbteamer",
+    "cfr"
    ]
   },
   {
@@ -413,7 +532,39 @@
     "capen",
     "crta",
     "apisec-ascp",
-    "coursera-ibm-ethical-hacking"
+    "coursera-ibm-ethical-hacking",
+    "goaa",
+    "elpt",
+    "artoc",
+    "thm-pt1",
+    "cct-app",
+    "ccrts",
+    "ccrtm",
+    "ceh-practical",
+    "cpte",
+    "cesp-adcs",
+    "capenx",
+    "c-apipen",
+    "cdapen",
+    "cmpen-android",
+    "cmpen-ios",
+    "crteamer",
+    "crteamerx",
+    "c-adpenx",
+    "ckbpro",
+    "web-rta",
+    "api-rta",
+    "do-rta",
+    "crts-v2",
+    "crt-id",
+    "ad-rts",
+    "celms",
+    "csco",
+    "crt-coi",
+    "copo",
+    "cmse",
+    "cise",
+    "case-8ksec"
    ]
   },
   {
@@ -425,7 +576,14 @@
     "gxpn",
     "osmr",
     "osee",
-    "omse"
+    "omse",
+    "odpc",
+    "cbfrpro",
+    "cwi-rto",
+    "cedp",
+    "oaee",
+    "cisr",
+    "casr"
    ]
   }
  ]

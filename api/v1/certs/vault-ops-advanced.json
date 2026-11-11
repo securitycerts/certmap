@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "vault-ops-advanced",
+  "acronym": "Vault Ops Adv",
+  "name": "HashiCorp Vault Operations Advanced (formerly Vault Operations Professional)",
+  "vendor": "HashiCorp",
+  "issuer": null,
+  "domain": "IAM",
+  "level": "advanced",
+  "price_usd": 295,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/vault-ops-advanced.html",
+  "api": "https://certmap.dev/api/v1/certs/vault-ops-advanced.json",
+  "description": "Four-hour online proctored exam combining lab-based scenarios and multiple-choice questions on operating HashiCorp Vault in production. The Vault Associate certification is recommended but not required.",
+  "tags": [
+   "secrets-management",
+   "vault",
+   "devsecops",
+   "hands-on"
+  ],
+  "currency_note": "Plus applicable taxes; one free retake included",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://developer.hashicorp.com/certifications/vault-advanced",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

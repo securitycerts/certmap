@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "13cubed-ime",
+  "acronym": "IME",
+  "name": "Investigating macOS Endpoints",
+  "vendor": "13Cubed",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "intermediate",
+  "price_usd": 895,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/13cubed-ime.html",
+  "api": "https://certmap.dev/api/v1/certs/13cubed-ime.json",
+  "description": "macOS forensics covering the Unified Logging System, HFS+ and APFS, core forensic artifacts, persistence mechanisms, evidence collection and timelining. Certification is earned by passing the course Knowledge Assessment, which has a multiple-choice part and a hands-on practical part; it does not expire.",
+  "tags": [
+   "dfir",
+   "macos",
+   "forensics",
+   "hands-on"
+  ],
+  "currency_note": "Course price with 365-day access; one certification attempt (Knowledge Assessment) is included and is not sold separately",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://training.13cubed.com/investigating-macos-endpoints",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

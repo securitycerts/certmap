@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "sal1",
+  "acronym": "SAL1",
+  "name": "TryHackMe Security Analyst Level 1",
+  "vendor": "TryHackMe",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "beginner",
+  "price_usd": 349,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/sal1.html",
+  "api": "https://certmap.dev/api/v1/certs/sal1.json",
+  "description": "Entry-level security analyst certification covering computing foundations, cyber defence frameworks, threat detection, alert triage and case report writing. The exam combines multiple-choice questions with graded alert triage in a SOC simulator, completed within a 24-hour window.",
+  "tags": [
+   "blue-team",
+   "soc",
+   "hands-on",
+   "entry-level"
+  ],
+  "currency_note": "USD figure ('from $349') taken from the comparison table on the official page; the exam details block showed a localized EUR 301; includes one free retake",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://tryhackme.com/certification/security-analyst-level-1",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

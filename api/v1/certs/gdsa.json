@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gdsa",
+  "acronym": "GDSA",
+  "name": "GIAC Defensible Security Architect",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Security Architecture & Engineering",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gdsa.html",
+  "api": "https://certmap.dev/api/v1/certs/gdsa.json",
+  "description": "Covers network-centric and data-centric strategies for a layered defense, assessment of existing technology to improve prevention, detection and response, and Zero Trust principles. One proctored exam of 75 questions in two hours, passing score 63%.",
+  "tags": [
+   "architecture",
+   "zero-trust",
+   "blue-team"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/defensible-security-architecture-gdsa/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

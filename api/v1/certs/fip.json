@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "fip",
+  "acronym": "FIP",
+  "name": "Fellow of Information Privacy",
+  "vendor": "IAPP",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/fip.html",
+  "api": "https://certmap.dev/api/v1/certs/fip.json",
+  "description": "Designation awarded on application to holders of a CIPP plus a CIPM, CIPT or AIGP who document three years of privacy or data protection experience, a personal statement and three peer references. There is no exam; it stays active while the underlying certifications are maintained.",
+  "tags": [
+   "privacy",
+   "grc",
+   "designation"
+  ],
+  "currency_note": "No exam; awarded on application. The page lists no separate fee once two IAPP credentials are held",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "cipp"
+  ],
+  "leads_to": [],
+  "official_url": "https://iapp.org/certify/fip/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

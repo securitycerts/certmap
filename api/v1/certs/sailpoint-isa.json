@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "sailpoint-isa",
+  "acronym": "SP-ISA",
+  "name": "SailPoint Certified Identity Security Administrator",
+  "vendor": "SailPoint",
+  "issuer": null,
+  "domain": "IAM",
+  "level": "beginner",
+  "price_usd": 400,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/sailpoint-isa.html",
+  "api": "https://certmap.dev/api/v1/certs/sailpoint-isa.json",
+  "description": "Proctored role-based exam for administrators of Identity Security Cloud, covering the platform, virtual appliances, identity and lifecycle management, provisioning, access management, governance support and sources. Six months of hands-on experience is expected.",
+  "tags": [
+   "iam",
+   "identity",
+   "identity-security-cloud"
+  ],
+  "currency_note": "Enrollment includes two attempts within 364 days",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://university.sailpoint.com/sailpoint-certified-identity-security-administrator",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

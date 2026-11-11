@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pwpe",
+  "acronym": "PWPE",
+  "name": "Practical Web Pentest Expert",
+  "vendor": "TCM Security",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "expert",
+  "price_usd": 799,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/pwpe.html",
+  "api": "https://certmap.dev/api/v1/certs/pwpe.json",
+  "description": "Expert-level web application penetration test in which candidates must find and exploit chains of high or critical impact vulnerabilities over three days, then write a report in two days. Based on the Advanced Web Hacking course; the certification does not expire.",
+  "tags": [
+   "appsec",
+   "web",
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "Exam voucher with 12 months of training and one free retake",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 4320,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://certifications.tcm-sec.com/pwpe/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cmse",
+  "acronym": "CMSE",
+  "name": "Certified Mobile Security Engineer",
+  "vendor": "8kSec",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cmse.html",
+  "api": "https://certmap.dev/api/v1/certs/cmse.json",
+  "description": "48-hour practical exam on iOS and Android application security in a Corellium lab, assessed through a report reviewed by a panel.",
+  "tags": [
+   "mobile",
+   "ios",
+   "android",
+   "appsec",
+   "hands-on"
+  ],
+  "currency_note": "Offered on completion of the accompanying 8kSec training class; no standalone exam price published",
+  "price_verified_at": null,
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://8ksec.io/cmse/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

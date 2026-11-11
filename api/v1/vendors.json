@@ -4,13 +4,33 @@
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
  "updated": "2026-11-10",
- "count": 70,
+ "count": 93,
  "vendors": [
+  {
+   "name": "13Cubed",
+   "page": "https://certmap.dev/certs/vendor-13cubed.html",
+   "certifications": [
+    "13cubed-iwe",
+    "13cubed-iwm",
+    "13cubed-ild",
+    "13cubed-ime"
+   ]
+  },
   {
    "name": "8kSec",
    "page": "https://certmap.dev/certs/vendor-8ksec.html",
    "certifications": [
-    "omse"
+    "omse",
+    "caisr",
+    "camre",
+    "cimre",
+    "cmmre",
+    "cmse",
+    "oaee",
+    "cise",
+    "case-8ksec",
+    "cisr",
+    "casr"
    ]
   },
   {
@@ -21,7 +41,8 @@
     "crtp",
     "crtm",
     "cartp",
-    "cetp"
+    "cetp",
+    "cesp-adcs"
    ]
   },
   {
@@ -36,7 +57,15 @@
    "name": "arcX",
    "page": "https://certmap.dev/certs/vendor-arcx.html",
    "certifications": [
-    "arcx-cti"
+    "arcx-cti",
+    "arcx-ptia"
+   ]
+  },
+  {
+   "name": "ASIS International",
+   "page": "https://certmap.dev/certs/vendor-asis-international.html",
+   "certifications": [
+    "asis-cpp"
    ]
   },
   {
@@ -60,6 +89,13 @@
    ]
   },
   {
+   "name": "BCI",
+   "page": "https://certmap.dev/certs/vendor-bci.html",
+   "certifications": [
+    "cbci"
+   ]
+  },
+  {
    "name": "Cellebrite",
    "page": "https://certmap.dev/certs/vendor-cellebrite.html",
    "certifications": [
@@ -74,7 +110,17 @@
    "page": "https://certmap.dev/certs/vendor-centri.html",
    "certifications": [
     "btl1",
-    "btl2"
+    "btl2",
+    "csom"
+   ]
+  },
+  {
+   "name": "CertNexus",
+   "page": "https://certmap.dev/certs/vendor-certnexus.html",
+   "certifications": [
+    "cfr",
+    "ciotsp",
+    "ciotp"
    ]
   },
   {
@@ -170,7 +216,13 @@
     "crtia",
     "cpsa",
     "crt",
-    "cct-inf"
+    "cct-inf",
+    "cpia",
+    "cria",
+    "ccim",
+    "cct-app",
+    "ccrts",
+    "ccrtm"
    ]
   },
   {
@@ -179,7 +231,9 @@
    "certifications": [
     "ccfa",
     "ccfr",
-    "ccfh"
+    "ccfh",
+    "ccis",
+    "cccs"
    ]
   },
   {
@@ -197,7 +251,8 @@
    "page": "https://certmap.dev/certs/vendor-cwnp.html",
    "certifications": [
     "cwna",
-    "cwsp"
+    "cwsp",
+    "cwne"
    ]
   },
   {
@@ -213,14 +268,43 @@
    "page": "https://certmap.dev/certs/vendor-cyberwarfare-labs.html",
    "certifications": [
     "crta",
-    "co3"
+    "co3",
+    "web-rta",
+    "api-rta",
+    "azrts",
+    "carts",
+    "gcrts",
+    "chmrts",
+    "do-rta",
+    "k8s-rta",
+    "mcbta",
+    "crts-v2",
+    "crt-id",
+    "ad-rts",
+    "celms",
+    "cwi-rto",
+    "csco",
+    "cedp",
+    "crt-coi",
+    "cpta-v2",
+    "copo"
+   ]
+  },
+  {
+   "name": "DAMA International",
+   "page": "https://certmap.dev/certs/vendor-dama-international.html",
+   "certifications": [
+    "cdmp"
    ]
   },
   {
    "name": "DRI International",
    "page": "https://certmap.dev/certs/vendor-dri-international.html",
    "certifications": [
-    "cbcp"
+    "cbcp",
+    "mbcp",
+    "abcp",
+    "dri-ccrp"
    ]
   },
   {
@@ -246,7 +330,8 @@
     "eces",
     "ec-ics-scada",
     "coasp",
-    "crage"
+    "crage",
+    "ceh-practical"
    ]
   },
   {
@@ -276,11 +361,38 @@
    ]
   },
   {
+   "name": "EXIN",
+   "page": "https://certmap.dev/certs/vendor-exin.html",
+   "certifications": [
+    "exin-pdpf",
+    "exin-pdpp"
+   ]
+  },
+  {
+   "name": "F5",
+   "page": "https://certmap.dev/certs/vendor-f5.html",
+   "certifications": [
+    "f5-cts-ltm",
+    "f5-cts-asm"
+   ]
+  },
+  {
+   "name": "FAIR Institute",
+   "page": "https://certmap.dev/certs/vendor-fair-institute.html",
+   "certifications": [
+    "fair-ccrp"
+   ]
+  },
+  {
    "name": "Fortinet",
    "page": "https://certmap.dev/certs/vendor-fortinet.html",
    "certifications": [
     "fcp-nse4",
-    "fcp-nse5"
+    "fcp-nse5",
+    "nse7-secure-networking",
+    "nse7-sase",
+    "nse8",
+    "fortinet-ot-security"
    ]
   },
   {
@@ -314,7 +426,32 @@
     "gcfr",
     "gcsa",
     "gx-pt",
-    "gsoa"
+    "gsoa",
+    "gmle",
+    "gasae",
+    "gaips",
+    "gcda",
+    "gx-fe",
+    "gx-fa",
+    "gbfa",
+    "gx-ih",
+    "geir",
+    "glir",
+    "gasf",
+    "gime",
+    "gcia",
+    "gawn",
+    "goaa",
+    "gcip",
+    "gslc",
+    "gstrt",
+    "gcil",
+    "gdsa",
+    "gcad",
+    "gctd",
+    "gsom",
+    "gx-cs",
+    "gx-ia"
    ]
   },
   {
@@ -352,17 +489,36 @@
    ]
   },
   {
+   "name": "HackTricks Training",
+   "page": "https://certmap.dev/certs/vendor-hacktricks-training.html",
+   "certifications": [
+    "arte",
+    "azrte",
+    "grte"
+   ]
+  },
+  {
    "name": "HashiCorp",
    "page": "https://certmap.dev/certs/vendor-hashicorp.html",
    "certifications": [
-    "vault-associate"
+    "vault-associate",
+    "vault-ops-advanced"
+   ]
+  },
+  {
+   "name": "HITRUST",
+   "page": "https://certmap.dev/certs/vendor-hitrust.html",
+   "certifications": [
+    "ccsfp"
    ]
   },
   {
    "name": "IACIS",
    "page": "https://certmap.dev/certs/vendor-iacis.html",
    "certifications": [
-    "cfce"
+    "cfce",
+    "cawfe",
+    "icmde"
    ]
   },
   {
@@ -372,7 +528,15 @@
     "cipp",
     "cipm",
     "cipt",
-    "aigp"
+    "aigp",
+    "fip"
+   ]
+  },
+  {
+   "name": "IIA",
+   "page": "https://certmap.dev/certs/vendor-iia.html",
+   "certifications": [
+    "iia-cia"
    ]
   },
   {
@@ -450,6 +614,13 @@
    ]
   },
   {
+   "name": "Learn Prompting",
+   "page": "https://certmap.dev/certs/vendor-learn-prompting.html",
+   "certifications": [
+    "airtp-plus"
+   ]
+  },
+  {
    "name": "Linux Foundation",
    "page": "https://certmap.dev/certs/vendor-linux-foundation.html",
    "certifications": [
@@ -472,6 +643,13 @@
    "certifications": [
     "mcfe",
     "mcfa"
+   ]
+  },
+  {
+   "name": "Mandiant",
+   "page": "https://certmap.dev/certs/vendor-mandiant.html",
+   "certifications": [
+    "mandiant-ctia"
    ]
   },
   {
@@ -517,6 +695,34 @@
     "az-900",
     "az-700",
     "sc-500"
+   ]
+  },
+  {
+   "name": "Mile2",
+   "page": "https://certmap.dev/certs/vendor-mile2.html",
+   "certifications": [
+    "cpte"
+   ]
+  },
+  {
+   "name": "NACD",
+   "page": "https://certmap.dev/certs/vendor-nacd.html",
+   "certifications": [
+    "nacd-cyber-risk"
+   ]
+  },
+  {
+   "name": "Nozomi Networks",
+   "page": "https://certmap.dev/certs/vendor-nozomi-networks.html",
+   "certifications": [
+    "nnce"
+   ]
+  },
+  {
+   "name": "OCEG",
+   "page": "https://certmap.dev/certs/vendor-oceg.html",
+   "certifications": [
+    "grca"
    ]
   },
   {
@@ -597,7 +803,11 @@
    "page": "https://certmap.dev/certs/vendor-pecb.html",
    "certifications": [
     "pecb-27001-li",
-    "pecb-27001-la"
+    "pecb-27001-la",
+    "pecb-27001-f",
+    "pecb-31000-lrm",
+    "pecb-27005-lrm",
+    "pecb-lcm"
    ]
   },
   {
@@ -605,7 +815,8 @@
    "page": "https://certmap.dev/certs/vendor-peoplecert.html",
    "certifications": [
     "itil-f",
-    "itil5-f"
+    "itil5-f",
+    "itil4-ism"
    ]
   },
   {
@@ -621,7 +832,18 @@
    "certifications": [
     "cdp-devsecops",
     "ccnse",
-    "caisp"
+    "caisp",
+    "csc-devsecops",
+    "cde-devsecops",
+    "csse",
+    "ctmp"
+   ]
+  },
+  {
+   "name": "Rapid7",
+   "page": "https://certmap.dev/certs/vendor-rapid7.html",
+   "certifications": [
+    "insightvm-admin"
    ]
   },
   {
@@ -629,14 +851,17 @@
    "page": "https://certmap.dev/certs/vendor-red-hat.html",
    "certifications": [
     "rhcsa",
-    "rhce"
+    "rhce",
+    "ex415"
    ]
   },
   {
    "name": "SABSA",
    "page": "https://certmap.dev/certs/vendor-sabsa.html",
    "certifications": [
-    "sabsa-scf"
+    "sabsa-scf",
+    "sabsa-scp",
+    "sabsa-scm"
    ]
   },
   {
@@ -644,7 +869,24 @@
    "page": "https://certmap.dev/certs/vendor-sailpoint.html",
    "certifications": [
     "sailpoint-eng",
-    "sailpoint-ise"
+    "sailpoint-ise",
+    "sailpoint-iiq-associate",
+    "sailpoint-isa"
+   ]
+  },
+  {
+   "name": "SANS",
+   "page": "https://certmap.dev/certs/vendor-sans.html",
+   "certifications": [
+    "ssap"
+   ]
+  },
+  {
+   "name": "Shared Assessments",
+   "page": "https://certmap.dev/certs/vendor-shared-assessments.html",
+   "certifications": [
+    "ctprp",
+    "ctpra"
    ]
   },
   {
@@ -677,14 +919,26 @@
     "pwpp",
     "pmrp",
     "papa",
-    "pipa"
+    "pipa",
+    "psap",
+    "pwpe"
+   ]
+  },
+  {
+   "name": "Tenable",
+   "page": "https://certmap.dev/certs/vendor-tenable.html",
+   "certifications": [
+    "tenable-vm-specialist",
+    "tenable-sc-specialist",
+    "tenable-ot-specialist"
    ]
   },
   {
    "name": "The Open Group",
    "page": "https://certmap.dev/certs/vendor-the-open-group.html",
    "certifications": [
-    "open-fair-2"
+    "open-fair-2",
+    "togaf-irs"
    ]
   },
   {
@@ -693,7 +947,27 @@
    "certifications": [
     "secops-cap",
     "cnpen",
-    "capen"
+    "capen",
+    "capenx",
+    "c-apipen",
+    "cdapen",
+    "cbteamerx",
+    "cnsp",
+    "secops-ccsp-aws",
+    "cbtp",
+    "csedp",
+    "cbteamer",
+    "cmpen-android",
+    "cmpen-ios",
+    "crteamer",
+    "crteamerx",
+    "c-adpenx",
+    "cbfrpro",
+    "ckbpro",
+    "c-aimlpen",
+    "c-agaipen",
+    "ccpenx-aws",
+    "ccpenx-azure"
    ]
   },
   {
@@ -710,10 +984,30 @@
    ]
   },
   {
+   "name": "TryHackMe",
+   "page": "https://certmap.dev/certs/vendor-tryhackme.html",
+   "certifications": [
+    "sal1",
+    "thm-pt1"
+   ]
+  },
+  {
    "name": "VMware",
    "page": "https://certmap.dev/certs/vendor-vmware.html",
    "certifications": [
     "vcp-dcv"
+   ]
+  },
+  {
+   "name": "White Knight Labs",
+   "page": "https://certmap.dev/certs/vendor-white-knight-labs.html",
+   "certifications": [
+    "ascpc",
+    "oaotc",
+    "ogotc",
+    "elpt",
+    "artoc",
+    "odpc"
    ]
   },
   {
@@ -736,7 +1030,9 @@
    "name": "Zscaler",
    "page": "https://certmap.dev/certs/vendor-zscaler.html",
    "certifications": [
-    "zdta"
+    "zdta",
+    "ztca",
+    "zdte"
    ]
   },
   {

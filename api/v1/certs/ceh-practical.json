@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ceh-practical",
+  "acronym": "CEH Practical",
+  "name": "Certified Ethical Hacker (Practical)",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "intermediate",
+  "price_usd": 550,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ceh-practical.html",
+  "api": "https://certmap.dev/api/v1/certs/ceh-practical.json",
+  "description": "Six-hour proctored practical exam of 20 challenges on the iLabs Cyber Range, with a passing score of 60% to 85% depending on the exam form. No eligibility criteria; passing it in addition to the CEH knowledge exam gives CEH Master.",
+  "tags": [
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "Exam dashboard code with remote proctoring, valid one year from receipt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 360,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh-practical/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

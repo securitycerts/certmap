@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "tenable-vm-specialist",
+  "acronym": "Tenable VM",
+  "name": "Tenable One Vulnerability Management Specialist",
+  "vendor": "Tenable",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 540,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/tenable-vm-specialist.html",
+  "api": "https://certmap.dev/api/v1/certs/tenable-vm-specialist.json",
+  "description": "Specialist certification for the Tenable One Vulnerability Management product. Requires a proctored written exam (60 multiple-choice questions, 120 minutes) and then a practical exam (up to 30 tasks, 240 minutes), each with an 80% pass mark; recertification repeats both exams.",
+  "tags": [
+   "vulnerability-management",
+   "tenable",
+   "vendor"
+  ],
+  "currency_note": "Written exam $215 plus practical exam $325, or $540 as a bundle",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 360,
+  "exam_count": 2,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.tenable.com/education/certification-program",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

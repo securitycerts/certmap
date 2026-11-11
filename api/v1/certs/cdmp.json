@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cdmp",
+  "acronym": "CDMP",
+  "name": "Certified Data Management Professional",
+  "vendor": "DAMA International",
+  "issuer": null,
+  "domain": "Asset Security",
+  "level": "intermediate",
+  "price_usd": 311,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cdmp.html",
+  "api": "https://certmap.dev/api/v1/certs/cdmp.json",
+  "description": "Data management certification aligned with the DAMA-DMBOK, offered at Associate, Practitioner and Master levels. Each online exam has 100 multiple-choice questions in 90 minutes; the pass mark on the Fundamentals exam is 60% for Associate, 70% for Practitioner and 80% for Master.",
+  "tags": [
+   "data-management",
+   "data-governance",
+   "dmbok"
+  ],
+  "currency_note": "Per exam; Associate level needs 1 exam (Data Management Fundamentals), Practitioner and Master need 3",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://dama.org/certification/about-cdmp-certification/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

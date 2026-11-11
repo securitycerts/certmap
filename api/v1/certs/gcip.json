@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gcip",
+  "acronym": "GCIP",
+  "name": "GIAC Critical Infrastructure Protection",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "ICS/IoT",
+  "level": "intermediate",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gcip.html",
+  "api": "https://certmap.dev/api/v1/certs/gcip.json",
+  "description": "Covers NERC CIP standards and terms, BES cyber system identification and impact rating, implementation of supporting technologies and CIP program maintenance. One proctored exam of 75 questions in three hours, passing score 70%.",
+  "tags": [
+   "ics",
+   "nerc-cip",
+   "compliance"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/critical-infrastructure-protection-gcip/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

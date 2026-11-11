@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gcia",
+  "acronym": "GCIA",
+  "name": "GIAC Certified Intrusion Analyst",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/gcia.html",
+  "api": "https://certmap.dev/api/v1/certs/gcia.json",
+  "description": "Covers traffic analysis and application protocols, the open-source IDS tools Snort and Zeek, and network traffic forensics and monitoring. One proctored exam of 106 questions in four hours with CyberLive tasks, passing score 67%.",
+  "tags": [
+   "blue-team",
+   "network",
+   "ids",
+   "cyberlive"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": true,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/certified-intrusion-analyst-gcia/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

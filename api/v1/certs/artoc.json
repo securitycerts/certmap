@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "artoc",
+  "acronym": "ARTOC",
+  "name": "Advanced Red Team Operations Certification",
+  "vendor": "White Knight Labs",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "advanced",
+  "price_usd": 700,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/artoc.html",
+  "api": "https://certmap.dev/api/v1/certs/artoc.json",
+  "description": "Covers C2 operations with Cobalt Strike and Havoc, redirector and cloud infrastructure, Active Directory and AD CS exploitation, lateral movement, persistence and EDR evasion. Assessed by a 48-hour practical exam requiring C2 deployment, target compromise and flags, followed by 48 hours to submit a report.",
+  "tags": [
+   "red-team",
+   "c2",
+   "evasion",
+   "hands-on"
+  ],
+  "currency_note": "Course with lifetime access and one exam voucher that does not expire; page shows 'starting at' USD 700",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://training.whiteknightlabs.com/certifications/advanced-red-team-operations-certification/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

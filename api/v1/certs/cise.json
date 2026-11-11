@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cise",
+  "acronym": "CISE",
+  "name": "Certified iOS Security Engineer",
+  "vendor": "8kSec",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cise.html",
+  "api": "https://certmap.dev/api/v1/certs/cise.json",
+  "description": "24-hour practical exam on iOS application reverse engineering and exploitation in a Corellium lab, assessed through a report with working proof-of-concept binaries.",
+  "tags": [
+   "mobile",
+   "ios",
+   "appsec",
+   "hands-on"
+  ],
+  "currency_note": "Offered on completion of the accompanying 8kSec training class; no standalone exam price published",
+  "price_verified_at": null,
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://8ksec.io/cise/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

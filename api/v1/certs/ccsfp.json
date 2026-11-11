@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccsfp",
+  "acronym": "CCSFP",
+  "name": "HITRUST Certified CSF Practitioner",
+  "vendor": "HITRUST",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": 3300,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ccsfp.html",
+  "api": "https://certmap.dev/api/v1/certs/ccsfp.json",
+  "description": "Credential for practitioners who work with the HITRUST framework and assessment process. Earned by completing the CCSFP course and passing its exam; it is kept through an annual refresher course, and the full course must be retaken after two refreshers.",
+  "tags": [
+   "hitrust",
+   "healthcare",
+   "assessment",
+   "grc"
+  ],
+  "currency_note": "Course price including one exam attempt; exam retake $550",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 1,
+  "renewal_cost": 1365,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://hitrustalliance.net/ccsfp",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "mcbta",
+  "acronym": "MCBTA",
+  "name": "Multi-Cloud Blue Team Analyst",
+  "vendor": "CyberWarFare Labs",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "beginner",
+  "price_usd": 29,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/mcbta.html",
+  "api": "https://certmap.dev/api/v1/certs/mcbta.json",
+  "description": "Entry-level defensive certification for AWS, Azure and GCP covering cloud-native security controls, SIEM deployment and incident investigation. Earned by submitting at least 30 flags in a 30-day practical challenge lab.",
+  "tags": [
+   "cloud",
+   "multi-cloud",
+   "blue-team",
+   "hands-on"
+  ],
+  "currency_note": "Includes course material and a 30-day challenge lab; lower promotional prices are frequent",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberwarfare.live/certifications/multi-cloud-blue-team-analyst-mcbta",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

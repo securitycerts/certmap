@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gx-fa",
+  "acronym": "GX-FA",
+  "name": "GIAC Experienced Forensics Analyst",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "expert",
+  "price_usd": 1299,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/gx-fa.html",
+  "api": "https://certmap.dev/api/v1/certs/gx-fa.json",
+  "description": "Applied Knowledge exam of 25 CyberLive hands-on challenges in four hours, open book, covering Windows file system artifacts, system triage, memory analysis, event analysis and enterprise threat hunting. Counts toward the GSE portfolio.",
+  "tags": [
+   "forensics",
+   "dfir",
+   "threat-hunting",
+   "hands-on",
+   "cyberlive"
+  ],
+  "currency_note": "Applied Knowledge exam; $499 for holders of the corresponding active base Practitioner certification (GCFA is the audience named on the page)",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/experienced-forensic-analyst-gxfa/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

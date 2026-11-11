@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "f5-cts-ltm",
+  "acronym": "F5-CTS LTM",
+  "name": "F5 Certified Technology Specialist, BIG-IP LTM",
+  "vendor": "F5",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "advanced",
+  "price_usd": 180,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/f5-cts-ltm.html",
+  "api": "https://certmap.dev/api/v1/certs/f5-cts-ltm.json",
+  "description": "Specialist certification on architecting, deploying, maintaining and troubleshooting BIG-IP Local Traffic Manager. Requires exams 301a and 301b, 90 minutes each, on top of the F5 Certified Administrator, BIG-IP.",
+  "tags": [
+   "load-balancing",
+   "adc",
+   "networking",
+   "f5"
+  ],
+  "currency_note": "Per exam; two exams required (301a and 301b) after the F5 Certified Administrator, BIG-IP",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 2,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://education.f5.com/learning-path/view/11",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

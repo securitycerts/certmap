@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cria",
+  "acronym": "CRIA",
+  "name": "CREST Registered Intrusion Analyst",
+  "vendor": "CREST",
+  "issuer": null,
+  "domain": "Incident Handling",
+  "level": "intermediate",
+  "price_usd": 805,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cria.html",
+  "api": "https://certmap.dev/api/v1/certs/cria.json",
+  "description": "Intermediate invigilated exam of 150 multiple-choice questions in 2.5 hours on network intrusion, host intrusion and malware reverse engineering, taken at Pearson VUE centres with Kali Linux and Windows provided. Requires a valid CPIA.",
+  "tags": [
+   "blue-team",
+   "ir",
+   "crest"
+  ],
+  "currency_note": "GBP 600 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 150,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "cpia"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.crest-approved.org/skills-certifications-careers/crest-registered-intrusion-analyst/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

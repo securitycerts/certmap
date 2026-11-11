@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "mbcp",
+  "acronym": "MBCP",
+  "name": "Master Business Continuity Professional",
+  "vendor": "DRI International",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "expert",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/mbcp.html",
+  "api": "https://certmap.dev/api/v1/certs/mbcp.json",
+  "description": "Highest DRI business continuity credential, requiring at least five years of experience across seven subject areas, seven essays with references and a pass of at least 75% on both the Qualifying Examination and the Master's Case Study Examination.",
+  "tags": [
+   "business-continuity",
+   "disaster-recovery",
+   "resilience"
+  ],
+  "currency_note": "Application fee $500 and annual renewal fee $300; examination fees are not listed on the certification page",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 2,
+  "validity_years": 1,
+  "renewal_cost": 300,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://drii.org/certification/mbcp",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

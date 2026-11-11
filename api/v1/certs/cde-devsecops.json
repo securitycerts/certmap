@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cde-devsecops",
+  "acronym": "CDE",
+  "name": "Certified DevSecOps Expert",
+  "vendor": "Practical DevSecOps",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "advanced",
+  "price_usd": 1199,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cde-devsecops.html",
+  "api": "https://certmap.dev/api/v1/certs/cde-devsecops.json",
+  "description": "Practical exam of five challenges to be solved in 24 hours, followed by 24 hours to submit a report, covering infrastructure hardening, compliance as code and vulnerability management at scale. Lifetime credential.",
+  "tags": [
+   "devsecops",
+   "ci-cd",
+   "hands-on"
+  ],
+  "currency_note": "List price; includes course, labs and one exam attempt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "cdp-devsecops"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.practical-devsecops.com/certified-devsecops-expert/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

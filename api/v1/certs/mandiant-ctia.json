@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "mandiant-ctia",
+  "acronym": "MCTIA",
+  "name": "Mandiant Cyber Threat Intelligence Analysis Certification",
+  "vendor": "Mandiant",
+  "issuer": null,
+  "domain": "Cyber Threat Intelligence",
+  "level": "advanced",
+  "price_usd": 250,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/mandiant-ctia.html",
+  "api": "https://certmap.dev/api/v1/certs/mandiant-ctia.json",
+  "description": "60-minute online-proctored exam of 50 multiple-choice questions on threat intelligence analysis, with objectives based on the NICE work role AN-ASA-001. A score of 70 percent is required and three to five years of experience is recommended.",
+  "tags": [
+   "cti",
+   "mandiant",
+   "google-cloud"
+  ],
+  "currency_note": "Registration fee",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 60,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cloud.google.com/learn/security/mandiant-academy-certifications",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

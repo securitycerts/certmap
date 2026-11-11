@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "csedp",
+  "acronym": "CSEDP",
+  "name": "Certified Social Engineering Defense Practitioner",
+  "vendor": "The SecOps Group",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "beginner",
+  "price_usd": 134,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/csedp.html",
+  "api": "https://certmap.dev/api/v1/certs/csedp.json",
+  "description": "Entry-level proctored multiple-choice exam on social engineering attacks such as phishing, vishing and impersonation and on defending against them. The certificate does not expire.",
+  "tags": [
+   "social-engineering",
+   "awareness",
+   "foundational"
+  ],
+  "currency_note": "Vendor lists GBP only (GBP 100); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 60,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://pentestingexams.com/certifications/essentials/certified-social-engineering-defense-practitioner/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

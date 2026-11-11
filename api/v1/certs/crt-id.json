@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "crt-id",
+  "acronym": "CRT-ID",
+  "name": "Red Team Infra Developer",
+  "vendor": "CyberWarFare Labs",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "beginner",
+  "price_usd": 29,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/crt-id.html",
+  "api": "https://certmap.dev/api/v1/certs/crt-id.json",
+  "description": "Certification on building OPSEC-safe red team infrastructure, including cloud and on-premises C2, redirectors and payload servers. Assessed by a six-hour flag-based practical exam.",
+  "tags": [
+   "red-team",
+   "c2",
+   "infrastructure",
+   "hands-on"
+  ],
+  "currency_note": "Includes course material and the exam; lower promotional prices are frequent",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 360,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberwarfare.live/certifications/red-team-infra-developer-crt-id",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

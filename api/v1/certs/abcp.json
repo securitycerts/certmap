@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "abcp",
+  "acronym": "ABCP",
+  "name": "Associate Business Continuity Professional",
+  "vendor": "DRI International",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "beginner",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/abcp.html",
+  "api": "https://certmap.dev/api/v1/certs/abcp.json",
+  "description": "Entry-level DRI credential for people with less than two years of industry experience. Requires a pass of at least 75% on the DRI Qualifying Examination and no experience essays.",
+  "tags": [
+   "business-continuity",
+   "disaster-recovery",
+   "entry-level"
+  ],
+  "currency_note": "Application fee $200 and annual renewal fee $200; the Qualifying Examination fee is not listed on the certification page",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 1,
+  "renewal_cost": 200,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://drii.org/certification/abcp",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

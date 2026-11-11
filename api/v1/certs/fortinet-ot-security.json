@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "fortinet-ot-security",
+  "acronym": "Fortinet OT",
+  "name": "Fortinet Industry Certification: OT Security",
+  "vendor": "Fortinet",
+  "issuer": null,
+  "domain": "ICS/IoT",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/fortinet-ot-security.html",
+  "api": "https://certmap.dev/api/v1/certs/fortinet-ot-security.json",
+  "description": "Industry certification earned by passing the proctored OT Security Architect exam on top of prerequisite NSE certifications. It replaces the FCSS OT Security title retired on 15 July 2026.",
+  "tags": [
+   "ot",
+   "ics",
+   "fortinet"
+  ],
+  "currency_note": "Fortinet publishes exam prices only to signed-in users",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "fcp-nse4",
+   "fcp-nse5"
+  ],
+  "leads_to": [],
+  "official_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_ot_security",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

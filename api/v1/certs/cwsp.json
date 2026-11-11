@@ -34,7 +34,9 @@
   "prerequisites": [
    "cwna"
   ],
-  "leads_to": [],
+  "leads_to": [
+   "cwne"
+  ],
   "official_url": "https://www.cwnp.com/certifications/cwsp",
   "comparisons": [],
   "study_plan": null

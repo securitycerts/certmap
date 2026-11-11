@@ -26,7 +26,7 @@
   "exam_count": 1,
   "validity_years": 3,
   "renewal_cost": 250,
-  "dod_8140": true,
+  "dod_8140": false,
   "restricted_to": null,
   "prerequisites": [],
   "leads_to": [],

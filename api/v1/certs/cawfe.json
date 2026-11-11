@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cawfe",
+  "acronym": "CAWFE",
+  "name": "Certified Advanced Windows Forensic Examiner",
+  "vendor": "IACIS",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "advanced",
+  "price_usd": 800,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cawfe.html",
+  "api": "https://certmap.dev/api/v1/certs/cawfe.json",
+  "description": "Advanced Windows forensics certification with an open-book written test of 125 questions (up to eight hours, 80% to pass) and a practical exam on image files and Windows artifacts completed within 30 days. Recertification requires a proficiency exercise in the third year and 40 hours of continuing education.",
+  "tags": [
+   "digital-forensics",
+   "windows",
+   "hands-on"
+  ],
+  "currency_note": "External certification fee (certification only, training not included); external candidates must show 36 hours of relevant training; fee is waived for students of the matching IACIS course; 2026 registration closes December 15",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.iacis.com/certification/cawfe/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

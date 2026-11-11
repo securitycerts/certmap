@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gasae",
+  "acronym": "GASAE",
+  "name": "GIAC AI Security Automation Engineer",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/gasae.html",
+  "api": "https://certmap.dev/api/v1/certs/gasae.json",
+  "description": "Covers automated asset discovery and incident response, Infrastructure as Code, Azure and AWS security automation, SOAR-driven SOC operations and AI concepts applied to detection and response. One proctored exam of 82 questions in three hours with CyberLive tasks, passing score 70%.",
+  "tags": [
+   "automation",
+   "ai",
+   "soar",
+   "blue-team",
+   "cyberlive"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/ai-security-automation-engineer-gasae/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

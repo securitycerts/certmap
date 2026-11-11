@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "asis-cpp",
+  "acronym": "CPP",
+  "name": "Certified Protection Professional",
+  "vendor": "ASIS International",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "advanced",
+  "price_usd": 910,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/asis-cpp.html",
+  "api": "https://certmap.dev/api/v1/certs/asis-cpp.json",
+  "description": "Security management certification covering seven domains of security practice. The exam has 225 multiple-choice questions (200 scored) in four hours and requires five to seven years of security experience depending on degree; recertification needs 60 CPE credits every three years.",
+  "tags": [
+   "security-management",
+   "physical-security",
+   "management"
+  ],
+  "currency_note": "Non-member fee; ASIS members $580. Fees from the ASIS Board Certification Handbook",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.asisonline.org/certification/certified-protection-professional-cpp/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

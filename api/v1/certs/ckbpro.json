@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ckbpro",
+  "acronym": "CKBPro",
+  "name": "Certified Kiosk Breakout Professional",
+  "vendor": "The SecOps Group",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "intermediate",
+  "price_usd": 336,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ckbpro.html",
+  "api": "https://certmap.dev/api/v1/certs/ckbpro.json",
+  "description": "Four-hour practical exam on breaking out of a locked-down Windows kiosk session over RDP and carrying out follow-on attacks. Taken online and on demand; the certificate does not expire.",
+  "tags": [
+   "kiosk",
+   "windows",
+   "pentest",
+   "hands-on"
+  ],
+  "currency_note": "Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://pentestingexams.com/certifications/professional/certified-kiosk-breakout-professional/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

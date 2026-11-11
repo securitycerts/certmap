@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "togaf-irs",
+  "acronym": "TOGAF IRS",
+  "name": "Integrating Risk and Security Certification Credential",
+  "vendor": "The Open Group",
+  "issuer": null,
+  "domain": "Security Architecture & Engineering",
+  "level": "beginner",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/togaf-irs.html",
+  "api": "https://certmap.dev/api/v1/certs/togaf-irs.json",
+  "description": "Credential on integrating risk and security into a TOGAF enterprise architecture, with about three hours of learning. Earned by completing the learning units and passing the assessment bundled with accredited training or self-study; no prerequisites.",
+  "tags": [
+   "togaf",
+   "architecture",
+   "risk"
+  ],
+  "currency_note": "Assessment is included in an accredited training course or The Open Group self-study pack; no separate voucher is sold",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.opengroup.org/certifications/integrating-risk-and-security",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gaips",
+  "acronym": "GAIPS",
+  "name": "GIAC AI Platform Security",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Security Architecture & Engineering",
+  "level": "intermediate",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gaips.html",
+  "api": "https://certmap.dev/api/v1/certs/gaips.json",
+  "description": "Covers generative AI concepts, tuning and aligning foundation models, securing agentic systems and AI integrations, AI application architecture, MLOps and MLSecOps, and AI risk management. One proctored exam of 54 questions in two hours, passing score 65%.",
+  "tags": [
+   "ai",
+   "mlsecops",
+   "architecture"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/ai-security-platform-security-gaips",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

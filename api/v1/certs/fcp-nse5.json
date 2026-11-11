@@ -32,7 +32,11 @@
   "prerequisites": [
    "fcp-nse4"
   ],
-  "leads_to": [],
+  "leads_to": [
+   "nse7-secure-networking",
+   "nse8",
+   "fortinet-ot-security"
+  ],
   "official_url": "https://www.fortinet.com/training-certification",
   "comparisons": [],
   "study_plan": null

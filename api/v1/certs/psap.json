@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "psap",
+  "acronym": "PSAP",
+  "name": "Practical SOC Analyst Professional",
+  "vendor": "TCM Security",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 499,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/psap.html",
+  "api": "https://certmap.dev/api/v1/certs/psap.json",
+  "description": "Intermediate threat hunting and incident response exam in which the candidate investigates a corporate network for three days and then has two days to write a report. No multiple-choice questions or flags; the certification does not expire.",
+  "tags": [
+   "blue-team",
+   "soc",
+   "threat-hunting",
+   "ir",
+   "hands-on"
+  ],
+  "currency_note": "Exam voucher with 12 months of training and one free retake",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 4320,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://certifications.tcm-sec.com/psap/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

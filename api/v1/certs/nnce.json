@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "nnce",
+  "acronym": "NNCE",
+  "name": "Nozomi Networks Certified Engineer",
+  "vendor": "Nozomi Networks",
+  "issuer": null,
+  "domain": "ICS/IoT",
+  "level": "intermediate",
+  "price_usd": 315,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/nnce.html",
+  "api": "https://certmap.dev/api/v1/certs/nnce.json",
+  "description": "Certification on deploying and using Nozomi Networks Guardian for OT and IoT network monitoring. Timed online exam of 50 randomized questions in three hours, answered with the help of a dedicated lab environment.",
+  "tags": [
+   "ot",
+   "ics",
+   "iot",
+   "network-monitoring",
+   "vendor"
+  ],
+  "currency_note": "Stand-alone exam with two attempts; the self-paced course with exam costs $1,890",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://academy.nozominetworks.com/nozomi-networks-certified-engineer-stand-alone-exam",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

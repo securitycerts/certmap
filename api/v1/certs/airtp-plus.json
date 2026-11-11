@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "airtp-plus",
+  "acronym": "AIRTP+",
+  "name": "AI Red Teaming Professional Certification",
+  "vendor": "Learn Prompting",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "intermediate",
+  "price_usd": 299,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/airtp-plus.html",
+  "api": "https://certmap.dev/api/v1/certs/airtp-plus.json",
+  "description": "Hands-on online exam taken within a continuous 24-hour window, covering prompt injection, jailbreaking and defenses for LLM systems.",
+  "tags": [
+   "ai-security",
+   "llm",
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "Exam only, one attempt; $1,199 bundle adds the on-demand course and a second attempt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://learnprompting.org/certificates/ai-red-teaming-professional-certification",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

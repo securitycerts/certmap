@@ -31,7 +31,11 @@
   "restricted_to": null,
   "prerequisites": [],
   "leads_to": [
-   "fcp-nse5"
+   "fcp-nse5",
+   "nse7-secure-networking",
+   "nse7-sase",
+   "nse8",
+   "fortinet-ot-security"
   ],
   "official_url": "https://www.fortinet.com/training-certification",
   "comparisons": [],

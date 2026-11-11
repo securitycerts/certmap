@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cisr",
+  "acronym": "CISR",
+  "name": "Certified iOS Security Researcher",
+  "vendor": "8kSec",
+  "issuer": null,
+  "domain": "Exploitation",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cisr.html",
+  "api": "https://certmap.dev/api/v1/certs/cisr.json",
+  "description": "24-hour practical exam on iOS internals, including sandboxing, Mach and XPC IPC, memory management and code signing, assessed through a report with working proofs of concept.",
+  "tags": [
+   "mobile",
+   "ios",
+   "internals",
+   "hands-on"
+  ],
+  "currency_note": "Offered on completion of the accompanying 8kSec training class; no standalone exam price published",
+  "price_verified_at": null,
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://8ksec.io/cisr/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

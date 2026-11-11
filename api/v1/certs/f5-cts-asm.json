@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "f5-cts-asm",
+  "acronym": "F5-CTS ASM",
+  "name": "F5 Certified Technology Specialist, BIG-IP ASM",
+  "vendor": "F5",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "advanced",
+  "price_usd": 180,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/f5-cts-asm.html",
+  "api": "https://certmap.dev/api/v1/certs/f5-cts-asm.json",
+  "description": "Specialist certification on BIG-IP Application Security Manager, the F5 web application firewall. Requires the 90-minute exam 303 on top of the F5 Certified Administrator, BIG-IP, and leads to the Security Solutions Expert track.",
+  "tags": [
+   "waf",
+   "appsec",
+   "f5"
+  ],
+  "currency_note": "Exam 303; requires the F5 Certified Administrator, BIG-IP first",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://education.f5.com/learning-path/view/16",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

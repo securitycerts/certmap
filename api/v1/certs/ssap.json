@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ssap",
+  "acronym": "SSAP",
+  "name": "SANS Security Awareness Professional",
+  "vendor": "SANS",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ssap.html",
+  "api": "https://certmap.dev/api/v1/certs/ssap.json",
+  "description": "Credential for security awareness and human risk practitioners, aligned with the SANS LDR433 course. Open-book proctored exam of 50 questions in two hours with a passing score of 78% and no prerequisites.",
+  "tags": [
+   "security-awareness",
+   "human-risk",
+   "management"
+  ],
+  "currency_note": "Exam attempt price not shown on the credential page; renewal $359 plus attendance at a SANS summit",
+  "price_verified_at": null,
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 359,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.sans.org/cyber-security-certifications/sans-security-awareness-professional-credential",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

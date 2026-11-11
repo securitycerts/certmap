@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "celms",
+  "acronym": "CELMS",
+  "name": "Enterprise Lateral Movement Specialist",
+  "vendor": "CyberWarFare Labs",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "intermediate",
+  "price_usd": 29,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/celms.html",
+  "api": "https://certmap.dev/api/v1/certs/celms.json",
+  "description": "Certification on lateral movement in enterprise networks through authentication abuse and remote management protocols. Assessed by a 24-hour practical exam followed by a report due within 24 hours, with a 75 percent pass mark.",
+  "tags": [
+   "red-team",
+   "lateral-movement",
+   "hands-on"
+  ],
+  "currency_note": "Includes course material and two exam attempts; lower promotional prices are frequent",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberwarfare.live/certifications/enterprise-lateral-movement-specialist-celms",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

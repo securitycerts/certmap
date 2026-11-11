@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "exin-pdpf",
+  "acronym": "PDPF",
+  "name": "EXIN Privacy & Data Protection Foundation",
+  "vendor": "EXIN",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "beginner",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/exin-pdpf.html",
+  "api": "https://certmap.dev/api/v1/certs/exin-pdpf.json",
+  "description": "Foundation exam on the GDPR: scope, principles and practice of data processing, international transfers and risk assessment. Closed-book, 40 multiple-choice questions in one hour with a 65% pass mark.",
+  "tags": [
+   "privacy",
+   "gdpr",
+   "data-protection"
+  ],
+  "currency_note": "Price is calculated per country on the EXIN site; no list price published",
+  "price_verified_at": null,
+  "duration_min": 60,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.exin.com/data-protection-security/exin-privacy-and-data-protection/exin-privacy-and-data-protection-foundation/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

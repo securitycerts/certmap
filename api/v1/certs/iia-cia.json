@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "iia-cia",
+  "acronym": "CIA",
+  "name": "Certified Internal Auditor",
+  "vendor": "IIA",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "advanced",
+  "price_usd": 1515,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/iia-cia.html",
+  "api": "https://certmap.dev/api/v1/certs/iia-cia.json",
+  "description": "Internal audit certification earned by passing three exam parts (125 questions in 150 minutes, then 100 questions in 120 minutes each) and meeting degree and internal audit experience requirements. Holders attest to continuing education every year.",
+  "tags": [
+   "internal-audit",
+   "audit",
+   "grc"
+  ],
+  "currency_note": "Non-member total: application $240 plus parts at $445, $415 and $415. Members pay $990 in total. New pricing applies from 4 January 2027",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 390,
+  "exam_count": 3,
+  "validity_years": 1,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.theiia.org/en/certifications/cia/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

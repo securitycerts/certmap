@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gasf",
+  "acronym": "GASF",
+  "name": "GIAC Advanced Smartphone Forensics",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gasf.html",
+  "api": "https://certmap.dev/api/v1/certs/gasf.json",
+  "description": "Covers mobile forensic examinations, device file system analysis, mobile application behavior, event artifact analysis and identification of mobile malware. One proctored exam of 75 questions in two hours, passing score 69%.",
+  "tags": [
+   "forensics",
+   "mobile"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/advanced-smartphone-forensics-gasf/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

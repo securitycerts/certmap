@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "csco",
+  "acronym": "CSCO",
+  "name": "Stealth Cyber Operator",
+  "vendor": "CyberWarFare Labs",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "advanced",
+  "price_usd": 49,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/csco.html",
+  "api": "https://certmap.dev/api/v1/certs/csco.json",
+  "description": "Advanced red team certification on stealth tradecraft, offensive infrastructure and endpoint security evasion in hardened enterprise environments. Assessed by a 72-hour practical challenge lab followed by a report due within 24 hours.",
+  "tags": [
+   "red-team",
+   "evasion",
+   "hands-on"
+  ],
+  "currency_note": "Includes course material and the exam lab; lower promotional prices are frequent",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 4320,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberwarfare.live/certifications/stealth-cyber-operator-csco",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

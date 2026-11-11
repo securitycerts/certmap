@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cesp-adcs",
+  "acronym": "CESP-ADCS",
+  "name": "Certified Enterprise Security Professional - AD CS",
+  "vendor": "Altered Security",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "intermediate",
+  "price_usd": 249,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cesp-adcs.html",
+  "api": "https://certmap.dev/api/v1/certs/cesp-adcs.json",
+  "description": "Covers Active Directory Certificate Services enumeration, certificate theft, privilege escalation through template and CA misconfigurations, persistence and forged certificates. Assessed by a 24-hour hands-on exam in a patched AD CS environment followed by a report; the renewal exam is free before expiry.",
+  "tags": [
+   "red-team",
+   "active-directory",
+   "adcs",
+   "hands-on"
+  ],
+  "currency_note": "30-day lab access with one exam attempt; extra attempts $99",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": 0,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.alteredsecurity.com/adcs",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

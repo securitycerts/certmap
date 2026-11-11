@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pecb-27001-f",
+  "acronym": "ISO 27001 F",
+  "name": "PECB Certificate Holder in ISO/IEC 27001 Foundation",
+  "vendor": "PECB",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "beginner",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pecb-27001-f.html",
+  "api": "https://certmap.dev/api/v1/certs/pecb-27001-f.json",
+  "description": "Foundation certificate on the elements of an information security management system under ISO/IEC 27001:2022. Awarded after passing the PECB ISO/IEC 27001 Foundation exam; no prior experience is required.",
+  "tags": [
+   "iso-27001",
+   "isms",
+   "grc",
+   "foundational"
+  ],
+  "currency_note": "Exam and certification fees are included in the price of the PECB training course; no standalone list price published",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001/iso-iec-27001-foundation",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

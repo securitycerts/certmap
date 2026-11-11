@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "api-rta",
+  "acronym": "API-RTA",
+  "name": "API Red Team Analyst",
+  "vendor": "CyberWarFare Labs",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "beginner",
+  "price_usd": 49,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/api-rta.html",
+  "api": "https://certmap.dev/api/v1/certs/api-rta.json",
+  "description": "Entry-level API security certification covering reconnaissance, authentication flaws and business logic abuse. Earned by submitting at least 13 flags in a 30-day practical challenge lab.",
+  "tags": [
+   "api-security",
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "Includes course material and a 30-day challenge lab; lower promotional prices are frequent",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberwarfare.live/certifications/api-red-team-analyst-api-rta",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

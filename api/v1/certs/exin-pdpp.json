@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "exin-pdpp",
+  "acronym": "PDPP",
+  "name": "EXIN Privacy & Data Protection Professional",
+  "vendor": "EXIN",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/exin-pdpp.html",
+  "api": "https://certmap.dev/api/v1/certs/exin-pdpp.json",
+  "description": "Advanced-level GDPR certification on data protection policies, the roles of controller, processor and DPO, impact assessments and breach response. Requires accredited training with practical assignments and a two-hour exam of 40 multiple-choice questions with a 65% pass mark.",
+  "tags": [
+   "privacy",
+   "gdpr",
+   "data-protection",
+   "dpo"
+  ],
+  "currency_note": "Price is calculated per country on the EXIN site; accredited training with practical assignments is mandatory",
+  "price_verified_at": null,
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.exin.com/data-protection-security/exin-privacy-and-data-protection/exin-privacy-and-data-protection-professional/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

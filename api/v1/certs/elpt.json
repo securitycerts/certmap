@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "elpt",
+  "acronym": "ELPT",
+  "name": "Entry-Level Penetration Tester Certification",
+  "vendor": "White Knight Labs",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "beginner",
+  "price_usd": 700,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/elpt.html",
+  "api": "https://certmap.dev/api/v1/certs/elpt.json",
+  "description": "Entry-level penetration testing certification covering reconnaissance, internal networks, Active Directory, web and API testing, cloud, privilege escalation and reporting. Assessed by a 48-hour practical exam in a scoped environment followed by 48 hours to write a penetration test report.",
+  "tags": [
+   "red-team",
+   "hands-on",
+   "entry-level"
+  ],
+  "currency_note": "Course with lifetime access and one exam voucher that does not expire; page shows 'starting at' USD 700",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://training.whiteknightlabs.com/certifications/entry-level-penetration-tester-certification/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

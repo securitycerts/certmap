@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pecb-31000-lrm",
+  "acronym": "ISO 31000 LRM",
+  "name": "PECB Certified ISO 31000 Lead Risk Manager",
+  "vendor": "PECB",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pecb-31000-lrm.html",
+  "api": "https://certmap.dev/api/v1/certs/pecb-31000-lrm.json",
+  "description": "Certification on establishing and running a risk management framework and process based on ISO 31000. Requires passing the PECB exam plus five years of professional experience, two of them in risk management, and 300 hours of risk management activities.",
+  "tags": [
+   "iso-31000",
+   "risk-management",
+   "grc"
+  ],
+  "currency_note": "Exam and certification fees are included in the price of the PECB training course; no standalone list price published",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://pecb.com/en/education-and-certification-for-individuals/iso-31000/iso-31000-lead-risk-manager",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

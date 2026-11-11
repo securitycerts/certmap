@@ -30,7 +30,9 @@
   "dod_8140": false,
   "restricted_to": null,
   "prerequisites": [],
-  "leads_to": [],
+  "leads_to": [
+   "fip"
+  ],
   "official_url": "https://iapp.org/certify/cipp/",
   "comparisons": [
    {

@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "pecb-lcm",
+  "acronym": "PECB LCM",
+  "name": "PECB Certified Lead Cybersecurity Manager",
+  "vendor": "PECB",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pecb-lcm.html",
+  "api": "https://certmap.dev/api/v1/certs/pecb-lcm.json",
+  "description": "Certification on implementing and managing a cybersecurity programme. Requires passing the PECB Certified Lead Cybersecurity Manager exam plus two years of cybersecurity experience and 300 hours of cybersecurity activities.",
+  "tags": [
+   "cybersecurity-management",
+   "grc"
+  ],
+  "currency_note": "Exam and certification fees are included in the price of the PECB training course; no standalone list price published",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://pecb.com/en/education-and-certification-for-individuals/cybersecurity-management/lead-cybersecurity-manager",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

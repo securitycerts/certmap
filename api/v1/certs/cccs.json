@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cccs",
+  "acronym": "CCCS",
+  "name": "CrowdStrike Certified Cloud Specialist",
+  "vendor": "CrowdStrike",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cccs.html",
+  "api": "https://certmap.dev/api/v1/certs/cccs.json",
+  "description": "90-minute, 60-question exam on configuring and operating Falcon Cloud Security, covering cloud account registration, policies, runtime protection and detection analysis. Valid for three years.",
+  "tags": [
+   "cloud",
+   "falcon",
+   "vendor"
+  ],
+  "currency_note": "Voucher bought through Pearson VUE or a CrowdStrike account executive; price not shown in the official exam guide",
+  "price_verified_at": null,
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.crowdstrike.com/en-us/crowdstrike-university/crowdstrike-falcon-certification-program/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

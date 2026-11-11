@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "azrte",
+  "acronym": "AzRTE",
+  "name": "HackTricks Azure Red Team Expert",
+  "vendor": "HackTricks Training",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "advanced",
+  "price_usd": 1232,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/azrte.html",
+  "api": "https://certmap.dev/api/v1/certs/azrte.json",
+  "description": "Covers Azure and Entra ID identity management, access control abuse, encryption, networking security and exploitation of Azure services. Certification requires passing a practical exam of lab challenges solved by submitting flags within 12 hours; no report is required.",
+  "tags": [
+   "cloud",
+   "azure",
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "Vendor lists EUR only (list EUR 1,099, discounted to EUR 879 on 2026-11-10); converted at 1.1214 USD/EUR (ECB reference rate, 2026-11-10); course with 60 days of lab access and one exam attempt, exam not sold separately",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 720,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://hacktricks-training.com/courses/azrte/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

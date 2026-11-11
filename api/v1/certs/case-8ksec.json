@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "case-8ksec",
+  "acronym": "CASE",
+  "name": "Certified Android Security Engineer",
+  "vendor": "8kSec",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/case-8ksec.html",
+  "api": "https://certmap.dev/api/v1/certs/case-8ksec.json",
+  "description": "24-hour practical exam on Android application reverse engineering and exploitation in a Corellium lab, assessed through a report with working proof-of-concept APKs.",
+  "tags": [
+   "mobile",
+   "android",
+   "appsec",
+   "hands-on"
+  ],
+  "currency_note": "Offered on completion of the accompanying 8kSec training class; no standalone exam price published",
+  "price_verified_at": null,
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://8ksec.io/case/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

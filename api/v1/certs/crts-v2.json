@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "crts-v2",
+  "acronym": "CRTS V2",
+  "name": "Red Team Specialist",
+  "vendor": "CyberWarFare Labs",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "intermediate",
+  "price_usd": 99,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/crts-v2.html",
+  "api": "https://certmap.dev/api/v1/certs/crts-v2.json",
+  "description": "Red team certification covering end-to-end operations against Active Directory, AD CS, Exchange, SSO, MFA and VDI across segmented networks. Assessed by a 24-hour open-book practical exam after a 30-day practice lab.",
+  "tags": [
+   "red-team",
+   "active-directory",
+   "hands-on"
+  ],
+  "currency_note": "Includes course material, 30 days of practice lab access and two exam attempts; lower promotional prices are frequent",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberwarfare.live/certifications/red-team-specialist-crts%20v2",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

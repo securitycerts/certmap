@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "odpc",
+  "acronym": "ODPC",
+  "name": "Offensive Development Practitioner Certification",
+  "vendor": "White Knight Labs",
+  "issuer": null,
+  "domain": "Exploitation",
+  "level": "advanced",
+  "price_usd": 700,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/odpc.html",
+  "api": "https://certmap.dev/api/v1/certs/odpc.json",
+  "description": "Covers development of custom offensive tooling such as shellcode loaders, reflective payloads and process injection, with AMSI and ETW bypass, API unhooking and EDR evasion. Assessed by a 48-hour practical exam in a student-deployed AWS lab followed by 48 hours to submit a report.",
+  "tags": [
+   "offensive-development",
+   "evasion",
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "Course with lifetime access and one exam voucher that does not expire; page shows 'starting at' USD 700",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://training.whiteknightlabs.com/certifications/offensive-development-practitioner-certification/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "icmde",
+  "acronym": "ICMDE",
+  "name": "IACIS Certified Mobile Device Examiner",
+  "vendor": "IACIS",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "advanced",
+  "price_usd": 800,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/icmde.html",
+  "api": "https://certmap.dev/api/v1/certs/icmde.json",
+  "description": "Mobile device forensics certification with an open-book written exam and a practical exam on supplied image files, each with a 48-hour time limit and an 80% pass mark. Recertification requires a proficiency exercise and 40 hours of continuing education.",
+  "tags": [
+   "digital-forensics",
+   "mobile",
+   "hands-on"
+  ],
+  "currency_note": "External certification fee (certification only, training not included); external candidates must show 36 hours of relevant training; fee is waived for students of the matching IACIS course",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.iacis.com/certification/mobile-cert/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

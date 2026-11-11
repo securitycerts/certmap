@@ -26,8 +26,8 @@
  "docs": "https://certmap.dev/api/",
  "openapi": "https://certmap.dev/api/openapi.json",
  "counts": {
-  "certifications": 320,
-  "vendors": 70,
+  "certifications": 478,
+  "vendors": 93,
   "domains": 17,
   "comparisons": 60,
   "study_plans": 79

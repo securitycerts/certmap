@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gcil",
+  "acronym": "GCIL",
+  "name": "GIAC Cyber Incident Leader",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Incident Handling",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gcil.html",
+  "api": "https://certmap.dev/api/v1/certs/gcil.json",
+  "description": "Covers incident preparation, assessment, remediation and closure, building the incident management team and process, handling of different attack types, and incident tasks and communications. One proctored exam of 75 questions in two hours, passing score 70%.",
+  "tags": [
+   "ir",
+   "management",
+   "leadership"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/cyber-incident-leader-gcil/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

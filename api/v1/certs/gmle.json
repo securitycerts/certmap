@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gmle",
+  "acronym": "GMLE",
+  "name": "GIAC Machine Learning Engineer",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/gmle.html",
+  "api": "https://certmap.dev/api/v1/certs/gmle.json",
+  "description": "Covers data acquisition and manipulation, statistics, Python scripting, supervised and unsupervised learning, neural networks and anomaly detection applied to security problems. One proctored exam of 82 questions in three hours with CyberLive tasks, passing score 65%.",
+  "tags": [
+   "machine-learning",
+   "ai",
+   "data-science",
+   "cyberlive"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/machine-learning-engineer-gmle/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

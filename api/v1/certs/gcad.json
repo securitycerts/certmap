@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gcad",
+  "acronym": "GCAD",
+  "name": "GIAC Cloud Security Architecture and Design",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gcad.html",
+  "api": "https://certmap.dev/api/v1/certs/gcad.json",
+  "description": "Covers cloud identity and access management, Zero Trust design, network architecture, data protection and centralized monitoring. One proctored exam of 75 questions in two hours, passing score 63%.",
+  "tags": [
+   "cloud",
+   "architecture",
+   "zero-trust"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/cloud-security-architecture-design-gcad/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

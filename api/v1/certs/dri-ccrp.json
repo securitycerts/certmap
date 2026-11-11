@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "dri-ccrp",
+  "acronym": "CCRP",
+  "name": "Certified Cyber Resilience Professional",
+  "vendor": "DRI International",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/dri-ccrp.html",
+  "api": "https://certmap.dev/api/v1/certs/dri-ccrp.json",
+  "description": "Credential combining cybersecurity and business continuity for resilience professionals. Requires more than two years of experience, essays on three of five elements (identify, protect, detect, respond, recover) and a pass of at least 75% on the Cyber Resilience Examination.",
+  "tags": [
+   "cyber-resilience",
+   "business-continuity",
+   "resilience"
+  ],
+  "currency_note": "Application fee $400 and annual renewal fee $225; the Cyber Resilience Examination fee is not listed on the certification page",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 1,
+  "renewal_cost": 225,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://drii.org/certification/ccrp",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

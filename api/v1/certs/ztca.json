@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ztca",
+  "acronym": "ZTCA",
+  "name": "Zscaler Zero Trust Cyber Associate",
+  "vendor": "Zscaler",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "beginner",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ztca.html",
+  "api": "https://certmap.dev/api/v1/certs/ztca.json",
+  "description": "Entry-level certification on zero trust principles and architecture. Earned by completing a 5-hour self-paced course and a 120-minute exam of 75 questions, with up to three retests.",
+  "tags": [
+   "zero-trust",
+   "vendor",
+   "fundamentals"
+  ],
+  "currency_note": "Exam fee not shown on the certification page; preceded by a 5-hour self-paced e-learning course",
+  "price_verified_at": null,
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.zscaler.com/zscaler-academy/ztca-zero-trust-certified-associate",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "nse7-sase",
+  "acronym": "NSE 7 SASE",
+  "name": "Fortinet NSE 7 in SASE",
+  "vendor": "Fortinet",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/nse7-sase.html",
+  "api": "https://certmap.dev/api/v1/certs/nse7-sase.json",
+  "description": "Earned by passing the proctored NSE 7 FortiSASE Architect exam while holding NSE 4 FortiOS and an NSE 5 or NSE 6 in SASE. It replaces the FCSS SASE title retired on 15 July 2026.",
+  "tags": [
+   "sase",
+   "sse",
+   "sd-wan",
+   "fortinet"
+  ],
+  "currency_note": "Fortinet publishes exam prices only to signed-in users",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "fcp-nse4"
+  ],
+  "leads_to": [],
+  "official_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_7_sase",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

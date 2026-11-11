@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "geir",
+  "acronym": "GEIR",
+  "name": "GIAC Enterprise Incident Response",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Incident Handling",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/geir.html",
+  "api": "https://certmap.dev/api/v1/certs/geir.json",
+  "description": "Covers incident response team coordination, enterprise detection and threat hunting, large-scale event correlation and timeline analysis, and artifact analysis across Windows, Linux, macOS, containers and cloud. One proctored exam of 82 questions in three hours with CyberLive tasks, passing score 72%.",
+  "tags": [
+   "ir",
+   "dfir",
+   "threat-hunting",
+   "cyberlive"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/enterprise-incident-responder-geir",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

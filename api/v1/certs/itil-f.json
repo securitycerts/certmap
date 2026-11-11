@@ -29,7 +29,9 @@
   "dod_8140": false,
   "restricted_to": null,
   "prerequisites": [],
-  "leads_to": [],
+  "leads_to": [
+   "itil4-ism"
+  ],
   "official_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565",
   "comparisons": [],
   "study_plan": {

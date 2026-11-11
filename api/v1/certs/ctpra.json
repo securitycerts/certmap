@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ctpra",
+  "acronym": "CTPRA",
+  "name": "Certified Third Party Risk Assessor",
+  "vendor": "Shared Assessments",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ctpra.html",
+  "api": "https://certmap.dev/api/v1/certs/ctpra.json",
+  "description": "Certification for assessors of third-party IT risk controls, requiring five years of related experience and attendance at a live bootcamp. The remotely proctored exam has 120 multiple-choice scenario questions and a 70% pass mark.",
+  "tags": [
+   "third-party-risk",
+   "tprm",
+   "assessment"
+  ],
+  "currency_note": "Exam is bundled with the live CTPRA bootcamp; the public page could not be opened and indexed prices conflict. Annual maintenance fee $100",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": 100,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://sharedassessments.org/ctpra/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

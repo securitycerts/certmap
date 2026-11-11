@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "csse",
+  "acronym": "CSSE",
+  "name": "Certified Software Supply Chain Security Expert",
+  "vendor": "Practical DevSecOps",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "advanced",
+  "price_usd": 799,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/csse.html",
+  "api": "https://certmap.dev/api/v1/certs/csse.json",
+  "description": "Practical exam of five challenges to be solved in six hours, followed by 24 hours to submit a report, covering software supply chain attacks and defenses across code, build and deployment. Lifetime credential.",
+  "tags": [
+   "supply-chain",
+   "sbom",
+   "devsecops",
+   "hands-on"
+  ],
+  "currency_note": "List price; includes course, labs and one exam attempt",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 360,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.practical-devsecops.com/certified-software-supply-chain-security-expert/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

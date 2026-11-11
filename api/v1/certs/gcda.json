@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gcda",
+  "acronym": "GCDA",
+  "name": "GIAC Certified Detection Analyst",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Security Operations",
+  "level": "intermediate",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gcda.html",
+  "api": "https://certmap.dev/api/v1/certs/gcda.json",
+  "description": "Covers SIEM fundamentals, service profiling, endpoint analytics, user behavior monitoring, cloud logging in AWS and Azure, and tactical SIEM detection. One proctored exam of 75 questions in two hours, passing score 76%.",
+  "tags": [
+   "blue-team",
+   "siem",
+   "detection"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/certified-detection-analyst-gcda/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

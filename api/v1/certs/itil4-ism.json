@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "itil4-ism",
+  "acronym": "ITIL4-ISM",
+  "name": "ITIL 4 Practitioner: Information Security Management",
+  "vendor": "PeopleCert",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": 504,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/itil4-ism.html",
+  "api": "https://certmap.dev/api/v1/certs/itil4-ism.json",
+  "description": "Practice-level ITIL 4 certification on managing risks to the confidentiality, integrity and availability of information. Closed-book exam of 20 multiple-choice questions in 30 minutes with a 65% pass mark; accredited training or official eLearning is mandatory.",
+  "tags": [
+   "itsm",
+   "itil",
+   "security-management"
+  ],
+  "currency_note": "Cheapest bundle including the exam voucher (eLearning); the $222 exam-only bundle is for retakes",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 30,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "itil-f"
+  ],
+  "leads_to": [],
+  "official_url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-practitioner-information-security-management-3873",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

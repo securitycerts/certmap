@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "azrts",
+  "acronym": "AzRTS",
+  "name": "Azure Red Team Specialist",
+  "vendor": "CyberWarFare Labs",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "advanced",
+  "price_usd": 149,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/azrts.html",
+  "api": "https://certmap.dev/api/v1/certs/azrts.json",
+  "description": "Red team certification for Microsoft Azure covering cloud identity attacks, misconfigurations and hybrid attack paths. Earned by submitting at least 15 flags in a 30-day practical challenge lab.",
+  "tags": [
+   "cloud",
+   "azure",
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "Includes course material and a 30-day challenge lab; lower promotional prices are frequent",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberwarfare.live/certifications/azure-red-team-specialist-azrts",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

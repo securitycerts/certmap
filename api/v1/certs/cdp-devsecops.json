@@ -31,7 +31,9 @@
   "dod_8140": false,
   "restricted_to": null,
   "prerequisites": [],
-  "leads_to": [],
+  "leads_to": [
+   "cde-devsecops"
+  ],
   "official_url": "https://www.practical-devsecops.com/certified-devsecops-professional/",
   "comparisons": [],
   "study_plan": {

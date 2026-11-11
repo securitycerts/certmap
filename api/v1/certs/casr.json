@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "casr",
+  "acronym": "CASR",
+  "name": "Certified Android Security Researcher",
+  "vendor": "8kSec",
+  "issuer": null,
+  "domain": "Exploitation",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/casr.html",
+  "api": "https://certmap.dev/api/v1/certs/casr.json",
+  "description": "24-hour practical exam on Android internals, including app sandboxing, SELinux, AOSP debugging and security mitigations, assessed through a report with working proof-of-concept scripts.",
+  "tags": [
+   "mobile",
+   "android",
+   "internals",
+   "hands-on"
+  ],
+  "currency_note": "Offered on completion of the accompanying 8kSec training class; no standalone exam price published",
+  "price_verified_at": null,
+  "duration_min": 1440,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://8ksec.io/casr/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

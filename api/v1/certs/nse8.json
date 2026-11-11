@@ -1,0 +1,43 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "nse8",
+  "acronym": "NSE 8",
+  "name": "Fortinet NSE 8 Cybersecurity Expert",
+  "vendor": "Fortinet",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "expert",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/nse8.html",
+  "api": "https://certmap.dev/api/v1/certs/nse8.json",
+  "description": "Top Fortinet certification, formerly FCX. Requires NSE 4, an NSE 5 or NSE 6 and an NSE 7 in the same track, then the NSE 8 Core Practical Exam (on-site only) and one elective practical exam passed within a year.",
+  "tags": [
+   "networking",
+   "fortinet",
+   "hands-on",
+   "capstone"
+  ],
+  "currency_note": "Fortinet publishes exam prices only to signed-in users",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 2,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [
+   "fcp-nse4",
+   "fcp-nse5"
+  ],
+  "leads_to": [],
+  "official_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_8",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

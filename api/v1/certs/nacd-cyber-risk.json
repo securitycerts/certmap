@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "nacd-cyber-risk",
+  "acronym": "NACD CERT",
+  "name": "CERT Certificate in Cybersecurity Oversight (NACD Cyber-Risk Oversight Program)",
+  "vendor": "NACD",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "advanced",
+  "price_usd": 4495,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/nacd-cyber-risk.html",
+  "api": "https://certmap.dev/api/v1/certs/nacd-cyber-risk.json",
+  "description": "Online self-paced programme of about 16 hours for board directors on overseeing cyber risk, with a cyber-crisis simulation. Each module ends with an exam that needs 80% to pass, all within one year of registration; the certificate does not expire.",
+  "tags": [
+   "board",
+   "governance",
+   "cyber-risk",
+   "executive"
+  ],
+  "currency_note": "Non-member price; NACD members $3,995. Certificate issued by the CERT Division of the Carnegie Mellon Software Engineering Institute",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.nacdonline.org/nacd-events/national-events/certificate-programs/cert-certificate-in-cyber-risk--oversight-program/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

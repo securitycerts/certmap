@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "oaee",
+  "acronym": "OAEE",
+  "name": "Offensive ARM Exploitation Expert",
+  "vendor": "8kSec",
+  "issuer": null,
+  "domain": "Exploitation",
+  "level": "expert",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/oaee.html",
+  "api": "https://certmap.dev/api/v1/certs/oaee.json",
+  "description": "48-hour practical exam on exploiting vulnerabilities in ARM target binaries and bypassing mitigations, assessed through a report of the analysis and working exploits.",
+  "tags": [
+   "arm64",
+   "exploit-dev",
+   "reverse-engineering",
+   "hands-on"
+  ],
+  "currency_note": "Offered on completion of the accompanying 8kSec training class; no standalone exam price published",
+  "price_verified_at": null,
+  "duration_min": 2880,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://8ksec.io/oaee/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

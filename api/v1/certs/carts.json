@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "carts",
+  "acronym": "CARTS",
+  "name": "AWS Cloud Red Team Specialist",
+  "vendor": "CyberWarFare Labs",
+  "issuer": null,
+  "domain": "Cloud/SysOps",
+  "level": "intermediate",
+  "price_usd": 49,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/carts.html",
+  "api": "https://certmap.dev/api/v1/certs/carts.json",
+  "description": "Red team certification for AWS covering attack surface enumeration, exploitation of misconfigured services and pivoting across VPCs. Earned by submitting at least 10 flags in a 30-day practical challenge lab.",
+  "tags": [
+   "cloud",
+   "aws",
+   "red-team",
+   "hands-on"
+  ],
+  "currency_note": "Includes course material and a 30-day challenge lab; lower promotional prices are frequent; a separate CARTS V2 edition is listed at $149",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberwarfare.live/certifications/aws-cloud-red-team-specialist-carts",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

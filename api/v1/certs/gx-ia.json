@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gx-ia",
+  "acronym": "GX-IA",
+  "name": "GIAC Experienced Intrusion Analyst",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Communication & Network Security",
+  "level": "expert",
+  "price_usd": 1299,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/gx-ia.html",
+  "api": "https://certmap.dev/api/v1/certs/gx-ia.json",
+  "description": "Applied Knowledge exam of 25 CyberLive hands-on challenges in four hours, open book, covering protocol analysis of packet captures, network forensics and intrusion analysis with tools such as Wireshark, Scapy and IDS tooling. Counts toward the GSE portfolio.",
+  "tags": [
+   "network",
+   "ids",
+   "blue-team",
+   "hands-on",
+   "cyberlive"
+  ],
+  "currency_note": "Applied Knowledge exam; $499 for holders of the corresponding active base Practitioner certification (GCIA is the audience named on the page)",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/experienced-intrusion-analyst-gxia/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

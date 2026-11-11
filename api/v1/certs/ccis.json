@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ccis",
+  "acronym": "CCIS",
+  "name": "CrowdStrike Certified Identity Specialist",
+  "vendor": "CrowdStrike",
+  "issuer": null,
+  "domain": "IAM",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ccis.html",
+  "api": "https://certmap.dev/api/v1/certs/ccis.json",
+  "description": "90-minute, 60-question exam on Falcon Identity Protection, covering identity-based detections, policy rules, user risk and Zero Trust principles. Valid for three years.",
+  "tags": [
+   "identity",
+   "falcon",
+   "vendor"
+  ],
+  "currency_note": "Voucher bought through Pearson VUE or a CrowdStrike account executive; price not shown in the official exam guide",
+  "price_verified_at": null,
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.crowdstrike.com/en-us/crowdstrike-university/crowdstrike-falcon-certification-program/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

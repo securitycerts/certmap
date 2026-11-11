@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "fair-ccrp",
+  "acronym": "FAIR-CCRP",
+  "name": "FAIR Institute Certified Cyber Risk Professional",
+  "vendor": "FAIR Institute",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/fair-ccrp.html",
+  "api": "https://certmap.dev/api/v1/certs/fair-ccrp.json",
+  "description": "Cyber risk quantification credential requiring four FAIR courses (about 16 to 24 hours), a certification exam and three years of relevant experience. Valid for two years with 40 hours of continuing education.",
+  "tags": [
+   "risk",
+   "fair",
+   "quantitative-risk"
+  ],
+  "currency_note": "Certification exam and the first two years of maintenance are included in the course fees; later biennial maintenance fee of up to $300",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 2,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.fairinstitute.org/fair-training-and-certification",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

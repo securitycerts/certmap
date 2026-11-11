@@ -1,0 +1,38 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cedp",
+  "acronym": "CEDP",
+  "name": "Certified Exploit Development Professional",
+  "vendor": "CyberWarFare Labs",
+  "issuer": null,
+  "domain": "Exploitation",
+  "level": "advanced",
+  "price_usd": 29,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cedp.html",
+  "api": "https://certmap.dev/api/v1/certs/cedp.json",
+  "description": "Exploit development certification covering stack-based vulnerabilities, memory corruption and debugging. Assessed by a task-based exam with no fixed end date, submitted as a PDF report.",
+  "tags": [
+   "exploit-dev",
+   "hands-on"
+  ],
+  "currency_note": "Includes course material and two exam attempts; lower promotional prices are frequent",
+  "price_verified_at": "2026-11-10",
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cyberwarfare.live/certifications/exploit-development-professional-cedp",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

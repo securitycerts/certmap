@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "glir",
+  "acronym": "GLIR",
+  "name": "GIAC Linux Incident Responder",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Incident Handling",
+  "level": "advanced",
+  "price_usd": 999,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/glir.html",
+  "api": "https://certmap.dev/api/v1/certs/glir.json",
+  "description": "Covers Linux incident response, threat hunting and intrusion analysis, file systems, system triage, evidence collection, and user, application and timeline analysis. One proctored exam of 82 questions in three hours with CyberLive tasks, passing score 66%.",
+  "tags": [
+   "ir",
+   "linux",
+   "dfir",
+   "cyberlive"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/linux-incident-responder-glir/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

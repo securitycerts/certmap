@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cbci",
+  "acronym": "CBCI",
+  "name": "Certificate of the Business Continuity Institute",
+  "vendor": "BCI",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "beginner",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/cbci.html",
+  "api": "https://certmap.dev/api/v1/certs/cbci.json",
+  "description": "Business continuity certificate based on the BCI Good Practice Guidelines 7.0 and its six professional practices. Online proctored closed-book exam of 90 multiple-choice questions in 90 minutes with a pass mark of 63.",
+  "tags": [
+   "business-continuity",
+   "resilience",
+   "gpg"
+  ],
+  "currency_note": "Exam is sold with the CBCI course or a BCI Shop bundle; the certification pages show no price",
+  "price_verified_at": null,
+  "duration_min": 90,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.thebci.org/certification-training/cbci-exam.html",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

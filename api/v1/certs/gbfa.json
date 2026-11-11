@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "gbfa",
+  "acronym": "GBFA",
+  "name": "GIAC Battlefield Forensics and Acquisition",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Forensics",
+  "level": "intermediate",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gbfa.html",
+  "api": "https://certmap.dev/api/v1/certs/gbfa.json",
+  "description": "Covers efficient data acquisition from a wide range of devices, manual identification and acquisition of data, and rapid production of actionable intelligence. One proctored exam of 75 questions in two hours, passing score 69%.",
+  "tags": [
+   "forensics",
+   "acquisition",
+   "triage"
+  ],
+  "currency_note": "Exam only",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": 499,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/battlefield-forensics-acquisition-gbfa/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

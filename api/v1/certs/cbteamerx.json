@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "cbteamerx",
+  "acronym": "CBTeamerX",
+  "name": "Certified Blue Teamer eXpert",
+  "vendor": "The SecOps Group",
+  "issuer": null,
+  "domain": "Incident Handling",
+  "level": "expert",
+  "price_usd": 537,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/cbteamerx.html",
+  "api": "https://certmap.dev/api/v1/certs/cbteamerx.json",
+  "description": "Seven-hour practical exam in which candidates investigate a multi-stage intrusion across on-premises Active Directory and cloud environments and reconstruct the attack chain. Taken online and on demand; the certificate does not expire.",
+  "tags": [
+   "blue-team",
+   "dfir",
+   "incident-response",
+   "hands-on"
+  ],
+  "currency_note": "Vendor lists GBP only (GBP 400); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 420,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://pentestingexams.com/certifications/expert/certified-blue-teamer-expert/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

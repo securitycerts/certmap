@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ciotp",
+  "acronym": "CIoTP",
+  "name": "Certified Internet of Things Practitioner",
+  "vendor": "CertNexus",
+  "issuer": null,
+  "domain": "ICS/IoT",
+  "level": "beginner",
+  "price_usd": 368,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ciotp.html",
+  "api": "https://certmap.dev/api/v1/certs/ciotp.json",
+  "description": "120-minute, 100-item multiple-choice and multiple-response exam (ITP-110) on IoT devices, connectivity, cloud platforms, data, security and privacy. Valid for three years.",
+  "tags": [
+   "iot",
+   "foundational",
+   "vendor-neutral"
+  ],
+  "currency_note": "Exam voucher listed at $367.50 in the CertNexus store, rounded up; delivered through Pearson VUE",
+  "price_verified_at": "2026-11-10",
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": 150,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://certnexus.com/certified-internet-of-things-practitioner-ciotp/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

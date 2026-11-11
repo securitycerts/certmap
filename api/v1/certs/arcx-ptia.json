@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "arcx-ptia",
+  "acronym": "PTIA",
+  "name": "arcX Practitioner Threat Intelligence Analyst",
+  "vendor": "arcX",
+  "issuer": null,
+  "domain": "Cyber Threat Intelligence",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/arcx-ptia.html",
+  "api": "https://certmap.dev/api/v1/certs/arcx-ptia.json",
+  "description": "Awarded for passing the final arcX exam of the Cyber Threat Intelligence Practitioner course, a self-paced course of more than 25 hours built around the CREST CPTIA syllabus and the intelligence cycle.",
+  "tags": [
+   "cti",
+   "crest-aligned",
+   "course-based"
+  ],
+  "currency_note": "Price is shown only in a geo-localised currency with inconsistent symbols, so no reliable USD figure could be read; includes 12 months of access and one free re-test",
+  "price_verified_at": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://arcx.io/courses/cyber-threat-intelligence-practitioner",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

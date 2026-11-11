@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-10",
+ "certification": {
+  "id": "ex415",
+  "acronym": "EX415",
+  "name": "Red Hat Certified Specialist in Security: Linux",
+  "vendor": "Red Hat",
+  "issuer": null,
+  "domain": "*nix",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ex415.html",
+  "api": "https://certmap.dev/api/v1/certs/ex415.json",
+  "description": "Performance-based exam of four hours in which candidates analyse and implement security measures on several Red Hat Enterprise Linux systems. Red Hat expects RHCSA-level skills or equivalent experience.",
+  "tags": [
+   "linux",
+   "hardening",
+   "hands-on",
+   "rhel"
+  ],
+  "currency_note": "Price is shown only in the Red Hat purchase flow, not on the exam page",
+  "price_verified_at": null,
+  "duration_min": 240,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.redhat.com/en/services/training/ex415-red-hat-certified-specialist-security-linux-exam",
+  "comparisons": [],
+  "study_plan": null
+ }
+}
