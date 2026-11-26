@@ -29,7 +29,7 @@ export function fmtPrice(n) {
   return "$" + n.toLocaleString("en-US");
 }
 
-import { localAmount } from "./currency.js?v=cefd8e83";
+import { localAmount } from "./currency.js?v=e50f58ab";
 
 // A price as the issuer states it, with the dollar conversion when it is not in USD.
 const SYMBOL = { GBP: "£", EUR: "€" };

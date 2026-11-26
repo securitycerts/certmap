@@ -1,15 +1,15 @@
-import { loadData } from "./data.js?v=cefd8e83";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=cefd8e83";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=cefd8e83";
-import { loadRates, currencyCodes, currency, setCurrency, guessCurrency, fmtMoney, fromUsd, currencyLabel } from "./currency.js?v=cefd8e83";
-import { el } from "./dom.js?v=cefd8e83";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=cefd8e83";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=cefd8e83";
-import { toast, copyText } from "./toast.js?v=cefd8e83";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=cefd8e83";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=cefd8e83";
-import { mountGraph, unmountGraph } from "./graph.js?v=cefd8e83";
-import { downloadRoadmapImage } from "./share-image.js?v=cefd8e83";
+import { loadData } from "./data.js?v=e50f58ab";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=e50f58ab";
+import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=e50f58ab";
+import { loadRates, currencyCodes, currency, setCurrency, fmtMoney, fromUsd, currencyLabel } from "./currency.js?v=e50f58ab";
+import { el } from "./dom.js?v=e50f58ab";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=e50f58ab";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=e50f58ab";
+import { toast, copyText } from "./toast.js?v=e50f58ab";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=e50f58ab";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=e50f58ab";
+import { mountGraph, unmountGraph } from "./graph.js?v=e50f58ab";
+import { downloadRoadmapImage } from "./share-image.js?v=e50f58ab";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -910,7 +910,7 @@ function onGlobalKey(e) {
 async function init() {
   setTheme(safeLS(THEME_KEY, ALLOWED_THEMES, "dark"));
   [DATA] = await Promise.all([loadData(), loadRates()]);
-  setCurrency(store.get(CURRENCY_KEY) || guessCurrency());
+  setCurrency(store.get(CURRENCY_KEY) || "USD");
   bindData(DATA);
   for (const c of DATA.certs) {
     HAYSTACK.set(c.id, [c.id, c.acronym, c.name, c.vendor, c.tags.join(" "), c.description, c.domain, c.level].join(" ").toLowerCase());
