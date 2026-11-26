@@ -348,7 +348,16 @@ function compareFacts(a, b, T) {
 
 // Thanks to readers who suggested a resource for a comparison, keyed by the sorted pair.
 const THANKS = {
-  "ccna|net-plus": 'Thanks to Peter of <a href="https://aarrange.com/" rel="noopener noreferrer">aarrange</a> for recommending the subnet calculator in the practice step.',
+  "ccna|net-plus": {
+    en: 'Thanks to Peter of <a href="https://aarrange.com/" rel="noopener noreferrer">aarrange</a> for recommending the subnet calculator in the practice step.',
+    es: 'Gracias a Peter, de <a href="https://aarrange.com/" rel="noopener noreferrer">aarrange</a>, por recomendar la calculadora de subredes del paso de práctica.',
+    fr: 'Merci à Peter, de <a href="https://aarrange.com/" rel="noopener noreferrer">aarrange</a>, d’avoir recommandé le calculateur de sous-réseaux de l’étape de pratique.',
+    de: 'Danke an Peter von <a href="https://aarrange.com/" rel="noopener noreferrer">aarrange</a> für die Empfehlung des Subnetzrechners im Übungsschritt.',
+    it: 'Grazie a Peter di <a href="https://aarrange.com/" rel="noopener noreferrer">aarrange</a> per aver consigliato il calcolatore di sottoreti nella fase di pratica.',
+    ar: 'شكرًا لـ Peter من <a href="https://aarrange.com/" rel="noopener noreferrer">aarrange</a> على اقتراح حاسبة الشبكات الفرعية في خطوة التدريب.',
+    ko: '연습 단계의 서브넷 계산기를 추천해 준 <a href="https://aarrange.com/" rel="noopener noreferrer">aarrange</a>의 Peter에게 감사드립니다.',
+    he: 'תודה ל-Peter מ-<a href="https://aarrange.com/" rel="noopener noreferrer">aarrange</a> על ההמלצה על מחשבון תתי-הרשתות בשלב התרגול.',
+  },
 };
 function comparePage(a, b, T) {
   const file = compareFile(a.id, b.id);
@@ -410,7 +419,7 @@ ${T.hCovers ? `  <h2>${T.hCovers}</h2>
   <div class="faq">
 ${qa.map(([q, ans]) => `    <details><summary>${esc(q)}</summary><p>${esc(ans)}</p></details>`).join("\n")}
   </div>
-${others.length ? `  <h2>${T.hRelated}</h2>\n  <nav class="toc">${others.map(v => `<a href="${v.file}"><bdi>${esc(label(v))}</bdi></a>`).join(" ")}</nav>\n` : ""}${T.code === "en" && THANKS[[a.id, b.id].sort().join("|")] ? `  <p class="fine thanks">${THANKS[[a.id, b.id].sort().join("|")]}</p>\n` : ""}</article>`;
+${others.length ? `  <h2>${T.hRelated}</h2>\n  <nav class="toc">${others.map(v => `<a href="${v.file}"><bdi>${esc(label(v))}</bdi></a>`).join(" ")}</nav>\n` : ""}${THANKS[[a.id, b.id].sort().join("|")]?.[T.code] ? `  <p class="fine thanks">${THANKS[[a.id, b.id].sort().join("|")][T.code]}</p>\n` : ""}</article>`;
   const ld = [
     { "@context": "https://schema.org", "@type": "FAQPage", inLanguage: T.code, mainEntity: qa.map(([q, ans]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: ans } })) },
     { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
