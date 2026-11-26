@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "ccak",
   "acronym": "CCAK",
@@ -21,7 +21,7 @@
    "cloud",
    "audit"
   ],
-  "currency_note": "Discontinued for new purchases (October 2025)",
+  "currency_note": "Retired: no longer offered since 2025-10-03 (checked 2026-11-26)",
   "price_verified_at": null,
   "price_original": null,
   "duration_min": 120,

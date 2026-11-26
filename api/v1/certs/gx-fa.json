@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "gx-fa",
   "acronym": "GX-FA",
@@ -35,7 +35,7 @@
   "restricted_to": null,
   "prerequisites": [],
   "leads_to": [],
-  "official_url": "https://www.giac.org/certifications/experienced-forensic-analyst-gxfa/",
+  "official_url": "https://www.giac.org/certifications/experienced-forensics-analyst-gxfa/",
   "comparisons": [],
   "study_plan": null
  }

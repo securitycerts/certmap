@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "oscp",
   "acronym": "OSCP+",
@@ -51,6 +51,18 @@
    {
     "with": "ceh",
     "page": "https://certmap.dev/certs/compare-ceh-vs-oscp.html"
+   },
+   {
+    "with": "pnpt",
+    "page": "https://certmap.dev/certs/compare-oscp-vs-pnpt.html"
+   },
+   {
+    "with": "gpen",
+    "page": "https://certmap.dev/certs/compare-gpen-vs-oscp.html"
+   },
+   {
+    "with": "ecppt",
+    "page": "https://certmap.dev/certs/compare-ecppt-vs-oscp.html"
    }
   ],
   "study_plan": {

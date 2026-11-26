@@ -1,0 +1,39 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-26",
+ "certification": {
+  "id": "ec-aie",
+  "acronym": "AIE",
+  "name": "Artificial Intelligence Essentials",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "Security & Risk Management",
+  "level": "beginner",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/ec-aie.html",
+  "api": "https://certmap.dev/api/v1/certs/ec-aie.json",
+  "description": "Entry-level credential on AI concepts and tools for everyday work. Exam of 75 questions in 2 hours, 70% to pass, valid for three years.",
+  "tags": [
+   "ai",
+   "fundamentals"
+  ],
+  "currency_note": null,
+  "price_verified_at": null,
+  "price_original": null,
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cert.eccouncil.org/artificial-intelligence-essentials.html",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

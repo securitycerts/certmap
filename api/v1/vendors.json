@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "count": 93,
  "vendors": [
   {
@@ -331,7 +331,9 @@
     "ec-ics-scada",
     "coasp",
     "crage",
-    "ceh-practical"
+    "ceh-practical",
+    "caipm",
+    "ec-aie"
    ]
   },
   {
@@ -451,7 +453,13 @@
     "gctd",
     "gsom",
     "gx-cs",
-    "gx-ia"
+    "gx-ia",
+    "gpyc",
+    "gced",
+    "gccc",
+    "gisp",
+    "ggrcl",
+    "gaipt"
    ]
   },
   {
@@ -551,7 +559,11 @@
     "ecppt",
     "ecir",
     "ecdfp",
-    "esoc"
+    "esoc",
+    "eais",
+    "eeda",
+    "eiama",
+    "ecra"
    ]
   },
   {
@@ -807,7 +819,9 @@
     "pecb-27001-f",
     "pecb-31000-lrm",
     "pecb-27005-lrm",
-    "pecb-lcm"
+    "pecb-lcm",
+    "pecb-42001-li",
+    "pecb-nis2-li"
    ]
   },
   {
@@ -921,7 +935,8 @@
     "papa",
     "pipa",
     "psap",
-    "pwpe"
+    "pwpe",
+    "pmpa"
    ]
   },
   {

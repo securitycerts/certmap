@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-26",
+ "certification": {
+  "id": "ggrcl",
+  "acronym": "GGRCL",
+  "name": "GIAC GRC Leader",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/ggrcl.html",
+  "api": "https://certmap.dev/api/v1/certs/ggrcl.json",
+  "description": "Validates evaluating and managing enterprise risk, including AI risk, and running a cybersecurity governance, risk and compliance program. CyberLive certification currently sold only in presale with its course.",
+  "tags": [
+   "grc",
+   "risk",
+   "ai",
+   "cyberlive"
+  ],
+  "currency_note": "Presale with affiliated course only; general purchase from 2027-02-16",
+  "price_verified_at": null,
+  "price_original": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/grc-leader-ggrcl/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-26",
+ "certification": {
+  "id": "eiama",
+  "acronym": "eIAMA",
+  "name": "Certified Identity & Access Management Technologist",
+  "vendor": "INE",
+  "issuer": null,
+  "domain": "IAM",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/eiama.html",
+  "api": "https://certmap.dev/api/v1/certs/eiama.json",
+  "description": "Practical certification on implementing, operating and troubleshooting IAM controls, including federation, authorization, privileged access and IAM monitoring. Credential valid for three years.",
+  "tags": [
+   "iam",
+   "identity",
+   "hands-on"
+  ],
+  "currency_note": null,
+  "price_verified_at": null,
+  "price_original": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://ine.com/security/certifications/eiama-certification",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

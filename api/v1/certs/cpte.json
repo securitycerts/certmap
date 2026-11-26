@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "cpte",
   "acronym": "C)PTE",
@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Penetration Testing",
   "level": "intermediate",
-  "price_usd": 358,
+  "price_usd": 895,
   "hands_on": false,
   "page": "https://certmap.dev/certs/cpte.html",
   "api": "https://certmap.dev/api/v1/certs/cpte.json",
@@ -21,8 +21,8 @@
    "red-team",
    "pentest"
   ],
-  "currency_note": "Exam Combo regular price (prep guide, practice quiz, two attempts); on sale at $200 on 2026-11-10, the proctored ANSI / DoD 8140 version at $240",
-  "price_verified_at": "2026-11-10",
+  "currency_note": "Exam Combo regular price (prep guide, practice quiz, two attempts), standard exam; the proctored ANSI / DoD 8140 version lists $995; on sale at $500 and $600 on 2026-11-26",
+  "price_verified_at": "2026-11-26",
   "price_original": null,
   "duration_min": null,
   "exam_count": 1,

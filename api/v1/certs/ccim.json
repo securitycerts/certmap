@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "ccim",
   "acronym": "CCIM",
@@ -33,7 +33,7 @@
   "restricted_to": null,
   "prerequisites": [],
   "leads_to": [],
-  "official_url": "https://www.crest-approved.org/certification-careers/crest-certifications/crest-certified-incident-manager/",
+  "official_url": "https://www.crest-approved.org/skills-certifications-careers/crest-certified-incident-manager/",
   "comparisons": [],
   "study_plan": null
  }

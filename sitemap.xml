@@ -2,3452 +2,4092 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://certmap.dev/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://certmap.dev/map/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://certmap.dev/sponsors/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/api/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/list-beginner.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/list-intermediate.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/list-advanced.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/list-expert.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/list-free.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/list-under-300.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/list-hands-on.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/list-dod-8140.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/path-pentester.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/path-red-team-operator.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/path-soc-analyst.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/path-dfir-investigator.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/path-threat-intel-analyst.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/path-appsec-engineer.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/path-cloud-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/path-grc-manager.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-net-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-a-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-casp-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-linux-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-ccsp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-sscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cism.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cisa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-osep.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-osed.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-osda.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-gsec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-gpen.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-gcih.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-grem.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-gxpn.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-crto.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-crte.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-pnpt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cbbh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-ewpt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-ejpt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-aws-saa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-aws-scs.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cipp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-itil-f.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-oswa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-sc-900.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-sc-200.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-az-900.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-aws-clf.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cyberops-asc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-rhcsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-lpic-1.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-pjpt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-pwpa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-splunk-core.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-gcti.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-crtia.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-gosi.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-ccsk.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-fcp-nse4.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cka.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cks.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-crtp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cpent.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cjca.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-ecppt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-crtl.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-sc-500.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-kcsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-btl1.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-btl2.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-ccdl1.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-ccdl2.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-bscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-secops-cap.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cnpen.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-vault-associate.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-gh-advanced-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-lfcs.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cdp-devsecops.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-cfce.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-crta.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-coursera-google-cybersecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/plan-osip.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-net-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-net-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-net-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-net-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-net-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-net-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-net-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-net-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cism-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cism-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cism-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cism-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cism-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cism-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cism-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cism-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-net-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-net-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-net-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-net-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-net-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-net-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-net-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-net-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cc-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cc-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cc-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cc-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cc-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cc-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cc-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cc-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-sec-plus-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-sec-plus-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-sec-plus-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-sec-plus-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-sec-plus-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-sec-plus-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-sec-plus-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-sec-plus-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-aws-saa-vs-aws-sap.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-aws-saa-vs-aws-sap.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-aws-saa-vs-aws-sap.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-aws-saa-vs-aws-sap.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-aws-saa-vs-aws-sap.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-aws-saa-vs-aws-sap.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-aws-saa-vs-aws-sap.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-aws-saa-vs-aws-sap.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cpts-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cpts-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cpts-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cpts-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cpts-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cpts-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cpts-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cpts-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-sec-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-sec-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-sec-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-sec-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-sec-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-sec-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-sec-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-sec-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-sec-plus-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-sec-plus-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-sec-plus-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-sec-plus-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-sec-plus-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-sec-plus-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-sec-plus-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-sec-plus-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-sec-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-sec-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-sec-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-sec-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-sec-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-sec-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-sec-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-sec-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-ccsp-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-ccsp-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-ccsp-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-ccsp-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-ccsp-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-ccsp-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-ccsp-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-ccsp-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cipp-vs-cipm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cipp-vs-cipm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cipp-vs-cipm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cipp-vs-cipm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cipp-vs-cipm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cipp-vs-cipm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cipp-vs-cipm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cipp-vs-cipm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-sec-plus-vs-sscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-sec-plus-vs-sscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-sec-plus-vs-sscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-sec-plus-vs-sscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-sec-plus-vs-sscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-sec-plus-vs-sscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-sec-plus-vs-sscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-sec-plus-vs-sscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cisa-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cisa-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cisa-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cisa-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cisa-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cisa-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cisa-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cisa-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cism-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cism-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cism-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cism-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cism-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cism-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cism-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cism-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cysa-plus-vs-casp-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cysa-plus-vs-casp-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cysa-plus-vs-casp-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cysa-plus-vs-casp-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cysa-plus-vs-casp-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cysa-plus-vs-casp-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cysa-plus-vs-casp-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cysa-plus-vs-casp-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-gcfe-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-gcfe-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-gcfe-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-gcfe-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-gcfe-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-gcfe-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-gcfe-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-gcfe-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-pecb-27001-la-vs-pecb-27001-li.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-pecb-27001-la-vs-pecb-27001-li.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-pecb-27001-la-vs-pecb-27001-li.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-pecb-27001-la-vs-pecb-27001-li.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-pecb-27001-la-vs-pecb-27001-li.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-pecb-27001-la-vs-pecb-27001-li.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-pecb-27001-la-vs-pecb-27001-li.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-pecb-27001-la-vs-pecb-27001-li.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-btl1-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-btl1-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-btl1-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-btl1-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-btl1-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-btl1-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-btl1-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-btl1-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-ccna-vs-rhcsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-ccna-vs-rhcsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-ccna-vs-rhcsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-ccna-vs-rhcsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-ccna-vs-rhcsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-ccna-vs-rhcsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-ccna-vs-rhcsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-ccna-vs-rhcsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-ceh-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-ceh-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-ceh-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-ceh-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-ceh-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-ceh-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-ceh-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-ceh-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cgrc-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cgrc-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cgrc-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cgrc-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cgrc-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cgrc-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cgrc-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cgrc-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cisa-vs-cism.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cisa-vs-cism.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cisa-vs-cism.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cisa-vs-cism.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cisa-vs-cism.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cisa-vs-cism.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cisa-vs-cism.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cisa-vs-cism.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-coursera-google-cybersecurity-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-coursera-google-cybersecurity-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-coursera-google-cybersecurity-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-coursera-google-cybersecurity-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-coursera-google-cybersecurity-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-coursera-google-cybersecurity-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-coursera-google-cybersecurity-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-coursera-google-cybersecurity-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cysa-plus-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cysa-plus-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cysa-plus-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cysa-plus-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cysa-plus-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cysa-plus-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cysa-plus-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cysa-plus-vs-pentest-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-gcih-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-gcih-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-gcih-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-gcih-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-gcih-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-gcih-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-gcih-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-gcih-vs-gcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-a-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-a-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-a-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-a-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-a-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-a-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-a-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-a-plus-vs-ccna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-a-plus-vs-net-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-a-plus-vs-net-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-a-plus-vs-net-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-a-plus-vs-net-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-a-plus-vs-net-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-a-plus-vs-net-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-a-plus-vs-net-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-a-plus-vs-net-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-a-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-a-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-a-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-a-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-a-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-a-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-a-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-a-plus-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-aws-clf-vs-az-900.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-aws-clf-vs-az-900.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-aws-clf-vs-az-900.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-aws-clf-vs-az-900.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-aws-clf-vs-az-900.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-aws-clf-vs-az-900.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-aws-clf-vs-az-900.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-aws-clf-vs-az-900.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-az-500-vs-sc-200.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-az-500-vs-sc-200.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-az-500-vs-sc-200.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-az-500-vs-sc-200.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-az-500-vs-sc-200.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-az-500-vs-sc-200.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-az-500-vs-sc-200.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-az-500-vs-sc-200.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-btl1-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-btl1-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-btl1-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-btl1-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-btl1-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-btl1-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-btl1-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-btl1-vs-sec-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-casp-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-casp-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-casp-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-casp-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-casp-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-casp-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-casp-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-casp-plus-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-ccdl2-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-ccdl2-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-ccdl2-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-ccdl2-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-ccdl2-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-ccdl2-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-ccdl2-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-ccdl2-vs-cdsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-ceh-vs-chfi.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-ceh-vs-chfi.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-ceh-vs-chfi.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-ceh-vs-chfi.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-ceh-vs-chfi.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-ceh-vs-chfi.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-ceh-vs-chfi.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-ceh-vs-chfi.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cissp-vs-csslp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cissp-vs-csslp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cissp-vs-csslp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cissp-vs-csslp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cissp-vs-csslp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cissp-vs-csslp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cissp-vs-csslp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cissp-vs-csslp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-ejpt-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-ejpt-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-ejpt-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-ejpt-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-ejpt-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-ejpt-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-ejpt-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-ejpt-vs-ceh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-ejpt-vs-pjpt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-ejpt-vs-pjpt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-ejpt-vs-pjpt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-ejpt-vs-pjpt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-ejpt-vs-pjpt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-ejpt-vs-pjpt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-ejpt-vs-pjpt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-ejpt-vs-pjpt.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-oscp-vs-osep.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-oscp-vs-osep.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-oscp-vs-osep.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-oscp-vs-osep.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-oscp-vs-osep.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-oscp-vs-osep.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-oscp-vs-osep.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-oscp-vs-osep.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-oscp-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-oscp-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-oscp-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-oscp-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-oscp-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-oscp-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-oscp-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-oscp-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-osep-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-osep-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-osep-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-osep-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-osep-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-osep-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-osep-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-osep-vs-oswe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-rhcsa-vs-rhce.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-rhcsa-vs-rhce.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-rhcsa-vs-rhce.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-rhcsa-vs-rhce.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-rhcsa-vs-rhce.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-rhcsa-vs-rhce.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-rhcsa-vs-rhce.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-rhcsa-vs-rhce.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-sec-plus-vs-gsec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-sec-plus-vs-gsec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-sec-plus-vs-gsec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-sec-plus-vs-gsec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-sec-plus-vs-gsec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-sec-plus-vs-gsec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-sec-plus-vs-gsec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-sec-plus-vs-gsec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-a-plus-vs-itf-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-a-plus-vs-itf-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-a-plus-vs-itf-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-a-plus-vs-itf-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-a-plus-vs-itf-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-a-plus-vs-itf-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-a-plus-vs-itf-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-a-plus-vs-itf-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-aigp-vs-cipp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-aigp-vs-cipp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-aigp-vs-cipp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-aigp-vs-cipp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-aigp-vs-cipp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-aigp-vs-cipp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-aigp-vs-cipp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-aigp-vs-cipp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-aws-clf-vs-aws-saa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-aws-clf-vs-aws-saa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-aws-clf-vs-aws-saa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-aws-clf-vs-aws-saa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-aws-clf-vs-aws-saa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-aws-clf-vs-aws-saa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-aws-clf-vs-aws-saa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-aws-clf-vs-aws-saa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-az-500-vs-sc-500.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-az-500-vs-sc-500.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-az-500-vs-sc-500.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-az-500-vs-sc-500.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-az-500-vs-sc-500.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-az-500-vs-sc-500.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-az-500-vs-sc-500.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-az-500-vs-sc-500.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-az-900-vs-az-104.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-az-900-vs-az-104.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-az-900-vs-az-104.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-az-900-vs-az-104.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-az-900-vs-az-104.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-az-900-vs-az-104.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-az-900-vs-az-104.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-az-900-vs-az-104.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-btl1-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-btl1-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-btl1-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-btl1-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-btl1-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-btl1-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-btl1-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-btl1-vs-cysa-plus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cbbh-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cbbh-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cbbh-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cbbh-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cbbh-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cbbh-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cbbh-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cbbh-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cc-vs-coursera-google-cybersecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cc-vs-coursera-google-cybersecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cc-vs-coursera-google-cybersecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cc-vs-coursera-google-cybersecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cc-vs-coursera-google-cybersecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cc-vs-coursera-google-cybersecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cc-vs-coursera-google-cybersecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cc-vs-coursera-google-cybersecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cciso-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cciso-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cciso-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cciso-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cciso-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cciso-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cciso-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cciso-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-ccna-vs-cyberops-asc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-ccna-vs-cyberops-asc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-ccna-vs-cyberops-asc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-ccna-vs-cyberops-asc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-ccna-vs-cyberops-asc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-ccna-vs-cyberops-asc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-ccna-vs-cyberops-asc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-ccna-vs-cyberops-asc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-ccnp-cyber-vs-ccnp-sec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-ccnp-cyber-vs-ccnp-sec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-ccnp-cyber-vs-ccnp-sec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-ccnp-cyber-vs-ccnp-sec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-ccnp-cyber-vs-ccnp-sec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-ccnp-cyber-vs-ccnp-sec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-ccnp-cyber-vs-ccnp-sec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-ccnp-cyber-vs-ccnp-sec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-ccsk-vs-ccsp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-ccsk-vs-ccsp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-ccsk-vs-ccsp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-ccsk-vs-ccsp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-ccsk-vs-ccsp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-ccsk-vs-ccsp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-ccsk-vs-ccsp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-ccsk-vs-ccsp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cdsa-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cdsa-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cdsa-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cdsa-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cdsa-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cdsa-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cdsa-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cdsa-vs-cpts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-ceh-vs-cpent.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-ceh-vs-cpent.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-ceh-vs-cpent.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-ceh-vs-cpent.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-ceh-vs-cpent.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-ceh-vs-cpent.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-ceh-vs-cpent.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-ceh-vs-cpent.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-ceh-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-ceh-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-ceh-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-ceh-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-ceh-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-ceh-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-ceh-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-ceh-vs-oscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cgeit-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cgeit-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cgeit-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cgeit-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cgeit-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cgeit-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cgeit-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cgeit-vs-crisc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/compare-cgrc-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/es/compare-cgrc-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/fr/compare-cgrc-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/de/compare-cgrc-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/it/compare-cgrc-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ar/compare-cgrc-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/ko/compare-cgrc-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/he/compare-cgrc-vs-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-oscp-vs-pnpt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-oscp-vs-pnpt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-oscp-vs-pnpt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-oscp-vs-pnpt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-oscp-vs-pnpt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-oscp-vs-pnpt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-oscp-vs-pnpt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-oscp-vs-pnpt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-gpen-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-gpen-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-gpen-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-gpen-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-gpen-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-gpen-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-gpen-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-gpen-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-ecppt-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-ecppt-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-ecppt-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-ecppt-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-ecppt-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-ecppt-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-ecppt-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-ecppt-vs-oscp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-cwee-vs-oswe.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-cwee-vs-oswe.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-cwee-vs-oswe.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-cwee-vs-oswe.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-cwee-vs-oswe.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-cwee-vs-oswe.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-cwee-vs-oswe.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-cwee-vs-oswe.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-crte-vs-crto.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-crte-vs-crto.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-crte-vs-crto.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-crte-vs-crto.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-crte-vs-crto.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-crte-vs-crto.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-crte-vs-crto.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-crte-vs-crto.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-cisa-vs-cissp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-cisa-vs-cissp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-cisa-vs-cissp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-cisa-vs-cissp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-cisa-vs-cissp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-cisa-vs-cissp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-cisa-vs-cissp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-cisa-vs-cissp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-cisa-vs-iia-cia.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-cisa-vs-iia-cia.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-cisa-vs-iia-cia.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-cisa-vs-iia-cia.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-cisa-vs-iia-cia.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-cisa-vs-iia-cia.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-cisa-vs-iia-cia.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-cisa-vs-iia-cia.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-cciso-vs-cism.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-cciso-vs-cism.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-cciso-vs-cism.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-cciso-vs-cism.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-cciso-vs-cism.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-cciso-vs-cism.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-cciso-vs-cism.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-cciso-vs-cism.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-aaism-vs-aigp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-aaism-vs-aigp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-aaism-vs-aigp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-aaism-vs-aigp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-aaism-vs-aigp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-aaism-vs-aigp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-aaism-vs-aigp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-aaism-vs-aigp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-cipm-vs-cipt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-cipm-vs-cipt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-cipm-vs-cipt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-cipm-vs-cipt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-cipm-vs-cipt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-cipm-vs-cipt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-cipm-vs-cipt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-cipm-vs-cipt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-aws-scs-vs-gcp-pse.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-aws-scs-vs-gcp-pse.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-aws-scs-vs-gcp-pse.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-aws-scs-vs-gcp-pse.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-aws-scs-vs-gcp-pse.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-aws-scs-vs-gcp-pse.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-aws-scs-vs-gcp-pse.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-aws-scs-vs-gcp-pse.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-aws-scs-vs-ccsp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-aws-scs-vs-ccsp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-aws-scs-vs-ccsp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-aws-scs-vs-ccsp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-aws-scs-vs-ccsp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-aws-scs-vs-ccsp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-aws-scs-vs-ccsp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-aws-scs-vs-ccsp.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-aws-scs-vs-ccsk.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-aws-scs-vs-ccsk.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-aws-scs-vs-ccsk.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-aws-scs-vs-ccsk.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-aws-scs-vs-ccsk.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-aws-scs-vs-ccsk.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-aws-scs-vs-ccsk.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-aws-scs-vs-ccsk.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-cka-vs-cks.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-cka-vs-cks.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-cka-vs-cks.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-cka-vs-cks.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-cka-vs-cks.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-cka-vs-cks.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-cka-vs-cks.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-cka-vs-cks.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-ctia-vs-gcti.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-ctia-vs-gcti.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-ctia-vs-gcti.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-ctia-vs-gcti.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-ctia-vs-gcti.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-ctia-vs-gcti.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-ctia-vs-gcti.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-ctia-vs-gcti.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/compare-gicsp-vs-gridv.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/es/compare-gicsp-vs-gridv.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/fr/compare-gicsp-vs-gridv.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/de/compare-gicsp-vs-gridv.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/it/compare-gicsp-vs-gridv.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ar/compare-gicsp-vs-gridv.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/ko/compare-gicsp-vs-gridv.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/he/compare-gicsp-vs-gridv.html</loc>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-communication-network-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-iam.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-security-architecture-engineering.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-asset-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-security-risk-management.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-software-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-security-operations.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-cyber-threat-intelligence.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-osint.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-cloud-sysops.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-nix.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-ics-iot.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-grc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-forensics.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-incident-handling.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-penetration-testing.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/domain-exploitation.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-comptia.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-isc2.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-isaca.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-offsec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-giac.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-ec-council.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-zero-point-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-altered-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-tcm-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-hack-the-box.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-ine.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-aws.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-microsoft.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-google.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-cisco.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-opentext.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-cellebrite.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-magnet-forensics.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-okta.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-sailpoint.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-iapp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-peoplecert.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-red-hat.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-lpi.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-splunk.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-isa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-mcsi.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-crest.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-arcx.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-csa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-mcafee-institute.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-trm-labs.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-palo-alto-networks.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-fortinet.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-check-point.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-cncf.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-vmware.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-juniper.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-wireshark.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-centri.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-cyberdefenders.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-portswigger.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-the-secops-group.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-cwnp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-pecb.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-hashicorp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-github.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-linux-foundation.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-practical-devsecops.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-sabsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-the-open-group.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-dri-international.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-pci-ssc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-crowdstrike.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-iacis.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-isfce.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-chainalysis.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-cyberwarfare-labs.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-zscaler.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-elastic.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-apisec-university.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-8ksec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-coursera.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-edx.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-inteltechniques.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-osmosis.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-zsecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-social-links.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-basel-institute.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-osint-industries.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-white-knight-labs.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-tryhackme.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-13cubed.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-mile2.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-hacktricks-training.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-sans.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-learn-prompting.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-certnexus.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-mandiant.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-exin.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-dama-international.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-oceg.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-bci.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-iia.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-shared-assessments.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-hitrust.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-fair-institute.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-f5.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-nozomi-networks.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-asis-international.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-nacd.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-tenable.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/vendor-rapid7.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -3612,7 +4252,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/gsna.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -3692,7 +4332,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/az-500.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -3742,12 +4382,12 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/ccfp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/mcfe.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -3757,7 +4397,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/sailpoint-eng.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -3777,7 +4417,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/oswp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -3787,7 +4427,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/osmr.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -3937,7 +4577,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/iec-62443.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -3977,22 +4617,22 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/mcfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/mcrta.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/mnsa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/mwasp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4007,7 +4647,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/mire.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4027,7 +4667,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/mase.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4062,7 +4702,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/ccak.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4082,7 +4722,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/cei-mcafee.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4122,12 +4762,12 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/cdpo.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/osee.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4157,7 +4797,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/klcp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4197,12 +4837,12 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/pcnse.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/pccse.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4237,7 +4877,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/vcp-dcv.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4277,7 +4917,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/gse.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4542,7 +5182,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/cct-inf.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4562,7 +5202,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/cisco-eh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4692,12 +5332,12 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/pecb-27001-li.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/pecb-27001-la.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4707,7 +5347,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/gh-advanced-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4732,7 +5372,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/sabsa-scf.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4742,7 +5382,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/cbcp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4752,17 +5392,17 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/ccfa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/ccfr.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/ccfh.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4777,7 +5417,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/chainalysis-cci.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4807,37 +5447,37 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/omse.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/chainalysis-daf.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/chainalysis-ccai.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/chainalysis-elite.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/chainalysis-cca.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/chainalysis-ccs.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/chainalysis-asc.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4847,77 +5487,77 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-ibm-cybersecurity-analyst.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-microsoft-cybersecurity-analyst.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-microsoft-sc-100-architecture.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-google-cloud-cybersecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-ibm-ethical-hacking.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-ec-council-infosec-analyst.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-ibm-isc2-cybersecurity-specialist.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-isc2-certified-in-cybersecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-isc2-sscp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-nyu-intro-cyber-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-cisco-cyberops-fundamentals.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-fortinet-network-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-infosec-cissp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-infosec-python-cybersecurity.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/coursera-colorado-network-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -4987,17 +5627,17 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/ccpa.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/ccme.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/cert-f.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5032,12 +5672,12 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/co3.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/sl-ocp1.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5047,7 +5687,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/osint-industries-training.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5242,22 +5882,22 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/ccim.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/cct-app.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/ccrts.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/ccrtm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5297,7 +5937,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/cpte.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5322,7 +5962,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/ssap.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5522,52 +6162,52 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/caisr.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/camre.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/cimre.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/cmmre.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/cmse.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/oaee.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/cise.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/case-8ksec.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/cisr.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/casr.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5597,12 +6237,12 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/ccis.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/cccs.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5627,12 +6267,12 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/arcx-ptia.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/ztca.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5642,72 +6282,72 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/fip.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/exin-pdpf.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/exin-pdpp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/cdmp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/ex415.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/pecb-27001-f.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/pecb-31000-lrm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/pecb-27005-lrm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/pecb-lcm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/grca.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/mbcp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/abcp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/dri-ccrp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/cbci.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5722,7 +6362,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/ctpra.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5732,7 +6372,7 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/fair-ccrp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5757,22 +6397,22 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/nse7-secure-networking.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/nse7-sase.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/nse8.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/fortinet-ot-security.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5807,17 +6447,17 @@
   </url>
   <url>
     <loc>https://certmap.dev/certs/sabsa-scp.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/sabsa-scm.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://certmap.dev/certs/togaf-irs.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -5838,6 +6478,81 @@
   <url>
     <loc>https://certmap.dev/certs/insightvm-admin.html</loc>
     <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/gpyc.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/gced.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/gccc.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/gisp.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/ggrcl.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/gaipt.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/caipm.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/ec-aie.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/eais.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/eeda.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/eiama.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/ecra.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/pmpa.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/pecb-42001-li.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://certmap.dev/certs/pecb-nis2-li.html</loc>
+    <lastmod>2026-11-26</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>

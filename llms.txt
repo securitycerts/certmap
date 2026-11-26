@@ -1,6 +1,6 @@
 # cert/map
 
-> Open-source roadmap and study organiser for cybersecurity certifications: 478 cybersecurity certifications mapped across 17 domains and four seniority tiers, each with its current exam price, prerequisites and renewal cycle, and for the most sought-after ones an ordered study plan with exam guides, courses, reading, direct links to free practice labs, open-source projects and practice questions. Compare two certifications side by side, build a personal roadmap, annotate it and share it with a link.
+> Open-source roadmap and study organiser for cybersecurity certifications: 493 cybersecurity certifications mapped across 17 domains and four seniority tiers, each with its current exam price, prerequisites and renewal cycle, and for the most sought-after ones an ordered study plan with exam guides, courses, reading, direct links to free practice labs, open-source projects and practice questions. Compare two certifications side by side, build a personal roadmap, annotate it and share it with a link.
 
 cert/map is a community-maintained reference for the cybersecurity certification landscape and a tool for planning how to study for it. It answers three questions: which certification to take (the roadmap and the comparisons), in what order (roadmaps ordered by prerequisite, with cost and study time), and how to prepare each one (study plans whose links are checked). The entire dataset lives in CSV files under `data/`; the browser parses them at load time, so the data is also directly machine-readable for anyone integrating it. The site is at https://certmap.dev/.
 
@@ -19,15 +19,15 @@ cert/map is a community-maintained reference for the cybersecurity certification
 - [Dataset as JSON](https://certmap.dev/data/certs.json) and [as CSV](https://certmap.dev/data/certs.csv)
 - [Preparation resources (CSV)](https://certmap.dev/data/resources.csv): exam guides, courses, labs and books per certification, 655 links for 79 certifications
 - Study plans: 79 certifications have an ordered plan at `https://certmap.dev/certs/plan-<id>.html`, for example https://certmap.dev/certs/plan-oscp.html
-- [Comparison pairs (CSV)](https://certmap.dev/data/comparisons.csv): the 60 pairs that have a side-by-side page
+- [Comparison pairs (CSV)](https://certmap.dev/data/comparisons.csv): the 76 pairs that have a side-by-side page
 - Comparison pages exist in eight languages. English is under `certs/`; the others use the same file name under `es/`, `fr/`, `de/`, `it/`, `ar/`, `ko/` and `he/`, for example https://certmap.dev/es/compare-net-plus-vs-ccna.html
-- [Beginner cybersecurity certifications](https://certmap.dev/certs/list-beginner.html): 91 certifications
-- [Intermediate cybersecurity certifications](https://certmap.dev/certs/list-intermediate.html): 192 certifications
-- [Advanced cybersecurity certifications](https://certmap.dev/certs/list-advanced.html): 132 certifications
+- [Beginner cybersecurity certifications](https://certmap.dev/certs/list-beginner.html): 95 certifications
+- [Intermediate cybersecurity certifications](https://certmap.dev/certs/list-intermediate.html): 200 certifications
+- [Advanced cybersecurity certifications](https://certmap.dev/certs/list-advanced.html): 135 certifications
 - [Expert cybersecurity certifications](https://certmap.dev/certs/list-expert.html): 63 certifications
 - [Free cybersecurity certifications](https://certmap.dev/certs/list-free.html): 3 certifications
-- [Cybersecurity certifications under $300](https://certmap.dev/certs/list-under-300.html): 110 certifications
-- [Hands-on cybersecurity certifications with practical exams](https://certmap.dev/certs/list-hands-on.html): 193 certifications
+- [Cybersecurity certifications under $300](https://certmap.dev/certs/list-under-300.html): 111 certifications
+- [Hands-on cybersecurity certifications with practical exams](https://certmap.dev/certs/list-hands-on.html): 201 certifications
 - [DoD 8140 approved cybersecurity certifications](https://certmap.dev/certs/list-dod-8140.html): 49 certifications
 - [Penetration tester certification path](https://certmap.dev/certs/path-pentester.html): eJPT, PJPT, PNPT, OSCP+, OSEP
 - [Red team operator certification path](https://certmap.dev/certs/path-red-team-operator.html): CRTO, OSCP+, OSED, OSWE, OSEP
@@ -97,6 +97,22 @@ cert/map is a community-maintained reference for the cybersecurity certification
 - [CEH vs OSCP+](https://certmap.dev/certs/compare-ceh-vs-oscp.html)
 - [CGEIT vs CRISC](https://certmap.dev/certs/compare-cgeit-vs-crisc.html)
 - [CGRC vs CISSP](https://certmap.dev/certs/compare-cgrc-vs-cissp.html)
+- [OSCP+ vs PNPT](https://certmap.dev/certs/compare-oscp-vs-pnpt.html)
+- [GPEN vs OSCP+](https://certmap.dev/certs/compare-gpen-vs-oscp.html)
+- [eCPPT vs OSCP+](https://certmap.dev/certs/compare-ecppt-vs-oscp.html)
+- [CWEE vs OSWE](https://certmap.dev/certs/compare-cwee-vs-oswe.html)
+- [CRTE vs CRTO](https://certmap.dev/certs/compare-crte-vs-crto.html)
+- [CISA vs CISSP](https://certmap.dev/certs/compare-cisa-vs-cissp.html)
+- [CISA vs CIA](https://certmap.dev/certs/compare-cisa-vs-iia-cia.html)
+- [CCISO vs CISM](https://certmap.dev/certs/compare-cciso-vs-cism.html)
+- [AAISM vs AIGP](https://certmap.dev/certs/compare-aaism-vs-aigp.html)
+- [CIPM vs CIPT](https://certmap.dev/certs/compare-cipm-vs-cipt.html)
+- [SCS-C03 vs PSE](https://certmap.dev/certs/compare-aws-scs-vs-gcp-pse.html)
+- [SCS-C03 vs CCSP](https://certmap.dev/certs/compare-aws-scs-vs-ccsp.html)
+- [SCS-C03 vs CCSK](https://certmap.dev/certs/compare-aws-scs-vs-ccsk.html)
+- [CKA vs CKS](https://certmap.dev/certs/compare-cka-vs-cks.html)
+- [CTIA vs GCTI](https://certmap.dev/certs/compare-ctia-vs-gcti.html)
+- [GICSP vs GRID](https://certmap.dev/certs/compare-gicsp-vs-gridv.html)
 - [Communication & Network Security certifications](https://certmap.dev/certs/domain-communication-network-security.html)
 - [IAM certifications](https://certmap.dev/certs/domain-iam.html)
 - [Security Architecture & Engineering certifications](https://certmap.dev/certs/domain-security-architecture-engineering.html)
@@ -145,14 +161,14 @@ Each certification has its own page at `https://certmap.dev/certs/<id>.html`.
 - [CyberWarFare Labs certifications](https://certmap.dev/certs/vendor-cyberwarfare-labs.html): 21
 - [DAMA International certifications](https://certmap.dev/certs/vendor-dama-international.html): 1
 - [DRI International certifications](https://certmap.dev/certs/vendor-dri-international.html): 4
-- [EC-Council certifications](https://certmap.dev/certs/vendor-ec-council.html): 21
+- [EC-Council certifications](https://certmap.dev/certs/vendor-ec-council.html): 23
 - [edX certifications](https://certmap.dev/certs/vendor-edx.html): 13
 - [Elastic certifications](https://certmap.dev/certs/vendor-elastic.html): 1
 - [EXIN certifications](https://certmap.dev/certs/vendor-exin.html): 2
 - [F5 certifications](https://certmap.dev/certs/vendor-f5.html): 2
 - [FAIR Institute certifications](https://certmap.dev/certs/vendor-fair-institute.html): 1
 - [Fortinet certifications](https://certmap.dev/certs/vendor-fortinet.html): 6
-- [GIAC certifications](https://certmap.dev/certs/vendor-giac.html): 53
+- [GIAC certifications](https://certmap.dev/certs/vendor-giac.html): 59
 - [GitHub certifications](https://certmap.dev/certs/vendor-github.html): 1
 - [Google certifications](https://certmap.dev/certs/vendor-google.html): 6
 - [Hack The Box certifications](https://certmap.dev/certs/vendor-hack-the-box.html): 9
@@ -162,7 +178,7 @@ Each certification has its own page at `https://certmap.dev/certs/<id>.html`.
 - [IACIS certifications](https://certmap.dev/certs/vendor-iacis.html): 3
 - [IAPP certifications](https://certmap.dev/certs/vendor-iapp.html): 5
 - [IIA certifications](https://certmap.dev/certs/vendor-iia.html): 1
-- [INE certifications](https://certmap.dev/certs/vendor-ine.html): 9
+- [INE certifications](https://certmap.dev/certs/vendor-ine.html): 13
 - [IntelTechniques certifications](https://certmap.dev/certs/vendor-inteltechniques.html): 1
 - [ISA certifications](https://certmap.dev/certs/vendor-isa.html): 1
 - [ISACA certifications](https://certmap.dev/certs/vendor-isaca.html): 9
@@ -188,7 +204,7 @@ Each certification has its own page at `https://certmap.dev/certs/<id>.html`.
 - [OSMOSIS certifications](https://certmap.dev/certs/vendor-osmosis.html): 1
 - [Palo Alto Networks certifications](https://certmap.dev/certs/vendor-palo-alto-networks.html): 9
 - [PCI SSC certifications](https://certmap.dev/certs/vendor-pci-ssc.html): 1
-- [PECB certifications](https://certmap.dev/certs/vendor-pecb.html): 6
+- [PECB certifications](https://certmap.dev/certs/vendor-pecb.html): 8
 - [PeopleCert certifications](https://certmap.dev/certs/vendor-peoplecert.html): 3
 - [PortSwigger certifications](https://certmap.dev/certs/vendor-portswigger.html): 1
 - [Practical DevSecOps certifications](https://certmap.dev/certs/vendor-practical-devsecops.html): 7
@@ -200,7 +216,7 @@ Each certification has its own page at `https://certmap.dev/certs/<id>.html`.
 - [Shared Assessments certifications](https://certmap.dev/certs/vendor-shared-assessments.html): 2
 - [Social Links certifications](https://certmap.dev/certs/vendor-social-links.html): 1
 - [Splunk certifications](https://certmap.dev/certs/vendor-splunk.html): 5
-- [TCM Security certifications](https://certmap.dev/certs/vendor-tcm-security.html): 11
+- [TCM Security certifications](https://certmap.dev/certs/vendor-tcm-security.html): 12
 - [Tenable certifications](https://certmap.dev/certs/vendor-tenable.html): 3
 - [The Open Group certifications](https://certmap.dev/certs/vendor-the-open-group.html): 2
 - [The SecOps Group certifications](https://certmap.dev/certs/vendor-the-secops-group.html): 23

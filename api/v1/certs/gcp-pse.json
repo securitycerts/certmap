@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "gcp-pse",
   "acronym": "PSE",
@@ -33,7 +33,12 @@
   "prerequisites": [],
   "leads_to": [],
   "official_url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
-  "comparisons": [],
+  "comparisons": [
+   {
+    "with": "aws-scs",
+    "page": "https://certmap.dev/certs/compare-aws-scs-vs-gcp-pse.html"
+   }
+  ],
   "study_plan": null
  }
 }

@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "iec-62443",
   "acronym": "IEC 62443",
@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "ICS/IoT",
   "level": "beginner",
-  "price_usd": 795,
+  "price_usd": 2268,
   "hands_on": false,
   "page": "https://certmap.dev/certs/iec-62443.html",
   "api": "https://certmap.dev/api/v1/certs/iec-62443.json",
@@ -21,8 +21,8 @@
    "ics",
    "ot"
   ],
-  "currency_note": "Course + exam",
-  "price_verified_at": null,
+  "currency_note": "IC32M self-paced course list price, includes one exam registration; ISA member $1,814; instructor-led IC32E and virtual IC32V list $2,269",
+  "price_verified_at": "2026-11-26",
   "price_original": null,
   "duration_min": 180,
   "exam_count": 1,

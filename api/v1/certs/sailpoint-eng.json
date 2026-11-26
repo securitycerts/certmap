@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "sailpoint-eng",
   "acronym": "SP-IIQ",
@@ -32,7 +32,7 @@
   "restricted_to": null,
   "prerequisites": [],
   "leads_to": [],
-  "official_url": "https://www.sailpoint.com/services/training/certification/",
+  "official_url": "https://university.sailpoint.com/sailpoint-certified-identityiq-engineer",
   "comparisons": [],
   "study_plan": null
  }

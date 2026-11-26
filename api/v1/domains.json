@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "count": 17,
  "domains": [
   {
@@ -66,7 +66,8 @@
     "ccis",
     "sailpoint-iiq-associate",
     "sailpoint-isa",
-    "vault-ops-advanced"
+    "vault-ops-advanced",
+    "eiama"
    ]
   },
   {
@@ -145,7 +146,9 @@
     "cbci",
     "fair-ccrp",
     "asis-cpp",
-    "nacd-cyber-risk"
+    "nacd-cyber-risk",
+    "gisp",
+    "ec-aie"
    ]
   },
   {
@@ -186,7 +189,9 @@
     "csc-devsecops",
     "cde-devsecops",
     "csse",
-    "ctmp"
+    "ctmp",
+    "gpyc",
+    "eais"
    ]
   },
   {
@@ -247,7 +252,9 @@
     "cpta-v2",
     "tenable-vm-specialist",
     "tenable-sc-specialist",
-    "insightvm-admin"
+    "insightvm-admin",
+    "gced",
+    "eeda"
    ]
   },
   {
@@ -415,7 +422,13 @@
     "ctprp",
     "ctpra",
     "ccsfp",
-    "itil4-ism"
+    "itil4-ism",
+    "gccc",
+    "ggrcl",
+    "caipm",
+    "ecra",
+    "pecb-42001-li",
+    "pecb-nis2-li"
    ]
   },
   {
@@ -564,7 +577,9 @@
     "copo",
     "cmse",
     "cise",
-    "case-8ksec"
+    "case-8ksec",
+    "gaipt",
+    "pmpa"
    ]
   },
   {

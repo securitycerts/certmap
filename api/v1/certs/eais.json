@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-26",
+ "certification": {
+  "id": "eais",
+  "acronym": "eAIS",
+  "name": "AI Systems Security Specialist",
+  "vendor": "INE",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "beginner",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/eais.html",
+  "api": "https://certmap.dev/api/v1/certs/eais.json",
+  "description": "Practical certification on identifying, testing and securing AI-powered systems, covering prompt injection, data exfiltration, tool misuse and secure AI design. Launched in June 2026; credential valid for three years.",
+  "tags": [
+   "ai",
+   "ai-security",
+   "llm"
+  ],
+  "currency_note": "Requires INE subscription plus exam voucher",
+  "price_verified_at": null,
+  "price_original": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 3,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://ine.com/security/certifications/eais-certification",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

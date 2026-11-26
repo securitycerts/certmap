@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "mcfa",
   "acronym": "MCFA",
@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Forensics",
   "level": "advanced",
-  "price_usd": 200,
+  "price_usd": null,
   "hands_on": false,
   "page": "https://certmap.dev/certs/mcfa.html",
   "api": "https://certmap.dev/api/v1/certs/mcfa.json",
@@ -20,7 +20,7 @@
   "tags": [
    "forensics"
   ],
-  "currency_note": null,
+  "currency_note": "No longer in Magnet Forensics' certification list (checked 2026-11-26); kept for existing holders",
   "price_verified_at": null,
   "price_original": null,
   "duration_min": 180,

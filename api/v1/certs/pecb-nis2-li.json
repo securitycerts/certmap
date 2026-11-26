@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-26",
+ "certification": {
+  "id": "pecb-nis2-li",
+  "acronym": "NIS 2 LI",
+  "name": "PECB Certified NIS 2 Directive Lead Implementer",
+  "vendor": "PECB",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pecb-nis2-li.html",
+  "api": "https://certmap.dev/api/v1/certs/pecb-nis2-li.json",
+  "description": "Certification on planning and implementing NIS 2 Directive requirements, including cybersecurity risk management, controls, incident and crisis management. Exam follows a five-day course.",
+  "tags": [
+   "nis2",
+   "eu",
+   "compliance",
+   "grc"
+  ],
+  "currency_note": null,
+  "price_verified_at": null,
+  "price_original": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://pecb.com/en/education-and-certification-for-individuals/nis-2-directive/nis-2-directive-lead-implementer",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

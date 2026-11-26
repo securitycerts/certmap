@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-26",
+ "certification": {
+  "id": "gpyc",
+  "acronym": "GPYC",
+  "name": "GIAC Python Coder",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Software Security",
+  "level": "intermediate",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gpyc.html",
+  "api": "https://certmap.dev/api/v1/certs/gpyc.json",
+  "description": "Validates the ability to write and analyze Python code for security work, including packet and data analysis, web and database interaction and AI-assisted workflows. Proctored exam of 75 questions in 2 hours, 67% to pass.",
+  "tags": [
+   "python",
+   "coding",
+   "automation"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "price_original": null,
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/python-coder-gpyc/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

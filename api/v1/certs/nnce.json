@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "nnce",
   "acronym": "NNCE",
@@ -13,7 +13,7 @@
   "domain": "ICS/IoT",
   "level": "intermediate",
   "price_usd": 315,
-  "hands_on": false,
+  "hands_on": true,
   "page": "https://certmap.dev/certs/nnce.html",
   "api": "https://certmap.dev/api/v1/certs/nnce.json",
   "description": "Certification on deploying and using Nozomi Networks Guardian for OT and IoT network monitoring. Timed online exam of 50 randomized questions in three hours, answered with the help of a dedicated lab environment.",
@@ -35,7 +35,7 @@
   "restricted_to": null,
   "prerequisites": [],
   "leads_to": [],
-  "official_url": "https://academy.nozominetworks.com/nozomi-networks-certified-engineer-stand-alone-exam",
+  "official_url": "https://academy.nozominetworks.com/certified-engineer-exam",
   "comparisons": [],
   "study_plan": null
  }

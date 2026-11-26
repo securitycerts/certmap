@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "cciso",
   "acronym": "CCISO",
@@ -37,6 +37,10 @@
    {
     "with": "cissp",
     "page": "https://certmap.dev/certs/compare-cciso-vs-cissp.html"
+   },
+   {
+    "with": "cism",
+    "page": "https://certmap.dev/certs/compare-cciso-vs-cism.html"
    }
   ],
   "study_plan": null

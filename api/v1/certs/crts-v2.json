@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "crts-v2",
   "acronym": "CRTS V2",
@@ -33,7 +33,7 @@
   "restricted_to": null,
   "prerequisites": [],
   "leads_to": [],
-  "official_url": "https://cyberwarfare.live/certifications/red-team-specialist-crts%20v2",
+  "official_url": "https://cyberwarfare.live/certifications/red-team-specialist-crts-v2",
   "comparisons": [],
   "study_plan": null
  }

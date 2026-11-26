@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "iia-cia",
   "acronym": "CIA",
@@ -34,7 +34,12 @@
   "prerequisites": [],
   "leads_to": [],
   "official_url": "https://www.theiia.org/en/certifications/cia/",
-  "comparisons": [],
+  "comparisons": [
+   {
+    "with": "cisa",
+    "page": "https://certmap.dev/certs/compare-cisa-vs-iia-cia.html"
+   }
+  ],
   "study_plan": null
  }
 }

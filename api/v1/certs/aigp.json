@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "aigp",
   "acronym": "AIGP",
@@ -28,7 +28,7 @@
   "duration_min": 165,
   "exam_count": 1,
   "validity_years": 2,
-  "renewal_cost": null,
+  "renewal_cost": 250,
   "dod_8140": false,
   "restricted_to": null,
   "prerequisites": [],
@@ -38,6 +38,10 @@
    {
     "with": "cipp",
     "page": "https://certmap.dev/certs/compare-aigp-vs-cipp.html"
+   },
+   {
+    "with": "aaism",
+    "page": "https://certmap.dev/certs/compare-aaism-vs-aigp.html"
    }
   ],
   "study_plan": null

@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "cka",
   "acronym": "CKA",
@@ -36,7 +36,12 @@
    "cks"
   ],
   "official_url": "https://www.cncf.io/training/certification/cka/",
-  "comparisons": [],
+  "comparisons": [
+   {
+    "with": "cks",
+    "page": "https://certmap.dev/certs/compare-cka-vs-cks.html"
+   }
+  ],
   "study_plan": {
    "page": "https://certmap.dev/certs/plan-cka.html",
    "phases": [

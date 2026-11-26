@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-26",
+ "certification": {
+  "id": "pecb-42001-li",
+  "acronym": "ISO 42001 LI",
+  "name": "PECB Certified ISO/IEC 42001 Lead Implementer",
+  "vendor": "PECB",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/pecb-42001-li.html",
+  "api": "https://certmap.dev/api/v1/certs/pecb-42001-li.json",
+  "description": "Certification on implementing an artificial intelligence management system (AIMS) based on ISO/IEC 42001. Exam follows a five-day course; credential levels depend on AI and project experience.",
+  "tags": [
+   "ai",
+   "iso",
+   "grc"
+  ],
+  "currency_note": null,
+  "price_verified_at": null,
+  "price_original": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://pecb.com/en/education-and-certification-for-individuals/iso-iec-42001/iso-iec-42001-lead-implementer",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "cdmp",
   "acronym": "CDMP",
@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Asset Security",
   "level": "intermediate",
-  "price_usd": 311,
+  "price_usd": 300,
   "hands_on": false,
   "page": "https://certmap.dev/certs/cdmp.html",
   "api": "https://certmap.dev/api/v1/certs/cdmp.json",
@@ -23,7 +23,7 @@
    "dmbok"
   ],
   "currency_note": "Per exam; Associate level needs 1 exam (Data Management Fundamentals), Practitioner and Master need 3",
-  "price_verified_at": "2026-11-10",
+  "price_verified_at": "2026-11-26",
   "price_original": null,
   "duration_min": 90,
   "exam_count": 1,

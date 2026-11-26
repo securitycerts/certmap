@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "ccsp",
   "acronym": "CCSP",
@@ -41,6 +41,10 @@
    {
     "with": "ccsk",
     "page": "https://certmap.dev/certs/compare-ccsk-vs-ccsp.html"
+   },
+   {
+    "with": "aws-scs",
+    "page": "https://certmap.dev/certs/compare-aws-scs-vs-ccsp.html"
    }
   ],
   "study_plan": {

@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "ceh",
   "acronym": "CEH",
@@ -33,7 +33,7 @@
   "leads_to": [
    "lpt"
   ],
-  "official_url": "https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/",
+  "official_url": "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/",
   "comparisons": [
    {
     "with": "sec-plus",

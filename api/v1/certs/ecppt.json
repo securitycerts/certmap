@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "ecppt",
   "acronym": "eCPPT",
@@ -33,7 +33,12 @@
   "prerequisites": [],
   "leads_to": [],
   "official_url": "https://ine.com/security/certifications/ecppt-certification",
-  "comparisons": [],
+  "comparisons": [
+   {
+    "with": "oscp",
+    "page": "https://certmap.dev/certs/compare-ecppt-vs-oscp.html"
+   }
+  ],
   "study_plan": {
    "page": "https://certmap.dev/certs/plan-ecppt.html",
    "phases": [

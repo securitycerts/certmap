@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "cpia",
   "acronym": "CPIA",
@@ -40,7 +40,7 @@
   "leads_to": [
    "cria"
   ],
-  "official_url": "https://www.crest-approved.org/certification-careers/crest-certifications/crest-practitioner-intrusion-analyst/",
+  "official_url": "https://www.crest-approved.org/skills-certifications-careers/crest-practitioner-intrusion-analyst/",
   "comparisons": [],
   "study_plan": null
  }

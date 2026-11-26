@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-26",
+ "certification": {
+  "id": "caipm",
+  "acronym": "CAIPM",
+  "name": "Certified AI Program Manager",
+  "vendor": "EC-Council",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": null,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/caipm.html",
+  "api": "https://certmap.dev/api/v1/certs/caipm.json",
+  "description": "Certification for professionals who own AI program decisions and execution across business, technology, data and risk. Exam of 100 questions in 3 hours; eligibility needs 2 years of InfoSec experience or official training.",
+  "tags": [
+   "ai",
+   "governance",
+   "management"
+  ],
+  "currency_note": "USD 100 non-refundable application fee unless trained through EC-Council",
+  "price_verified_at": null,
+  "price_original": null,
+  "duration_min": 180,
+  "exam_count": 1,
+  "validity_years": 0,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://cert.eccouncil.org/certified-ai-program-manager.html",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

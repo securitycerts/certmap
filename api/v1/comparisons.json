@@ -3,8 +3,8 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
- "count": 60,
+ "updated": "2026-11-26",
+ "count": 76,
  "comparisons": [
   {
    "a": "net-plus",
@@ -844,6 +844,230 @@
     "ar": "https://certmap.dev/ar/compare-cgrc-vs-cissp.html",
     "ko": "https://certmap.dev/ko/compare-cgrc-vs-cissp.html",
     "he": "https://certmap.dev/he/compare-cgrc-vs-cissp.html"
+   }
+  },
+  {
+   "a": "oscp",
+   "b": "pnpt",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-oscp-vs-pnpt.html",
+    "es": "https://certmap.dev/es/compare-oscp-vs-pnpt.html",
+    "fr": "https://certmap.dev/fr/compare-oscp-vs-pnpt.html",
+    "de": "https://certmap.dev/de/compare-oscp-vs-pnpt.html",
+    "it": "https://certmap.dev/it/compare-oscp-vs-pnpt.html",
+    "ar": "https://certmap.dev/ar/compare-oscp-vs-pnpt.html",
+    "ko": "https://certmap.dev/ko/compare-oscp-vs-pnpt.html",
+    "he": "https://certmap.dev/he/compare-oscp-vs-pnpt.html"
+   }
+  },
+  {
+   "a": "gpen",
+   "b": "oscp",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-gpen-vs-oscp.html",
+    "es": "https://certmap.dev/es/compare-gpen-vs-oscp.html",
+    "fr": "https://certmap.dev/fr/compare-gpen-vs-oscp.html",
+    "de": "https://certmap.dev/de/compare-gpen-vs-oscp.html",
+    "it": "https://certmap.dev/it/compare-gpen-vs-oscp.html",
+    "ar": "https://certmap.dev/ar/compare-gpen-vs-oscp.html",
+    "ko": "https://certmap.dev/ko/compare-gpen-vs-oscp.html",
+    "he": "https://certmap.dev/he/compare-gpen-vs-oscp.html"
+   }
+  },
+  {
+   "a": "ecppt",
+   "b": "oscp",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-ecppt-vs-oscp.html",
+    "es": "https://certmap.dev/es/compare-ecppt-vs-oscp.html",
+    "fr": "https://certmap.dev/fr/compare-ecppt-vs-oscp.html",
+    "de": "https://certmap.dev/de/compare-ecppt-vs-oscp.html",
+    "it": "https://certmap.dev/it/compare-ecppt-vs-oscp.html",
+    "ar": "https://certmap.dev/ar/compare-ecppt-vs-oscp.html",
+    "ko": "https://certmap.dev/ko/compare-ecppt-vs-oscp.html",
+    "he": "https://certmap.dev/he/compare-ecppt-vs-oscp.html"
+   }
+  },
+  {
+   "a": "cwee",
+   "b": "oswe",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-cwee-vs-oswe.html",
+    "es": "https://certmap.dev/es/compare-cwee-vs-oswe.html",
+    "fr": "https://certmap.dev/fr/compare-cwee-vs-oswe.html",
+    "de": "https://certmap.dev/de/compare-cwee-vs-oswe.html",
+    "it": "https://certmap.dev/it/compare-cwee-vs-oswe.html",
+    "ar": "https://certmap.dev/ar/compare-cwee-vs-oswe.html",
+    "ko": "https://certmap.dev/ko/compare-cwee-vs-oswe.html",
+    "he": "https://certmap.dev/he/compare-cwee-vs-oswe.html"
+   }
+  },
+  {
+   "a": "crte",
+   "b": "crto",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-crte-vs-crto.html",
+    "es": "https://certmap.dev/es/compare-crte-vs-crto.html",
+    "fr": "https://certmap.dev/fr/compare-crte-vs-crto.html",
+    "de": "https://certmap.dev/de/compare-crte-vs-crto.html",
+    "it": "https://certmap.dev/it/compare-crte-vs-crto.html",
+    "ar": "https://certmap.dev/ar/compare-crte-vs-crto.html",
+    "ko": "https://certmap.dev/ko/compare-crte-vs-crto.html",
+    "he": "https://certmap.dev/he/compare-crte-vs-crto.html"
+   }
+  },
+  {
+   "a": "cisa",
+   "b": "cissp",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-cisa-vs-cissp.html",
+    "es": "https://certmap.dev/es/compare-cisa-vs-cissp.html",
+    "fr": "https://certmap.dev/fr/compare-cisa-vs-cissp.html",
+    "de": "https://certmap.dev/de/compare-cisa-vs-cissp.html",
+    "it": "https://certmap.dev/it/compare-cisa-vs-cissp.html",
+    "ar": "https://certmap.dev/ar/compare-cisa-vs-cissp.html",
+    "ko": "https://certmap.dev/ko/compare-cisa-vs-cissp.html",
+    "he": "https://certmap.dev/he/compare-cisa-vs-cissp.html"
+   }
+  },
+  {
+   "a": "cisa",
+   "b": "iia-cia",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-cisa-vs-iia-cia.html",
+    "es": "https://certmap.dev/es/compare-cisa-vs-iia-cia.html",
+    "fr": "https://certmap.dev/fr/compare-cisa-vs-iia-cia.html",
+    "de": "https://certmap.dev/de/compare-cisa-vs-iia-cia.html",
+    "it": "https://certmap.dev/it/compare-cisa-vs-iia-cia.html",
+    "ar": "https://certmap.dev/ar/compare-cisa-vs-iia-cia.html",
+    "ko": "https://certmap.dev/ko/compare-cisa-vs-iia-cia.html",
+    "he": "https://certmap.dev/he/compare-cisa-vs-iia-cia.html"
+   }
+  },
+  {
+   "a": "cciso",
+   "b": "cism",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-cciso-vs-cism.html",
+    "es": "https://certmap.dev/es/compare-cciso-vs-cism.html",
+    "fr": "https://certmap.dev/fr/compare-cciso-vs-cism.html",
+    "de": "https://certmap.dev/de/compare-cciso-vs-cism.html",
+    "it": "https://certmap.dev/it/compare-cciso-vs-cism.html",
+    "ar": "https://certmap.dev/ar/compare-cciso-vs-cism.html",
+    "ko": "https://certmap.dev/ko/compare-cciso-vs-cism.html",
+    "he": "https://certmap.dev/he/compare-cciso-vs-cism.html"
+   }
+  },
+  {
+   "a": "aaism",
+   "b": "aigp",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-aaism-vs-aigp.html",
+    "es": "https://certmap.dev/es/compare-aaism-vs-aigp.html",
+    "fr": "https://certmap.dev/fr/compare-aaism-vs-aigp.html",
+    "de": "https://certmap.dev/de/compare-aaism-vs-aigp.html",
+    "it": "https://certmap.dev/it/compare-aaism-vs-aigp.html",
+    "ar": "https://certmap.dev/ar/compare-aaism-vs-aigp.html",
+    "ko": "https://certmap.dev/ko/compare-aaism-vs-aigp.html",
+    "he": "https://certmap.dev/he/compare-aaism-vs-aigp.html"
+   }
+  },
+  {
+   "a": "cipm",
+   "b": "cipt",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-cipm-vs-cipt.html",
+    "es": "https://certmap.dev/es/compare-cipm-vs-cipt.html",
+    "fr": "https://certmap.dev/fr/compare-cipm-vs-cipt.html",
+    "de": "https://certmap.dev/de/compare-cipm-vs-cipt.html",
+    "it": "https://certmap.dev/it/compare-cipm-vs-cipt.html",
+    "ar": "https://certmap.dev/ar/compare-cipm-vs-cipt.html",
+    "ko": "https://certmap.dev/ko/compare-cipm-vs-cipt.html",
+    "he": "https://certmap.dev/he/compare-cipm-vs-cipt.html"
+   }
+  },
+  {
+   "a": "aws-scs",
+   "b": "gcp-pse",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-aws-scs-vs-gcp-pse.html",
+    "es": "https://certmap.dev/es/compare-aws-scs-vs-gcp-pse.html",
+    "fr": "https://certmap.dev/fr/compare-aws-scs-vs-gcp-pse.html",
+    "de": "https://certmap.dev/de/compare-aws-scs-vs-gcp-pse.html",
+    "it": "https://certmap.dev/it/compare-aws-scs-vs-gcp-pse.html",
+    "ar": "https://certmap.dev/ar/compare-aws-scs-vs-gcp-pse.html",
+    "ko": "https://certmap.dev/ko/compare-aws-scs-vs-gcp-pse.html",
+    "he": "https://certmap.dev/he/compare-aws-scs-vs-gcp-pse.html"
+   }
+  },
+  {
+   "a": "aws-scs",
+   "b": "ccsp",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-aws-scs-vs-ccsp.html",
+    "es": "https://certmap.dev/es/compare-aws-scs-vs-ccsp.html",
+    "fr": "https://certmap.dev/fr/compare-aws-scs-vs-ccsp.html",
+    "de": "https://certmap.dev/de/compare-aws-scs-vs-ccsp.html",
+    "it": "https://certmap.dev/it/compare-aws-scs-vs-ccsp.html",
+    "ar": "https://certmap.dev/ar/compare-aws-scs-vs-ccsp.html",
+    "ko": "https://certmap.dev/ko/compare-aws-scs-vs-ccsp.html",
+    "he": "https://certmap.dev/he/compare-aws-scs-vs-ccsp.html"
+   }
+  },
+  {
+   "a": "aws-scs",
+   "b": "ccsk",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-aws-scs-vs-ccsk.html",
+    "es": "https://certmap.dev/es/compare-aws-scs-vs-ccsk.html",
+    "fr": "https://certmap.dev/fr/compare-aws-scs-vs-ccsk.html",
+    "de": "https://certmap.dev/de/compare-aws-scs-vs-ccsk.html",
+    "it": "https://certmap.dev/it/compare-aws-scs-vs-ccsk.html",
+    "ar": "https://certmap.dev/ar/compare-aws-scs-vs-ccsk.html",
+    "ko": "https://certmap.dev/ko/compare-aws-scs-vs-ccsk.html",
+    "he": "https://certmap.dev/he/compare-aws-scs-vs-ccsk.html"
+   }
+  },
+  {
+   "a": "cka",
+   "b": "cks",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-cka-vs-cks.html",
+    "es": "https://certmap.dev/es/compare-cka-vs-cks.html",
+    "fr": "https://certmap.dev/fr/compare-cka-vs-cks.html",
+    "de": "https://certmap.dev/de/compare-cka-vs-cks.html",
+    "it": "https://certmap.dev/it/compare-cka-vs-cks.html",
+    "ar": "https://certmap.dev/ar/compare-cka-vs-cks.html",
+    "ko": "https://certmap.dev/ko/compare-cka-vs-cks.html",
+    "he": "https://certmap.dev/he/compare-cka-vs-cks.html"
+   }
+  },
+  {
+   "a": "ctia",
+   "b": "gcti",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-ctia-vs-gcti.html",
+    "es": "https://certmap.dev/es/compare-ctia-vs-gcti.html",
+    "fr": "https://certmap.dev/fr/compare-ctia-vs-gcti.html",
+    "de": "https://certmap.dev/de/compare-ctia-vs-gcti.html",
+    "it": "https://certmap.dev/it/compare-ctia-vs-gcti.html",
+    "ar": "https://certmap.dev/ar/compare-ctia-vs-gcti.html",
+    "ko": "https://certmap.dev/ko/compare-ctia-vs-gcti.html",
+    "he": "https://certmap.dev/he/compare-ctia-vs-gcti.html"
+   }
+  },
+  {
+   "a": "gicsp",
+   "b": "gridv",
+   "pages": {
+    "en": "https://certmap.dev/certs/compare-gicsp-vs-gridv.html",
+    "es": "https://certmap.dev/es/compare-gicsp-vs-gridv.html",
+    "fr": "https://certmap.dev/fr/compare-gicsp-vs-gridv.html",
+    "de": "https://certmap.dev/de/compare-gicsp-vs-gridv.html",
+    "it": "https://certmap.dev/it/compare-gicsp-vs-gridv.html",
+    "ar": "https://certmap.dev/ar/compare-gicsp-vs-gridv.html",
+    "ko": "https://certmap.dev/ko/compare-gicsp-vs-gridv.html",
+    "he": "https://certmap.dev/he/compare-gicsp-vs-gridv.html"
    }
   }
  ]

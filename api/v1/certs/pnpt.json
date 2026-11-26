@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "pnpt",
   "acronym": "PNPT",
@@ -33,7 +33,12 @@
   "prerequisites": [],
   "leads_to": [],
   "official_url": "https://certifications.tcm-sec.com/pnpt/",
-  "comparisons": [],
+  "comparisons": [
+   {
+    "with": "oscp",
+    "page": "https://certmap.dev/certs/compare-oscp-vs-pnpt.html"
+   }
+  ],
   "study_plan": {
    "page": "https://certmap.dev/certs/plan-pnpt.html",
    "phases": [

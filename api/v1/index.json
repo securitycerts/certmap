@@ -22,14 +22,14 @@
    "The API comes as it is, with no uptime or accuracy guarantee. Clients that ignore these terms can be limited or blocked."
   ]
  },
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "docs": "https://certmap.dev/api/",
  "openapi": "https://certmap.dev/api/openapi.json",
  "counts": {
-  "certifications": 478,
+  "certifications": 493,
   "vendors": 93,
   "domains": 17,
-  "comparisons": 60,
+  "comparisons": 76,
   "study_plans": 79
  },
  "endpoints": {

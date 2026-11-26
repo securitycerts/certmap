@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "cwee",
   "acronym": "CWEE",
@@ -34,7 +34,12 @@
   "prerequisites": [],
   "leads_to": [],
   "official_url": "https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-expert",
-  "comparisons": [],
+  "comparisons": [
+   {
+    "with": "oswe",
+    "page": "https://certmap.dev/certs/compare-cwee-vs-oswe.html"
+   }
+  ],
   "study_plan": null
  }
 }

@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "osmr",
   "acronym": "OSMR",
@@ -21,7 +21,7 @@
    "exploit-dev",
    "macos"
   ],
-  "currency_note": "On hiatus since November 2025; EXP-312 withdrawn, no new exams",
+  "currency_note": "No longer in OffSec's course catalogue (checked 2026-11-26); kept for existing holders",
   "price_verified_at": null,
   "price_original": null,
   "duration_min": 2880,

@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "fortinet-ot-security",
   "acronym": "Fortinet OT",
@@ -36,7 +36,7 @@
    "fcp-nse5"
   ],
   "leads_to": [],
-  "official_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_ot_security",
+  "official_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_industry_ot_security",
   "comparisons": [],
   "study_plan": null
  }

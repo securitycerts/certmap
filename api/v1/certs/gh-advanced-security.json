@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "gh-advanced-security",
   "acronym": "GH-500",
@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Software Security",
   "level": "intermediate",
-  "price_usd": null,
+  "price_usd": 99,
   "hands_on": false,
   "page": "https://certmap.dev/certs/gh-advanced-security.html",
   "api": "https://certmap.dev/api/v1/certs/gh-advanced-security.json",
@@ -24,7 +24,7 @@
    "github"
   ],
   "currency_note": "Price varies by the country or region where the exam is proctored",
-  "price_verified_at": null,
+  "price_verified_at": "2026-11-26",
   "price_original": null,
   "duration_min": 100,
   "exam_count": 1,

@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "aws-ans",
   "acronym": "ANS-C01",
@@ -22,7 +22,7 @@
    "aws",
    "networking"
   ],
-  "currency_note": "Exam retires; last day to take it is December 31, 2026",
+  "currency_note": "Retiring: the last day to take the exam is 2026-12-31. Exam retires; last day to take it is December 31, 2026",
   "price_verified_at": "2026-11-10",
   "price_original": null,
   "duration_min": 170,

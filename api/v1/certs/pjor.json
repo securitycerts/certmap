@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "pjor",
   "acronym": "PORP",
@@ -31,7 +31,7 @@
   "restricted_to": null,
   "prerequisites": [],
   "leads_to": [],
-  "official_url": "https://certifications.tcm-sec.com/pjor/",
+  "official_url": "https://certifications.tcm-sec.com/porp/",
   "comparisons": [],
   "study_plan": null
  }

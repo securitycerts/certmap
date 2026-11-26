@@ -1,0 +1,41 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-26",
+ "certification": {
+  "id": "gaipt",
+  "acronym": "GAIPT",
+  "name": "GIAC AI Penetration Tester",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "Penetration Testing",
+  "level": "advanced",
+  "price_usd": null,
+  "hands_on": true,
+  "page": "https://certmap.dev/certs/gaipt.html",
+  "api": "https://certmap.dev/api/v1/certs/gaipt.json",
+  "description": "Validates penetration testing of enterprise AI deployments, including prompt injection, RAG pipelines, agentic systems and MCP servers. Tested with performance-based CyberLive labs.",
+  "tags": [
+   "ai",
+   "ai-security",
+   "red-team",
+   "cyberlive"
+  ],
+  "currency_note": "Presale with affiliated course only; general purchase from 2027-02-09",
+  "price_verified_at": null,
+  "price_original": null,
+  "duration_min": null,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/offensive-ai-penetration-tester-gaipt/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}

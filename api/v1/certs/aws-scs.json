@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "aws-scs",
   "acronym": "SCS-C03",
@@ -33,7 +33,20 @@
   "prerequisites": [],
   "leads_to": [],
   "official_url": "https://aws.amazon.com/certification/certified-security-specialty/",
-  "comparisons": [],
+  "comparisons": [
+   {
+    "with": "gcp-pse",
+    "page": "https://certmap.dev/certs/compare-aws-scs-vs-gcp-pse.html"
+   },
+   {
+    "with": "ccsp",
+    "page": "https://certmap.dev/certs/compare-aws-scs-vs-ccsp.html"
+   },
+   {
+    "with": "ccsk",
+    "page": "https://certmap.dev/certs/compare-aws-scs-vs-ccsk.html"
+   }
+  ],
   "study_plan": {
    "page": "https://certmap.dev/certs/plan-aws-scs.html",
    "phases": [

@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "cpsa",
   "acronym": "CPSA",
@@ -39,7 +39,7 @@
   "leads_to": [
    "crt"
   ],
-  "official_url": "https://www.crest-approved.org/certification-careers/crest-certifications/crest-practitioner-security-analyst/",
+  "official_url": "https://www.crest-approved.org/skills-certifications-careers/crest-practitioner-security-analyst/",
   "comparisons": [],
   "study_plan": null
  }

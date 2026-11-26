@@ -3,7 +3,7 @@
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "Data from cert/map (https://certmap.dev/)",
  "terms": "https://certmap.dev/api/#terms",
- "updated": "2026-11-10",
+ "updated": "2026-11-26",
  "certification": {
   "id": "cipm",
   "acronym": "CIPM",
@@ -37,6 +37,10 @@
    {
     "with": "cipp",
     "page": "https://certmap.dev/certs/compare-cipp-vs-cipm.html"
+   },
+   {
+    "with": "cipt",
+    "page": "https://certmap.dev/certs/compare-cipm-vs-cipt.html"
    }
   ],
   "study_plan": null

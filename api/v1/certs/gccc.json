@@ -1,0 +1,40 @@
+{
+ "license": "CC BY 4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "attribution": "Data from cert/map (https://certmap.dev/)",
+ "terms": "https://certmap.dev/api/#terms",
+ "updated": "2026-11-26",
+ "certification": {
+  "id": "gccc",
+  "acronym": "GCCC",
+  "name": "GIAC Critical Controls Certification",
+  "vendor": "GIAC",
+  "issuer": null,
+  "domain": "GRC",
+  "level": "intermediate",
+  "price_usd": 999,
+  "hands_on": false,
+  "page": "https://certmap.dev/certs/gccc.html",
+  "api": "https://certmap.dev/api/v1/certs/gccc.json",
+  "description": "Validates knowledge of implementing and auditing the 18 CIS Critical Security Controls (version 8). Proctored exam of 75 questions in 2 hours, 71% to pass.",
+  "tags": [
+   "cis-controls",
+   "audit",
+   "grc"
+  ],
+  "currency_note": null,
+  "price_verified_at": "2026-11-10",
+  "price_original": null,
+  "duration_min": 120,
+  "exam_count": 1,
+  "validity_years": 4,
+  "renewal_cost": null,
+  "dod_8140": false,
+  "restricted_to": null,
+  "prerequisites": [],
+  "leads_to": [],
+  "official_url": "https://www.giac.org/certifications/critical-controls-certification-gccc/",
+  "comparisons": [],
+  "study_plan": null
+ }
+}
