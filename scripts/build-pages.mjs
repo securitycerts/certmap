@@ -346,6 +346,10 @@ function compareFacts(a, b, T) {
   return { list, qa };
 }
 
+// Thanks to readers who suggested a resource for a comparison, keyed by the sorted pair.
+const THANKS = {
+  "ccna|net-plus": 'Thanks to Peter of <a href="https://aarrange.com/" rel="noopener noreferrer">aarrange</a> for recommending the subnet calculator in the practice step.',
+};
 function comparePage(a, b, T) {
   const file = compareFile(a.id, b.id);
   const path = comparePath(a, b, T);
@@ -406,7 +410,7 @@ ${T.hCovers ? `  <h2>${T.hCovers}</h2>
   <div class="faq">
 ${qa.map(([q, ans]) => `    <details><summary>${esc(q)}</summary><p>${esc(ans)}</p></details>`).join("\n")}
   </div>
-${others.length ? `  <h2>${T.hRelated}</h2>\n  <nav class="toc">${others.map(v => `<a href="${v.file}"><bdi>${esc(label(v))}</bdi></a>`).join(" ")}</nav>\n` : ""}</article>`;
+${others.length ? `  <h2>${T.hRelated}</h2>\n  <nav class="toc">${others.map(v => `<a href="${v.file}"><bdi>${esc(label(v))}</bdi></a>`).join(" ")}</nav>\n` : ""}${T.code === "en" && THANKS[[a.id, b.id].sort().join("|")] ? `  <p class="fine thanks">${THANKS[[a.id, b.id].sort().join("|")]}</p>\n` : ""}</article>`;
   const ld = [
     { "@context": "https://schema.org", "@type": "FAQPage", inLanguage: T.code, mainEntity: qa.map(([q, ans]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: ans } })) },
     { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
