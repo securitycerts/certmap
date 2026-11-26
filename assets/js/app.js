@@ -1,16 +1,16 @@
-import { loadData } from "./data.js?v=ccc95d7b";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=ccc95d7b";
-import { slug, fmtPrice, fmtLocalPrice, LEVEL_LABEL } from "./format.js?v=ccc95d7b";
-import { loadRates, currencyCodes, currency, setCurrency, fmtMoney, fromUsd, fmtTotal, currencyLabel, currencyShort } from "./currency.js?v=ccc95d7b";
-import { enhanceSelect } from "./picker.js?v=ccc95d7b";
-import { el } from "./dom.js?v=ccc95d7b";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=ccc95d7b";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=ccc95d7b";
-import { toast, copyText } from "./toast.js?v=ccc95d7b";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=ccc95d7b";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote, encodeStickies, decodeStickies, cleanStickies } from "./paths.js?v=ccc95d7b";
-import { mountGraph, unmountGraph } from "./graph.js?v=ccc95d7b";
-import { downloadRoadmapImage } from "./share-image.js?v=ccc95d7b";
+import { loadData } from "./data.js?v=fb7a6ad9";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=fb7a6ad9";
+import { slug, fmtPrice, fmtLocalPrice, LEVEL_LABEL } from "./format.js?v=fb7a6ad9";
+import { loadRates, currencyCodes, currency, setCurrency, fmtMoney, fromUsd, fmtTotal, currencyLabel, currencyShort } from "./currency.js?v=fb7a6ad9";
+import { enhanceSelect } from "./picker.js?v=fb7a6ad9";
+import { el } from "./dom.js?v=fb7a6ad9";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=fb7a6ad9";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=fb7a6ad9";
+import { toast, copyText } from "./toast.js?v=fb7a6ad9";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=fb7a6ad9";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote, encodeStickies, decodeStickies, cleanStickies } from "./paths.js?v=fb7a6ad9";
+import { mountGraph, unmountGraph } from "./graph.js?v=fb7a6ad9";
+import { downloadRoadmapImage } from "./share-image.js?v=fb7a6ad9";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -987,7 +987,13 @@ async function init() {
   ccyEl.addEventListener("change", () => {
     store.set(CURRENCY_KEY, setCurrency(ccyEl.value));
     lastGridKey = null; // prices on the cards and in the roadmap change
-    if (readRoadmap(baseHash)?.same && currency() !== "USD") history.replaceState(null, "", location.pathname + myRoadmapHash());
+    // Your own roadmap's link follows the choice (and drops it for USD);
+    // a link someone shared keeps its currency only until you pick another.
+    if (readRoadmap(baseHash)?.same) {
+      baseHash = myRoadmapHash();
+      history.replaceState(null, "", location.pathname + location.search + baseHash);
+    }
+    appliedCcyFor = baseHash;
     rerender();
     paintCart();
     const id = readRoute();
