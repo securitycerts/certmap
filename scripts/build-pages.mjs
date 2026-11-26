@@ -854,12 +854,17 @@ if (!ZCASH) console.warn("data/donate.json has no Zcash address: the donation pa
 
 function donateBox() {
   if (!ZCASH) return `<p class="fine">The donation address is being set up. Write to <a href="mailto:${EMAIL}">${EMAIL}</a> in the meantime.</p>`;
-  return `<div class="donate-box" data-zcash="${esc(ZCASH)}">
+  const qr = existsSync(join(ROOT, "assets", "donate-qr.svg"));
+  return `<div class="donate-box${qr ? " has-qr" : ""}" data-zcash="${esc(ZCASH)}">
+${qr ? `    <figure class="donate-qr"><img src="../assets/donate-qr.svg?v=${fileHash("assets/donate-qr.svg")}" width="220" height="220" alt="QR code of the Zcash donation address"><figcaption>Scan with your wallet's own camera</figcaption></figure>
+` : ""}    <div class="donate-main">
     <span class="donate-label">Zcash, shielded address</span>
     <code class="donate-addr" id="zcash-address">${esc(ZCASH)}</code>
     <div class="donate-actions">
       <button type="button" class="btn primary" id="copy-zcash" hidden>Copy address</button>
       <a class="btn" href="zcash:${esc(ZCASH)}">Open in a Zcash wallet</a>
+    </div>
+    <p class="fine">Some wallets, Zodl among them, ask you to scan the code from inside the wallet instead of opening a link from another app. That is a safety check, not an error: open the wallet, choose Scan and point it at the code, or paste the copied address.</p>
     </div>
   </div>`;
 }
@@ -881,7 +886,7 @@ function donateSection() {
 function donateFaq() {
   return [
     ["Why Zcash?", "A donation to a shielded Zcash address keeps the amount and the sender private: it does not show on a public ledger the way a Bitcoin or Ethereum payment does. Neither cert/map nor anyone else can link it to you."],
-    ["How do I donate?", "Send any amount of ZEC from a wallet that supports shielded addresses (for example Zashi, Ywallet or Zingo) to the address on this page. On a phone, the wallet button opens your wallet with the address filled in."],
+    ["How do I donate?", "Scan the QR code with your wallet's own scanner, or copy the address and paste it in the send screen of any wallet that supports shielded addresses (for example Zodl, Ywallet or Zingo). Any amount of ZEC is welcome."],
     ["What does a donation pay for?", "Time: checking prices against every vendor, following retirements and new versions, testing study links and keeping the site fast and free of ads and trackers."],
     ["Does a donation change what is listed?", "No. Donations are anonymous and buy nothing. Certifications are listed by the published data rules, and anyone can propose a correction on GitHub."],
   ];

@@ -164,7 +164,7 @@ The limits live in one place, `API_LIMITS` in `scripts/build-pages.mjs`; change 
 
 cert/map is free, open source and has no ads, trackers or sponsors. It takes donations in Zcash at [certmap.dev/donate](https://certmap.dev/donate/), to a shielded address so the amount and the donor stay private.
 
-The address is in `data/donate.json` (`{ "zcash": "..." }`); change it there and run `node scripts/build-pages.mjs`. Only shielded addresses are accepted (`u1...` unified or `zs1...` Sapling); a transparent `t...` address stops the build. `/sponsors/` forwards to `/donate/`.
+The address is in `data/donate.json` (`{ "zcash": "..." }`); change it there, run `npm run qr` to redraw the QR code (`assets/donate-qr.svg`) and then `node scripts/build-pages.mjs`. Only shielded addresses are accepted (`u1...` unified or `zs1...` Sapling); a transparent `t...` address stops the build. `/sponsors/` forwards to `/donate/`.
 
 ## Contact
 

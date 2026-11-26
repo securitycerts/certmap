@@ -23,8 +23,8 @@
 <meta name="theme-color" content="#0b0d12">
 <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg">
 <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
-<link rel="stylesheet" href="../assets/css/static.css?v=aab37228">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebPage","name":"Donate to cert/map","url":"https://certmap.dev/donate/","isPartOf":{"@type":"WebSite","name":"cert/map","url":"https://certmap.dev/"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Zcash?","acceptedAnswer":{"@type":"Answer","text":"A donation to a shielded Zcash address keeps the amount and the sender private: it does not show on a public ledger the way a Bitcoin or Ethereum payment does. Neither cert/map nor anyone else can link it to you."}},{"@type":"Question","name":"How do I donate?","acceptedAnswer":{"@type":"Answer","text":"Send any amount of ZEC from a wallet that supports shielded addresses (for example Zashi, Ywallet or Zingo) to the address on this page. On a phone, the wallet button opens your wallet with the address filled in."}},{"@type":"Question","name":"What does a donation pay for?","acceptedAnswer":{"@type":"Answer","text":"Time: checking prices against every vendor, following retirements and new versions, testing study links and keeping the site fast and free of ads and trackers."}},{"@type":"Question","name":"Does a donation change what is listed?","acceptedAnswer":{"@type":"Answer","text":"No. Donations are anonymous and buy nothing. Certifications are listed by the published data rules, and anyone can propose a correction on GitHub."}}]}]</script>
+<link rel="stylesheet" href="../assets/css/static.css?v=53f1f244">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebPage","name":"Donate to cert/map","url":"https://certmap.dev/donate/","isPartOf":{"@type":"WebSite","name":"cert/map","url":"https://certmap.dev/"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why Zcash?","acceptedAnswer":{"@type":"Answer","text":"A donation to a shielded Zcash address keeps the amount and the sender private: it does not show on a public ledger the way a Bitcoin or Ethereum payment does. Neither cert/map nor anyone else can link it to you."}},{"@type":"Question","name":"How do I donate?","acceptedAnswer":{"@type":"Answer","text":"Scan the QR code with your wallet's own scanner, or copy the address and paste it in the send screen of any wallet that supports shielded addresses (for example Zodl, Ywallet or Zingo). Any amount of ZEC is welcome."}},{"@type":"Question","name":"What does a donation pay for?","acceptedAnswer":{"@type":"Answer","text":"Time: checking prices against every vendor, following retirements and new versions, testing study links and keeping the site fast and free of ads and trackers."}},{"@type":"Question","name":"Does a donation change what is listed?","acceptedAnswer":{"@type":"Answer","text":"No. Donations are anonymous and buy nothing. Certifications are listed by the published data rules, and anyone can propose a correction on GitHub."}}]}]</script>
 </head>
 <body>
 <header class="top">
@@ -37,12 +37,16 @@
   <p class="kicker">Support cert/map</p>
   <h1>Donate privately with Zcash</h1>
   <p class="lead">cert/map is free, open source and has no ads, trackers or sponsors. Donations keep the data checked and current. They go to a shielded Zcash address, so the amount and the sender stay private.</p>
-  <div class="donate-box" data-zcash="u1y663mugzm3ulte5wqpqtsd6yymp2yk6kdr456feyg22rj56ranxnyh25jalh38tj7ppayz4tjq9d6r4u8gzg3exq3gvh2k033xg6kkpyznh2h4kc0mv36hfnvspk4g2ht3ltvx7yeufdwhm2st8k0f9uktfmuzacyx2f0289zqc2y5cw">
+  <div class="donate-box has-qr" data-zcash="u1y663mugzm3ulte5wqpqtsd6yymp2yk6kdr456feyg22rj56ranxnyh25jalh38tj7ppayz4tjq9d6r4u8gzg3exq3gvh2k033xg6kkpyznh2h4kc0mv36hfnvspk4g2ht3ltvx7yeufdwhm2st8k0f9uktfmuzacyx2f0289zqc2y5cw">
+    <figure class="donate-qr"><img src="../assets/donate-qr.svg?v=55b79ca3" width="220" height="220" alt="QR code of the Zcash donation address"><figcaption>Scan with your wallet's own camera</figcaption></figure>
+    <div class="donate-main">
     <span class="donate-label">Zcash, shielded address</span>
     <code class="donate-addr" id="zcash-address">u1y663mugzm3ulte5wqpqtsd6yymp2yk6kdr456feyg22rj56ranxnyh25jalh38tj7ppayz4tjq9d6r4u8gzg3exq3gvh2k033xg6kkpyznh2h4kc0mv36hfnvspk4g2ht3ltvx7yeufdwhm2st8k0f9uktfmuzacyx2f0289zqc2y5cw</code>
     <div class="donate-actions">
       <button type="button" class="btn primary" id="copy-zcash" hidden>Copy address</button>
       <a class="btn" href="zcash:u1y663mugzm3ulte5wqpqtsd6yymp2yk6kdr456feyg22rj56ranxnyh25jalh38tj7ppayz4tjq9d6r4u8gzg3exq3gvh2k033xg6kkpyznh2h4kc0mv36hfnvspk4g2ht3ltvx7yeufdwhm2st8k0f9uktfmuzacyx2f0289zqc2y5cw">Open in a Zcash wallet</a>
+    </div>
+    <p class="fine">Some wallets, Zodl among them, ask you to scan the code from inside the wallet instead of opening a link from another app. That is a safety check, not an error: open the wallet, choose Scan and point it at the code, or paste the copied address.</p>
     </div>
   </div>
 </section>
@@ -50,7 +54,7 @@
   <h2>Questions</h2>
   <div class="faq">
     <details><summary>Why Zcash?</summary><p>A donation to a shielded Zcash address keeps the amount and the sender private: it does not show on a public ledger the way a Bitcoin or Ethereum payment does. Neither cert/map nor anyone else can link it to you.</p></details>
-    <details><summary>How do I donate?</summary><p>Send any amount of ZEC from a wallet that supports shielded addresses (for example Zashi, Ywallet or Zingo) to the address on this page. On a phone, the wallet button opens your wallet with the address filled in.</p></details>
+    <details><summary>How do I donate?</summary><p>Scan the QR code with your wallet&#39;s own scanner, or copy the address and paste it in the send screen of any wallet that supports shielded addresses (for example Zodl, Ywallet or Zingo). Any amount of ZEC is welcome.</p></details>
     <details><summary>What does a donation pay for?</summary><p>Time: checking prices against every vendor, following retirements and new versions, testing study links and keeping the site fast and free of ads and trackers.</p></details>
     <details><summary>Does a donation change what is listed?</summary><p>No. Donations are anonymous and buy nothing. Certifications are listed by the published data rules, and anyone can propose a correction on GitHub.</p></details>
   </div>

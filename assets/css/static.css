@@ -282,3 +282,10 @@ ol.terms li { margin-bottom: 7px; max-width: 78ch; }
 .donate-addr { display: block; padding: 14px 16px; font: 13px/1.6 var(--mono); color: var(--text); word-break: break-all; user-select: all; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; }
 .donate-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
 .hero.left .kicker { text-align: left; }
+
+.donate-box.has-qr { display: grid; grid-template-columns: 220px 1fr; gap: 24px; align-items: start; }
+.donate-qr { margin: 0; }
+.donate-qr img { display: block; width: 220px; height: 220px; border-radius: 10px; background: #fff; }
+.donate-qr figcaption { margin-top: 8px; font-size: 12px; color: var(--muted); text-align: center; }
+.donate-main { min-width: 0; }
+@media (max-width: 640px) { .donate-box.has-qr { grid-template-columns: 1fr; } .donate-qr { justify-self: center; } }
