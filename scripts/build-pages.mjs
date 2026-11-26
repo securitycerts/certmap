@@ -859,7 +859,7 @@ function donateBox() {
     <code class="donate-addr" id="zcash-address">${esc(ZCASH)}</code>
     <div class="donate-actions">
       <button type="button" class="btn primary" id="copy-zcash" hidden>Copy address</button>
-      <a class="btn" href="zcash:${esc(ZCASH)}?message=${encodeURIComponent("cert/map donation")}">Open in a Zcash wallet</a>
+      <a class="btn" href="zcash:${esc(ZCASH)}">Open in a Zcash wallet</a>
     </div>
   </div>`;
 }
