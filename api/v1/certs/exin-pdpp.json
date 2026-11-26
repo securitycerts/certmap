@@ -25,6 +25,7 @@
   ],
   "currency_note": "Price is calculated per country on the EXIN site; accredited training with practical assignments is mandatory",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 120,
   "exam_count": 1,
   "validity_years": 0,

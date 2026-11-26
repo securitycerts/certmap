@@ -23,6 +23,7 @@
   ],
   "currency_note": "Current exam V8 (SY0-801), launched 2026-11-17; V7 (SY0-701) English exam retires 2027-06-11",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 90,
   "exam_count": 1,
   "validity_years": 3,

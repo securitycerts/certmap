@@ -25,6 +25,7 @@
   ],
   "currency_note": "Includes course material and the exam; lower promotional prices are frequent",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 360,
   "exam_count": 1,
   "validity_years": 0,

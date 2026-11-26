@@ -24,6 +24,7 @@
   ],
   "currency_note": "Price is calculated per country on the EXIN site; no list price published",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 60,
   "exam_count": 1,
   "validity_years": 0,

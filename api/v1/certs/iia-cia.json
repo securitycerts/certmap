@@ -24,6 +24,7 @@
   ],
   "currency_note": "Non-member total: application $240 plus parts at $445, $415 and $415. Members pay $990 in total. New pricing applies from 4 January 2027",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 390,
   "exam_count": 3,
   "validity_years": 1,

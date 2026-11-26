@@ -56,6 +56,15 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
 const jsonLd = obj => JSON.stringify(obj).replace(/</g, "\\u003c");
 const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const money = n => (n == null ? "Not published" : n === 0 ? "Free" : "$" + n.toLocaleString("en-US"));
+// Prices the issuer states in another currency keep that figure; the dollar
+// amount next to it comes from the rates in data/rates.json (see scripts/rates.mjs).
+const RATES = existsSync(join(ROOT, "data", "rates.json")) ? JSON.parse(readFileSync(join(ROOT, "data", "rates.json"), "utf8")) : null;
+const SYMBOL = { GBP: "£", EUR: "€" };
+const foreignPrice = c => c.currency !== "USD" && c.price_original != null;
+const priceOf = c => (foreignPrice(c)
+  ? `${SYMBOL[c.currency] || c.currency + " "}${c.price_original.toLocaleString("en-US")}${c.price_usd != null ? ` (≈ ${money(c.price_usd)})` : ""}`
+  : money(c.price_usd));
+const rateNote = c => (foreignPrice(c) && RATES ? `Converted from ${c.currency} at the European Central Bank rate of ${RATES.date}.` : "");
 
 function duration(min) {
   if (!min) return null;
@@ -255,7 +264,7 @@ function planPage(c) {
   <p class="cta"><a class="btn primary" href="../map/#/cert/${c.id}">Open ${esc(c.acronym)} in the interactive roadmap</a> <a class="btn" href="${c.id}.html">${esc(c.acronym)} cost, exam and renewal</a></p>
   <nav class="toc">${plan.map(ph => `<a href="#${ph.id}">${T.phases[{ know: 0, learn: 1, practice: 2, test: 3 }[ph.id]]} <small>${ph.items.length}</small></a>`).join(" ")}</nav>
 ${planPhases(c, T, { fold: false })}
-  <p class="fine">${esc(T.resNote)} Each link was opened when it was added. Exam price: ${esc(money(c.price_usd))}.</p>
+  <p class="fine">${esc(T.resNote)} Each link was opened when it was added. Exam price: ${esc(priceOf(c))}.</p>
 ${versusHtml(c)}</article>`;
   const ld = [
     { "@context": "https://schema.org", "@type": "ItemList", name: `${c.acronym} study plan`, numberOfItems: list.length,
@@ -366,7 +375,8 @@ function comparePage(a, b, T) {
   const certs = T.code === "en" ? "" : "../certs/";      // cert, vendor and domain pages exist in English only
   const link = c => `<a href="${certs}${c.id}.html">${esc(c.acronym)}</a>`;
   const L = T.labels;
-  const priced = c => (c.price_usd == null ? T.notPublished : c.price_usd === 0 ? T.free : T.money(c.price_usd));
+  const priced = c => (c.price_usd == null ? T.notPublished : c.price_usd === 0 ? T.free
+    : foreignPrice(c) ? `${SYMBOL[c.currency] || c.currency + " "}${c.price_original.toLocaleString("en-US")} (≈ ${T.money(c.price_usd)})` : T.money(c.price_usd));
   const rows = [
     [L.name, c => `<a href="${certs}${c.id}.html">${esc(c.name)}</a>`],
     [L.vendor, c => `<a href="${certs}${vendorFile(c.vendor)}">${esc(c.vendor)}</a>`],
@@ -458,7 +468,7 @@ function pathPage(p) {
 <table>
     <thead><tr><th>Step</th><th>Certification</th><th>Vendor</th><th>Level</th><th>Exam price</th></tr></thead>
     <tbody>
-${items.map((c, i) => `      <tr><td>${i + 1}</td><td>${certLink(c)} <span>${esc(c.name)}</span></td><td><a href="${vendorFile(c.vendor)}">${esc(c.vendor)}</a></td><td>${LEVEL_LABEL[c.level]}</td><td>${esc(money(c.price_usd))}</td></tr>`).join("\n")}
+${items.map((c, i) => `      <tr><td>${i + 1}</td><td>${certLink(c)} <span>${esc(c.name)}</span></td><td><a href="${vendorFile(c.vendor)}">${esc(c.vendor)}</a></td><td>${LEVEL_LABEL[c.level]}</td><td>${esc(priceOf(c))}</td></tr>`).join("\n")}
     </tbody>
   </table>
 <h2>Other certification paths</h2>
@@ -660,6 +670,7 @@ function apiCert(c) {
     ...apiCertSummary(c),
     description: c.description, tags: c.tags,
     currency_note: c.currency_note || null, price_verified_at: c.price_verified_at || null,
+    price_original: foreignPrice(c) ? { amount: c.price_original, currency: c.currency, usd_rate: RATES?.usd_per?.[c.currency] ?? null, rate_date: RATES?.date ?? null } : null,
     duration_min: c.duration_min, exam_count: c.exam_count,
     validity_years: c.validity_years || 0, renewal_cost: Number.isFinite(c.renewal_cost) ? c.renewal_cost : null,
     dod_8140: c.dod_8140, restricted_to: c.restricted_to || null,
@@ -1050,7 +1061,7 @@ function llmsFull() {
     for (const c of items) {
       out += `\n### ${c.acronym}: ${c.name}\n\n${c.description}\n\n`
         + line("Vendor", c.vendor) + line("Issued by", c.issuer) + line("Level", c.level)
-        + line("Exam price", money(c.price_usd) + (c.currency_note ? ` (${c.currency_note})` : ""))
+        + line("Exam price", priceOf(c) + (c.currency_note ? ` (${c.currency_note})` : "") + (rateNote(c) ? ` ${rateNote(c)}` : ""))
         + line("Price checked", c.price_verified_at) + line("Exam length", duration(c.duration_min))
         + line("Exam format", c.hands_on ? "hands-on, performance-based" : "written or multiple choice")
         + line("Renewal", c.validity_years ? `every ${c.validity_years} years` : "does not expire")
@@ -1266,7 +1277,7 @@ function certPage(c) {
     .filter(o => o.id !== c.id && o.domain === c.domain)
     .sort((a, b) => (a.level === c.level ? -1 : 0) - (b.level === c.level ? -1 : 0) || byName(a, b))
     .slice(0, 12);
-  const price = money(c.price_usd);
+  const price = priceOf(c);
   const length = duration(c.duration_min);
   const renewal = c.validity_years ? `Every ${c.validity_years} ${c.validity_years === 1 ? "year" : "years"}` : "Does not expire";
 
@@ -1275,7 +1286,7 @@ function certPage(c) {
     c.issuer ? ["Issued by", esc(c.issuer)] : null,
     ["Domain", `<a href="${domainFile(c.domain)}">${esc(c.domain)}</a>`],
     ["Level", `<a href="list-${c.level}.html">${LEVEL_LABEL[c.level]}</a>`],
-    ["Exam price", esc(price) + (c.currency_note ? ` <small>${esc(c.currency_note)}</small>` : "")],
+    ["Exam price", esc(price) + (c.currency_note ? ` <small>${esc(c.currency_note)}</small>` : "") + (rateNote(c) ? ` <small>${esc(rateNote(c))}</small>` : "")],
     c.price_verified_at ? ["Price checked", `<time datetime="${c.price_verified_at}">${c.price_verified_at}</time>`] : null,
     c.exam_count > 1 ? ["Exams required", String(c.exam_count)] : null,
     length ? ["Exam length", length] : null,
@@ -1306,7 +1317,7 @@ ${facts.map(([k, v]) => `    <div><dt>${k}</dt><dd>${v}</dd></div>`).join("\n")}
   </dl>
 ${c.tags.length ? `  <p class="tags">${c.tags.map(t => `<a href="../map/?tag=${encodeURIComponent(t)}">${esc(t)}</a>`).join(" ")}</p>\n` : ""}${related.length ? `  <h2>Other ${esc(c.domain)} certifications</h2>
   <ul class="related">
-${related.map(o => `    <li>${certLink(o)} <span>${esc(o.vendor)}, ${LEVEL_LABEL[o.level]}, ${esc(money(o.price_usd))}</span></li>`).join("\n")}
+${related.map(o => `    <li>${certLink(o)} <span>${esc(o.vendor)}, ${LEVEL_LABEL[o.level]}, ${esc(priceOf(o))}</span></li>`).join("\n")}
   </ul>\n` : ""}${prepHtml(c)}${versusHtml(c)}</article>`;
 
   const ld = [

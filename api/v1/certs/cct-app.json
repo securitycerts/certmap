@@ -26,6 +26,7 @@
   ],
   "currency_note": "Certified-level exams are listed at GBP 1,600 in two separately booked parts; the page does not say whether the price covers both parts",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 360,
   "exam_count": 2,
   "validity_years": 0,

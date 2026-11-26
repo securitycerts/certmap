@@ -27,6 +27,7 @@
   ],
   "currency_note": "Offered on completion of the accompanying 8kSec training class; no standalone exam price published",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 2880,
   "exam_count": 1,
   "validity_years": 0,

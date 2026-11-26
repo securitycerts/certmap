@@ -29,6 +29,14 @@ export function fmtPrice(n) {
   return "$" + n.toLocaleString("en-US");
 }
 
+// A price as the issuer states it, with the dollar conversion when it is not in USD.
+const SYMBOL = { GBP: "£", EUR: "€" };
+export function fmtLocalPrice(c) {
+  if (c.currency === "USD" || c.price_original == null) return fmtPrice(c.price_usd);
+  const local = (SYMBOL[c.currency] || c.currency + " ") + c.price_original.toLocaleString("en-US");
+  return c.price_usd == null ? local : `${local} (≈ ${fmtPrice(c.price_usd)})`;
+}
+
 // Turn an ISO date into a short "3 months ago" style label for the verified badge.
 export function fmtAgo(isoDate) {
   if (!isoDate || !/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) return "";

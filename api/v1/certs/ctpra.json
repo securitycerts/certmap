@@ -24,6 +24,7 @@
   ],
   "currency_note": "Exam is bundled with the live CTPRA bootcamp; the public page could not be opened and indexed prices conflict. Annual maintenance fee $100",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 3,

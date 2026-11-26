@@ -24,6 +24,7 @@
   ],
   "currency_note": "Application fee $400 and annual renewal fee $225; the Qualifying Examination fee is usually included in DRI course pricing",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 150,
   "exam_count": 1,
   "validity_years": 1,

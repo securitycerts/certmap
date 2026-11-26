@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Incident Handling",
   "level": "expert",
-  "price_usd": 537,
+  "price_usd": 522,
   "hands_on": true,
   "page": "https://certmap.dev/certs/cbteamerx.html",
   "api": "https://certmap.dev/api/v1/certs/cbteamerx.json",
@@ -23,8 +23,14 @@
    "incident-response",
    "hands-on"
   ],
-  "currency_note": "Vendor lists GBP only (GBP 400); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included",
+  "currency_note": "Vendor lists GBP only; frequent promotional discounts; one free retake included",
   "price_verified_at": "2026-11-10",
+  "price_original": {
+   "amount": 400,
+   "currency": "GBP",
+   "usd_rate": 1.305977,
+   "rate_date": "2026-11-25"
+  },
   "duration_min": 420,
   "exam_count": 1,
   "validity_years": 0,

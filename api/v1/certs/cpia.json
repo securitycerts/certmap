@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Incident Handling",
   "level": "beginner",
-  "price_usd": 369,
+  "price_usd": 359,
   "hands_on": false,
   "page": "https://certmap.dev/certs/cpia.html",
   "api": "https://certmap.dev/api/v1/certs/cpia.json",
@@ -22,8 +22,14 @@
    "ir",
    "crest"
   ],
-  "currency_note": "GBP 275 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10",
+  "currency_note": "Price excluding tax via Pearson VUE",
   "price_verified_at": "2026-11-10",
+  "price_original": {
+   "amount": 275,
+   "currency": "GBP",
+   "usd_rate": 1.305977,
+   "rate_date": "2026-11-25"
+  },
   "duration_min": 120,
   "exam_count": 1,
   "validity_years": 0,

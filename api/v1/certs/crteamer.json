@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Penetration Testing",
   "level": "intermediate",
-  "price_usd": 336,
+  "price_usd": 326,
   "hands_on": true,
   "page": "https://certmap.dev/certs/crteamer.html",
   "api": "https://certmap.dev/api/v1/certs/crteamer.json",
@@ -22,8 +22,14 @@
    "active-directory",
    "hands-on"
   ],
-  "currency_note": "Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included",
+  "currency_note": "Vendor lists GBP only; frequent promotional discounts; one free retake included",
   "price_verified_at": "2026-11-10",
+  "price_original": {
+   "amount": 250,
+   "currency": "GBP",
+   "usd_rate": 1.305977,
+   "rate_date": "2026-11-25"
+  },
   "duration_min": 300,
   "exam_count": 1,
   "validity_years": 0,

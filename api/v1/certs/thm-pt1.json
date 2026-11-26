@@ -24,6 +24,7 @@
   ],
   "currency_note": "USD figure taken from the comparison table on the official page (reference only); the exam details block showed a localized EUR 301; includes one free retake",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 2880,
   "exam_count": 1,
   "validity_years": 0,

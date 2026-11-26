@@ -23,6 +23,7 @@
   ],
   "currency_note": "Exam voucher only, two attempts; job-role path access sold separately",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 14400,
   "exam_count": 1,
   "validity_years": 0,

@@ -1,11 +1,11 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
-  fmtPrice, fmtAgo, isStale, slug,
-} from "./format.js?v=3e3f6207";
-import { el, svg } from "./dom.js?v=3e3f6207";
-import { makeLogo } from "./logo.js?v=3e3f6207";
-import { studyPlan } from "./data.js?v=3e3f6207";
-import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=3e3f6207";
+  fmtPrice, fmtLocalPrice, fmtAgo, isStale, slug,
+} from "./format.js?v=86be0940";
+import { el, svg } from "./dom.js?v=86be0940";
+import { makeLogo } from "./logo.js?v=86be0940";
+import { studyPlan } from "./data.js?v=86be0940";
+import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=86be0940";
 
 export { slug, fmtPrice };
 
@@ -280,13 +280,14 @@ function listCard(c, state) {
     el("div", { class: "lc-meta" },
       el("span", { class: "lc-tag", text: c.vendor }),
       el("span", { class: "lc-tag", text: LEVEL_LABEL[c.level] }),
-      el("span", { class: "lc-price", text: fmtPrice(c.price_usd) }),
+      el("span", { class: "lc-price", text: fmtLocalPrice(c) }),
     ),
   );
 }
 
 export function renderDrawer(root, c, byId) {
-  const priceDd = el("dd", {}, fmtPrice(c.price_usd));
+  const priceDd = el("dd", {}, fmtLocalPrice(c));
+  if (c.currency !== "USD" && c.price_original != null) priceDd.append(" ", el("span", { class: "muted", text: `· converted from ${c.currency} at the latest ECB rate` }));
   if (c.currency_note) priceDd.append(" ", el("span", { class: "muted", text: "· " + c.currency_note }));
   if (c.price_verified_at) {
     const stale = isStale(c.price_verified_at);
@@ -326,7 +327,7 @@ export function renderDrawer(root, c, byId) {
     el("dd", {}, el("a", { href: `#/domain/${slug(c.domain)}`, class: "muted", text: c.domain })),
     c.issuer ? [el("dt", { text: "Issued by" }), el("dd", { text: `${c.issuer}, on ${c.vendor}` })] : null,
     el("dt", { text: "Level" }), el("dd", { text: LEVEL_LABEL[c.level] }),
-    el("dt", { text: "Price (USD)" }), priceDd,
+    el("dt", { text: "Exam price" }), priceDd,
     c.exam_count > 1 ? [el("dt", { text: "Exams required" }), el("dd", { text: String(c.exam_count) })] : null,
     el("dt", { text: "Exam length" }), el("dd", { text: c.duration_min ? c.duration_min + " min" : "–" }),
     el("dt", { text: "Hands-on" }), el("dd", { text: c.hands_on ? "Yes" : "No" }),

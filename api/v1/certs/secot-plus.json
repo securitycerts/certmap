@@ -23,6 +23,7 @@
   ],
   "currency_note": "Pre-order; exam SOT-001 expected to launch on or around 2026-12-08",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 3,

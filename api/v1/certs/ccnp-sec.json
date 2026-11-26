@@ -23,6 +23,7 @@
   ],
   "currency_note": "Core exam; plus $300 concentration exam",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 120,
   "exam_count": 2,
   "validity_years": 3,

@@ -23,6 +23,7 @@
   ],
   "currency_note": "Standard exam fee; the free 1MCC program closed to new enrolments in May 2026",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 120,
   "exam_count": 1,
   "validity_years": 3,

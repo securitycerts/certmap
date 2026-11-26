@@ -10,7 +10,8 @@
   },
   "scripts": {
     "dev": "python3 -m http.server 8000",
-    "build": "node scripts/build-pages.mjs",
+    "rates": "node scripts/rates.mjs",
+    "build": "node scripts/rates.mjs && node scripts/build-pages.mjs",
     "validate": "node scripts/validate.mjs",
     "security": "python3 scripts/security_check.py",
     "links": "node scripts/check-links.mjs",

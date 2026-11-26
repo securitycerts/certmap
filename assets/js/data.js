@@ -59,6 +59,10 @@ export function rowsToCerts(rows) {
     hands_on: toBool(r[idx.hands_on]),
     price_verified_at: r[idx.price_verified_at]?.trim() || "",
     issuer: r[idx.issuer]?.trim() || "",
+    // The issuer's own figure when it does not price in US dollars; price_usd is
+    // then a conversion at the rates in data/rates.json.
+    price_original: toNum(r[idx.price_original]),
+    currency: r[idx.currency]?.trim() || "USD",
   }));
 }
 

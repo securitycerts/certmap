@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Software Security",
   "level": "beginner",
-  "price_usd": 134,
+  "price_usd": 131,
   "hands_on": false,
   "page": "https://certmap.dev/certs/secops-cap.html",
   "api": "https://certmap.dev/api/v1/certs/secops-cap.json",
@@ -22,8 +22,14 @@
    "web",
    "foundational"
   ],
-  "currency_note": "Vendor lists GBP only (GBP 100); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts",
+  "currency_note": "Vendor lists GBP only; frequent promotional discounts",
   "price_verified_at": "2026-11-10",
+  "price_original": {
+   "amount": 100,
+   "currency": "GBP",
+   "usd_rate": 1.305977,
+   "rate_date": "2026-11-25"
+  },
   "duration_min": 60,
   "exam_count": 1,
   "validity_years": 0,

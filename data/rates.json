@@ -1,0 +1,9 @@
+{
+ "source": "Frankfurter, European Central Bank reference rates",
+ "url": "https://frankfurter.dev/",
+ "date": "2026-11-25",
+ "usd_per": {
+  "EUR": 1.093506,
+  "GBP": 1.305977
+ }
+}

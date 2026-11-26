@@ -24,6 +24,7 @@
   ],
   "currency_note": "Price not published; enrolment through Social Links (customer success manager or osint@sociallinks.io)",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 3,

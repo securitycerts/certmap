@@ -24,6 +24,7 @@
   ],
   "currency_note": "Written exam $215 plus practical exam $325, or $540 as a bundle",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 360,
   "exam_count": 2,
   "validity_years": 2,

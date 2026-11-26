@@ -29,6 +29,7 @@
   ],
   "currency_note": "Verified certificate price $449 shown on the edX page; the course can be audited for free without a certificate.",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 0,

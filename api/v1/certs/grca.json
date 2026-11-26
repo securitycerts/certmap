@@ -24,6 +24,7 @@
   ],
   "currency_note": "No separate exam fee; the exam, retakes and maintenance are included in the paid OCEG All Access Pass membership",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 120,
   "exam_count": 1,
   "validity_years": 1,

@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Cloud/SysOps",
   "level": "advanced",
-  "price_usd": 1232,
+  "price_usd": 1202,
   "hands_on": true,
   "page": "https://certmap.dev/certs/azrte.html",
   "api": "https://certmap.dev/api/v1/certs/azrte.json",
@@ -23,8 +23,14 @@
    "red-team",
    "hands-on"
   ],
-  "currency_note": "Vendor lists EUR only (list EUR 1,099, discounted to EUR 879 on 2026-11-10); converted at 1.1214 USD/EUR (ECB reference rate, 2026-11-10); course with 60 days of lab access and one exam attempt, exam not sold separately",
+  "currency_note": "Vendor lists EUR only (list EUR 1,099, discounted to EUR 879 on 2026-11-10); course with 60 days of lab access and one exam attempt, exam not sold separately",
   "price_verified_at": "2026-11-10",
+  "price_original": {
+   "amount": 1099,
+   "currency": "EUR",
+   "usd_rate": 1.093506,
+   "rate_date": "2026-11-25"
+  },
   "duration_min": 720,
   "exam_count": 1,
   "validity_years": 0,

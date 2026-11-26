@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Security Operations",
   "level": "advanced",
-  "price_usd": 2683,
+  "price_usd": 2611,
   "hands_on": true,
   "page": "https://certmap.dev/certs/csom.html",
   "api": "https://certmap.dev/api/v1/certs/csom.json",
@@ -23,8 +23,14 @@
    "management",
    "security-blue-team"
   ],
-  "currency_note": "Vendor lists GBP only (GBP 1,999); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); price covers training and exam",
+  "currency_note": "Vendor lists GBP only; price covers training and exam",
   "price_verified_at": "2026-11-10",
+  "price_original": {
+   "amount": 1999,
+   "currency": "GBP",
+   "usd_rate": 1.305977,
+   "rate_date": "2026-11-25"
+  },
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 0,

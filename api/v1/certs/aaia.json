@@ -23,6 +23,7 @@
   ],
   "currency_note": "Member rate; $599 non-member; $50 application fee",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 150,
   "exam_count": 1,
   "validity_years": 3,

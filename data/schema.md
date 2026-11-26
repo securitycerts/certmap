@@ -59,3 +59,7 @@ Exploitation
 ## CSV quoting rules
 
 Standard RFC 4180. Wrap any field containing a comma, newline, or double quote in `"..."` and escape inner quotes by doubling them (`""`).
+
+## Prices in other currencies
+
+When an issuer publishes its price only in another currency, the row keeps that figure in `price_original` with its ISO 4217 code in `currency` (for example `399` and `GBP`). `price_usd` is then not typed by hand: `node scripts/rates.mjs` fetches the day's European Central Bank reference rates from the public Frankfurter API (https://frankfurter.dev), stores them in `rates.json` and recomputes `price_usd`. Rows priced in dollars leave both columns empty.

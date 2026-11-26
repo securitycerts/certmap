@@ -24,6 +24,7 @@
   ],
   "currency_note": "Application fee $200 and annual renewal fee $200; the Qualifying Examination fee is not listed on the certification page",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 1,

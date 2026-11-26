@@ -24,6 +24,7 @@
   ],
   "currency_note": "Lab exam; plus $400 core exam (350-701 SCOR)",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 480,
   "exam_count": 2,
   "validity_years": 3,

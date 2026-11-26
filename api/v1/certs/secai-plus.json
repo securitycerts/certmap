@@ -23,6 +23,7 @@
   ],
   "currency_note": "Exam CY0-001",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 60,
   "exam_count": 1,
   "validity_years": 3,

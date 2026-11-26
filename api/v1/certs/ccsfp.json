@@ -25,6 +25,7 @@
   ],
   "currency_note": "Course price including one exam attempt; exam retake $550",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 1,

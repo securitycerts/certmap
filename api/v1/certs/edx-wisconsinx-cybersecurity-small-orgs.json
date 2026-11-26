@@ -28,6 +28,7 @@
   ],
   "currency_note": "Program bundle price $591.30 shown on the edX page (list $657 for the courses bought separately); one-off payment, not a subscription.",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 0,

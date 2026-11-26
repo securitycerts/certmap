@@ -24,6 +24,7 @@
   ],
   "currency_note": "Exam fee not shown on the certification page; preceded by a 5-hour self-paced e-learning course",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 120,
   "exam_count": 1,
   "validity_years": 0,

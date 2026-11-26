@@ -23,6 +23,7 @@
   ],
   "currency_note": "List price for the program (training, exam license and certification); needs-based scholarship rate $1249 for self-paying students; exam-only option $450",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 2,

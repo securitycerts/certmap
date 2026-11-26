@@ -24,6 +24,7 @@
   ],
   "currency_note": "Exam is sold with the CBCI course or a BCI Shop bundle; the certification pages show no price",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 90,
   "exam_count": 1,
   "validity_years": 3,

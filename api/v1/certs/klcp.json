@@ -24,6 +24,7 @@
   ],
   "currency_note": "PEN-103 free with an OffSec account; KLCP exam is a separate purchase, price not published",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 90,
   "exam_count": 1,
   "validity_years": 0,

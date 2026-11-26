@@ -25,6 +25,7 @@
   ],
   "currency_note": "Non-member price; NACD members $3,995. Certificate issued by the CERT Division of the Carnegie Mellon Software Engineering Institute",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 0,

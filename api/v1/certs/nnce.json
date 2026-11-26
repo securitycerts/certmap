@@ -26,6 +26,7 @@
   ],
   "currency_note": "Stand-alone exam with two attempts; the self-paced course with exam costs $1,890",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 180,
   "exam_count": 1,
   "validity_years": 0,

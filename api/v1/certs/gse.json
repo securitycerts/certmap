@@ -23,6 +23,7 @@
   ],
   "currency_note": "No separate GSE fee; portfolio of 6 Practitioner and 4 Applied Knowledge (GX) certifications, each paid separately",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": null,
   "exam_count": 10,
   "validity_years": 4,

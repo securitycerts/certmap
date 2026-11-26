@@ -25,6 +25,7 @@
   ],
   "currency_note": "Per exam; two exams required (301a and 301b) after the F5 Certified Administrator, BIG-IP",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 180,
   "exam_count": 2,
   "validity_years": 0,

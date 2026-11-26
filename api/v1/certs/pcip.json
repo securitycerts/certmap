@@ -24,6 +24,7 @@
   ],
   "currency_note": "Exam only, non-participating organisations; $1,000 for participating organisations; rises to $1,900 on 2027-01-01",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 90,
   "exam_count": 1,
   "validity_years": 3,

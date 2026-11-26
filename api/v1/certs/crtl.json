@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Penetration Testing",
   "level": "expert",
-  "price_usd": 603,
+  "price_usd": 586,
   "hands_on": true,
   "page": "https://certmap.dev/certs/crtl.html",
   "api": "https://certmap.dev/api/v1/certs/crtl.json",
@@ -22,8 +22,14 @@
    "evasion",
    "c2"
   ],
-  "currency_note": "GBP 449 for the Red Team Ops II course, exam attempts included; USD converted at 1.3423 on 2026-11-10",
+  "currency_note": "Price for the Red Team Ops II course, exam attempts included",
   "price_verified_at": "2026-11-10",
+  "price_original": {
+   "amount": 449,
+   "currency": "GBP",
+   "usd_rate": 1.305977,
+   "rate_date": "2026-11-25"
+  },
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 0,

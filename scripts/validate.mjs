@@ -87,6 +87,19 @@ function validateExtras(ids) {
       seen.add(key); resources++;
     });
   }
+  // Prices in another currency keep the issuer's figure and a known currency code.
+  const certRows = read("certs.csv");
+  if (certRows) {
+    const h = certRows.shift().map(x => x.trim());
+    const [o, cur, usd, id] = ["price_original", "currency", "price_usd", "id"].map(k => h.indexOf(k));
+    for (const r of certRows.filter(r => r.length > 1)) {
+      const code = (r[cur] || "").trim();
+      if (code && !/^[A-Z]{3}$/.test(code)) errors.push(`certs.csv [${r[id]}]: currency must be an ISO 4217 code`);
+      if (code && code !== "USD" && (r[o] || "").trim() === "") errors.push(`certs.csv [${r[id]}]: ${code} price needs price_original`);
+      if ((r[o] || "").trim() !== "" && !code) errors.push(`certs.csv [${r[id]}]: price_original needs a currency`);
+      if ((r[o] || "").trim() !== "" && (r[usd] || "").trim() === "") errors.push(`certs.csv [${r[id]}]: run node scripts/rates.mjs to fill price_usd`);
+    }
+  }
   return { errors, pairs, resources };
 }
 

@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Penetration Testing",
   "level": "advanced",
-  "price_usd": 536,
+  "price_usd": 521,
   "hands_on": false,
   "page": "https://certmap.dev/certs/crto.html",
   "api": "https://certmap.dev/api/v1/certs/crto.json",
@@ -21,8 +21,14 @@
    "red-team",
    "c2"
   ],
-  "currency_note": "GBP 399 for the Red Team Ops course, exam attempts included; USD converted at 1.3423 on 2026-11-10",
+  "currency_note": "Price for the Red Team Ops course, exam attempts included",
   "price_verified_at": "2026-11-10",
+  "price_original": {
+   "amount": 399,
+   "currency": "GBP",
+   "usd_rate": 1.305977,
+   "rate_date": "2026-11-25"
+  },
   "duration_min": 2880,
   "exam_count": 1,
   "validity_years": 0,

@@ -25,6 +25,7 @@
   ],
   "currency_note": "Individual plan with 30 days of challenge lab access; 60 or 90 days cost $9 or $15 more; a $49 figure also appears on the page; a $49 figure also appears on the page",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 0,

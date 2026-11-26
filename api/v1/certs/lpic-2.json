@@ -22,6 +22,7 @@
   ],
   "currency_note": "Per exam (2 required)",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 90,
   "exam_count": 2,
   "validity_years": 5,

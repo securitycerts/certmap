@@ -24,6 +24,7 @@
   ],
   "currency_note": "Price is shown only in a geo-localised currency with inconsistent symbols, so no reliable USD figure could be read; includes 12 months of access and one free re-test",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 0,

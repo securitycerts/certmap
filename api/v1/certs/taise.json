@@ -23,6 +23,7 @@
   ],
   "currency_note": "Training + exam bundle, two attempts, two-year window; no exam-only option",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 120,
   "exam_count": 1,
   "validity_years": 0,

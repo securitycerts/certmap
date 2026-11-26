@@ -23,6 +23,7 @@
   ],
   "currency_note": "No standalone bundle; PEN-210 is included with a Learn subscription (Learn Fundamentals $799/year, Learn One $2,749/year); exam attempt terms not published",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 240,
   "exam_count": 1,
   "validity_years": 0,

@@ -24,6 +24,7 @@
   ],
   "currency_note": "External certification fee (certification only, training not included); external candidates must show 36 hours of relevant training; fee is waived for students of the matching IACIS course; 2026 registration closes December 15",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 3,

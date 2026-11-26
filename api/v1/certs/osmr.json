@@ -23,6 +23,7 @@
   ],
   "currency_note": "On hiatus since November 2025; EXP-312 withdrawn, no new exams",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 2880,
   "exam_count": 1,
   "validity_years": 3,

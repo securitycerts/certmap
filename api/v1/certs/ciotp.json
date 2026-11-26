@@ -24,6 +24,7 @@
   ],
   "currency_note": "Exam voucher listed at $367.50 in the CertNexus store, rounded up; delivered through Pearson VUE",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 120,
   "exam_count": 1,
   "validity_years": 3,

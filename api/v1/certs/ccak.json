@@ -23,6 +23,7 @@
   ],
   "currency_note": "Discontinued for new purchases (October 2025)",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 120,
   "exam_count": 1,
   "validity_years": 2,

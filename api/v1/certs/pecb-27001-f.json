@@ -25,6 +25,7 @@
   ],
   "currency_note": "Exam and certification fees are included in the price of the PECB training course; no standalone list price published",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 0,

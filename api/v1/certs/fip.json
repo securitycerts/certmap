@@ -24,6 +24,7 @@
   ],
   "currency_note": "No exam; awarded on application. The page lists no separate fee once two IAPP credentials are held",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 2,

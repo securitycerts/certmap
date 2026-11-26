@@ -14,7 +14,7 @@ Entry-level proctored multiple-choice exam on network security fundamentals, wit
 
 - Vendor: The SecOps Group
 - Level: beginner
-- Exam price: $134 (Vendor lists GBP only (GBP 100); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts)
+- Exam price: £100 (≈ $131) (Vendor lists GBP only; frequent promotional discounts) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 60 minutes
 - Exam format: written or multiple choice
@@ -1212,7 +1212,7 @@ Entry-level proctored multiple-choice exam on social engineering attacks such as
 
 - Vendor: The SecOps Group
 - Level: beginner
-- Exam price: $134 (Vendor lists GBP only (GBP 100); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts)
+- Exam price: £100 (≈ $131) (Vendor lists GBP only; frequent promotional discounts) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 60 minutes
 - Exam format: written or multiple choice
@@ -1699,7 +1699,7 @@ Entry-level multiple-choice exam on application security fundamentals, with fact
 
 - Vendor: The SecOps Group
 - Level: beginner
-- Exam price: $134 (Vendor lists GBP only (GBP 100); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts)
+- Exam price: £100 (≈ $131) (Vendor lists GBP only; frequent promotional discounts) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 60 minutes
 - Exam format: written or multiple choice
@@ -1794,7 +1794,7 @@ Four-hour practical exam on penetration testing of agentic AI and generative AI 
 
 - Vendor: The SecOps Group
 - Level: intermediate
-- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £250 (≈ $326) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 240 minutes
 - Exam format: hands-on, performance-based
@@ -1808,7 +1808,7 @@ Four-hour practical exam on AI and machine learning security, focused on finding
 
 - Vendor: The SecOps Group
 - Level: intermediate
-- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £250 (≈ $326) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 240 minutes
 - Exam format: hands-on, performance-based
@@ -2269,7 +2269,7 @@ Junior defensive security certification assessed through a 24-hour practical inc
 
 - Vendor: Centri
 - Level: beginner
-- Exam price: $536 (Vendor lists GBP only (GBP 399); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); price covers training and exam)
+- Exam price: £399 (≈ $521) (Vendor lists GBP only; price covers training and exam) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 24 hours
 - Exam format: hands-on, performance-based
@@ -2295,7 +2295,7 @@ Entry-level proctored multiple-choice exam on core blue team concepts, with fact
 
 - Vendor: The SecOps Group
 - Level: beginner
-- Exam price: $134 (Vendor lists GBP only (GBP 100); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts)
+- Exam price: £100 (≈ $131) (Vendor lists GBP only; frequent promotional discounts) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 60 minutes
 - Exam format: written or multiple choice
@@ -2998,7 +2998,7 @@ Security operations management certification covering SOC building, team and cap
 
 - Vendor: Centri
 - Level: advanced
-- Exam price: $2,683 (Vendor lists GBP only (GBP 1,999); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); price covers training and exam)
+- Exam price: £1,999 (≈ $2,611) (Vendor lists GBP only; price covers training and exam) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam format: hands-on, performance-based
 - Renewal: does not expire
@@ -3245,7 +3245,7 @@ CREST-accredited threat intelligence analyst certification.
 
 - Vendor: CREST
 - Level: advanced
-- Exam price: $805 (GBP 600 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10)
+- Exam price: £600 (≈ $784) (Price excluding tax via Pearson VUE) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam format: written or multiple choice
 - Renewal: every 3 years
@@ -3590,7 +3590,7 @@ Entry-level proctored multiple-choice exam on AWS cloud security fundamentals, w
 
 - Vendor: The SecOps Group
 - Level: beginner
-- Exam price: $134 (Vendor lists GBP only (GBP 100); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts)
+- Exam price: £100 (≈ $131) (Vendor lists GBP only; frequent promotional discounts) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 60 minutes
 - Exam format: written or multiple choice
@@ -3984,7 +3984,7 @@ Covers AWS identity and access management, encryption, networking protections an
 
 - Vendor: HackTricks Training
 - Level: advanced
-- Exam price: $1,232 (Vendor lists EUR only (list EUR 1,099, discounted to EUR 879 on 2026-11-10); converted at 1.1214 USD/EUR (ECB reference rate, 2026-11-10); course with 60 days of lab access and one exam attempt, exam not sold separately)
+- Exam price: €1,099 (≈ $1,202) (Vendor lists EUR only (list EUR 1,099, discounted to EUR 879 on 2026-11-10); course with 60 days of lab access and one exam attempt, exam not sold separately) Converted from EUR at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 12 hours
 - Exam format: hands-on, performance-based
@@ -3998,7 +3998,7 @@ Covers Azure and Entra ID identity management, access control abuse, encryption,
 
 - Vendor: HackTricks Training
 - Level: advanced
-- Exam price: $1,232 (Vendor lists EUR only (list EUR 1,099, discounted to EUR 879 on 2026-11-10); converted at 1.1214 USD/EUR (ECB reference rate, 2026-11-10); course with 60 days of lab access and one exam attempt, exam not sold separately)
+- Exam price: €1,099 (≈ $1,202) (Vendor lists EUR only (list EUR 1,099, discounted to EUR 879 on 2026-11-10); course with 60 days of lab access and one exam attempt, exam not sold separately) Converted from EUR at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 12 hours
 - Exam format: hands-on, performance-based
@@ -4150,7 +4150,7 @@ Covers Google Cloud identity and access management, encryption, networking, misc
 
 - Vendor: HackTricks Training
 - Level: advanced
-- Exam price: $1,232 (Vendor lists EUR only (list EUR 1,099, discounted to EUR 879 on 2026-11-10); converted at 1.1214 USD/EUR (ECB reference rate, 2026-11-10); course with 60 days of lab access and one exam attempt, exam not sold separately)
+- Exam price: €1,099 (≈ $1,202) (Vendor lists EUR only (list EUR 1,099, discounted to EUR 879 on 2026-11-10); course with 60 days of lab access and one exam attempt, exam not sold separately) Converted from EUR at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 12 hours
 - Exam format: hands-on, performance-based
@@ -4244,7 +4244,7 @@ Seven-hour practical CTF-style exam on identifying and exploiting vulnerabilitie
 
 - Vendor: The SecOps Group
 - Level: expert
-- Exam price: $537 (Vendor lists GBP only (GBP 400); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £400 (≈ $522) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 420 minutes
 - Exam format: hands-on, performance-based
@@ -4258,7 +4258,7 @@ Seven-hour practical CTF-style exam simulating a complete attack chain in a Micr
 
 - Vendor: The SecOps Group
 - Level: expert
-- Exam price: $537 (Vendor lists GBP only (GBP 400); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £400 (≈ $522) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 420 minutes
 - Exam format: hands-on, performance-based
@@ -5873,7 +5873,7 @@ Entry-level closed-book exam of 120 multiple-choice questions in two hours on in
 
 - Vendor: CREST
 - Level: beginner
-- Exam price: $369 (GBP 275 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10)
+- Exam price: £275 (≈ $359) (Price excluding tax via Pearson VUE) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 120 minutes
 - Exam format: written or multiple choice
@@ -5887,7 +5887,7 @@ Four-hour practical exam in which candidates investigate a multi-stage intrusion
 
 - Vendor: The SecOps Group
 - Level: intermediate
-- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £250 (≈ $326) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 240 minutes
 - Exam format: hands-on, performance-based
@@ -5956,7 +5956,7 @@ Intermediate invigilated exam of 150 multiple-choice questions in 2.5 hours on n
 
 - Vendor: CREST
 - Level: intermediate
-- Exam price: $805 (GBP 600 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10)
+- Exam price: £600 (≈ $784) (Price excluding tax via Pearson VUE) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 150 minutes
 - Exam format: written or multiple choice
@@ -6068,7 +6068,7 @@ Advanced defensive certification with a practical assessment of up to 72 hours a
 
 - Vendor: Centri
 - Level: advanced
-- Exam price: $2,683 (Vendor lists GBP only (GBP 1,999); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); price covers training and exam)
+- Exam price: £1,999 (≈ $2,611) (Vendor lists GBP only; price covers training and exam) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 3 days
 - Exam format: hands-on, performance-based
@@ -6132,7 +6132,7 @@ Seven-hour practical exam in which candidates investigate a multi-stage intrusio
 
 - Vendor: The SecOps Group
 - Level: expert
-- Exam price: $537 (Vendor lists GBP only (GBP 400); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £400 (≈ $522) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 420 minutes
 - Exam format: hands-on, performance-based
@@ -6199,7 +6199,7 @@ Entry-level closed-book multiple-choice exam of 120 questions in two hours on as
 
 - Vendor: CREST
 - Level: beginner
-- Exam price: $369 (GBP 275 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10)
+- Exam price: £275 (≈ $359) (Price excluding tax via Pearson VUE) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 120 minutes
 - Exam format: written or multiple choice
@@ -6410,7 +6410,7 @@ Four-hour practical exam on API penetration testing covering REST, SOAP and Grap
 
 - Vendor: The SecOps Group
 - Level: intermediate
-- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £250 (≈ $326) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 240 minutes
 - Exam format: hands-on, performance-based
@@ -6438,7 +6438,7 @@ Four-hour practical exam on web application penetration testing, taken online an
 
 - Vendor: The SecOps Group
 - Level: intermediate
-- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts)
+- Exam price: £250 (≈ $326) (Vendor lists GBP only; frequent promotional discounts) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 240 minutes
 - Exam format: hands-on, performance-based
@@ -6452,7 +6452,7 @@ Four-hour practical exam on desktop application penetration testing with flag-ba
 
 - Vendor: The SecOps Group
 - Level: intermediate
-- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £250 (≈ $326) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 240 minutes
 - Exam format: hands-on, performance-based
@@ -6537,7 +6537,7 @@ Four-hour practical exam on breaking out of a locked-down Windows kiosk session 
 
 - Vendor: The SecOps Group
 - Level: intermediate
-- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £250 (≈ $326) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 240 minutes
 - Exam format: hands-on, performance-based
@@ -6551,7 +6551,7 @@ Four-hour practical exam on static and dynamic analysis of Android applications,
 
 - Vendor: The SecOps Group
 - Level: intermediate
-- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £250 (≈ $326) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 240 minutes
 - Exam format: hands-on, performance-based
@@ -6565,7 +6565,7 @@ Four-hour practical exam on static and dynamic analysis of iOS applications, usi
 
 - Vendor: The SecOps Group
 - Level: intermediate
-- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £250 (≈ $326) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 240 minutes
 - Exam format: hands-on, performance-based
@@ -6579,7 +6579,7 @@ Four-hour practical exam on network penetration testing, taken online and on dem
 
 - Vendor: The SecOps Group
 - Level: intermediate
-- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts)
+- Exam price: £250 (≈ $326) (Vendor lists GBP only; frequent promotional discounts) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 240 minutes
 - Exam format: hands-on, performance-based
@@ -6629,7 +6629,7 @@ Intermediate practical exam of 2.5 hours in a provided Kali Linux environment, c
 
 - Vendor: CREST
 - Level: intermediate
-- Exam price: $805 (GBP 600 excluding tax via Pearson VUE; USD converted at 1.3423 on 2026-11-10)
+- Exam price: £600 (≈ $784) (Price excluding tax via Pearson VUE) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 150 minutes
 - Exam format: hands-on, performance-based
@@ -6644,7 +6644,7 @@ Five-hour practical exam on Windows red team operations, starting from low-privi
 
 - Vendor: The SecOps Group
 - Level: intermediate
-- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £250 (≈ $326) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 300 minutes
 - Exam format: hands-on, performance-based
@@ -6961,7 +6961,7 @@ Hands-on red team operations certification covering Cobalt Strike tradecraft.
 
 - Vendor: Zero-Point Security
 - Level: advanced
-- Exam price: $536 (GBP 399 for the Red Team Ops course, exam attempts included; USD converted at 1.3423 on 2026-11-10)
+- Exam price: £399 (≈ $521) (Price for the Red Team Ops course, exam attempts included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 2 days
 - Exam format: written or multiple choice
@@ -7080,7 +7080,7 @@ Seven-hour practical exam on identifying and exploiting vulnerabilities across a
 
 - Vendor: The SecOps Group
 - Level: expert
-- Exam price: $537 (Vendor lists GBP only (GBP 400); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £400 (≈ $522) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 420 minutes
 - Exam format: hands-on, performance-based
@@ -7108,7 +7108,7 @@ Seven-hour practical exam on advanced web application penetration testing, with 
 
 - Vendor: The SecOps Group
 - Level: expert
-- Exam price: $537 (Vendor lists GBP only (GBP 400); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £400 (≈ $522) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 420 minutes
 - Exam format: hands-on, performance-based
@@ -7199,7 +7199,7 @@ Seven-hour practical exam on stealthy red team operations in a detection-aware W
 
 - Vendor: The SecOps Group
 - Level: expert
-- Exam price: $537 (Vendor lists GBP only (GBP 400); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £400 (≈ $522) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 420 minutes
 - Exam format: hands-on, performance-based
@@ -7213,7 +7213,7 @@ Awarded for passing the Red Team Lead exam of the Red Team Ops II course, which 
 
 - Vendor: Zero-Point Security
 - Level: expert
-- Exam price: $603 (GBP 449 for the Red Team Ops II course, exam attempts included; USD converted at 1.3423 on 2026-11-10)
+- Exam price: £449 (≈ $586) (Price for the Red Team Ops II course, exam attempts included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam format: hands-on, performance-based
 - Renewal: does not expire
@@ -7302,7 +7302,7 @@ Four-hour practical exam on binary fuzzing and reverse engineering, covering mem
 
 - Vendor: The SecOps Group
 - Level: intermediate
-- Exam price: $336 (Vendor lists GBP only (GBP 250); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); frequent promotional discounts; one free retake included)
+- Exam price: £250 (≈ $326) (Vendor lists GBP only; frequent promotional discounts; one free retake included) Converted from GBP at the European Central Bank rate of 2026-11-25.
 - Price checked: 2026-11-10
 - Exam length: 240 minutes
 - Exam format: hands-on, performance-based

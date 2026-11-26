@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Incident Handling",
   "level": "advanced",
-  "price_usd": 2683,
+  "price_usd": 2611,
   "hands_on": true,
   "page": "https://certmap.dev/certs/btl2.html",
   "api": "https://certmap.dev/api/v1/certs/btl2.json",
@@ -24,8 +24,14 @@
    "hands-on",
    "security-blue-team"
   ],
-  "currency_note": "Vendor lists GBP only (GBP 1,999); converted at 1.3423 USD/GBP (ECB reference rate, 2026-11-10); price covers training and exam",
+  "currency_note": "Vendor lists GBP only; price covers training and exam",
   "price_verified_at": "2026-11-10",
+  "price_original": {
+   "amount": 1999,
+   "currency": "GBP",
+   "usd_rate": 1.305977,
+   "rate_date": "2026-11-25"
+  },
   "duration_min": 4320,
   "exam_count": 1,
   "validity_years": 0,

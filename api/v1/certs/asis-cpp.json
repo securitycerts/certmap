@@ -24,6 +24,7 @@
   ],
   "currency_note": "Non-member fee; ASIS members $580. Fees from the ASIS Board Certification Handbook",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 240,
   "exam_count": 1,
   "validity_years": 3,

@@ -495,7 +495,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "advanced",
-   "price_usd": 536,
+   "price_usd": 521,
    "hands_on": false,
    "page": "https://certmap.dev/certs/crto.html",
    "api": "https://certmap.dev/api/v1/certs/crto.json"
@@ -1535,7 +1535,7 @@
    "issuer": null,
    "domain": "Cyber Threat Intelligence",
    "level": "advanced",
-   "price_usd": 805,
+   "price_usd": 784,
    "hands_on": false,
    "page": "https://certmap.dev/certs/crtia.html",
    "api": "https://certmap.dev/api/v1/certs/crtia.json"
@@ -2588,7 +2588,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "expert",
-   "price_usd": 603,
+   "price_usd": 586,
    "hands_on": true,
    "page": "https://certmap.dev/certs/crtl.html",
    "api": "https://certmap.dev/api/v1/certs/crtl.json"
@@ -2822,7 +2822,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "beginner",
-   "price_usd": 369,
+   "price_usd": 359,
    "hands_on": false,
    "page": "https://certmap.dev/certs/cpsa.html",
    "api": "https://certmap.dev/api/v1/certs/cpsa.json"
@@ -2835,7 +2835,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "intermediate",
-   "price_usd": 805,
+   "price_usd": 784,
    "hands_on": true,
    "page": "https://certmap.dev/certs/crt.html",
    "api": "https://certmap.dev/api/v1/certs/crt.json"
@@ -3108,7 +3108,7 @@
    "issuer": null,
    "domain": "Security Operations",
    "level": "beginner",
-   "price_usd": 536,
+   "price_usd": 521,
    "hands_on": true,
    "page": "https://certmap.dev/certs/btl1.html",
    "api": "https://certmap.dev/api/v1/certs/btl1.json"
@@ -3121,7 +3121,7 @@
    "issuer": null,
    "domain": "Incident Handling",
    "level": "advanced",
-   "price_usd": 2683,
+   "price_usd": 2611,
    "hands_on": true,
    "page": "https://certmap.dev/certs/btl2.html",
    "api": "https://certmap.dev/api/v1/certs/btl2.json"
@@ -3173,7 +3173,7 @@
    "issuer": null,
    "domain": "Software Security",
    "level": "beginner",
-   "price_usd": 134,
+   "price_usd": 131,
    "hands_on": false,
    "page": "https://certmap.dev/certs/secops-cap.html",
    "api": "https://certmap.dev/api/v1/certs/secops-cap.json"
@@ -3186,7 +3186,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "intermediate",
-   "price_usd": 336,
+   "price_usd": 326,
    "hands_on": true,
    "page": "https://certmap.dev/certs/cnpen.html",
    "api": "https://certmap.dev/api/v1/certs/cnpen.json"
@@ -3199,7 +3199,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "intermediate",
-   "price_usd": 336,
+   "price_usd": 326,
    "hands_on": true,
    "page": "https://certmap.dev/certs/capen.html",
    "api": "https://certmap.dev/api/v1/certs/capen.json"
@@ -4603,7 +4603,7 @@
    "issuer": null,
    "domain": "Security Operations",
    "level": "advanced",
-   "price_usd": 2683,
+   "price_usd": 2611,
    "hands_on": true,
    "page": "https://certmap.dev/certs/csom.html",
    "api": "https://certmap.dev/api/v1/certs/csom.json"
@@ -4642,7 +4642,7 @@
    "issuer": null,
    "domain": "Incident Handling",
    "level": "beginner",
-   "price_usd": 369,
+   "price_usd": 359,
    "hands_on": false,
    "page": "https://certmap.dev/certs/cpia.html",
    "api": "https://certmap.dev/api/v1/certs/cpia.json"
@@ -4655,7 +4655,7 @@
    "issuer": null,
    "domain": "Incident Handling",
    "level": "intermediate",
-   "price_usd": 805,
+   "price_usd": 784,
    "hands_on": false,
    "page": "https://certmap.dev/certs/cria.html",
    "api": "https://certmap.dev/api/v1/certs/cria.json"
@@ -4824,7 +4824,7 @@
    "issuer": null,
    "domain": "Cloud/SysOps",
    "level": "advanced",
-   "price_usd": 1232,
+   "price_usd": 1202,
    "hands_on": true,
    "page": "https://certmap.dev/certs/arte.html",
    "api": "https://certmap.dev/api/v1/certs/arte.json"
@@ -4837,7 +4837,7 @@
    "issuer": null,
    "domain": "Cloud/SysOps",
    "level": "advanced",
-   "price_usd": 1232,
+   "price_usd": 1202,
    "hands_on": true,
    "page": "https://certmap.dev/certs/azrte.html",
    "api": "https://certmap.dev/api/v1/certs/azrte.json"
@@ -4850,7 +4850,7 @@
    "issuer": null,
    "domain": "Cloud/SysOps",
    "level": "advanced",
-   "price_usd": 1232,
+   "price_usd": 1202,
    "hands_on": true,
    "page": "https://certmap.dev/certs/grte.html",
    "api": "https://certmap.dev/api/v1/certs/grte.json"
@@ -4889,7 +4889,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "expert",
-   "price_usd": 537,
+   "price_usd": 522,
    "hands_on": true,
    "page": "https://certmap.dev/certs/capenx.html",
    "api": "https://certmap.dev/api/v1/certs/capenx.json"
@@ -4902,7 +4902,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "intermediate",
-   "price_usd": 336,
+   "price_usd": 326,
    "hands_on": true,
    "page": "https://certmap.dev/certs/c-apipen.html",
    "api": "https://certmap.dev/api/v1/certs/c-apipen.json"
@@ -4915,7 +4915,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "intermediate",
-   "price_usd": 336,
+   "price_usd": 326,
    "hands_on": true,
    "page": "https://certmap.dev/certs/cdapen.html",
    "api": "https://certmap.dev/api/v1/certs/cdapen.json"
@@ -4928,7 +4928,7 @@
    "issuer": null,
    "domain": "Incident Handling",
    "level": "expert",
-   "price_usd": 537,
+   "price_usd": 522,
    "hands_on": true,
    "page": "https://certmap.dev/certs/cbteamerx.html",
    "api": "https://certmap.dev/api/v1/certs/cbteamerx.json"
@@ -4941,7 +4941,7 @@
    "issuer": null,
    "domain": "Communication & Network Security",
    "level": "beginner",
-   "price_usd": 134,
+   "price_usd": 131,
    "hands_on": false,
    "page": "https://certmap.dev/certs/cnsp.html",
    "api": "https://certmap.dev/api/v1/certs/cnsp.json"
@@ -4954,7 +4954,7 @@
    "issuer": null,
    "domain": "Cloud/SysOps",
    "level": "beginner",
-   "price_usd": 134,
+   "price_usd": 131,
    "hands_on": false,
    "page": "https://certmap.dev/certs/secops-ccsp-aws.html",
    "api": "https://certmap.dev/api/v1/certs/secops-ccsp-aws.json"
@@ -4967,7 +4967,7 @@
    "issuer": null,
    "domain": "Security Operations",
    "level": "beginner",
-   "price_usd": 134,
+   "price_usd": 131,
    "hands_on": false,
    "page": "https://certmap.dev/certs/cbtp.html",
    "api": "https://certmap.dev/api/v1/certs/cbtp.json"
@@ -4980,7 +4980,7 @@
    "issuer": null,
    "domain": "Security & Risk Management",
    "level": "beginner",
-   "price_usd": 134,
+   "price_usd": 131,
    "hands_on": false,
    "page": "https://certmap.dev/certs/csedp.html",
    "api": "https://certmap.dev/api/v1/certs/csedp.json"
@@ -4993,7 +4993,7 @@
    "issuer": null,
    "domain": "Incident Handling",
    "level": "intermediate",
-   "price_usd": 336,
+   "price_usd": 326,
    "hands_on": true,
    "page": "https://certmap.dev/certs/cbteamer.html",
    "api": "https://certmap.dev/api/v1/certs/cbteamer.json"
@@ -5006,7 +5006,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "intermediate",
-   "price_usd": 336,
+   "price_usd": 326,
    "hands_on": true,
    "page": "https://certmap.dev/certs/cmpen-android.html",
    "api": "https://certmap.dev/api/v1/certs/cmpen-android.json"
@@ -5019,7 +5019,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "intermediate",
-   "price_usd": 336,
+   "price_usd": 326,
    "hands_on": true,
    "page": "https://certmap.dev/certs/cmpen-ios.html",
    "api": "https://certmap.dev/api/v1/certs/cmpen-ios.json"
@@ -5032,7 +5032,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "intermediate",
-   "price_usd": 336,
+   "price_usd": 326,
    "hands_on": true,
    "page": "https://certmap.dev/certs/crteamer.html",
    "api": "https://certmap.dev/api/v1/certs/crteamer.json"
@@ -5045,7 +5045,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "expert",
-   "price_usd": 537,
+   "price_usd": 522,
    "hands_on": true,
    "page": "https://certmap.dev/certs/crteamerx.html",
    "api": "https://certmap.dev/api/v1/certs/crteamerx.json"
@@ -5058,7 +5058,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "expert",
-   "price_usd": 537,
+   "price_usd": 522,
    "hands_on": true,
    "page": "https://certmap.dev/certs/c-adpenx.html",
    "api": "https://certmap.dev/api/v1/certs/c-adpenx.json"
@@ -5071,7 +5071,7 @@
    "issuer": null,
    "domain": "Exploitation",
    "level": "intermediate",
-   "price_usd": 336,
+   "price_usd": 326,
    "hands_on": true,
    "page": "https://certmap.dev/certs/cbfrpro.html",
    "api": "https://certmap.dev/api/v1/certs/cbfrpro.json"
@@ -5084,7 +5084,7 @@
    "issuer": null,
    "domain": "Penetration Testing",
    "level": "intermediate",
-   "price_usd": 336,
+   "price_usd": 326,
    "hands_on": true,
    "page": "https://certmap.dev/certs/ckbpro.html",
    "api": "https://certmap.dev/api/v1/certs/ckbpro.json"
@@ -5097,7 +5097,7 @@
    "issuer": null,
    "domain": "Software Security",
    "level": "intermediate",
-   "price_usd": 336,
+   "price_usd": 326,
    "hands_on": true,
    "page": "https://certmap.dev/certs/c-aimlpen.html",
    "api": "https://certmap.dev/api/v1/certs/c-aimlpen.json"
@@ -5110,7 +5110,7 @@
    "issuer": null,
    "domain": "Software Security",
    "level": "intermediate",
-   "price_usd": 336,
+   "price_usd": 326,
    "hands_on": true,
    "page": "https://certmap.dev/certs/c-agaipen.html",
    "api": "https://certmap.dev/api/v1/certs/c-agaipen.json"
@@ -5123,7 +5123,7 @@
    "issuer": null,
    "domain": "Cloud/SysOps",
    "level": "expert",
-   "price_usd": 537,
+   "price_usd": 522,
    "hands_on": true,
    "page": "https://certmap.dev/certs/ccpenx-aws.html",
    "api": "https://certmap.dev/api/v1/certs/ccpenx-aws.json"
@@ -5136,7 +5136,7 @@
    "issuer": null,
    "domain": "Cloud/SysOps",
    "level": "expert",
-   "price_usd": 537,
+   "price_usd": 522,
    "hands_on": true,
    "page": "https://certmap.dev/certs/ccpenx-azure.html",
    "api": "https://certmap.dev/api/v1/certs/ccpenx-azure.json"

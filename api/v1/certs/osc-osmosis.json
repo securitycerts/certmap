@@ -24,6 +24,7 @@
   ],
   "currency_note": "Virtual proctored exam; an older OSMOSIS FAQ quotes $200 and a $150 annual maintenance fee, not confirmed on the current pages",
   "price_verified_at": "2026-11-10",
+  "price_original": null,
   "duration_min": 90,
   "exam_count": 1,
   "validity_years": 3,

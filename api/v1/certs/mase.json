@@ -24,6 +24,7 @@
   ],
   "currency_note": "Not in the vendor's current catalogue (checked 2026-11-10); kept for existing holders",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": 4320,
   "exam_count": 1,
   "validity_years": 0,

@@ -25,6 +25,7 @@
   ],
   "currency_note": "No exam fee listed; earned through the Networking Academy Ethical Hacker course plus a Cisco U. capture the flag challenge",
   "price_verified_at": null,
+  "price_original": null,
   "duration_min": null,
   "exam_count": 1,
   "validity_years": 0,
