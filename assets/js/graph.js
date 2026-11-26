@@ -2,8 +2,8 @@
 // is a vendored bundle that is only fetched the first time someone opens this
 // view, so the matrix and the list never pay for it.
 
-import { fmtLocalPrice } from "./format.js?v=d6bb7f95";
-import { NOTE_MAX } from "./paths.js?v=d6bb7f95";
+import { fmtLocalPrice } from "./format.js?v=7db0ed1c";
+import { NOTE_MAX } from "./paths.js?v=7db0ed1c";
 
 const LEVELS = ["beginner", "intermediate", "advanced", "expert"];
 const COL_W = 280, ROW_H = 150;
@@ -112,6 +112,8 @@ export async function mountGraph(host, { certs, notes, editable, theme, onOpen, 
       zoomOnScroll: false,
       zoomOnDoubleClick: false,
       preventScrolling: false,
+      // React Flow (MIT) is credited in the README instead of on the canvas.
+      proOptions: { hideAttribution: true },
       onNodeDoubleClick: (e, node) => { if (!e.target.closest("input, button")) onOpen(node.id); },
     },
       h(L.Background, { gap: 22, size: 1 }),

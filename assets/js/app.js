@@ -1,16 +1,16 @@
-import { loadData } from "./data.js?v=d6bb7f95";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=d6bb7f95";
-import { slug, fmtPrice, fmtLocalPrice, LEVEL_LABEL } from "./format.js?v=d6bb7f95";
-import { loadRates, currencyCodes, currency, setCurrency, fmtMoney, fromUsd, fmtTotal, currencyLabel, currencyShort } from "./currency.js?v=d6bb7f95";
-import { enhanceSelect } from "./picker.js?v=d6bb7f95";
-import { el } from "./dom.js?v=d6bb7f95";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=d6bb7f95";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=d6bb7f95";
-import { toast, copyText } from "./toast.js?v=d6bb7f95";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=d6bb7f95";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=d6bb7f95";
-import { mountGraph, unmountGraph } from "./graph.js?v=d6bb7f95";
-import { downloadRoadmapImage } from "./share-image.js?v=d6bb7f95";
+import { loadData } from "./data.js?v=7db0ed1c";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=7db0ed1c";
+import { slug, fmtPrice, fmtLocalPrice, LEVEL_LABEL } from "./format.js?v=7db0ed1c";
+import { loadRates, currencyCodes, currency, setCurrency, fmtMoney, fromUsd, fmtTotal, currencyLabel, currencyShort } from "./currency.js?v=7db0ed1c";
+import { enhanceSelect } from "./picker.js?v=7db0ed1c";
+import { el } from "./dom.js?v=7db0ed1c";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=7db0ed1c";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=7db0ed1c";
+import { toast, copyText } from "./toast.js?v=7db0ed1c";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=7db0ed1c";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=7db0ed1c";
+import { mountGraph, unmountGraph } from "./graph.js?v=7db0ed1c";
+import { downloadRoadmapImage } from "./share-image.js?v=7db0ed1c";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -506,7 +506,7 @@ function paintGrid(filtered) {
     const { ordered, graphHost } = renderRoadmap(grid, roadmap.ids.map(id => DATA.byId.get(id)), state, {
       name: roadmap.name, same: roadmap.same, view: state.roadmapView, notes,
     });
-    shownRoadmap = { ordered, name: roadmap.name };
+    shownRoadmap = { ordered, name: roadmap.name, notes };
     if (graphHost) {
       mountGraph(graphHost, {
         certs: ordered, notes, editable: roadmap.same, theme: currentTheme(),
@@ -1030,7 +1030,7 @@ async function init() {
     if (rm === "copy") { copyText(shareLink(baseHash), "Roadmap link copied"); return; }
     if (rm === "view-list" || rm === "view-graph") { setRoadmapView(rm.slice(5)); return; }
     if (rm === "image" && shownRoadmap) {
-      downloadRoadmapImage(shownRoadmap.ordered, shownRoadmap.name).then(ok => toast(ok ? "Image saved" : "Could not create the image", ok ? {} : { tone: "warn" }));
+      downloadRoadmapImage(shownRoadmap.ordered, shownRoadmap.name, shownRoadmap.notes).then(ok => toast(ok ? "Image saved" : "Could not create the image", ok ? {} : { tone: "warn" }));
       return;
     }
     if (e.target.closest(".rm-note-input")) return;
