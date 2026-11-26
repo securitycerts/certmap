@@ -504,8 +504,8 @@ function faq() {
       free.length ? `Yes. ${free.map(c => c.acronym).join(", ")} ${free.length === 1 ? "has" : "have"} no exam fee.` : "None of the certifications currently on the roadmap is free."],
     ["Which certifications have a hands-on exam?",
       `${certs.filter(c => c.hands_on).length} of the ${certs.length} certifications are assessed with a practical exam in a lab rather than multiple choice, among them ${listItems(LISTS[6]).filter(c => c.weight > 0).slice(0, 6).map(c => c.acronym).join(", ")}.`],
-    ["Which certifications count for DoD 8140?",
-      `${certs.filter(c => c.dod_8140).length} certifications on the roadmap are recognised under the US Department of Defense 8140 framework, including ${listItems(LISTS[7]).slice(0, 6).map(c => c.acronym).join(", ")}.`],
+    ["What is DoD 8140 and which certifications count for it?",
+      `DoD 8140 is the US Department of Defense framework for qualifying everyone who does cyber work for it, contractors included, and it replaced the older 8570 programme. Each person has to reach a foundational qualification for their work role within nine months, and an approved certification is one way to do it, alongside education, training or experience. ${certs.filter(c => c.dod_8140).length} certifications on the roadmap appear in the DoD 8140 qualification matrix, including ${listItems(LISTS[7]).slice(0, 6).map(c => c.acronym).join(", ")}.`],
     ["How current are the prices?",
       `${verified} of ${certs.length} prices carry the date they were last checked against the vendor's own page; the most recent check was on ${latest}. Each certification page shows its own date. Vendors change prices without notice, so confirm before paying.`],
     ["Does cert/map help me study for a certification?",
@@ -514,6 +514,16 @@ function faq() {
       "Yes. Select certifications in the interactive roadmap and it orders them by prerequisite and adds up exam cost and study time. Give the path a name, pick your currency and copy its link: anyone who opens it sees the same roadmap with the same currency. It can also be copied as Markdown or downloaded as CSV with the converted prices."],
   ];
 }
+
+// Figures for "Why certifications still matter", each from the publisher's own report.
+const WHY = [
+  { figure: "514,359", text: "cybersecurity job postings in the US in one year (2024 to 2025).", source: "CyberSeek", url: "https://www.cyberseek.org/" },
+  { figure: "82,494", text: "of those openings asked for CISSP, and 70,019 for CompTIA Security+.", source: "CyberSeek data", url: "https://www.cyberseek.org/data/heatmap/all_data.csv" },
+  { figure: "89%", text: "of hiring managers would consider a junior candidate whose credential is an entry-level certification.", source: "ISC2 Hiring Trends 2025", url: "https://www.isc2.org/insights/2025/06/cybersecurity-hiring-trends-study" },
+  { figure: "47%", text: "of hiring managers call certifications a critical attribute, ahead of IT experience (44%) and education (43%).", source: "ISC2 Hiring Trends 2025", url: "https://www.isc2.org/insights/2025/06/cybersecurity-hiring-trends-study" },
+  { figure: "91%", text: "of IT decision-makers prefer to hire candidates who hold a certification.", source: "Fortinet Skills Gap Report 2026", url: "https://www.fortinet.com/content/dam/fortinet/assets/reports/2026-cybersecurity-skills-gap-report.pdf" },
+  { figure: "92%", text: "would pay for an employee to get certified, up from 73% in the previous report.", source: "Fortinet Skills Gap Report 2026", url: "https://www.fortinet.com/content/dam/fortinet/assets/reports/2026-cybersecurity-skills-gap-report.pdf" },
+];
 
 function homePage() {
   const perDomain = count(certs, "domain"), perVendor = count(certs, "vendor");
@@ -530,6 +540,15 @@ function homePage() {
   <p class="lead">cert/map charts every certification worth knowing in security by subject and by seniority, with what each one costs and what it leads to, and gives you an ordered study plan to prepare for it.</p>
   <p class="cta"><a class="btn primary big" href="../map/">Open the roadmap</a> <a class="btn big" href="../certs/">Browse the full list</a></p>
   <div class="stats">${stat(certs.length, "certifications")}${stat(vendors.size, "vendors")}${stat(RESOURCES.size, "study plans")}${stat(verified, "prices verified")}</div>
+</section>
+
+<section class="block" id="why">
+  <h2>Why certifications still matter</h2>
+  <div class="prose"><p>Employers still name certifications in job adverts, still use them to shortlist junior candidates and still pay for their staff to earn them. These figures come from the reports themselves; each links to its source.</p></div>
+  <div class="why-grid">
+${WHY.map(w => `    <figure class="why"><strong>${esc(w.figure)}</strong><figcaption>${esc(w.text)} <a class="src" href="${esc(w.url)}" rel="noopener noreferrer">${esc(w.source)}</a></figcaption></figure>`).join("\n")}
+  </div>
+  <p class="fine">The counterweight: most professionals got into security through hands-on IT work (56%) rather than through a certification (6%), according to the <a href="https://www.isc2.org/Insights/2025/12/2025-ISC2-Cybersecurity-Workforce-Study" rel="noopener noreferrer">2025 ISC2 Workforce Study</a>. A certification helps open the door and practice backs it up, which is why every study plan here ends in hands-on labs.</p>
 </section>
 
 <section class="block">
