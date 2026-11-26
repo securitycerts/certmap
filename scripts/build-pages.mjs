@@ -14,7 +14,7 @@
 //   certs/compare-*.html side-by-side comparisons of the pairs in data/comparisons.csv,
 //                        repeated in es/ fr/ de/ it/ ar/ ko/ he/ with hreflang links
 //   index.html           the home page: what the site is, a site index, an FAQ and the sponsors
-//   sponsors/index.html  what sponsoring involves, the tiers and an FAQ
+//   donate/index.html    private donations in Zcash; sponsors/ forwards there
 //   about/index.html     redirect to the home page, its former address
 //   r/index.html         landing page that shared roadmap links point at
 //   llms-full.txt        every certification as Markdown, for language models
@@ -117,7 +117,7 @@ ${alternates.map(x => `<link rel="alternate" hreflang="${x.lang}" href="${x.href
 <body>
 <header class="top">
   <a class="brand" href="../">cert<span>/</span>map</a>
-  <nav><a href="../certs/">${T.nav[0]}</a><a href="../api/">API</a><a href="../sponsors/">${T.nav[1]}</a><a href="../map/">${T.nav[2]}</a></nav>
+  <nav><a href="../certs/">${T.nav[0]}</a><a href="../api/">API</a><a href="../donate/">${T.nav[1]}</a><a href="../map/">${T.nav[2]}</a></nav>
 </header>
 <main>
 ${body}
@@ -126,7 +126,7 @@ ${body}
   <p>${T.code === "en"
     ? `Part of <a href="../">cert/map</a>, an open-source roadmap of cybersecurity certifications. Prices are list prices in USD and can change, so confirm with the vendor before paying.${modified ? ` Last reviewed ${modified}.` : ""}`
     : `${esc(T.footer)}${modified ? ` <time datetime="${modified}">${modified}</time>` : ""}`}</p>
-  <p><a href="https://github.com/securitycerts/certmap">Source and dataset on GitHub</a> · <a href="../api/">API</a> · <a href="../sponsors/">Become a sponsor</a> · <a href="mailto:${EMAIL}">${EMAIL}</a></p>
+  <p><a href="https://github.com/securitycerts/certmap">Source and dataset on GitHub</a> · <a href="../api/">API</a> · <a href="../donate/">Donate</a> · <a href="mailto:${EMAIL}">${EMAIL}</a></p>
 </footer>
 ${script ? `<script src="../${script}?v=${fileHash(script)}"></script>\n` : ""}</body>
 </html>
@@ -570,7 +570,7 @@ ${WHY.map(w => `    <figure class="why"><strong>${esc(w.figure)}</strong><figcap
   </ol>
 </section>
 
-${sponsorsSection()}
+${donateSection()}
 
 <section class="block">
   <h2>Popular lists</h2>
@@ -639,7 +639,7 @@ ${qa.map(([q, a], i) => `    <details${i === 0 ? " open" : ""}><summary>${esc(q)
 
 <section class="block" id="contact">
   <h2>Contact</h2>
-  <p class="contact">Questions, corrections or sponsorship: <a href="mailto:${EMAIL}">${EMAIL}</a></p>
+  <p class="contact">Questions or corrections: <a href="mailto:${EMAIL}">${EMAIL}</a></p>
 </section>`;
   const ld = [
     { "@context": "https://schema.org", "@type": "WebSite", name: "cert/map", alternateName: "Cybersecurity Certification Roadmap", url: SITE, inLanguage: "en" },
@@ -836,170 +836,110 @@ ${API_TERMS.map(t => `    <li>${esc(t)}</li>`).join("\n")}
   });
 }
 
-// ---------- sponsors ----------
-// data/sponsors.json lists the sponsors of each tier as { name, url, logo },
-// with `logo` a path under images/. Tiers always show a fixed number of places:
-// real sponsors first, then empty ones that invite the reader to take them.
-const TIERS = [
-  { id: "gold", name: "Gold", places: 2 },
-  { id: "silver", name: "Silver", places: 3 },
-  { id: "bronze", name: "Bronze", places: 5 },
-];
-const SPONSOR_MAIL = `mailto:${EMAIL}?subject=${encodeURIComponent("Sponsoring cert/map")}`;
+// ---------- donations ----------
+// cert/map takes donations in Zcash to a shielded address, so neither the
+// amount nor the donor is public. The address lives in data/donate.json.
+// Shielded only: a unified address (u1...) or a Sapling address (zs1...).
+// Transparent addresses (t1..., t3...) would make every donation public.
+const ZCASH_RE = /^(u1[02-9ac-hj-np-z]{100,400}|zs1[02-9ac-hj-np-z]{75})$/;
+const ZCASH = (() => {
+  let value = "";
+  try { value = String(JSON.parse(readFileSync(join(ROOT, "data", "donate.json"), "utf8")).zcash || "").trim(); } catch { return ""; }
+  if (!value) return "";
+  if (/^t[13]/.test(value)) throw new Error("data/donate.json: the Zcash address is transparent; use a shielded one (u1... or zs1...).");
+  if (!ZCASH_RE.test(value)) throw new Error("data/donate.json: the Zcash address does not look shielded (u1... or zs1...).");
+  return value;
+})();
+if (!ZCASH) console.warn("data/donate.json has no Zcash address: the donation page is built without one.");
 
-const sponsorData = () => JSON.parse(readFileSync(join(ROOT, "data", "sponsors.json"), "utf8"));
-const sponsorLogo = sp => `<a class="slot" href="${esc(sp.url)}" rel="sponsored noopener" title="${esc(sp.name)}"><img src="../${esc(sp.logo)}" alt="${esc(sp.name)}" loading="lazy"></a>`;
-
-// What each tier includes. Kept here, next to the markup, so the page never
-// promises a placement the site does not actually render.
-const TIER_TERMS = {
-  gold: ["Largest logo, shown first on the home page and on this page", "Logo in the sidebar of the interactive roadmap", "Credit in the project README on GitHub"],
-  silver: ["Logo on the home page and on this page", "Credit in the project README on GitHub"],
-  bronze: ["Logo on the home page and on this page"],
-};
-
-function tierCard(t, data) {
-  const taken = data[t.id] || [];
-  const open = Math.max(0, t.places - taken.length);
-  const places = [
-    ...taken.map(sponsorLogo),
-    ...Array.from({ length: open }, () => `<span class="slot empty"><span>Open</span></span>`),
-  ];
-  return `  <div class="tier tier-${t.id}">
-    <div class="tier-head"><h3>${t.name}</h3><span>${t.places} places · ${open ? `${open} open` : "full"}</span></div>
-    <ul class="tier-terms">${TIER_TERMS[t.id].map(x => `<li>${x}</li>`).join("")}</ul>
-    <div class="slots">${places.join("")}</div>
+function donateBox() {
+  if (!ZCASH) return `<p class="fine">The donation address is being set up. Write to <a href="mailto:${EMAIL}">${EMAIL}</a> in the meantime.</p>`;
+  return `<div class="donate-box" data-zcash="${esc(ZCASH)}">
+    <span class="donate-label">Zcash, shielded address</span>
+    <code class="donate-addr" id="zcash-address">${esc(ZCASH)}</code>
+    <div class="donate-actions">
+      <button type="button" class="btn primary" id="copy-zcash" hidden>Copy address</button>
+      <a class="btn" href="zcash:${esc(ZCASH)}?message=${encodeURIComponent("cert/map donation")}">Open in a Zcash wallet</a>
+    </div>
   </div>`;
 }
 
-// Home page: a short, plain statement. Logos appear here once there are
-// sponsors; until then there is nothing to fill and nothing that looks empty.
-function sponsorsSection() {
-  const data = sponsorData();
-  const all = TIERS.flatMap(t => (data[t.id] || []).map(sp => ({ ...sp, tier: t.id })));
-  const logos = all.length
-    ? `  <div class="supporters">${all.map(sp => `<span class="supporter tier-${sp.tier}">${sponsorLogo(sp)}</span>`).join("")}</div>\n`
-    : "";
-  return `<section class="block" id="sponsors">
-  <h2>${all.length ? "Supported by" : "Independent by design"}</h2>
-${logos}  <div class="support">
+// Home page: a short note with a link to the donation page.
+function donateSection() {
+  return `<section class="block" id="donate">
+  <h2>Independent by design</h2>
+  <div class="support">
     <div>
-      <strong>No ads, no tracking, nothing for sale in the data</strong>
-      <span>cert/map is funded by a small number of sponsors: organisations that train, hire or equip security professionals. Sponsorship is by arrangement and never touches what is listed.</span>
+      <strong>No ads, no tracking, no sponsors deciding what is listed</strong>
+      <span>cert/map is free and open source. If it helped you plan or pass a certification, you can support it with a private donation in Zcash.</span>
     </div>
-    <a class="btn" href="../sponsors/">Sponsorship</a>
+    <a class="btn" href="../donate/">Donate</a>
   </div>
 </section>`;
 }
 
-function sponsorFaq() {
+function donateFaq() {
   return [
-    ["Who reads cert/map?",
-      "People deciding which cybersecurity certification to take next: students and career changers choosing a first credential, practitioners planning a specialism such as penetration testing, cloud security or incident response, and team leads mapping training for their staff. They arrive comparing price, exam format and prerequisites, in the middle of a training decision."],
-    ["What does a sponsor get?",
-      "A place in one of three tiers, with your logo linked to your site. Each tier lists exactly where the logo appears. Gold places are the largest and come first, then silver, then bronze."],
-    ["How many sponsors are there?",
-      `Ten at most: ${TIERS.map(t => `${t.places} ${t.name.toLowerCase()}`).join(", ")}. The number is fixed so that a place stays visible and the pages stay uncluttered.`],
-    ["Can a certification vendor or training provider sponsor?",
-      "Yes, on the same terms as anyone else. Sponsoring does not add, remove, move or reword any certification. Listings follow the published data and the contribution rules, and sponsored places are marked as such."],
-    ["Do you provide traffic figures?",
-      "cert/map runs no analytics and no tracking scripts, by choice. On request you get what exists without them: search impressions and clicks from the search console, and the public activity of the repository."],
-    ["How does it start?",
-      `Write to ${EMAIL} with your organisation and the tier that interests you. You get the terms by reply; once agreed, your logo goes live with the next update of the site.`],
+    ["Why Zcash?", "A donation to a shielded Zcash address keeps the amount and the sender private: it does not show on a public ledger the way a Bitcoin or Ethereum payment does. Neither cert/map nor anyone else can link it to you."],
+    ["How do I donate?", "Send any amount of ZEC from a wallet that supports shielded addresses (for example Zashi, Ywallet or Zingo) to the address on this page. On a phone, the wallet button opens your wallet with the address filled in."],
+    ["What does a donation pay for?", "Time: checking prices against every vendor, following retirements and new versions, testing study links and keeping the site fast and free of ads and trackers."],
+    ["Does a donation change what is listed?", "No. Donations are anonymous and buy nothing. Certifications are listed by the published data rules, and anyone can propose a correction on GitHub."],
   ];
 }
 
-function sponsorsPage() {
-  const data = sponsorData();
-  const qa = sponsorFaq();
-  const pages = certs.length + vendors.size + DOMAINS.length + LISTS.length + ROLE_PATHS.length;
-  const total = TIERS.reduce((n, t) => n + t.places, 0);
-  const stat = (n, label) => `<div class="stat"><strong>${n}</strong><span>${label}</span></div>`;
-  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / Sponsorship</nav>
-<section class="hero">
-  <p class="kicker">Sponsorship</p>
-  <h1>Sponsor the open cybersecurity certification roadmap</h1>
-  <p class="lead">${total} places in three tiers, for organisations that train, hire or equip the people who plan their security careers here.</p>
-  <p class="cta"><a class="btn primary big" href="#tiers">See the tiers</a> <a class="btn big" href="${SPONSOR_MAIL}">Enquire</a></p>
-  <div class="stats">${stat(certs.length, "certifications tracked")}${stat(vendors.size, "vendors covered")}${stat(pages, "reference pages")}${stat("0", "ads or trackers")}</div>
+function donatePage() {
+  const qa = donateFaq();
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="../">cert/map</a> / Donate</nav>
+<section class="hero left">
+  <p class="kicker">Support cert/map</p>
+  <h1>Donate privately with Zcash</h1>
+  <p class="lead">cert/map is free, open source and has no ads, trackers or sponsors. Donations keep the data checked and current. They go to a shielded Zcash address, so the amount and the sender stay private.</p>
+  ${donateBox()}
 </section>
-
-<section class="block">
-  <h2>Who you reach</h2>
-  <ol class="steps three plain">
-    <li><strong>People mid-decision</strong><span>Readers come to compare certifications by cost, level and exam format. They are students, practitioners and team leads choosing where to spend training time and budget.</span></li>
-    <li><strong>A reference, not a feed</strong><span>Every certification, vendor, domain and career path has its own page with current prices, so the site is opened again each time someone plans a next step.</span></li>
-    <li><strong>A setting readers trust</strong><span>Open source, no ads, no tracking. A sponsor's name sits beside a resource where nothing in the data is for sale.</span></li>
-  </ol>
-</section>
-
-<section class="block sponsors" id="tiers">
-  <h2>Tiers</h2>
-  <div class="tiers">
-${TIERS.map(t => tierCard(t, data)).join("\n")}
-  </div>
-  <p class="fine">The first sponsor in each tier is listed as a founding sponsor. Terms and prices are sent on request, and places are assigned in the order they are agreed.</p>
-</section>
-
-<section class="block">
-  <h2>How it works</h2>
-  <ol class="steps three">
-    <li><strong>Write</strong><span>Tell us who you are and which tier interests you, at ${EMAIL}.</span></li>
-    <li><strong>Agree</strong><span>You receive the terms of the tier. Sponsorship runs for a fixed period and renews by agreement.</span></li>
-    <li><strong>Go live</strong><span>Your logo is added with the next update of the site and stays for the agreed term.</span></li>
-  </ol>
-</section>
-
-<section class="block">
-  <h2>What sponsorship supports, and what it does not buy</h2>
-  <div class="prose two">
-    <p>Exam prices change without notice and vendors retire, rename and replace certifications every few months. Keeping ${certs.length} entries accurate means re-reading ${vendors.size} vendors' own pages and recording the date each price was last seen. Sponsorship funds that work, the hosting and the domain.</p>
-    <p>It does not buy influence. Sponsoring never adds, removes, moves or rewords a certification, and sponsored places are labelled. The dataset stays open under CC BY 4.0 and the code under the MIT licence.</p>
-  </div>
-</section>
-
 <section class="block">
   <h2>Questions</h2>
   <div class="faq">
-${qa.map(([q, a], i) => `    <details${i === 0 ? " open" : ""}><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("\n")}
+${qa.map(([q, a]) => `    <details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("\n")}
   </div>
-</section>
-
-<section class="block">
-  <div class="support">
-    <div><strong>Sponsorship enquiries</strong><span><a href="mailto:${EMAIL}">${EMAIL}</a></span></div>
-    <a class="btn primary" href="${SPONSOR_MAIL}">Enquire</a>
-  </div>
+  <p class="fine">Other ways to help: <a href="https://github.com/securitycerts/certmap">star or contribute on GitHub</a>, report a wrong price, or share a roadmap with someone who needs one. Questions: <a href="mailto:${EMAIL}">${EMAIL}</a>.</p>
 </section>`;
-  const url = SITE + "sponsors/";
   const ld = [
-    { "@context": "https://schema.org", "@type": "WebPage", name: "Sponsor cert/map", url, isPartOf: { "@type": "WebSite", name: "cert/map", url: SITE },
-      about: { "@type": "Thing", name: "Sponsorship of an open-source cybersecurity certification roadmap" } },
-    { "@context": "https://schema.org", "@type": "Organization", name: "cert/map", url: SITE, logo: SITE + "favicon/web-app-manifest-512x512.png",
-      contactPoint: { "@type": "ContactPoint", contactType: "sponsorship", email: EMAIL, availableLanguage: ["en", "es"] } },
+    { "@context": "https://schema.org", "@type": "WebPage", name: "Donate to cert/map", url: SITE + "donate/",
+      isPartOf: { "@type": "WebSite", name: "cert/map", url: SITE } },
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: qa.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
-    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
-      { "@type": "ListItem", position: 1, name: "cert/map", item: SITE },
-      { "@type": "ListItem", position: 2, name: "Sponsorship", item: url },
-    ] },
   ];
-  const image = "assets/og/sponsors.png";
   return page({
-    path: "sponsors/",
-    title: "Sponsor cert/map: reach people choosing cybersecurity certifications",
-    description: `Sponsorship of the open-source cybersecurity certification roadmap: ${total} places in gold, silver and bronze tiers, in front of students and security professionals comparing ${certs.length} certifications. Independent, no ads, no tracking.`,
-    body, ld, modified: latest,
-    image: existsSync(join(ROOT, image)) ? image : undefined,
+    path: "donate/",
+    title: "Donate to cert/map privately with Zcash | cert/map",
+    description: "Support cert/map, the free and open-source cybersecurity certification roadmap, with a private donation to a shielded Zcash address. No ads, no tracking, no sponsors.",
+    body, ld, modified: latest, script: ZCASH ? "assets/js/donate.js" : "",
   });
 }
 
-// The roadmap's sidebar ends with the gold sponsors' logos, or with a plain
-// link while there are none. Written between markers in map/index.html.
+// /sponsors/ was the earlier funding page; it now forwards to /donate/.
+function sponsorsRedirect() {
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<title>cert/map</title>
+<link rel="canonical" href="${SITE}donate/">
+<meta http-equiv="refresh" content="0; url=../donate/">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'self'; form-action 'none'">
+<link rel="stylesheet" href="../assets/css/static.css?v=${STATIC_V}">
+</head>
+<body>
+<main class="hero"><p class="lead">This page moved to <a href="../donate/">Donate</a>.</p></main>
+</body>
+</html>
+`;
+}
+
+// The roadmap's sidebar ends with a quiet link to the donation page.
 function sidebarSponsor() {
-  const gold = sponsorData().gold || [];
-  if (!gold.length) return `      <a class="sponsor-link" href="../sponsors/">Sponsorship</a>`;
-  return `      <div class="sponsor-side"><span>Supported by</span>${gold.map(sp =>
-    `<a href="${esc(sp.url)}" rel="sponsored noopener" title="${esc(sp.name)}"><img src="../${esc(sp.logo)}" alt="${esc(sp.name)}" loading="lazy"></a>`).join("")}</div>`;
+  return `      <a class="sponsor-link" href="../donate/">Support cert/map</a>`;
 }
 
 // /about/ was the address of this page before it became the home page.
@@ -1110,7 +1050,7 @@ ${[...vendors].sort((a, b) => a.localeCompare(b)).join(", ")}.
 
 - [Home](${SITE}): what the roadmap is, with answers on cost, beginner options and exam formats
 - [Interactive roadmap](${SITE}map/): the matrix of every certification by domain and level
-- [Sponsors](${SITE}sponsors/): how to sponsor the project, the tiers and the terms
+- [Donate](${SITE}donate/): support the project with a private donation to a shielded Zcash address
 - [API](${SITE}api/): static JSON under \`${SITE}api/v1/\`, entry point ${SITE}api/v1/index.json, one file per certification at \`${SITE}api/v1/certs/<id>.json\` including its study plan, described in ${SITE}api/openapi.json
 - [Exchange rates (JSON)](${SITE}data/rates.json): the rates used to convert prices, from the European Central Bank via Frankfurter, plus the Argentine card dollar (official rate plus card tax)
 - [All certifications](${SITE}certs/): every certification with vendor, level and price
@@ -1450,7 +1390,7 @@ ${[
     url(SITE, latest, "1.0"),
     url(SITE + "certs/", latest, "0.9"),
     url(SITE + "map/", latest, "0.9"),
-    url(SITE + "sponsors/", latest, "0.8"),
+    url(SITE + "donate/", latest, "0.6"),
     url(SITE + "api/", latest, "0.7"),
     ...LISTS.map(l => url(SITE + `certs/${listFile(l)}`, latest, "0.8")),
     ...ROLE_PATHS.map(p => url(SITE + `certs/${pathFile(p)}`, latest, "0.8")),
@@ -1509,7 +1449,9 @@ writeFileSync(join(ROOT, "index.html"), homePage());
 const apiFiles = buildApi();
 writeFileSync(join(ROOT, "api", "index.html"), apiPage());
 mkdirSync(join(ROOT, "sponsors"), { recursive: true });
-writeFileSync(join(ROOT, "sponsors", "index.html"), sponsorsPage());
+writeFileSync(join(ROOT, "sponsors", "index.html"), sponsorsRedirect());
+mkdirSync(join(ROOT, "donate"), { recursive: true });
+writeFileSync(join(ROOT, "donate", "index.html"), donatePage());
 writeFileSync(join(ROOT, "llms-full.txt"), llmsFull());
 writeFileSync(join(ROOT, "data", "certs.json"), "[\n" + certs.map(c => JSON.stringify(c)).join(",\n") + "\n]\n");
 refreshLlms();

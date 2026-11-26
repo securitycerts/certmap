@@ -78,7 +78,7 @@ The site is a single-page application that runs straight from the repository wit
 │   │   └── security.yml         PR security checks (data, secrets, CSP) plus bandit.
 │   ├── ISSUE_TEMPLATE/          Cert-update and bug-report templates.
 │   └── PULL_REQUEST_TEMPLATE.md
-├── index.html                   Generated home page (what the site is, FAQ, sponsors).
+├── index.html                   Generated home page (what the site is, FAQ, donations).
 ├── map/index.html               The interactive roadmap.
 ├── package.json                 Scripts and dev-only dependencies.
 ├── .editorconfig
@@ -160,11 +160,11 @@ GitHub Pages serves static files and cannot limit or block a client, so on its o
 
 The limits live in one place, `API_LIMITS` in `scripts/build-pages.mjs`; change them there and in the Cloudflare rule together.
 
-## Sponsors
+## Donations
 
-cert/map is free, open source and has no ads or tracking. Sponsors are shown on the home page in three tiers (gold, silver, bronze). What sponsoring involves is explained at [certmap.dev/sponsors](https://certmap.dev/sponsors/); to become one, write to contact@certmap.dev. Sponsorship never changes which certifications are listed or what is said about them.
+cert/map is free, open source and has no ads, trackers or sponsors. It takes donations in Zcash at [certmap.dev/donate](https://certmap.dev/donate/), to a shielded address so the amount and the donor stay private.
 
-Sponsors are listed in `data/sponsors.json` as `{ "name", "url", "logo" }` per tier, with `logo` a path under `images/`. Places that are not taken are drawn as empty slots.
+The address is in `data/donate.json` (`{ "zcash": "..." }`); change it there and run `node scripts/build-pages.mjs`. Only shielded addresses are accepted (`u1...` unified or `zs1...` Sapling); a transparent `t...` address stops the build. `/sponsors/` forwards to `/donate/`.
 
 ## Contact
 

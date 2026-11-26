@@ -3,8 +3,8 @@
 // used by shared roadmap links. Pure functions, so the build scripts import
 // this module too.
 
-import { LEVEL_ORDER, LEVEL_HOURS } from "./format.js?v=fb7a6ad9";
-import { fmtTotal } from "./currency.js?v=fb7a6ad9";
+import { LEVEL_ORDER, LEVEL_HOURS } from "./format.js?v=25289f76";
+import { fmtTotal } from "./currency.js?v=25289f76";
 
 export const ROLE_PATHS = [
   { id: "pentester", name: "Penetration tester", certs: ["ejpt", "pjpt", "oscp", "pnpt", "osep"] },
