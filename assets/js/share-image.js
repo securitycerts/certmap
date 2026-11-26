@@ -7,8 +7,8 @@
 // rows, solid arrows are prerequisites and dashed ones the suggested order.
 // The canvas is drawn at twice its size so it stays sharp on any screen.
 
-import { fmtLocalPrice } from "./format.js?v=7db0ed1c";
-import { pathSummary } from "./paths.js?v=7db0ed1c";
+import { fmtLocalPrice } from "./format.js?v=ccc95d7b";
+import { pathSummary } from "./paths.js?v=ccc95d7b";
 
 const LEVEL_COLOR = { beginner: "#4f7a63", intermediate: "#5b6e96", advanced: "#846a99", expert: "#9a6e6e" };
 const LEVEL_LABEL = { beginner: "Beginner", intermediate: "Intermediate", advanced: "Advanced", expert: "Expert" };

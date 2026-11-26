@@ -1,16 +1,16 @@
-import { loadData } from "./data.js?v=7db0ed1c";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=7db0ed1c";
-import { slug, fmtPrice, fmtLocalPrice, LEVEL_LABEL } from "./format.js?v=7db0ed1c";
-import { loadRates, currencyCodes, currency, setCurrency, fmtMoney, fromUsd, fmtTotal, currencyLabel, currencyShort } from "./currency.js?v=7db0ed1c";
-import { enhanceSelect } from "./picker.js?v=7db0ed1c";
-import { el } from "./dom.js?v=7db0ed1c";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=7db0ed1c";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=7db0ed1c";
-import { toast, copyText } from "./toast.js?v=7db0ed1c";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=7db0ed1c";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=7db0ed1c";
-import { mountGraph, unmountGraph } from "./graph.js?v=7db0ed1c";
-import { downloadRoadmapImage } from "./share-image.js?v=7db0ed1c";
+import { loadData } from "./data.js?v=ccc95d7b";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=ccc95d7b";
+import { slug, fmtPrice, fmtLocalPrice, LEVEL_LABEL } from "./format.js?v=ccc95d7b";
+import { loadRates, currencyCodes, currency, setCurrency, fmtMoney, fromUsd, fmtTotal, currencyLabel, currencyShort } from "./currency.js?v=ccc95d7b";
+import { enhanceSelect } from "./picker.js?v=ccc95d7b";
+import { el } from "./dom.js?v=ccc95d7b";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=ccc95d7b";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=ccc95d7b";
+import { toast, copyText } from "./toast.js?v=ccc95d7b";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=ccc95d7b";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote, encodeStickies, decodeStickies, cleanStickies } from "./paths.js?v=ccc95d7b";
+import { mountGraph, unmountGraph } from "./graph.js?v=ccc95d7b";
+import { downloadRoadmapImage } from "./share-image.js?v=ccc95d7b";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -21,6 +21,7 @@ const SIDEBAR_KEY = "certs-map.sidebar";
 const NAME_KEY = "certs-map.roadmap-name";
 const NAME_MAX = 60;
 const NOTES_KEY = "certs-map.notes.v1";
+const STICKY_KEY = "certs-map.stickies.v1";
 const RM_VIEW_KEY = "certs-map.roadmap-view";
 const ALLOWED_RM_VIEWS = new Set(["list", "graph"]);
 const THEME_COLOR = { dark: "#0b0d12", light: "#f7f8fa" };
@@ -118,17 +119,19 @@ function shareUrl() {
 // selection unless they choose "Use as my selection".
 const cleanName = s => String(s || "").replace(/\s+/g, " ").trim().slice(0, NAME_MAX);
 
-function roadmapHash(ids, name, notes) {
+function roadmapHash(ids, name, notes, stickies) {
   const p = new URLSearchParams();
   const title = cleanName(name);
   if (title) p.set("name", title);
   const packed = notes ? encodeNotes(notes, ids) : "";
   if (packed) p.set("notes", packed);
+  const sticky = stickies ? encodeStickies(stickies) : "";
+  if (sticky) p.set("sticky", sticky);
   if (currency() !== "USD") p.set("ccy", currency());
   const qs = p.toString();
   return `#/roadmap/${ids.join(",")}` + (qs ? "?" + qs : "");
 }
-const myRoadmapHash = () => (state.cart.size ? roadmapHash(selectedCerts().map(c => c.id), state.roadmapName, state.notes) : "#/roadmap/");
+const myRoadmapHash = () => (state.cart.size ? roadmapHash(selectedCerts().map(c => c.id), state.roadmapName, state.notes, state.stickies) : "#/roadmap/");
 // What gets copied when a roadmap is shared. It goes through r/, a small page
 // with its own link preview, which forwards to the #/roadmap/ route.
 const shareLink = hash => new URL("../../r/", import.meta.url).href + "#" + hash.slice("#/roadmap/".length);
@@ -145,20 +148,31 @@ function loadNotes() {
   } catch { return new Map(); }
 }
 const persistNotes = () => store.set(NOTES_KEY, JSON.stringify(Object.fromEntries(state.notes)));
+function loadStickies() { try { return cleanStickies(JSON.parse(store.get(STICKY_KEY) || "[]")); } catch { return []; } }
+function setStickies(list) {
+  state.stickies = cleanStickies(list);
+  store.set(STICKY_KEY, JSON.stringify(state.stickies));
+  if (readRoadmap(baseHash)?.same) {
+    baseHash = myRoadmapHash();
+    history.replaceState(null, "", location.pathname + location.search + baseHash);
+    lastGridKey = gridKey();
+  }
+}
 
 function readRoadmap(hash) {
   const m = hash.match(/^#\/roadmap\/([a-z0-9,-]*)(?:\?(.*))?$/);
   if (!m) return null;
   const ids = [...new Set(sanitizeIds(m[1].split(",")))].filter(id => DATA.byId.has(id));
-  let name = "", notes = new Map(), ccy = "";
+  let name = "", notes = new Map(), ccy = "", stickies = [];
   try {
     const p = new URLSearchParams(m[2] || "");
     name = cleanName(p.get("name"));
     notes = decodeNotes(p.get("notes"), ids);
     ccy = /^[A-Z]{3}$/.test(p.get("ccy") || "") ? p.get("ccy") : "";
+    stickies = decodeStickies(p.get("sticky"));
   } catch { /* malformed escape */ }
   const same = ids.length === state.cart.size && ids.every(id => state.cart.has(id));
-  return { ids, name, notes, same, ccy };
+  return { ids, name, notes, same, ccy, stickies };
 }
 
 const certUrl = id => location.origin + location.pathname + `#/cert/${id}`;
@@ -191,6 +205,7 @@ const state = {
   roadmapName: cleanName(store.get(NAME_KEY)),
   roadmapView: safeLS(RM_VIEW_KEY, ALLOWED_RM_VIEWS, "graph"),
   notes: loadNotes(),
+  stickies: loadStickies(),
   toggleCart(id) {
     // On your own roadmap page the page is the selection, so a change has to
     // repaint it: the address follows the selection and the route does the rest.
@@ -510,7 +525,8 @@ function paintGrid(filtered) {
     if (graphHost) {
       mountGraph(graphHost, {
         certs: ordered, notes, editable: roadmap.same, theme: currentTheme(),
-        onOpen: openCert, onNote: setNote, onRemove: id => state.toggleCart(id),
+        stickies: roadmap.same ? state.stickies : roadmap.stickies,
+        onOpen: openCert, onNote: setNote, onRemove: id => state.toggleCart(id), onStickies: setStickies,
       });
     }
     scene = "roadmap:" + state.roadmapView;

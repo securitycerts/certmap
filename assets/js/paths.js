@@ -3,8 +3,8 @@
 // used by shared roadmap links. Pure functions, so the build scripts import
 // this module too.
 
-import { LEVEL_ORDER, LEVEL_HOURS } from "./format.js?v=7db0ed1c";
-import { fmtTotal } from "./currency.js?v=7db0ed1c";
+import { LEVEL_ORDER, LEVEL_HOURS } from "./format.js?v=ccc95d7b";
+import { fmtTotal } from "./currency.js?v=ccc95d7b";
 
 export const ROLE_PATHS = [
   { id: "pentester", name: "Penetration tester", certs: ["ejpt", "pjpt", "oscp", "pnpt", "osep"] },
@@ -68,6 +68,34 @@ export function encodeNotes(notes, ids) {
   const bytes = new TextEncoder().encode(JSON.stringify(obj));
   let bin = ""; for (const b of bytes) bin += String.fromCharCode(b);
   return btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+}
+
+// Sticky notes are free notes placed anywhere on the graph, for whoever the
+// roadmap is shared with ("start here", "ask the team about budget"). They
+// travel in the link as [[x, y, text], ...], positions rounded to the pixel.
+export const STICKY_MAX = 280;
+export const STICKY_LIMIT = 12;
+const cleanSticky = s => String(s ?? "").replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim().slice(0, STICKY_MAX);
+const coord = v => (Number.isFinite(v) ? Math.max(-5000, Math.min(5000, Math.round(v))) : 0);
+const b64 = str => { const bytes = new TextEncoder().encode(str); let bin = ""; for (const b of bytes) bin += String.fromCharCode(b); return btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, ""); };
+const unb64 = text => new TextDecoder().decode(Uint8Array.from(atob(text.replace(/-/g, "+").replace(/_/g, "/")), ch => ch.charCodeAt(0)));
+
+export function cleanStickies(list) {
+  return (Array.isArray(list) ? list : [])
+    .map(s => ({ x: coord(s?.x), y: coord(s?.y), text: cleanSticky(s?.text) }))
+    .slice(0, STICKY_LIMIT);
+}
+export function encodeStickies(list) {
+  const kept = cleanStickies(list).filter(s => s.text);
+  return kept.length ? b64(JSON.stringify(kept.map(s => [s.x, s.y, s.text]))) : "";
+}
+export function decodeStickies(text) {
+  if (!text || text.length > 12000) return [];
+  try {
+    const arr = JSON.parse(unb64(text));
+    if (!Array.isArray(arr)) return [];
+    return cleanStickies(arr.filter(Array.isArray).map(([x, y, t]) => ({ x: Number(x), y: Number(y), text: typeof t === "string" ? t : "" }))).filter(s => s.text);
+  } catch { return []; }
 }
 
 export function decodeNotes(text, ids) {

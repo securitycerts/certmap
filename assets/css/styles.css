@@ -831,8 +831,11 @@ h1.brand-tag { font-weight: 400; margin-bottom: 0; }
   font-family: var(--sans);
 }
 .rm-graph .react-flow__node-cert { padding: 0; border: 0; background: none; width: auto; font-size: inherit; color: inherit; text-align: left; }
-.rm-graph .gedge-next .react-flow__edge-path { stroke: var(--border-strong); stroke-dasharray: 6 5; }
-.rm-graph .gedge-req .react-flow__edge-path { stroke-width: 2; }
+.rm-graph .gedge-next .react-flow__edge-path { stroke: #4a5468; stroke-width: 1.5; stroke-dasharray: 5 5; }
+.rm-graph .gedge-req .react-flow__edge-path { stroke: var(--accent); stroke-width: 2; }
+[data-theme="light"] .rm-graph .gedge-next .react-flow__edge-path { stroke: #aab2c0; }
+/* Handles are anchors only; the dots on every side were noise. */
+.rm-graph .react-flow__handle { opacity: 0; pointer-events: none; }
 .gnode:hover { border-color: var(--accent); }
 .rm-graph .react-flow__attribution a { color: var(--muted); }
 .gnode {
@@ -1039,3 +1042,21 @@ details.prep-phase ol { padding: 0 4px 6px; }
 .picker-opt[aria-disabled="true"] { opacity: .5; cursor: default; }
 .picker-opt[hidden] { display: none; }
 @media (prefers-reduced-motion: reduce) { .picker-btn, .picker-chev { transition: none; } }
+
+/* ---------- STICKY NOTES ON THE GRAPH ---------- */
+.gsticky {
+  position: relative; width: 220px; padding: 12px 12px 10px; border-radius: 4px 4px 14px 4px;
+  background: #e9d98a; color: #2a2410; box-shadow: 0 8px 22px rgba(0, 0, 0, .35); transform: rotate(-1.2deg);
+}
+.gsticky.readonly { cursor: default; }
+.gsticky-text { display: block; width: 100%; min-height: 64px; font: 500 13px/1.45 var(--sans); color: inherit; white-space: pre-wrap; word-break: break-word; }
+textarea.gsticky-text { resize: vertical; border: 0; outline: 0; padding: 0; background: transparent; }
+textarea.gsticky-text::placeholder { color: rgba(42, 36, 16, .55); }
+.gsticky-x { position: absolute; top: 2px; right: 4px; border: 0; background: none; color: rgba(42, 36, 16, .6); font-size: 16px; cursor: pointer; }
+.gsticky-x:hover { color: #2a2410; }
+.gsticky-add {
+  font: 500 12px var(--sans); padding: 6px 12px; color: var(--text); cursor: pointer;
+  background: var(--panel); border: 1px solid var(--border-strong); border-radius: var(--radius);
+}
+.gsticky-add:hover:not(:disabled) { border-color: var(--accent); }
+.gsticky-add:disabled { opacity: .5; cursor: default; }

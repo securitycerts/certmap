@@ -21,7 +21,7 @@ await build({
       export { createRoot } from "react-dom/client";
       export {
         ReactFlow, Background, Controls, MiniMap, Handle, Position, MarkerType,
-        useNodesState, useEdgesState,
+        useNodesState, useEdgesState, Panel, useReactFlow,
       } from "@xyflow/react";
     `,
   },
