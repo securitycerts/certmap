@@ -173,6 +173,15 @@
        "url": "https://subnettingpractice.com/",
        "free": true,
        "official": false
+      },
+      {
+       "step": 12,
+       "type": "practice",
+       "title": "Subnet Calculator",
+       "provider": "aarrange.com",
+       "url": "https://aarrange.com/subnet-calculator",
+       "free": true,
+       "official": false
       }
      ]
     }

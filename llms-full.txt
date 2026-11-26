@@ -89,6 +89,7 @@ Foundational networking certification covering protocols, topologies and basic s
   - DNS in Detail (TryHackMe, free): https://tryhackme.com/room/dnsindetail
   - Introduction to Networking (Hack The Box): https://academy.hackthebox.com/course/preview/introduction-to-networking
   - Subnetting Questions (subnettingpractice.com, free): https://subnettingpractice.com/
+  - Subnet Calculator (aarrange.com, free): https://aarrange.com/subnet-calculator
   - CompTIA Network+ Study Guide: Exam N10-009, 6th Edition (Sybex (Wiley)): https://www.wiley.com/en-us/-p-9781394235605
 
 ### ZTCA: Zscaler Zero Trust Cyber Associate
@@ -145,6 +146,7 @@ Foundational Cisco networking certification.
   - Networking Concepts (TryHackMe, free): https://tryhackme.com/room/networkingconcepts
   - Intro to LAN (TryHackMe, free): https://tryhackme.com/room/introtolan
   - Subnetting Questions (subnettingpractice.com, free): https://subnettingpractice.com/
+  - Subnet Calculator (aarrange.com, free): https://aarrange.com/subnet-calculator
   - containerlab (srl-labs, free): https://github.com/srl-labs/containerlab
   - CCNA 200-301 Official Cert Guide Library, 2nd Edition (Cisco Press): https://www.ciscopress.com/store/ccna-200-301-official-cert-guide-library-9780138221393
 
