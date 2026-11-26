@@ -1,11 +1,12 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
   fmtPrice, fmtLocalPrice, fmtAgo, isStale, slug,
-} from "./format.js?v=86be0940";
-import { el, svg } from "./dom.js?v=86be0940";
-import { makeLogo } from "./logo.js?v=86be0940";
-import { studyPlan } from "./data.js?v=86be0940";
-import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=86be0940";
+} from "./format.js?v=cefd8e83";
+import { rateSource } from "./currency.js?v=cefd8e83";
+import { el, svg } from "./dom.js?v=cefd8e83";
+import { makeLogo } from "./logo.js?v=cefd8e83";
+import { studyPlan } from "./data.js?v=cefd8e83";
+import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=cefd8e83";
 
 export { slug, fmtPrice };
 
@@ -107,7 +108,7 @@ export function renderFlow(root, selected, byId) {
       el("div", { class: "flow-vendor", text: c.vendor }),
       el("div", { class: "flow-stats" },
         el("span", { title: "Estimated study time", text: `⏱ ${LEVEL_HOURS[c.level]}h` }),
-        el("span", { title: "Exam cost", text: fmtPrice(c.price_usd) }),
+        el("span", { title: "Exam cost", text: fmtLocalPrice(c) }),
       ),
     ));
     if (i < ordered.length - 1) {
@@ -287,7 +288,8 @@ function listCard(c, state) {
 
 export function renderDrawer(root, c, byId) {
   const priceDd = el("dd", {}, fmtLocalPrice(c));
-  if (c.currency !== "USD" && c.price_original != null) priceDd.append(" ", el("span", { class: "muted", text: `· converted from ${c.currency} at the latest ECB rate` }));
+  if (rateSource() && c.price_usd) priceDd.append(" ", el("span", { class: "muted", text: `· ${rateSource()}` }));
+  else if (c.currency !== "USD" && c.price_original != null) priceDd.append(" ", el("span", { class: "muted", text: `· converted from ${c.currency} at the latest ECB rate` }));
   if (c.currency_note) priceDd.append(" ", el("span", { class: "muted", text: "· " + c.currency_note }));
   if (c.price_verified_at) {
     const stale = isStale(c.price_verified_at);
@@ -433,7 +435,7 @@ export function renderCart(listEl, countEl, certs, state) {
       rm.addEventListener("click", () => state.toggleCart(c.id));
       return el("div", { class: "cart-row", "data-ctx-id": c.id },
         el("a", { class: "acro", href: `#/cert/${c.id}`, text: c.acronym }),
-        el("span", { class: "price", text: fmtPrice(c.price_usd) }),
+        el("span", { class: "price", text: fmtLocalPrice(c) }),
         rm,
       );
     });

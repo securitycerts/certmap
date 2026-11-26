@@ -6,6 +6,10 @@
 // writes them to data/rates.json and recomputes `price_usd` for those rows. If
 // the API cannot be reached, nothing is changed and the last rates stay in use.
 //
+// It also stores the dollar rate of every currency Frankfurter covers, and the
+// Argentine "dolar tarjeta" (the rate for card payments abroad) from DolarApi
+// (https://dolarapi.com), so the app can show prices in the viewer's currency.
+//
 // Usage: node scripts/rates.mjs
 
 import { readFileSync, writeFileSync } from "node:fs";
@@ -28,23 +32,42 @@ const foreign = rows.slice(1).filter(r => r[iCur] && r[iCur] !== "USD" && r[iOri
 const codes = [...new Set(foreign.map(r => r[iCur]))].sort();
 if (!codes.every(c => /^[A-Z]{3}$/.test(c))) throw new Error(`bad currency code in ${codes.join(", ")}`);
 
+const previous = (() => { try { return JSON.parse(readFileSync(RATES, "utf8")); } catch { return {}; } })();
+const get = async url => {
+  const res = await fetch(url, { headers: { "User-Agent": "certmap rates (https://certmap.dev/)" }, signal: AbortSignal.timeout(20000) });
+  if (!res.ok) throw new Error(`HTTP ${res.status} from ${url}`);
+  return res.json();
+};
+
 let rates;
 try {
-  const url = `${API}?base=USD&symbols=${codes.join(",")}`;
-  const res = await fetch(url, { headers: { "User-Agent": "certmap rates (https://certmap.dev/)" }, signal: AbortSignal.timeout(20000) });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const body = await res.json();
+  const url = `${API}?base=USD`;
+  const body = await get(url);
   // The API gives units of each currency per dollar; the site needs dollars per unit.
   const usd_per = Object.fromEntries(codes.map(c => {
     const v = body.rates?.[c];
     if (!(v > 0)) throw new Error(`no rate for ${c}`);
     return [c, Number((1 / v).toFixed(6))];
   }));
-  rates = { source: "Frankfurter, European Central Bank reference rates", url: "https://frankfurter.dev/", date: body.date, usd_per };
+  const per_usd = Object.fromEntries(Object.entries(body.rates || {}).filter(([c, v]) => /^[A-Z]{3}$/.test(c) && v > 0).sort());
+  rates = { source: "Frankfurter, European Central Bank reference rates", url: "https://frankfurter.dev/", date: body.date, usd_per, per_usd };
 } catch (err) {
   console.warn(`Rates not updated (${err.message}); keeping data/rates.json as it is.`);
   process.exit(0);
 }
+
+// Argentine peso: the card rate, which is what someone in Argentina pays for an
+// exam charged in dollars. If DolarApi is down, the last value is kept.
+try {
+  const t = await get("https://dolarapi.com/v1/dolares/tarjeta");
+  if (!(t.venta > 0)) throw new Error("no venta");
+  rates.per_usd.ARS = t.venta;
+  rates.ars = { kind: "dolar tarjeta (venta)", source: "DolarApi", url: "https://dolarapi.com/", date: String(t.fechaActualizacion || "").slice(0, 10) };
+} catch (err) {
+  if (previous.per_usd?.ARS) { rates.per_usd.ARS = previous.per_usd.ARS; rates.ars = previous.ars; }
+  console.warn(`ARS card rate not updated (${err.message}).`);
+}
+rates.per_usd = Object.fromEntries(Object.entries(rates.per_usd).sort());
 
 const quote = v => (/[",\n]/.test(v) ? `"${v.replaceAll('"', '""')}"` : v);
 let changed = 0;

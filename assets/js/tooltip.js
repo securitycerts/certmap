@@ -1,4 +1,4 @@
-import { fmtPrice } from "./format.js?v=86be0940";
+import { fmtPrice, fmtLocalPrice } from "./format.js?v=cefd8e83";
 
 const DELAY = 450;
 const HIDE_DELAY = 80;
@@ -42,7 +42,7 @@ function render(c) {
 
   const dl = document.createElement("dl"); dl.className = "tt-meta";
   const row = (k, v) => { const dt = document.createElement("dt"); dt.textContent = k; const dd = document.createElement("dd"); dd.textContent = v; dl.append(dt, dd); };
-  row("Price", fmtPrice(c.price_usd));
+  row("Price", fmtLocalPrice(c));
   if (c.duration_min) row("Exam", c.duration_min + " min");
   row("Renewal", c.validity_years ? c.validity_years + " yrs" : "Lifetime");
   if (c.dod_8140) row("DoD 8140", "Yes");

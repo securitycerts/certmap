@@ -1,14 +1,15 @@
-import { loadData } from "./data.js?v=86be0940";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=86be0940";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=86be0940";
-import { el } from "./dom.js?v=86be0940";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=86be0940";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=86be0940";
-import { toast, copyText } from "./toast.js?v=86be0940";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=86be0940";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=86be0940";
-import { mountGraph, unmountGraph } from "./graph.js?v=86be0940";
-import { downloadRoadmapImage } from "./share-image.js?v=86be0940";
+import { loadData } from "./data.js?v=cefd8e83";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=cefd8e83";
+import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=cefd8e83";
+import { loadRates, currencyCodes, currency, setCurrency, guessCurrency, fmtMoney, fromUsd, currencyLabel } from "./currency.js?v=cefd8e83";
+import { el } from "./dom.js?v=cefd8e83";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=cefd8e83";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=cefd8e83";
+import { toast, copyText } from "./toast.js?v=cefd8e83";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=cefd8e83";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=cefd8e83";
+import { mountGraph, unmountGraph } from "./graph.js?v=cefd8e83";
+import { downloadRoadmapImage } from "./share-image.js?v=cefd8e83";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -29,6 +30,7 @@ const ID_RE = /^[a-z0-9][a-z0-9-]{0,63}$/;
 const sanitizeIds = arr => arr.filter(x => typeof x === "string" && ID_RE.test(x)).slice(0, 200);
 
 // Storage can throw (private mode, blocked site data); the page must still work.
+const CURRENCY_KEY = "certmap.currency";
 const store = {
   get(key) { try { return localStorage.getItem(key); } catch { return null; } },
   set(key, value) { try { localStorage.setItem(key, value); } catch { /* not persisted */ } },
@@ -243,7 +245,7 @@ const closeDrawer = () => { location.hash = baseHash; };
 function paintCart() {
   const sum = renderCart($("#cart-list"), $("#cart-count"), DATA.certs, state);
   const paint = n => {
-    const text = "$" + n.toLocaleString("en-US");
+    const text = "$" + n.toLocaleString("en-US") + (currency() !== "USD" && n ? ` (≈ ${fmtMoney(fromUsd(n))})` : "");
     $("#cart-total").textContent = text;
     $("#cart-subtotal").textContent = text;
   };
@@ -907,7 +909,8 @@ function onGlobalKey(e) {
 
 async function init() {
   setTheme(safeLS(THEME_KEY, ALLOWED_THEMES, "dark"));
-  DATA = await loadData();
+  [DATA] = await Promise.all([loadData(), loadRates()]);
+  setCurrency(store.get(CURRENCY_KEY) || guessCurrency());
   bindData(DATA);
   for (const c of DATA.certs) {
     HAYSTACK.set(c.id, [c.id, c.acronym, c.name, c.vendor, c.tags.join(" "), c.description, c.domain, c.level].join(" ").toLowerCase());
@@ -943,6 +946,16 @@ async function init() {
 
   document.addEventListener("keydown", onGlobalKey);
 
+  const ccyEl = $("#currency");
+  ccyEl.replaceChildren(...currencyCodes().map(code => el("option", { value: code, text: currencyLabel(code) })));
+  ccyEl.value = currency();
+  ccyEl.addEventListener("change", () => {
+    store.set(CURRENCY_KEY, setCurrency(ccyEl.value));
+    rerender();
+    paintCart();
+    const id = readRoute();
+    if (id && DATA.byId.has(id)) renderDrawer($("#drawer-content"), DATA.byId.get(id), DATA.byId);
+  });
   const sortEl = $("#sort"); sortEl.value = state.sort;
   sortEl.addEventListener("change", e => { state.sort = e.target.value; store.set(SORT_KEY, state.sort); scheduleRender(); });
 
