@@ -2,7 +2,7 @@
 // an approximate amount in the currency the viewer picks. Rates come from
 // data/rates.json, which scripts/rates.mjs fills from public APIs: the European
 // Central Bank reference rates (Frankfurter) and, for the Argentine peso, the
-// "dólar tarjeta" rate that applies to card payments abroad (DolarApi).
+// card rate that applies to card payments abroad (official rate from DolarApi plus tax).
 
 let RATES = null;
 let CODE = "USD";
@@ -65,7 +65,7 @@ export function rateSource() {
   if (!RATES || CODE === "USD") return "";
   if (CODE === "ARS" && RATES.ars?.official) {
     const a = RATES.ars;
-    return `Dólar tarjeta: official ${fmtMoney(a.official)} + ${a.tax_pct}% ${a.rule} = ${fmtMoney(RATES.per_usd.ARS)} per US$1 (${a.date})`;
+    return `Card rate: official ${fmtMoney(a.official)} + ${a.tax_pct}% ${a.rule} = ${fmtMoney(RATES.per_usd.ARS)} per US$1 (${a.date})`;
   }
   return `European Central Bank rate of ${RATES.date}`;
 }
@@ -78,5 +78,5 @@ export function fmtTotal(usd) {
   return CODE === "USD" || !usd || !Number.isFinite(v) ? head : `${head} (≈ ${fmtMoney(v)})`;
 }
 
-export const currencyLabel = code => `${code}${code === "ARS" ? " (dólar tarjeta)" : ""} · ${NAMES?.of(code) || code}`;
-export const currencyShort = code => (code === "ARS" ? "ARS tarjeta" : code);
+export const currencyLabel = code => `${code} · ${NAMES?.of(code) || code}`;
+export const currencyShort = code => code;

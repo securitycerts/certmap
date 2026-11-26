@@ -3,7 +3,7 @@
 // no-script); the picker only replaces how it looks and is used. A picker with
 // `search` gets a filter box, used for long lists such as currencies.
 
-import { el } from "./dom.js?v=25289f76";
+import { el } from "./dom.js?v=960c8ce7";
 
 let open = null; // the picker whose list is showing
 

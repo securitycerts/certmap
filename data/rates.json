@@ -39,7 +39,7 @@
   "ZAR": 17.6968
  },
  "ars": {
-  "kind": "dolar tarjeta",
+  "kind": "card rate",
   "official": 1630,
   "tax_pct": 30,
   "tax": "percepción de Ganancias o Bienes Personales",

@@ -499,7 +499,7 @@ function faq() {
     ["How much do cybersecurity certifications cost?",
       `Exam prices on the roadmap run from free to ${money(dearest[0].price_usd)}. The cheapest paid exams are ${names(cheapest)}, and the most expensive are ${names(dearest)}. Prices are list prices for the exam, without training unless the vendor only sells them together, shown in the currency the vendor uses and in US dollars.`],
     ["Can I see certification prices in my own currency?",
-      `Yes. Prices stay as the vendor publishes them, in US dollars, pounds or euros, and the interactive roadmap can show each one, and the total of your roadmap, in ${RATES ? Object.keys(RATES.per_usd || {}).length + 1 : 30} currencies. Conversions use the European Central Bank reference rates, refreshed every working day. For the Argentine peso the roadmap uses the card dollar (dólar tarjeta): the official Banco Nación rate plus the ${RATES?.ars?.tax_pct ?? 30}% tax that applies to card payments abroad, which is what someone in Argentina pays for an exam charged in dollars.`],
+      `Yes. Prices stay as the vendor publishes them, in US dollars, pounds or euros, and the interactive roadmap can show each one, and the total of your roadmap, in ${RATES ? Object.keys(RATES.per_usd || {}).length + 1 : 30} currencies. Conversions use the European Central Bank reference rates, refreshed every working day. Where card payments abroad carry a tax, the rate includes it, so the figure is close to what a card is actually charged.`],
     ["Are there free cybersecurity certifications?",
       free.length ? `Yes. ${free.map(c => c.acronym).join(", ")} ${free.length === 1 ? "has" : "have"} no exam fee.` : "None of the certifications currently on the roadmap is free."],
     ["Which certifications have a hands-on exam?",
@@ -1052,7 +1052,7 @@ ${[...vendors].sort((a, b) => a.localeCompare(b)).join(", ")}.
 - [Interactive roadmap](${SITE}map/): the matrix of every certification by domain and level
 - [Donate](${SITE}donate/): support the project with a private donation to a shielded Zcash address
 - [API](${SITE}api/): static JSON under \`${SITE}api/v1/\`, entry point ${SITE}api/v1/index.json, one file per certification at \`${SITE}api/v1/certs/<id>.json\` including its study plan, described in ${SITE}api/openapi.json
-- [Exchange rates (JSON)](${SITE}data/rates.json): the rates used to convert prices, from the European Central Bank via Frankfurter, plus the Argentine card dollar (official rate plus card tax)
+- [Exchange rates (JSON)](${SITE}data/rates.json): the rates used to convert prices, from the European Central Bank via Frankfurter, with the card rate (official rate plus card tax) where card payments abroad are taxed
 - [All certifications](${SITE}certs/): every certification with vendor, level and price
 - [Full text digest](${SITE}llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](${SITE}data/certs.json) and [as CSV](${SITE}data/certs.csv)

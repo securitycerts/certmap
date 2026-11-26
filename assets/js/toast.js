@@ -1,8 +1,8 @@
 // Short confirmation messages ("Link copied"). The host is an aria-live region
 // so screen readers announce them too.
 
-import { el } from "./dom.js?v=25289f76";
-import { toastIn, toastOut } from "./motion.js?v=25289f76";
+import { el } from "./dom.js?v=960c8ce7";
+import { toastIn, toastOut } from "./motion.js?v=960c8ce7";
 
 const LIFETIME = 2200;
 let host = null;

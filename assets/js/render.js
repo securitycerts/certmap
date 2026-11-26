@@ -1,12 +1,12 @@
 import {
   LEVELS, LEVELS_DISPLAY, LEVEL_LABEL, LEVEL_ORDER, LEVEL_HOURS,
   fmtPrice, fmtLocalPrice, fmtAgo, isStale, slug,
-} from "./format.js?v=25289f76";
-import { rateSource } from "./currency.js?v=25289f76";
-import { el, svg } from "./dom.js?v=25289f76";
-import { makeLogo } from "./logo.js?v=25289f76";
-import { studyPlan } from "./data.js?v=25289f76";
-import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=25289f76";
+} from "./format.js?v=960c8ce7";
+import { rateSource } from "./currency.js?v=960c8ce7";
+import { el, svg } from "./dom.js?v=960c8ce7";
+import { makeLogo } from "./logo.js?v=960c8ce7";
+import { studyPlan } from "./data.js?v=960c8ce7";
+import { orderByPrerequisite, pathSummary, pathTotals, NOTE_MAX } from "./paths.js?v=960c8ce7";
 
 export { slug, fmtPrice };
 

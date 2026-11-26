@@ -7,7 +7,7 @@
 // the API cannot be reached, nothing is changed and the last rates stay in use.
 //
 // It also stores the dollar rate of every currency Frankfurter covers, and the
-// Argentine "dolar tarjeta" (the rate for card payments abroad) from DolarApi
+// Argentine card rate (the rate for card payments abroad) from DolarApi
 // (https://dolarapi.com), so the app can show prices in the viewer's currency.
 //
 // Usage: node scripts/rates.mjs
@@ -70,7 +70,7 @@ try {
   if (!(t.venta > 0)) throw new Error("no venta");
   rates.per_usd.ARS = Math.round(t.venta * (1 + ARS_CARD_TAX.pct / 100) * 100) / 100;
   rates.ars = {
-    kind: "dolar tarjeta", official: t.venta, tax_pct: ARS_CARD_TAX.pct, tax: ARS_CARD_TAX.name, rule: ARS_CARD_TAX.rule,
+    kind: "card rate", official: t.venta, tax_pct: ARS_CARD_TAX.pct, tax: ARS_CARD_TAX.name, rule: ARS_CARD_TAX.rule,
     source: "DolarApi (Banco Nación official rate)", url: "https://dolarapi.com/", date: String(t.fechaActualizacion || "").slice(0, 10),
   };
 } catch (err) {
