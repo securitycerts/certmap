@@ -1,7 +1,7 @@
 cert_id,type,title,provider,url,free,official,sponsored,order
 sec-plus,guide,Security+ Certification,CompTIA,https://www.comptia.org/en-us/certifications/security/,true,true,false,
-sec-plus,practice,Security+ (V7) Practice Questions,CompTIA,https://www.comptia.org/en-us/certifications/security/v7/practice-questions/,true,true,false,
-sec-plus,course,CompTIA Security+ SY0-701 Training Course,Professor Messer,https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/,true,false,false,
+sec-plus,practice,Security+ (V8) Practice Questions,CompTIA,https://www.comptia.org/en-us/certifications/security/v8/practice-questions/,true,true,false,
+sec-plus,course,CompTIA Security+ SY0-801 (V8) Training Course,Professor Messer,https://www.professormesser.com/sy0-801-certification-course/,true,false,false,
 sec-plus,book,"CompTIA Security+ Study Guide: Exam SY0-701, 9th Edition",Sybex (Wiley),https://www.wiley.com/en-us/-p-9781394211418,false,false,false,
 net-plus,guide,Network+ Certification,CompTIA,https://www.comptia.org/en-us/certifications/network/,true,true,false,
 net-plus,practice,Network+ (V9) Practice Questions,CompTIA,https://www.comptia.org/en-us/certifications/network/practice-questions/,true,true,false,

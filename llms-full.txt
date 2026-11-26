@@ -1361,20 +1361,20 @@ Foundational vendor-neutral cybersecurity certification covering core concepts a
 
 - Vendor: CompTIA
 - Level: beginner
-- Exam price: $439
+- Exam price: $439 (Current exam V8 (SY0-801), launched 2026-11-17; V7 (SY0-701) English exam retires 2027-06-11)
 - Price checked: 2026-11-10
 - Exam length: 90 minutes
 - Exam format: written or multiple choice
 - Renewal: every 3 years
 - DoD 8140: approved
-- Official page: https://www.comptia.org/certifications/security
+- Official page: https://www.comptia.org/en-us/certifications/security/v8/
 - cert/map page: https://certmap.dev/certs/sec-plus.html
 - Study plan: https://certmap.dev/certs/plan-sec-plus.html
 - Compared with: Network+ (https://certmap.dev/certs/compare-net-plus-vs-sec-plus.html), CC (https://certmap.dev/certs/compare-cc-vs-sec-plus.html), CySA+ (https://certmap.dev/certs/compare-sec-plus-vs-cysa-plus.html), CCNA (https://certmap.dev/certs/compare-sec-plus-vs-ccna.html), CEH (https://certmap.dev/certs/compare-sec-plus-vs-ceh.html), CISSP (https://certmap.dev/certs/compare-sec-plus-vs-cissp.html), SSCP (https://certmap.dev/certs/compare-sec-plus-vs-sscp.html), Google Cyber (https://certmap.dev/certs/compare-coursera-google-cybersecurity-vs-sec-plus.html), A+ (https://certmap.dev/certs/compare-a-plus-vs-sec-plus.html), BTL1 (https://certmap.dev/certs/compare-btl1-vs-sec-plus.html), GSEC (https://certmap.dev/certs/compare-sec-plus-vs-gsec.html)
 - Preparation:
   - Security+ Certification (CompTIA, official, free): https://www.comptia.org/en-us/certifications/security/
-  - Security+ (V7) Practice Questions (CompTIA, official, free): https://www.comptia.org/en-us/certifications/security/v7/practice-questions/
-  - CompTIA Security+ SY0-701 Training Course (Professor Messer, free): https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/
+  - Security+ (V8) Practice Questions (CompTIA, official, free): https://www.comptia.org/en-us/certifications/security/v8/practice-questions/
+  - CompTIA Security+ SY0-801 (V8) Training Course (Professor Messer, free): https://www.professormesser.com/sy0-801-certification-course/
   - Cyber Security 101 path (TryHackMe): https://tryhackme.com/path/outline/cybersecurity101
   - Pre Security path (TryHackMe): https://tryhackme.com/path/outline/presecurity
   - Security Principles (TryHackMe, free): https://tryhackme.com/room/securityprinciples
