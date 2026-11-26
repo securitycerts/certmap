@@ -3,8 +3,8 @@
 // roadmap on a static host (the path lives in the URL fragment, which preview
 // crawlers never see), so this is the image people can share by hand.
 
-import { fmtPrice } from "./format.js?v=ac02db00";
-import { pathSummary } from "./paths.js?v=ac02db00";
+import { fmtLocalPrice } from "./format.js?v=d6bb7f95";
+import { pathSummary } from "./paths.js?v=d6bb7f95";
 
 const W = 1200, H = 630;
 const LEVEL_COLOR = { beginner: "#4f7a63", intermediate: "#5b6e96", advanced: "#846a99", expert: "#9a6e6e" };
@@ -55,7 +55,7 @@ export function drawRoadmap(certs, name) {
     ctx.font = `600 13px ${SANS}`; ctx.fillStyle = "#7d8595"; ctx.fillText(`STEP ${i + 1}`, x + 20, y + 28);
     ctx.font = `700 25px ${MONO}`; ctx.fillStyle = "#e6e8ec"; ctx.fillText(fit(ctx, c.acronym, bw - 40), x + 20, y + 60);
     ctx.font = `400 16px ${SANS}`; ctx.fillStyle = "#b3b9c5";
-    ctx.fillText(fit(ctx, `${c.vendor} · ${fmtPrice(c.price_usd)}`, bw - 40), x + 20, y + 86);
+    ctx.fillText(fit(ctx, `${c.vendor} · ${fmtLocalPrice(c)}`, bw - 40), x + 20, y + 86);
   });
   if (shown.length < certs.length) {
     const i = shown.length, x = 64 + (i % cols) * (bw + gap), y = top + Math.floor(i / cols) * (bh + gap);

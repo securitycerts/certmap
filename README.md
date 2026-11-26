@@ -132,6 +132,12 @@ npm run links      # node scripts/check-links.mjs  (append an id substring to sc
 
 There are no environment variables or secrets to configure.
 
+## Prices and currencies
+
+Each price is stored as the vendor publishes it. Rows priced in pounds or euros keep that figure in `price_original` and `currency`; `price_usd` is then a conversion. `node scripts/rates.mjs` (run by `npm run build` and by a daily workflow) fetches the European Central Bank reference rates from the public [Frankfurter](https://frankfurter.dev) API and writes `data/rates.json`.
+
+The roadmap has a currency selector (USD by default) that converts prices, roadmap totals, shared links and exports into about 30 currencies. For the Argentine peso it uses the card dollar: the official Banco Nación selling rate from [DolarApi](https://dolarapi.com) plus the card tax set in `ARS_CARD_TAX` in `scripts/rates.mjs` (30%, ARCA RG 5617/2024). Change that constant when the rule changes.
+
 ## Data accuracy
 
 The dataset is community-maintained. Most vendors do not publish their exam fees on the public certification pages; figures in `data/certs.csv` are the last known list prices in USD, sourced from official vendor pages where possible and approximate otherwise. Treat the prices as guidance and confirm with the vendor before paying.

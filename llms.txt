@@ -14,6 +14,7 @@ cert/map is a community-maintained reference for the cybersecurity certification
 - [Interactive roadmap](https://certmap.dev/map/): the matrix of every certification by domain and level
 - [Sponsors](https://certmap.dev/sponsors/): how to sponsor the project, the tiers and the terms
 - [API](https://certmap.dev/api/): static JSON under `https://certmap.dev/api/v1/`, entry point https://certmap.dev/api/v1/index.json, one file per certification at `https://certmap.dev/api/v1/certs/<id>.json` including its study plan, described in https://certmap.dev/api/openapi.json
+- [Exchange rates (JSON)](https://certmap.dev/data/rates.json): the rates used to convert prices, from the European Central Bank via Frankfurter, plus the Argentine card dollar (official rate plus card tax)
 - [All certifications](https://certmap.dev/certs/): every certification with vendor, level and price
 - [Full text digest](https://certmap.dev/llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](https://certmap.dev/data/certs.json) and [as CSV](https://certmap.dev/data/certs.csv)
@@ -302,6 +303,7 @@ Each certification is placed at one of four tiers:
 - **Study plans**: for each certification with resources, a numbered plan in four phases (know the exam, learn the material, practice hands-on, test yourself). Each plan has its own page at `certs/plan-<id>.html` and also appears in the roadmap's detail drawer and on the certification page, with each phase folding away.
 - **Practice material**: direct links to TryHackMe rooms and paths, Hack The Box Academy modules, CyberDefenders labs and similar, plus open-source projects (vulnerable applications, lab builders, detection rules, forensic datasets). No exam content or exam write-ups are linked.
 - **Comparisons**: side-by-side pages for the most searched pairs, in English, Spanish, French, German, Italian, Arabic, Korean and Hebrew.
+- **Prices in your currency**: each price keeps the vendor's own currency (USD, GBP or EUR) with a US dollar conversion, and the roadmap converts prices and roadmap totals into about 30 currencies with the European Central Bank reference rates, refreshed every working day. For the Argentine peso it uses the card dollar (dólar tarjeta): the official Banco Nación rate plus the card tax. The chosen currency travels in shared roadmap links and in the Markdown and CSV exports. Rates: https://certmap.dev/data/rates.json
 - **Roadmap builder**: add certifications by search, see them as a list or as a graph of prerequisites, write a note on each step, name the roadmap and share it.
 - **Matrix view**: 17 columns by 4 rows. Capstone certifications surface to the top of each cell via an optional weight value.
 - **List view**: cards grouped by domain with vendor, level, tags and price visible.

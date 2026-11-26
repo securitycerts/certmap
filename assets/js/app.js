@@ -1,16 +1,16 @@
-import { loadData } from "./data.js?v=ac02db00";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=ac02db00";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=ac02db00";
-import { loadRates, currencyCodes, currency, setCurrency, fmtMoney, fromUsd, currencyLabel, currencyShort } from "./currency.js?v=ac02db00";
-import { enhanceSelect } from "./picker.js?v=ac02db00";
-import { el } from "./dom.js?v=ac02db00";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=ac02db00";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=ac02db00";
-import { toast, copyText } from "./toast.js?v=ac02db00";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=ac02db00";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=ac02db00";
-import { mountGraph, unmountGraph } from "./graph.js?v=ac02db00";
-import { downloadRoadmapImage } from "./share-image.js?v=ac02db00";
+import { loadData } from "./data.js?v=d6bb7f95";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=d6bb7f95";
+import { slug, fmtPrice, fmtLocalPrice, LEVEL_LABEL } from "./format.js?v=d6bb7f95";
+import { loadRates, currencyCodes, currency, setCurrency, fmtMoney, fromUsd, fmtTotal, currencyLabel, currencyShort } from "./currency.js?v=d6bb7f95";
+import { enhanceSelect } from "./picker.js?v=d6bb7f95";
+import { el } from "./dom.js?v=d6bb7f95";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=d6bb7f95";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=d6bb7f95";
+import { toast, copyText } from "./toast.js?v=d6bb7f95";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=d6bb7f95";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=d6bb7f95";
+import { mountGraph, unmountGraph } from "./graph.js?v=d6bb7f95";
+import { downloadRoadmapImage } from "./share-image.js?v=d6bb7f95";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -124,6 +124,7 @@ function roadmapHash(ids, name, notes) {
   if (title) p.set("name", title);
   const packed = notes ? encodeNotes(notes, ids) : "";
   if (packed) p.set("notes", packed);
+  if (currency() !== "USD") p.set("ccy", currency());
   const qs = p.toString();
   return `#/roadmap/${ids.join(",")}` + (qs ? "?" + qs : "");
 }
@@ -149,14 +150,15 @@ function readRoadmap(hash) {
   const m = hash.match(/^#\/roadmap\/([a-z0-9,-]*)(?:\?(.*))?$/);
   if (!m) return null;
   const ids = [...new Set(sanitizeIds(m[1].split(",")))].filter(id => DATA.byId.has(id));
-  let name = "", notes = new Map();
+  let name = "", notes = new Map(), ccy = "";
   try {
     const p = new URLSearchParams(m[2] || "");
     name = cleanName(p.get("name"));
     notes = decodeNotes(p.get("notes"), ids);
+    ccy = /^[A-Z]{3}$/.test(p.get("ccy") || "") ? p.get("ccy") : "";
   } catch { /* malformed escape */ }
   const same = ids.length === state.cart.size && ids.every(id => state.cart.has(id));
-  return { ids, name, notes, same };
+  return { ids, name, notes, same, ccy };
 }
 
 const certUrl = id => location.origin + location.pathname + `#/cert/${id}`;
@@ -246,7 +248,7 @@ const closeDrawer = () => { location.hash = baseHash; };
 function paintCart() {
   const sum = renderCart($("#cart-list"), $("#cart-count"), DATA.certs, state);
   const paint = n => {
-    const text = "$" + n.toLocaleString("en-US") + (currency() !== "USD" && n ? ` (≈ ${fmtMoney(fromUsd(n))})` : "");
+    const text = fmtTotal(n);
     $("#cart-total").textContent = text;
     $("#cart-subtotal").textContent = text;
   };
@@ -588,6 +590,7 @@ function syncDrawer(certId) {
 const BASE_TITLE = document.title;
 const drawerTitle = id => (id && DATA.byId.has(id) ? `${DATA.byId.get(id).acronym} · cert/map` : "");
 
+let appliedCcyFor = "";
 function rerender() {
   const certId = readRoute();
   const filtered = applyFilters(DATA.certs);
@@ -599,6 +602,16 @@ function rerender() {
   }
 
   const roadmap = readRoadmap(baseHash);
+  // A shared roadmap opens in the currency it was shared in, once per link.
+  if (roadmap?.ccy && appliedCcyFor !== baseHash) {
+    appliedCcyFor = baseHash;
+    if (roadmap.ccy !== currency() && setCurrency(roadmap.ccy) === roadmap.ccy) {
+      $("#currency").value = currency();
+      paintCart();
+      lastGridKey = null; // the roadmap was painted in the previous currency
+      return rerender();
+    }
+  }
   $("#empty").classList.toggle("hidden", !!roadmap || filtered.length > 0);
   document.title = drawerTitle(certId) || (roadmap ? `${roadmap.name || "Roadmap"} · cert/map` : BASE_TITLE);
   $("#result-count").textContent = `${filtered.length} of ${DATA.certs.length} certifications`;
@@ -708,18 +721,23 @@ function selectedCerts() {
 function exportMd() {
   const items = selectedCerts();
   const total = items.reduce((a, c) => a + (c.price_usd || 0), 0);
+  const note = currency() === "USD" ? [] : ["", `_Converted to ${currency()} with the rates on certmap.dev; issuer prices are the reference._`];
   const lines = [
     "# My Security Certification Path", "",
     "| Cert | Vendor | Level | Price |", "|------|--------|-------|-------|",
-    ...items.map(c => `| [${c.acronym}](${c.url}) | ${c.vendor} | ${c.level} | ${fmtPrice(c.price_usd)} |`),
-    "", `**Total: $${total.toLocaleString("en-US")}**`,
+    ...items.map(c => `| [${c.acronym}](${c.url}) | ${c.vendor} | ${c.level} | ${fmtLocalPrice(c)} |`),
+    "", `**Total: ${fmtTotal(total)}**`, ...note,
   ];
   return copyText(lines.join("\n"), "Selection copied as Markdown");
 }
 
 function exportCsv() {
-  const rows = [["id", "acronym", "name", "vendor", "domain", "level", "price_usd", "url"]];
-  selectedCerts().forEach(c => rows.push([c.id, c.acronym, c.name, c.vendor, c.domain, c.level, c.price_usd ?? "", c.url]));
+  const mine = currency() !== "USD";
+  const rows = [["id", "acronym", "name", "vendor", "domain", "level", "price_usd", "price_original", "currency", ...(mine ? [`approx_${currency().toLowerCase()}`] : []), "url"]];
+  selectedCerts().forEach(c => {
+    const local = mine && c.price_usd ? Math.round(fromUsd(c.price_usd)) : "";
+    rows.push([c.id, c.acronym, c.name, c.vendor, c.domain, c.level, c.price_usd ?? "", c.price_original ?? "", c.price_original != null ? c.currency : "", ...(mine ? [Number.isFinite(local) ? local : ""] : []), c.url]);
+  });
   const csv = rows.map(r => r.map(v => /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : v).join(",")).join("\n");
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
@@ -952,6 +970,8 @@ async function init() {
   ccyEl.value = currency();
   ccyEl.addEventListener("change", () => {
     store.set(CURRENCY_KEY, setCurrency(ccyEl.value));
+    lastGridKey = null; // prices on the cards and in the roadmap change
+    if (readRoadmap(baseHash)?.same && currency() !== "USD") history.replaceState(null, "", location.pathname + myRoadmapHash());
     rerender();
     paintCart();
     const id = readRoute();

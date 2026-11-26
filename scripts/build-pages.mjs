@@ -497,7 +497,9 @@ function faq() {
     ["Which cybersecurity certification should a beginner start with?",
       `The most widely recognised entry-level certifications on the roadmap are ${names(starters)}. Which one fits depends on the direction you want to take: general security, networking, cloud or hands-on testing.`],
     ["How much do cybersecurity certifications cost?",
-      `Exam prices on the roadmap run from free to ${money(dearest[0].price_usd)}. The cheapest paid exams are ${names(cheapest)}, and the most expensive are ${names(dearest)}. Prices are list prices in US dollars for the exam, without training unless the vendor only sells them together.`],
+      `Exam prices on the roadmap run from free to ${money(dearest[0].price_usd)}. The cheapest paid exams are ${names(cheapest)}, and the most expensive are ${names(dearest)}. Prices are list prices for the exam, without training unless the vendor only sells them together, shown in the currency the vendor uses and in US dollars.`],
+    ["Can I see certification prices in my own currency?",
+      `Yes. Prices stay as the vendor publishes them, in US dollars, pounds or euros, and the interactive roadmap can show each one, and the total of your roadmap, in ${RATES ? Object.keys(RATES.per_usd || {}).length + 1 : 30} currencies. Conversions use the European Central Bank reference rates, refreshed every working day. For the Argentine peso the roadmap uses the card dollar (dólar tarjeta): the official Banco Nación rate plus the ${RATES?.ars?.tax_pct ?? 30}% tax that applies to card payments abroad, which is what someone in Argentina pays for an exam charged in dollars.`],
     ["Are there free cybersecurity certifications?",
       free.length ? `Yes. ${free.map(c => c.acronym).join(", ")} ${free.length === 1 ? "has" : "have"} no exam fee.` : "None of the certifications currently on the roadmap is free."],
     ["Which certifications have a hands-on exam?",
@@ -509,7 +511,7 @@ function faq() {
     ["Does cert/map help me study for a certification?",
       `Yes. ${RESOURCES.size} certifications have a study plan: the exam guide first, then courses and reading, then hands-on practice with direct links to free labs and open-source projects, then practice questions. The plans hold ${[...RESOURCES.values()].reduce((k, l) => k + l.length, 0)} links in total, and every link was opened when it was added.`],
     ["Can I build and share my own certification path?",
-      "Yes. Select certifications in the interactive roadmap and it orders them by prerequisite and adds up exam cost and study time. Give the path a name and copy its link: anyone who opens it sees the same roadmap."],
+      "Yes. Select certifications in the interactive roadmap and it orders them by prerequisite and adds up exam cost and study time. Give the path a name, pick your currency and copy its link: anyone who opens it sees the same roadmap with the same currency. It can also be copied as Markdown or downloaded as CSV with the converted prices."],
   ];
 }
 
@@ -792,7 +794,7 @@ console.log(certification.acronym, certification.price_usd);   // ${sample.acron
     <li>Cross-origin requests are allowed, so it works from client-side code on any site.</li>
     <li>Responses are cached for about ten minutes. Cache on your side too; see <a href="#terms">fair use</a> below.</li>
     <li>URLs under <code>/api/v1/</code> keep their shape. A breaking change would be published as <code>v2</code>.</li>
-    <li><code>price_usd</code> is the exam list price in US dollars: <code>null</code> when the vendor does not publish one, <code>0</code> when it is free. <code>price_verified_at</code> is the date it was last seen on the vendor's page.</li>
+    <li><code>price_usd</code> is the exam list price in US dollars: <code>null</code> when the vendor does not publish one, <code>0</code> when it is free. When the vendor prices in another currency, <code>price_original</code> holds its figure, currency and the rate used, and <code>price_usd</code> is the conversion. The rates are in <a href="../data/rates.json"><code>/data/rates.json</code></a>. <code>price_verified_at</code> is the date it was last seen on the vendor's page.</li>
   </ul>
   <h2 id="terms">Fair use</h2>
   <p>The API is free and needs no key, which only works if it is used with some care. By using it you agree to the following.</p>
@@ -1091,6 +1093,7 @@ ${[...vendors].sort((a, b) => a.localeCompare(b)).join(", ")}.
 - [Interactive roadmap](${SITE}map/): the matrix of every certification by domain and level
 - [Sponsors](${SITE}sponsors/): how to sponsor the project, the tiers and the terms
 - [API](${SITE}api/): static JSON under \`${SITE}api/v1/\`, entry point ${SITE}api/v1/index.json, one file per certification at \`${SITE}api/v1/certs/<id>.json\` including its study plan, described in ${SITE}api/openapi.json
+- [Exchange rates (JSON)](${SITE}data/rates.json): the rates used to convert prices, from the European Central Bank via Frankfurter, plus the Argentine card dollar (official rate plus card tax)
 - [All certifications](${SITE}certs/): every certification with vendor, level and price
 - [Full text digest](${SITE}llms-full.txt): every certification with all of its fields, in Markdown
 - [Dataset as JSON](${SITE}data/certs.json) and [as CSV](${SITE}data/certs.csv)
@@ -1334,7 +1337,9 @@ ${related.map(o => `    <li>${certLink(o)} <span>${esc(o.vendor)}, ${LEVEL_LABEL
       competencyRequired: c.domain,
       recognizedBy: { "@type": "Organization", name: c.vendor },
       ...(c.validity_years ? { validFor: `P${c.validity_years}Y` } : {}),
-      ...(c.price_usd != null ? { offers: { "@type": "Offer", price: String(c.price_usd), priceCurrency: "USD", url: c.url } } : {}),
+      ...(c.price_usd != null ? { offers: foreignPrice(c)
+        ? { "@type": "Offer", price: String(c.price_original), priceCurrency: c.currency, url: c.url }
+        : { "@type": "Offer", price: String(c.price_usd), priceCurrency: "USD", url: c.url } } : {}),
     },
     {
       "@context": "https://schema.org",
@@ -1347,7 +1352,7 @@ ${related.map(o => `    <li>${certLink(o)} <span>${esc(o.vendor)}, ${LEVEL_LABEL
     },
   ];
 
-  const priceBit = c.price_usd == null ? "" : c.price_usd === 0 ? " Free." : ` Exam price ${price}.`;
+  const priceBit = c.price_usd == null ? "" : c.price_usd === 0 ? " Free." : ` Exam price ${price}${foreignPrice(c) ? `, about $${c.price_usd} in US dollars` : ""}.`;
   return page({
     path: `certs/${c.id}.html`,
     title: `${c.acronym} certification cost (${year(c.price_verified_at)}), prerequisites and renewal | cert/map`,

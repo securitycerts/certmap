@@ -3,7 +3,8 @@
 // used by shared roadmap links. Pure functions, so the build scripts import
 // this module too.
 
-import { LEVEL_ORDER, LEVEL_HOURS } from "./format.js?v=ac02db00";
+import { LEVEL_ORDER, LEVEL_HOURS } from "./format.js?v=d6bb7f95";
+import { fmtTotal } from "./currency.js?v=d6bb7f95";
 
 export const ROLE_PATHS = [
   { id: "pentester", name: "Penetration tester", certs: ["ejpt", "pjpt", "oscp", "pnpt", "osep"] },
@@ -47,7 +48,7 @@ export function pathTotals(certs) {
 
 export function pathSummary(certs) {
   const t = pathTotals(certs);
-  return `${certs.length} ${certs.length === 1 ? "certification" : "certifications"} · ${t.hours}h of study ≈ ${t.months} months at 10h a week · $${t.cost.toLocaleString("en-US")}`
+  return `${certs.length} ${certs.length === 1 ? "certification" : "certifications"} · ${t.hours}h of study ≈ ${t.months} months at 10h a week · ${fmtTotal(t.cost)}`
     + (t.unknown ? ` plus ${t.unknown} with no published price` : "");
 }
 

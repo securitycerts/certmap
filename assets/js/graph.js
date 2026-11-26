@@ -2,8 +2,8 @@
 // is a vendored bundle that is only fetched the first time someone opens this
 // view, so the matrix and the list never pay for it.
 
-import { fmtPrice } from "./format.js?v=ac02db00";
-import { NOTE_MAX } from "./paths.js?v=ac02db00";
+import { fmtLocalPrice } from "./format.js?v=d6bb7f95";
+import { NOTE_MAX } from "./paths.js?v=d6bb7f95";
 
 const LEVELS = ["beginner", "intermediate", "advanced", "expert"];
 const COL_W = 280, ROW_H = 150;
@@ -78,7 +78,7 @@ export async function mountGraph(host, { certs, notes, editable, theme, onOpen, 
         h("button", { type: "button", className: "gnode-open nodrag", title: "Open details", "aria-label": `Open ${c.acronym}`, onClick: () => onOpen(c.id) }, "↗"),
       ),
       h("div", { className: "gnode-acro" }, c.acronym),
-      h("div", { className: "gnode-meta" }, `${c.vendor} · ${fmtPrice(c.price_usd)}`),
+      h("div", { className: "gnode-meta" }, `${c.vendor} · ${fmtLocalPrice(c)}`),
       editable
         ? h("input", {
             className: "gnode-note nodrag", type: "text", maxLength: NOTE_MAX, defaultValue: note,

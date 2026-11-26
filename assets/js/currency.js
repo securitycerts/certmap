@@ -71,5 +71,12 @@ export function rateSource() {
 }
 
 const NAMES = (() => { try { return new Intl.DisplayNames(["en"], { type: "currency" }); } catch { return null; } })();
+// A total in dollars, with the viewer's currency next to it when one is chosen.
+export function fmtTotal(usd) {
+  const head = "$" + Math.round(usd).toLocaleString("en-US");
+  const v = fromUsd(usd);
+  return CODE === "USD" || !usd || !Number.isFinite(v) ? head : `${head} (≈ ${fmtMoney(v)})`;
+}
+
 export const currencyLabel = code => `${code}${code === "ARS" ? " (dólar tarjeta)" : ""} · ${NAMES?.of(code) || code}`;
 export const currencyShort = code => (code === "ARS" ? "ARS tarjeta" : code);
