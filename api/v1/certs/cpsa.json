@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Penetration Testing",
   "level": "beginner",
-  "price_usd": 359,
+  "price_usd": 360,
   "hands_on": false,
   "page": "https://certmap.dev/certs/cpsa.html",
   "api": "https://certmap.dev/api/v1/certs/cpsa.json",
@@ -26,8 +26,8 @@
   "price_original": {
    "amount": 275,
    "currency": "GBP",
-   "usd_rate": 1.305977,
-   "rate_date": "2026-11-25"
+   "usd_rate": 1.310376,
+   "rate_date": "2026-11-26"
   },
   "duration_min": 120,
   "exam_count": 1,

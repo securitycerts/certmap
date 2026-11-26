@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Cloud/SysOps",
   "level": "advanced",
-  "price_usd": 1202,
+  "price_usd": 1206,
   "hands_on": true,
   "page": "https://certmap.dev/certs/grte.html",
   "api": "https://certmap.dev/api/v1/certs/grte.json",
@@ -28,8 +28,8 @@
   "price_original": {
    "amount": 1099,
    "currency": "EUR",
-   "usd_rate": 1.093506,
-   "rate_date": "2026-11-25"
+   "usd_rate": 1.097502,
+   "rate_date": "2026-11-26"
   },
   "duration_min": 720,
   "exam_count": 1,

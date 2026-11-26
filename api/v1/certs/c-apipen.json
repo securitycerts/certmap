@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Penetration Testing",
   "level": "intermediate",
-  "price_usd": 326,
+  "price_usd": 328,
   "hands_on": true,
   "page": "https://certmap.dev/certs/c-apipen.html",
   "api": "https://certmap.dev/api/v1/certs/c-apipen.json",
@@ -27,8 +27,8 @@
   "price_original": {
    "amount": 250,
    "currency": "GBP",
-   "usd_rate": 1.305977,
-   "rate_date": "2026-11-25"
+   "usd_rate": 1.310376,
+   "rate_date": "2026-11-26"
   },
   "duration_min": 240,
   "exam_count": 1,
