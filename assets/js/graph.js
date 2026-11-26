@@ -2,8 +2,8 @@
 // is a vendored bundle that is only fetched the first time someone opens this
 // view, so the matrix and the list never pay for it.
 
-import { fmtPrice } from "./format.js?v=e50f58ab";
-import { NOTE_MAX } from "./paths.js?v=e50f58ab";
+import { fmtPrice } from "./format.js?v=ac02db00";
+import { NOTE_MAX } from "./paths.js?v=ac02db00";
 
 const LEVELS = ["beginner", "intermediate", "advanced", "expert"];
 const COL_W = 280, ROW_H = 150;

@@ -39,8 +39,12 @@
   "ZAR": 17.6968
  },
  "ars": {
-  "kind": "dolar tarjeta (venta)",
-  "source": "DolarApi",
+  "kind": "dolar tarjeta",
+  "official": 1630,
+  "tax_pct": 30,
+  "tax": "percepción de Ganancias o Bienes Personales",
+  "rule": "ARCA RG 5617/2024",
+  "source": "DolarApi (Banco Nación official rate)",
   "url": "https://dolarapi.com/",
   "date": "2026-11-25"
  }

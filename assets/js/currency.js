@@ -63,8 +63,13 @@ export function localAmount(c) {
 // Where the viewer's rate comes from, for a small note next to the amount.
 export function rateSource() {
   if (!RATES || CODE === "USD") return "";
-  if (CODE === "ARS" && RATES.ars) return `Dólar tarjeta ${fmtMoney(RATES.per_usd.ARS)} per US$1, ${RATES.ars.source}, ${RATES.ars.date}`;
+  if (CODE === "ARS" && RATES.ars?.official) {
+    const a = RATES.ars;
+    return `Dólar tarjeta: official ${fmtMoney(a.official)} + ${a.tax_pct}% ${a.rule} = ${fmtMoney(RATES.per_usd.ARS)} per US$1 (${a.date})`;
+  }
   return `European Central Bank rate of ${RATES.date}`;
 }
 
-export const currencyLabel = code => (code === "ARS" ? "ARS (dólar tarjeta)" : code);
+const NAMES = (() => { try { return new Intl.DisplayNames(["en"], { type: "currency" }); } catch { return null; } })();
+export const currencyLabel = code => `${code}${code === "ARS" ? " (dólar tarjeta)" : ""} · ${NAMES?.of(code) || code}`;
+export const currencyShort = code => (code === "ARS" ? "ARS tarjeta" : code);

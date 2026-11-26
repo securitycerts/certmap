@@ -73,7 +73,10 @@ input, select { font: inherit; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand-name { font-family: var(--mono); font-size: 15px; font-weight: 700; letter-spacing: -.02em; }
 .brand-accent { color: var(--accent); }
-.brand-tag { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-top: 2px; }
+.brand-tag { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-top: 2px; white-space: nowrap; }
+.brand { flex: none; }
+/* When the bar is tight the tagline goes before it can wrap into three lines. */
+@media (max-width: 1180px) { .brand-tag { display: none; } }
 
 .search-shell {
   display: flex; align-items: center; gap: 8px;
@@ -999,3 +1002,40 @@ details.prep-phase ol { padding: 0 4px 6px; }
   font: 600 10.5px var(--mono); color: var(--accent); border: 1px solid var(--accent); background: var(--accent-soft);
 }
 .prep-body { display: flex; flex-direction: column; min-width: 0; }
+
+/* ---------- PICKER (own drop-down over a hidden native select) ---------- */
+.picker { position: relative; display: inline-block; }
+.picker.preset-select { display: block; width: 100%; padding: 0; border: 0; background: none; }
+.picker-native { position: absolute !important; inset: 0; width: 1px !important; height: 1px !important; opacity: 0; pointer-events: none; }
+.picker-btn {
+  display: inline-flex; align-items: center; gap: 8px; height: 30px; padding: 0 10px 0 12px; width: 100%;
+  font: 500 12px var(--sans); color: var(--text); text-align: left; cursor: pointer;
+  background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
+  transition: border-color .15s, background-color .15s;
+}
+.picker-btn:hover { border-color: var(--border-strong); background: var(--raised); }
+.picker-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.picker.open .picker-btn { border-color: var(--accent); }
+.picker-text { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.picker-chev { width: 7px; height: 7px; margin: -3px 2px 0 4px; border-right: 1.6px solid var(--muted); border-bottom: 1.6px solid var(--muted); transform: rotate(45deg); transition: transform .15s; flex: none; }
+.picker.open .picker-chev { transform: translateY(3px) rotate(-135deg); }
+.preset-select .picker-btn { height: 32px; border-radius: var(--radius-sm); }
+.picker-pop {
+  position: absolute; z-index: 60; top: calc(100% + 6px); right: 0; min-width: 100%; width: max-content; max-width: min(320px, 92vw);
+  padding: 6px; background: var(--bg-elev); border: 1px solid var(--border-strong); border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .35);
+}
+.preset-select .picker-pop { left: 0; right: auto; width: 100%; }
+.picker-search {
+  width: 100%; margin-bottom: 6px; padding: 7px 10px; font: 13px var(--sans); color: var(--text);
+  background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius-sm); outline: 0;
+}
+.picker-search:focus { border-color: var(--accent); }
+.picker-list { list-style: none; margin: 0; padding: 0; max-height: 280px; overflow-y: auto; outline: 0; }
+.picker-opt { padding: 7px 10px; font-size: 12.5px; color: var(--text-dim); border-radius: var(--radius-sm); cursor: pointer; white-space: nowrap; }
+.picker-opt.active { background: var(--accent-soft); color: var(--text); }
+.picker-opt[aria-selected="true"] { color: var(--accent); font-weight: 600; }
+.picker-opt[aria-selected="true"]::after { content: "✓"; float: right; margin-left: 14px; }
+.picker-opt[aria-disabled="true"] { opacity: .5; cursor: default; }
+.picker-opt[hidden] { display: none; }
+@media (prefers-reduced-motion: reduce) { .picker-btn, .picker-chev { transition: none; } }

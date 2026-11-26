@@ -1,15 +1,16 @@
-import { loadData } from "./data.js?v=e50f58ab";
-import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=e50f58ab";
-import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=e50f58ab";
-import { loadRates, currencyCodes, currency, setCurrency, fmtMoney, fromUsd, currencyLabel } from "./currency.js?v=e50f58ab";
-import { el } from "./dom.js?v=e50f58ab";
-import { initTooltip, hideTooltip } from "./tooltip.js?v=e50f58ab";
-import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=e50f58ab";
-import { toast, copyText } from "./toast.js?v=e50f58ab";
-import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=e50f58ab";
-import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=e50f58ab";
-import { mountGraph, unmountGraph } from "./graph.js?v=e50f58ab";
-import { downloadRoadmapImage } from "./share-image.js?v=e50f58ab";
+import { loadData } from "./data.js?v=ac02db00";
+import { renderMatrix, renderList, renderDrawer, renderCart, renderFlow, renderRoadmap, buildFilters, bindState, bindData, renderAddResults } from "./render.js?v=ac02db00";
+import { slug, fmtPrice, LEVEL_LABEL } from "./format.js?v=ac02db00";
+import { loadRates, currencyCodes, currency, setCurrency, fmtMoney, fromUsd, currencyLabel, currencyShort } from "./currency.js?v=ac02db00";
+import { enhanceSelect } from "./picker.js?v=ac02db00";
+import { el } from "./dom.js?v=ac02db00";
+import { initTooltip, hideTooltip } from "./tooltip.js?v=ac02db00";
+import { initContextMenu, closeContextMenu } from "./contextmenu.js?v=ac02db00";
+import { toast, copyText } from "./toast.js?v=ac02db00";
+import { staggerIn, pop, drawerIn, drawerOut, panelIn, panelOut, cascade, tweenNumber, spin, logoIntro, motionOK } from "./motion.js?v=ac02db00";
+import { ROLE_PATHS, encodeNotes, decodeNotes, cleanNote } from "./paths.js?v=ac02db00";
+import { mountGraph, unmountGraph } from "./graph.js?v=ac02db00";
+import { downloadRoadmapImage } from "./share-image.js?v=ac02db00";
 
 const $ = sel => document.querySelector(sel);
 const CART_KEY = "certs-map.cart.v1";
@@ -958,6 +959,10 @@ async function init() {
   });
   const sortEl = $("#sort"); sortEl.value = state.sort;
   sortEl.addEventListener("change", e => { state.sort = e.target.value; store.set(SORT_KEY, state.sort); scheduleRender(); });
+  // The app draws its own drop-downs; the currency one can be searched.
+  enhanceSelect(sortEl);
+  enhanceSelect($("#preset"));
+  enhanceSelect(ccyEl, { search: true, placeholder: "Search currency", label: o => o.textContent, short: o => currencyShort(o.value) });
 
   document.querySelectorAll(".seg-btn").forEach(btn => btn.addEventListener("click", () => setView(btn.dataset.view)));
 
@@ -1113,6 +1118,9 @@ async function init() {
 
   rerender();
   logoIntro($(".logo"));
+  // The logo redraws itself now and then, never while the tab is hidden or
+  // the visitor prefers less motion (logoIntro checks that).
+  setInterval(() => { if (!document.hidden) logoIntro($(".logo")); }, 30000);
 }
 
 init().catch(err => {

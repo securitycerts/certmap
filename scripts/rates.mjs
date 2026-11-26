@@ -56,13 +56,23 @@ try {
   process.exit(0);
 }
 
-// Argentine peso: the card rate, which is what someone in Argentina pays for an
-// exam charged in dollars. If DolarApi is down, the last value is kept.
+// Argentine peso: what someone in Argentina pays for an exam charged in dollars
+// on a card. The official selling rate comes from the API every day; the card
+// adds a tax on top, set here so it can be changed in one place when the rule
+// changes.
+const ARS_CARD_TAX = {
+  pct: 30,
+  name: "percepción de Ganancias o Bienes Personales",
+  rule: "ARCA RG 5617/2024",
+};
 try {
-  const t = await get("https://dolarapi.com/v1/dolares/tarjeta");
+  const t = await get("https://dolarapi.com/v1/dolares/oficial");
   if (!(t.venta > 0)) throw new Error("no venta");
-  rates.per_usd.ARS = t.venta;
-  rates.ars = { kind: "dolar tarjeta (venta)", source: "DolarApi", url: "https://dolarapi.com/", date: String(t.fechaActualizacion || "").slice(0, 10) };
+  rates.per_usd.ARS = Math.round(t.venta * (1 + ARS_CARD_TAX.pct / 100) * 100) / 100;
+  rates.ars = {
+    kind: "dolar tarjeta", official: t.venta, tax_pct: ARS_CARD_TAX.pct, tax: ARS_CARD_TAX.name, rule: ARS_CARD_TAX.rule,
+    source: "DolarApi (Banco Nación official rate)", url: "https://dolarapi.com/", date: String(t.fechaActualizacion || "").slice(0, 10),
+  };
 } catch (err) {
   if (previous.per_usd?.ARS) { rates.per_usd.ARS = previous.per_usd.ARS; rates.ars = previous.ars; }
   console.warn(`ARS card rate not updated (${err.message}).`);
