@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Incident Handling",
   "level": "beginner",
-  "price_usd": 360,
+  "price_usd": 361,
   "hands_on": false,
   "page": "https://certmap.dev/certs/cpia.html",
   "api": "https://certmap.dev/api/v1/certs/cpia.json",
@@ -27,8 +27,8 @@
   "price_original": {
    "amount": 275,
    "currency": "GBP",
-   "usd_rate": 1.310376,
-   "rate_date": "2026-11-26"
+   "usd_rate": 1.312147,
+   "rate_date": "2026-11-27"
   },
   "duration_min": 120,
   "exam_count": 1,

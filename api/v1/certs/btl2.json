@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Incident Handling",
   "level": "advanced",
-  "price_usd": 2619,
+  "price_usd": 2623,
   "hands_on": true,
   "page": "https://certmap.dev/certs/btl2.html",
   "api": "https://certmap.dev/api/v1/certs/btl2.json",
@@ -29,8 +29,8 @@
   "price_original": {
    "amount": 1999,
    "currency": "GBP",
-   "usd_rate": 1.310376,
-   "rate_date": "2026-11-26"
+   "usd_rate": 1.312147,
+   "rate_date": "2026-11-27"
   },
   "duration_min": 4320,
   "exam_count": 1,

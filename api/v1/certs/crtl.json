@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Penetration Testing",
   "level": "expert",
-  "price_usd": 588,
+  "price_usd": 589,
   "hands_on": true,
   "page": "https://certmap.dev/certs/crtl.html",
   "api": "https://certmap.dev/api/v1/certs/crtl.json",
@@ -27,8 +27,8 @@
   "price_original": {
    "amount": 449,
    "currency": "GBP",
-   "usd_rate": 1.310376,
-   "rate_date": "2026-11-26"
+   "usd_rate": 1.312147,
+   "rate_date": "2026-11-27"
   },
   "duration_min": null,
   "exam_count": 1,

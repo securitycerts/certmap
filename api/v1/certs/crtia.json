@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Cyber Threat Intelligence",
   "level": "advanced",
-  "price_usd": 786,
+  "price_usd": 787,
   "hands_on": false,
   "page": "https://certmap.dev/certs/crtia.html",
   "api": "https://certmap.dev/api/v1/certs/crtia.json",
@@ -26,8 +26,8 @@
   "price_original": {
    "amount": 600,
    "currency": "GBP",
-   "usd_rate": 1.310376,
-   "rate_date": "2026-11-26"
+   "usd_rate": 1.312147,
+   "rate_date": "2026-11-27"
   },
   "duration_min": null,
   "exam_count": 1,

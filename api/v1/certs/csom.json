@@ -12,7 +12,7 @@
   "issuer": null,
   "domain": "Security Operations",
   "level": "advanced",
-  "price_usd": 2619,
+  "price_usd": 2623,
   "hands_on": true,
   "page": "https://certmap.dev/certs/csom.html",
   "api": "https://certmap.dev/api/v1/certs/csom.json",
@@ -28,8 +28,8 @@
   "price_original": {
    "amount": 1999,
    "currency": "GBP",
-   "usd_rate": 1.310376,
-   "rate_date": "2026-11-26"
+   "usd_rate": 1.312147,
+   "rate_date": "2026-11-27"
   },
   "duration_min": null,
   "exam_count": 1,
